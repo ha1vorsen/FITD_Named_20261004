@@ -1,0 +1,28 @@
+MoveDef FinalAirStartHit
+{
+	Main()
+	{
+		JUMP(Hash=0xA9C570DB)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xA9C570DB)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xA9C570DB)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		QUAKE(unknown=0x5)
+		Script_End()
+	}
+
+}

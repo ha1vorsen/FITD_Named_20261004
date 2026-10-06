@@ -1,0 +1,34 @@
+MoveDef SpecialNReturn
+{
+	Main()
+	{
+		FRAME(Frames=8)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=0, Angle=0x169, KBG=0x64, WBKB=0x1E, BKB=0x0, Size=6, X=0, Y=12, Z=14, Effect=0x0, Trip=0, Hitlag=0, SDI=0, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x0, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x1, Flinchless=0x1, StretchToggle=0x0)
+		FRAME(Frames=16)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=2)
+		External_Graphic(Graphic=0x3270000, Bone=0x18, X=0, Y=7.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=3)
+		External_Graphic(Graphic=0x3270001, Bone=0x18, X=0, Y=7.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x4A4002F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=4)
+		Script_End()
+	}
+
+}

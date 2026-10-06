@@ -1,0 +1,24 @@
+MoveDef FinalTurn
+{
+	Main()
+	{
+		JUMP(Hash=0x8C4DCE7F)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Loop_Rest()
+		JUMP(Hash=0x4353EC40)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

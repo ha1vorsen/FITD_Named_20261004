@@ -1,0 +1,47 @@
+MoveDef EntryR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x1000080, Bone=0x2, X=0, Y=-5, Z=10, XRot=0, YRot=0, ZRot=0, Size=1.3, RandomX=1, RandomY=1, RandomZ=1, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=3)
+		Graphic_Effect2(Graphic=0x302002E, Bone=0x0, X=2, Y=6, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.3, RandomX=1, RandomY=1, RandomZ=1, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=24)
+		Graphic_Effect2(Graphic=0x10000E1, Bone=0x0, X=0, Y=0, Z=1, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=1, RandomY=1, RandomZ=1, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=35)
+		Terminate_Graphic_Effect(Graphic=0x1000014, unknown=0x0, unknown=0x0)
+		FRAME(Frames=55)
+		Terminate_Graphic_Effect(Graphic=0x10000E1, unknown=0x0, unknown=0x0)
+		FRAME(Frames=64)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x81C0030)
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x81C000D)
+		WAIT(Frames=46)
+		Sound_Effect(SFX=0x81C0000)
+		WAIT(Frames=10)
+		Sound_Effect(SFX=0x81C0011)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x81C0002)
+		WAIT(Frames=3)
+		Sound_Effect(SFX=0x81C0068)
+		FRAME(Frames=108)
+		STOP_SE_STATUS()
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,30 @@
+MoveDef SpecialNEnd_C2
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=4)
+		FRAME(Frames=4)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=15)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x60097)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

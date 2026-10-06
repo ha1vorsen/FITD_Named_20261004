@@ -1,0 +1,51 @@
+MoveDef 0xFC2ECB73
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x339000F, Bone=0x0, X=0, Y=8, Z=6, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		FRAME(Frames=5)
+		FRAME(Frames=16)
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=-1, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=10, RandomY=0, RandomZ=5, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    Graphic_Effect2(Graphic=0x1000012, Bone=0x10, X=5, Y=0, Z=2, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=3, RandomY=3, RandomZ=6, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Color_Overlay(Red=180, Green=180, Blue=180, Alpha=130)
+		    WAIT(Frames=2)
+		    Graphic_Effect2(Graphic=0x1000012, Bone=0x10, X=5, Y=0, Z=-2, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=3, RandomY=3, RandomZ=6, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Color_Overlay(Red=100, Green=0, Blue=200, Alpha=80)
+		    WAIT(Frames=2)
+		    Terminate_Overlays()
+		    WAIT(Frames=2)
+		    Goto(Offset=-68)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Float_Var_Compare(Variable=RA-Float[7], Method=0x4, Value=0.95)
+		True(Offset=0x6){
+		    Sound_Effect(SFX=0xCA50000)
+		}
+		Else(Offset=0x4){
+		    Sound_Effect(SFX=0xCA50001)
+		}
+		FRAME(Frames=13)
+		Sound_Effect(SFX=0xC9B003E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=4)
+		FRAME(Frames=20)
+		FRAME(Frames=26)
+		ON_FLAG(Variable=RA-Flag[16])
+		Script_End()
+	}
+
+}

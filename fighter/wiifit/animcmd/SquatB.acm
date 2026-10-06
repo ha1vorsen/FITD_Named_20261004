@@ -1,0 +1,28 @@
+MoveDef SquatB
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=22)
+		Sound_Effect2(SFX=0x24B0080)
+		WAIT(Frames=40)
+		Sound_Effect2(SFX=0x24B0081)
+		Loop_Rest()
+		JUMP(Hash=0x5DD5A8C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x1)
+		Script_End()
+	}
+
+}

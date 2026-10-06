@@ -1,0 +1,26 @@
+MoveDef DamageFly
+{
+	Main()
+	{
+		Set_Model_Scale(Scale=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		IS_FLAG(Variable=LA-Flag[22])
+		True(Offset=0x4){
+		    QUAKE(unknown=0x3)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

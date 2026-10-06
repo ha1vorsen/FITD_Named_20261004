@@ -1,0 +1,42 @@
+MoveDef 0x7160AC0A
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Terminate_Graphic_Effect(Graphic=0x1000009, unknown=0x0, unknown=0x1)
+		IS_FLAG(Variable=LA-Flag[122])
+		False(Offset=0x1B){
+		    External_Graphic(Graphic=0x3220016, Bone=0x3E8, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		    FRAME(Frames=2)
+		    Graphic_Effect6(Graphic=0x3220000, Bone=0x3E8, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		}
+		ON_FLAG(Variable=LA-Flag[122])
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect2(Graphic=0x1000011, Bone=0x3E8, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=5, RandomY=5, RandomZ=5, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Color_Overlay(Red=255, Green=255, Blue=255, Alpha=100)
+		    WAIT(Frames=6)
+		    Terminate_Overlays()
+		    WAIT(Frames=8)
+		    Color_Overlay(Red=255, Green=255, Blue=70, Alpha=150)
+		    WAIT(Frames=6)
+		    Terminate_Overlays()
+		    WAIT(Frames=4)
+		    Goto(Offset=-37)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xD4248118)
+		Script_End()
+	}
+
+}

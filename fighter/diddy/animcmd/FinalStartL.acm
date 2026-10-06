@@ -1,0 +1,46 @@
+MoveDef FinalStartL
+{
+	Main()
+	{
+		Camera_Closeup(ZoomTime=0x5, Unknown=0x0, Distance=1.2, XRot=0, YRot=0)
+		Time_Manipulation(Amount=0x4, Duration=0x1E)
+		FRAME(Frames=6)
+		Model_Changer(ChangerID=0x1, ChangerState=0x0)
+		FRAME(Frames=14)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		FRAME(Frames=36)
+		Normal_Camera()
+		FRAME(Frames=43)
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=13)
+		Sound_Effect(SFX=0x1E0021)
+		Sound_Effect(SFX=0x510001)
+		WAIT(Frames=30)
+		Sound_Effect(SFX=0x1E0022)
+		Script_End()
+	}
+
+	Expression()
+	{
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		VIS_ATTACH_ITEM_GROUP(unknown=0x0, unknown=0x3)
+		SLOPE(unknown=0x6)
+		unk_EE37008F()
+		FRAME(Frames=12)
+		FRAME(Frames=39)
+		SLOPE(unknown=0x0)
+		FRAME(Frames=41)
+		Script_End()
+	}
+
+}

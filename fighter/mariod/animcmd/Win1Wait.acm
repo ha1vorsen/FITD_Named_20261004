@@ -1,0 +1,25 @@
+MoveDef Win1Wait
+{
+	Main()
+	{
+		IS_EXIST_ARTICLE(Unknown=0x0)
+		False(Offset=0x6){
+		    GENERATE_ARTICLE_ENABLE(Unknown=0x0)
+		    GENERATE_ARTICLE_ENABLE(Unknown=0x0)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

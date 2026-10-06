@@ -1,0 +1,33 @@
+MoveDef SpecialSHold_C3
+{
+	Main()
+	{
+		Set_Armor(State=0x1, Threshold=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=10, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=16)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Loop_Rest()
+		JUMP(Hash=0xD4248118)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

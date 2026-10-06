@@ -1,0 +1,24 @@
+MoveDef PassiveStandF
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Transient_Sound_Effect(SFX=0x24D0070)
+		Script_End()
+	}
+
+	Expression()
+	{
+		VIS_SET_DEFAULT(unknown=0x1, unknown=0x0)
+		Script_End()
+	}
+
+}

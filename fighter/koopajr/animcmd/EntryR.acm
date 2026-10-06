@@ -1,0 +1,47 @@
+MoveDef EntryR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=33)
+		Graphic_Effect3(Graphic=0x1000007, Bone=0x0, X=0, Y=0.5, Z=-3.5, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=39)
+		Graphic_Effect2(Graphic=0x32E0003, Bone=0x0, X=-1.5, Y=15, Z=-2, XRot=0, YRot=180, ZRot=20, Size=0.6, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=65)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x8630048)
+		FRAME(Frames=35)
+		Sound_Effect(SFX=0x8630049)
+		FRAME(Frames=39)
+		Sound_Effect(SFX=0x8630040)
+		FRAME(Frames=63)
+		Sound_Effect(SFX=0x8630012)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		Morph_Model_Event(unknown=0x0)
+		VIS_ATTACH_ITEM_GROUP(unknown=0x1, unknown=0x0)
+		ON_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=41)
+		Morph_Model_Event(unknown=0x1)
+		OFF_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=45)
+		SET_CURSOR(unknown=0x1)
+		Tag_Visibility(State=0x1)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,31 @@
+MoveDef SpecialN
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		FRAME(Frames=3)
+		FRAME(Frames=13)
+		Graphic_Effect2(Graphic=0x1000009, Bone=0x0, X=-10, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, RandomX=20, RandomY=0, RandomZ=15, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Loop_Rest()
+		JUMP(Hash=0x41477B2F)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=5)
+		Loop_Rest()
+		JUMP(Hash=0x41477B2F)
+		Script_End()
+	}
+
+}

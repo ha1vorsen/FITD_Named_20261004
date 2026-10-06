@@ -1,0 +1,21 @@
+MoveDef 0xBB933AE9 : Unlisted
+{
+	Main()
+	{
+		Search_Collision(ID=0x0, Part=0x0, Bone=0x0, Size=75, X=0, Y=10, Z=10, Unknown=0x2, Unknown=0x3, Ground/Air=0x3, Unknown=0x0, Unknown=0x9, Unknown=0x1, Unknown=0x0, RehitRate=0x1, SelfAffectionToggle=0x0, Unknown=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

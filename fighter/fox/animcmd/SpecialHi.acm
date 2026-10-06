@@ -1,0 +1,41 @@
+MoveDef SpecialHi
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x3, Damage=14, Angle=0x50, KBG=0x3C, WBKB=0x0, BKB=0x3C, Size=5.3, X=0.9, Y=0, Z=0, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x5, SFXLevel=0x2, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2)
+		WAIT(Frames=4)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x3, Damage=8, Angle=0x50, KBG=0x3C, WBKB=0x0, BKB=0x3C, Size=4.7, X=0.94591, Y=-0.32441, Z=0, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x5, SFXLevel=0x2, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		External_Graphic(Graphic=0x3090008, Bone=0x2, X=0, Y=-1.5, Z=-1.5, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Color_Overlay(Red=255, Green=192, Blue=128, Alpha=180)
+		WAIT(Frames=1)
+		Change_Overlay(Transition=30, Red=160, Green=60, Blue=60, Alpha=80)
+		WAIT(Frames=30)
+		Change_Overlay(Transition=20, Red=128, Green=0, Blue=0, Alpha=0)
+		WAIT(Frames=20)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x400002)
+		Sound_Effect(SFX=0xB0041)
+		Script_End()
+	}
+
+	Expression()
+	{
+		IGNORE_BOX2D_GROUND(unknown=0x1)
+		IGNORE_BOX2D_SHAPE(unknown=0x1)
+		Script_End()
+	}
+
+}

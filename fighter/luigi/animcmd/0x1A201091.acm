@@ -1,0 +1,33 @@
+MoveDef 0x1A201091 : Unlisted
+{
+	Main()
+	{
+		WAIT(Frames=1)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x13, Damage=1, Angle=0x50, KBG=0x1, WBKB=0x0, BKB=0x1, Size=7.68, X=0, Y=3.2, Z=0, Effect=0x6, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x4, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x3, Damage=1, Angle=0x50, KBG=0x1, WBKB=0x0, BKB=0x1, Size=6.24, X=0, Y=4.8, Z=0, Effect=0x6, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x4, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		OFF_FLAG(Variable=RA-Flag[18])
+		WAIT(Frames=1)
+		ON_FLAG(Variable=RA-Flag[13])
+		WAIT(Frames=1)
+		SA_SET(Unknown=0x2)
+		ON_FLAG(Variable=RA-Flag[15])
+		FRAME(Frames=10)
+		Allow/Disallow_Ledgegrab(State=0x1)
+		FRAME(Frames=24)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

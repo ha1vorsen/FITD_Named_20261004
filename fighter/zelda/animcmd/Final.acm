@@ -1,0 +1,69 @@
+MoveDef Final
+{
+	Main()
+	{
+		Camera_Closeup(ZoomTime=0x4, Unknown=0x0, Distance=1.5, XRot=0, YRot=0)
+		Time_Manipulation(Amount=0x3, Duration=0x21)
+		FRAME(Frames=1)
+		GENERATE_ARTICLE(ID=0x4)
+		FRAME(Frames=23)
+		Normal_Camera()
+		FRAME(Frames=33)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x18, Damage=1, Angle=0x50, KBG=0x64, WBKB=0x50, BKB=0x0, Size=3, X=0, Y=0, Z=300, Effect=0x14, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x10, Ground/Air=0x3, Direct/Indirect=0x0, Type=0xF, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x0, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x2)
+		FRAME(Frames=40)
+		Remove_All_Hitboxes()
+		FRAME(Frames=50)
+		Search_Collision(ID=0x0, Part=0x0, Bone=0x18, Size=8, X=0, Y=0, Z=300, Unknown=0x2, Unknown=0x3F, Ground/Air=0x3, Unknown=0x0, Unknown=0xF, Unknown=0x1, Unknown=0x0, RehitRate=0x1, SelfAffectionToggle=0x0, Unknown=0x2)
+		ON_FLAG(Variable=RA-Flag[14])
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=39, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x32, Effect=0x25, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x2, SFXType=0x5, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x0, Type=0x0)
+		FRAME(Frames=53)
+		SCH_CLR_ALL()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=15)
+		External_Graphic(Graphic=0x4100003, Bone=0x1, X=0, Y=10, Z=7, XRot=0, YRot=0, ZRot=0, Size=1.5, Terminate=0x1)
+		FRAME(Frames=27)
+		External_Graphic(Graphic=0x4100004, Bone=0x1, X=0, Y=11.4, Z=7, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=28)
+		External_Graphic(Graphic=0x4100000, Bone=0x1, X=0, Y=11, Z=10, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=37)
+		External_Graphic(Graphic=0x4100002, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=38)
+		External_Graphic(Graphic=0x4100005, Bone=0x1, X=0, Y=0, Z=3, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=39)
+		External_Graphic(Graphic=0x4100001, Bone=0x1, X=0, Y=11, Z=10, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=46)
+		EFFECT_DETACH_KIND(Graphic=0x4100000, unknown=0xFFFFFFFF)
+		EFFECT_DETACH_KIND(Graphic=0x4100003, unknown=0xFFFFFFFF)
+		EFFECT_DETACH_KIND(Graphic=0x4100004, unknown=0xFFFFFFFF)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x450001)
+		Sound_Effect(SFX=0x12006D)
+		FRAME(Frames=20)
+		Sound_Effect(SFX=0x120039)
+		FRAME(Frames=50)
+		Sound_Effect(SFX=0x12003B)
+		Sound_Effect(SFX=0x450002)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		Item_Visibility(State=0x0)
+		FRAME(Frames=6)
+		FRAME(Frames=46)
+		Article_Visibility(Article=0x4, State=0x0)
+		FRAME(Frames=51)
+		Script_End()
+	}
+
+}

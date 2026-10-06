@@ -1,0 +1,22 @@
+MoveDef DamageFlyHi
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		PLAY_FLY_VOICE(unknown=0x8012000A, unknown=0x8012000B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

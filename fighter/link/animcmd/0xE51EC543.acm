@@ -1,0 +1,24 @@
+MoveDef 0xE51EC543
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		Loop_Rest()
+		JUMP(Hash=0xE51EC543)
+		Script_End()
+	}
+
+}

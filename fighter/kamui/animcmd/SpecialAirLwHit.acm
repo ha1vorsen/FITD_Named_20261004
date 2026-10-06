@@ -1,0 +1,34 @@
+MoveDef SpecialAirLwHit
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x3)
+		Article_Visibility(Article=0x3, State=0x0)
+		FRAME(Frames=7)
+		Visibility(State=0x0)
+		Article_Visibility(Article=0x3, State=0x1)
+		FRAME(Frames=40)
+		Article_Event(Value=0x3)
+		Visibility(State=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x16E97B17)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x16E97B17)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x16E97B17)
+		Script_End()
+	}
+
+}

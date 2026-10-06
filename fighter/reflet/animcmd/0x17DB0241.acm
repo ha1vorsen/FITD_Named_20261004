@@ -1,0 +1,37 @@
+MoveDef 0x17DB0241
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=5)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=8)
+		GENERATE_ARTICLE(ID=0x3)
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=10)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=15)
+		Set_Frame_Duration(Speed=1)
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Low_Voice_Clip(unknown=0x803B0004)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=8)
+		Script_End()
+	}
+
+}

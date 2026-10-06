@@ -1,0 +1,29 @@
+MoveDef 0x2E13122E : Unlisted
+{
+	Main()
+	{
+		JUMP(Hash=0xEE8247C)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xEE8247C)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x3F0007)
+		Sound_Effect(SFX=0xA0057)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

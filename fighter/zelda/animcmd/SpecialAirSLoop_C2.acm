@@ -1,0 +1,23 @@
+MoveDef SpecialAirSLoop_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xCFB72F85)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

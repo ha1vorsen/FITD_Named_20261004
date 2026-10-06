@@ -1,0 +1,31 @@
+MoveDef SquatWait1
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=72)
+		STOP_SE_STATUS()
+		Transient_Sound_Effect(SFX=0x8630042)
+		FRAME(Frames=107)
+		Transient_Sound_Effect(SFX=0x8630043)
+		FRAME(Frames=127)
+		Transient_Sound_Effect(SFX=0x8630043)
+		FRAME(Frames=184)
+		Transient_Sound_Effect(SFX=0x8630044)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Set_Bone_Intangibility(Bone=0xD, Mode=0x3)
+		Script_End()
+	}
+
+}

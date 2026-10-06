@@ -1,0 +1,23 @@
+MoveDef 0x78DC9DFE : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=8)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

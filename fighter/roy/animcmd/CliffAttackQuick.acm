@@ -1,0 +1,47 @@
+MoveDef CliffAttackQuick
+{
+	Main()
+	{
+		FRAME(Frames=22)
+		ATK_RESERVE(ID=0x0, Bone=0x0, X=0, Y=5, Z=14)
+		ATK_REFERENCE_NODE(Unknown=0x14, Unknown=0xFFFFFFFF)
+		FRAME(Frames=23)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=8, Angle=0x2D, KBG=0x14, WBKB=0x0, BKB=0x5A, Size=5, X=0, Y=5, Z=14, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=5, Z2=-2.5)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=20)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x3EA, X=-1E-05, Y=-2E-05, Z=10, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=22)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=1.5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=22)
+		Sword_Trace(TraceID=0xEE, BlurLen=1.121039E-44, Bone1=0x3EA, X=0, Y=0, Z=0.5, Bone2=0x3EA, X=-1E-05, Y=-2E-05, Z=13, Anchored=0x1, Graphic=0x3360008, Bone3=0x3EA, X=0, Y=0, Z=0, RotX=0.00013, RotY=-7E-05, RotZ=0.00011, Length=1)
+		FRAME(Frames=23)
+		Graphic_Effect3(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=26)
+		Terminate_Sword_Glow(FadeTime=0x3)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Sound_Effect(SFX=0xC230018)
+		WAIT(Frames=15)
+		Sound_Effect(SFX=0xC230027)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=20)
+		FRAME(Frames=23)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		Script_End()
+	}
+
+}

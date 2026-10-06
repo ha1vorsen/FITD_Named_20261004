@@ -1,0 +1,30 @@
+MoveDef Final
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    WAIT(Frames=15)
+		    Goto(Offset=-2)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		QUAKE(unknown=0x3)
+		Loop_Rest()
+		JUMP(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+}

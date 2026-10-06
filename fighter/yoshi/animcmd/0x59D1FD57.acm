@@ -1,0 +1,43 @@
+MoveDef 0x59D1FD57
+{
+	Main()
+	{
+		FRAME(Frames=41)
+		Set_Armor(State=0x1, Threshold=0)
+		FRAME(Frames=51)
+		CALL(Hash=0xC6F6D0D6)
+		Set_Armor(State=0x0, Threshold=0)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		WAIT(Frames=10)
+		Shield_Off2(Unused=0x3, ID=0x0, Type=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		CALL(Hash=0xF893A783)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=11)
+		Sound_Effect(SFX=0x3E0014)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		EXECUTE(Unknown=1)
+		Slope_Full(unknown=0x4, unknown=0x3)
+		FRAME(Frames=46)
+		FRAME(Frames=49)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		FRAME(Frames=72)
+		Slope_Full(unknown=0x0, unknown=0x6)
+		Script_End()
+	}
+
+}

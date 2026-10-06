@@ -1,0 +1,35 @@
+MoveDef AttackS3
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x6, Damage=8, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0xC, Size=3.1, X=1, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x6, Damage=8, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0xC, Size=3.3, X=1, Y=-4.5, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x6, Damage=7, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0xC, Size=3, X=1, Y=-8.5, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		WAIT(Frames=4)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x1000090, GFXLeft=0x1000090, Bone=0x0, X=0xC0000000, Y=0x40900000, Z=0x40E00000, XRot=0x41200000, YRot=0x0, ZRot=0x433E0000, Size=0x3F666666, Terminate=0x1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Low_Voice_Clip(unknown=0x80090008)
+		Sound_Effect(SFX=0xA006E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+}

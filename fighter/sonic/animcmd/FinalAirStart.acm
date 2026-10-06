@@ -1,0 +1,28 @@
+MoveDef FinalAirStart
+{
+	Main()
+	{
+		JUMP(Hash=0x17EB3D5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x17EB3D5)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		SLOPE(unknown=0x6)
+		FRAME(Frames=16)
+		SLOPE(unknown=0x0)
+		Script_End()
+	}
+
+}

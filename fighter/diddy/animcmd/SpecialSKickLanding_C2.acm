@@ -1,0 +1,29 @@
+MoveDef SpecialSKickLanding_C2
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		Set_Frame_Duration(Speed=1.5)
+		Set_Edge_Slide(State=0x2)
+		FRAME(Frames=7)
+		SET_LIMIT_SPEED_EX(Horizontal=1.2, Vertical=0)
+		FRAME(Frames=16)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,28 @@
+MoveDef SpecialHiChargeB
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Transient_Sound_Effect(SFX=0x1E0039)
+		WAIT(Frames=40)
+		STOP_SE_STATUS()
+		Transient_Sound_Effect(SFX=0x1E003C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		VIS_ATTACH_ITEM_GROUP(unknown=0x0, unknown=0x3)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

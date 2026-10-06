@@ -1,0 +1,27 @@
+MoveDef CatchAttack
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x13, Damage=6, Angle=0x50, KBG=0x64, WBKB=0x1E, BKB=0x0, Size=16.8, X=5.6, Y=0, Z=0, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=10)
+		Script_End()
+	}
+
+}

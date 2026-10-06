@@ -1,0 +1,27 @@
+MoveDef SpecialAirNStart
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.73)
+		FRAME(Frames=13)
+		GENERATE_ARTICLE(ID=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xFC612FC6)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xFC612FC6)
+		Script_End()
+	}
+
+}

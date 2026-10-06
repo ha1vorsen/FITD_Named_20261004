@@ -1,0 +1,26 @@
+MoveDef 0xDCD907DA : Unlisted
+{
+	Main()
+	{
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=0.8, Angle=0x19, KBG=0x64, WBKB=0x12, BKB=0x0, Size=3.4, X=0, Y=8, Z=5, Effect=0x2, Trip=0, Hitlag=0.8, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x11, X2=0, Y2=8, Z2=10)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=0.8, Angle=0x78, KBG=0x64, WBKB=0x4, BKB=0x0, Size=4, X=0, Y=8, Z=5, Effect=0x2, Trip=0, Hitlag=0.8, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x11, X2=0, Y2=8, Z2=17)
+		Set_Weight_All_Hitboxes(Flag=0x1)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		ON_FLAG(Variable=RA-Flag[22])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

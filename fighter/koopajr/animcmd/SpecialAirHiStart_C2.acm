@@ -1,0 +1,29 @@
+MoveDef SpecialAirHiStart_C2
+{
+	Main()
+	{
+		Add/Set_Momentum(Horizontal=0, Vertical=0.5, Mode=0x1)
+		FRAME(Frames=9)
+		Set_Armor(State=0x1, Threshold=0)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=15)
+		Set_Armor(State=0x0, Threshold=0)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x8DF53B25)
+		Script_End()
+	}
+
+}

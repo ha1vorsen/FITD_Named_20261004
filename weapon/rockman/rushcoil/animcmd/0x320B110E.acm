@@ -1,0 +1,22 @@
+MoveDef 0x320B110E
+{
+	Main()
+	{
+		FRAME(Frames=8)
+		ON_FLAG(Variable=LA-Flag[5])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

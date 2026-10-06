@@ -1,0 +1,47 @@
+MoveDef 0x6FD911BF
+{
+	Main()
+	{
+		Visibility(State=0x0)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=0, Angle=0x14, KBG=0x46, WBKB=0x0, BKB=0x55, Size=8, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=0, SDI=0, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x0, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x1, Flinchless=0x1, StretchToggle=0x0)
+		FRAME(Frames=5)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=0, Angle=0x14, KBG=0x46, WBKB=0x0, BKB=0x41, Size=5.5, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=0, SDI=0, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x0, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x1, Flinchless=0x1, StretchToggle=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		unk_524EF3F5(unknown=0x10000B0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x40800000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F19999A, unknown=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1.1)
+		FRAME(Frames=10)
+		unk_524EF3F5(unknown=0x10000B0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x40800000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F4CCCCD, unknown=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Float_Var_Compare(Variable=LA-Float[1], Method=0x2, Value=0.475)
+		True(Offset=0x8){
+		    Sound_Effect(SFX=0x8630057)
+		    Sound_Effect(SFX=0x8630071)
+		}
+		Else(Offset=0x12){
+		    Float_Var_Compare(Variable=LA-Float[1], Method=0x2, Value=0.975)
+		    True(Offset=0x8){
+		        Sound_Effect(SFX=0x8630058)
+		        Sound_Effect(SFX=0x8630072)
+		    }
+		    Else(Offset=0x6){
+		        Sound_Effect(SFX=0x8630059)
+		        Sound_Effect(SFX=0x8630073)
+		    }
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

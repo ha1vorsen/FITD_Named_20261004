@@ -1,0 +1,31 @@
+MoveDef LandingAirLw
+{
+	Main()
+	{
+		WAIT(Frames=1)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1, Angle=0x169, KBG=0x64, WBKB=0x28, BKB=0x0, Size=5, X=0, Y=2.5, Z=-3, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x2, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x6, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=2.5, Z2=4.5)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xBB31D589)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect3(SFX=0x9002A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=19)
+		Script_End()
+	}
+
+}

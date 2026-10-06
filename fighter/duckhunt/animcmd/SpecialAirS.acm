@@ -1,0 +1,29 @@
+MoveDef SpecialAirS
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=14)
+		ON_FLAG(Variable=LA-Flag[123])
+		FRAME(Frames=40)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x224117F6)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x224117F6)
+		Script_End()
+	}
+
+}

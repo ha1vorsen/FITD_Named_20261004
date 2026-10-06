@@ -1,0 +1,39 @@
+MoveDef WalkFast
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		Graphic_Effect(Graphic=0x0, Bone=0xA, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=25)
+		Graphic_Effect(Graphic=0x0, Bone=0x6, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Loop_Rest()
+		JUMP(Hash=0x7B801F14)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect2(SFX=0x24E0050)
+		WAIT(Frames=20)
+		Sound_Effect2(SFX=0x24E004E)
+		Loop_Rest()
+		JUMP(Hash=0x7B801F14)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Slope_Full(unknown=0x0, unknown=0x6)
+		FRAME(Frames=6)
+		FRAME(Frames=25)
+		Loop_Rest()
+		JUMP(Hash=0x7B801F14)
+		Script_End()
+	}
+
+}

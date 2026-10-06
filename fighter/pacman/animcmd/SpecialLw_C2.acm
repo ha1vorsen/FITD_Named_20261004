@@ -1,0 +1,25 @@
+MoveDef SpecialLw_C2
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		GENERATE_ARTICLE(ID=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=8)
+		Script_End()
+	}
+
+}

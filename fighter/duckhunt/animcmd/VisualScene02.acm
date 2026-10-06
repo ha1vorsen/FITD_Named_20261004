@@ -1,0 +1,31 @@
+MoveDef VisualScene02
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=80)
+		unk_3B31D521(unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=46)
+		Sound_Effect(SFX=0x7650010)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=45)
+		Set_Loop(Iterations=-1){
+		    WAIT(Frames=22)
+		    Goto(Offset=-2)
+		}
+		Script_End()
+	}
+
+}

@@ -1,0 +1,29 @@
+MoveDef 0xED1303E7
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=75)
+		PLAY_SE_REMAIN(unknown=0xF2)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=68)
+		FRAME(Frames=70)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

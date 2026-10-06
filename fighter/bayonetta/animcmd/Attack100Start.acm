@@ -1,0 +1,36 @@
+MoveDef Attack100Start
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.5)
+		SET_INT(Value=0x3, Variable=RA-Int[4])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=14)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x15){
+		    EFFECT_WORK(unknown=0x10000094, unknown=0x1, unknown=2, unknown=8, unknown=2, unknown=0, unknown=0x0, unknown=120, unknown=0.9, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0, unknown=0x1)
+		}
+		Else(Offset=0x13){
+		    EFFECT_WORK(unknown=0x10000095, unknown=0x1, unknown=2, unknown=8, unknown=2, unknown=0, unknown=0x0, unknown=120, unknown=0.9, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0, unknown=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Low_Voice_Clip(unknown=0x80000003)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

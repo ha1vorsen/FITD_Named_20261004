@@ -1,0 +1,36 @@
+MoveDef 0x8E4C63B0
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=20)
+		Sound_Effect(SFX=0xB0)
+		WAIT(Frames=25)
+		Sound_Effect(SFX=0xB2)
+		WAIT(Frames=25)
+		Sound_Effect(SFX=0xB0)
+		WAIT(Frames=25)
+		Sound_Effect(SFX=0xB2)
+		Loop_Rest()
+		JUMP(Hash=0x8E4C63B0)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=10)
+		FRAME(Frames=35)
+		FRAME(Frames=55)
+		Loop_Rest()
+		JUMP(Hash=0x8E4C63B0)
+		Script_End()
+	}
+
+}

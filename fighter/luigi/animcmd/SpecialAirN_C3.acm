@@ -1,0 +1,39 @@
+MoveDef SpecialAirN_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=17)
+		GENERATE_ARTICLE(ID=0x0)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=17)
+		Color_Overlay(Red=0, Green=0, Blue=255, Alpha=90)
+		FRAME(Frames=19)
+		Terminate_Overlays()
+		Flash_Light_Effect(Red=200, Blue=200, Green=255, Alpha=160, SourceX=75, SourceY=-10)
+		FRAME(Frames=22)
+		Change_Flash_Light_Color(TransitionFrames=5, Red=100, Blue=200, Green=255, Alpha=0)
+		FRAME(Frames=27)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x7EC39C7F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=16)
+		Script_End()
+	}
+
+}

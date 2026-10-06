@@ -1,0 +1,58 @@
+MoveDef WalkSlow
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=44)
+		Terminate_Graphic_Effect(Graphic=0x100000A, unknown=0x1, unknown=0x1)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x15){
+		    Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=4, Y=0, Z=7, XRot=0, YRot=0, ZRot=0, Size=0.3, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Else(Offset=0x13){
+		    Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=-4, Y=0, Z=7, XRot=0, YRot=0, ZRot=0, Size=0.3, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		FRAME(Frames=88)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x19){
+		    Terminate_Graphic_Effect(Graphic=0x100000A, unknown=0x1, unknown=0x1)
+		    Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=-5, Y=0, Z=7, XRot=0, YRot=0, ZRot=0, Size=0.3, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Else(Offset=0x17){
+		    Terminate_Graphic_Effect(Graphic=0x100000A, unknown=0x1, unknown=0x1)
+		    Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=5, Y=0, Z=7, XRot=0, YRot=0, ZRot=0, Size=0.3, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Loop_Rest()
+		JUMP(Hash=0x6BE1270D)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect2(SFX=0x20004E)
+		WAIT(Frames=43)
+		Sound_Effect2(SFX=0x20004C)
+		Loop_Rest()
+		JUMP(Hash=0x6BE1270D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=1)
+		Slope_Full(unknown=0x2, unknown=0x3)
+		FRAME(Frames=10)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		FRAME(Frames=45)
+		FRAME(Frames=87)
+		Loop_Rest()
+		JUMP(Hash=0x6BE1270D)
+		Script_End()
+	}
+
+}

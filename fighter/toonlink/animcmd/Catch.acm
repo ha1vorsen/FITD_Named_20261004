@@ -1,0 +1,82 @@
+MoveDef Catch
+{
+	Main()
+	{
+		IS_FLAG(Variable=LA-Flag[126])
+		True(Offset=0x3C){
+		    FRAME(Frames=6)
+		    GENERATE_ARTICLE(ID=0x5)
+		    FRAME(Frames=12)
+		    Set_Remote_Article_Action(Article=0x5, Action=0x1)
+		    Grab_Collision(ID=0x0, Bone=0x1A, Size=2.8, X=0, Y=0, Z=2, Action=0x3F, Ground/Air=0x3)
+		    Grab_Collision(ID=0x1, Bone=0x17, Size=1.5, X=0, Y=0, Z=0, Action=0x3F, Ground/Air=0x3)
+		    Grab_Collision(ID=0x2, Bone=0x17, Size=4, X=0, Y=0, Z=0, Action=0x3F, Ground/Air=0x1)
+		    CALL(Hash=0x49FA5BDD)
+		    WAIT(Frames=2)
+		    Remove_Grab_Collision(ID=0x1)
+		    Remove_Grab_Collision(ID=0x2)
+		    WAIT(Frames=5)
+		    Remove_All_Grab_Collisions()
+		    FRAME(Frames=30)
+		    Set_Remote_Article_Action2(Article=0x5, Action=0x3)
+		    FRAME(Frames=65)
+		    Remove_Article(Article=0x5)
+		}
+		Else(Offset=0x44){
+		    FRAME(Frames=6)
+		    GENERATE_ARTICLE(ID=0x3)
+		    GENERATE_ARTICLE(ID=0x4)
+		    FRAME(Frames=12)
+		    Set_Remote_Article_Action(Article=0x3, Action=0x1)
+		    Set_Anchored_Article_Action(Article=0x4, Action=0x0)
+		    Grab_Collision(ID=0x0, Bone=0x1A, Size=2.8, X=0, Y=0, Z=0, Action=0x3F, Ground/Air=0x3)
+		    Grab_Collision(ID=0x1, Bone=0x17, Size=1.5, X=0, Y=0, Z=0, Action=0x3F, Ground/Air=0x3)
+		    Grab_Collision(ID=0x2, Bone=0x17, Size=4, X=0, Y=0, Z=0, Action=0x3F, Ground/Air=0x1)
+		    CALL(Hash=0x49FA5BDD)
+		    WAIT(Frames=2)
+		    Remove_Grab_Collision(ID=0x1)
+		    Remove_Grab_Collision(ID=0x2)
+		    WAIT(Frames=5)
+		    Remove_All_Grab_Collisions()
+		    FRAME(Frames=42)
+		    Set_Remote_Article_Action2(Article=0x3, Action=0x3)
+		    Set_Anchored_Article_Action(Article=0x4, Action=0x4)
+		    FRAME(Frames=65)
+		    Remove_Article(Article=0x3)
+		    Remove_Article(Article=0x4)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=10)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x19, X=0, Y=0, Z=4.99999, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=11)
+		Sound_Effect(SFX=0x4A80020)
+		WAIT(Frames=8)
+		Sound_Effect(SFX=0x4A80021)
+		WAIT(Frames=22)
+		Sound_Effect(SFX=0x4A80021)
+		WAIT(Frames=11)
+		Sound_Effect(SFX=0x4A80021)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		FRAME(Frames=12)
+		FRAME(Frames=68)
+		Model_Changer(ChangerID=0x1, ChangerState=0x0)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,24 @@
+MoveDef 0xC2C13B23
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		THROW_ITEM_REFLET()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

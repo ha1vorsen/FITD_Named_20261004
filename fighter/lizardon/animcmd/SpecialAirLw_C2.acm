@@ -1,0 +1,41 @@
+MoveDef SpecialAirLw_C2
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=21)
+		Add_Momentum(Horizontal=0, Vertical=-1.2)
+		Set_Frame_Duration(Speed=0.166)
+		FRAME(Frames=27)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=28)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x13, Damage=12, Angle=0x113, KBG=0x50, WBKB=0x0, BKB=0x32, Size=4, X=0, Y=4.5, Z=0, Effect=0x0, Trip=0, Hitlag=2, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x2, Direct/Indirect=0x1, Type=0x1)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x13, Damage=10, Angle=0x46, KBG=0x32, WBKB=0x0, BKB=0x32, Size=7, X=0, Y=-1, Z=0, Effect=0xB, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x1, X2=0, Y2=4, Z2=0)
+		FRAME(Frames=30)
+		Remove_Hitbox(ID=0x0)
+		FRAME(Frames=32)
+		Remove_All_Hitboxes()
+		Set_Frame_Duration(Speed=3)
+		FRAME(Frames=34)
+		Set_Frame_Duration(Speed=0.8)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x529D842D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x529D842D)
+		Script_End()
+	}
+
+}

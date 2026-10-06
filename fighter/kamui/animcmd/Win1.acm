@@ -1,0 +1,28 @@
+MoveDef Win1
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=20)
+		PLAY_SE_NO_3D(unknown=0xC9A0022)
+		FRAME(Frames=24)
+		PLAY_SE_NO_3D(unknown=0xC9B005F)
+		FRAME(Frames=39)
+		PLAY_SE_NO_3D(unknown=0xC9B006D)
+		FRAME(Frames=70)
+		PLAY_SE_NO_3D(unknown=0xC9B006E)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

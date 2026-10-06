@@ -1,0 +1,42 @@
+MoveDef 0xFC753CE8
+{
+	Main()
+	{
+		FRAME(Frames=25)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x9, Damage=8, Angle=0x169, KBG=0x64, WBKB=0x5A, BKB=0x0, Size=5, X=7, Y=-0.6, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x9, Damage=8, Angle=0x169, KBG=0x64, WBKB=0x5A, BKB=0x0, Size=4, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x8, Damage=8, Angle=0x169, KBG=0x64, WBKB=0x5A, BKB=0x0, Size=3.5, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x3, Part=0x0, Bone=0x5, Damage=6, Angle=0x169, KBG=0x64, WBKB=0x5A, BKB=0x0, Size=4, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		WAIT(Frames=4)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=12)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x17, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=18)
+		Graphic_Effect2(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=20)
+		Graphic_Effect2(Graphic=0x1000090, Bone=0x0, X=0, Y=5, Z=6, XRot=0, YRot=20, ZRot=150, Size=1.1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x8220004)
+		WAIT(Frames=15)
+		Sound_Effect(SFX=0x822000F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=29)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		Script_End()
+	}
+
+}

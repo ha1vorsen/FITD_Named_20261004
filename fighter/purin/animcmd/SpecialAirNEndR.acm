@@ -1,0 +1,21 @@
+MoveDef SpecialAirNEndR
+{
+	Main()
+	{
+		JUMP(Hash=0xA0C5CCBF)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

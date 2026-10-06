@@ -1,0 +1,40 @@
+MoveDef SpecialHiStart_C2
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=8)
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=16)
+		Set_Frame_Duration(Speed=0.25)
+		FRAME(Frames=32)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=27)
+		Graphic_Effect7(Graphic=0x3110004, Bone=0x0, X=0, Y=10, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0, Unknown=0x42480000)
+		FRAME(Frames=45)
+		Graphic_Effect7(Graphic=0x3110004, Bone=0x0, X=0, Y=10, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0, Unknown=0x42480000)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=16)
+		PLAY_SE_REMAIN(unknown=0x13003E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=35)
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,28 @@
+MoveDef SpecialAirN_C3
+{
+	Main()
+	{
+		FRAME(Frames=16)
+		ON_FLAG(Variable=LA-Flag[122])
+		FRAME(Frames=40)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x7EC39C7F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x7EC39C7F)
+		Script_End()
+	}
+
+}

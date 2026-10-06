@@ -1,0 +1,36 @@
+MoveDef 0x950E7717
+{
+	Main()
+	{
+		JUMP(Hash=0x42D4869E)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=11)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x3030003, GFXLeft=0x303000F, Bone=0x0, X=0x0, Y=0x41000000, Z=0x41100000, XRot=0x0, YRot=0x0, ZRot=0x0, Size=0x3F800000, Terminate=0x1, unknown=0x0)
+		WAIT(Frames=1)
+		External_Graphic(Graphic=0x3030004, Bone=0x17, X=0, Y=8, Z=0, XRot=180, YRot=2E-05, ZRot=-180, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x42D4869E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x4)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=10)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		FRAME(Frames=12)
+		FRAME(Frames=13)
+		FRAME(Frames=23)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,28 @@
+MoveDef 0x5556E40A
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=25)
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=39)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x60088)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

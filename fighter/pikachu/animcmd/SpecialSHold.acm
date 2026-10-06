@@ -1,0 +1,40 @@
+MoveDef SpecialSHold
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		External_Graphic(Graphic=0x30A000A, Bone=0x3, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=-4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=4, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=30)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		IS_FLAG(Variable=RA-Flag[21])
+		True(Offset=0x4){
+		}
+		Else(Offset=0xC){
+		    FRAME(Frames=2)
+		    Transient_Sound_Effect(SFX=0x390003)
+		    WAIT(Frames=1)
+		    Transient_Sound_Effect(SFX=0xC004B)
+		    Transient_Sound_Effect(SFX=0xC0072)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

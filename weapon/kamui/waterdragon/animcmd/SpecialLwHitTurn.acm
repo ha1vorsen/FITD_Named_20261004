@@ -1,0 +1,23 @@
+MoveDef SpecialLwHitTurn
+{
+	Main()
+	{
+		JUMP(Hash=0x16E97B17)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x16E97B17)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

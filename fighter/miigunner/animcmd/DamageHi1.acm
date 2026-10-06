@@ -1,0 +1,24 @@
+MoveDef DamageHi1
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=8)
+		unk_C7B586AF(unknown=-30, unknown=30, unknown=4)
+		FRAME(Frames=10)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

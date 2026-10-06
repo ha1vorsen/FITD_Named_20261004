@@ -1,0 +1,86 @@
+MoveDef AttackLw4
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		EXECUTE(Unknown=9)
+		ON_FLAG(Variable=RA-Flag[27])
+		IS_FLAG(Variable=RA-Flag[28])
+		True(Offset=0x4){
+		    GENERATE_ARTICLE(ID=0x2)
+		}
+		FRAME(Frames=11)
+		unk_1B41048C(unknown=0x2, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0xA, unknown=0x3, unknown=0xA, unknown=0x0, unknown=0x0)
+		unk_F7B97AC1(unknown=0x3, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0xA)
+		FRAME(Frames=20)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x0, KBG=0x64, WBKB=0x14, BKB=0x0, Size=4, X=0, Y=3, Z=7, Effect=0x0, Trip=0, Hitlag=0.3, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x6)
+		unk_8B925A6C(unknown=0x0)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=28)
+		ATK_POWER_MUL_STATUS(unknown=0x3F800000)
+		ON_FLAG(Variable=LA-Flag[133])
+		ON_FLAG(Variable=LA-Flag[134])
+		ON_FLAG(Variable=LA-Flag[135])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		Graphic_Effect2(Graphic=0x3380009, Bone=0x0, X=-1, Y=13, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x6, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=20)
+		Int_Var_Compare(Variable=LA-Int[172], Method=0x4, Value=0x2)
+		True(Offset=0x18){
+		    EFFECT_COLOR(Graphic=0x3380014, Bone=0x0, unknown=5, unknown=0, unknown=0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=1, unknown=0, unknown=0, unknown=0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=25, unknown=178, unknown=382)
+		}
+		Else(Offset=0x16){
+		    EFFECT_COLOR(Graphic=0x3380014, Bone=0x0, unknown=5, unknown=0, unknown=0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=1, unknown=0, unknown=0, unknown=0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=382, unknown=76, unknown=127)
+		}
+		Graphic_Effect3(Graphic=0x0, Bone=0x0, X=5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0xC910025)
+		FRAME(Frames=14)
+		Float_Var_Compare(Variable=RA-Float[0], Method=0x4, Value=1)
+		True(Offset=0x6){
+		    Low_Voice_Clip(unknown=0x80000013)
+		}
+		Else(Offset=0x4){
+		    Sound_Effect(SFX=0xCA1000F)
+		}
+		FRAME(Frames=22)
+		FRAME(Frames=65)
+		Sound_Effect2(SFX=0xC910003)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_F6218798(unknown=0x12, unknown=0xBF800000, unknown=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=3)
+		SLOPE(unknown=0x2)
+		FRAME(Frames=9)
+		EXECUTE(Unknown=9)
+		IS_FLAG(Variable=RA-Flag[28])
+		True(Offset=0x4){
+		    SLOPE(unknown=0x2)
+		}
+		FRAME(Frames=18)
+		FRAME(Frames=19)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=23)
+		FRAME(Frames=26)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=68)
+		unk_F6218798(unknown=0x1E, unknown=0x0, unknown=0x1)
+		Script_End()
+	}
+
+}

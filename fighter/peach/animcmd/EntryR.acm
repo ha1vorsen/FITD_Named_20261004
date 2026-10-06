@@ -1,0 +1,26 @@
+MoveDef EntryR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x30E0004, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		PLAY_SE_REMAIN(unknown=0x110066)
+		WAIT(Frames=59)
+		Sound_Effect(SFX=0x440008)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

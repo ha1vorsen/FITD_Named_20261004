@@ -1,0 +1,56 @@
+MoveDef DownAttackU
+{
+	Main()
+	{
+		FRAME(Frames=18)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=7, Angle=0x30, KBG=0x30, WBKB=0x0, BKB=0x50, Size=6.5, X=0, Y=6.5, Z=-19, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x8, SFXLevel=0x2, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, X2=0, Y2=6.5, Z2=-4.5)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=23)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=7, Angle=0x30, KBG=0x30, WBKB=0x0, BKB=0x50, Size=6.5, X=0, Y=6.5, Z=19, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x8, SFXLevel=0x2, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, X2=0, Y2=6.5, Z2=5.5)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=15)
+		Graphic_Effect7(Graphic=0x3040007, Bone=0x0, X=-5, Y=5, Z=-3, XRot=55, YRot=90, ZRot=-120, Size=1.6, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1, Unknown=0x42700000)
+		Graphic_Effect7(Graphic=0x3040007, Bone=0x0, X=5, Y=5, Z=-3, XRot=-125, YRot=90, ZRot=-120, Size=1.6, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1, Unknown=0x42700000)
+		FRAME(Frames=17)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=-5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=18)
+		Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=0, Y=7, Z=-20, XRot=0, YRot=0, ZRot=0, Size=1.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		FRAME(Frames=21)
+		Graphic_Effect7(Graphic=0x3040007, Bone=0x0, X=-5, Y=5, Z=3, XRot=115, YRot=-90, ZRot=-120, Size=1.6, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1, Unknown=0x42700000)
+		Graphic_Effect7(Graphic=0x3040007, Bone=0x0, X=5, Y=5, Z=3, XRot=-65, YRot=-90, ZRot=-120, Size=1.6, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1, Unknown=0x42700000)
+		FRAME(Frames=23)
+		Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=0, Y=7, Z=20, XRot=0, YRot=0, ZRot=0, Size=1.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		Graphic_Effect(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=5, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=47)
+		Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=9)
+		Sound_Effect(SFX=0x7005C)
+		FRAME(Frames=20)
+		Sound_Effect(SFX=0x7005C)
+		FRAME(Frames=23)
+		Sound_Effect(SFX=0x7006D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_040FD56E(unknown=0x1, unknown=0x6, unknown=0x1)
+		FRAME(Frames=12)
+		FRAME(Frames=43)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		Script_End()
+	}
+
+}

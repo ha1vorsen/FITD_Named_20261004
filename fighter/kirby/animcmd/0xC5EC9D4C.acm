@@ -1,0 +1,27 @@
+MoveDef 0xC5EC9D4C
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=-5, Y=7, Z=-0.5, XRot=0, YRot=0, ZRot=0, Size=0.85, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x527E0E58)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=28)
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

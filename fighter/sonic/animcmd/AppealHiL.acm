@@ -1,0 +1,35 @@
+MoveDef AppealHiL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Transient_Sound_Effect(SFX=0x5D000E)
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0x2A0065)
+		WAIT(Frames=16)
+		Sound_Effect(SFX=0x2A002A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=2)
+		SLOPE(unknown=0x2)
+		FRAME(Frames=13)
+		SLOPE(unknown=0x0)
+		FRAME(Frames=26)
+		FRAME(Frames=76)
+		Slope_Full(unknown=0x6, unknown=0x5)
+		Script_End()
+	}
+
+}

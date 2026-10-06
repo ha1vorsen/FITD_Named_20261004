@@ -1,0 +1,31 @@
+MoveDef SpecialAirLw2_C3
+{
+	Main()
+	{
+		JUMP(Hash=0x6FC21055)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=6)
+		External_Graphic(Graphic=0x32A0003, Bone=0x0, X=0, Y=2, Z=9, XRot=340, YRot=0, ZRot=0, Size=1.6, Terminate=0x1)
+		FRAME(Frames=36)
+		Terminate_Graphic_Effect(Graphic=0x32A0003, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Transient_Sound_Effect(SFX=0x24C00A8)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x6FC21055)
+		Script_End()
+	}
+
+}

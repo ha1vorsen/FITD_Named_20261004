@@ -1,0 +1,37 @@
+MoveDef SpecialNStart_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		Graphic_Effect2(Graphic=0x1000008, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Color_Overlay(Red=245, Green=145, Blue=145, Alpha=100)
+		WAIT(Frames=1)
+		Color_Overlay(Red=255, Green=137, Blue=137, Alpha=150)
+		Change_Overlay(Transition=20, Red=0, Green=0, Blue=0, Alpha=0)
+		WAIT(Frames=20)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x10005F)
+		WAIT(Frames=19)
+		PLAY_SE_REMAIN(unknown=0x10006A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=21)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		Script_End()
+	}
+
+}

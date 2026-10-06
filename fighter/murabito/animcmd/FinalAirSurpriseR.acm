@@ -1,0 +1,25 @@
+MoveDef FinalAirSurpriseR
+{
+	Main()
+	{
+		JUMP(Hash=0xDF618104)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xDF618104)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xDF618104)
+		Script_End()
+	}
+
+}

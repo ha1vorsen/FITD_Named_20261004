@@ -1,0 +1,22 @@
+MoveDef 0x3B35ACF1 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=30)
+		PLAY_SE_NO_3D(unknown=0x4B004E)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

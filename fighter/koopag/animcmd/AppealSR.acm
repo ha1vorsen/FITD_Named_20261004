@@ -1,0 +1,58 @@
+MoveDef AppealSR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=33)
+		Graphic_Effect2(Graphic=0x30F0008, Bone=0x13, X=-10, Y=4, Z=0, XRot=0, YRot=0, ZRot=0, Size=4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=56)
+		Graphic_Effect2(Graphic=0x30F0008, Bone=0x13, X=-10, Y=4, Z=0, XRot=0, YRot=0, ZRot=0, Size=4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=72)
+		Graphic_Effect2(Graphic=0x30F0008, Bone=0x13, X=-10, Y=4, Z=0, XRot=0, YRot=0, ZRot=0, Size=4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=84)
+		Graphic_Effect2(Graphic=0x30F0008, Bone=0x13, X=-10, Y=4, Z=0, XRot=0, YRot=0, ZRot=0, Size=4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=109)
+		Graphic_Effect2(Graphic=0x30F0008, Bone=0x13, X=-10, Y=4, Z=0, XRot=0, YRot=0, ZRot=0, Size=4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=29)
+		Sound_Effect(SFX=0x6E00047)
+		FRAME(Frames=33)
+		Sound_Effect(SFX=0x8AA0033)
+		FRAME(Frames=48)
+		Sound_Effect(SFX=0x6E00047)
+		FRAME(Frames=54)
+		Sound_Effect(SFX=0x8AA0033)
+		FRAME(Frames=64)
+		Sound_Effect(SFX=0x6E00048)
+		FRAME(Frames=69)
+		Sound_Effect(SFX=0x8AA0033)
+		FRAME(Frames=79)
+		Sound_Effect(SFX=0x6E00048)
+		FRAME(Frames=85)
+		Sound_Effect(SFX=0x8AA0033)
+		FRAME(Frames=102)
+		Sound_Effect(SFX=0x6E00048)
+		FRAME(Frames=107)
+		Sound_Effect(SFX=0x8AA0033)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=33)
+		FRAME(Frames=53)
+		FRAME(Frames=68)
+		FRAME(Frames=85)
+		FRAME(Frames=107)
+		Script_End()
+	}
+
+}

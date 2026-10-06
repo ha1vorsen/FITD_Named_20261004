@@ -1,0 +1,34 @@
+MoveDef SpecialHi
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    External_Graphic(Graphic=0x32D000A, Bone=0x3EC, X=4, Y=-7, Z=0, XRot=0, YRot=0, ZRot=205, Size=0.9, Terminate=0x1)
+		    WAIT(Frames=21)
+		    Goto(Offset=-13)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Set_Loop(Iterations=13){
+		    Sound_Effect(SFX=0x7650051)
+		    WAIT(Frames=6)
+		    Sound_Effect(SFX=0x7650039)
+		    WAIT(Frames=6)
+		    Goto(Offset=-8)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

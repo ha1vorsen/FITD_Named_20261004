@@ -1,0 +1,29 @@
+MoveDef LandingAirF
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xBB31D589)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect3(SFX=0x7680012)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x1)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=24)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		Script_End()
+	}
+
+}

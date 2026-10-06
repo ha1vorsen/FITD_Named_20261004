@@ -1,0 +1,21 @@
+MoveDef CatchAttack
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=10)
+		Script_End()
+	}
+
+}

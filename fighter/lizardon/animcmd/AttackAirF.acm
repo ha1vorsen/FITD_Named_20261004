@@ -1,0 +1,50 @@
+MoveDef AttackAirF
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=7)
+		ATK_RESERVE(ID=0x0, Bone=0x10, X=7.5, Y=0, Z=0.5)
+		ATK_RESERVE(ID=0x1, Bone=0x10, X=0, Y=0, Z=0)
+		ATK_RESERVE(ID=0x2, Bone=0xF, X=0, Y=0, Z=0)
+		ATK_REFERENCE_NODE(Unknown=0xD, Unknown=0xFFFFFFFF)
+		FRAME(Frames=8)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x10, Damage=12, Angle=0x169, KBG=0x5C, WBKB=0x0, BKB=0x23, Size=4.6, X=7.5, Y=0, Z=0.5, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x10, Damage=12, Angle=0x169, KBG=0x5C, WBKB=0x0, BKB=0x23, Size=4, X=0, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x2, Part=0x0, Bone=0xF, Damage=12, Angle=0x169, KBG=0x5C, WBKB=0x0, BKB=0x23, Size=3, X=0, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		FRAME(Frames=9)
+		ATK_RESERVE(ID=0x0, Bone=0x10, X=7.5, Y=0, Z=0.5)
+		ATK_REFERENCE_NODE(Unknown=0xD, Unknown=0xFFFFFFFF)
+		FRAME(Frames=10)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x10, Damage=13, Angle=0x22, KBG=0x61, WBKB=0x0, BKB=0x20, Size=4.8, X=7.5, Y=0, Z=0.5, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		FRAME(Frames=13)
+		Remove_All_Hitboxes()
+		FRAME(Frames=35)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x0, X=0, Y=10, Z=20, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=10)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x321000E, GFXLeft=0x321000E, Bone=0x0, X=0x40A00000, Y=0x40E00000, Z=0x41280000, XRot=0xC0400000, YRot=0xC2200000, ZRot=0x436B0000, Size=0x3FD9999A, Terminate=0x1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Sound_Effect(SFX=0x200061)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=6)
+		Script_End()
+	}
+
+}

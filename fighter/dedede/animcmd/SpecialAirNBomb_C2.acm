@@ -1,0 +1,28 @@
+MoveDef SpecialAirNBomb_C2
+{
+	Main()
+	{
+		JUMP(Hash=0xF8E6BC56)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=13)
+		PLAY_SE_REMAIN(unknown=0x61000B)
+		WAIT(Frames=10)
+		PLAY_SE_REMAIN(unknown=0x4F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xF8E6BC56)
+		Script_End()
+	}
+
+}

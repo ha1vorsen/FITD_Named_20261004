@@ -1,0 +1,24 @@
+MoveDef 0x9C471F60
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		Fire_Weapon()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xB4589A21)
+		Script_End()
+	}
+
+}

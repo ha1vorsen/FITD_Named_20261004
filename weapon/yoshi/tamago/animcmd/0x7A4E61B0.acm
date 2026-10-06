@@ -1,0 +1,23 @@
+MoveDef 0x7A4E61B0
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Sword_Trace(TraceID=0x9B, BlurLen=1.681558E-44, Bone1=0x0, X=0, Y=-5, Z=0, Bone2=0x0, X=0, Y=5, Z=0, Anchored=0x1, Graphic=0x0, Bone3=0x0, X=0, Y=0, Z=0, RotX=0.00013, RotY=-7E-05, RotZ=0.00011, Length=1)
+		FRAME(Frames=36)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

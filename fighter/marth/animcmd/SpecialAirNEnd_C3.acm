@@ -1,0 +1,47 @@
+MoveDef SpecialAirNEnd_C3
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		SET_LIMIT_SPEED_EX(Horizontal=2.4, Vertical=0)
+		Add_Momentum(Horizontal=2.4, Vertical=0.5)
+		FRAME(Frames=8)
+		ATK_REFERENCE_NODE(Unknown=0x0, Unknown=0x2)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=7, Angle=0x169, KBG=0x50, WBKB=0x0, BKB=0x3C, Size=3, X=0, Y=8.5, Z=8, Effect=0x19, Trip=0, Hitlag=0, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0xA, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=8.5, Z2=27)
+		FRAME(Frames=10)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=6, Angle=0x169, KBG=0x50, WBKB=0x0, BKB=0x3C, Size=3, X=0, Y=8.5, Z=8, Effect=0x19, Trip=0, Hitlag=0, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x5, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=8.5, Z2=21)
+		FRAME(Frames=14)
+		SET_LIMIT_SPEED_EX(Horizontal=2, Vertical=0)
+		FRAME(Frames=22)
+		Set_Frame_Duration(Speed=2)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=4, Angle=0x169, KBG=0x3C, WBKB=0x0, BKB=0x3C, Size=3, X=0, Y=8.5, Z=8, Effect=0x19, Trip=0, Hitlag=0, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=8.5, Z2=21)
+		FRAME(Frames=26)
+		Remove_All_Hitboxes()
+		SET_LIMIT_SPEED_EX(Horizontal=0.8, Vertical=0)
+		FRAME(Frames=30)
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=40)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xE23E4783)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0x160094)
+		Script_End()
+	}
+
+	Expression()
+	{
+		CALL(Hash=0xE23E4783)
+		Script_End()
+	}
+
+}

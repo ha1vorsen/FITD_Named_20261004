@@ -1,0 +1,27 @@
+MoveDef FinalAirHit
+{
+	Main()
+	{
+		JUMP(Hash=0x2F47F85C)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x2F47F85C)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x2F47F85C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x2F47F85C)
+		Script_End()
+	}
+
+}

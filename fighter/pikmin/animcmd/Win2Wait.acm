@@ -1,0 +1,24 @@
+MoveDef Win2Wait
+{
+	Main()
+	{
+		IS_EXIST_ARTICLE(Unknown=0x3)
+		True(Offset=0x5){
+		    Set_Anchored_Article_Action(Article=0x3, Action=0x1)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,60 @@
+MoveDef SpecialAirNMax
+{
+	Main()
+	{
+		FRAME(Frames=17)
+		Set_Armor(State=0x1, Threshold=0)
+		FRAME(Frames=18)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x11, Damage=15, Angle=0x50, KBG=0x50, WBKB=0x0, BKB=0x28, Size=5.7, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x10, Damage=15, Angle=0x50, KBG=0x50, WBKB=0x0, BKB=0x28, Size=4, X=-1, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x2, Part=0x0, Bone=0xF, Damage=15, Angle=0x50, KBG=0x50, WBKB=0x0, BKB=0x28, Size=3, X=-1.5, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		FRAME(Frames=19)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x10, Damage=25, Angle=0x169, KBG=0x50, WBKB=0x0, BKB=0xA, Size=6, X=8, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x10, Damage=25, Angle=0x169, KBG=0x50, WBKB=0x0, BKB=0xA, Size=5, X=-1, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x2, Part=0x0, Bone=0xF, Damage=25, Angle=0x169, KBG=0x50, WBKB=0x0, BKB=0xA, Size=4, X=-1.5, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x3, Part=0x0, Bone=0xC, Damage=20, Angle=0x169, KBG=0x32, WBKB=0x0, BKB=0xA, Size=3, X=1, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		FRAME(Frames=21)
+		Set_Armor(State=0x0, Threshold=0)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		External_Graphic(Graphic=0x3040002, Bone=0x0, X=0, Y=0, Z=-8, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Set_Loop(Iterations=3){
+		    WAIT(Frames=4)
+		    Graphic_Effect2(Graphic=0x100000F, Bone=0x18, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=5, RandomY=5, RandomZ=5, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    Goto(Offset=-19)
+		}
+		FRAME(Frames=13)
+		Color_Overlay(Red=255, Green=255, Blue=128, Alpha=160)
+		FRAME(Frames=14)
+		Change_Overlay(Transition=5, Red=255, Green=255, Blue=128, Alpha=0)
+		FRAME(Frames=19)
+		Terminate_Overlays()
+		FRAME(Frames=21)
+		External_Graphic(Graphic=0x3040003, Bone=0x0, X=0, Y=0, Z=-8, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x8A14571B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=2)
+		Slope_Full(unknown=0x2, unknown=0x5)
+		FRAME(Frames=17)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		FRAME(Frames=19)
+		QUAKE(unknown=0x4)
+		Script_End()
+	}
+
+}

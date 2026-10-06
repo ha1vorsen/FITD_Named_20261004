@@ -1,0 +1,26 @@
+MoveDef 0x044DA8FC
+{
+	Main()
+	{
+		JUMP(Hash=0x99E49994)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		unk_C7B586AF(unknown=0, unknown=30, unknown=0)
+		FRAME(Frames=30)
+		unk_C7B586AF(unknown=0, unknown=30, unknown=8)
+		Script_End()
+	}
+
+}

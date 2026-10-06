@@ -1,0 +1,42 @@
+MoveDef CliffEscapeQuick
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=19)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=-4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=25)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x7620001)
+		FRAME(Frames=15)
+		Sound_Effect(SFX=0x7620031)
+		FRAME(Frames=16)
+		Sound_Effect(SFX=0x7620052)
+		FRAME(Frames=35)
+		Sound_Effect(SFX=0x7620009)
+		FRAME(Frames=46)
+		Sound_Effect(SFX=0x762002E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=17)
+		Slope_Full(unknown=0x1, unknown=0x3)
+		FRAME(Frames=20)
+		unk_040FD56E(unknown=0x1, unknown=0x6, unknown=0x1)
+		FRAME(Frames=37)
+		Slope_Full(unknown=0x6, unknown=0x6)
+		Script_End()
+	}
+
+}

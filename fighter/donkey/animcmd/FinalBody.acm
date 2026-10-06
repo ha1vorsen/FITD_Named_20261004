@@ -1,0 +1,27 @@
+MoveDef FinalBody
+{
+	Main()
+	{
+		CAM_RESET()
+		Set_Camera_Boundaries(Front=15, Back=-24, Top=5, Bottom=-5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=28)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

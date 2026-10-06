@@ -1,0 +1,35 @@
+MoveDef SpecialLwSplit
+{
+	Main()
+	{
+		Add/Set_Momentum(Horizontal=0, Vertical=0, Mode=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x31E0015, Bone=0x13, X=1, Y=1.2, Z=-1, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x31E0015, Bone=0x13, X=1, Y=1.2, Z=1, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic_Effect2(Graphic=0x31E000D, Bone=0x0, X=0, Y=0, Z=-2, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=16)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=3, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=-10, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		PLAY_SE_REMAIN(unknown=0x91F0006)
+		WAIT(Frames=1)
+		PLAY_SE_REMAIN(unknown=0x8670031)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x4)
+		FRAME(Frames=1)
+		Script_End()
+	}
+
+}

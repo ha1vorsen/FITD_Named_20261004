@@ -1,0 +1,36 @@
+MoveDef SpecialAirHiR_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x57AD05F5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x775633A7)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=27)
+		Transient_Sound_Effect(SFX=0x590002)
+		FRAME(Frames=30)
+		Sound_Effect(SFX=0x260084)
+		FRAME(Frames=74)
+		Sound_Effect(SFX=0x260084)
+		FRAME(Frames=77)
+		Transient_Sound_Effect(SFX=0x590003)
+		FRAME(Frames=123)
+		Sound_Effect(SFX=0x260084)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x775633A7)
+		Script_End()
+	}
+
+}

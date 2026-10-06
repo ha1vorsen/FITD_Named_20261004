@@ -1,0 +1,25 @@
+MoveDef FinalAirCheerL
+{
+	Main()
+	{
+		JUMP(Hash=0x629672A)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x629672A)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x629672A)
+		Script_End()
+	}
+
+}

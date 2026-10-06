@@ -1,0 +1,28 @@
+MoveDef SpecialAirNChargeStart
+{
+	Main()
+	{
+		JUMP(Hash=0xCE96E188)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xCE96E188)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x4A4002E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xCE96E188)
+		Script_End()
+	}
+
+}

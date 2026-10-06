@@ -1,0 +1,30 @@
+MoveDef FinalEnd
+{
+	Main()
+	{
+		Body_Collision(State=0x2)
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=71)
+		Terminate_Instance()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=30)
+		External_Graphic_Effect2(Graphic=0x3290014, Bone=0xC, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=25)
+		PLAY_SE_REMAIN(unknown=0x89D0004)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

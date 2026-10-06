@@ -1,0 +1,43 @@
+MoveDef Win3
+{
+	Main()
+	{
+		Remove_Article(Article=0x0)
+		Remove_Article(Article=0x2)
+		FRAME(Frames=34)
+		SET_INT(Value=0x3, Variable=RA-Int[2])
+		GENERATE_ARTICLE(ID=0x0)
+		FRAME(Frames=90)
+		SET_INT(Value=0x4, Variable=RA-Int[2])
+		GENERATE_ARTICLE(ID=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=22)
+		Sound_Effect(SFX=0x765003B)
+		FRAME(Frames=35)
+		Sound_Effect(SFX=0x765003C)
+		FRAME(Frames=48)
+		Sound_Effect(SFX=0x765003D)
+		FRAME(Frames=80)
+		Sound_Effect(SFX=0x765003B)
+		FRAME(Frames=90)
+		Sound_Effect(SFX=0x765003C)
+		FRAME(Frames=105)
+		Sound_Effect(SFX=0x765003D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

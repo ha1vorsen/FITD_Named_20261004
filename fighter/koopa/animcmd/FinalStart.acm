@@ -1,0 +1,53 @@
+MoveDef FinalStart
+{
+	Main()
+	{
+		Camera_Closeup(ZoomTime=0x14, Unknown=0x0, Distance=2, XRot=0, YRot=0)
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=51)
+		Normal_Camera()
+		CAM_RESET()
+		FRAME(Frames=61)
+		Set_Frame_Duration(Speed=1)
+		Terminate_Instance()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0xF){
+		    External_Graphic(Graphic=0x40F0000, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=1, Terminate=0x0)
+		}
+		Else(Offset=0xD){
+		    External_Graphic(Graphic=0x40F0000, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		}
+		FRAME(Frames=10)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0xF){
+		    External_Graphic(Graphic=0x30F000C, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=1, Terminate=0x1)
+		}
+		Else(Offset=0xD){
+		    External_Graphic(Graphic=0x30F000C, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		PLAY_SE_REMAIN(unknown=0x8BF0001)
+		WAIT(Frames=50)
+		PLAY_SE_REMAIN(unknown=0x8BF0002)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

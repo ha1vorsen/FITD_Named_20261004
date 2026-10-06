@@ -1,0 +1,24 @@
+MoveDef 0x20927885
+{
+	Main()
+	{
+		FRAME(Frames=8)
+		ON_FLAG(Variable=RA-Flag[13])
+		OFF_FLAG(Variable=RA-Flag[15])
+		FRAME(Frames=14)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,117 @@
+MoveDef 0xF9F07D86
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		OFF_FLAG(Variable=RA-Flag[19])
+		GENERATE_ARTICLE(ID=0x0)
+		FRAME(Frames=6)
+		ON_FLAG(Variable=RA-Flag[19])
+		GENERATE_ARTICLE(ID=0x0)
+		FRAME(Frames=17)
+		OFF_FLAG(Variable=RA-Flag[19])
+		GENERATE_ARTICLE(ID=0x0)
+		FRAME(Frames=21)
+		ON_FLAG(Variable=RA-Flag[19])
+		GENERATE_ARTICLE(ID=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		IS_FLAG(Variable=RA-Flag[16])
+		False(Offset=0x76){
+		    Terminate_Graphic_Effect(Graphic=0x3380024, unknown=0x0, unknown=0x0)
+		    FRAME(Frames=2)
+		    Graphic_Effect2(Graphic=0x3380023, Bone=0x18, X=0, Y=0.6, Z=3.2, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect3(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    FRAME(Frames=7)
+		    Graphic_Effect2(Graphic=0x3380023, Bone=0x3E8, X=0, Y=0.6, Z=3.2, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    FRAME(Frames=17)
+		    Graphic_Effect2(Graphic=0x3380023, Bone=0x18, X=0, Y=0.6, Z=3.2, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect3(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    FRAME(Frames=21)
+		    Graphic_Effect2(Graphic=0x3380023, Bone=0x3E8, X=0, Y=0.6, Z=3.2, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Else(Offset=0x86){
+		    External_Graphic(Graphic=0x3380025, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		    External_Graphic(Graphic=0x3380025, Bone=0x18, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		    FRAME(Frames=2)
+		    Graphic_Effect2(Graphic=0x3380028, Bone=0x18, X=0, Y=0.6, Z=3.2, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect3(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    FRAME(Frames=7)
+		    Graphic_Effect2(Graphic=0x3380028, Bone=0x3E8, X=0, Y=0.6, Z=3.2, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    FRAME(Frames=17)
+		    Graphic_Effect2(Graphic=0x3380028, Bone=0x18, X=0, Y=0.6, Z=3.2, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect3(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    FRAME(Frames=21)
+		    Graphic_Effect2(Graphic=0x3380028, Bone=0x3E8, X=0, Y=0.6, Z=3.2, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		FRAME(Frames=25)
+		ON_FLAG(Variable=RA-Flag[20])
+		Script_End()
+	}
+
+	Sound()
+	{
+		IS_FLAG(Variable=RA-Flag[16])
+		False(Offset=0x14){
+		    FRAME(Frames=2)
+		    Sound_Effect(SFX=0xC910050)
+		    FRAME(Frames=6)
+		    Sound_Effect(SFX=0xC9100A8)
+		    FRAME(Frames=17)
+		    Sound_Effect(SFX=0xC910050)
+		    FRAME(Frames=21)
+		    Sound_Effect(SFX=0xC9100A8)
+		}
+		Else(Offset=0x16){
+		    FRAME(Frames=2)
+		    Sound_Effect(SFX=0xC910055)
+		    FRAME(Frames=6)
+		    Sound_Effect(SFX=0xC910057)
+		    FRAME(Frames=17)
+		    Stop_Sound_Effect(SFX=0xC910055)
+		    Stop_Sound_Effect(SFX=0xC910057)
+		    Sound_Effect(SFX=0xC910056)
+		    FRAME(Frames=21)
+		    Sound_Effect(SFX=0xC910057)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=2)
+		IS_FLAG(Variable=RA-Flag[16])
+		True(Offset=0x6){
+		    QUAKE(unknown=0x3)
+		}
+		Else(Offset=0x2){
+		}
+		FRAME(Frames=6)
+		IS_FLAG(Variable=RA-Flag[16])
+		True(Offset=0x6){
+		    QUAKE(unknown=0x3)
+		}
+		Else(Offset=0x2){
+		}
+		FRAME(Frames=17)
+		IS_FLAG(Variable=RA-Flag[16])
+		True(Offset=0x6){
+		    QUAKE(unknown=0x3)
+		}
+		Else(Offset=0x2){
+		}
+		FRAME(Frames=21)
+		IS_FLAG(Variable=RA-Flag[16])
+		True(Offset=0x6){
+		    QUAKE(unknown=0x3)
+		}
+		Else(Offset=0x2){
+		}
+		Script_End()
+	}
+
+}

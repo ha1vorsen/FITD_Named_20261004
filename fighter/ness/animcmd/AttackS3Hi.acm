@@ -1,0 +1,41 @@
+MoveDef AttackS3Hi
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x8, Damage=10, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0xC, Size=3.6, X=0.7, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x9, Damage=10, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0xC, Size=4.8, X=2.9, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		WAIT(Frames=4)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=8)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x10){
+		    Graphic_Effect6(Graphic=0x30D000D, Bone=0x0, X=0, Y=4.7, Z=2.1, XRot=44, YRot=-34, ZRot=131, Size=0.9, Terminate=0x1, Unknown=0x42700000)
+		}
+		Else(Offset=0xE){
+		    Graphic_Effect6(Graphic=0x30D000D, Bone=0x0, X=-2, Y=5.5, Z=2.2, XRot=64, YRot=-43, ZRot=107, Size=0.9, Terminate=0x1, Unknown=0x42700000)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x8376AD51)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x2)
+		FRAME(Frames=5)
+		FRAME(Frames=18)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		Script_End()
+	}
+
+}

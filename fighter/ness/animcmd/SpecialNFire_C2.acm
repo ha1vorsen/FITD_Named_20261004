@@ -1,0 +1,33 @@
+MoveDef SpecialNFire_C2
+{
+	Main()
+	{
+		FRAME(Frames=24)
+		Set_Frame_Duration(Speed=10)
+		FRAME(Frames=25)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0xF007E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=9)
+		Slope_Full(unknown=0x0, unknown=0x3)
+		FRAME(Frames=14)
+		FRAME(Frames=19)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		Script_End()
+	}
+
+}

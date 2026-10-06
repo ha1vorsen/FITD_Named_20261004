@@ -1,0 +1,49 @@
+MoveDef AttackAirLw
+{
+	Main()
+	{
+		FRAME(Frames=20)
+		ON_FLAG(Variable=RA-Flag[13])
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=12, Angle=0x10E, KBG=0x46, WBKB=0x0, BKB=0x14, Size=3.9, X=0, Y=-2, Z=0, Effect=0x1A, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x10, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		WAIT(Frames=2)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=10, Angle=0x2D, KBG=0x46, WBKB=0x0, BKB=0x1E, Size=6, X=0, Y=-2, Z=0, Effect=0x1A, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x10, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		WAIT(Frames=4)
+		Remove_All_Hitboxes()
+		FRAME(Frames=50)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0xA, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=19)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x15){
+		    Graphic_Effect5(Graphic=0x30D0000, Bone=0x0, X=0, Y=-2, Z=0, XRot=90, YRot=0, ZRot=90, Size=1.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=360, RandomZRot=0, Terminate=0x1)
+		}
+		Else(Offset=0x13){
+		    Graphic_Effect5(Graphic=0x30D0000, Bone=0x0, X=0, Y=-2, Z=0, XRot=-90, YRot=0, ZRot=90, Size=1.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=360, RandomZRot=0, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0xF006F)
+		FRAME(Frames=15)
+		Low_Voice_Clip(unknown=0x800C0005)
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0xF005D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=18)
+		Script_End()
+	}
+
+}

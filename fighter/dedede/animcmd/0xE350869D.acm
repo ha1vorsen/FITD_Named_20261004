@@ -1,0 +1,29 @@
+MoveDef 0xE350869D
+{
+	Main()
+	{
+		Set_Armor(State=0x1, Threshold=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		CALL(Hash=0xF4ECDD4)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x69)
+		Script_End()
+	}
+
+	Expression()
+	{
+		START_CHARGE(unknown=0xBF800000, unknown=0xBF800000, unknown=0xBF800000, unknown=0x3DCCCCCD, unknown=0x3E4CCCCD, unknown=0xBF800000, unknown=0xFFFFFFFF)
+		SLOPE(unknown=0x4)
+		FRAME(Frames=4)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,34 @@
+MoveDef SpecialLw1Failure_C2
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		GENERATE_ARTICLE_ENABLE(Unknown=0x8)
+		FRAME(Frames=55)
+		Remove_Article(Article=0x8)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=9)
+		Sound_Effect(SFX=0x24C0035)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=2)
+		Model_Changer(ChangerID=0x0, ChangerState=0x2)
+		FRAME(Frames=55)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

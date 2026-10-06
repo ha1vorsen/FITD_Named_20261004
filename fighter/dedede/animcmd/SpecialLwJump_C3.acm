@@ -1,0 +1,28 @@
+MoveDef SpecialLwJump_C3
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		Add_Momentum(Horizontal=-0.3, Vertical=-0.3)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x126E356F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x2, ChangerState=0x1)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=15)
+		Script_End()
+	}
+
+}

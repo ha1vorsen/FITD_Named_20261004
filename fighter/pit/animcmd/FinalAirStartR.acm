@@ -1,0 +1,28 @@
+MoveDef FinalAirStartR
+{
+	Main()
+	{
+		JUMP(Hash=0x9AB1A775)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x12371432)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x9AB1A775)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		JUMP(Hash=0x12371432)
+		Script_End()
+	}
+
+}

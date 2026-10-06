@@ -1,0 +1,23 @@
+MoveDef SpecialSLanding_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x99EFE599)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x99EFE599)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

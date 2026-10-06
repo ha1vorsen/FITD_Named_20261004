@@ -1,0 +1,24 @@
+MoveDef DamageFlyN
+{
+	Main()
+	{
+		CALL(Hash=0x3FA99220)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		PLAY_FLY_VOICE(unknown=0x800E000D, unknown=0x800E000E)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,23 @@
+MoveDef FinalAirWait
+{
+	Main()
+	{
+		JUMP(Hash=0x1E9D7AE2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x1E9D7AE2)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

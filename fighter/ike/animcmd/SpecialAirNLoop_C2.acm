@@ -1,0 +1,27 @@
+MoveDef SpecialAirNLoop_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x28090B7F)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x28090B7F)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x28090B7F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x28090B7F)
+		Script_End()
+	}
+
+}

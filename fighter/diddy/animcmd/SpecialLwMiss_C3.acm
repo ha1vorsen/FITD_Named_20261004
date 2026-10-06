@@ -1,0 +1,30 @@
+MoveDef SpecialLwMiss_C3
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		ON_FLAG(Variable=RA-Flag[19])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=22)
+		Transient_Sound_Effect(SFX=0x1E0045)
+		WAIT(Frames=6)
+		STOP_SE_STATUS()
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

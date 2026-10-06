@@ -1,0 +1,25 @@
+MoveDef SpecialAirNShoot
+{
+	Main()
+	{
+		JUMP(Hash=0x135C86F7)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x135C86F7)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x135C86F7)
+		Script_End()
+	}
+
+}

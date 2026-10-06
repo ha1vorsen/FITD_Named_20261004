@@ -1,0 +1,46 @@
+MoveDef 0xF50B43AE
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x31B0005, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=5)
+		External_Graphic(Graphic=0x31B0006, Bone=0x18, X=0, Y=0, Z=0, XRot=-0.0002, YRot=2E-05, ZRot=0.14947, Size=1, Terminate=0x1)
+		Color_Overlay(Red=0, Green=0, Blue=0, Alpha=255)
+		WAIT(Frames=6)
+		Change_Overlay(Transition=30, Red=30, Green=0, Blue=0, Alpha=192)
+		WAIT(Frames=30)
+		Color_Overlay(Red=30, Green=0, Blue=0, Alpha=192)
+		WAIT(Frames=54)
+		Change_Overlay(Transition=15, Red=128, Green=0, Blue=0, Alpha=0)
+		WAIT(Frames=15)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Transient_Sound_Effect(SFX=0x1E0047)
+		Transient_Sound_Effect(SFX=0x1E0046)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		QUAKE(unknown=0x5)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=3)
+		SLOPE(unknown=0x4)
+		FRAME(Frames=101)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=107)
+		Article_Visibility(Article=0x0, State=0x0)
+		Script_End()
+	}
+
+}

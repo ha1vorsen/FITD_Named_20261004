@@ -1,0 +1,25 @@
+MoveDef SpecialAirNFood
+{
+	Main()
+	{
+		JUMP(Hash=0xCA2EB9EA)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xCA2EB9EA)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xCA2EB9EA)
+		Script_End()
+	}
+
+}

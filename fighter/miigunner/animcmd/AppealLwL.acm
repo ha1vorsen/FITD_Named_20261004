@@ -1,0 +1,26 @@
+MoveDef AppealLwL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xFF0A8538)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xFF0A8538)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=20)
+		Script_End()
+	}
+
+}

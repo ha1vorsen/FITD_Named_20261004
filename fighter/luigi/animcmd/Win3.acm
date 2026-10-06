@@ -1,0 +1,41 @@
+MoveDef Win3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		PLAY_SE_NO_3D(unknown=0x41002F)
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0xD006E)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0xD006E)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0xD006E)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0xD006E)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0xD006E)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0xD006E)
+		WAIT(Frames=8)
+		Sound_Effect(SFX=0xD006E)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0xD006E)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0xD006E)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0xD006E)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

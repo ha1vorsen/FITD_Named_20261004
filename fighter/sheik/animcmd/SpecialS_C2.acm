@@ -1,0 +1,31 @@
+MoveDef SpecialS_C2
+{
+	Main()
+	{
+		FRAME(Frames=13)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=16)
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=26)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=12)
+		Sound_Effect(SFX=0x13004B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x4)
+		Script_End()
+	}
+
+}

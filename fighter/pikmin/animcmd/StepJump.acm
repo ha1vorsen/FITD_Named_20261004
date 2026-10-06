@@ -1,0 +1,21 @@
+MoveDef StepJump
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0xAE)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

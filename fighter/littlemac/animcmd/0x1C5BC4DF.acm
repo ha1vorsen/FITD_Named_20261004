@@ -1,0 +1,36 @@
+MoveDef 0x1C5BC4DF : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=20)
+		PLAY_SE_NO_3D(unknown=0x76E0037)
+		FRAME(Frames=40)
+		PLAY_SE_NO_3D(unknown=0x763000D)
+		FRAME(Frames=56)
+		PLAY_SE_NO_3D(unknown=0x763000B)
+		FRAME(Frames=80)
+		PLAY_SE_NO_3D(unknown=0x763000F)
+		FRAME(Frames=99)
+		PLAY_SE_NO_3D(unknown=0x7630008)
+		FRAME(Frames=116)
+		PLAY_SE_NO_3D(unknown=0x7630018)
+		FRAME(Frames=132)
+		PLAY_SE_NO_3D(unknown=0x763000B)
+		FRAME(Frames=172)
+		PLAY_SE_NO_3D(unknown=0x7630022)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

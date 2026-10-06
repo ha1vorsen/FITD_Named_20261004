@@ -1,0 +1,70 @@
+MoveDef FinalVisualScene02
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x3)
+		Article_Visibility(Article=0x3, State=0x0)
+		Set_Anchored_Article_Action(Article=0x3, Action=0xA)
+		FRAME(Frames=71)
+		Visibility(State=0x0)
+		ON_FLAG(Variable=LA-Flag[126])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=45)
+		Graphic_Effect2(Graphic=0x4390003, Bone=0x0, X=-5, Y=0, Z=-6, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=58)
+		IS_FLAG(Variable=LA-Flag[18])
+		True(Offset=0x4){
+		}
+		Else(Offset=0x6){
+		    IS_FLAG(Variable=LA-Flag[19])
+		    True(Offset=0x4){
+		    }
+		    Else(Offset=0xE){
+		        CALL(Hash=0xFA8FFF59)
+		        CALL(Hash=0xFA8FFF59)
+		        FRAME(Frames=59)
+		        CALL(Hash=0xFA8FFF59)
+		        CALL(Hash=0xFA8FFF59)
+		        CALL(Hash=0xFA8FFF59)
+		    }
+		}
+		FRAME(Frames=71)
+		FRAME(Frames=90)
+		External_Graphic(Graphic=0x439000D, Bone=0x0, X=0, Y=18, Z=-6, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		EFFECT_REQ_LINE_CIRCLE_OFFSET(unknown=0x0, unknown=0x0, unknown=6, unknown=6, unknown=0x0, unknown=18, unknown=-5)
+		FRAME(Frames=115)
+		Terminate_Graphic_Effect(Graphic=0x439000D, unknown=0x0, unknown=0x0)
+		FRAME(Frames=118)
+		EFFECT_REMOVE_LINE_CIRCLE(unknown=0x4, unknown=0x1)
+		FRAME(Frames=120)
+		Terminate_Graphic_Effect(Graphic=0x4390002, unknown=0x0, unknown=0x0)
+		Terminate_Graphic_Effect(Graphic=0x4390004, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=47)
+		Sound_Effect(SFX=0xCB20003)
+		FRAME(Frames=54)
+		Sound_Effect(SFX=0xC9A0024)
+		FRAME(Frames=140)
+		Sound_Effect(SFX=0xCB20004)
+		FRAME(Frames=185)
+		Sound_Effect(SFX=0xCB20005)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=75)
+		FRAME(Frames=138)
+		FRAME(Frames=186)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,21 @@
+MoveDef SpecialAirSEndLoop_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Transient_Sound_Effect(SFX=0x2A004B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,22 @@
+MoveDef 0x2664BB33 : Unlisted
+{
+	Main()
+	{
+		Extended_Special_Hitbox(ID=0x9, Part=0x1, Bone=0x0, Damage=0.5, Angle=0x10E, KBG=0x0, WBKB=0x0, BKB=0x0, Size=2.5, X=0, Y=2, Z=-1, Effect=0x24, Trip=0, Hitlag=0, SDI=0, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x42, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=-73, Z2=-1)
+		unk_E2E96674(ID=0x9, unknown=10, unknown=4)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

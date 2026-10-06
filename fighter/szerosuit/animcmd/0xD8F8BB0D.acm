@@ -1,0 +1,48 @@
+MoveDef 0xD8F8BB0D : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=22)
+		Set_Frame_Duration(Speed=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=23)
+		SET_LIMIT_SPEED_EX(Horizontal=4, Vertical=0)
+		Add/Set_Momentum(Horizontal=4, Vertical=1, Mode=0x1)
+		Set_Frame_Duration(Speed=8)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1.2, Angle=0x1E, KBG=0x32, WBKB=0x32, BKB=0x0, Size=6, X=0, Y=8, Z=9.5, Effect=0x3, Trip=0, Hitlag=0.8, SDI=0, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x7, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x2, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=8, Z2=14)
+		Extended_Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=1.2, Angle=0xA, KBG=0x64, WBKB=0x50, BKB=0x0, Size=6, X=0, Y=8, Z=9.5, Effect=0x3, Trip=0, Hitlag=0.8, SDI=0, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x7, Ground/Air=0x2, Direct/Indirect=0x1, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x2, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=8, Z2=14)
+		Change_Hitbox_Size(ID=0x0, Size=5)
+		Change_Hitbox_Size(ID=0x1, Size=5)
+		FRAME(Frames=24)
+		Set_Frame_Duration(Speed=1)
+		Remove_Hitbox(ID=0x0)
+		Remove_Hitbox(ID=0x1)
+		Special_Hitbox(ID=0x2, Part=0x1, Bone=0x0, Damage=4, Angle=0x28, KBG=0x28, WBKB=0x0, BKB=0x5A, Size=7, X=0, Y=8, Z=14.5, Effect=0x5, Trip=0, Hitlag=2, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0xB, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=26)
+		Remove_All_Hitboxes()
+		SET_LIMIT_SPEED_EX(Horizontal=3, Vertical=0)
+		Add/Set_Momentum(Horizontal=2, Vertical=0, Mode=0x1)
+		FRAME(Frames=28)
+		Set_Frame_Duration(Speed=4)
+		FRAME(Frames=30)
+		Set_Frame_Duration(Speed=1)
+		SET_LIMIT_SPEED_EX(Horizontal=1.6, Vertical=0)
+		FRAME(Frames=40)
+		Set_Frame_Duration(Speed=1)
+		SET_LIMIT_SPEED_EX(Horizontal=1.2, Vertical=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,24 @@
+MoveDef 0xD7142142
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0xB7)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		Script_End()
+	}
+
+}

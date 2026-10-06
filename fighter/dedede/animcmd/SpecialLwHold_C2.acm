@@ -1,0 +1,41 @@
+MoveDef SpecialLwHold_C2
+{
+	Main()
+	{
+		Set_Armor(State=0x1, Threshold=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=-5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=15, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    Color_Overlay(Red=150, Green=150, Blue=150, Alpha=160)
+		    WAIT(Frames=2)
+		    Color_Overlay(Red=150, Green=150, Blue=150, Alpha=34)
+		    WAIT(Frames=2)
+		    Color_Overlay(Red=45, Green=45, Blue=45, Alpha=128)
+		    WAIT(Frames=2)
+		    Terminate_Overlays()
+		    WAIT(Frames=1)
+		    Goto(Offset=-41)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x2, ChangerState=0x1)
+		SLOPE(unknown=0x6)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+}

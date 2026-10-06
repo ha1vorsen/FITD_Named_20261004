@@ -1,0 +1,42 @@
+MoveDef AttackS3Lw
+{
+	Main()
+	{
+		Set_Bone_Intangibility(Bone=0x10, Mode=0x2)
+		Set_Bone_Intangibility(Bone=0xF, Mode=0x2)
+		FRAME(Frames=9)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x10, Damage=9, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0xA, Size=4.5, X=7.4, Y=0, Z=0, Effect=0x0, Trip=0.15, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x10, Damage=9, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0xA, Size=5, X=0, Y=0, Z=0, Effect=0x0, Trip=0.15, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x2, Part=0x0, Bone=0xF, Damage=9, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0xA, Size=3.2, X=-1, Y=0, Z=0, Effect=0x0, Trip=0.15, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		FRAME(Frames=12)
+		Remove_All_Hitboxes()
+		FRAME(Frames=26)
+		Undo_Bone_Collision(State=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=9)
+		Graphic_Effect3(Graphic=0x1000026, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=10)
+		Graphic_Effect7(Graphic=0x3040007, Bone=0x0, X=3, Y=14, Z=6.5, XRot=19, YRot=-38, ZRot=10, Size=1.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1, Unknown=0x42A00000)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Low_Voice_Clip(unknown=0x80060007)
+		Sound_Effect(SFX=0x7007A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

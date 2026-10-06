@@ -1,0 +1,23 @@
+MoveDef 0xC6FB4B9E
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		ON_FLAG(Variable=LA-Flag[6])
+		Script_End()
+	}
+
+	Sound()
+	{
+		PLAY_SE_REMAIN(unknown=0x120059)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

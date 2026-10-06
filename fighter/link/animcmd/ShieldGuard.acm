@@ -1,0 +1,21 @@
+MoveDef ShieldGuard
+{
+	Main()
+	{
+		ON_FLAG(Variable=LA-Flag[124])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,24 @@
+MoveDef DamageFlyRoll
+{
+	Main()
+	{
+		CALL(Hash=0x3FA99220)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=40)
+		PLAY_FLY_VOICE(unknown=0x80270005, unknown=0x80270006)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

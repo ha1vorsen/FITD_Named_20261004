@@ -1,0 +1,23 @@
+MoveDef FinalAir5wayUp
+{
+	Main()
+	{
+		JUMP(Hash=0xFF508B58)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xFF508B58)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

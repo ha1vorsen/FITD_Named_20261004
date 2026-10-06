@@ -1,0 +1,28 @@
+MoveDef SpecialAirHiWait1
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=3)
+		Set_Loop(Iterations=4){
+		    WAIT(Frames=6)
+		    Goto(Offset=-2)
+		}
+		Loop_Rest()
+		JUMP(Hash=0xE22C0075)
+		Script_End()
+	}
+
+}

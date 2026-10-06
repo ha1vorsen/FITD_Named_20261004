@@ -1,0 +1,33 @@
+MoveDef SpecialLw_C3
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x100000F, Bone=0x18, X=0, Y=0, Z=0, XRot=4E-05, YRot=1E-05, ZRot=6E-05, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Int_Compare(Type=0x0, Method=0x0, Value=341)
+		True(Offset=0x4){
+		    Sound_Effect(SFX=0x6DF0020)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,28 @@
+MoveDef SpecialAirHiTurnR_C3
+{
+	Main()
+	{
+		Add/Set_Momentum(Horizontal=0, Vertical=0.2, Mode=0x1)
+		Set_Armor(State=0x0, Threshold=0)
+		Undo_Bone_Collision(State=0x0)
+		FRAME(Frames=2)
+		Set_Frame_Duration(Speed=0.8)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=11)
+		Sound_Effect(SFX=0x60042)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

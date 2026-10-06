@@ -1,0 +1,22 @@
+MoveDef 0xDDFD2537
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		Model_Changer(ChangerID=0x7, ChangerState=0x3)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

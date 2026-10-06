@@ -1,0 +1,28 @@
+MoveDef 0x73D99A1C
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=17)
+		unk_01A5A27C(unknown=0xE006C, unknown=0xE006A)
+		FRAME(Frames=34)
+		unk_01A5A27C(unknown=0xE006A, unknown=0xE006C)
+		Loop_Rest()
+		JUMP(Hash=0x73D99A1C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=17)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,26 @@
+MoveDef 0x03B789CB
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		THROW_ITEM_OFFSET(Unknown=0, Unknown=0, Unknown=0x1, Unknown=0x0, Unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		FRAME(Frames=18)
+		Model_Changer(ChangerID=0x1, ChangerState=0x0)
+		Script_End()
+	}
+
+}

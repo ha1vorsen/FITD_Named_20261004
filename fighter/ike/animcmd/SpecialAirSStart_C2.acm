@@ -1,0 +1,27 @@
+MoveDef SpecialAirSStart_C2
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.8)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xFEA2FFF0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xFEA2FFF0)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xFEA2FFF0)
+		Script_End()
+	}
+
+}

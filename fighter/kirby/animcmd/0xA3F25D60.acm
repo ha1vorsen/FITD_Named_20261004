@@ -1,0 +1,26 @@
+MoveDef 0xA3F25D60
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x767002B)
+		WAIT(Frames=16)
+		Sound_Effect(SFX=0x8B60002)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xC2A3938)
+		Script_End()
+	}
+
+}

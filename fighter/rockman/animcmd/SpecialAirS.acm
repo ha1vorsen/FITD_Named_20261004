@@ -1,0 +1,45 @@
+MoveDef SpecialAirS
+{
+	Main()
+	{
+		FRAME(Frames=19)
+		IS_FLAG(Variable=RA-Flag[14])
+		False(Offset=0x4){
+		    GENERATE_ARTICLE_ENABLE(Unknown=0x1)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=7)
+		IS_FLAG(Variable=RA-Flag[14])
+		False(Offset=0xF){
+		    External_Graphic(Graphic=0x332001F, Bone=0x0, X=0, Y=7, Z=10, XRot=0, YRot=-90, ZRot=0, Size=0.62, Terminate=0x1)
+		}
+		Else(Offset=0x2){
+		}
+		FRAME(Frames=19)
+		IS_FLAG(Variable=RA-Flag[14])
+		False(Offset=0xF){
+		    External_Graphic(Graphic=0x332000F, Bone=0x0, X=0, Y=7.5, Z=11, XRot=0, YRot=-1E-05, ZRot=0, Size=1, Terminate=0x1)
+		}
+		Else(Offset=0xD){
+		    External_Graphic(Graphic=0x332000F, Bone=0x0, X=0, Y=7, Z=11, XRot=0, YRot=-1E-05, ZRot=0, Size=0.6, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x224117F6)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x224117F6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,24 @@
+MoveDef 0x104E2D56
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x40C0001, Bone=0x7D2, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=2)
+		Graphic_Effect2(Graphic=0x100003A, Bone=0x7D2, X=0, Y=0, Z=-10, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=3)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

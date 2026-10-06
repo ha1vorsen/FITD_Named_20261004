@@ -1,0 +1,31 @@
+MoveDef SpecialAirLw3Hit
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		Color_Overlay(Red=255, Green=255, Blue=255, Alpha=255)
+		WAIT(Frames=1)
+		Change_Overlay(Transition=4, Red=0, Green=255, Blue=255, Alpha=64)
+		WAIT(Frames=4)
+		Change_Overlay(Transition=6, Red=0, Green=0, Blue=255, Alpha=0)
+		WAIT(Frames=6)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x81C0062)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

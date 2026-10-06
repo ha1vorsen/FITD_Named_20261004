@@ -1,0 +1,25 @@
+MoveDef FinalAirHappyR
+{
+	Main()
+	{
+		JUMP(Hash=0x52FD706)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x52FD706)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x52FD706)
+		Script_End()
+	}
+
+}

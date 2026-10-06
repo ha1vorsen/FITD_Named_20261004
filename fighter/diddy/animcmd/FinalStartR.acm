@@ -1,0 +1,33 @@
+MoveDef FinalStartR
+{
+	Main()
+	{
+		JUMP(Hash=0x60BE9A16)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x60BE9A16)
+		Script_End()
+	}
+
+	Expression()
+	{
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		VIS_ATTACH_ITEM_GROUP(unknown=0x0, unknown=0x3)
+		SLOPE(unknown=0x6)
+		unk_EE37008F()
+		FRAME(Frames=12)
+		FRAME(Frames=39)
+		SLOPE(unknown=0x0)
+		FRAME(Frames=41)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,52 @@
+MoveDef AttackLw3
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		IS_EXIST_ARTICLE(Unknown=0x6)
+		False(Offset=0x7){
+		    SET_INT(Value=0x1, Variable=LA-Int[135])
+		    GENERATE_ARTICLE(ID=0x6)
+		}
+		FRAME(Frames=6)
+		Model_Changer(ChangerID=0x1, ChangerState=0x0)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=6, Angle=0x1E, KBG=0x7D, WBKB=0x0, BKB=0x28, Size=2.5, X=0, Y=1.5, Z=12, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x2, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x9, X2=0, Y2=1.5, Z2=18)
+		FRAME(Frames=7)
+		Extended_Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=1, Angle=0x5A, KBG=0x78, WBKB=0x0, BKB=0x46, Size=10.5, X=0, Y=4, Z=15, Effect=0x0, Trip=0, Hitlag=0, SDI=0, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x0, Ground/Air=0x2, Direct/Indirect=0x1, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x4, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x1, Flinchless=0x1, X2=0, Y2=9, Z2=15)
+		FRAME(Frames=12)
+		Remove_Hitbox(ID=0x0)
+		FRAME(Frames=20)
+		Remove_All_Hitboxes()
+		Article_Event(Value=0x6)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=7)
+		Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=-4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Sound_Effect(SFX=0x6DF0024)
+		WAIT(Frames=3)
+		Stop_Sound_Effect(SFX=0x6DF0024)
+		WAIT(Frames=2)
+		Sound_Effect(SFX=0x6DF0023)
+		WAIT(Frames=3)
+		Stop_Sound_Effect(SFX=0x6DF0023)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x1)
+		FRAME(Frames=4)
+		Script_End()
+	}
+
+}

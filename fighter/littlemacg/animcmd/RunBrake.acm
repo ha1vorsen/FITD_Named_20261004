@@ -1,0 +1,23 @@
+MoveDef RunBrake
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		ON_FLAG(Variable=RA-Flag[13])
+		OFF_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

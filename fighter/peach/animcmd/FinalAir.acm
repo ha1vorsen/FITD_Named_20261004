@@ -1,0 +1,32 @@
+MoveDef FinalAir
+{
+	Main()
+	{
+		JUMP(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x110021)
+		unk_687F9320(unknown=0x110021, unknown=0xB4)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		FRAME(Frames=2)
+		Script_End()
+	}
+
+}

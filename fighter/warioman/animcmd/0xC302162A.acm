@@ -1,0 +1,21 @@
+MoveDef 0xC302162A
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x390D2B49)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

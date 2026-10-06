@@ -1,0 +1,32 @@
+MoveDef SpecialAirHiEnd_C2
+{
+	Main()
+	{
+		JUMP(Hash=0xFFDEE741)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Terminate_Graphic_Effect(Graphic=0x30A0012, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		unk_AE994DAF(unknown=0x0)
+		FRAME(Frames=6)
+		unk_AE994DAF(unknown=0x1)
+		FRAME(Frames=7)
+		unk_AE994DAF(unknown=0x0)
+		FRAME(Frames=10)
+		unk_AE994DAF(unknown=0x1)
+		Script_End()
+	}
+
+}

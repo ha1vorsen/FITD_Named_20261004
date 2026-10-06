@@ -1,0 +1,25 @@
+MoveDef SpecialAirS2Hold
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xFF1DA5EC)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		Loop_Rest()
+		JUMP(Hash=0xDFE693BE)
+		Script_End()
+	}
+
+}

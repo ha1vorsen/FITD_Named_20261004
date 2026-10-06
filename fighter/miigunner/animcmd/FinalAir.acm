@@ -1,0 +1,26 @@
+MoveDef FinalAir
+{
+	Main()
+	{
+		SHOOT_EXIST_ARTICLE(unknown=0xC)
+		SHOOT_EXIST_ARTICLE(unknown=0xD)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		Loop_Rest()
+		JUMP(Hash=0xC9F566E6)
+		Script_End()
+	}
+
+}

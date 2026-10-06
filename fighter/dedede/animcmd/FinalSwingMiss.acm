@@ -1,0 +1,24 @@
+MoveDef FinalSwingMiss
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Body_Collision(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

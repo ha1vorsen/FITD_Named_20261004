@@ -1,0 +1,35 @@
+MoveDef 0xC01EFE58
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Graphic_Effect3(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=2)
+		Sword_Trace(TraceID=0xBE, BlurLen=5.605194E-45, Bone1=0x18, X=0, Y=0.5, Z=0, Bone2=0x18, X=0, Y=12.2, Z=0, Anchored=0x1, Graphic=0x3250001, Bone3=0x18, X=0, Y=0, Z=0, RotX=0, RotY=90, RotZ=90, Length=1)
+		FRAME(Frames=7)
+		External_Graphic(Graphic=0x3250007, Bone=0x0, X=-1E-05, Y=5.5, Z=12, XRot=0, YRot=0, ZRot=0, Size=0.9, Terminate=0x1)
+		Graphic_Effect3(Graphic=0x1000009, Bone=0x0, X=8, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=10)
+		Graphic_Effect2(Graphic=0x100007C, Bone=0x0, X=-1E-05, Y=5, Z=10, XRot=0, YRot=0, ZRot=0, Size=0.6, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=18)
+		Terminate_Sword_Glow(FadeTime=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0x761002E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

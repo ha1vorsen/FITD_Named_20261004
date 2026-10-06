@@ -1,0 +1,30 @@
+MoveDef 0x86A7CA4C
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=-10, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=10, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=12)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		Transient_Sound_Effect(SFX=0xBFC0044)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=1)
+		Script_End()
+	}
+
+}

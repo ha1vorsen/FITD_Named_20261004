@@ -1,0 +1,25 @@
+MoveDef SpecialAirLwCapture
+{
+	Main()
+	{
+		JUMP(Hash=0x4224A9FB)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x4224A9FB)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x4224A9FB)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

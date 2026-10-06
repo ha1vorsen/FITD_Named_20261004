@@ -1,0 +1,27 @@
+MoveDef 0x36E22AE0
+{
+	Main()
+	{
+		Set_Loop(Iterations=-1){
+		    Visibility(State=0x0)
+		    WAIT(Frames=2)
+		    Visibility(State=0x1)
+		    WAIT(Frames=2)
+		    Goto(Offset=-8)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

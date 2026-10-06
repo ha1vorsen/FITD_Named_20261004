@@ -1,0 +1,28 @@
+MoveDef 0xBC50C7F2
+{
+	Main()
+	{
+		FRAME(Frames=23)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=23)
+		Sound_Effect(SFX=0x81C0064)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=23)
+		Script_End()
+	}
+
+}

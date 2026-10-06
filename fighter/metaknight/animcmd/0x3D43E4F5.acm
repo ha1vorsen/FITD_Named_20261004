@@ -1,0 +1,28 @@
+MoveDef 0x3D43E4F5 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=29)
+		PLAY_SE_REMAIN(unknown=0x24D0011)
+		WAIT(Frames=10)
+		PLAY_SE_REMAIN(unknown=0x24D000F)
+		WAIT(Frames=20)
+		PLAY_SE_REMAIN(unknown=0x24D00A7)
+		WAIT(Frames=16)
+		PLAY_SE_NO_3D(unknown=0x60001B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,45 @@
+MoveDef SpecialNLoop_C2
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=17)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		Set_Loop(Iterations=-1){
+		    WAIT(Frames=2)
+		    EFFECT_FOLLOW_COLOR(unknown=0x3110002, unknown=0x18, unknown=0x40000000, unknown=0x0, unknown=0x3FC00000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3FC00000, unknown=0x0, unknown=0x437F0000, unknown=0x41F00000, unknown=0x41F00000)
+		    WAIT(Frames=8)
+		    Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=-7, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.6, RandomX=8, RandomY=0, RandomZ=8, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=16)
+		    Goto(Offset=-37)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x130076)
+		unk_687F9320(unknown=0x130076, unknown=0xA)
+		Loop_Rest()
+		JUMP(Hash=0x28090B7F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=1)
+		Loop_Rest()
+		JUMP(Hash=0x28090B7F)
+		Script_End()
+	}
+
+}

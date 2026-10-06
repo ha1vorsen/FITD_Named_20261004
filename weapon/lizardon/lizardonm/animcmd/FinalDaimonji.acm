@@ -1,0 +1,27 @@
+MoveDef FinalDaimonji
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=16)
+		GENERATE_ARTICLE(ID=0x0)
+		FRAME(Frames=30)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=17)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

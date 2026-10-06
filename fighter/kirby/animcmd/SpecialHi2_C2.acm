@@ -1,0 +1,58 @@
+MoveDef SpecialHi2_C2
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		Set_Frame_Duration(Speed=3)
+		FRAME(Frames=9)
+		Add_Momentum(Horizontal=0, Vertical=0.5)
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=13)
+		Set_Loop(Iterations=8){
+		    WAIT(Frames=0.5)
+		    CLR_SPEED_ALL()
+		    Goto(Offset=-3)
+		}
+		FRAME(Frames=17)
+		Add_Momentum(Horizontal=0, Vertical=-3)
+		Set_Frame_Duration(Speed=0.7)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3080009, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=5, ZRot=0, Size=1, Terminate=0x1)
+		Sword_Trace(TraceID=0xB7, BlurLen=7.006492E-45, Bone1=0x19, X=0, Y=2, Z=0.5, Bone2=0x19, X=0, Y=15.5, Z=0.5, Anchored=0x1, Graphic=0x0, Bone3=0x19, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		Sword_Trace(TraceID=0xB7, BlurLen=7.006492E-45, Bone1=0x19, X=0, Y=2, Z=0.5, Bone2=0x19, X=0, Y=15.5, Z=0.5, Anchored=0x1, Graphic=0x0, Bone3=0x19, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=4)
+		FRAME(Frames=6)
+		External_Graphic(Graphic=0x308000D, Bone=0x2, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=8)
+		Terminate_Sword_Glow(FadeTime=0x3)
+		Graphic_Effect3(Graphic=0x1000019, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=10)
+		FRAME(Frames=12)
+		FRAME(Frames=17)
+		Sword_Trace(TraceID=0xB7, BlurLen=7.006492E-45, Bone1=0x19, X=0, Y=3, Z=0.5, Bone2=0x19, X=0, Y=16, Z=0.3, Anchored=0x1, Graphic=0x0, Bone3=0x19, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=17)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x0, X=0, Y=-4, Z=16, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x3F0006)
+		Sound_Effect(SFX=0xA0056)
+		WAIT(Frames=23)
+		Sound_Effect(SFX=0xA0058)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

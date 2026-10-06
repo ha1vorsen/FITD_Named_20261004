@@ -1,0 +1,30 @@
+MoveDef 0x30C1D352
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		Color_Overlay(Red=255, Green=255, Blue=255, Alpha=140)
+		WAIT(Frames=1)
+		Color_Overlay(Red=255, Green=80, Blue=0, Alpha=200)
+		Change_Overlay(Transition=15, Red=0, Green=0, Blue=0, Alpha=0)
+		WAIT(Frames=15)
+		Terminate_Overlays()
+		FRAME(Frames=17)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

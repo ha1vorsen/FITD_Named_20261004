@@ -1,0 +1,52 @@
+MoveDef 0x3EB366D3
+{
+	Main()
+	{
+		JUMP(Hash=0x1E485081)
+		Script_End()
+	}
+
+	Effect()
+	{
+		IS_FLAG(Variable=RA-Flag[16])
+		False(Offset=0x54){
+		    Terminate_Graphic_Effect(Graphic=0x3380024, unknown=0x0, unknown=0x0)
+		    FRAME(Frames=2)
+		    Graphic_Effect2(Graphic=0x3380023, Bone=0xA, X=1.5, Y=0.7, Z=0, XRot=0, YRot=90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    FRAME(Frames=7)
+		    Graphic_Effect2(Graphic=0x3380023, Bone=0x6, X=1.5, Y=0.7, Z=0, XRot=0, YRot=90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    FRAME(Frames=17)
+		    Graphic_Effect2(Graphic=0x3380023, Bone=0xA, X=1.5, Y=0.7, Z=0, XRot=0, YRot=90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    FRAME(Frames=21)
+		    Graphic_Effect2(Graphic=0x3380023, Bone=0x6, X=1.5, Y=0.7, Z=0, XRot=0, YRot=90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Else(Offset=0x64){
+		    External_Graphic(Graphic=0x3380025, Bone=0xA, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		    External_Graphic(Graphic=0x3380025, Bone=0x6, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		    FRAME(Frames=2)
+		    Graphic_Effect2(Graphic=0x3380028, Bone=0xA, X=1.5, Y=0.7, Z=0, XRot=0, YRot=90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    FRAME(Frames=7)
+		    Graphic_Effect2(Graphic=0x3380028, Bone=0x6, X=1.5, Y=0.7, Z=0, XRot=0, YRot=90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    FRAME(Frames=17)
+		    Graphic_Effect2(Graphic=0x3380028, Bone=0xA, X=1.5, Y=0.7, Z=0, XRot=0, YRot=90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    FRAME(Frames=21)
+		    Graphic_Effect2(Graphic=0x3380028, Bone=0x6, X=1.5, Y=0.7, Z=0, XRot=0, YRot=90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		FRAME(Frames=25)
+		ON_FLAG(Variable=RA-Flag[20])
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x1E485081)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x1E485081)
+		Script_End()
+	}
+
+}

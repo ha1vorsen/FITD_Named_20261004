@@ -1,0 +1,40 @@
+MoveDef SpecialS_C3
+{
+	Main()
+	{
+		FRAME(Frames=12)
+		Set_Frame_Duration(Speed=3)
+		FRAME(Frames=15)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=21)
+		GENERATE_ARTICLE(ID=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=11)
+		Graphic_Effect2(Graphic=0x100001C, Bone=0x18, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=21)
+		Graphic_Effect(Graphic=0x1000026, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		PLAY_SE_REMAIN(unknown=0x3A0001)
+		Sound_Effect(SFX=0xF0049)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x4)
+		FRAME(Frames=21)
+		FRAME(Frames=19)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		Script_End()
+	}
+
+}

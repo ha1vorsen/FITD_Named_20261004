@@ -1,0 +1,54 @@
+MoveDef AttackS4
+{
+	Main()
+	{
+		FRAME(Frames=21)
+		ON_FLAG(Variable=RA-Flag[27])
+		FRAME(Frames=23)
+		ATK_RESERVE(ID=0x0, Bone=0x0, X=0, Y=5, Z=9)
+		ATK_RESERVE(ID=0x1, Bone=0x0, X=0, Y=5, Z=13)
+		ATK_REFERENCE_NODE(Unknown=0x15, Unknown=0xFFFFFFFF)
+		FRAME(Frames=24)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=16, Angle=0x169, KBG=0x6C, WBKB=0x0, BKB=0x1E, Size=6.2, X=0, Y=5, Z=9, Effect=0x2, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=16, Angle=0x169, KBG=0x62, WBKB=0x0, BKB=0x1E, Size=5.2, X=0, Y=5, Z=13, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=5, Z2=17)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=12)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x19, X=0.01005, Y=9.99974, Z=-0.07108, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=23)
+		External_Graphic(Graphic=0x317000C, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=24)
+		External_Graphic(Graphic=0x317001C, Bone=0x0, X=3, Y=5.3, Z=-0.3, XRot=-8, YRot=29, ZRot=155, Size=1.1, Terminate=0x1)
+		FRAME(Frames=25)
+		Graphic_Effect3(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=29)
+		Terminate_Graphic_Effect(Graphic=0x317000C, unknown=0x1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x24D001D)
+		FRAME(Frames=15)
+		Stop_Sound_Effect(SFX=0x69)
+		FRAME(Frames=24)
+		Sound_Effect(SFX=0x600004)
+		Sound_Effect(SFX=0x24D001C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		VIS_SET_DEFAULT(unknown=0x1, unknown=0x0)
+		FRAME(Frames=21)
+		EXECUTE(Unknown=21)
+		Script_End()
+	}
+
+}

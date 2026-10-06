@@ -1,0 +1,23 @@
+MoveDef FinalAirFail
+{
+	Main()
+	{
+		JUMP(Hash=0xE554D24E)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xE554D24E)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

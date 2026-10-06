@@ -1,0 +1,27 @@
+MoveDef SpecialSTurnStart_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x15){
+		    Graphic_Effect3(Graphic=0x100000D, Bone=0x0, X=17, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.3, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		}
+		Else(Offset=0x13){
+		    Graphic_Effect3(Graphic=0x100000E, Bone=0x0, X=17, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.3, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

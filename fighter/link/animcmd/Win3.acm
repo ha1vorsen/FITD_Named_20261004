@@ -1,0 +1,43 @@
+MoveDef Win3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=43)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x18, X=0, Y=8, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=63)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x18, X=0, Y=8, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=73)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x18, X=0, Y=8, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=20)
+		Sound_Effect(SFX=0x30044)
+		WAIT(Frames=19)
+		Sound_Effect(SFX=0x30042)
+		FRAME(Frames=3)
+		PLAY_SE_NO_3D(unknown=0x62001C)
+		WAIT(Frames=28)
+		Sound_Effect(SFX=0x30045)
+		WAIT(Frames=10)
+		Sound_Effect(SFX=0x30045)
+		WAIT(Frames=44)
+		Sound_Effect(SFX=0x30082)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		FRAME(Frames=127)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		Script_End()
+	}
+
+}

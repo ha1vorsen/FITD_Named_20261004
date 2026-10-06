@@ -1,0 +1,48 @@
+MoveDef SpecialLwMR
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=12, Angle=0x2D, KBG=0x50, WBKB=0x0, BKB=0x1E, Size=10, X=0, Y=4, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0xB, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=10, Angle=0x2D, KBG=0x50, WBKB=0x0, BKB=0x14, Size=5, X=0, Y=3, Z=5, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0xB, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=10, Angle=0x2D, KBG=0x50, WBKB=0x0, BKB=0x14, Size=5, X=0, Y=3, Z=-5, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0xB, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		FRAME(Frames=12)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=10)
+		Graphic_Effect2(Graphic=0x3160001, Bone=0x3, X=0, Y=0, Z=0, XRot=-90, YRot=-90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Graphic_Effect3(Graphic=0x1000008, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.75, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Color_Overlay(Red=255, Green=255, Blue=255, Alpha=190)
+		FRAME(Frames=9)
+		Color_Overlay(Red=255, Green=128, Blue=0, Alpha=80)
+		FRAME(Frames=14)
+		Change_Overlay(Transition=27, Red=255, Green=0, Blue=0, Alpha=0)
+		FRAME(Frames=41)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		Sound_Effect(SFX=0x1A005B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=8)
+		FRAME(Frames=10)
+		QUAKE(unknown=0x3)
+		FRAME(Frames=13)
+		FRAME(Frames=17)
+		FRAME(Frames=40)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

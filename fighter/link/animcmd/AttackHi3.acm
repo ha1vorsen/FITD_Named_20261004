@@ -1,0 +1,47 @@
+MoveDef AttackHi3
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		ATK_RESERVE(ID=0x0, Bone=0x3E9, X=5, Y=0, Z=0)
+		ATK_RESERVE(ID=0x1, Bone=0x3E9, X=0, Y=0, Z=0)
+		ATK_RESERVE(ID=0x2, Bone=0x10, X=0, Y=0, Z=0)
+		ATK_RESERVE(ID=0x3, Bone=0x14, X=0, Y=0, Z=0)
+		ATK_REFERENCE_NODE(Unknown=0xE, Unknown=0xFFFFFFFF)
+		FRAME(Frames=8)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x3E9, Damage=9, Angle=0x5F, KBG=0x7A, WBKB=0x0, BKB=0x1E, Size=3.6, X=5, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x3E9, Damage=9, Angle=0x55, KBG=0x82, WBKB=0x0, BKB=0x1E, Size=4.32, X=0, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x10, Damage=9, Angle=0x55, KBG=0x7C, WBKB=0x0, BKB=0x1E, Size=2.88, X=0, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x3, Part=0x0, Bone=0x14, Damage=9, Angle=0x55, KBG=0x7B, WBKB=0x0, BKB=0x1E, Size=2.16, X=0, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		FRAME(Frames=13)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=7)
+		Sword_Trace(TraceID=0x1, BlurLen=7.006492E-45, Bone1=0x3E8, X=1, Y=0, Z=0, Bone2=0x3E8, X=13, Y=0, Z=0, Anchored=0x1, Graphic=0x3050000, Bone3=0x3E8, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=10)
+		Graphic_Effect(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=12)
+		Terminate_Sword_Glow(FadeTime=0x6)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Low_Voice_Clip(unknown=0x80020007)
+		Sound_Effect(SFX=0x30042)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=6)
+		Script_End()
+	}
+
+}

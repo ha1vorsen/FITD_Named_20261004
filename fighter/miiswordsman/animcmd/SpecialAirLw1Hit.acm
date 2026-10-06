@@ -1,0 +1,35 @@
+MoveDef SpecialAirLw1Hit
+{
+	Main()
+	{
+		JUMP(Hash=0x4E047017)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x4E047017)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x81B0031)
+		WAIT(Frames=3)
+		Sound_Effect(SFX=0x81B0032)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		QUAKE(unknown=0x4)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=3)
+		FRAME(Frames=30)
+		unk_C7B586AF(unknown=0, unknown=30, unknown=10)
+		Script_End()
+	}
+
+}

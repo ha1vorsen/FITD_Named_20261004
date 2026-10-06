@@ -1,0 +1,35 @@
+MoveDef SpecialHi3
+{
+	Main()
+	{
+		WAIT(Frames=1)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=12, Angle=0x36, KBG=0x63, WBKB=0x0, BKB=0x46, Size=12, X=0, Y=4, Z=2.8, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0xB, Ground/Air=0x3, Direct/Indirect=0x0, Type=0xC, X2=0, Y2=4, Z2=-2)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x1000017, Bone=0x0, X=0, Y=5, Z=0, XRot=0, YRot=90, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=2)
+		External_Graphic(Graphic=0x32B0018, Bone=0x0, X=0, Y=8, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x24E0074)
+		Low_Voice_Clip(unknown=0x8041000C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x4)
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+}

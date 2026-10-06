@@ -1,0 +1,85 @@
+MoveDef CatchDash
+{
+	Main()
+	{
+		IS_FLAG(Variable=LA-Flag[126])
+		True(Offset=0x34){
+		    FRAME(Frames=7)
+		    GENERATE_ARTICLE(ID=0x5)
+		    FRAME(Frames=13)
+		    Set_Remote_Article_Action(Article=0x5, Action=0x1)
+		    FRAME(Frames=14)
+		    CALL(Hash=0x177F908)
+		    Grab_Collision(ID=0x0, Bone=0x1A, Size=2.5, X=0, Y=0, Z=-1, Action=0x3F, Ground/Air=0x3)
+		    Grab_Collision(ID=0x1, Bone=0x1A, Size=1.8, X=0, Y=0, Z=2.5, Action=0x3F, Ground/Air=0x3)
+		    CALL(Hash=0x49FA5BDD)
+		    CALL(Hash=0x140F41C6)
+		    FRAME(Frames=32)
+		    Set_Frame_Duration(Speed=0.8)
+		    Set_Remote_Article_Action2(Article=0x5, Action=0x3)
+		    FRAME(Frames=71)
+		    Set_Frame_Duration(Speed=1)
+		    Remove_Article(Article=0x5)
+		}
+		Else(Offset=0x3E){
+		    FRAME(Frames=7)
+		    GENERATE_ARTICLE(ID=0x3)
+		    GENERATE_ARTICLE(ID=0x4)
+		    FRAME(Frames=13)
+		    Set_Remote_Article_Action(Article=0x3, Action=0x1)
+		    Set_Anchored_Article_Action(Article=0x4, Action=0x0)
+		    FRAME(Frames=14)
+		    CALL(Hash=0x177F908)
+		    Grab_Collision(ID=0x0, Bone=0x1A, Size=2.5, X=0, Y=0, Z=-1, Action=0x3F, Ground/Air=0x3)
+		    Grab_Collision(ID=0x1, Bone=0x1A, Size=1.8, X=0, Y=0, Z=2.5, Action=0x3F, Ground/Air=0x3)
+		    CALL(Hash=0x49FA5BDD)
+		    CALL(Hash=0x140F41C6)
+		    FRAME(Frames=32)
+		    Set_Frame_Duration(Speed=0.8)
+		    FRAME(Frames=46)
+		    Set_Remote_Article_Action2(Article=0x3, Action=0x3)
+		    Set_Anchored_Article_Action(Article=0x4, Action=0x4)
+		    FRAME(Frames=71)
+		    Set_Frame_Duration(Speed=1)
+		    Remove_Article(Article=0x3)
+		    Remove_Article(Article=0x4)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xC56B7B64)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect2(SFX=0x3003E)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0x3007F)
+		WAIT(Frames=3)
+		Sound_Effect2(SFX=0x30040)
+		WAIT(Frames=9)
+		Sound_Effect(SFX=0x30080)
+		WAIT(Frames=30)
+		Sound_Effect(SFX=0x30080)
+		WAIT(Frames=14)
+		Sound_Effect(SFX=0x30080)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=4)
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		FRAME(Frames=13)
+		FRAME(Frames=14)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		FRAME(Frames=72)
+		Model_Changer(ChangerID=0x1, ChangerState=0x0)
+		Script_End()
+	}
+
+}

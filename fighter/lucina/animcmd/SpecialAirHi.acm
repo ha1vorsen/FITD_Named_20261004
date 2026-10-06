@@ -1,0 +1,34 @@
+MoveDef SpecialAirHi
+{
+	Main()
+	{
+		JUMP(Hash=0x1BA6EBD5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		Sword_Trace(TraceID=0xBF, BlurLen=4.203895E-45, Bone1=0x3EA, X=0, Y=0, Z=0.5, Bone2=0x3EA, X=-1E-05, Y=-2E-05, Z=12.2, Anchored=0x1, Graphic=0x3250000, Bone3=0x3EA, X=0, Y=0, Z=0, RotX=0.00013, RotY=-7E-05, RotZ=0.00011, Length=1)
+		FRAME(Frames=5)
+		Graphic_Effect2(Graphic=0x3250008, Bone=0x0, X=-1E-05, Y=0, Z=3, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=7)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x0, X=-2, Y=-15, Z=18, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=10)
+		Terminate_Sword_Glow(FadeTime=0x6)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x1BA6EBD5)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x1BA6EBD5)
+		Script_End()
+	}
+
+}

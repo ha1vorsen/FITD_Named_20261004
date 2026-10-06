@@ -1,0 +1,21 @@
+MoveDef SpecialSLanding_C2 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0xD0054)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

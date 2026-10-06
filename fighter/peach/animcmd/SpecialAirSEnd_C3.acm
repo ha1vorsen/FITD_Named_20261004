@@ -1,0 +1,27 @@
+MoveDef SpecialAirSEnd_C3
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=41)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		REG_LANDING_SE(unknown=0x11003B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

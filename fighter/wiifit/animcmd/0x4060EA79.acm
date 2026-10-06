@@ -1,0 +1,24 @@
+MoveDef 0x4060EA79 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=40)
+		PLAY_SE_NO_3D(unknown=0x2C9002B)
+		FRAME(Frames=126)
+		Sound_Effect(SFX=0x6A)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

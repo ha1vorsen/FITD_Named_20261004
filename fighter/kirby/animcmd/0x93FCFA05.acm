@@ -1,0 +1,36 @@
+MoveDef 0x93FCFA05
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3040002, Bone=0x0, X=0, Y=-3, Z=-4, XRot=0, YRot=0, ZRot=0, Size=0.7, Terminate=0x1)
+		FRAME(Frames=3)
+		Color_Overlay(Red=255, Green=255, Blue=128, Alpha=160)
+		FRAME(Frames=4)
+		Change_Overlay(Transition=5, Red=255, Green=255, Blue=128, Alpha=0)
+		FRAME(Frames=9)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=19)
+		Sound_Effect(SFX=0x7004E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=17)
+		FRAME(Frames=18)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		FRAME(Frames=19)
+		QUAKE(unknown=0x4)
+		Script_End()
+	}
+
+}

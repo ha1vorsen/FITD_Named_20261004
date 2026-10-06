@@ -1,0 +1,52 @@
+MoveDef EntryR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x301001E, Bone=0x0, X=0, Y=8, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=19)
+		AFTER_IMAGE_ON_WORK(unknown=0x10000084, unknown=0x6, unknown=0x19, unknown=0x0, unknown=0x3F000000, unknown=0x0, unknown=0x19, unknown=0xB727C5AC, unknown=0x41580000, unknown=0x0, unknown=0x1, unknown=0x10000083, unknown=0x19, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3908509C, unknown=0xB892CCF7, unknown=0x38E6AFCD, unknown=0x3F800000)
+		FRAME(Frames=35)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		FRAME(Frames=50)
+		Terminate_Graphic_Effect(Graphic=0x301001E, unknown=0x0, unknown=0x1)
+		AFTER_IMAGE_ON_WORK(unknown=0x10000084, unknown=0x4, unknown=0x19, unknown=0x0, unknown=0x3F000000, unknown=0x0, unknown=0x19, unknown=0xB727C5AC, unknown=0x41580000, unknown=0x0, unknown=0x1, unknown=0x10000083, unknown=0x19, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3908509C, unknown=0xB892CCF7, unknown=0x38E6AFCD, unknown=0x3F800000)
+		FRAME(Frames=55)
+		Terminate_Sword_Glow(FadeTime=0x2)
+		FRAME(Frames=58)
+		AFTER_IMAGE_ON_WORK(unknown=0x10000084, unknown=0x4, unknown=0x19, unknown=0x0, unknown=0x3F000000, unknown=0x0, unknown=0x19, unknown=0xB727C5AC, unknown=0x41580000, unknown=0x0, unknown=0x1, unknown=0x10000083, unknown=0x19, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3908509C, unknown=0xB892CCF7, unknown=0x38E6AFCD, unknown=0x3F800000)
+		FRAME(Frames=70)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x81B0069)
+		WAIT(Frames=48)
+		Sound_Effect(SFX=0x81B0010)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x81B0011)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Visibility(State=0x0)
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=8)
+		Visibility(State=0x1)
+		SET_CURSOR(unknown=0x1)
+		Tag_Visibility(State=0x1)
+		FRAME(Frames=105)
+		unk_C7B586AF(unknown=0, unknown=30, unknown=10)
+		Script_End()
+	}
+
+}

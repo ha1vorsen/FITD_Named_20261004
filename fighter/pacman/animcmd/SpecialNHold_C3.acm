@@ -1,0 +1,34 @@
+MoveDef SpecialNHold_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic_Effect2(Graphic=0x3310000, Bone=0x0, X=1, Y=21, Z=8.25, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		LAST_EFFECT_SET_COLOR(unknown=0x42FC0000, unknown=0x437F0000, unknown=0x431C0000)
+		FRAME(Frames=1)
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect3(Graphic=0x1000019, Bone=0x0, X=0, Y=0, Z=-2, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=2, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=16)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Set_Loop(Iterations=-1){
+		    WAIT(Frames=13)
+		    Goto(Offset=-2)
+		}
+		Script_End()
+	}
+
+}

@@ -1,0 +1,58 @@
+MoveDef LandingAirLw
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Add/Set_Momentum2(Horizontal=0, Vertical=0, Add/SetHorizontal=0x0, Add/SetVertical=0x1)
+		IS_FLAG(Variable=RA-Flag[20])
+		True(Offset=0x4){
+		    JUMP(Hash=0xC2B1EBAE)
+		}
+		unk_1B41048C(unknown=0x2, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0xA, unknown=0x3, unknown=0x3, unknown=0x0, unknown=0x1)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x2D, KBG=0x87, WBKB=0x0, BKB=0x50, Size=7.5, X=0, Y=8, Z=8, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x2, Direct/Indirect=0x1, Type=0x6, X2=0, Y2=8, Z2=13)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=5, Angle=0x2D, KBG=0x87, WBKB=0x0, BKB=0x50, Size=2.5, X=0, Y=2.5, Z=12, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x6, X2=0, Y2=2.5, Z2=16)
+		FRAME(Frames=2)
+		Remove_Hitbox(ID=0x1)
+		FRAME(Frames=3)
+		Remove_All_Hitboxes()
+		FRAME(Frames=5)
+		ON_FLAG(Variable=LA-Flag[133])
+		ON_FLAG(Variable=LA-Flag[134])
+		ON_FLAG(Variable=LA-Flag[135])
+		Script_End()
+	}
+
+	Effect()
+	{
+		Terminate_Graphic_Effect(Graphic=0x3380008, unknown=0x0, unknown=0x0)
+		Graphic_Effect2(Graphic=0x3380031, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Int_Var_Compare(Variable=LA-Int[172], Method=0x4, Value=0x2)
+		True(Offset=0x8){
+		    unk_8F27D612(unknown=0x0, unknown=0x3F0CCCCD, unknown=0x3F800000)
+		}
+		Else(Offset=0x6){
+		    unk_8F27D612(unknown=0x3F800000, unknown=0x3CF5C28F, unknown=0x3D23D70A)
+		}
+		FRAME(Frames=2)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Stop_Sound_Effect(SFX=0xC91003A)
+		Sound_Effect(SFX=0xC91003B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x1)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=18)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		Script_End()
+	}
+
+}

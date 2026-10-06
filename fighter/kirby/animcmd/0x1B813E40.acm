@@ -1,0 +1,32 @@
+MoveDef 0x1B813E40
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=30)
+		Sound_Effect(SFX=0xA006D)
+		FRAME(Frames=60)
+		Sound_Effect(SFX=0xA006B)
+		Loop_Rest()
+		JUMP(Hash=0x1B813E40)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=15)
+		FRAME(Frames=30)
+		Loop_Rest()
+		JUMP(Hash=0x1B813E40)
+		Script_End()
+	}
+
+}

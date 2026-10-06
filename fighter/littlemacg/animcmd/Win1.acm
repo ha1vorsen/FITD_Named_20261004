@@ -1,0 +1,26 @@
+MoveDef Win1
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=16)
+		FRAME(Frames=26)
+		Set_Loop(Iterations=10){
+		    Goto(Offset=0)
+		}
+		FRAME(Frames=36)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

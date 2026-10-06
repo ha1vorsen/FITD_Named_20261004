@@ -1,0 +1,27 @@
+MoveDef AttackS3Fast
+{
+	Main()
+	{
+		JUMP(Hash=0x7B801F14)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x7B801F14)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x7B801F14)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x7B801F14)
+		Script_End()
+	}
+
+}

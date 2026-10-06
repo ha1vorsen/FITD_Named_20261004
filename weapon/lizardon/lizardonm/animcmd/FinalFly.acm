@@ -1,0 +1,29 @@
+MoveDef FinalFly
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=10)
+		FRAME(Frames=47)
+		Loop_Rest()
+		JUMP(Hash=0x261F5DAE)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x200021)
+		WAIT(Frames=38)
+		JUMP(Hash=0x261F5DAE)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

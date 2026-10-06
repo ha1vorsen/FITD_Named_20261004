@@ -1,0 +1,33 @@
+MoveDef EntryL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x334001F, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Color_Overlay(Red=45, Green=45, Blue=45, Alpha=255)
+		WAIT(Frames=2)
+		Change_Overlay(Transition=20, Red=45, Green=45, Blue=45, Alpha=0)
+		WAIT(Frames=20)
+		Terminate_Overlays()
+		FRAME(Frames=110)
+		Graphic_Effect(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=-1, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		LAST_EFFECT_SET_ALPHA(unknown=0x42480000)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+}

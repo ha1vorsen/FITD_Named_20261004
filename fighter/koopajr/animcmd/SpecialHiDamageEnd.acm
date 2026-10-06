@@ -1,0 +1,21 @@
+MoveDef SpecialHiDamageEnd
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x123DB31E)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

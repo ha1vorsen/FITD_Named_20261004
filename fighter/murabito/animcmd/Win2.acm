@@ -1,0 +1,37 @@
+MoveDef Win2
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x12)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=73)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=13, XRot=0, YRot=0, ZRot=0, Size=0.3, RandomX=2, RandomY=2, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=74)
+		Graphic_Effect2(Graphic=0x32A000A, Bone=0x0, X=0, Y=0, Z=13, XRot=0, YRot=0, ZRot=0, Size=0.55, RandomX=2, RandomY=2, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=0.85)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=46)
+		Sound_Effect(SFX=0x24C0023)
+		FRAME(Frames=105)
+		Sound_Effect(SFX=0x24C0036)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		Article_Visibility(Article=0x12, State=0x0)
+		Article_Visibility(Article=0x12, State=0x1)
+		VIS_SET_ARTICLE(unknown=0x12, unknown=0x1, unknown=0x0)
+		Script_End()
+	}
+
+}

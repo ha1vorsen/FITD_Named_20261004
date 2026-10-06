@@ -1,0 +1,26 @@
+MoveDef 0x4DBAFFFF
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x2C42123B)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xB7B5C29C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		unk_C7B586AF(unknown=0, unknown=30, unknown=3)
+		Script_End()
+	}
+
+}

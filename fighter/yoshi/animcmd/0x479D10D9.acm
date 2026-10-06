@@ -1,0 +1,23 @@
+MoveDef 0x479D10D9
+{
+	Main()
+	{
+		Body_Collision(State=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x261F5DAE)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

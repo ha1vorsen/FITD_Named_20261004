@@ -1,0 +1,32 @@
+MoveDef EntryL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x6DF0039)
+		WAIT(Frames=40)
+		Sound_Effect(SFX=0x6DF003A)
+		WAIT(Frames=40)
+		Sound_Effect(SFX=0x6DF003B)
+		WAIT(Frames=39)
+		PLAY_SE_REMAIN(unknown=0x6DF003C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		ON_FLAG(Variable=LA-Flag[101])
+		Script_End()
+	}
+
+}

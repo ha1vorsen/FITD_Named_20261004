@@ -1,0 +1,49 @@
+MoveDef Final
+{
+	Main()
+	{
+		Body_Collision(State=0x1)
+		Camera_Closeup(ZoomTime=0x14, Unknown=0x0, Distance=2, XRot=0, YRot=0)
+		Time_Manipulation(Amount=0xA, Duration=0x5A)
+		End_Screen_Tint(ID=0x0, TransitionOutTime=0x0)
+		Screen_Tint(TransitionTime=0x0, Red=0x1E, Green=0x10, Blue=0x0, Alpha=0x10, Duration=0xDF, unknown=0x0, TransitionOutTime=0xFF)
+		FRAME(Frames=5)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=50)
+		Normal_Camera()
+		Set_Camera_Boundaries(Front=-5, Back=-5, Top=10, Bottom=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0xF){
+		    unk_524EF3F5(unknown=0x4330000, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F666666, unknown=0x0)
+		}
+		Else(Offset=0xD){
+		    unk_524EF3F5(unknown=0x4330000, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F666666, unknown=0x0)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		PLAY_SE_REMAIN(unknown=0xBFC0062)
+		PLAY_SE_REMAIN(unknown=0xC06000B)
+		FRAME(Frames=78)
+		PLAY_SE_REMAIN(unknown=0xC06000C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		unk_EE37008F()
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

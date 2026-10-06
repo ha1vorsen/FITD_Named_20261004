@@ -1,0 +1,23 @@
+MoveDef FinalAir3ren
+{
+	Main()
+	{
+		JUMP(Hash=0x455C1ED7)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x455C1ED7)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

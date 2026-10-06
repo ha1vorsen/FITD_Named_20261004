@@ -1,0 +1,25 @@
+MoveDef FinalAirSwingMiss
+{
+	Main()
+	{
+		JUMP(Hash=0x9C0D01E4)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x9C0D01E4)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

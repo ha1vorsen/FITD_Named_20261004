@@ -1,0 +1,29 @@
+MoveDef 0xC77578FE
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		FRAME(Frames=8)
+		CALL(Hash=0x30E0480C)
+		FRAME(Frames=11)
+		Remove_All_Hitboxes()
+		FRAME(Frames=13)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

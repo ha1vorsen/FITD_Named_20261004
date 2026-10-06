@@ -1,0 +1,29 @@
+MoveDef PassiveStandB
+{
+	Main()
+	{
+		Body_Collision(State=0x2)
+		FRAME(Frames=21)
+		Body_Collision(State=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x76A0007)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=29)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

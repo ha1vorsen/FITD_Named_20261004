@@ -1,0 +1,82 @@
+MoveDef AppealHiR
+{
+	Main()
+	{
+		IS_EXIST_ARTICLE(Unknown=0x0)
+		False(Offset=0x7){
+		    unk_0A7BF1D4(unknown=0x0, unknown=0x1)
+		}
+		Else(Offset=0x5){
+		    Article_Visibility(Article=0x0, State=0x1)
+		}
+		Set_Anchored_Article_Action(Article=0x0, Action=0x14)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=17)
+		Graphic_Effect6(Graphic=0x3170013, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, Terminate=0x1, Unknown=0x42700000)
+		Set_Loop(Iterations=1){
+		    WAIT(Frames=4)
+		    Graphic_Effect2(Graphic=0x1000023, Bone=0x0, X=0, Y=15, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=5, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect3(Graphic=0x100000D, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.75, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=4)
+		    Graphic_Effect2(Graphic=0x1000023, Bone=0x0, X=0, Y=10, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=5, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=4)
+		    Graphic_Effect2(Graphic=0x1000023, Bone=0x0, X=0, Y=5, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=5, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Goto(Offset=-74)
+		}
+		FRAME(Frames=39)
+		Terminate_Graphic_Effect(Graphic=0x3170013, unknown=0x0, unknown=0x0)
+		FRAME(Frames=65)
+		Graphic_Effect2(Graphic=0x1000023, Bone=0x0, X=0, Y=9, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Graphic_Effect3(Graphic=0x100000D, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x600019)
+		PLAY_SE_REMAIN(unknown=0x24D0088)
+		FRAME(Frames=19)
+		Sound_Effect(SFX=0x24D00B5)
+		FRAME(Frames=65)
+		Sound_Effect(SFX=0x24D00B6)
+		Script_End()
+	}
+
+	Expression()
+	{
+		VIS_SET_DEFAULT(unknown=0x1, unknown=0x2)
+		FRAME(Frames=22)
+		IS_EXIST_ARTICLE(Unknown=0x0)
+		True(Offset=0x8){
+		    Article_Visibility(Article=0x0, State=0x0)
+		    Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		}
+		Item_Visibility(State=0x0)
+		Morph_Model_Event(unknown=0x0)
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		FRAME(Frames=76)
+		IS_EXIST_ARTICLE(Unknown=0x0)
+		True(Offset=0x8){
+		    Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		    Article_Visibility(Article=0x0, State=0x1)
+		}
+		Item_Visibility(State=0x1)
+		Morph_Model_Event(unknown=0x1)
+		SET_CURSOR(unknown=0x1)
+		Tag_Visibility(State=0x1)
+		FRAME(Frames=119)
+		VIS_SET_DEFAULT(unknown=0x1, unknown=0x0)
+		IS_EXIST_ARTICLE(Unknown=0x0)
+		True(Offset=0x5){
+		    Article_Visibility(Article=0x0, State=0x0)
+		}
+		Script_End()
+	}
+
+}

@@ -1,0 +1,37 @@
+MoveDef LandingAirLw
+{
+	Main()
+	{
+		Remove_All_Hitboxes()
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=12, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=8, X=0, Y=8, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=12, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=8, X=0, Y=8, Z=-10, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=12, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=8, X=0, Y=8, Z=10, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		FRAME(Frames=23)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect3(Graphic=0x100000D, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect3(SFX=0x76A0021)
+		Script_End()
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x3)
+		FRAME(Frames=3)
+		Slope_Full(unknown=0x1, unknown=0x2)
+		FRAME(Frames=5)
+		Slope_Full(unknown=0x0, unknown=0x4)
+		Script_End()
+	}
+
+}

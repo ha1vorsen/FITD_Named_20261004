@@ -1,0 +1,32 @@
+MoveDef SpecialHiOpen
+{
+	Main()
+	{
+		Set_Anchored_Article_Action(Article=0x0, Action=0x8)
+		FRAME(Frames=11)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x19, Damage=3, Angle=0x50, KBG=0x64, WBKB=0x0, BKB=0x5A, Size=2.4, X=-2.2, Y=7, Z=0, Effect=0x1A, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x10, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x14, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x1E, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=2.2, Y2=7, Z2=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Graphic_Effect2(Graphic=0x100001C, Bone=0x19, X=0, Y=15, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x11003A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=11)
+		Script_End()
+	}
+
+}

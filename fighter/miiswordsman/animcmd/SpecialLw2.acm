@@ -1,0 +1,52 @@
+MoveDef SpecialLw2
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		SHIELD_ON(Unused=0x3, ID=0x0, Type=0x3)
+		FRAME(Frames=12)
+		ON_FLAG(Variable=RA-Flag[14])
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=6, Angle=0x6E, KBG=0x0, WBKB=0x0, BKB=0x0, Size=7.5, X=0, Y=6.7, Z=13, Effect=0x7, Trip=0.2, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x1, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=6, Angle=0x6E, KBG=0x0, WBKB=0x0, BKB=0x0, Size=5, X=0, Y=6.7, Z=5, Effect=0x7, Trip=0.2, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x1, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=15)
+		Remove_All_Hitboxes()
+		FRAME(Frames=23)
+		Shield_Off2(Unused=0x3, ID=0x0, Type=0x3)
+		OFF_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=9)
+		External_Graphic(Graphic=0x3010008, Bone=0x0, X=-3, Y=8, Z=9, XRot=0, YRot=2E-05, ZRot=0, Size=1.1, Terminate=0x1)
+		WAIT(Frames=1)
+		External_Graphic(Graphic=0x3010009, Bone=0x17, X=-3, Y=8, Z=0, XRot=180, YRot=2E-05, ZRot=-180, Size=1.1, Terminate=0x1)
+		WAIT(Frames=1)
+		LANDING_EFFECT_FLIP(GFXRight=0x100000D, GFXLeft=0x100000E, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x81B004A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=7)
+		SLOPE(unknown=0x4)
+		FRAME(Frames=9)
+		FRAME(Frames=12)
+		FRAME(Frames=24)
+		FRAME(Frames=31)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=30)
+		unk_C7B586AF(unknown=0, unknown=30, unknown=10)
+		Script_End()
+	}
+
+}

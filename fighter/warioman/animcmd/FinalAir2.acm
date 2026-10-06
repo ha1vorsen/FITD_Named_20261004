@@ -1,0 +1,45 @@
+MoveDef FinalAir2
+{
+	Main()
+	{
+		JUMP(Hash=0x683E0CD4)
+		Script_End()
+	}
+
+	Effect()
+	{
+		WAIT(Frames=10)
+		Set_Loop(Iterations=2){
+		    External_Graphic_Effect2(Graphic=0x3160011, Bone=0x0, X=-1, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		    WAIT(Frames=2)
+		    WAIT(Frames=2)
+		    WAIT(Frames=2)
+		    WAIT(Frames=2)
+		    WAIT(Frames=2)
+		    WAIT(Frames=2)
+		    WAIT(Frames=2)
+		    WAIT(Frames=2)
+		    WAIT(Frames=2)
+		    WAIT(Frames=2)
+		    Goto(Offset=-31)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		PLAY_SE_REMAIN(unknown=0x8C00002)
+		WAIT(Frames=41)
+		Sound_Effect(SFX=0x776000A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=10)
+		Script_End()
+	}
+
+}

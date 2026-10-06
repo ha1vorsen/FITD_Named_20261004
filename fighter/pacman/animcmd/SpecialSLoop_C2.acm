@@ -1,0 +1,39 @@
+MoveDef SpecialSLoop_C2
+{
+	Main()
+	{
+		SHOOT_ARTICLE(Value=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=-2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=10, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=15)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x7690036)
+		WAIT(Frames=6)
+		JUMP(Hash=0xCFB72F85)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Item_Visibility(State=0x0)
+		Set_Loop(Iterations=-1){
+		    WAIT(Frames=12)
+		    Goto(Offset=-2)
+		}
+		Script_End()
+	}
+
+}

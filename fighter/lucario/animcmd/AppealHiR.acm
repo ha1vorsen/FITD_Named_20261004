@@ -1,0 +1,46 @@
+MoveDef AppealHiR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=6)
+		External_Graphic(Graphic=0x31E0001, Bone=0x11, X=0.5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x31E0002, Bone=0x17, X=0.5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=11)
+		External_Graphic(Graphic=0x31E0001, Bone=0x11, X=0.5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x31E0002, Bone=0x17, X=0.5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=21)
+		External_Graphic(Graphic=0x31E0010, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=22)
+		External_Graphic(Graphic=0x31E0001, Bone=0x11, X=0.5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x31E0002, Bone=0x17, X=0.5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=23)
+		External_Graphic(Graphic=0x1000014, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, Terminate=0x1)
+		FRAME(Frames=55)
+		Terminate_Graphic_Effect(Graphic=0x1000014, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=19)
+		Sound_Effect(SFX=0x230082)
+		Sound_Effect(SFX=0x560032)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=17)
+		SLOPE(unknown=0x0)
+		FRAME(Frames=19)
+		FRAME(Frames=66)
+		Slope_Full(unknown=0x6, unknown=0x6)
+		Script_End()
+	}
+
+}

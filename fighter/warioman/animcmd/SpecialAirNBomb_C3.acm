@@ -1,0 +1,23 @@
+MoveDef SpecialAirNBomb_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x8FE18CC0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x8FE18CC0)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

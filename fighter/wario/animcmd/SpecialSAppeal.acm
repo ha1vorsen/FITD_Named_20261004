@@ -1,0 +1,22 @@
+MoveDef SpecialSAppeal
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x4D001B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

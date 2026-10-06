@@ -1,0 +1,26 @@
+MoveDef SpecialAirLwCatch_C3
+{
+	Main()
+	{
+		JUMP(Hash=0xCA127555)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xCA127555)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=2)
+		Script_End()
+	}
+
+}

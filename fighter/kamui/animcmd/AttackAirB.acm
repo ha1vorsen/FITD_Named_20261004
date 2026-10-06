@@ -1,0 +1,56 @@
+MoveDef AttackAirB
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=13)
+		Add/Set_Momentum(Horizontal=1.2, Vertical=0.25, Mode=0x1)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=11, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x28, Size=7.5, X=0, Y=10, Z=-12.5, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2, X2=0, Y2=11, Z2=-17)
+		WAIT(Frames=1)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=9, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x28, Size=5.7, X=0, Y=10.7, Z=-12.5, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2, X2=0, Y2=12.2, Z2=-21)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		FRAME(Frames=42)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic_Effect2(Graphic=0x3390012, Bone=0x12, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=14)
+		Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=0, Y=11, Z=-18, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		FRAME(Frames=39)
+		External_Graphic_Effect2(Graphic=0x3390012, Bone=0x12, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		Sound_Effect(SFX=0xC9B0026)
+		Low_Voice_Clip(unknown=0x804E0001)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x3)
+		FRAME(Frames=2)
+		Model_Changer(ChangerID=0x0, ChangerState=0x2)
+		FRAME(Frames=5)
+		Model_Changer(ChangerID=0x3, ChangerState=0x1)
+		FRAME(Frames=6)
+		Model_Changer(ChangerID=0x2, ChangerState=0x1)
+		FRAME(Frames=11)
+		FRAME(Frames=40)
+		Model_Changer(ChangerID=0x2, ChangerState=0x0)
+		FRAME(Frames=41)
+		Model_Changer(ChangerID=0x3, ChangerState=0x0)
+		FRAME(Frames=44)
+		Model_Changer(ChangerID=0x0, ChangerState=0x3)
+		Script_End()
+	}
+
+}

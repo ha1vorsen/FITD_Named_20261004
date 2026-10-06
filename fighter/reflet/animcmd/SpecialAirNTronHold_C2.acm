@@ -1,0 +1,27 @@
+MoveDef SpecialAirNTronHold_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x9DE8D57B)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x9DE8D57B)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x9DE8D57B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x9DE8D57B)
+		Script_End()
+	}
+
+}

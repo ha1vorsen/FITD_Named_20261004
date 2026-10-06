@@ -1,0 +1,24 @@
+MoveDef AttackAirHi : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x7D5, Damage=9, Angle=0x5F, KBG=0x5C, WBKB=0x0, BKB=0x32, Size=5, X=0, Y=3.5, Z=0, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x15, X2=0, Y2=-1, Z2=0)
+		WAIT(Frames=8)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

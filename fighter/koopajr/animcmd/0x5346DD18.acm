@@ -1,0 +1,36 @@
+MoveDef 0x5346DD18 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=11)
+		Sound_Effect(SFX=0x8630040)
+		FRAME(Frames=30)
+		PLAY_SE_NO_3D(unknown=0x8F0001B)
+		FRAME(Frames=32)
+		Sound_Effect(SFX=0x8630042)
+		FRAME(Frames=44)
+		Sound_Effect(SFX=0x8630040)
+		FRAME(Frames=62)
+		Sound_Effect(SFX=0x8630042)
+		FRAME(Frames=70)
+		Sound_Effect(SFX=0x8630040)
+		FRAME(Frames=90)
+		Sound_Effect(SFX=0x8630042)
+		FRAME(Frames=113)
+		Sound_Effect(SFX=0x8630043)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

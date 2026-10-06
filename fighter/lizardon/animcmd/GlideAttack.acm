@@ -1,0 +1,22 @@
+MoveDef GlideAttack
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0x20005F)
+		Sound_Effect(SFX=0x200051)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

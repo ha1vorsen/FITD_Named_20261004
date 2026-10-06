@@ -1,0 +1,36 @@
+MoveDef 0x022F7B09
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=6)
+		CALL(Hash=0xCCD70A5C)
+		CALL(Hash=0xCCD70A5C)
+		FRAME(Frames=55)
+		External_Graphic(Graphic=0x3320030, Bone=0x11, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Set_Loop(Iterations=-1){
+		    CALL(Hash=0xCCD70A5C)
+		    Goto(Offset=-2)
+		}
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Transient_Sound_Effect(SFX=0x23D0028)
+		Script_End()
+	}
+
+	Expression()
+	{
+		START_CHARGE(unknown=0x3F4CCCCD, unknown=0x3F4CCCCD, unknown=0xBF800000, unknown=0x3F4CCCCD, unknown=0x3F4CCCCD, unknown=0xBF800000, unknown=0xFFFFFFFF)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

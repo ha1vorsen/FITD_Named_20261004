@@ -1,0 +1,24 @@
+MoveDef Turn
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=11)
+		unk_01A5A27C(unknown=0x8200000, unknown=0x8200002)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

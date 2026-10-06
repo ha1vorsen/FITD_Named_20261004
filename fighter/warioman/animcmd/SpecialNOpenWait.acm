@@ -1,0 +1,31 @@
+MoveDef SpecialNOpenWait
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		Grab_Collision2(ID=0x0, Bone=0x13, Size=10, X=-2, Y=2.5, Z=1, Action=0xE6, Ground/Air=0x2, Unknown=0x1)
+		Grab_Collision2(ID=0x1, Bone=0x13, Size=10, X=-2, Y=2, Z=1.5, Action=0xE6, Ground/Air=0x1, Unknown=0x1)
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=10, Angle=0x2D, KBG=0x64, WBKB=0x0, BKB=0x3C, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x2, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x8)
+		Throw_Specifier(ID=0x1, Bone=0x0, Damage=1, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x3C, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x8)
+		Search_Collision(ID=0x0, Part=0x0, Bone=0x13, Size=10, X=-2, Y=2, Z=1.5, Unknown=0x1, Unknown=0x1, Ground/Air=0x7, Unknown=0x0, Unknown=0xF, Unknown=0xF, Unknown=0x0, RehitRate=0x0, SelfAffectionToggle=0x1, Unknown=0x0)
+		SET_SEARCH_OPPONENT(Unknown=0x0, Unknown=0x0, Unknown=0x5, Unknown=0x2)
+		ON_FLAG(Variable=RA-Flag[14])
+		Set_Bone_Intangibility(Bone=0x13, Mode=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		unk_040FD56E(unknown=0x1, unknown=0x4, unknown=0x1)
+		Script_End()
+	}
+
+}

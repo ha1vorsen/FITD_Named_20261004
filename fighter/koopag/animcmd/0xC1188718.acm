@@ -1,0 +1,22 @@
+MoveDef 0xC1188718 : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=12)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

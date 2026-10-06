@@ -1,0 +1,24 @@
+MoveDef SpecialAirSJump_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x24C001A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x3ED58B4)
+		Script_End()
+	}
+
+}

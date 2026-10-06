@@ -1,0 +1,22 @@
+MoveDef SpecialLwAttack : Unlisted
+{
+	Main()
+	{
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=2, Angle=0xA, KBG=0x20, WBKB=0x0, BKB=0x42, Size=7.5, X=0, Y=6.5, Z=0, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x7, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x19)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=2, Angle=0x28, KBG=0x2D, WBKB=0x0, BKB=0x42, Size=7.5, X=0, Y=6.5, Z=0, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x7, Ground/Air=0x2, Direct/Indirect=0x1, Type=0x19)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

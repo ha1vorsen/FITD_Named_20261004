@@ -1,0 +1,26 @@
+MoveDef SpecialNStart_C2
+{
+	Main()
+	{
+		FRAME(Frames=14)
+		GENERATE_ARTICLE_ENABLE(Unknown=0x0)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		SLOPE_TOE(unknown=0x2, unknown=0x42700000)
+		Script_End()
+	}
+
+}

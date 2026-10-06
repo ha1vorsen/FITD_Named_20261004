@@ -1,0 +1,39 @@
+MoveDef SpecialHi
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3080005, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0xF){
+		    External_Graphic(Graphic=0x308001C, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		}
+		Else(Offset=0xD){
+		    External_Graphic(Graphic=0x3080004, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		}
+		FRAME(Frames=2)
+		External_Graphic(Graphic=0x100001C, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=3)
+		Graphic_Effect3(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x3F0005)
+		Sound_Effect(SFX=0xA0055)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=21)
+		Script_End()
+	}
+
+}

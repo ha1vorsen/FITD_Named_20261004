@@ -1,0 +1,23 @@
+MoveDef 0xB49E8654
+{
+	Main()
+	{
+		Set_Model_Scale(Scale=2.3)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		PLAY_SE_REMAIN(unknown=0x4A4006D)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

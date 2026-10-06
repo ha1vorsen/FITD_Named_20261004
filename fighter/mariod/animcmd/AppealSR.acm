@@ -1,0 +1,38 @@
+MoveDef AppealSR
+{
+	Main()
+	{
+		GENERATE_ARTICLE_ENABLE(Unknown=0x0)
+		FRAME(Frames=78)
+		Remove_Article(Article=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=57)
+		Graphic_Effect2(Graphic=0x1000034, Bone=0x0, X=8, Y=8, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		Sound_Effect(SFX=0x7600048)
+		WAIT(Frames=20)
+		Sound_Effect(SFX=0x7600049)
+		WAIT(Frames=27)
+		Sound_Effect(SFX=0x760004A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=56)
+		Script_End()
+	}
+
+}

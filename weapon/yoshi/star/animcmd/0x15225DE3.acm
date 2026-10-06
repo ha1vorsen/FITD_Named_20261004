@@ -1,0 +1,35 @@
+MoveDef 0x15225DE3
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=8, Angle=0x28, KBG=0x32, WBKB=0x0, BKB=0x32, Size=8, X=0, Y=0, Z=0, Effect=0x1A, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x6, SFXLevel=0x0, SFXType=0x10, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x1, Absorbable=0x1, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=10)
+		Change_Hitbox_Damage(ID=0x0, Damage=6)
+		Change_Hitbox_Size(ID=0x0, Size=6)
+		FRAME(Frames=20)
+		Change_Hitbox_Damage(ID=0x0, Damage=4)
+		Change_Hitbox_Size(ID=0x0, Size=4)
+		FRAME(Frames=28)
+		Remove_All_Hitboxes()
+		FRAME(Frames=29)
+		ON_FLAG(Variable=RA-Flag[0])
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3070005, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=0.6)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

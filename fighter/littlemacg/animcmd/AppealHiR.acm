@@ -1,0 +1,34 @@
+MoveDef AppealHiR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=21)
+		FRAME(Frames=31)
+		FRAME(Frames=41)
+		Set_Loop(Iterations=10){
+		    Goto(Offset=0)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x82B0016)
+		FRAME(Frames=25)
+		Sound_Effect(SFX=0x82B000A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=24)
+		Script_End()
+	}
+
+}

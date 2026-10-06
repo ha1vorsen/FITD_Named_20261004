@@ -1,0 +1,31 @@
+MoveDef FinalEndPerfectAirR
+{
+	Main()
+	{
+		JUMP(Hash=0x8806E46C)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x7209D90F)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x70018)
+		Script_End()
+	}
+
+	Expression()
+	{
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		FRAME(Frames=16)
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x1)
+		Script_End()
+	}
+
+}

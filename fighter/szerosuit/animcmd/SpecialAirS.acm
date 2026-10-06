@@ -1,0 +1,36 @@
+MoveDef SpecialAirS
+{
+	Main()
+	{
+		FRAME(Frames=20)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=21)
+		OFF_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=22)
+		JUMP(Hash=0xF0F84867)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x224117F6)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x224117F6)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=20)
+		FRAME(Frames=31)
+		FRAME(Frames=44)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

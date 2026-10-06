@@ -1,0 +1,61 @@
+MoveDef AppealLwR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=5){
+		    FRAME(Frames=28)
+		    Graphic_Effect7(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.75, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0, Unknown=0x42BE0000)
+		    WAIT(Frames=14)
+		    Goto(Offset=-22)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=28)
+		Sound_Effect(SFX=0x610002)
+		Sound_Effect2(SFX=0x6003F)
+		FRAME(Frames=31)
+		Sound_Effect(SFX=0x60085)
+		FRAME(Frames=43)
+		Sound_Effect(SFX=0x610022)
+		Sound_Effect2(SFX=0x6003D)
+		FRAME(Frames=57)
+		Sound_Effect(SFX=0x610023)
+		Sound_Effect2(SFX=0x6003F)
+		FRAME(Frames=61)
+		Sound_Effect(SFX=0x60085)
+		FRAME(Frames=73)
+		Sound_Effect(SFX=0x610024)
+		Sound_Effect2(SFX=0x6003D)
+		FRAME(Frames=90)
+		Sound_Effect(SFX=0x610025)
+		Sound_Effect2(SFX=0x6003F)
+		FRAME(Frames=91)
+		Sound_Effect(SFX=0x60085)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=9)
+		Slope_Full(unknown=0x4, unknown=0x8)
+		FRAME(Frames=19)
+		Slope_Full(unknown=0x0, unknown=0x3)
+		FRAME(Frames=27)
+		FRAME(Frames=42)
+		FRAME(Frames=56)
+		FRAME(Frames=70)
+		FRAME(Frames=80)
+		Slope_Full(unknown=0x6, unknown=0x6)
+		FRAME(Frames=89)
+		Script_End()
+	}
+
+}

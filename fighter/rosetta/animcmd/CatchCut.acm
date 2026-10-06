@@ -1,0 +1,21 @@
+MoveDef CatchCut
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=26)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,26 @@
+MoveDef RunBrake : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Set_Loop(Iterations=2){
+		    Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=7.5, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=4)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

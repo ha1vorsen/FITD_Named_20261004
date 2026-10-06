@@ -1,0 +1,46 @@
+MoveDef SpecialAirHiLoop_C2
+{
+	Main()
+	{
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1.5, Angle=0x69, KBG=0x82, WBKB=0x64, BKB=0x0, Size=7, X=0, Y=8, Z=-3, Effect=0x2, Trip=0, Hitlag=0.8, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x2, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x2, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x4, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=8, Z2=3)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=1.5, Angle=0x5A, KBG=0x82, WBKB=0x64, BKB=0x0, Size=7, X=0, Y=10, Z=0, Effect=0x2, Trip=0, Hitlag=0.8, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x2, Ground/Air=0x2, Direct/Indirect=0x1, Type=0x2, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x4, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=12)
+		Remove_All_Hitboxes()
+		FRAME(Frames=13)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=3, Angle=0x50, KBG=0x64, WBKB=0x0, BKB=0x50, Size=9, X=0, Y=9, Z=0, Effect=0x2, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Graphic_Effect6(Graphic=0x10000C0, Bone=0x0, X=0, Y=15, Z=0, XRot=180, YRot=0, ZRot=0, Size=0.85, Terminate=0x1, Unknown=0x428C0000)
+		FRAME(Frames=4)
+		External_Graphic(Graphic=0x3310003, Bone=0x0, X=0, Y=5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		IS_FLAG(Variable=RA-Flag[13])
+		True(Offset=0x8){
+		    Sound_Effect(SFX=0x7690028)
+		    Sound_Effect(SFX=0x7690059)
+		}
+		Else(Offset=0x6){
+		    Sound_Effect(SFX=0x7690027)
+		    Sound_Effect(SFX=0x7690059)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		CALL(Hash=0x669E43CF)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,34 @@
+MoveDef FinalHoming
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		GENERATE_ARTICLE(ID=0x0)
+		GENERATE_ARTICLE(ID=0x0)
+		GENERATE_ARTICLE(ID=0x0)
+		GENERATE_ARTICLE(ID=0x0)
+		WAIT(Frames=3)
+		Set_Frame_Duration(Speed=2)
+		WAIT(Frames=0.5)
+		SHOOT_ARTICLE(Value=0x0)
+		FRAME(Frames=8)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Graphic_Effect3(Graphic=0x1000020, Bone=0x0, X=-5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

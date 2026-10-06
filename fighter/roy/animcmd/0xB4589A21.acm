@@ -1,0 +1,26 @@
+MoveDef 0xB4589A21
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		Fire_Weapon()
+		FRAME(Frames=17)
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

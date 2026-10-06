@@ -1,0 +1,22 @@
+MoveDef DamageFlyRoll
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		PLAY_FLY_VOICE(unknown=0x80280004, unknown=0x80280005)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

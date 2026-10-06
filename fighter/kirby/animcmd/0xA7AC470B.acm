@@ -1,0 +1,26 @@
+MoveDef 0xA7AC470B
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=11)
+		FRAME(Frames=30)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,28 @@
+MoveDef 0x28EC1278
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0xF0043)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=9)
+		Slope_Full(unknown=0x0, unknown=0x3)
+		FRAME(Frames=14)
+		FRAME(Frames=19)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		Script_End()
+	}
+
+}

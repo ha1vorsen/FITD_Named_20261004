@@ -1,0 +1,27 @@
+MoveDef 0x8853D42D
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x907F0FAF)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x907F0FAF)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		Script_End()
+	}
+
+}

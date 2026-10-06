@@ -1,0 +1,42 @@
+MoveDef Attack12
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=2, Angle=0x5A, KBG=0x64, WBKB=0x32, BKB=0x0, Size=2.5, X=0, Y=7, Z=2, Effect=0x0, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6, X2=0, Y2=7, Z2=8)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=9)
+		ON_FLAG(Variable=RA-Flag[3])
+		FRAME(Frames=16)
+		OFF_FLAG(Variable=RA-Flag[3])
+		FRAME(Frames=17)
+		ON_FLAG(Variable=RA-Flag[2])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		ON_FLAG(Variable=LA-Flag[17])
+		FRAME(Frames=5)
+		Graphic_Effect7(Graphic=0x100008D, Bone=0x0, X=0, Y=7.5, Z=-3, XRot=0, YRot=0, ZRot=0, Size=0.85, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1, Unknown=0x42C80000)
+		FRAME(Frames=7)
+		Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=9, Y=7.5, Z=-1.5, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x0)
+		FRAME(Frames=12)
+		ON_FLAG(Variable=LA-Flag[17])
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x4A40049)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,29 @@
+MoveDef SpecialAirHiStart
+{
+	Main()
+	{
+		FRAME(Frames=19)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xABD189D7)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		PLAY_SE_REMAIN(unknown=0x13003E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		CALL(Hash=0xABD189D7)
+		Script_End()
+	}
+
+}

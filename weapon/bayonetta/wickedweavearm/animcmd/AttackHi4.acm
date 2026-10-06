@@ -1,0 +1,74 @@
+MoveDef AttackHi4
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=8)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		FRAME(Frames=11)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=17, Angle=0x56, KBG=0x5A, WBKB=0x0, BKB=0x20, Size=10.5, X=0, Y=10, Z=14, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x4, HitBits=0x1F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		ON_FLAG(Variable=LA-Flag[8])
+		ON_FLAG(Variable=LA-Flag[9])
+		FRAME(Frames=13)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=16, Angle=0x56, KBG=0x5A, WBKB=0x0, BKB=0x20, Size=10.5, X=0, Y=20, Z=14, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x4, HitBits=0x1F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=15)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=15, Angle=0x56, KBG=0x5A, WBKB=0x0, BKB=0x20, Size=10.5, X=0, Y=30, Z=14, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=51)
+		OFF_FLAG(Variable=LA-Flag[9])
+		Script_End()
+	}
+
+	Effect()
+	{
+		Int_Var_Compare(Variable=LA-Int[8], Method=0x1, Value=0x1)
+		True(Offset=0x5F){
+		    External_Graphic_Effect2(Graphic=0x3380015, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, Terminate=0x1)
+		    FRAME(Frames=10)
+		    Float_Compare(Type=0x0, Method=0x4, Value=0)
+		    True(Offset=0x1A){
+		        Graphic_Effect4(Graphic=0x3380017, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=120, ZRot=-90, Size=1, Terminate=0x1)
+		        Graphic_Effect4(Graphic=0x3380017, Bone=0x7D1, X=0, Y=5, Z=0, XRot=0, YRot=300, ZRot=-90, Size=1, Terminate=0x1)
+		    }
+		    Else(Offset=0x18){
+		        Graphic_Effect4(Graphic=0x3380017, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=-60, ZRot=-90, Size=1, Terminate=0x1)
+		        Graphic_Effect4(Graphic=0x3380017, Bone=0x7D1, X=0, Y=5, Z=0, XRot=0, YRot=120, ZRot=-90, Size=1, Terminate=0x1)
+		    }
+		    FRAME(Frames=11)
+		    Graphic_Effect4(Graphic=0x3380016, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=-90, Size=1, Terminate=0x1)
+		    FRAME(Frames=36)
+		    External_Graphic(Graphic=0x3380018, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=-90, Size=1, Terminate=0x1)
+		}
+		Else(Offset=0x47){
+		    External_Graphic_Effect2(Graphic=0x3380046, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, Terminate=0x1)
+		    FRAME(Frames=10)
+		    Float_Compare(Type=0x0, Method=0x4, Value=0)
+		    True(Offset=0xF){
+		        Graphic_Effect4(Graphic=0x3380017, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=120, ZRot=-90, Size=1, Terminate=0x1)
+		    }
+		    Else(Offset=0xD){
+		        Graphic_Effect4(Graphic=0x3380017, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=-60, ZRot=-90, Size=1, Terminate=0x1)
+		    }
+		    FRAME(Frames=11)
+		    Graphic_Effect4(Graphic=0x3380016, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=-90, Size=1, Terminate=0x1)
+		    FRAME(Frames=36)
+		    External_Graphic(Graphic=0x3380018, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=-90, Size=1, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		WAIT(Frames=10)
+		Sound_Effect(SFX=0xC91003D)
+		WAIT(Frames=18)
+		Sound_Effect(SFX=0xC91003E)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

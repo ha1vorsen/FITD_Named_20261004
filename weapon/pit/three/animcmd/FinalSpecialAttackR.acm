@@ -1,0 +1,23 @@
+MoveDef FinalSpecialAttackR
+{
+	Main()
+	{
+		JUMP(Hash=0x9F06ED6F)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x9F06ED6F)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

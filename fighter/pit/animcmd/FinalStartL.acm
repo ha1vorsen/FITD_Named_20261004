@@ -1,0 +1,39 @@
+MoveDef FinalStartL
+{
+	Main()
+	{
+		VIS_SET_DEFAULT(unknown=0x0, unknown=0x0)
+		Camera_Closeup(ZoomTime=0x5, Unknown=0x0, Distance=2, XRot=0, YRot=0)
+		Time_Manipulation(Amount=0x4, Duration=0x28)
+		FRAME(Frames=13)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=41)
+		Normal_Camera()
+		FRAME(Frames=146)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x40009)
+		Low_Voice_Clip(unknown=0x800E000C)
+		WAIT(Frames=64)
+		Sound_Effect(SFX=0x4000A)
+		WAIT(Frames=30)
+		Sound_Effect(SFX=0x5F0032)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		FRAME(Frames=14)
+		Script_End()
+	}
+
+}

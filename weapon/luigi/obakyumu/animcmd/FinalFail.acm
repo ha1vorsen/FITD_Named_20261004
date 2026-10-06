@@ -1,0 +1,21 @@
+MoveDef FinalFail
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=49)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

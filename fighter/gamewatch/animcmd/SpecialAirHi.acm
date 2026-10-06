@@ -1,0 +1,32 @@
+MoveDef SpecialAirHi
+{
+	Main()
+	{
+		JUMP(Hash=0x1BA6EBD5)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x6DF0026)
+		WAIT(Frames=2)
+		Stop_Sound_Effect(SFX=0x6DF0026)
+		WAIT(Frames=2)
+		Sound_Effect(SFX=0x6DF0025)
+		WAIT(Frames=2)
+		Stop_Sound_Effect(SFX=0x6DF0025)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

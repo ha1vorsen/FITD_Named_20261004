@@ -1,0 +1,26 @@
+MoveDef 0x51C12B1A
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+	Effect()
+	{
+		CALL(Hash=0x86992081)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

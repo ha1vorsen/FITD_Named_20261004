@@ -1,0 +1,48 @@
+MoveDef SpecialN
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=16)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=0, Angle=0x169, KBG=0x64, WBKB=0x28, BKB=0x0, Size=3, X=0, Y=6.5, Z=5.5, Effect=0x0, Trip=0, Hitlag=0, SDI=0, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x0, Ground/Air=0x1, Direct/Indirect=0x1, Type=0xA, HitBits=0x1, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x1, Flinchless=0x1, X2=0, Y2=6.5, Z2=4.5)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		GENERATE_ARTICLE(ID=0x0)
+		FRAME(Frames=22)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=8)
+		Graphic_Effect2(Graphic=0x3370003, Bone=0x19, X=1, Y=6, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=12)
+		Graphic_Effect2(Graphic=0x3370004, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=17)
+		Graphic_Effect3(Graphic=0x100000C, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0xC630034)
+		WAIT(Frames=11)
+		Low_Voice_Clip(unknown=0x804B0009)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=11)
+		FRAME(Frames=18)
+		QUAKE(unknown=0x3)
+		FRAME(Frames=31)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,25 @@
+MoveDef SpecialNEat_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		PLAY_SE_REMAIN(unknown=0xEC)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		FRAME(Frames=46)
+		Script_End()
+	}
+
+}

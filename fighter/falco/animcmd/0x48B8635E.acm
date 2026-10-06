@@ -1,0 +1,26 @@
+MoveDef 0x48B8635E : Unlisted
+{
+	Main()
+	{
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=0.4, Angle=0x1E, KBG=0x64, WBKB=0x3, BKB=0x0, Size=2.7, X=0, Y=11, Z=4, Effect=0x2, Trip=0, Hitlag=1, SDI=1.2, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=0.4, Angle=0x32, KBG=0x64, WBKB=0x3, BKB=0x0, Size=3.2, X=0, Y=10, Z=7, Effect=0x2, Trip=0, Hitlag=1, SDI=1.2, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=0.4, Angle=0x46, KBG=0x64, WBKB=0x3, BKB=0x0, Size=3.5, X=0, Y=9, Z=12, Effect=0x2, Trip=0, Hitlag=1, SDI=1.2, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		ON_FLAG(Variable=RA-Flag[22])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

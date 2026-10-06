@@ -1,0 +1,25 @@
+MoveDef SpecialAirNEnd_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x95397715)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x60097)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x95397715)
+		Script_End()
+	}
+
+}

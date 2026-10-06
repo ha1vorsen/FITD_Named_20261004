@@ -1,0 +1,28 @@
+MoveDef Passive
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Stop_Sound_Effect(SFX=0x44)
+		Stop_Sound_Effect(SFX=0x45)
+		Stop_Sound_Effect(SFX=0x46)
+		Sound_Effect3(SFX=0xC23001E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=19)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

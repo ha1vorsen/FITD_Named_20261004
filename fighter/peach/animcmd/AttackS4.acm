@@ -1,0 +1,69 @@
+MoveDef AttackS4
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		ON_FLAG(Variable=RA-Flag[27])
+		FRAME(Frames=15)
+		CALL(Hash=0x8FDCE21B)
+		FRAME(Frames=18)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x18, X=0, Y=6, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=15)
+		Int_Var_Compare(Variable=LA-Int[131], Method=0x0, Value=0x2)
+		True(Offset=0x24){
+		    Graphic_Effect2(Graphic=0x30E000A, Bone=0x0, X=3, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect(Graphic=0x1000020, Bone=0x0, X=5, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		}
+		Int_Var_Compare(Variable=LA-Int[131], Method=0x0, Value=0x0)
+		True(Offset=0x24){
+		    Graphic_Effect2(Graphic=0x30E000C, Bone=0x0, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect(Graphic=0x1000020, Bone=0x0, X=5, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=0.85, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		}
+		Int_Var_Compare(Variable=LA-Int[131], Method=0x0, Value=0x1)
+		True(Offset=0x24){
+		    Graphic_Effect2(Graphic=0x30E000B, Bone=0x0, X=1, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect(Graphic=0x1000020, Bone=0x0, X=5, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		}
+		Graphic_Effect(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=11)
+		Stop_Sound_Effect(SFX=0x11C)
+		WAIT(Frames=2)
+		Sound_Effect(SFX=0x44001A)
+		WAIT(Frames=2)
+		Int_Var_Compare(Variable=LA-Int[131], Method=0x0, Value=0x2)
+		True(Offset=0x4){
+		    Sound_Effect(SFX=0x110034)
+		}
+		Int_Var_Compare(Variable=LA-Int[131], Method=0x0, Value=0x0)
+		True(Offset=0x4){
+		    Sound_Effect(SFX=0x110035)
+		}
+		Int_Var_Compare(Variable=LA-Int[131], Method=0x0, Value=0x1)
+		True(Offset=0x4){
+		    Sound_Effect(SFX=0x110036)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		CALL(Hash=0x5CCCB2EB)
+		SLOPE(unknown=0x2)
+		FRAME(Frames=32)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

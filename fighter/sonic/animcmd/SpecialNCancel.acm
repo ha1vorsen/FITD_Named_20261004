@@ -1,0 +1,23 @@
+MoveDef SpecialNCancel
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=7)
+		Item_Visibility(State=0x1)
+		Script_End()
+	}
+
+}

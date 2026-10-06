@@ -1,0 +1,29 @@
+MoveDef 0xBE0CEA03 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=25)
+		PLAY_SE_NO_3D(unknown=0x773002E)
+		Sound_Effect(SFX=0x7670033)
+		FRAME(Frames=40)
+		Sound_Effect(SFX=0x7670022)
+		FRAME(Frames=67)
+		Sound_Effect(SFX=0x7670022)
+		FRAME(Frames=129)
+		Sound_Effect(SFX=0x7670038)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,22 @@
+MoveDef SpecialHiLanding
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=15)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

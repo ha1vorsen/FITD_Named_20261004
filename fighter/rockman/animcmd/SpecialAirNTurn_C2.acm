@@ -1,0 +1,27 @@
+MoveDef SpecialAirNTurn_C2
+{
+	Main()
+	{
+		JUMP(Hash=0xF6C38BB4)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xDE1E5D60)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xF6C38BB4)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xF6C38BB4)
+		Script_End()
+	}
+
+}

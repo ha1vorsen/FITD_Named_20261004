@@ -1,0 +1,23 @@
+MoveDef 0x72E1B46F : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		ATTACK_SE()
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x99E49994)
+		Script_End()
+	}
+
+}

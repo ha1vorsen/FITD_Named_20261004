@@ -1,0 +1,28 @@
+MoveDef SpecialLw
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.25)
+		FRAME(Frames=10)
+		GENERATE_ARTICLE_ENABLE(Unknown=0x8)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x8630027)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+}

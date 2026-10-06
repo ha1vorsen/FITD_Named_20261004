@@ -1,0 +1,23 @@
+MoveDef SpecialSStart
+{
+	Main()
+	{
+		Body_Collision(State=0x3)
+		FRAME(Frames=4)
+		ON_FLAG(Variable=RA-Flag[6])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,24 @@
+MoveDef Win3cWait
+{
+	Main()
+	{
+		IS_EXIST_ARTICLE(Unknown=0x0)
+		True(Offset=0x5){
+		    Set_Anchored_Article_Action(Article=0x0, Action=0x1B)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,27 @@
+MoveDef SpecialHiAttackLanding_C2
+{
+	Main()
+	{
+		GENERATE_ARTICLE_ENABLE(Unknown=0x0)
+		FRAME(Frames=23)
+		Article_Event(Value=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x9F9EE679)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

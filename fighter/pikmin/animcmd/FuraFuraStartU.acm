@@ -1,0 +1,21 @@
+MoveDef FuraFuraStartU
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=31)
+		Script_End()
+	}
+
+}

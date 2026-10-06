@@ -1,0 +1,38 @@
+MoveDef EntryR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=27)
+		WAIT(Frames=30)
+		WAIT(Frames=8)
+		Transient_Sound_Effect(SFX=0x80083)
+		WAIT(Frames=12)
+		STOP_SE_STATUS()
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0x8006C)
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0x8006A)
+		WAIT(Frames=30)
+		Sound_Effect(SFX=0x8006B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Visibility(State=0x0)
+		FRAME(Frames=29)
+		Visibility(State=0x1)
+		FRAME(Frames=80)
+		Slope_Full(unknown=0x6, unknown=0x5)
+		Script_End()
+	}
+
+}

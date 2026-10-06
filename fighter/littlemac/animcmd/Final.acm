@@ -1,0 +1,41 @@
+MoveDef Final
+{
+	Main()
+	{
+		Camera_Closeup(ZoomTime=0x14, Unknown=0x0, Distance=2, XRot=0, YRot=0)
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=51)
+		Normal_Camera()
+		CAM_RESET()
+		Terminate_Instance()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=46)
+		External_Graphic_Effect2(Graphic=0x3290014, Bone=0xC, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		unk_7FCE1BCF(unknown=0x0, unknown=0x0, unknown=0x1)
+		True(Offset=0x6){
+		    PLAY_SE_REMAIN(unknown=0x89D0000)
+		}
+		Else(Offset=0x4){
+		    PLAY_SE_REMAIN(unknown=0x89D0003)
+		}
+		PLAY_SE_REMAIN(unknown=0x89D0001)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		unk_EE37008F()
+		Script_End()
+	}
+
+}

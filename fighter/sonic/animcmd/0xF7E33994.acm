@@ -1,0 +1,34 @@
+MoveDef 0xF7E33994
+{
+	Main()
+	{
+		Hitbox(ID=0x1, Part=0x0, Bone=0x3, Damage=5, Angle=0x46, KBG=0x46, WBKB=0x0, BKB=0x46, Size=3, X=0, Y=1.5, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD)
+		FRAME(Frames=10)
+		Remove_All_Hitboxes()
+		Hitbox(ID=0x1, Part=0x1, Bone=0x3, Damage=5, Angle=0x46, KBG=0x46, WBKB=0x0, BKB=0x46, Size=3, X=0, Y=1.5, Z=0, Effect=0xB, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD)
+		FRAME(Frames=32)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		CALL(Hash=0xB2A77970)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x2A0076)
+		Script_End()
+	}
+
+	Expression()
+	{
+		CALL(Hash=0xB2A77970)
+		Item_Visibility(State=0x0)
+		Morph_Model_Event(unknown=0x0)
+		Script_End()
+	}
+
+}

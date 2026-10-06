@@ -1,0 +1,48 @@
+MoveDef 0x42D4869E
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x2)
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=6)
+		SHIELD_ON(Unused=0x3, ID=0x0, Type=0x3)
+		FRAME(Frames=12)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1, Angle=0x6E, KBG=0x0, WBKB=0x0, BKB=0x0, Size=9, X=0, Y=13, Z=11, Effect=0x7, Trip=0.4, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0xF, SFXLevel=0x1, SFX=0x29, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=1, Angle=0x6E, KBG=0x0, WBKB=0x0, BKB=0x0, Size=7, X=0, Y=6.7, Z=5, Effect=0x7, Trip=0.4, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0xF, SFXLevel=0x1, SFX=0x29, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		FRAME(Frames=18)
+		Remove_All_Hitboxes()
+		FRAME(Frames=32)
+		Shield_Off2(Unused=0x3, ID=0x0, Type=0x3)
+		OFF_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=11)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x3240000, GFXLeft=0x3240002, Bone=0x0, X=0x0, Y=0x41000000, Z=0x41100000, XRot=0x0, YRot=0x0, ZRot=0x0, Size=0x3F800000, Terminate=0x1, unknown=0x0)
+		WAIT(Frames=1)
+		External_Graphic(Graphic=0x3240001, Bone=0x17, X=0, Y=8, Z=0, XRot=180, YRot=2E-05, ZRot=-180, Size=1, Terminate=0x1)
+		LANDING_EFFECT_FLIP(GFXRight=0x100000D, GFXLeft=0x100000E, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0x7600037)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x4)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=10)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		FRAME(Frames=13)
+		FRAME(Frames=23)
+		Script_End()
+	}
+
+}

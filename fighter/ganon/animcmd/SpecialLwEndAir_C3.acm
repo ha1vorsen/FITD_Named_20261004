@@ -1,0 +1,23 @@
+MoveDef SpecialLwEndAir_C3
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		ON_FLAG(Variable=RA-Flag[16])
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

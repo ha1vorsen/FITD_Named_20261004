@@ -1,0 +1,64 @@
+MoveDef 0xFA8FFF59 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x0)
+		True(Offset=0x10){
+		    IS_FLAG(Variable=LA-Flag[131])
+		    True(Offset=0x8){
+		        LAST_EFFECT_SET_COLOR(unknown=0x437F0000, unknown=0x42800000, unknown=0x42800000)
+		    }
+		    Else(Offset=0x6){
+		        LAST_EFFECT_SET_COLOR(unknown=0x42800000, unknown=0x42800000, unknown=0x428C0000)
+		    }
+		}
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x1)
+		True(Offset=0x10){
+		    IS_FLAG(Variable=LA-Flag[131])
+		    True(Offset=0x8){
+		        LAST_EFFECT_SET_COLOR(unknown=0x42800000, unknown=0x42800000, unknown=0x428C0000)
+		    }
+		    Else(Offset=0x6){
+		        LAST_EFFECT_SET_COLOR(unknown=0x437F0000, unknown=0x42800000, unknown=0x42800000)
+		    }
+		}
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x2)
+		True(Offset=0x6){
+		    LAST_EFFECT_SET_COLOR(unknown=0x437F0000, unknown=0x43630000, unknown=0x42240000)
+		}
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x3)
+		True(Offset=0x6){
+		    LAST_EFFECT_SET_COLOR(unknown=0x43590000, unknown=0x43060000, unknown=0x437F0000)
+		}
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x4)
+		True(Offset=0x6){
+		    LAST_EFFECT_SET_COLOR(unknown=0x42F00000, unknown=0x435C0000, unknown=0x437F0000)
+		}
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x5)
+		True(Offset=0x6){
+		    LAST_EFFECT_SET_COLOR(unknown=0x43460000, unknown=0x435F0000, unknown=0x43070000)
+		}
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x6)
+		True(Offset=0x6){
+		    LAST_EFFECT_SET_COLOR(unknown=0x42C80000, unknown=0x433E0000, unknown=0x437F0000)
+		}
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x7)
+		True(Offset=0x6){
+		    LAST_EFFECT_SET_COLOR(unknown=0x437F0000, unknown=0x41800000, unknown=0x41200000)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,45 @@
+MoveDef Attack11
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		ATK_REFERENCE_NODE(Unknown=0x16, Unknown=0x0)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x16, Damage=2, Angle=0x46, KBG=0x64, WBKB=0xA, BKB=0x0, Size=4.2, X=3.7, Y=0, Z=-0.1, Effect=0x19, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x15, Damage=2, Angle=0x46, KBG=0x64, WBKB=0xA, BKB=0x0, Size=3, X=0, Y=0, Z=0, Effect=0x19, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=6)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x11){
+		    External_Graphic(Graphic=0x3110008, Bone=0x0, X=2, Y=10, Z=1.5, XRot=-5, YRot=10, ZRot=-17, Size=0.65, Terminate=0x1)
+		    LAST_EFFECT_SET_RATE(unknown=2.2)
+		}
+		Else(Offset=0xF){
+		    External_Graphic(Graphic=0x3110008, Bone=0x0, X=2, Y=10, Z=1.5, XRot=-5, YRot=-10, ZRot=-25, Size=0.65, Terminate=0x1)
+		    LAST_EFFECT_SET_RATE(unknown=2.2)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x130058)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=1)
+		Script_End()
+	}
+
+}

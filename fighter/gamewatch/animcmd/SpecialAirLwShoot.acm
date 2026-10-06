@@ -1,0 +1,27 @@
+MoveDef SpecialAirLwShoot
+{
+	Main()
+	{
+		JUMP(Hash=0x897F671E)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x6DF0045)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

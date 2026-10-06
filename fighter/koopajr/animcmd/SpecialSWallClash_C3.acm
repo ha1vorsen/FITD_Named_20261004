@@ -1,0 +1,26 @@
+MoveDef SpecialSWallClash_C3
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		unk_D3D9401B(Unknown=-0.5, Unknown=2.2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x4)
+		FRAME(Frames=40)
+		ON_FLAG(Variable=RA-Flag[24])
+		Script_End()
+	}
+
+}

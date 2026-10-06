@@ -1,0 +1,29 @@
+MoveDef SpecialAirSAttack_C3
+{
+	Main()
+	{
+		JUMP(Hash=0xC15B2356)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Sword_Trace(TraceID=0x4, BlurLen=8.407791E-45, Bone1=0x3E8, X=0, Y=1.7, Z=0, Bone2=0x3E8, X=0, Y=16, Z=0, Anchored=0x1, Graphic=0x31D0000, Bone3=0x3E8, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=5)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xC15B2356)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xC15B2356)
+		Script_End()
+	}
+
+}

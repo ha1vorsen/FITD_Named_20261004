@@ -1,0 +1,23 @@
+MoveDef FinalAirEnd
+{
+	Main()
+	{
+		Allow/Disallow_Ledgegrab(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

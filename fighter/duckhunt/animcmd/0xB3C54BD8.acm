@@ -1,0 +1,32 @@
+MoveDef 0xB3C54BD8
+{
+	Main()
+	{
+		Item_Property(Unknown=0x6, Unknown=2)
+		FRAME(Frames=3)
+		ITEM_ACTION(Unknown=0x64)
+		FRAME(Frames=4)
+		CALL(Hash=0xA61694BE)
+		FRAME(Frames=6)
+		Remove_All_Hitboxes()
+		Item_Property(Unknown=0x14, Unknown=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=1)
+		Script_End()
+	}
+
+}

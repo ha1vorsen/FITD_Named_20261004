@@ -1,0 +1,45 @@
+MoveDef 0x60A4424E
+{
+	Main()
+	{
+		FRAME(Frames=29)
+		CALL(Hash=0x517F59E6)
+		WAIT(Frames=5)
+		Remove_All_Hitboxes()
+		FRAME(Frames=73)
+		CALL(Hash=0x517F59E6)
+		WAIT(Frames=5)
+		Remove_All_Hitboxes()
+		FRAME(Frames=122)
+		CALL(Hash=0x517F59E6)
+		Change_Hitbox_Size(ID=0x0, Size=16)
+		Change_Hitbox_Size(ID=0x1, Size=16)
+		WAIT(Frames=13)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect6(Graphic=0x3230000, Bone=0x3, X=3, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1, Unknown=0x42C80000)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=27)
+		Transient_Sound_Effect(SFX=0x590002)
+		WAIT(Frames=50)
+		Transient_Sound_Effect(SFX=0x590003)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=28)
+		FRAME(Frames=72)
+		FRAME(Frames=120)
+		Script_End()
+	}
+
+}

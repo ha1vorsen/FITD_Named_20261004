@@ -1,0 +1,38 @@
+MoveDef AppealHiL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x2C42123B)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x1C0085)
+		WAIT(Frames=18)
+		Sound_Effect(SFX=0x1C0045)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x1C0086)
+		WAIT(Frames=21)
+		Sound_Effect(SFX=0x1C0045)
+		WAIT(Frames=12)
+		Sound_Effect(SFX=0x1C0087)
+		WAIT(Frames=24)
+		Sound_Effect(SFX=0x1C0045)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=19)
+		FRAME(Frames=45)
+		FRAME(Frames=79)
+		Script_End()
+	}
+
+}

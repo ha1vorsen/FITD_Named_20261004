@@ -1,0 +1,26 @@
+MoveDef 0xDC894F60
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		CALL(Hash=0x3FEED32F)
+		FRAME(Frames=6)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		Script_End()
+	}
+
+}

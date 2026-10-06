@@ -1,0 +1,43 @@
+MoveDef AttackAirHi
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=6)
+		Hitbox(ID=0x0, Part=0x0, Bone=0xA, Damage=6.5, Angle=0x50, KBG=0x7D, WBKB=0x0, BKB=0x1E, Size=4.6, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x9, Damage=6.5, Angle=0x50, KBG=0x7D, WBKB=0x0, BKB=0x1E, Size=3.6, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x8, Damage=6.5, Angle=0x50, KBG=0x7D, WBKB=0x0, BKB=0x1E, Size=3.6, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		FRAME(Frames=13)
+		Remove_All_Hitboxes()
+		FRAME(Frames=25)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x319000F, Bone=0xB, X=-1, Y=-0.7, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.6, Terminate=0x1)
+		FRAME(Frames=4)
+		FRAME(Frames=7)
+		External_Graphic(Graphic=0x100008E, Bone=0x0, X=-1, Y=14, Z=0, XRot=-3, YRot=23.6, ZRot=96.3, Size=1, Terminate=0x1)
+		FRAME(Frames=8)
+		Terminate_Graphic_Effect(Graphic=0x3190010, unknown=0x0, unknown=0x0)
+		FRAME(Frames=18)
+		Terminate_Graphic_Effect(Graphic=0x319000F, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x1B007E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=4)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,37 @@
+MoveDef EntryL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		ON_FLAG(Variable=LA-Flag[101])
+		Visibility(State=0x0)
+		FRAME(Frames=4)
+		Visibility(State=0x1)
+		FRAME(Frames=11)
+		SET_CURSOR(unknown=0x1)
+		Tag_Visibility(State=0x1)
+		FRAME(Frames=89)
+		OFF_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=90)
+		Slope_Full(unknown=0x6, unknown=0xA)
+		Script_End()
+	}
+
+}

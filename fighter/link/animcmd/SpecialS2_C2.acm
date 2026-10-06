@@ -1,0 +1,35 @@
+MoveDef SpecialS2_C2
+{
+	Main()
+	{
+		FRAME(Frames=14)
+		Article_Event(Value=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=2)
+		Graphic_Effect2(Graphic=0x1000009, Bone=0x11, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.75, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0x3008E)
+		Stop_Sound_Effect(SFX=0x30098)
+		Sound_Effect(SFX=0x3003A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=4)
+		FRAME(Frames=18)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

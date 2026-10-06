@@ -1,0 +1,51 @@
+MoveDef SpecialLw_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=4)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=8)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=38)
+		OFF_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=57)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=65)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		EFFECT_COLOR(Graphic=0x3300009, Bone=0x0, unknown=0, unknown=11, unknown=5, unknown=0x0, unknown=0x0, unknown=0x0, unknown=1.3, unknown=0, unknown=0, unknown=0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=170, unknown=195, unknown=255)
+		Color_Overlay(Red=255, Green=255, Blue=255, Alpha=190)
+		WAIT(Frames=1)
+		Set_Loop(Iterations=5){
+		    Color_Overlay(Red=180, Green=180, Blue=180, Alpha=130)
+		    WAIT(Frames=2)
+		    Color_Overlay(Red=0, Green=150, Blue=255, Alpha=120)
+		    WAIT(Frames=2)
+		    Terminate_Overlays()
+		    WAIT(Frames=2)
+		    Goto(Offset=-17)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0x7680031)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,25 @@
+MoveDef 0xD1A56601 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=2){
+		    WAIT(Frames=3)
+		    WAIT(Frames=5)
+		    Goto(Offset=-4)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

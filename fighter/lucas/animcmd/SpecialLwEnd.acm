@@ -1,0 +1,26 @@
+MoveDef SpecialLwEnd
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=8, Angle=0x19, KBG=0x62, WBKB=0x0, BKB=0x28, Size=3.5, X=0, Y=6.3, Z=12, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x7, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x10)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

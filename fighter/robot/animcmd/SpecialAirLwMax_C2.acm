@@ -1,0 +1,25 @@
+MoveDef SpecialAirLwMax_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x38B9F3B3)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Transient_Sound_Effect(SFX=0x250050)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x38B9F3B3)
+		Script_End()
+	}
+
+}

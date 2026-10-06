@@ -1,0 +1,49 @@
+MoveDef 0xFAD349FF
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=0, Angle=0x0, KBG=0x64, WBKB=0x28, BKB=0x0, Size=6, X=0, Y=10, Z=5, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x0, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x1, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x1, StretchToggle=0x0)
+		FRAME(Frames=11)
+		Remove_All_Hitboxes()
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=8, Angle=0x0, KBG=0x64, WBKB=0x5A, BKB=0x0, Size=8, X=0, Y=10, Z=20, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x1, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=10, Z2=10)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect4(Graphic=0x3100016, Bone=0x7DA, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=2)
+		External_Graphic(Graphic=0x310001E, Bone=0x0, X=0, Y=10, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=6)
+		Sword_Trace(TraceID=0xD5, BlurLen=8.407791E-45, Bone1=0x7E4, X=1.5, Y=0, Z=0, Bone2=0x7E4, X=1.5, Y=0, Z=25, Anchored=0x1, Graphic=0x310001F, Bone3=0x7E4, X=1.85, Y=0.55, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=7)
+		FRAME(Frames=10)
+		FRAME(Frames=11)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x7E4, X=12, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=15)
+		Terminate_Graphic_Effect(Graphic=0x310001E, unknown=0x0, unknown=0x0)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		FRAME(Frames=16)
+		Terminate_Graphic_Effect(Graphic=0x310001F, unknown=0x0, unknown=0x0)
+		FRAME(Frames=75)
+		Graphic_Effect2(Graphic=0x3100023, Bone=0x0, X=0, Y=5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.15, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x1200B6)
+		FRAME(Frames=52)
+		Sound_Effect(SFX=0x1200A0)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

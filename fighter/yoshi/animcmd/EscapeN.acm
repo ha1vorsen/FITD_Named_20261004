@@ -1,0 +1,29 @@
+MoveDef EscapeN
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Graphic_Effect(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x9006F)
+		unk_687F9320(unknown=0x90079, unknown=0x1B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x1)
+		FRAME(Frames=15)
+		Slope_Full(unknown=0x0, unknown=0x6)
+		Script_End()
+	}
+
+}

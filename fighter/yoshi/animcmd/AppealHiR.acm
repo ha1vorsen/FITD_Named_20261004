@@ -1,0 +1,41 @@
+MoveDef AppealHiR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		Sound_Effect(SFX=0x9005E)
+		FRAME(Frames=15)
+		Sound_Effect(SFX=0x90052)
+		FRAME(Frames=35)
+		Sound_Effect(SFX=0x90050)
+		FRAME(Frames=51)
+		Sound_Effect(SFX=0x90052)
+		FRAME(Frames=67)
+		Sound_Effect(SFX=0x9002A)
+		FRAME(Frames=75)
+		Sound_Effect(SFX=0x9001E)
+		FRAME(Frames=96)
+		Sound_Effect(SFX=0x9002A)
+		Sound_Effect(SFX=0x3E0018)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=17)
+		FRAME(Frames=34)
+		FRAME(Frames=50)
+		FRAME(Frames=66)
+		FRAME(Frames=95)
+		Script_End()
+	}
+
+}

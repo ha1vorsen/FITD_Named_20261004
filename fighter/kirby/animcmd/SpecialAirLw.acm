@@ -1,0 +1,49 @@
+MoveDef SpecialAirLw
+{
+	Main()
+	{
+		MOT_CHANGE_EXIST_ARTICLE(unknown=0x18, unknown=0x4)
+		FRAME(Frames=10)
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=30)
+		CALL(Hash=0x132FAC0E)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x19, X=-0.00498, Y=4.99967, Z=0.05715, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=2)
+		ON_FLAG(Variable=RA-Flag[16])
+		Color_Overlay(Red=180, Green=128, Blue=100, Alpha=40)
+		WAIT(Frames=4)
+		Color_Overlay(Red=80, Green=60, Blue=40, Alpha=60)
+		WAIT(Frames=2)
+		Color_Overlay(Red=180, Green=128, Blue=100, Alpha=80)
+		WAIT(Frames=4)
+		Color_Overlay(Red=80, Green=60, Blue=40, Alpha=100)
+		WAIT(Frames=2)
+		Color_Overlay(Red=180, Green=128, Blue=100, Alpha=120)
+		WAIT(Frames=4)
+		Color_Overlay(Red=80, Green=60, Blue=40, Alpha=140)
+		WAIT(Frames=2)
+		Color_Overlay(Red=180, Green=128, Blue=100, Alpha=160)
+		WAIT(Frames=4)
+		Color_Overlay(Red=80, Green=60, Blue=40, Alpha=180)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		PLAY_SE_REMAIN(unknown=0xA005A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

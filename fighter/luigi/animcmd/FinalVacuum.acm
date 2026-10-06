@@ -1,0 +1,47 @@
+MoveDef FinalVacuum
+{
+	Main()
+	{
+		Set_Camera_Boundaries(Front=30, Back=-35, Top=20, Bottom=-20)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=9)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=2, RandomY=0, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		FRAME(Frames=40)
+		Graphic_Effect(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=2, RandomY=0, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=66)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=2, RandomY=0, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		FRAME(Frames=67)
+		Graphic_Effect(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=105)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=2, RandomY=0, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		FRAME(Frames=106)
+		Graphic_Effect(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=177)
+		Graphic_Effect(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=178)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=2, RandomY=0, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

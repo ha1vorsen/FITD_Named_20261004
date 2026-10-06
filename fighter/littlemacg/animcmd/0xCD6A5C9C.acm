@@ -1,0 +1,22 @@
+MoveDef 0xCD6A5C9C
+{
+	Main()
+	{
+		FRAME(Frames=8)
+		WAIT(Frames=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

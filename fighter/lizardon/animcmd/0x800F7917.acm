@@ -1,0 +1,24 @@
+MoveDef 0x800F7917 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		QUAKE(unknown=0x3)
+		FRAME(Frames=33)
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,33 @@
+MoveDef 0x88312175
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=15)
+		Color_Overlay(Red=0, Green=255, Blue=0, Alpha=90)
+		FRAME(Frames=17)
+		External_Graphic(Graphic=0x30B0001, Bone=0x11, X=2, Y=0, Z=0, XRot=-179.8226, YRot=0, ZRot=-2E-05, Size=1, Terminate=0x0)
+		Terminate_Overlays()
+		Flash_Light_Effect(Red=200, Blue=255, Green=200, Alpha=160, SourceX=75, SourceY=-10)
+		FRAME(Frames=22)
+		Change_Flash_Light_Color(TransitionFrames=5, Red=100, Blue=255, Green=200, Alpha=0)
+		FRAME(Frames=27)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=16)
+		Script_End()
+	}
+
+}

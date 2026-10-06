@@ -1,0 +1,22 @@
+MoveDef 0xBC64B03D
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		Fire_Weapon()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,30 @@
+MoveDef SpecialHiR
+{
+	Main()
+	{
+		JUMP(Hash=0x60A4424E)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x60A4424E)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=27)
+		Transient_Sound_Effect(SFX=0x590002)
+		WAIT(Frames=50)
+		Transient_Sound_Effect(SFX=0x590003)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x60A4424E)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,42 @@
+MoveDef SpecialNLoop
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[15])
+		Grab_Collision2(ID=0x0, Bone=0x0, Size=4.5, X=0, Y=9, Z=5, Action=0xDF, Ground/Air=0x3, Unknown=0x1)
+		Extended_Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=0, Angle=0xA0, KBG=0x64, WBKB=0x32, BKB=0x0, Size=6, X=0, Y=8, Z=10, Effect=0x0, Trip=0, Hitlag=0, SDI=0, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x0, Ground/Air=0x80000003, Direct/Indirect=0x1, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x3, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x1, Flinchless=0x1, X2=0, Y2=11, Z2=10)
+		Special_Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=0, Angle=0xA0, KBG=0x64, WBKB=0x1E, BKB=0x0, Size=5.5, X=0, Y=9, Z=16, Effect=0x0, Trip=0, Hitlag=0, SDI=0, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x0, Ground/Air=0x80000003, Direct/Indirect=0x1, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x3, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x1, Flinchless=0x1, StretchToggle=0x0)
+		Extended_Special_Hitbox(ID=0x3, Part=0x0, Bone=0x0, Damage=0, Angle=0xA0, KBG=0x64, WBKB=0xA, BKB=0x0, Size=7, X=0, Y=6, Z=23, Effect=0x0, Trip=0, Hitlag=0, SDI=0, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x0, Ground/Air=0x80000003, Direct/Indirect=0x1, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x3, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x1, Flinchless=0x1, X2=0, Y2=12, Z2=23)
+		Throw_Specifier(ID=0x1, Bone=0x0, Damage=5, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x0, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		Search_Collision(ID=0x0, Part=0x0, Bone=0x0, Size=7, X=0, Y=9, Z=5, Unknown=0x1, Unknown=0x1, Ground/Air=0x7, Unknown=0x0, Unknown=0xF, Unknown=0xF, Unknown=0x0, RehitRate=0x0, SelfAffectionToggle=0x0, Unknown=0x0)
+		SET_SEARCH_OPPONENT(Unknown=0x0, Unknown=0x0, Unknown=0x5, Unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x31C0008, Bone=0x0, X=0, Y=11, Z=4, XRot=0, YRot=0, ZRot=0, Size=0.9, Terminate=0x1)
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=-5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=15, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=16)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		Transient_Sound_Effect(SFX=0x60033)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=1)
+		Loop_Rest()
+		JUMP(Hash=0xBF498DF3)
+		Script_End()
+	}
+
+}

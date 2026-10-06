@@ -1,0 +1,27 @@
+MoveDef 0x7CA86B39
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		Model_Changer(ChangerID=0x7, ChangerState=0x3)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x9B6B7EF6)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x6DF0028)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

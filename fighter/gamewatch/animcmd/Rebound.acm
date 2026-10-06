@@ -1,0 +1,22 @@
+MoveDef Rebound
+{
+	Main()
+	{
+		FRAME(Frames=22)
+		Model_Changer(ChangerID=0x7, ChangerState=0x3)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

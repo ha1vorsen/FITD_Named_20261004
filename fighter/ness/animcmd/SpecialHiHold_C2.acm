@@ -1,0 +1,35 @@
+MoveDef SpecialHiHold_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		External_Graphic(Graphic=0x30D001C, Bone=0x0, X=0, Y=0, Z=0, XRot=-90, YRot=-90, ZRot=0, Size=1, Terminate=0x1)
+		Graphic_Effect2(Graphic=0x100001C, Bone=0x0, X=0, Y=20, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Set_Loop(Iterations=-1){
+		    Color_Overlay(Red=255, Green=224, Blue=192, Alpha=60)
+		    WAIT(Frames=4)
+		    Color_Overlay(Red=0, Green=224, Blue=192, Alpha=48)
+		    WAIT(Frames=4)
+		    Goto(Offset=-14)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0xF0080)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

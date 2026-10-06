@@ -1,0 +1,42 @@
+MoveDef SpecialAirS1Start
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[18])
+		FRAME(Frames=19)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=0, Angle=0x169, KBG=0x0, WBKB=0x0, BKB=0x0, Size=4.3, X=0, Y=9, Z=8.5, Effect=0x1, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x6, HitBits=0x1F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x0, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x1, Flinchless=0x0, X2=0, Y2=3, Z2=8.5)
+		Extended_Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=0, Angle=0x169, KBG=0x0, WBKB=0x0, BKB=0x0, Size=2.6, X=0, Y=9, Z=2, Effect=0x1, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x6, HitBits=0x1F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x0, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x1, Flinchless=0x0, X2=0, Y2=3, Z2=2.2)
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=31)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=36)
+		OFF_FLAG(Variable=RA-Flag[14])
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x0, X=5, Y=8, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=16)
+		Graphic_Effect3(Graphic=0x1000009, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		External_Graphic_Effect2(Graphic=0x3000009, Bone=0x7, X=-2, Y=-2, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x81A0038)
+		FRAME(Frames=15)
+		Sound_Effect(SFX=0x81A0035)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=19)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,34 @@
+MoveDef SpecialAirHi_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		FRAME(Frames=11)
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=30)
+		Set_Frame_Duration(Speed=0.7)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x60DC32D7)
+		Script_End()
+	}
+
+	Sound()
+	{
+		WAIT(Frames=2)
+		PLAY_SE_REMAIN(unknown=0x13003D)
+		unk_687F9320(unknown=0x13003D, unknown=0x28)
+		Script_End()
+	}
+
+	Expression()
+	{
+		CALL(Hash=0x60DC32D7)
+		Script_End()
+	}
+
+}

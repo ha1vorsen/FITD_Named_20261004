@@ -1,0 +1,23 @@
+MoveDef SpecialSBump
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		PLAY_SE_REMAIN(unknown=0x1A0044)
+		Sound_Effect(SFX=0x1A0084)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

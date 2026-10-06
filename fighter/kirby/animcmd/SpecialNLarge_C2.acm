@@ -1,0 +1,25 @@
+MoveDef SpecialNLarge_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=76)
+		PLAY_SE_REMAIN(unknown=0xED)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		FRAME(Frames=68)
+		Script_End()
+	}
+
+}

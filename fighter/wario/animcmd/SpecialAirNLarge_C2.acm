@@ -1,0 +1,25 @@
+MoveDef SpecialAirNLarge_C2
+{
+	Main()
+	{
+		JUMP(Hash=0xF6B79205)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xF6B79205)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xF6B79205)
+		Script_End()
+	}
+
+}

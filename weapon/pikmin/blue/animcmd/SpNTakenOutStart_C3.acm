@@ -1,0 +1,27 @@
+MoveDef SpNTakenOutStart_C3 : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		MOT_SET_RATE_W(unknown=RA-Float[0])
+		FRAME(Frames=2)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=8, Angle=0x28, KBG=0x46, WBKB=0x0, BKB=0x3C, Size=10, X=0, Y=5, Z=5, Effect=0x0, Trip=0, Hitlag=1.5, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x1, SFXType=0xB, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x15, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x1, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=5)
+		Set_Frame_Speed(Multiplier=1)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

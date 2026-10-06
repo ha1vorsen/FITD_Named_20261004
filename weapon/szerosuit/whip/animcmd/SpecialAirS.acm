@@ -1,0 +1,31 @@
+MoveDef SpecialAirS
+{
+	Main()
+	{
+		SET_FLOAT(Value=32, Variable=LA-Float[9])
+		SET_FLOAT(Value=40, Variable=LA-Float[10])
+		Visibility(State=0x1)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=22)
+		Model_Changer(ChangerID=0x0, ChangerState=0x2)
+		MATERIAL_ANIM_SET_FRAME(unknown=22)
+		FRAME(Frames=48)
+		Visibility(State=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x224117F6)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

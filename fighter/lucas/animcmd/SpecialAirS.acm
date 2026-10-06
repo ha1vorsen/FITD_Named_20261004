@@ -1,0 +1,29 @@
+MoveDef SpecialAirS
+{
+	Main()
+	{
+		JUMP(Hash=0x224117F6)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x224117F6)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		PLAY_SE_REMAIN(unknown=0x500003)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=20)
+		Script_End()
+	}
+
+}

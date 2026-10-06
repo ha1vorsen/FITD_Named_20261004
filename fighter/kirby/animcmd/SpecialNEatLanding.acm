@@ -1,0 +1,25 @@
+MoveDef SpecialNEatLanding
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.5)
+		JUMP(Hash=0x46D97543)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect3(SFX=0xA0045)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

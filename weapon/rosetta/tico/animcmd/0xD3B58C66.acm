@@ -1,0 +1,22 @@
+MoveDef 0xD3B58C66
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3270005, Bone=0x7D2, X=1, Y=0, Z=0, XRot=0, YRot=0, ZRot=-90, Size=1, Terminate=0x1)
+		Sword_Trace(TraceID=0xA2, BlurLen=1.681558E-44, Bone1=0x7D2, X=-8, Y=6, Z=0, Bone2=0x7D2, X=8, Y=6, Z=0, Anchored=0x1, Graphic=0x0, Bone3=0x7D2, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

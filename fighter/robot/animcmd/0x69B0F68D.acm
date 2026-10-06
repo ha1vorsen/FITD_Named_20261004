@@ -1,0 +1,26 @@
+MoveDef 0x69B0F68D
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		STOP_SE_STATUS()
+		Transient_Sound_Effect(SFX=0x25006E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=2)
+		Loop_Rest()
+		JUMP(Hash=0x69B0F68D)
+		Script_End()
+	}
+
+}

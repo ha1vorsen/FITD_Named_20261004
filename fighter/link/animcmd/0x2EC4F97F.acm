@@ -1,0 +1,21 @@
+MoveDef 0x2EC4F97F : Unlisted
+{
+	Main()
+	{
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=11, Angle=0x41, KBG=0x50, WBKB=0x0, BKB=0x32, Size=4, X=2, Y=3, Z=1, Effect=0x19, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

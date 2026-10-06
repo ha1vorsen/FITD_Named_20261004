@@ -1,0 +1,39 @@
+MoveDef FinalAir
+{
+	Main()
+	{
+		JUMP(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x5E001E)
+		Sound_Effect(SFX=0x20014)
+		WAIT(Frames=54)
+		Sound_Effect(SFX=0x5E001F)
+		Sound_Effect(SFX=0x20015)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		unk_EE37008F()
+		FRAME(Frames=3)
+		FRAME(Frames=56)
+		QUAKE(unknown=0x5)
+		FRAME(Frames=75)
+		FRAME(Frames=156)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

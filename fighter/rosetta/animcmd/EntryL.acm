@@ -1,0 +1,39 @@
+MoveDef EntryL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x327000E, Bone=0xA, X=0, Y=2, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x3270001, Bone=0x18, X=0, Y=7.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.35, Terminate=0x1)
+		FRAME(Frames=27)
+		Terminate_Graphic_Effect(Graphic=0x327000E, unknown=0x0, unknown=0x0)
+		FRAME(Frames=90)
+		Terminate_Graphic_Effect(Graphic=0x3270001, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		PLAY_SE_REMAIN(unknown=0x4A40007)
+		WAIT(Frames=59)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		ON_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=22)
+		SET_CURSOR(unknown=0x1)
+		Tag_Visibility(State=0x1)
+		FRAME(Frames=64)
+		OFF_FLAG(Variable=LA-Flag[101])
+		Script_End()
+	}
+
+}

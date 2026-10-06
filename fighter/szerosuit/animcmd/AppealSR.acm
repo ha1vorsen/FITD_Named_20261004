@@ -1,0 +1,33 @@
+MoveDef AppealSR
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x2)
+		Set_Anchored_Article_Action(Article=0x2, Action=0x28)
+		FRAME(Frames=81)
+		Remove_Article(Article=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=13)
+		Sound_Effect(SFX=0x1B0082)
+		Transient_Sound_Effect(SFX=0x4E0010)
+		WAIT(Frames=38)
+		Sound_Effect(SFX=0x1B0077)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=36)
+		Script_End()
+	}
+
+}

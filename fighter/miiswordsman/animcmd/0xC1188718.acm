@@ -1,0 +1,25 @@
+MoveDef 0xC1188718
+{
+	Main()
+	{
+		FRAME(Frames=12)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		unk_C7B586AF(unknown=0, unknown=30, unknown=0)
+		Script_End()
+	}
+
+}

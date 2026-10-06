@@ -1,0 +1,25 @@
+MoveDef SpecialAirNTronEnd_C3
+{
+	Main()
+	{
+		JUMP(Hash=0x4124946A)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x4124946A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x4124946A)
+		Script_End()
+	}
+
+}

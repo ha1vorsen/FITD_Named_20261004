@@ -1,0 +1,44 @@
+MoveDef AttackAirF
+{
+	Main()
+	{
+		ON_FLAG(Variable=LA-Flag[125])
+		FRAME(Frames=6)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=31)
+		OFF_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=41)
+		ON_FLAG(Variable=LA-Flag[126])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=2)
+		Int_Var_Compare(Variable=RA-Int[4], Method=0x0, Value=0x1)
+		True(Offset=0x12){
+		    FRAME(Frames=7)
+		    Graphic_Effect6(Graphic=0x1000090, Bone=0x0, X=4, Y=2, Z=3, XRot=10, YRot=0, ZRot=-55, Size=1.2, Terminate=0x1, Unknown=0x42200000)
+		}
+		Else(Offset=0x2){
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x1C009D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=6)
+		FRAME(Frames=32)
+		Item_Visibility(State=0x1)
+		Script_End()
+	}
+
+}

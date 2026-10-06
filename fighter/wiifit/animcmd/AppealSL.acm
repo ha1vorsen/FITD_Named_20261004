@@ -1,0 +1,25 @@
+MoveDef AppealSL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		PLAY_DAMAGESTOP(unknown=0x2C9001E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

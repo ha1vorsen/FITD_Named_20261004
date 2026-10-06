@@ -1,0 +1,24 @@
+MoveDef SpecialNUse2_C2
+{
+	Main()
+	{
+		FRAME(Frames=34)
+		THROW_ITEM_OFFSET_MOTION(unknown=0x41200000, unknown=0x418C0000, unknown=0x12B)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

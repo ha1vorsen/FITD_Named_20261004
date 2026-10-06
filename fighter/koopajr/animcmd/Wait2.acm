@@ -1,0 +1,31 @@
+MoveDef Wait2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		STOP_SE_STATUS()
+		Transient_Sound_Effect(SFX=0x8630042)
+		FRAME(Frames=18)
+		Transient_Sound_Effect(SFX=0x8630043)
+		FRAME(Frames=44)
+		Transient_Sound_Effect(SFX=0x8630043)
+		FRAME(Frames=102)
+		Transient_Sound_Effect(SFX=0x8630043)
+		FRAME(Frames=137)
+		Transient_Sound_Effect(SFX=0x8630044)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,25 @@
+MoveDef 0x43293E83
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		PLAY_SE_REMAIN(unknown=0x7760006)
+		Sound_Effect(SFX=0x76A0014)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=14)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,27 @@
+MoveDef AttackHi4
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic_Effect2(Graphic=0x3190009, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=2)
+		Graphic_Effect5(Graphic=0x3190008, Bone=0x7D4, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=10, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=3)
+		Graphic_Effect5(Graphic=0x3190008, Bone=0x7D6, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=10, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=4)
+		Graphic_Effect5(Graphic=0x3190008, Bone=0x7D8, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=10, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

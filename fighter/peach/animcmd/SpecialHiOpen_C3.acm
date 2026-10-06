@@ -1,0 +1,41 @@
+MoveDef SpecialHiOpen_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=0.9)
+		Set_Anchored_Article_Action(Article=0x0, Action=0x0)
+		SET_RATE_ARTICLE(unknown=0x0, unknown=2.5)
+		FRAME(Frames=11)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=12)
+		Add_Momentum(Horizontal=0.2, Vertical=2)
+		FRAME(Frames=15)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x19, Damage=3, Angle=0x3C, KBG=0x2D, WBKB=0x0, BKB=0x5A, Size=2.7, X=-2.5, Y=6.3, Z=0, Effect=0x1A, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x10, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x14, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x1E, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=2.5, Y2=6.3, Z2=0)
+		FRAME(Frames=18)
+		Allow/Disallow_Ledgegrab(State=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=12)
+		Graphic_Effect2(Graphic=0x100001C, Bone=0x19, X=0, Y=15, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=12)
+		Sound_Effect(SFX=0x11003A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=11)
+		Script_End()
+	}
+
+}

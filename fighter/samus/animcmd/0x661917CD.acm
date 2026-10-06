@@ -1,0 +1,32 @@
+MoveDef 0x661917CD
+{
+	Main()
+	{
+		JUMP(Hash=0xDD9F9488)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Color_Overlay(Red=255, Green=192, Blue=255, Alpha=180)
+		FRAME(Frames=5)
+		Change_Overlay(Transition=10, Red=80, Green=80, Blue=80, Alpha=0)
+		FRAME(Frames=15)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		SLOPE_TOE(unknown=0x2, unknown=0x42700000)
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

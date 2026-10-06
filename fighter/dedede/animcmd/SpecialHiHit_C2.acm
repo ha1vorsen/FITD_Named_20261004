@@ -1,0 +1,23 @@
+MoveDef SpecialHiHit_C2
+{
+	Main()
+	{
+		Set_Armor(State=0x0, Threshold=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x4)
+		Script_End()
+	}
+
+}

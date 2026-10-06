@@ -1,0 +1,48 @@
+MoveDef EntryR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=90)
+		Graphic_Effect3(Graphic=0x100001B, Bone=0x0, X=5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0xE0080)
+		WAIT(Frames=33)
+		Sound_Effect(SFX=0xE0081)
+		WAIT(Frames=37)
+		Sound_Effect(SFX=0xE0079)
+		WAIT(Frames=9)
+		WAIT(Frames=13)
+		Sound_Effect(SFX=0xE0083)
+		WAIT(Frames=1)
+		Sound_Effect3(SFX=0xE0044)
+		WAIT(Frames=1)
+		Sound_Effect(SFX=0xE0082)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		SET_SHADOW(unknown=0x0)
+		ON_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=91)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		FRAME(Frames=95)
+		SET_CURSOR(unknown=0x1)
+		Tag_Visibility(State=0x1)
+		SET_SHADOW(unknown=0x1)
+		OFF_FLAG(Variable=LA-Flag[101])
+		Script_End()
+	}
+
+}

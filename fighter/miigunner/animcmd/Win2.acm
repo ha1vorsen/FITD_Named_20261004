@@ -1,0 +1,74 @@
+MoveDef Win2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=17)
+		External_Graphic(Graphic=0x3020028, Bone=0x16, X=0, Y=0, Z=0, XRot=0, YRot=90, ZRot=0, Size=0.9, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		FRAME(Frames=18)
+		Graphic_Effect2(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=22)
+		External_Graphic(Graphic=0x3020028, Bone=0x16, X=0, Y=0, Z=0, XRot=0, YRot=90, ZRot=0, Size=0.9, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		FRAME(Frames=23)
+		Graphic_Effect2(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=26)
+		External_Graphic(Graphic=0x3020028, Bone=0x16, X=0, Y=0, Z=0, XRot=0, YRot=90, ZRot=0, Size=0.9, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		FRAME(Frames=27)
+		Graphic_Effect2(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=30)
+		External_Graphic(Graphic=0x3020028, Bone=0x16, X=0, Y=0, Z=0, XRot=0, YRot=90, ZRot=0, Size=0.9, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		FRAME(Frames=31)
+		Graphic_Effect2(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=48)
+		External_Graphic(Graphic=0x3020025, Bone=0x16, X=0, Y=0, Z=0, XRot=0, YRot=90, ZRot=0, Size=0.9, Terminate=0x1)
+		FRAME(Frames=53)
+		Graphic_Effect2(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=-5, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=85)
+		External_Graphic_Effect2(Graphic=0x3020021, Bone=0x16, X=1, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.6, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1.2)
+		FRAME(Frames=88)
+		Graphic_Effect2(Graphic=0x1000009, Bone=0x0, X=0, Y=0, Z=-15, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=98)
+		Graphic_Effect2(Graphic=0x1000009, Bone=0x0, X=0, Y=0, Z=-15, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=108)
+		Graphic_Effect2(Graphic=0x1000009, Bone=0x0, X=0, Y=0, Z=-15, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=19)
+		Sound_Effect(SFX=0x81C0027)
+		FRAME(Frames=22)
+		Sound_Effect(SFX=0x81C0027)
+		FRAME(Frames=26)
+		Sound_Effect(SFX=0x81C0027)
+		FRAME(Frames=30)
+		Sound_Effect(SFX=0x81C0027)
+		FRAME(Frames=52)
+		Sound_Effect(SFX=0x81C0028)
+		FRAME(Frames=72)
+		Sound_Effect(SFX=0x81C0011)
+		FRAME(Frames=86)
+		Sound_Effect(SFX=0x81C0027)
+		FRAME(Frames=90)
+		Sound_Effect(SFX=0x81C0027)
+		FRAME(Frames=94)
+		Sound_Effect(SFX=0x81C0027)
+		FRAME(Frames=98)
+		Sound_Effect(SFX=0x81C0028)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,44 @@
+MoveDef FinalAirBombShoot
+{
+	Main()
+	{
+		JUMP(Hash=0xD545EC1C)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x31C000A, Bone=0x0, X=0, Y=13, Z=10, XRot=0, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		FRAME(Frames=1)
+		External_Graphic(Graphic=0x41C0001, Bone=0x19, X=0, Y=20, Z=0, XRot=0, YRot=0, ZRot=0, Size=3, Terminate=0x1)
+		FRAME(Frames=16)
+		External_Graphic(Graphic=0x1000001, Bone=0x0, X=0, Y=6, Z=3, XRot=-20, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		FRAME(Frames=20)
+		External_Graphic(Graphic=0x31C000A, Bone=0x0, X=0, Y=13, Z=10, XRot=0, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		FRAME(Frames=21)
+		Graphic_Effect2(Graphic=0x41C0004, Bone=0x0, X=0, Y=12, Z=10, XRot=0, YRot=-30, ZRot=15, Size=2.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=0.8)
+		Graphic_Effect2(Graphic=0x41C0002, Bone=0x0, X=0, Y=10, Z=30, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=45)
+		Terminate_Graphic_Effect(Graphic=0x41C0001, unknown=0x0, unknown=0x0)
+		FRAME(Frames=130)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x0, X=-10, Y=25, Z=10, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xD545EC1C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=1)
+		FRAME(Frames=55)
+		FRAME(Frames=71)
+		Script_End()
+	}
+
+}

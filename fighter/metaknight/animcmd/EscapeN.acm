@@ -1,0 +1,29 @@
+MoveDef EscapeN
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x0)
+		Set_Anchored_Article_Action(Article=0x0, Action=0xF)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x24D0092)
+		Script_End()
+	}
+
+	Expression()
+	{
+		VIS_SET_DEFAULT(unknown=0x1, unknown=0x2)
+		Script_End()
+	}
+
+}

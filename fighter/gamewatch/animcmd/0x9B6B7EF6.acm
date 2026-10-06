@@ -1,0 +1,32 @@
+MoveDef 0x9B6B7EF6
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		Model_Changer(ChangerID=0x7, ChangerState=0x3)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x126E356F)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		IS_FLAG(Variable=RA-Flag[20])
+		True(Offset=0x4){
+		}
+		Else(Offset=0x4){
+		    Sound_Effect(SFX=0x6DF0035)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

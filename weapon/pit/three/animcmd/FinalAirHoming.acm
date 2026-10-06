@@ -1,0 +1,23 @@
+MoveDef FinalAirHoming
+{
+	Main()
+	{
+		JUMP(Hash=0x63C51EA7)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x63C51EA7)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

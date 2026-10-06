@@ -1,0 +1,27 @@
+MoveDef 0x7A71A4D3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Color_Overlay(Red=255, Green=0, Blue=0, Alpha=180)
+		WAIT(Frames=5)
+		Change_Overlay(Transition=15, Red=255, Green=0, Blue=0, Alpha=0)
+		WAIT(Frames=15)
+		Terminate_Overlays()
+		WAIT(Frames=1)
+		JUMP(Hash=0x7A71A4D3)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

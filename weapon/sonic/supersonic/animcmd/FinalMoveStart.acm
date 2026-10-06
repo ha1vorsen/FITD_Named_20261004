@@ -1,0 +1,24 @@
+MoveDef FinalMoveStart
+{
+	Main()
+	{
+		JUMP(Hash=0x8C4DCE7F)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Loop_Rest()
+		JUMP(Hash=0x9D1D7270)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

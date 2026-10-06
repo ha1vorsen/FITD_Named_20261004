@@ -1,0 +1,25 @@
+MoveDef 0x083C1241
+{
+	Main()
+	{
+		FRAME(Frames=29)
+		CALL(Hash=0xB806A457)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=26)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,33 @@
+MoveDef SpecialLwHit
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		Graphic_Effect2(Graphic=0x30D0010, Bone=0x1, X=0, Y=6.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Color_Overlay(Red=255, Green=255, Blue=255, Alpha=255)
+		WAIT(Frames=1)
+		Change_Overlay(Transition=4, Red=0, Green=255, Blue=255, Alpha=64)
+		WAIT(Frames=4)
+		Change_Overlay(Transition=6, Red=0, Green=0, Blue=255, Alpha=0)
+		WAIT(Frames=6)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0xF003E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

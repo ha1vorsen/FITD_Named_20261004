@@ -1,0 +1,27 @@
+MoveDef SpecialAirN
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		REG_LANDING_SE(unknown=0x6E0001D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=5)
+		Loop_Rest()
+		JUMP(Hash=0x40451B52)
+		Script_End()
+	}
+
+}

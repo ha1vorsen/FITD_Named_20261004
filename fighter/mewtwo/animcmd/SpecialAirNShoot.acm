@@ -1,0 +1,36 @@
+MoveDef SpecialAirNShoot
+{
+	Main()
+	{
+		JUMP(Hash=0x135C86F7)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Terminate_Graphic_Effect(Graphic=0x3330004, unknown=0x0, unknown=0x0)
+		FRAME(Frames=7)
+		Color_Overlay(Red=255, Green=255, Blue=255, Alpha=240)
+		WAIT(Frames=1)
+		Color_Overlay(Red=80, Green=120, Blue=255, Alpha=100)
+		WAIT(Frames=1)
+		Change_Overlay(Transition=5, Red=0, Green=0, Blue=80, Alpha=0)
+		WAIT(Frames=5)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x135C86F7)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x135C86F7)
+		Script_End()
+	}
+
+}

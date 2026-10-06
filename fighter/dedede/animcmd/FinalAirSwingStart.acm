@@ -1,0 +1,28 @@
+MoveDef FinalAirSwingStart
+{
+	Main()
+	{
+		JUMP(Hash=0x598B9136)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x598B9136)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x598B9136)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=36)
+		Script_End()
+	}
+
+}

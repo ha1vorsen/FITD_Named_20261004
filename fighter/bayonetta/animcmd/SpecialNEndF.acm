@@ -1,0 +1,46 @@
+MoveDef SpecialNEndF
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.48)
+		Script_End()
+	}
+
+	Effect()
+	{
+		IS_FLAG(Variable=RA-Flag[16])
+		False(Offset=0x4){
+		}
+		Else(Offset=0x18){
+		    External_Graphic(Graphic=0x3380026, Bone=0xA, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		    External_Graphic(Graphic=0x3380026, Bone=0x6, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		}
+		FRAME(Frames=22)
+		Script_End()
+	}
+
+	Sound()
+	{
+		IS_FLAG(Variable=RA-Flag[16])
+		False(Offset=0x8){
+		    FRAME(Frames=30)
+		    Sound_Effect(SFX=0xC91005A)
+		}
+		Else(Offset=0x2){
+		}
+		FRAME(Frames=22)
+		Sound_Effect2(SFX=0xC910001)
+		FRAME(Frames=29)
+		Sound_Effect2(SFX=0xC910003)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x0)
+		FRAME(Frames=21)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

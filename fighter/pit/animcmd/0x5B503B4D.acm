@@ -1,0 +1,23 @@
+MoveDef 0x5B503B4D
+{
+	Main()
+	{
+		VIS_SET_DEFAULT(unknown=0x0, unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x554CBE53)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

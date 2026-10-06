@@ -1,0 +1,75 @@
+MoveDef 0x9B244888
+{
+	Main()
+	{
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=3, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x0, Effect=0x3, Unknown=0, Hitlag=0, Unknown=1, SFXLevel=0x2, SFXType=0x0, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		FRAME(Frames=5)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=10)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=18)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=22)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=26)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=32)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=36)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=40)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=44)
+		ON_FLAG(Variable=RA-Flag[17])
+		Script_End()
+	}
+
+	Effect()
+	{
+		EFFECT_FOLLOW_COLOR(unknown=0x4320011, unknown=0x18, unknown=0x41A00000, unknown=0x0, unknown=0x428C0000, unknown=0x0, unknown=0x0, unknown=0xC2700000, unknown=0x3F800000, unknown=0x1, unknown=0x437F0000, unknown=0x437F0000, unknown=0x42880000)
+		EFFECT_FOLLOW_COLOR(unknown=0x4320011, unknown=0x18, unknown=0x41200000, unknown=0x40400000, unknown=0x428A0000, unknown=0x0, unknown=0x0, unknown=0xC2340000, unknown=0x3F800000, unknown=0x1, unknown=0x42920000, unknown=0x43630000, unknown=0x428C0000)
+		EFFECT_FOLLOW_COLOR(unknown=0x4320011, unknown=0x18, unknown=0xC1000000, unknown=0x0, unknown=0x428C0000, unknown=0x0, unknown=0x0, unknown=0xC1B40000, unknown=0x3F800000, unknown=0x1, unknown=0x42340000, unknown=0x42EA0000, unknown=0x437F0000)
+		EFFECT_FOLLOW_COLOR(unknown=0x4320011, unknown=0x18, unknown=0xC1700000, unknown=0x0, unknown=0x428C0000, unknown=0x0, unknown=0x0, unknown=0xC1340000, unknown=0x3F800000, unknown=0x1, unknown=0x43660000, unknown=0x42DC0000, unknown=0x41C00000)
+		EFFECT_FOLLOW_COLOR(unknown=0x4320011, unknown=0x18, unknown=0xC1A00000, unknown=0x0, unknown=0x428C0000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x1, unknown=0x437F0000, unknown=0x42840000, unknown=0x431C0000)
+		FRAME(Frames=6)
+		External_Graphic(Graphic=0x4320008, Bone=0x0, X=0, Y=5, Z=250, XRot=0, YRot=180, ZRot=0, Size=1.3, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		PLAY_SE_NO_3D(unknown=0x11A)
+		PLAY_SE_NO_3D(unknown=0x7B)
+		FRAME(Frames=10)
+		PLAY_SE_NO_3D(unknown=0x11A)
+		PLAY_SE_NO_3D(unknown=0x7B)
+		FRAME(Frames=15)
+		PLAY_SE_NO_3D(unknown=0x11A)
+		PLAY_SE_NO_3D(unknown=0x7B)
+		FRAME(Frames=20)
+		PLAY_SE_NO_3D(unknown=0x11A)
+		PLAY_SE_NO_3D(unknown=0x7B)
+		FRAME(Frames=25)
+		PLAY_SE_NO_3D(unknown=0x11A)
+		PLAY_SE_NO_3D(unknown=0x7B)
+		FRAME(Frames=30)
+		PLAY_SE_NO_3D(unknown=0x11A)
+		PLAY_SE_NO_3D(unknown=0x7B)
+		FRAME(Frames=35)
+		PLAY_SE_NO_3D(unknown=0x11A)
+		PLAY_SE_NO_3D(unknown=0x7B)
+		FRAME(Frames=40)
+		PLAY_SE_NO_3D(unknown=0x11A)
+		PLAY_SE_NO_3D(unknown=0x7B)
+		FRAME(Frames=45)
+		PLAY_SE_NO_3D(unknown=0x11A)
+		PLAY_SE_NO_3D(unknown=0x7B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

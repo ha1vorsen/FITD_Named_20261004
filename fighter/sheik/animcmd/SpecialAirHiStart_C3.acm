@@ -1,0 +1,44 @@
+MoveDef SpecialAirHiStart_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=21)
+		Set_Frame_Duration(Speed=1)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		FRAME(Frames=33)
+		ATK_RESERVE(ID=0x0, Bone=0x0, X=0, Y=5, Z=0)
+		ATK_REFERENCE_NODE(Unknown=0xF, Unknown=0xFFFFFFFF)
+		FRAME(Frames=34)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x10E, KBG=0x3C, WBKB=0x0, BKB=0x3C, Size=8, X=0, Y=5, Z=0, Effect=0x2, Trip=0, Hitlag=0.5, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=35)
+		ATK_RESERVE(ID=0x0, Bone=0x0, X=0, Y=3, Z=0)
+		ATK_REFERENCE_NODE(Unknown=0xF, Unknown=0xFFFFFFFF)
+		FRAME(Frames=36)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=4, Angle=0x10E, KBG=0x8C, WBKB=0x0, BKB=0x14, Size=5, X=0, Y=3, Z=0, Effect=0x2, Trip=0, Hitlag=0.5, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xFAF20BB3)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		PLAY_SE_REMAIN(unknown=0x13003E)
+		WAIT(Frames=33)
+		PLAY_SE_REMAIN(unknown=0x130071)
+		Script_End()
+	}
+
+	Expression()
+	{
+		CALL(Hash=0xFAF20BB3)
+		Script_End()
+	}
+
+}

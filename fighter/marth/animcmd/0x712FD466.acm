@@ -1,0 +1,30 @@
+MoveDef 0x712FD466
+{
+	Main()
+	{
+		Add_Momentum(Horizontal=2, Vertical=2)
+		JUMP(Hash=0xFCEB92D3)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xFCEB92D3)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0x490000)
+		Sound_Effect(SFX=0x160093)
+		Script_End()
+	}
+
+	Expression()
+	{
+		CALL(Hash=0xFCEB92D3)
+		Script_End()
+	}
+
+}

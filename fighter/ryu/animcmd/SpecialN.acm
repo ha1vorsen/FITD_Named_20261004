@@ -1,0 +1,98 @@
+MoveDef SpecialN
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		ON_FLAG(Variable=RA-Flag[18])
+		FRAME(Frames=13)
+		ON_FLAG(Variable=RA-Flag[15])
+		FRAME(Frames=28)
+		OFF_FLAG(Variable=RA-Flag[18])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		IS_FLAG(Variable=RA-Flag[13])
+		True(Offset=0x13){
+		    Graphic_Effect2(Graphic=0x100000F, Bone=0x0, X=0, Y=11, Z=-6, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		FRAME(Frames=4)
+		IS_FLAG(Variable=RA-Flag[16])
+		False(Offset=0x19){
+		    CALL(Hash=0x6EDA46E6)
+		    Graphic_Effect(Graphic=0x3340018, Bone=0x0, X=10, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    FRAME(Frames=13)
+		}
+		Else(Offset=0x15){
+		    FRAME(Frames=14)
+		    Graphic_Effect2(Graphic=0x1000078, Bone=0x1A, X=0, Y=-1, Z=2, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		FRAME(Frames=14)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=12, Y=0, Z=-4, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		IS_FLAG(Variable=RA-Flag[16])
+		True(Offset=0xC){
+		    WAIT(Frames=10)
+		    Sound_Effect(SFX=0xC050032)
+		    WAIT(Frames=2)
+		    Sound_Effect(SFX=0xC090029)
+		}
+		Else(Offset=0x38){
+		    IS_FLAG(Variable=RA-Flag[13])
+		    False(Offset=0xE){
+		        Sound_Effect(SFX=0xC050030)
+		        WAIT(Frames=10)
+		        Sound_Effect(SFX=0xC050032)
+		        WAIT(Frames=2)
+		        Sound_Effect(SFX=0xC09000A)
+		    }
+		    Else(Offset=0x28){
+		        Int_Var_Compare(Variable=RA-Int[4], Method=0x0, Value=0x0)
+		        True(Offset=0x10){
+		            Sound_Effect(SFX=0xC05005D)
+		            Sound_Effect(SFX=0xC050030)
+		            WAIT(Frames=10)
+		            Sound_Effect(SFX=0xC050032)
+		            WAIT(Frames=2)
+		            Sound_Effect(SFX=0xC090027)
+		        }
+		        Else(Offset=0x14){
+		            Int_Var_Compare(Variable=RA-Int[4], Method=0x0, Value=0x1)
+		            True(Offset=0xE){
+		                Sound_Effect(SFX=0xC05005D)
+		                Sound_Effect(SFX=0xC050030)
+		                WAIT(Frames=3)
+		                Sound_Effect(SFX=0xC090028)
+		                WAIT(Frames=6)
+		                Sound_Effect(SFX=0xC050032)
+		            }
+		        }
+		    }
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=11)
+		IS_FLAG(Variable=RA-Flag[16])
+		False(Offset=0x4){
+		}
+		Else(Offset=0x2){
+		}
+		FRAME(Frames=42)
+		FRAME(Frames=66)
+		Item_Visibility(State=0x1)
+		Script_End()
+	}
+
+}

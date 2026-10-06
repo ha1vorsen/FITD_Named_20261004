@@ -1,0 +1,35 @@
+MoveDef FinalEnd
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=30)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=28)
+		Sound_Effect(SFX=0x250032)
+		FRAME(Frames=98)
+		Sound_Effect(SFX=0x250033)
+		Script_End()
+	}
+
+	Expression()
+	{
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		FRAME(Frames=30)
+		QUAKE(unknown=0x5)
+		FRAME(Frames=109)
+		FRAME(Frames=129)
+		FRAME(Frames=149)
+		FRAME(Frames=169)
+		Script_End()
+	}
+
+}

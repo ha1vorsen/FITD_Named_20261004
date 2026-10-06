@@ -1,0 +1,31 @@
+MoveDef CatchAttack
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x13, Damage=2, Angle=0x169, KBG=0x64, WBKB=0x1E, BKB=0x0, Size=5.76, X=1.6, Y=0, Z=3.2, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xE, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		FRAME(Frames=16)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x9006D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=4)
+		Script_End()
+	}
+
+}

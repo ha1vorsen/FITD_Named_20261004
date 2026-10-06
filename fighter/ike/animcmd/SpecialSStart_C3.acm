@@ -1,0 +1,32 @@
+MoveDef SpecialSStart_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=15)
+		Set_Armor(State=0x1, Threshold=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		Graphic_Effect2(Graphic=0x100001C, Bone=0x0, X=4, Y=10, Z=0, XRot=0, YRot=180, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x240084)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

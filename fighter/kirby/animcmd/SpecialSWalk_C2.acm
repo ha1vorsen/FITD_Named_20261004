@@ -1,0 +1,29 @@
+MoveDef SpecialSWalk_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		unk_01A5A27C(unknown=0xA006B, unknown=0xA006D)
+		WAIT(Frames=20)
+		unk_01A5A27C(unknown=0xA006D, unknown=0xA006B)
+		Loop_Rest()
+		JUMP(Hash=0x50DC2C8F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

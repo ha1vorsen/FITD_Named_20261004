@@ -1,0 +1,23 @@
+MoveDef SpecialAirLwMR_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x7E6AB73F)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x7E6AB73F)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

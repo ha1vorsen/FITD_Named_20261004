@@ -1,0 +1,22 @@
+MoveDef AirCatchHit
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		STOP_SE_STATUS()
+		Sound_Effect(SFX=0x53)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

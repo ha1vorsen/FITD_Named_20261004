@@ -1,0 +1,34 @@
+MoveDef 0x783AA916 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=35)
+		PLAY_SE_NO_3D(unknown=0x400004)
+		WAIT(Frames=24)
+		Sound_Effect(SFX=0xB004B)
+		WAIT(Frames=11)
+		Stop_Sound_Effect(SFX=0xB004B)
+		WAIT(Frames=33)
+		Sound_Effect(SFX=0x6B)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0x6B)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0x6B)
+		WAIT(Frames=23)
+		Sound_Effect(SFX=0xB004B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,35 @@
+MoveDef AppealHiL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x2C42123B)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x2C42123B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=12)
+		FRAME(Frames=20)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		FRAME(Frames=32)
+		FRAME(Frames=57)
+		FRAME(Frames=82)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=85)
+		Slope_Full(unknown=0x6, unknown=0x5)
+		FRAME(Frames=98)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,36 @@
+MoveDef SpecialAirLwLoop
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		Terminate_Graphic_Effect(Graphic=0x3090006, unknown=0x1, unknown=0x1)
+		Terminate_Graphic_Effect(Graphic=0x3090004, unknown=0x1, unknown=0x1)
+		External_Graphic(Graphic=0x3090006, Bone=0x3EB, X=1.2, Y=0, Z=-0.5, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x3090004, Bone=0x3EB, X=1.2, Y=0, Z=-0.5, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Set_Loop(Iterations=-1){
+		    Color_Overlay(Red=0, Green=255, Blue=255, Alpha=96)
+		    WAIT(Frames=2)
+		    Terminate_Overlays()
+		    WAIT(Frames=1)
+		    Goto(Offset=-10)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x231BD272)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

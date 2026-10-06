@@ -1,0 +1,32 @@
+MoveDef 0xD7F912B4
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		ON_FLAG(Variable=RA-Flag[13])
+		OFF_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		Set_Loop(Iterations=2){
+		    Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=6.5, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=8)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

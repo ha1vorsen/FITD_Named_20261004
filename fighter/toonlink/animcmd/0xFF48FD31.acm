@@ -1,0 +1,35 @@
+MoveDef 0xFF48FD31
+{
+	Main()
+	{
+		JUMP(Hash=0x48FD31CB)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Low_Voice_Clip(unknown=0x802C0000)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=18)
+		SLOPE(unknown=0x4)
+		FRAME(Frames=21)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=34)
+		Model_Changer(ChangerID=0x1, ChangerState=0x0)
+		FRAME(Frames=38)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

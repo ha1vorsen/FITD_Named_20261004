@@ -1,0 +1,40 @@
+MoveDef SpecialAirLw_C2
+{
+	Main()
+	{
+		FRAME(Frames=16)
+		ON_FLAG(Variable=RA-Flag[15])
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x5, Damage=2, Angle=0x16E, KBG=0x64, WBKB=0x28, BKB=0x0, Size=5.76, X=4, Y=0, Z=0, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x2, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=0, Z2=0)
+		FRAME(Frames=29)
+		Remove_All_Hitboxes()
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x5A, KBG=0x64, WBKB=0x0, BKB=0x3C, Size=10, X=0, Y=0, Z=5, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=5, Z2=5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=16)
+		External_Graphic_Effect2(Graphic=0x30C0014, Bone=0x0, X=-2, Y=-5, Z=6, XRot=70, YRot=0, ZRot=0, Size=1.5, Terminate=0x1)
+		External_Graphic(Graphic=0x1000042, Bone=0x0, X=-2, Y=-5, Z=6, XRot=0, YRot=0, ZRot=0, Size=1.5, Terminate=0x1)
+		WAIT(Frames=1)
+		External_Graphic(Graphic=0x30C0011, Bone=0x0, X=0, Y=-5, Z=6, XRot=70, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x420002)
+		WAIT(Frames=13)
+		Sound_Effect(SFX=0xE0097)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=14)
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

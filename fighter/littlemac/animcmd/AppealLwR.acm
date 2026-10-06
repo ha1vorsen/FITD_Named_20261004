@@ -1,0 +1,61 @@
+MoveDef AppealLwR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=19)
+		Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=0, Y=0, Z=-5, XRot=0, YRot=-80, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=29)
+		Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=5, Y=0, Z=2, XRot=0, YRot=-90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=37)
+		Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=5, Y=0, Z=0, XRot=0, YRot=-120, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=50)
+		Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=-3, Y=0, Z=-3, XRot=0, YRot=-70, ZRot=0, Size=1.3, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		IS_RANDOM(Chance=0xA)
+		True(Offset=0x18){
+		    FRAME(Frames=1)
+		    Sound_Effect(SFX=0x76E002C)
+		    FRAME(Frames=16)
+		    Sound_Effect(SFX=0x763000D)
+		    FRAME(Frames=24)
+		    Sound_Effect(SFX=0x763001D)
+		    FRAME(Frames=32)
+		    Sound_Effect(SFX=0x763000D)
+		    FRAME(Frames=50)
+		    Sound_Effect(SFX=0x763001E)
+		}
+		Else(Offset=0x16){
+		    FRAME(Frames=10)
+		    Sound_Effect(SFX=0x76E0003)
+		    FRAME(Frames=16)
+		    Sound_Effect(SFX=0x763000D)
+		    FRAME(Frames=24)
+		    Sound_Effect(SFX=0x763001D)
+		    FRAME(Frames=32)
+		    Sound_Effect(SFX=0x763000D)
+		    FRAME(Frames=50)
+		    Sound_Effect(SFX=0x763001E)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=14)
+		FRAME(Frames=26)
+		FRAME(Frames=35)
+		FRAME(Frames=50)
+		Script_End()
+	}
+
+}

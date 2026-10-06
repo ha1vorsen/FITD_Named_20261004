@@ -1,0 +1,22 @@
+MoveDef SpecialN1_C3
+{
+	Main()
+	{
+		FRAME(Frames=21)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

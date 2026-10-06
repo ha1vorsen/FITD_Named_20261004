@@ -1,0 +1,42 @@
+MoveDef SpecialLw_C2
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=4)
+		Set_Frame_Duration(Speed=1)
+		Set_Armor(State=0x1, Threshold=0)
+		FRAME(Frames=12)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=14)
+		Set_Armor(State=0x0, Threshold=0)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=30)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=13)
+		External_Graphic_Effect2(Graphic=0x31A0000, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x31A0002, Bone=0x12, X=13.5, Y=-0.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=12)
+		Sound_Effect(SFX=0x1C005A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=13)
+		Script_End()
+	}
+
+}

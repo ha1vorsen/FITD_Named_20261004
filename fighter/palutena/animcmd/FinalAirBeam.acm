@@ -1,0 +1,27 @@
+MoveDef FinalAirBeam
+{
+	Main()
+	{
+		JUMP(Hash=0xD2E1575B)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xD2E1575B)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xD2E1575B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xD2E1575B)
+		Script_End()
+	}
+
+}

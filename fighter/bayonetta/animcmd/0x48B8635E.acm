@@ -1,0 +1,32 @@
+MoveDef 0x48B8635E : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		CALL(Hash=0x5B146C1)
+		FRAME(Frames=11)
+		CALL(Hash=0x5B146C1)
+		FRAME(Frames=18)
+		CALL(Hash=0x5B146C1)
+		FRAME(Frames=26)
+		CALL(Hash=0x5B146C1)
+		WAIT_LOOP_CLR()
+		ON_FLAG(Variable=RA-Flag[22])
+		ON_FLAG(Variable=RA-Flag[33])
+		JUMP(Hash=0x48B8635E)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

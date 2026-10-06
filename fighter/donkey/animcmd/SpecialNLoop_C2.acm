@@ -1,0 +1,55 @@
+MoveDef SpecialNLoop_C2
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=-4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=20, RandomY=0, RandomZ=12, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    Graphic_Effect5(Graphic=0x1000012, Bone=0x0, X=10, Y=15, Z=-5, XRot=0, YRot=0, ZRot=0, Size=2.5, RandomX=0, RandomY=20, RandomZ=20, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		    Color_Overlay(Red=255, Green=255, Blue=128, Alpha=66)
+		    WAIT(Frames=4)
+		    Color_Overlay(Red=255, Green=255, Blue=128, Alpha=34)
+		    WAIT(Frames=4)
+		    Color_Overlay(Red=60, Green=60, Blue=0, Alpha=98)
+		    WAIT(Frames=4)
+		    Terminate_Overlays()
+		    WAIT(Frames=12)
+		    WAIT(Frames=2)
+		    Goto(Offset=-60)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x12D)
+		Set_Loop(Iterations=3){
+		    Sound_Effect(SFX=0x7005F)
+		    WAIT(Frames=15)
+		    Goto(Offset=-4)
+		}
+		Sound_Effect(SFX=0x12C)
+		Set_Loop(Iterations=3){
+		    Sound_Effect(SFX=0x7005F)
+		    WAIT(Frames=15)
+		    Goto(Offset=-4)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=1)
+		Loop_Rest()
+		JUMP(Hash=0x28090B7F)
+		Script_End()
+	}
+
+}

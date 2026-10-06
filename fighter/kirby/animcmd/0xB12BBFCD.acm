@@ -1,0 +1,26 @@
+MoveDef 0xB12BBFCD
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xFC612FC6)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xDFB408AA)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

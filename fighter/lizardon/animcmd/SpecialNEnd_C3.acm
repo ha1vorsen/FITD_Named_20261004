@@ -1,0 +1,29 @@
+MoveDef SpecialNEnd_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=9)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Terminate_Overlays()
+		Terminate_Graphic_Effect(Graphic=0x3210003, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

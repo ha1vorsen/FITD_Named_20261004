@@ -1,0 +1,38 @@
+MoveDef SpecialAirHi
+{
+	Main()
+	{
+		JUMP(Hash=0x1BA6EBD5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=15)
+		IS_FLAG(Variable=RA-Flag[16])
+		False(Offset=0x1C){
+		    EFFECT_FOLLOW_WORK(Graphic=0x10000099, Bone=0x0, X=0, Y=30, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, unknown=0x1)
+		    FRAME(Frames=16)
+		    EFFECT_FOLLOW_WORK(Graphic=0x1000009A, Bone=0x0, X=0, Y=30, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, unknown=0x1)
+		}
+		Else(Offset=0xD){
+		    EFFECT_FOLLOW_WORK(Graphic=0x10000099, Bone=0x0, X=0, Y=30, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, unknown=0x1)
+		}
+		FRAME(Frames=32)
+		EFFECT_DETACH_KIND_WORK(unknown=0x10000099, unknown=0xFFFFFFFF)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x1BA6EBD5)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x1BA6EBD5)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,37 @@
+MoveDef SpecialAirN
+{
+	Main()
+	{
+		JUMP(Hash=0x41477B2F)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		IS_FLAG(Variable=RA-Flag[14])
+		False(Offset=0x22){
+		    External_Graphic(Graphic=0x332001E, Bone=0x11, X=0, Y=0, Z=0, XRot=0, YRot=-1E-05, ZRot=0, Size=1, Terminate=0x1)
+		    FRAME(Frames=7)
+		    Graphic_Effect2(Graphic=0x1000010, Bone=0x18, X=0, Y=-2, Z=4, XRot=0, YRot=-1E-05, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Else(Offset=0x2){
+		}
+		FRAME(Frames=12)
+		External_Graphic(Graphic=0x332000E, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=-1E-05, ZRot=0, Size=1, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x41477B2F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x41477B2F)
+		Script_End()
+	}
+
+}

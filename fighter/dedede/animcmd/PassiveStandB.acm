@@ -1,0 +1,27 @@
+MoveDef PassiveStandB
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x6003E)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x6003F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=33)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

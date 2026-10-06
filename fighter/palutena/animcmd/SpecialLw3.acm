@@ -1,0 +1,32 @@
+MoveDef SpecialLw3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=12)
+		GENERATE_ARTICLE(ID=0x3)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=15)
+		Graphic_Effect6(Graphic=0x32B0005, Bone=0x0, X=7, Y=15, Z=-1, XRot=0, YRot=-90, ZRot=0, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=12)
+		Low_Voice_Clip(unknown=0x80410012)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=10)
+		Script_End()
+	}
+
+}

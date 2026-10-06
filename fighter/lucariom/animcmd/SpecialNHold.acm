@@ -1,0 +1,38 @@
+MoveDef SpecialNHold
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=-10, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=10, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    Flash_Light_Effect(Red=128, Blue=230, Green=255, Alpha=200, SourceX=-135, SourceY=-10)
+		    WAIT(Frames=8)
+		    Change_Flash_Light_Color(TransitionFrames=10, Red=128, Blue=230, Green=255, Alpha=100)
+		    WAIT(Frames=1)
+		    Terminate_Overlays()
+		    WAIT(Frames=22)
+		    Goto(Offset=-37)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Transient_Sound_Effect(SFX=0x91F0002)
+		Transient_Sound_Effect(SFX=0x8670065)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=14)
+		Script_End()
+	}
+
+}

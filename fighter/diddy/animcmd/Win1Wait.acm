@@ -1,0 +1,29 @@
+MoveDef Win1Wait
+{
+	Main()
+	{
+		IS_EXIST_ARTICLE(Unknown=0x0)
+		False(Offset=0xE){
+		    Remove_Article(Article=0x0)
+		    Remove_Article(Article=0x0)
+		    ON_FLAG(Variable=RA-Flag[13])
+		    GENERATE_ARTICLE(ID=0x0)
+		    ON_FLAG(Variable=RA-Flag[14])
+		    GENERATE_ARTICLE(ID=0x0)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

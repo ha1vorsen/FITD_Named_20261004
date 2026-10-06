@@ -1,0 +1,37 @@
+MoveDef SpecialNHoldS_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3260006, Bone=0x19, X=0, Y=0.5, Z=1.5, XRot=0, YRot=0, ZRot=-11, Size=0.8, Terminate=0x1)
+		WAIT(Frames=1)
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=15, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=10)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=0)
+		unk_A0FA2515(unknown=0x7620024, unknown=0x0, unknown=0x0)
+		True(Offset=0x4){
+		    Transient_Sound_Effect(SFX=0x7620024)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=1)
+		Script_End()
+	}
+
+}

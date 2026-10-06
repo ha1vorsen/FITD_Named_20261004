@@ -1,0 +1,30 @@
+MoveDef TurnRunBrake
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Sound_Effect2(SFX=0x60087)
+		WAIT(Frames=7)
+		Sound_Effect2(SFX=0x60086)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x1)
+		FRAME(Frames=6)
+		Slope_Full(unknown=0x0, unknown=0x8)
+		FRAME(Frames=15)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

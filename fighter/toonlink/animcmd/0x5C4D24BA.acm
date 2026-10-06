@@ -1,0 +1,34 @@
+MoveDef 0x5C4D24BA
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		CALL(Hash=0x8F5590F9)
+		FRAME(Frames=10)
+		CALL(Hash=0xDE3BA125)
+		FRAME(Frames=14)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		SLOPE(unknown=0x2)
+		FRAME(Frames=5)
+		FRAME(Frames=10)
+		SLOPE(unknown=0x0)
+		FRAME(Frames=25)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

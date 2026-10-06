@@ -1,0 +1,45 @@
+MoveDef SpecialS4Lw_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=11)
+		Sword_Trace(TraceID=0xBA, BlurLen=8.407791E-45, Bone1=0x3EA, X=0, Y=0, Z=0.5, Bone2=0x3EA, X=-1E-05, Y=-2E-05, Z=12.2, Anchored=0x1, Graphic=0x3250005, Bone3=0x3EA, X=0, Y=0, Z=0, RotX=0.00013, RotY=-7E-05, RotZ=0.00011, Length=1)
+		Graphic_Effect3(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=19)
+		Set_Loop(Iterations=4){
+		    Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=6)
+		    Goto(Offset=-19)
+		}
+		FRAME(Frames=40)
+		Terminate_Sword_Glow(FadeTime=0x6)
+		Set_Loop(Iterations=5){
+		    Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=15, RandomY=0, RandomZ=5, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=3)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		Sound_Effect(SFX=0x7610044)
+		Sound_Effect(SFX=0x76C0012)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=11)
+		FRAME(Frames=23)
+		FRAME(Frames=35)
+		Script_End()
+	}
+
+}

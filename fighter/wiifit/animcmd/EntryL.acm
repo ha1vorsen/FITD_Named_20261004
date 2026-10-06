@@ -1,0 +1,46 @@
+MoveDef EntryL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=115)
+		Graphic_Effect2(Graphic=0x1000021, Bone=0x0, X=-26, Y=22.5, Z=-12, XRot=0, YRot=0, ZRot=0, Size=1.1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x24B0087)
+		WAIT(Frames=5)
+		FRAME(Frames=58)
+		Sound_Effect(SFX=0x24B0044)
+		FRAME(Frames=82)
+		Sound_Effect(SFX=0x24B0088)
+		FRAME(Frames=102)
+		Sound_Effect(SFX=0x24B0089)
+		FRAME(Frames=112)
+		Sound_Effect(SFX=0x24B0089)
+		FRAME(Frames=114)
+		Sound_Effect(SFX=0x24B0042)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x0)
+		Article_Visibility(Article=0x3, State=0x0)
+		FRAME(Frames=56)
+		Slope_Full(unknown=0x4, unknown=0x6)
+		FRAME(Frames=81)
+		Article_Visibility(Article=0x2, State=0x0)
+		Article_Visibility(Article=0x3, State=0x1)
+		FRAME(Frames=112)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		Script_End()
+	}
+
+}

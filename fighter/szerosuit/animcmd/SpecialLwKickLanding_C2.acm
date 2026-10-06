@@ -1,0 +1,33 @@
+MoveDef SpecialLwKickLanding_C2
+{
+	Main()
+	{
+		Reverse_Direction()
+		Set_Edge_Slide(State=0x2)
+		SET_LIMIT_SPEED_EX(Horizontal=2, Vertical=0)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=10)
+		Set_Frame_Duration(Speed=1.2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x601832CB)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x1B0074)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,36 @@
+MoveDef Win3Wait
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x250073)
+		WAIT(Frames=10)
+		Stop_Sound_Effect(SFX=0x250073)
+		WAIT(Frames=12)
+		Sound_Effect(SFX=0x250079)
+		WAIT(Frames=11)
+		Stop_Sound_Effect(SFX=0x250079)
+		WAIT(Frames=8)
+		Transient_Sound_Effect(SFX=0x250079)
+		WAIT(Frames=11)
+		STOP_SE_STATUS()
+		WAIT(Frames=13)
+		Transient_Sound_Effect(SFX=0x250079)
+		WAIT(Frames=53)
+		STOP_SE_STATUS()
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

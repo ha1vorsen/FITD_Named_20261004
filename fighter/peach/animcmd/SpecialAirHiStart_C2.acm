@@ -1,0 +1,31 @@
+MoveDef SpecialAirHiStart_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x8DF53B25)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x8DF53B25)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x11005F)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x110079)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

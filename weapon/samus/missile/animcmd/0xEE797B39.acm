@@ -1,0 +1,26 @@
+MoveDef 0xEE797B39
+{
+	Main()
+	{
+		WAIT(Frames=1)
+		unk_300A0A85()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x1000022, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=90, Size=1.25, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		PLAY_SE_REMAIN(unknown=0x4F)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

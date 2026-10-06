@@ -1,0 +1,21 @@
+MoveDef FinalTurn
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=14)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

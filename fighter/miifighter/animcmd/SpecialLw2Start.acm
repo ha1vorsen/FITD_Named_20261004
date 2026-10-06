@@ -1,0 +1,44 @@
+MoveDef SpecialLw2Start
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		ON_FLAG(Variable=RA-Flag[23])
+		FRAME(Frames=3)
+		ON_FLAG(Variable=RA-Flag[18])
+		FRAME(Frames=13)
+		Allow/Disallow_Ledgegrab(State=0x1)
+		FRAME(Frames=19)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		FRAME(Frames=28)
+		ON_FLAG(Variable=RA-Flag[13])
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=27)
+		ON_FLAG(Variable=RA-Flag[16])
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect3(Graphic=0x1000024, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		WAIT(Frames=1)
+		Graphic_Effect2(Graphic=0x100007C, Bone=0x0, X=0, Y=5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		WAIT(Frames=1)
+		External_Graphic(Graphic=0x3000019, Bone=0xD, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x81A0050)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=2)
+		Script_End()
+	}
+
+}

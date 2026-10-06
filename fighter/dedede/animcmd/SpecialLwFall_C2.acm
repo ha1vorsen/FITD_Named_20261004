@@ -1,0 +1,24 @@
+MoveDef SpecialLwFall_C2
+{
+	Main()
+	{
+		Set_Armor(State=0x1, Threshold=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x2, ChangerState=0x1)
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,21 @@
+MoveDef Move : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

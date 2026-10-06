@@ -1,0 +1,61 @@
+MoveDef SpecialAirS3
+{
+	Main()
+	{
+		JUMP(Hash=0x392E98A5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		unk_73E2040C(unknown=0xF2, unknown=0xF3, unknown=0x4, unknown=0x19, unknown=0x0, unknown=0x3FC00000, unknown=0xBF800000, unknown=0x19, unknown=0x0, unknown=0x41A40000, unknown=0xBFC00000, unknown=0x1, unknown=0x10000088, unknown=0x19, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x1, unknown=0x1, unknown=0x0)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x1A){
+		    EFFECT_FOLLOW_NO_STOP_WITH_HANDLE(unknown=0x337000B, unknown=0x0, unknown=0x40400000, unknown=0x41200000, unknown=0x41880000, unknown=0x0, unknown=0x430C0000, unknown=0x0, unknown=0x3F800000, unknown=0x1, unknown=0x0, unknown=0x0, unknown=0x10000085)
+		    unk_8F27D612(unknown=0x3F147AE1, unknown=0x3EC7AE14, unknown=0x3CA3D70A)
+		    unk_8F27D612(unknown=0x3F800000, unknown=0x3F23D70A, unknown=0x3DB851EC)
+		}
+		Else(Offset=0x18){
+		    EFFECT_FOLLOW_NO_STOP_WITH_HANDLE(unknown=0x337000B, unknown=0x0, unknown=0xC0400000, unknown=0x41200000, unknown=0x41880000, unknown=0x0, unknown=0xC30C0000, unknown=0x0, unknown=0x3F800000, unknown=0x1, unknown=0x0, unknown=0x0, unknown=0x10000085)
+		    unk_8F27D612(unknown=0x3F147AE1, unknown=0x3EC7AE14, unknown=0x3CA3D70A)
+		    unk_8F27D612(unknown=0x3F800000, unknown=0x3F23D70A, unknown=0x3DB851EC)
+		}
+		FRAME(Frames=14)
+		Terminate_Sword_Glow(FadeTime=0x3)
+		FRAME(Frames=17)
+		FRAME(Frames=23)
+		unk_73E2040C(unknown=0xF2, unknown=0xF3, unknown=0x6, unknown=0x19, unknown=0x0, unknown=0x3FC00000, unknown=0xBF800000, unknown=0x19, unknown=0x0, unknown=0x41A40000, unknown=0xBFC00000, unknown=0x1, unknown=0x10000088, unknown=0x19, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x1, unknown=0x1, unknown=0x0)
+		FRAME(Frames=24)
+		EFFECT_FOLLOW_NO_STOP_WITH_HANDLE(unknown=0x337000C, unknown=0x0, unknown=0x0, unknown=0x41200000, unknown=0x41880000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x1, unknown=0x0, unknown=0x0, unknown=0x10000086)
+		FRAME(Frames=25)
+		EFFECT_DETACH_KIND(Graphic=0x337000B, unknown=0xFFFFFFFF)
+		EFFECT_DETACH_KIND(Graphic=0x3370007, unknown=0xFFFFFFFF)
+		EFFECT_DETACH_KIND(Graphic=0x337000C, unknown=0xFFFFFFFF)
+		EFFECT_DETACH_KIND(Graphic=0x3370008, unknown=0xFFFFFFFF)
+		FRAME(Frames=26)
+		Terminate_Sword_Glow(FadeTime=0x3)
+		FRAME(Frames=28)
+		FRAME(Frames=39)
+		EFFECT_FOLLOW_SYNC_PARENT(unknown=0x337000D, unknown=0x0, unknown=0x0, unknown=0x41200000, unknown=0x41880000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x1, unknown=0x10000086)
+		unk_8F27D612(unknown=0x3F800000, unknown=0x3F5EB852, unknown=0x3CA3D70A)
+		FRAME(Frames=45)
+		Terminate_Graphic_Effect(Graphic=0x337000B, unknown=0x0, unknown=0x0)
+		Terminate_Graphic_Effect(Graphic=0x3370007, unknown=0x0, unknown=0x0)
+		Terminate_Graphic_Effect(Graphic=0x337000C, unknown=0x0, unknown=0x0)
+		Terminate_Graphic_Effect(Graphic=0x3370008, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x392E98A5)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x392E98A5)
+		Script_End()
+	}
+
+}

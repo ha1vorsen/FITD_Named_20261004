@@ -1,0 +1,33 @@
+MoveDef SpecialNTronEnd_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1)
+		Model_Changer(ChangerID=0x0, ChangerState=0x2)
+		FRAME(Frames=4)
+		IS_FLAG(Variable=LA-Flag[122])
+		True(Offset=0x7){
+		    Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		}
+		Else(Offset=0x5){
+		    Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+}

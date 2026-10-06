@@ -1,0 +1,51 @@
+MoveDef SpecialHi_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=4)
+		FRAME(Frames=3)
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=5)
+		ON_FLAG(Variable=RA-Flag[14])
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=6)
+		Add_Momentum(Horizontal=0, Vertical=3)
+		FRAME(Frames=7)
+		Allow/Disallow_Ledgegrab(State=0x1)
+		FRAME(Frames=11)
+		Add_Momentum(Horizontal=0, Vertical=-2)
+		FRAME(Frames=16)
+		Add_Momentum(Horizontal=0, Vertical=-1)
+		FRAME(Frames=38)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Graphic_Effect3(Graphic=0x1000028, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=6)
+		External_Graphic(Graphic=0x3120009, Bone=0x0, X=0, Y=0, Z=0, XRot=90, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=17)
+		Terminate_Graphic_Effect(Graphic=0x3120009, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x160091)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=5)
+		FRAME(Frames=6)
+		SLOPE(unknown=0x0)
+		Script_End()
+	}
+
+}

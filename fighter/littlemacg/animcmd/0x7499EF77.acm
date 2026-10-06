@@ -1,0 +1,25 @@
+MoveDef 0x7499EF77
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		FRAME(Frames=25)
+		ENABLE_CANCEL()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

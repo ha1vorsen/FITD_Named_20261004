@@ -1,0 +1,45 @@
+MoveDef AttackLw3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.75)
+		FRAME(Frames=12)
+		ATK_RESERVE(ID=0x0, Bone=0x0, X=0, Y=4.7, Z=14.1)
+		ATK_RESERVE(ID=0x1, Bone=0x0, X=0, Y=2.4, Z=16.6)
+		ATK_REFERENCE_NODE(Unknown=0xE, Unknown=0xFFFFFFFF)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=13)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=11, Angle=0x118, KBG=0x3E, WBKB=0x0, BKB=0x0, Size=1.5, X=0, Y=4.7, Z=14.1, Effect=0x2, Trip=0.2, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x2, Direct/Indirect=0x1, Type=0xA)
+		Extended_Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=11, Angle=0x50, KBG=0x1E, WBKB=0x0, BKB=0x5A, Size=3.1, X=0, Y=2.4, Z=16.6, Effect=0x2, Trip=0.2, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=6, Z2=4.6)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=11)
+		Sword_Trace(TraceID=0x1, BlurLen=7.006492E-45, Bone1=0x3E8, X=1, Y=0, Z=0, Bone2=0x3E8, X=13, Y=0, Z=0, Anchored=0x1, Graphic=0x3050000, Bone3=0x3E8, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=13)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=-6, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=16)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=13)
+		Low_Voice_Clip(unknown=0x80020007)
+		Sound_Effect(SFX=0x30042)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=11)
+		Script_End()
+	}
+
+}

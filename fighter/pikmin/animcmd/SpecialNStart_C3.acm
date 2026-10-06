@@ -1,0 +1,45 @@
+MoveDef SpecialNStart_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=3)
+		FRAME(Frames=3)
+		Set_Frame_Duration(Speed=1)
+		GENERATE_ARTICLE(ID=0x0)
+		FRAME(Frames=6)
+		Set_Frame_Duration(Speed=6)
+		FRAME(Frames=10)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Graphic_Effect3(Graphic=0x31A0001, Bone=0x0, X=0, Y=0, Z=4, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=5)
+		Graphic_Effect2(Graphic=0x1000022, Bone=0x0, X=0, Y=5.5, Z=8, XRot=0, YRot=0, ZRot=0, Size=1.4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x1C005F)
+		FRAME(Frames=6)
+		Sound_Effect(SFX=0x131)
+		WAIT(Frames=3)
+		Sound_Effect(SFX=0x1C0061)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=5)
+		QUAKE(unknown=0x3)
+		FRAME(Frames=11)
+		Script_End()
+	}
+
+}

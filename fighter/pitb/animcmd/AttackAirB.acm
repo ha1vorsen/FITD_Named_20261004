@@ -1,0 +1,43 @@
+MoveDef AttackAirB
+{
+	Main()
+	{
+		VIS_SET_DEFAULT(unknown=0x0, unknown=0x0)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=10)
+		ATK_REFERENCE_NODE(Unknown=0x0, Unknown=0x2)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=12, Angle=0x2E, KBG=0x60, WBKB=0x0, BKB=0x1E, Size=3.4, X=0, Y=6, Z=-18.4, Effect=0x19, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x11, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=6, Z2=-16)
+		Extended_Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=8, Angle=0x42, KBG=0x60, WBKB=0x0, BKB=0x1E, Size=3.2, X=0, Y=6, Z=-18.4, Effect=0x19, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x11, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=6, Z2=-9)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		FRAME(Frames=28)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=8)
+		Sword_Trace(TraceID=0xC4, BlurLen=5.605194E-45, Bone1=0x3F3, X=0, Y=0, Z=0.3, Bone2=0x3F3, X=0, Y=10.8, Z=-2, Anchored=0x1, Graphic=0x3260000, Bone3=0x3F3, X=0, Y=0, Z=0, RotX=0, RotY=90, RotZ=0, Length=1)
+		Sword_Trace(TraceID=0xC4, BlurLen=2.802597E-45, Bone1=0x3F2, X=0, Y=0, Z=0.3, Bone2=0x3F2, X=0, Y=-10.8, Z=-2, Anchored=0x1, Graphic=0x3260000, Bone3=0x3F2, X=-0.015, Y=-0.15, Z=0, RotX=180, RotY=90, RotZ=0, Length=1.05)
+		FRAME(Frames=11)
+		Terminate_Sword_Glow(FadeTime=0x2)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=9)
+		Low_Voice_Clip(unknown=0x80400000)
+		Sound_Effect(SFX=0x7620034)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

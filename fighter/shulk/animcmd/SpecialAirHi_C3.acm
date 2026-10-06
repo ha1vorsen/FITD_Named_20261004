@@ -1,0 +1,40 @@
+MoveDef SpecialAirHi_C3
+{
+	Main()
+	{
+		JUMP(Hash=0x60DC32D7)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=7)
+		External_Graphic(Graphic=0x32F001F, Bone=0x3EC, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=8)
+		External_Graphic(Graphic=0x32F0028, Bone=0x19, X=0, Y=1, Z=0.3, XRot=0, YRot=0, ZRot=0, Size=0.3, Terminate=0x1)
+		FRAME(Frames=10)
+		Sword_Trace(TraceID=0xCD, BlurLen=1.401298E-44, Bone1=0x19, X=0, Y=1, Z=0.9, Bone2=0x19, X=0, Y=13, Z=0.9, Anchored=0x1, Graphic=0x0, Bone3=0x19, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		Graphic_Effect2(Graphic=0x32F0020, Bone=0x0, X=0, Y=0, Z=3, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=20)
+		Terminate_Sword_Glow(FadeTime=0x7)
+		FRAME(Frames=23)
+		External_Graphic(Graphic=0x32F001E, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.5, Terminate=0x1)
+		FRAME(Frames=24)
+		Terminate_Graphic_Effect(Graphic=0x32F0028, unknown=0x0, unknown=0x0)
+		Terminate_Graphic_Effect(Graphic=0x32F001F, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x60DC32D7)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x60DC32D7)
+		Script_End()
+	}
+
+}

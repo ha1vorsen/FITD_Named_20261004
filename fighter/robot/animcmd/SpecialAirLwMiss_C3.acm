@@ -1,0 +1,26 @@
+MoveDef SpecialAirLwMiss_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Sound_Effect(SFX=0x250051)
+		WAIT(Frames=1)
+		Sound_Effect(SFX=0x580021)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xC0340645)
+		Script_End()
+	}
+
+}

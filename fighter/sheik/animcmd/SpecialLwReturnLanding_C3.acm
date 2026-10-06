@@ -1,0 +1,31 @@
+MoveDef SpecialLwReturnLanding_C3
+{
+	Main()
+	{
+		FRAME(Frames=8)
+		Set_Frame_Duration(Speed=4)
+		FRAME(Frames=12)
+		Set_Frame_Duration(Speed=1.2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect3(Graphic=0x1000009, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x7CE82328)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=8)
+		Slope_Full(unknown=0x6, unknown=0x5)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,63 @@
+MoveDef 0x0540DD2B
+{
+	Main()
+	{
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=2, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x5A, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		FRAME(Frames=5)
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=2, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x5A, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x1, SFXType=0x0, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=10)
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=2, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x5A, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x2, SFXType=0x0, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=15)
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=2, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x5A, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x1, SFXType=0x0, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=20)
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=2, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x5A, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=25)
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=2, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x5A, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x1, SFXType=0x0, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=30)
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=2, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x5A, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x2, SFXType=0x0, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=35)
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=2, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x5A, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=40)
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=2, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x5A, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x1, SFXType=0x0, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=45)
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=2, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x5A, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x2, SFXType=0x0, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=50)
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=2, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x5A, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x1, SFXType=0x0, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=55)
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=2, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x5A, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=60)
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=2, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x5A, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x1, SFXType=0x0, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		ON_FLAG(Variable=RA-Flag[16])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		EFFECT_REMOVE_LINE_CIRCLE(unknown=0x6, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=2)
+		FRAME(Frames=35)
+		Script_End()
+	}
+
+}

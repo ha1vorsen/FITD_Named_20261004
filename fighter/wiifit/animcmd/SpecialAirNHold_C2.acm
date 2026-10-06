@@ -1,0 +1,27 @@
+MoveDef SpecialAirNHold_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x449D9574)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x24B008B)
+		FRAME(Frames=85)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x449D9574)
+		Script_End()
+	}
+
+}

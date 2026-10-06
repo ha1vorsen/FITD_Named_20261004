@@ -1,0 +1,23 @@
+MoveDef 0x3C8173DD : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=24)
+		Set_Frame_Duration(Speed=0.9)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

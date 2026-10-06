@@ -1,0 +1,58 @@
+MoveDef EntryR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=19)
+		Graphic_Effect2(Graphic=0x3040006, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=68)
+		Graphic_Effect3(Graphic=0x1000006, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.25, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=20)
+		Sound_Effect(SFX=0x7006F)
+		WAIT(Frames=15)
+		Sound_Effect(SFX=0x6E)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x6E)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x6E)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x6E)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x6E)
+		WAIT(Frames=6)
+		Sound_Effect3(SFX=0x70032)
+		WAIT(Frames=20)
+		Sound_Effect(SFX=0x70070)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		Morph_Model_Event(unknown=0x0)
+		ON_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=20)
+		SET_CURSOR(unknown=0x1)
+		Tag_Visibility(State=0x1)
+		Morph_Model_Event(unknown=0x1)
+		OFF_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=45)
+		IS_EXIST_ARTICLE(Unknown=0x2)
+		True(Offset=0x5){
+		    Article_Visibility(Article=0x2, State=0x0)
+		}
+		FRAME(Frames=67)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

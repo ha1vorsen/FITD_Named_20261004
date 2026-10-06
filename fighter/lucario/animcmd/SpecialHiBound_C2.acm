@@ -1,0 +1,38 @@
+MoveDef SpecialHiBound_C2
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=20)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x1000008, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Graphic_Effect3(Graphic=0x0, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Stop_Sound_Effect(SFX=0x160)
+		Stop_Sound_Effect(SFX=0x16B)
+		Stop_Sound_Effect(SFX=0x162)
+		Stop_Sound_Effect(SFX=0x2300D3)
+		Stop_Sound_Effect(SFX=0x2300D4)
+		Stop_Sound_Effect(SFX=0x2300D5)
+		STOP_SE_STATUS()
+		WAIT(Frames=2)
+		Sound_Effect(SFX=0x230059)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

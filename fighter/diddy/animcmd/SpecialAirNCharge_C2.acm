@@ -1,0 +1,28 @@
+MoveDef SpecialAirNCharge_C2
+{
+	Main()
+	{
+		JUMP(Hash=0xC41507D5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xC41507D5)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Transient_Sound_Effect(SFX=0x1E0044)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xC41507D5)
+		Script_End()
+	}
+
+}

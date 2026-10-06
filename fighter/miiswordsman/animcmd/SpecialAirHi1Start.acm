@@ -1,0 +1,23 @@
+MoveDef SpecialAirHi1Start
+{
+	Main()
+	{
+		JUMP(Hash=0x423BA623)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=12)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,29 @@
+MoveDef Win3Wait
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=25)
+		External_Graphic_Effect2(Graphic=0x100002E, Bone=0x0, X=-2, Y=1, Z=4, XRot=0, YRot=180, ZRot=0, Size=0.8, Terminate=0x0)
+		Loop_Rest()
+		JUMP(Hash=0x554CBE53)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=30)
+		PLAY_SE_NO_3D(unknown=0x39002D)
+		WAIT(Frames=20)
+		Sound_Effect(SFX=0xC0076)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,36 @@
+MoveDef 0xACAABDD8 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=40)
+		PLAY_SE_NO_3D(unknown=0x763000D)
+		FRAME(Frames=56)
+		PLAY_SE_NO_3D(unknown=0x763000B)
+		FRAME(Frames=80)
+		PLAY_SE_NO_3D(unknown=0x763000F)
+		FRAME(Frames=99)
+		PLAY_SE_NO_3D(unknown=0x7630008)
+		FRAME(Frames=116)
+		PLAY_SE_NO_3D(unknown=0x7630018)
+		FRAME(Frames=132)
+		PLAY_SE_NO_3D(unknown=0x763000B)
+		FRAME(Frames=132)
+		PLAY_SE_NO_3D(unknown=0x76E002D)
+		FRAME(Frames=172)
+		Sound_Effect(SFX=0x7630022)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

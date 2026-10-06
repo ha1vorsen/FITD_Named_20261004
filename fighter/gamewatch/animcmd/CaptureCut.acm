@@ -1,0 +1,30 @@
+MoveDef CaptureCut
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x7, ChangerState=0x3)
+		FRAME(Frames=3)
+		Model_Changer(ChangerID=0x7, ChangerState=0x0)
+		FRAME(Frames=29)
+		Model_Changer(ChangerID=0x7, ChangerState=0x3)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x6DF0037)
+		WAIT(Frames=8)
+		Stop_Sound_Effect(SFX=0x6DF0037)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

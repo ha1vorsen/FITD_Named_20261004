@@ -1,0 +1,24 @@
+MoveDef CatchWait
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Stop_Sound_Effect(SFX=0x1B0078)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

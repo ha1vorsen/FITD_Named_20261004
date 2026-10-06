@@ -1,0 +1,29 @@
+MoveDef 0xC7B568F4
+{
+	Main()
+	{
+		FRAME(Frames=8)
+		CALL(Hash=0x351EE58)
+		Move_Hitbox(ID=0x2, NewBone=0x10, X=0, Y=0, Z=0)
+		Move_Hitbox(ID=0x3, NewBone=0x14, X=0, Y=0, Z=0)
+		FRAME(Frames=11)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,24 @@
+MoveDef 0xA186AE69
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=15)
+		VIS_BACK_DEFAULT(unknown=0x0)
+		Script_End()
+	}
+
+}

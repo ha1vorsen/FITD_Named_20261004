@@ -1,0 +1,27 @@
+MoveDef FinalCallingMiss
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Body_Collision(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x60094)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

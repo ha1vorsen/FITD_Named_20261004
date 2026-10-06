@@ -1,0 +1,26 @@
+MoveDef SpecialHiEnd
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=25)
+		Transient_Sound_Effect(SFX=0x1D002F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=19)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		FRAME(Frames=22)
+		Script_End()
+	}
+
+}

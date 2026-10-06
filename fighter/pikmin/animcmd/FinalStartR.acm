@@ -1,0 +1,35 @@
+MoveDef FinalStartR
+{
+	Main()
+	{
+		Set_Remote_Article_Action(Article=0x1, Action=0x0)
+		Time_Manipulation(Amount=0x5, Duration=0x28)
+		Camera_Closeup(ZoomTime=0x5, Unknown=0x0, Distance=1.8, XRot=0, YRot=0)
+		End_Screen_Tint(ID=0x0, TransitionOutTime=0x0)
+		Screen_Tint(TransitionTime=0x0, Red=0x78, Green=0x0, Blue=0x0, Alpha=0x0, Duration=0xFF, unknown=0x0, TransitionOutTime=0xFF)
+		FRAME(Frames=41)
+		Normal_Camera()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=37)
+		PLAY_SE_REMAIN(unknown=0x1C003D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		FRAME(Frames=59)
+		Script_End()
+	}
+
+}

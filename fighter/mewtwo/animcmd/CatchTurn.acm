@@ -1,0 +1,41 @@
+MoveDef CatchTurn
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		Extended_Grab_Collision(ID=0x0, Bone=0x0, Size=4.2, X=0, Y=8.5, Z=-4.5, Action=0x3F, Ground/Air=0x3, X2=0, Y2=8.5, Z2=-15.2)
+		CALL(Hash=0x49FA5BDD)
+		WAIT(Frames=2)
+		Remove_All_Grab_Collisions()
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=10)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x3330007, GFXLeft=0x3330007, Bone=0x19, X=0x40000000, Y=0x0, Z=0x3F800000, XRot=0x0, YRot=0x0, ZRot=0x0, Size=0x3E99999A, Terminate=0x1, unknown=0x1)
+		FRAME(Frames=11)
+		EFFECT_FLIP(unknown=0x1000010, unknown=0x1000010, unknown=0x19, unknown=1, unknown=0, unknown=0, unknown=0, unknown=0, unknown=0, unknown=1.5, unknown=0, unknown=0, unknown=0, unknown=0, unknown=0, unknown=0x0, unknown=0x1, unknown=0x1)
+		FRAME(Frames=14)
+		FRAME(Frames=21)
+		Terminate_Graphic_Effect(Graphic=0x3330007, unknown=0x1, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=9)
+		Sound_Effect(SFX=0x6E)
+		WAIT(Frames=4)
+		Stop_Sound_Effect(SFX=0x6E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

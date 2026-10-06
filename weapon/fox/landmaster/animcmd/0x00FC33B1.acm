@@ -1,0 +1,37 @@
+MoveDef 0x00FC33B1
+{
+	Main()
+	{
+		Body_Collision(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x30){
+		    External_Graphic_Effect2(Graphic=0x4090006, Bone=0x7D7, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		    External_Graphic_Effect2(Graphic=0x4090006, Bone=0x7D8, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		    External_Graphic_Effect2(Graphic=0x4090006, Bone=0x7D9, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		    External_Graphic_Effect2(Graphic=0x4090006, Bone=0x7DA, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		}
+		Else(Offset=0x2E){
+		    External_Graphic_Effect2(Graphic=0x4090006, Bone=0x7DB, X=-4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		    External_Graphic_Effect2(Graphic=0x4090006, Bone=0x7DC, X=-4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		    External_Graphic_Effect2(Graphic=0x4090006, Bone=0x7DD, X=-4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		    External_Graphic_Effect2(Graphic=0x4090006, Bone=0x7DE, X=-4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		PLAY_SE_REMAIN(unknown=0xB006F)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

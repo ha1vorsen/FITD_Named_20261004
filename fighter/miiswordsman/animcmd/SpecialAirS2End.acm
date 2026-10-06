@@ -1,0 +1,25 @@
+MoveDef SpecialAirS2End
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[18])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=25)
+		unk_C7B586AF(unknown=0, unknown=30, unknown=10)
+		Script_End()
+	}
+
+}

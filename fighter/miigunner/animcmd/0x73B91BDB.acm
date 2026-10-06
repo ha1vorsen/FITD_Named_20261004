@@ -1,0 +1,27 @@
+MoveDef 0x73B91BDB
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		SHOOT_EXIST_ARTICLE(unknown=0x3)
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=2)
+		QUAKE(unknown=0x3)
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,38 @@
+MoveDef SpecialLwAttack_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		IS_FLAG(Variable=RA-Flag[15])
+		False(Offset=0xA){
+		    Terminate_Graphic_Effect(Graphic=0x3100000, unknown=0x1, unknown=0x1)
+		    FRAME(Frames=2)
+		}
+		Else(Offset=0x2){
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		IS_FLAG(Variable=RA-Flag[15])
+		False(Offset=0x6){
+		    Sound_Effect(SFX=0x1200B2)
+		}
+		Else(Offset=0x4){
+		    Sound_Effect(SFX=0x1200AA)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

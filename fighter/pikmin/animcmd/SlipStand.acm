@@ -1,0 +1,24 @@
+MoveDef SlipStand
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x1C007A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=11)
+		Script_End()
+	}
+
+}

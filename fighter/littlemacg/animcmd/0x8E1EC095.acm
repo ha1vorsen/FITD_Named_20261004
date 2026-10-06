@@ -1,0 +1,24 @@
+MoveDef 0x8E1EC095
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=24)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

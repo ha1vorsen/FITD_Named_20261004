@@ -1,0 +1,24 @@
+MoveDef FinalMove : Unlisted
+{
+	Main()
+	{
+		Body_Collision(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

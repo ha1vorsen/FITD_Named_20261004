@@ -1,0 +1,31 @@
+MoveDef SpecialAirLw1
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.85)
+		FRAME(Frames=32)
+		ON_FLAG(Variable=RA-Flag[13])
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=8, Angle=0x10E, KBG=0x78, WBKB=0x0, BKB=0x19, Size=6.5, X=0, Y=5.2, Z=-1.5, Effect=0x0, Trip=0, Hitlag=3, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x2, Direct/Indirect=0x1, Type=0x1, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=8, Angle=0x169, KBG=0x32, WBKB=0x0, BKB=0x1E, Size=8, X=0, Y=5.2, Z=-1.5, Effect=0xB, Trip=0, Hitlag=3, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x1, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=32)
+		External_Graphic(Graphic=0x3000018, Bone=0x2, X=0, Y=0, Z=-2, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x81A0031)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

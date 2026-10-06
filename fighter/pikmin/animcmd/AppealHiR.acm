@@ -1,0 +1,43 @@
+MoveDef AppealHiR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=23)
+		Graphic_Effect3(Graphic=0x1000007, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=49)
+		Graphic_Effect3(Graphic=0x1000007, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=81)
+		Graphic_Effect3(Graphic=0x1000007, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x1C0085)
+		WAIT(Frames=18)
+		Sound_Effect(SFX=0x1C0045)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x1C0086)
+		WAIT(Frames=21)
+		Sound_Effect(SFX=0x1C0045)
+		WAIT(Frames=12)
+		Sound_Effect(SFX=0x1C0087)
+		WAIT(Frames=24)
+		Sound_Effect(SFX=0x1C0045)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=19)
+		FRAME(Frames=45)
+		FRAME(Frames=79)
+		Script_End()
+	}
+
+}

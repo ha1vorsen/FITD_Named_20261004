@@ -1,0 +1,22 @@
+MoveDef CatchStart : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		ON_FLAG(Variable=RA-Flag[0])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,29 @@
+MoveDef SpecialHiHoldAir
+{
+	Main()
+	{
+		JUMP(Hash=0xD9CFA96E)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xD9CFA96E)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xD9CFA96E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=3)
+		FRAME(Frames=42)
+		Script_End()
+	}
+
+}

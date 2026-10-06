@@ -1,0 +1,27 @@
+MoveDef SpecialAirS_C2
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xABB723AB)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=8)
+		FRAME(Frames=23)
+		Script_End()
+	}
+
+}

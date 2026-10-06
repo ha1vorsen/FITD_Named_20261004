@@ -1,0 +1,32 @@
+MoveDef SpecialAirLw_C3
+{
+	Main()
+	{
+		JUMP(Hash=0x259AB4BB)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=22)
+		Int_Compare(Type=0x2, Method=0x0, Value=115)
+		True(Offset=0x4){
+		    Sound_Effect(SFX=0x3002E)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=8)
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		FRAME(Frames=22)
+		Script_End()
+	}
+
+}

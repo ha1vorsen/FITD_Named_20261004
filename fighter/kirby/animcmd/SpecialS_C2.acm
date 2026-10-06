@@ -1,0 +1,45 @@
+MoveDef SpecialS_C2
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=18, Angle=0x4B, KBG=0x4E, WBKB=0x0, BKB=0x37, Size=3.5, X=0, Y=4.5, Z=5.5, Effect=0x0, Trip=0, Hitlag=1.2, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xB)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=21, Angle=0x4B, KBG=0x4E, WBKB=0x0, BKB=0x37, Size=5.4, X=0, Y=4.5, Z=11.5, Effect=0x0, Trip=0, Hitlag=1.2, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xB)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		FRAME(Frames=27)
+		Remove_All_Hitboxes()
+		FRAME(Frames=53)
+		Remove_Article(Article=0x15)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x3F0001)
+		Sound_Effect(SFX=0xA00CB)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=2)
+		Slope_Full(unknown=0x1, unknown=0x8)
+		FRAME(Frames=9)
+		FRAME(Frames=10)
+		QUAKE(unknown=0x3)
+		FRAME(Frames=46)
+		Slope_Full(unknown=0x6, unknown=0xF)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,52 @@
+MoveDef 0xBC85B391 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x0)
+		True(Offset=0x6){
+		    Terminate_Graphic_Effect(Graphic=0x32B0003, unknown=0x0, unknown=0x0)
+		}
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x1)
+		True(Offset=0x6){
+		    Terminate_Graphic_Effect(Graphic=0x32B002A, unknown=0x0, unknown=0x0)
+		}
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x2)
+		True(Offset=0x6){
+		    Terminate_Graphic_Effect(Graphic=0x32B002B, unknown=0x0, unknown=0x0)
+		}
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x3)
+		True(Offset=0x6){
+		    Terminate_Graphic_Effect(Graphic=0x32B002C, unknown=0x0, unknown=0x0)
+		}
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x4)
+		True(Offset=0x6){
+		    Terminate_Graphic_Effect(Graphic=0x32B002D, unknown=0x0, unknown=0x0)
+		}
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x5)
+		True(Offset=0x6){
+		    Terminate_Graphic_Effect(Graphic=0x32B002E, unknown=0x0, unknown=0x0)
+		}
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x6)
+		True(Offset=0x6){
+		    Terminate_Graphic_Effect(Graphic=0x32B002F, unknown=0x0, unknown=0x0)
+		}
+		Int_Var_Compare(Variable=LA-Int[60], Method=0x0, Value=0x7)
+		True(Offset=0x6){
+		    Terminate_Graphic_Effect(Graphic=0x32B0030, unknown=0x0, unknown=0x0)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

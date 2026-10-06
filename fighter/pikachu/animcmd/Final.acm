@@ -1,0 +1,41 @@
+MoveDef Final
+{
+	Main()
+	{
+		Camera_Closeup(ZoomTime=0x5, Unknown=0x0, Distance=1, XRot=0, YRot=0)
+		Time_Manipulation(Amount=0x2, Duration=0x1E)
+		FRAME(Frames=40)
+		Normal_Camera()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		External_Graphic(Graphic=0x30A0010, Bone=0x3, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=10)
+		External_Graphic(Graphic=0x40A0003, Bone=0x3, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=53)
+		Graphic_Effect2(Graphic=0x1000008, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=54)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x390005)
+		Sound_Effect(SFX=0xC0025)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		Item_Visibility(State=0x0)
+		FRAME(Frames=8)
+		FRAME(Frames=63)
+		Script_End()
+	}
+
+}

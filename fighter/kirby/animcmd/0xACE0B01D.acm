@@ -1,0 +1,26 @@
+MoveDef 0xACE0B01D
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		CALL(Hash=0x6B69980A)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0xBF)
+		Script_End()
+	}
+
+	Expression()
+	{
+		START_CHARGE(unknown=0x3E4CCCCD, unknown=0x3E99999A, unknown=0xBF800000, unknown=0x3DCCCCCD, unknown=0x3E4CCCCD, unknown=0xBF800000, unknown=0xFFFFFFFF)
+		FRAME(Frames=4)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,27 @@
+MoveDef Wait1
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=90)
+		IS_RANDOM(Chance=0x2)
+		True(Offset=0x4){
+		    Sound_Effect(SFX=0x82C0029)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		Slope_Full(unknown=0x6, unknown=0x6)
+		Script_End()
+	}
+
+}

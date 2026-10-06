@@ -1,0 +1,34 @@
+MoveDef SpecialNEatWalkFast_C3
+{
+	Main()
+	{
+		JUMP(Hash=0xB63A3DF1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=12)
+		Sound_Effect(SFX=0x6003F)
+		WAIT(Frames=17)
+		Sound_Effect(SFX=0x6003D)
+		Loop_Rest()
+		JUMP(Hash=0x81F768E2)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=12)
+		FRAME(Frames=28)
+		Loop_Rest()
+		JUMP(Hash=0x81F768E2)
+		Script_End()
+	}
+
+}

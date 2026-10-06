@@ -1,0 +1,32 @@
+MoveDef SpecialS
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=14)
+		ON_FLAG(Variable=LA-Flag[123])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x7650044)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		SLOPE(unknown=0x4)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=9)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		Script_End()
+	}
+
+}

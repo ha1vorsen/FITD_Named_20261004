@@ -1,0 +1,71 @@
+MoveDef Attack100
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		CALL(Hash=0xDCD907DA)
+		FRAME(Frames=8)
+		CALL(Hash=0xDCD907DA)
+		FRAME(Frames=15)
+		CALL(Hash=0xDCD907DA)
+		FRAME(Frames=21)
+		CALL(Hash=0xDCD907DA)
+		FRAME(Frames=27)
+		CALL(Hash=0xDCD907DA)
+		WAIT_LOOP_CLR()
+		ON_FLAG(Variable=RA-Flag[22])
+		JUMP(Hash=0xB007C283)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		Graphic_Effect2(Graphic=0x30C000A, Bone=0x0, X=0, Y=11.3, Z=3, XRot=-22.5, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=8)
+		Graphic_Effect2(Graphic=0x30C000A, Bone=0x0, X=0, Y=10, Z=3, XRot=-12.5, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=12)
+		Graphic_Effect2(Graphic=0x30C000A, Bone=0x0, X=0, Y=10.5, Z=3, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=16)
+		Graphic_Effect2(Graphic=0x30C000A, Bone=0x0, X=0, Y=10.5, Z=3, XRot=10, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=20)
+		Graphic_Effect2(Graphic=0x30C000A, Bone=0x0, X=0, Y=11.8, Z=2.8, XRot=17.5, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=24)
+		Graphic_Effect2(Graphic=0x30C000A, Bone=0x0, X=0, Y=11.8, Z=2.8, XRot=25, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		WAIT_LOOP_CLR()
+		JUMP(Hash=0xB007C283)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0xE0087)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0xE0088)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0xE0088)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0xE0089)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0xE0089)
+		WAIT(Frames=1)
+		Loop_Rest()
+		JUMP(Hash=0xB007C283)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=1)
+		FRAME(Frames=7)
+		FRAME(Frames=15)
+		FRAME(Frames=21)
+		FRAME(Frames=27)
+		WAIT_LOOP_CLR()
+		JUMP(Hash=0xB007C283)
+		Script_End()
+	}
+
+}

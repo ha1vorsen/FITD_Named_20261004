@@ -1,0 +1,35 @@
+MoveDef EntryL : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		FRAME(Frames=13)
+		Sound_Effect(SFX=0x8200009)
+		FRAME(Frames=30)
+		Sound_Effect(SFX=0x8200015)
+		FRAME(Frames=35)
+		Sound_Effect(SFX=0x820000E)
+		FRAME(Frames=39)
+		Sound_Effect(SFX=0x6D)
+		FRAME(Frames=49)
+		Sound_Effect(SFX=0x820000F)
+		FRAME(Frames=64)
+		Sound_Effect(SFX=0x8200009)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

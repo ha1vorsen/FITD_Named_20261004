@@ -1,0 +1,38 @@
+MoveDef Win1
+{
+	Main()
+	{
+		Remove_Article(Article=0x0)
+		Remove_Article(Article=0x2)
+		GENERATE_ARTICLE(ID=0xC)
+		SET_POS_ARTICLE(Unknown=0xC, Unknown=0x0, Unknown=0, Unknown=6)
+		SET_ROT_ARTICLE(Unknown=0xC, Unknown=0x0, Unknown=90, Unknown=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x7650015)
+		FRAME(Frames=50)
+		Sound_Effect(SFX=0x7650017)
+		FRAME(Frames=54)
+		Transient_Sound_Effect(SFX=0x765005B)
+		FRAME(Frames=86)
+		Sound_Effect(SFX=0x7650034)
+		FRAME(Frames=123)
+		STOP_SE_STATUS()
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		Script_End()
+	}
+
+}

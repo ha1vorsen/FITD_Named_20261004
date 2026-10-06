@@ -1,0 +1,24 @@
+MoveDef 0x4509EDDD
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		VIS_SET_DEFAULT(unknown=0x0, unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

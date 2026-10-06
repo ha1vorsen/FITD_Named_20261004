@@ -1,0 +1,26 @@
+MoveDef SpecialAirSFall
+{
+	Main()
+	{
+		Throw_Specifier(ID=0x1, Bone=0x0, Damage=4, Angle=0x0, KBG=0xA, WBKB=0x0, BKB=0x64, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x0, SFXType=0x2, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		Add/Set_Momentum2(Horizontal=0, Vertical=-5, Add/SetHorizontal=0x0, Add/SetVertical=0x1)
+		FRAME(Frames=2)
+		SET_INT(Value=0x2, Variable=RA-Int[5])
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3140006, Bone=0x18, X=0, Y=0, Z=0, XRot=-25, YRot=0, ZRot=-60, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

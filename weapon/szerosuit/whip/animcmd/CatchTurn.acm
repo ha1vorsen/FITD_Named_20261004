@@ -1,0 +1,27 @@
+MoveDef CatchTurn
+{
+	Main()
+	{
+		Visibility(State=0x0)
+		FRAME(Frames=16)
+		Visibility(State=0x1)
+		FRAME(Frames=56)
+		Visibility(State=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xC56B7B64)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

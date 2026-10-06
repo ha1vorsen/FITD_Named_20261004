@@ -1,0 +1,26 @@
+MoveDef SpecialAirNShoot_C3
+{
+	Main()
+	{
+		JUMP(Hash=0xD62EAEB9)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Low_Voice_Clip(unknown=0x80140008)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xD62EAEB9)
+		Script_End()
+	}
+
+}

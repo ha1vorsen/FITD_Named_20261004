@@ -1,0 +1,25 @@
+MoveDef SpecialHiFail_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0x764004F)
+		Low_Voice_Clip(unknown=0x803B0007)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=8)
+		Script_End()
+	}
+
+}

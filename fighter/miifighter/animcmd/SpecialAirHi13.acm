@@ -1,0 +1,26 @@
+MoveDef SpecialAirHi13
+{
+	Main()
+	{
+		JUMP(Hash=0xF3C36557)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xF3C36557)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x81A002C)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

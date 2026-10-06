@@ -1,0 +1,38 @@
+MoveDef SpecialHi_C2
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		Add_Momentum(Horizontal=0, Vertical=0.1)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=14)
+		Add_Momentum(Horizontal=0, Vertical=0.1)
+		FRAME(Frames=17)
+		Add_Momentum(Horizontal=0, Vertical=0.1)
+		FRAME(Frames=21)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=2)
+		Graphic_Effect2(Graphic=0x1000007, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x23D00AE)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+}

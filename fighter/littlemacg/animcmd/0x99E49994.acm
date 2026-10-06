@@ -1,0 +1,25 @@
+MoveDef 0x99E49994
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		Reverse_Direction()
+		FRAME(Frames=11)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

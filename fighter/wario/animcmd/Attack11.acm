@@ -1,0 +1,44 @@
+MoveDef Attack11
+{
+	Main()
+	{
+		FRAME(Frames=8)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=4, Angle=0x37, KBG=0x32, WBKB=0x0, BKB=0x2D, Size=4, X=0, Y=5, Z=5, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=4, Angle=0x48, KBG=0x28, WBKB=0x0, BKB=0x26, Size=5, X=0, Y=5, Z=10, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=13)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=22)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=7)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x100008D, GFXLeft=0x100008D, Bone=0x0, X=0x40A00000, Y=0x41500000, Z=0xC0400000, XRot=0x41F00000, YRot=0xC1C80000, ZRot=0x0, Size=0x3FACCCCD, Terminate=0x1, unknown=0x1)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=8)
+		Graphic_Effect7(Graphic=0x100008F, Bone=0x0, X=-2, Y=4, Z=14, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1, Unknown=0x43160000)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0x1A0071)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x4)
+		FRAME(Frames=5)
+		FRAME(Frames=8)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

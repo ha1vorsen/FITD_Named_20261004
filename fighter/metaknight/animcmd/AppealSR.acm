@@ -1,0 +1,35 @@
+MoveDef AppealSR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=37)
+		External_Graphic(Graphic=0x317000C, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=82)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x19, X=0.01005, Y=9.99974, Z=-0.07108, XRot=0, YRot=0, ZRot=0, Size=0.75, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Terminate_Graphic_Effect(Graphic=0x317000C, unknown=0x1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x600017)
+		Sound_Effect(SFX=0x24D00A8)
+		FRAME(Frames=38)
+		Sound_Effect(SFX=0x24D00B8)
+		FRAME(Frames=76)
+		Sound_Effect(SFX=0x24D00B9)
+		Script_End()
+	}
+
+	Expression()
+	{
+		VIS_SET_DEFAULT(unknown=0x1, unknown=0x0)
+		Script_End()
+	}
+
+}

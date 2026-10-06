@@ -1,0 +1,22 @@
+MoveDef 0xA7B30616
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3110002, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.6, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1.3)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

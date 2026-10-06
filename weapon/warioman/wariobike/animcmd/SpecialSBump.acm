@@ -1,0 +1,22 @@
+MoveDef SpecialSBump
+{
+	Main()
+	{
+		Remove_All_Hitboxes()
+		ON_FLAG(Variable=RA-Flag[12])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,25 @@
+MoveDef FinalEnd
+{
+	Main()
+	{
+		Body_Collision(State=0x2)
+		FRAME(Frames=29)
+		Normal_Camera()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

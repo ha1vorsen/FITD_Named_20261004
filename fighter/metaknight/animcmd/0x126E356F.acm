@@ -1,0 +1,38 @@
+MoveDef 0x126E356F
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x100001A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		IS_FLAG(Variable=RA-Flag[20])
+		True(Offset=0xA){
+		    Low_Voice_Clip(unknown=0x80270001)
+		    WAIT(Frames=16)
+		    Sound_Effect(SFX=0x24D000F)
+		}
+		Else(Offset=0xC){
+		    Low_Voice_Clip(unknown=0x80270001)
+		    WAIT(Frames=1)
+		    Sound_Effect(SFX=0x24D000E)
+		    WAIT(Frames=15)
+		    Sound_Effect(SFX=0x24D000F)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		VIS_SET_DEFAULT(unknown=0x1, unknown=0x0)
+		Script_End()
+	}
+
+}

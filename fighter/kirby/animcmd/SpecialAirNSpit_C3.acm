@@ -1,0 +1,26 @@
+MoveDef SpecialAirNSpit_C3
+{
+	Main()
+	{
+		JUMP(Hash=0x3C3A0577)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0xA0061)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

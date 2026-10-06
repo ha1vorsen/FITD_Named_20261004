@@ -1,0 +1,28 @@
+MoveDef FinalFireCannon
+{
+	Main()
+	{
+		Body_Collision(State=0x1)
+		FRAME(Frames=18)
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x261F5DAE)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=18)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,49 @@
+MoveDef SpecialHiStart_C2
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		GENERATE_ARTICLE(ID=0x0)
+		Set_Anchored_Article_Action(Article=0x0, Action=0x0)
+		SET_RATE_ARTICLE(unknown=0x0, unknown=0.001)
+		Set_Frame_Duration(Speed=3)
+		FRAME(Frames=5)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=6)
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=10)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=11)
+		Allow/Disallow_Ledgegrab(State=0x1)
+		FRAME(Frames=30)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Graphic_Effect3(Graphic=0x1000029, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Graphic_Effect6(Graphic=0x100000B, Bone=0x0, X=0, Y=0, Z=3, XRot=0, YRot=0, ZRot=0, Size=0.65, Terminate=0x1, Unknown=0x428C0000)
+		FRAME(Frames=28)
+		Terminate_Graphic_Effect(Graphic=0x100000B, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x11005F)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x110079)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

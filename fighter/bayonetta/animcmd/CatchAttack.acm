@@ -1,0 +1,45 @@
+MoveDef CatchAttack
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.25)
+		FRAME(Frames=24)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1.6, Angle=0x169, KBG=0x64, WBKB=0x28, BKB=0x0, Size=5, X=0, Y=12, Z=10, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		FRAME(Frames=52)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1.6, Angle=0x169, KBG=0x64, WBKB=0x28, BKB=0x0, Size=5, X=0, Y=12, Z=10, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=21)
+		Graphic_Effect6(Graphic=0x100008E, Bone=0x0, X=-2, Y=13, Z=1, XRot=15, YRot=-60, ZRot=5, Size=0.6, Terminate=0x1, Unknown=0x42200000)
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		FRAME(Frames=25)
+		Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=0, Y=14, Z=8, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		FRAME(Frames=49)
+		Graphic_Effect6(Graphic=0x100008E, Bone=0x0, X=2, Y=13.5, Z=1, XRot=-20, YRot=-60, ZRot=-180, Size=0.6, Terminate=0x1, Unknown=0x42200000)
+		LAST_EFFECT_SET_RATE(unknown=1.8)
+		FRAME(Frames=53)
+		Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=0, Y=14, Z=7, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x3, ChangerState=0x2)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=25)
+		FRAME(Frames=53)
+		Script_End()
+	}
+
+}

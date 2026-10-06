@@ -1,0 +1,24 @@
+MoveDef SpecialAirNMaxDashEnd_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Graphic_Effect2(Graphic=0x1000012, Bone=0x17, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=1, RandomY=1, RandomZ=1, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xAB6D16C9)
+		Script_End()
+	}
+
+}

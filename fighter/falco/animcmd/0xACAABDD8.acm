@@ -1,0 +1,54 @@
+MoveDef 0xACAABDD8 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=35)
+		Sound_Effect(SFX=0x18008A)
+		FRAME(Frames=42)
+		Sound_Effect(SFX=0x18008A)
+		FRAME(Frames=50)
+		Sound_Effect(SFX=0x180089)
+		FRAME(Frames=58)
+		Sound_Effect(SFX=0x18008B)
+		FRAME(Frames=60)
+		PLAY_SE_NO_3D(unknown=0x4B004C)
+		FRAME(Frames=63)
+		Sound_Effect(SFX=0x180089)
+		FRAME(Frames=70)
+		Sound_Effect(SFX=0x18008B)
+		FRAME(Frames=78)
+		Sound_Effect(SFX=0x18008A)
+		FRAME(Frames=86)
+		Sound_Effect(SFX=0x18008A)
+		FRAME(Frames=94)
+		Sound_Effect(SFX=0x180089)
+		FRAME(Frames=101)
+		Sound_Effect(SFX=0x180089)
+		FRAME(Frames=108)
+		Sound_Effect(SFX=0x18008B)
+		FRAME(Frames=112)
+		Sound_Effect(SFX=0x180089)
+		FRAME(Frames=116)
+		Sound_Effect(SFX=0x18008A)
+		FRAME(Frames=120)
+		Sound_Effect(SFX=0x180089)
+		FRAME(Frames=135)
+		Sound_Effect(SFX=0x18008B)
+		FRAME(Frames=143)
+		Sound_Effect(SFX=0x180045)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

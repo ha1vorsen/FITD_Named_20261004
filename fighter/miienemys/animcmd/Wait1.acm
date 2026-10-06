@@ -1,0 +1,22 @@
+MoveDef Wait1
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		unk_C7B586AF(unknown=0, unknown=30, unknown=5)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

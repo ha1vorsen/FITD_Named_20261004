@@ -1,0 +1,57 @@
+MoveDef SpecialAirSMax
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=27, Angle=0x2D, KBG=0x4E, WBKB=0x0, BKB=0x3C, Size=5.6, X=0, Y=4, Z=11.5, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xB)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=27, Angle=0x2D, KBG=0x4E, WBKB=0x0, BKB=0x3C, Size=3.7, X=0, Y=4, Z=5.5, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xB)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=56)
+		Remove_Article(Article=0x15)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3080014, Bone=0x19, X=0, Y=10, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		FRAME(Frames=3)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x19, X=-6, Y=6, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=6)
+		IS_FLAG(Variable=LA-Flag[160])
+		False(Offset=0x2){
+		}
+		FRAME(Frames=7)
+		FRAME(Frames=11)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x308001B, GFXLeft=0x308001B, Bone=0x0, X=0xBF800000, Y=0x41300000, Z=0x40000000, XRot=0x41000000, YRot=0xC2780000, ZRot=0x427C0000, Size=0x3F800000, Terminate=0x1, unknown=0x1)
+		FRAME(Frames=13)
+		FRAME(Frames=15)
+		Terminate_Sword_Glow(FadeTime=0x2)
+		FRAME(Frames=20)
+		External_Graphic(Graphic=0x3080019, Bone=0x19, X=0, Y=10, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=25)
+		Terminate_Graphic_Effect(Graphic=0x3080013, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x3F002C)
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0xA0066)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=1)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=6)
+		FRAME(Frames=16)
+		Slope_Full(unknown=0x6, unknown=0x5)
+		Script_End()
+	}
+
+}

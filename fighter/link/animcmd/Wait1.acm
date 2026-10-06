@@ -1,0 +1,23 @@
+MoveDef Wait1
+{
+	Main()
+	{
+		ON_FLAG(Variable=LA-Flag[124])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Slope_Full(unknown=0x6, unknown=0x6)
+		Script_End()
+	}
+
+}

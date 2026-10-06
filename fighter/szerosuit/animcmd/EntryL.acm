@@ -1,0 +1,35 @@
+MoveDef EntryL
+{
+	Main()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x1B002F)
+		WAIT(Frames=28)
+		Sound_Effect(SFX=0x1B0085)
+		WAIT(Frames=67)
+		Sound_Effect(SFX=0x1B0034)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		ON_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=102)
+		OFF_FLAG(Variable=LA-Flag[101])
+		Script_End()
+	}
+
+}

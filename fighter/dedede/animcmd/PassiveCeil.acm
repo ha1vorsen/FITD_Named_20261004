@@ -1,0 +1,22 @@
+MoveDef PassiveCeil
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x610018)
+		Sound_Effect(SFX=0x60017)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

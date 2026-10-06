@@ -1,0 +1,28 @@
+MoveDef SpecialAirSEnd_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.25)
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xE437BA8D)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=46)
+		Slope_Full(unknown=0x0, unknown=0x2)
+		Script_End()
+	}
+
+}

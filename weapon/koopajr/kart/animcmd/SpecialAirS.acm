@@ -1,0 +1,28 @@
+MoveDef SpecialAirS
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x224117F6)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0x8630038)
+		Stop_Sound_Effect(SFX=0x863006A)
+		IS_FLAG(Variable=LA-Flag[4])
+		True(Offset=0x4){
+		    Transient_Sound_Effect(SFX=0x8630068)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

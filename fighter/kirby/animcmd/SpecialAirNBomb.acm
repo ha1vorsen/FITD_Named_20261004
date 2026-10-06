@@ -1,0 +1,32 @@
+MoveDef SpecialAirNBomb
+{
+	Main()
+	{
+		JUMP(Hash=0x9E19E90A)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x9E19E90A)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0xA00BA)
+		WAIT(Frames=10)
+		Sound_Effect(SFX=0x4F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		FRAME(Frames=16)
+		QUAKE(unknown=0x4)
+		Script_End()
+	}
+
+}

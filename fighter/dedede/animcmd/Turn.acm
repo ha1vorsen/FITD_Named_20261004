@@ -1,0 +1,26 @@
+MoveDef Turn
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect2(SFX=0x6003F)
+		WAIT(Frames=10)
+		Sound_Effect2(SFX=0x6003D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

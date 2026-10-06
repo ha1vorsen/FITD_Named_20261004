@@ -1,0 +1,66 @@
+MoveDef AttackDash
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=15, Angle=0x50, KBG=0x1E, WBKB=0x0, BKB=0x64, Size=15, X=0, Y=14, Z=33, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0xA, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=15, Angle=0x50, KBG=0x1E, WBKB=0x0, BKB=0x64, Size=15, X=0, Y=14, Z=15, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0xA, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		WAIT(Frames=4)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=12, Angle=0x50, KBG=0x1E, WBKB=0x0, BKB=0x46, Size=15, X=0, Y=14, Z=33, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0xA, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=12, Angle=0x50, KBG=0x1E, WBKB=0x0, BKB=0x46, Size=15, X=0, Y=14, Z=15, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0xA, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		WAIT(Frames=4)
+		Remove_All_Hitboxes()
+		FRAME(Frames=25)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=9, Angle=0x4A, KBG=0x50, WBKB=0x0, BKB=0x28, Size=21, X=0, Y=14, Z=30, Effect=0xB, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x3, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=9, Angle=0x4A, KBG=0x50, WBKB=0x0, BKB=0x28, Size=21, X=0, Y=14, Z=15, Effect=0xB, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x3, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=9, Angle=0x4A, KBG=0x50, WBKB=0x0, BKB=0x28, Size=21, X=0, Y=14, Z=0, Effect=0xB, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x3, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		Hitbox(ID=0x3, Part=0x0, Bone=0x0, Damage=9, Angle=0x4A, KBG=0x50, WBKB=0x0, BKB=0x28, Size=21, X=0, Y=14, Z=-15, Effect=0xB, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x3, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		WAIT(Frames=5)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=10)
+		Graphic_Effect2(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=11)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x100008F, GFXLeft=0x100008F, Bone=0x0, X=0xC0E00000, Y=0x41800000, Z=0x42480000, XRot=0x0, YRot=0x0, ZRot=0x42B40000, Size=0x40600000, Terminate=0x1, unknown=0x1)
+		FRAME(Frames=25)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0xF){
+		    External_Graphic(Graphic=0x1000008, Bone=0x0, X=0, Y=0, Z=0, XRot=180, YRot=0, ZRot=0, Size=-2, Terminate=0x1)
+		}
+		Else(Offset=0xD){
+		    External_Graphic(Graphic=0x1000008, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		}
+		FRAME(Frames=26)
+		Graphic_Effect2(Graphic=0x1000009, Bone=0x0, X=0, Y=0, Z=-10, XRot=0, YRot=0, ZRot=0, Size=2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=27)
+		Graphic_Effect2(Graphic=0x1000029, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=9)
+		Sound_Effect(SFX=0x8AA0037)
+		Sound_Effect(SFX=0x6E00070)
+		FRAME(Frames=30)
+		Sound_Effect(SFX=0x6E0007A)
+		FRAME(Frames=56)
+		Sound_Effect3(SFX=0x6E0001D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=9)
+		FRAME(Frames=23)
+		FRAME(Frames=25)
+		QUAKE(unknown=0x4)
+		Script_End()
+	}
+
+}

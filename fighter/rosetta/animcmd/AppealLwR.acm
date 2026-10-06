@@ -1,0 +1,31 @@
+MoveDef AppealLwR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=45)
+		External_Graphic(Graphic=0x3270001, Bone=0x18, X=0, Y=7.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.7, Terminate=0x1)
+		FRAME(Frames=111)
+		Terminate_Graphic_Effect(Graphic=0x3270001, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=16)
+		Sound_Effect(SFX=0x4A40000)
+		WAIT(Frames=28)
+		Sound_Effect(SFX=0x4A4005F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

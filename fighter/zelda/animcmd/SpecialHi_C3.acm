@@ -1,0 +1,25 @@
+MoveDef SpecialHi_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3100006, Bone=0x0, X=0, Y=8, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x120052)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		Script_End()
+	}
+
+}

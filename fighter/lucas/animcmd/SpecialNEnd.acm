@@ -1,0 +1,21 @@
+MoveDef SpecialNEnd
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

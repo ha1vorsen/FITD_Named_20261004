@@ -1,0 +1,41 @@
+MoveDef SpecialN_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=6)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=7)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		External_Graphic(Graphic=0x32A0008, Bone=0x0, X=0, Y=8, Z=23, XRot=0, YRot=0, ZRot=0, Size=1.6, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=0.95)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x24C00AA)
+		FRAME(Frames=9)
+		Sound_Effect(SFX=0x24C0036)
+		FRAME(Frames=24)
+		Sound_Effect(SFX=0x24C0037)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=8)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

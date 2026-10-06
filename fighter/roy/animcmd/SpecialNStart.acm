@@ -1,0 +1,25 @@
+MoveDef SpecialNStart
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Transient_Sound_Effect(SFX=0xC230049)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=15)
+		Script_End()
+	}
+
+}

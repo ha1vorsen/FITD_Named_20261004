@@ -1,0 +1,29 @@
+MoveDef 0x6C767E32
+{
+	Main()
+	{
+		FRAME(Frames=13)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x7D1, Damage=18, Angle=0x50, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=7, X=0, Y=12, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x6, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=5, Z2=0)
+		FRAME(Frames=19)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x7D1, Damage=13, Angle=0x50, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=9, X=0, Y=11, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x6, SFXLevel=0x1, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=40)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0x24C0033)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

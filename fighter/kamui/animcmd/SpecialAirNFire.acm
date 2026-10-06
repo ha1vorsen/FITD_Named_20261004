@@ -1,0 +1,40 @@
+MoveDef SpecialAirNFire
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x339000F, Bone=0x0, X=0, Y=8, Z=6, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=16)
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect2(Graphic=0x1000012, Bone=0x10, X=6, Y=0, Z=3, XRot=0, YRot=0, ZRot=0, Size=1.4, RandomX=5, RandomY=5, RandomZ=10, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Color_Overlay(Red=180, Green=180, Blue=180, Alpha=130)
+		    WAIT(Frames=2)
+		    Graphic_Effect2(Graphic=0x1000012, Bone=0x10, X=6, Y=0, Z=-3, XRot=0, YRot=0, ZRot=0, Size=1.4, RandomX=5, RandomY=5, RandomZ=10, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Color_Overlay(Red=100, Green=0, Blue=200, Alpha=80)
+		    WAIT(Frames=2)
+		    Terminate_Overlays()
+		    WAIT(Frames=2)
+		    Goto(Offset=-51)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x46C899D2)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x46C899D2)
+		Script_End()
+	}
+
+}

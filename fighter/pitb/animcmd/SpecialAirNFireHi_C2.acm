@@ -1,0 +1,32 @@
+MoveDef SpecialAirNFireHi_C2
+{
+	Main()
+	{
+		JUMP(Hash=0xC24BDE1D)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xC24BDE1D)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Stop_Sound_Effect(SFX=0x7620024)
+		Sound_Effect(SFX=0x76D001C)
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0x7620056)
+		unk_687F9320(unknown=0x7620056, unknown=0x1E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xC24BDE1D)
+		Script_End()
+	}
+
+}

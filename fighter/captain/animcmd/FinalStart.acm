@@ -1,0 +1,43 @@
+MoveDef FinalStart
+{
+	Main()
+	{
+		Time_Manipulation(Amount=0x4, Duration=0x1E)
+		ON_FLAG(Variable=RA-Flag[19])
+		FRAME(Frames=28)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=10, Angle=0x50, KBG=0x64, WBKB=0xC8, BKB=0x0, Size=19, X=0, Y=12, Z=10, Effect=0x0, Trip=0, Hitlag=0.3, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0, HitBits=0x1, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x0, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x1, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=10, Angle=0x50, KBG=0x64, WBKB=0xC8, BKB=0x0, Size=22, X=0, Y=12, Z=30, Effect=0x0, Trip=0, Hitlag=0.3, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0, HitBits=0x1, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x0, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x1, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=10, Angle=0x50, KBG=0x64, WBKB=0xC8, BKB=0x0, Size=19, X=0, Y=12, Z=50, Effect=0x0, Trip=0, Hitlag=0.3, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0, HitBits=0x1, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x0, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x1, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		FRAME(Frames=39)
+		ON_FLAG(Variable=RA-Flag[20])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=19)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0xE0086)
+		WAIT(Frames=44)
+		Sound_Effect(SFX=0xE007D)
+		Sound_Effect(SFX=0xE006C)
+		Sound_Effect(SFX=0xE006A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		unk_EE37008F()
+		FRAME(Frames=24)
+		FRAME(Frames=68)
+		Script_End()
+	}
+
+}

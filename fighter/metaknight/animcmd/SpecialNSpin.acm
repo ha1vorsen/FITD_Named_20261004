@@ -1,0 +1,27 @@
+MoveDef SpecialNSpin
+{
+	Main()
+	{
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1, Angle=0x16E, KBG=0x64, WBKB=0x0, BKB=0xA, Size=6, X=0, Y=8, Z=-1, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x2, Direct/Indirect=0x1, Type=0xD, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x6, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=8, Z2=1)
+		Extended_Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=1, Angle=0x5A, KBG=0x64, WBKB=0x0, BKB=0xA, Size=6, X=0, Y=8, Z=-1, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x1, Direct/Indirect=0x1, Type=0xD, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x6, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=8, Z2=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		REG_LANDING_SE(unknown=0x24D0011)
+		Script_End()
+	}
+
+	Expression()
+	{
+		VIS_SET_DEFAULT(unknown=0x1, unknown=0x0)
+		Script_End()
+	}
+
+}

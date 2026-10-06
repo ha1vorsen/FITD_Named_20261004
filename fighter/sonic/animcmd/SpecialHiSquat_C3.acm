@@ -1,0 +1,25 @@
+MoveDef SpecialHiSquat_C3
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		IS_EXIST_ARTICLE(Unknown=0x0)
+		True(Offset=0x5){
+		    Article_Visibility(Article=0x0, State=0x1)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

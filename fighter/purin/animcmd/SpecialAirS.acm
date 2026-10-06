@@ -1,0 +1,42 @@
+MoveDef SpecialAirS
+{
+	Main()
+	{
+		FRAME(Frames=13)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=11, Angle=0x4B, KBG=0x4B, WBKB=0x0, BKB=0x34, Size=4.5, X=0, Y=4, Z=10, Effect=0x0, Trip=0.4, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x14, SFXLevel=0x2, SFX=0x6, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=11, Angle=0x4B, KBG=0x4B, WBKB=0x0, BKB=0x34, Size=4.5, X=0, Y=4, Z=5, Effect=0x0, Trip=0.4, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x14, SFXLevel=0x2, SFX=0x6, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		ON_FLAG(Variable=RA-Flag[15])
+		SET_INT(Value=0x1, Variable=RA-Int[2])
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=29)
+		Remove_All_Hitboxes()
+		Allow/Disallow_Ledgegrab(State=0x1)
+		FRAME(Frames=31)
+		SET_INT(Value=0x2, Variable=RA-Int[2])
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=41)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x224117F6)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=13)
+		Sound_Effect(SFX=0x26005F)
+		Sound_Effect(SFX=0x590014)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x224117F6)
+		Script_End()
+	}
+
+}

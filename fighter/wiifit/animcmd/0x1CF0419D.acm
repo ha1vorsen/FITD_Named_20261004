@@ -1,0 +1,25 @@
+MoveDef 0x1CF0419D
+{
+	Main()
+	{
+		IS_EXIST_ARTICLE(Unknown=0x4)
+		False(Offset=0x4){
+		    GENERATE_ARTICLE(ID=0x4)
+		}
+		Set_Anchored_Article_Action(Article=0x4, Action=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

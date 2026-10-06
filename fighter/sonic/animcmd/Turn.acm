@@ -1,0 +1,23 @@
+MoveDef Turn
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=6)
+		FLIP_HAVE_ITEM()
+		Script_End()
+	}
+
+}

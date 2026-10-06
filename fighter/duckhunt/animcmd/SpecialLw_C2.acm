@@ -1,0 +1,41 @@
+MoveDef SpecialLw_C2
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=4)
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=9)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=11)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=29)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		Graphic_Effect2(Graphic=0x100001C, Bone=0x0, X=-1, Y=6, Z=3.5, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x765003B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		Script_End()
+	}
+
+}

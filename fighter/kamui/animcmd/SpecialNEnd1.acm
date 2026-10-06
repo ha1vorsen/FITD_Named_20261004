@@ -1,0 +1,85 @@
+MoveDef SpecialNEnd1
+{
+	Main()
+	{
+		FRAME(Frames=17)
+		ON_FLAG(Variable=RA-Flag[15])
+		FRAME(Frames=50)
+		Article_Event(Value=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=9)
+		Graphic_Effect2(Graphic=0x339001E, Bone=0x0, X=0, Y=8, Z=15, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=1, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=10)
+		IS_FLAG(Variable=LA-Flag[18])
+		True(Offset=0x4){
+		}
+		Else(Offset=0x6){
+		    IS_FLAG(Variable=LA-Flag[19])
+		    True(Offset=0x4){
+		    }
+		    Else(Offset=0x6){
+		        IS_FLAG(Variable=LA-Flag[88])
+		        True(Offset=0x4){
+		        }
+		        Else(Offset=0xF){
+		            Graphic_Effect4(Graphic=0x3390011, Bone=0x10, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		            CALL(Hash=0xFA8FFF59)
+		        }
+		    }
+		}
+		FRAME(Frames=11)
+		FRAME(Frames=12)
+		IS_FLAG(Variable=LA-Flag[18])
+		True(Offset=0x4){
+		}
+		Else(Offset=0x6){
+		    IS_FLAG(Variable=LA-Flag[19])
+		    True(Offset=0x4){
+		    }
+		    Else(Offset=0x6){
+		        IS_FLAG(Variable=LA-Flag[88])
+		        True(Offset=0x4){
+		        }
+		        Else(Offset=0x4){
+		            CALL(Hash=0xFA8FFF59)
+		        }
+		    }
+		}
+		FRAME(Frames=30)
+		External_Graphic(Graphic=0x3390012, Bone=0x12, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Stop_Sound_Effect(SFX=0xC9B0039)
+		Stop_Sound_Effect(SFX=0xC9B003E)
+		Sound_Effect(SFX=0xC9B003D)
+		FRAME(Frames=10)
+		Sound_Effect(SFX=0xC9B0063)
+		FRAME(Frames=31)
+		Sound_Effect(SFX=0xC9B0016)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=9)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=32)
+		Model_Changer(ChangerID=0x2, ChangerState=0x0)
+		FRAME(Frames=33)
+		Model_Changer(ChangerID=0x3, ChangerState=0x0)
+		FRAME(Frames=36)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

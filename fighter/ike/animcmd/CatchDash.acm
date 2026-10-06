@@ -1,0 +1,41 @@
+MoveDef CatchDash
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		Extended_Grab_Collision(ID=0x0, Bone=0x0, Size=2.5, X=0, Y=8, Z=4, Action=0x3F, Ground/Air=0x3, X2=0, Y2=8, Z2=11.2)
+		CALL(Hash=0x49FA5BDD)
+		WAIT(Frames=2)
+		Remove_All_Grab_Collisions()
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=11)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x24005F)
+		WAIT(Frames=4)
+		Stop_Sound_Effect(SFX=0x24005F)
+		WAIT(Frames=5)
+		Sound_Effect2(SFX=0x24004C)
+		WAIT(Frames=10)
+		Sound_Effect2(SFX=0x24004E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=10)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

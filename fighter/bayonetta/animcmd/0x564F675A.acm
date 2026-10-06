@@ -1,0 +1,36 @@
+MoveDef 0x564F675A : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Int_Var_Compare(Variable=LA-Int[172], Method=0x4, Value=0x2)
+		True(Offset=0x17){
+		    FRAME(Frames=1)
+		    STOP_SE_STATUS()
+		    FRAME(Frames=20)
+		    Low_Voice_Clip(unknown=0x8000000F)
+		    FRAME(Frames=22)
+		    Sound_Effect(SFX=0xC91002F)
+		    FRAME(Frames=35)
+		    Sound_Effect(SFX=0xC910026)
+		    FRAME(Frames=73)
+		    Sound_Effect2(SFX=0xC910003)
+		}
+		Else(Offset=0x4){
+		    JUMP(Hash=0x92533BDE)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

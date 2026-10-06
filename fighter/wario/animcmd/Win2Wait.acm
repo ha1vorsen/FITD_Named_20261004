@@ -1,0 +1,21 @@
+MoveDef Win2Wait
+{
+	Main()
+	{
+		Set_Anchored_Article_Action(Article=0x0, Action=0x57)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

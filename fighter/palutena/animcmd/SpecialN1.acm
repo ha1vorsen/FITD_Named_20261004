@@ -1,0 +1,60 @@
+MoveDef SpecialN1
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		IS_FLAG(Variable=RA-Flag[19])
+		True(Offset=0x16){
+		    Search_Collision(ID=0x0, Part=0x0, Bone=0xD, Size=120, X=0, Y=0, Z=0, Unknown=0x2, Unknown=0x7, Ground/Air=0x3, Unknown=0x0, Unknown=0x9, Unknown=0x1, Unknown=0x0, RehitRate=0x1, SelfAffectionToggle=0x0, Unknown=0x0)
+		}
+		Else(Offset=0x14){
+		    Search_Collision(ID=0x0, Part=0x0, Bone=0xD, Size=120, X=0, Y=0, Z=0, Unknown=0x2, Unknown=0x3, Ground/Air=0x3, Unknown=0x0, Unknown=0x9, Unknown=0x1, Unknown=0x0, RehitRate=0x1, SelfAffectionToggle=0x0, Unknown=0x0)
+		}
+		FRAME(Frames=8)
+		SCH_CLR_ALL()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=7)
+		ON_FLAG(Variable=RA-Flag[18])
+		FRAME(Frames=8)
+		IS_FLAG(Variable=RA-Flag[13])
+		True(Offset=0x28){
+		    External_Graphic(Graphic=0x32B0000, Bone=0x3E8, X=0, Y=8.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, Terminate=0x1)
+		    External_Graphic_Effect2(Graphic=0x32B0022, Bone=0x3E8, X=0, Y=8.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, Terminate=0x1)
+		    FRAME(Frames=13)
+		    Graphic_Effect6(Graphic=0x32B0005, Bone=0x0, X=-5.2, Y=15, Z=-1, XRot=10, YRot=80, ZRot=10, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		}
+		Else(Offset=0x1B){
+		    External_Graphic(Graphic=0x32B0000, Bone=0x3E8, X=0, Y=8.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, Terminate=0x1)
+		    FRAME(Frames=13)
+		    Graphic_Effect6(Graphic=0x32B0005, Bone=0x0, X=-5.2, Y=15, Z=-1, XRot=10, YRot=80, ZRot=10, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		}
+		FRAME(Frames=50)
+		Terminate_Graphic_Effect(Graphic=0x32B0000, unknown=0x0, unknown=0x0)
+		Terminate_Graphic_Effect(Graphic=0x32B0022, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Low_Voice_Clip(unknown=0x80410007)
+		WAIT(Frames=3)
+		Transient_Sound_Effect(SFX=0x24E0082)
+		WAIT(Frames=40)
+		STOP_SE_STATUS()
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=8)
+		Script_End()
+	}
+
+}

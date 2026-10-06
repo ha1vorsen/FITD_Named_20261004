@@ -1,0 +1,28 @@
+MoveDef 0xDCEC5ECD
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x5E)
+		WAIT(Frames=41)
+		Sound_Effect(SFX=0x6F)
+		WAIT(Frames=9)
+		Sound_Effect(SFX=0x6F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

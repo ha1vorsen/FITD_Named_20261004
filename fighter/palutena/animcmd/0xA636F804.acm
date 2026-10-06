@@ -1,0 +1,54 @@
+MoveDef 0xA636F804
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		ON_FLAG(Variable=RA-Flag[14])
+		Body_Collision(State=0x1)
+		FRAME(Frames=17)
+		Body_Collision(State=0x0)
+		FRAME(Frames=32)
+		OFF_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic_Effect2(Graphic=0x32B001A, Bone=0x10, X=1.05, Y=-1.25, Z=-3, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=4)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x10){
+		    Graphic_Effect6(Graphic=0x32B0005, Bone=0x0, X=-6, Y=15, Z=-1, XRot=0, YRot=90, ZRot=0, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		}
+		Else(Offset=0xE){
+		    Graphic_Effect6(Graphic=0x32B0005, Bone=0x0, X=6, Y=15, Z=1, XRot=0, YRot=-90, ZRot=0, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		}
+		Color_Overlay(Red=192, Green=192, Blue=192, Alpha=150)
+		WAIT(Frames=1)
+		Set_Loop(Iterations=4){
+		    Color_Overlay(Red=180, Green=180, Blue=180, Alpha=130)
+		    WAIT(Frames=2)
+		    Color_Overlay(Red=170, Green=0, Blue=200, Alpha=80)
+		    WAIT(Frames=2)
+		    Terminate_Overlays()
+		    WAIT(Frames=2)
+		    Goto(Offset=-17)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		Sound_Effect(SFX=0x24E003E)
+		Low_Voice_Clip(unknown=0x80410010)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

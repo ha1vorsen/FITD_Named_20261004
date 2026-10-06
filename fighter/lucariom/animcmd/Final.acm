@@ -1,0 +1,53 @@
+MoveDef Final
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.75)
+		FRAME(Frames=35)
+		Set_Camera_Boundaries(Front=0, Back=0, Top=5, Bottom=0)
+		FRAME(Frames=120)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=34)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x4){
+		}
+		Else(Offset=0x2){
+		}
+		External_Graphic(Graphic=0x31E001C, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		FRAME(Frames=40)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x6){
+		    LAST_EFFECT_SET_RATE(unknown=1.3)
+		}
+		Else(Offset=0x4){
+		    LAST_EFFECT_SET_RATE(unknown=1.3)
+		}
+		External_Graphic(Graphic=0x31E0019, Bone=0x0, X=0, Y=25, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		Screen_Tint(TransitionTime=0x0, Red=0xF, Green=0xFF, Blue=0xFA, Alpha=0xF0, Duration=0xB4, unknown=0x0, TransitionOutTime=0x7F)
+		WAIT(Frames=15)
+		End_Screen_Tint(ID=0x0, TransitionOutTime=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		WAIT(Frames=2)
+		PLAY_SE_REMAIN(unknown=0x8C10000)
+		FRAME(Frames=36)
+		PLAY_SE_REMAIN(unknown=0x8C10003)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=35)
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

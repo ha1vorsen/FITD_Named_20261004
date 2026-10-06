@@ -1,0 +1,34 @@
+MoveDef 0x46D95C5B
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		STRANS_ON(STransID=STrans-Int[10])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=2)
+		Graphic_Effect3(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=7)
+		Graphic_Effect2(Graphic=0x32B0015, Bone=0x2, X=0, Y=0, Z=10, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x24E0070)
+		Low_Voice_Clip(unknown=0x8041000F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+}

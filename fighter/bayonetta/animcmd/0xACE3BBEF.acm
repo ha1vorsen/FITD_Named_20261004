@@ -1,0 +1,38 @@
+MoveDef 0xACE3BBEF
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=15)
+		CALL(Hash=0x6DD6FC88)
+		Fire_Item_Projectile(Unknown=0x1)
+		FRAME(Frames=16)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Stop_Sound_Effect(SFX=0x112)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Model_Changer(ChangerID=0x3, ChangerState=0x2)
+		FRAME(Frames=7)
+		EXECUTE(Unknown=7)
+		SLOPE(unknown=0x6)
+		Model_Changer(ChangerID=0x3, ChangerState=0x2)
+		FRAME(Frames=13)
+		Script_End()
+	}
+
+}

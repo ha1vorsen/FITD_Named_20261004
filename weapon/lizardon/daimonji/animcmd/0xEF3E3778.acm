@@ -1,0 +1,26 @@
+MoveDef 0xEF3E3778
+{
+	Main()
+	{
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x16F, KBG=0x64, WBKB=0x5, BKB=0x0, Size=12, X=0, Y=0, Z=0, Effect=0x5, Trip=0, Hitlag=0.5, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0xA, SFXLevel=0x2, SFXType=0x8, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x0, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x4210009, Bone=0x0, X=0, Y=0, Z=7, XRot=0, YRot=0, ZRot=0, Size=1.4, Terminate=0x1)
+		Graphic_Effect2(Graphic=0x4210008, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.3, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x200020)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

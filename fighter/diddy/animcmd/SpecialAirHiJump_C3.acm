@@ -1,0 +1,54 @@
+MoveDef SpecialAirHiJump_C3
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[18])
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=0.8)
+		Hitbox(ID=0x0, Part=0x0, Bone=0xC, Damage=7, Angle=0x169, KBG=0x4B, WBKB=0x0, BKB=0x28, Size=3.5, X=-3, Y=0, Z=-4, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x9)
+		Hitbox(ID=0x1, Part=0x0, Bone=0xC, Damage=7, Angle=0x169, KBG=0x4B, WBKB=0x0, BKB=0x28, Size=3.5, X=-3, Y=0, Z=4, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x9)
+		FRAME(Frames=3)
+		Hitbox(ID=0x0, Part=0x0, Bone=0xC, Damage=7, Angle=0x50, KBG=0x50, WBKB=0x0, BKB=0x28, Size=3.2, X=-3, Y=0, Z=-4, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		Hitbox(ID=0x1, Part=0x0, Bone=0xC, Damage=7, Angle=0x50, KBG=0x50, WBKB=0x0, BKB=0x28, Size=3.2, X=-3, Y=0, Z=4, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		WAIT(Frames=5)
+		Hitbox(ID=0x0, Part=0x0, Bone=0xC, Damage=5, Angle=0x46, KBG=0x50, WBKB=0x0, BKB=0x28, Size=2.8, X=-3, Y=0, Z=-4, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		Hitbox(ID=0x1, Part=0x0, Bone=0xC, Damage=5, Angle=0x46, KBG=0x50, WBKB=0x0, BKB=0x28, Size=2.8, X=-3, Y=0, Z=4, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		WAIT(Frames=21)
+		Remove_All_Hitboxes()
+		FRAME(Frames=44)
+		OFF_FLAG(Variable=RA-Flag[18])
+		ON_FLAG(Variable=RA-Flag[19])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=2)
+		External_Graphic(Graphic=0x10000C3, Bone=0xD, X=-2.5, Y=-4.7, Z=-4.5, XRot=0, YRot=0, ZRot=-110, Size=1.1, Terminate=0x1)
+		FRAME(Frames=3)
+		External_Graphic(Graphic=0x10000C3, Bone=0xD, X=-2.5, Y=-4.7, Z=4.5, XRot=0, YRot=0, ZRot=-110, Size=1.1, Terminate=0x1)
+		FRAME(Frames=4)
+		Graphic_Effect2(Graphic=0x1000022, Bone=0x0, X=2, Y=2, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=44)
+		External_Graphic(Graphic=0x31B0008, Bone=0x3E9, X=0, Y=0, Z=-1, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x1E003A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		FRAME(Frames=1)
+		QUAKE(unknown=0x4)
+		WAIT(Frames=15)
+		FRAME(Frames=46)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		Script_End()
+	}
+
+}

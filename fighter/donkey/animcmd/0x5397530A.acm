@@ -1,0 +1,32 @@
+MoveDef 0x5397530A
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=17)
+		Sound_Effect2(SFX=0x70058)
+		FRAME(Frames=32.5)
+		Sound_Effect2(SFX=0x7005A)
+		Loop_Rest()
+		JUMP(Hash=0x5397530A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=18)
+		FRAME(Frames=35)
+		Loop_Rest()
+		JUMP(Hash=0x5397530A)
+		Script_End()
+	}
+
+}

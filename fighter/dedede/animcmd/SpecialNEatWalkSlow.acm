@@ -1,0 +1,34 @@
+MoveDef SpecialNEatWalkSlow
+{
+	Main()
+	{
+		JUMP(Hash=0x46D97543)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=30)
+		Sound_Effect(SFX=0x60040)
+		WAIT(Frames=30)
+		Sound_Effect(SFX=0x6003E)
+		Loop_Rest()
+		JUMP(Hash=0x93A427A6)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=15)
+		FRAME(Frames=30)
+		Loop_Rest()
+		JUMP(Hash=0x93A427A6)
+		Script_End()
+	}
+
+}

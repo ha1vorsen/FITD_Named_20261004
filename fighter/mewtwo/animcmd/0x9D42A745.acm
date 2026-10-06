@@ -1,0 +1,22 @@
+MoveDef 0x9D42A745 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=15)
+		PLAY_SE_NO_3D(unknown=0xC060017)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

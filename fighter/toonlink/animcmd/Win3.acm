@@ -1,0 +1,61 @@
+MoveDef Win3
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x8)
+		Set_Anchored_Article_Action(Article=0x8, Action=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=14)
+		Graphic_Effect2(Graphic=0x1000019, Bone=0x7, X=0, Y=0, Z=0, XRot=180, YRot=-90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=26)
+		Graphic_Effect2(Graphic=0x1000019, Bone=0xB, X=0, Y=0, Z=0, XRot=180, YRot=-90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=37)
+		Graphic_Effect2(Graphic=0x1000019, Bone=0x7, X=0, Y=0, Z=0, XRot=180, YRot=-90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=49)
+		Graphic_Effect2(Graphic=0x1000019, Bone=0xB, X=0, Y=0, Z=0, XRot=180, YRot=-90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=60)
+		Graphic_Effect2(Graphic=0x1000019, Bone=0x7, X=0, Y=0, Z=0, XRot=180, YRot=-90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=75)
+		Graphic_Effect2(Graphic=0x1000009, Bone=0x0, X=13, Y=0, Z=0, XRot=0, YRot=-90, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=99)
+		Graphic_Effect2(Graphic=0x1000007, Bone=0x0, X=2, Y=0, Z=-1.5, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=11)
+		Sound_Effect(SFX=0x4A80058)
+		WAIT(Frames=9)
+		PLAY_SE_NO_3D(unknown=0x63E0025)
+		WAIT(Frames=3)
+		Sound_Effect(SFX=0x4A80056)
+		WAIT(Frames=11)
+		Sound_Effect(SFX=0x4A80058)
+		WAIT(Frames=12)
+		Sound_Effect(SFX=0x4A80056)
+		WAIT(Frames=11)
+		Sound_Effect(SFX=0x4A80058)
+		WAIT(Frames=12)
+		Sound_Effect(SFX=0x4A80056)
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0xA1)
+		WAIT(Frames=17)
+		PLAY_SE_NO_3D(unknown=0x63E0001)
+		FRAME(Frames=101)
+		Sound_Effect(SFX=0x5F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		Script_End()
+	}
+
+}

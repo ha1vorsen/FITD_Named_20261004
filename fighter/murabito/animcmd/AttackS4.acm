@@ -1,0 +1,45 @@
+MoveDef AttackS4
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		unk_0A7BF1D4(unknown=0x2, unknown=0x0)
+		FRAME(Frames=19)
+		ON_FLAG(Variable=RA-Flag[27])
+		FRAME(Frames=20)
+		SHOOT_ARTICLE(Value=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x19, X=2, Y=-5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=4, RandomY=4, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=15)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Stop_Sound_Effect(SFX=0x69)
+		Sound_Effect(SFX=0x24C0027)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x2)
+		FRAME(Frames=2)
+		FRAME(Frames=11)
+		FRAME(Frames=17)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		FRAME(Frames=19)
+		EXECUTE(Unknown=19)
+		SLOPE(unknown=0x6)
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

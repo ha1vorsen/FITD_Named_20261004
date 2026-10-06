@@ -1,0 +1,69 @@
+MoveDef SpecialS
+{
+	Main()
+	{
+		Allow/Disallow_Ledgegrab(State=0x0)
+		FRAME(Frames=5)
+		ON_FLAG(Variable=RA-Flag[14])
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=6, Angle=0x169, KBG=0x3E, WBKB=0x0, BKB=0x28, Size=4, X=0, Y=4, Z=3, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x1)
+		FRAME(Frames=13)
+		Change_Hitbox_Size(ID=0x0, Size=3)
+		Allow/Disallow_Ledgegrab(State=0x1)
+		WAIT(Frames=27)
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x30A000B, Bone=0x3, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=7)
+		Graphic_Effect4(Graphic=0x30A000C, Bone=0x0, X=0, Y=5, Z=-5, XRot=90, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x30A000D, Bone=0x0, X=0, Y=5, Z=0, XRot=90, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=8)
+		Set_Loop(Iterations=-1){
+		    Color_Overlay(Red=46, Green=194, Blue=255, Alpha=120)
+		    WAIT(Frames=1)
+		    Color_Overlay(Red=255, Green=255, Blue=255, Alpha=100)
+		    WAIT(Frames=1)
+		    Terminate_Overlays()
+		    WAIT(Frames=1)
+		    Goto(Offset=-17)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		STOP_SE_STATUS()
+		WAIT(Frames=3)
+		Sound_Effect(SFX=0x390004)
+		Int_Var_Compare(Variable=RA-Int[2], Method=0x2, Value=0x2D)
+		True(Offset=0x6){
+		    Transient_Sound_Effect(SFX=0xC006D)
+		}
+		Else(Offset=0xE){
+		    Int_Var_Compare(Variable=RA-Int[2], Method=0x2, Value=0x59)
+		    True(Offset=0x6){
+		        Transient_Sound_Effect(SFX=0xC006E)
+		    }
+		    Else(Offset=0x4){
+		        Transient_Sound_Effect(SFX=0xC006F)
+		    }
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		Slope_Full(unknown=0x1, unknown=0x3)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=1)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=5)
+		unk_040FD56E(unknown=0x1, unknown=0x3, unknown=0x1)
+		Script_End()
+	}
+
+}

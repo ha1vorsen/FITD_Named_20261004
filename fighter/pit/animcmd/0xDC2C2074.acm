@@ -1,0 +1,27 @@
+MoveDef 0xDC2C2074
+{
+	Main()
+	{
+		JUMP(Hash=0x26231D17)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x26231D17)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x26231D17)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x26231D17)
+		Script_End()
+	}
+
+}

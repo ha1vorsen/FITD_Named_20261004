@@ -1,0 +1,26 @@
+MoveDef FinalAirEnd
+{
+	Main()
+	{
+		JUMP(Hash=0x7569EDAC)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x7569EDAC)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		PLAY_SE_REMAIN(unknown=0x8BF0004)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

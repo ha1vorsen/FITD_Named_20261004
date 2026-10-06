@@ -1,0 +1,26 @@
+MoveDef SpecialAirSStart_C3
+{
+	Main()
+	{
+		JUMP(Hash=0x89A5CF66)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x0, X=0, Y=10, Z=12, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xFEA2FFF0)
+		Script_End()
+	}
+
+}

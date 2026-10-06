@@ -1,0 +1,68 @@
+MoveDef Attack100
+{
+	Main()
+	{
+		FRAME(Frames=0)
+		CALL(Hash=0xF0DC2033)
+		FRAME(Frames=5)
+		CALL(Hash=0xAD31D50)
+		FRAME(Frames=10)
+		CALL(Hash=0xF0DC2033)
+		FRAME(Frames=15)
+		CALL(Hash=0xAD31D50)
+		FRAME(Frames=20)
+		CALL(Hash=0xF0DC2033)
+		FRAME(Frames=25)
+		CALL(Hash=0xAD31D50)
+		WAIT_LOOP_CLR()
+		ON_FLAG(Variable=RA-Flag[22])
+		JUMP(Hash=0xB007C283)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect2(Graphic=0x32E0006, Bone=0x0, X=6, Y=7, Z=12, XRot=0, YRot=-20, ZRot=0, Size=0.85, RandomX=0, RandomY=0, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=21, Y=11.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=1, RandomY=4, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x0)
+		    WAIT(Frames=4)
+		    Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=21, Y=3.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=1, RandomY=4, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x0)
+		    WAIT(Frames=4)
+		    Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=23, Y=8, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=1.2, RandomY=4, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x0)
+		    WAIT(Frames=1)
+		    Goto(Offset=-74)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x8630018)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x8630018)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x8630018)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x8630018)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x8630018)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x8630018)
+		WAIT(Frames=4)
+		JUMP(Hash=0xB007C283)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x3, ChangerState=0x1)
+		Model_Changer(ChangerID=0x4, ChangerState=0x1)
+		Model_Changer(ChangerID=0x2, ChangerState=0x4)
+		FRAME(Frames=4)
+		FRAME(Frames=14)
+		FRAME(Frames=24)
+		Script_End()
+	}
+
+}

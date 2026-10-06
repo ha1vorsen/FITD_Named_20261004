@@ -1,0 +1,26 @@
+MoveDef LandingAirF
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x6E0001D)
+		Sound_Effect(SFX=0x6E00041)
+		Script_End()
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x5)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

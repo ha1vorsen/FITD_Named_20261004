@@ -1,0 +1,24 @@
+MoveDef SpecialSTurnStart
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x1A0086)
+		FRAME(Frames=8)
+		Transient_Sound_Effect(SFX=0x1A0065)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

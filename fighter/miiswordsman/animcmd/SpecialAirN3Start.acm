@@ -1,0 +1,29 @@
+MoveDef SpecialAirN3Start
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x6514977C)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x81B0038)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x81B0035)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_C7B586AF(unknown=0, unknown=0, unknown=0)
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

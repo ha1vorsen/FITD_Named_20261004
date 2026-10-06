@@ -1,0 +1,21 @@
+MoveDef SpecialHiDrop
+{
+	Main()
+	{
+		FRAME(Frames=25)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

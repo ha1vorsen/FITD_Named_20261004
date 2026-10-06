@@ -1,0 +1,27 @@
+MoveDef 0x9673D96B : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		ATTACK_SE()
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=2)
+		SLOPE(unknown=0x2)
+		FRAME(Frames=6)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

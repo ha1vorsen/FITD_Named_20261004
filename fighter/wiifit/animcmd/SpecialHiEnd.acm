@@ -1,0 +1,25 @@
+MoveDef SpecialHiEnd
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		SHOOT_EXIST_ARTICLE(unknown=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x24B002D)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

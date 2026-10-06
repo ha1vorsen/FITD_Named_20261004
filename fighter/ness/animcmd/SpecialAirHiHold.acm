@@ -1,0 +1,26 @@
+MoveDef SpecialAirHiHold
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xD9CFA96E)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0xF0038)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

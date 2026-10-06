@@ -1,0 +1,53 @@
+MoveDef Final
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x1)
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=21)
+		Camera_Closeup(ZoomTime=0xF, Unknown=0x0, Distance=1, XRot=0, YRot=0)
+		Article_Event(Value=0x1)
+		FRAME(Frames=70)
+		Normal_Camera()
+		FRAME(Frames=71)
+		Terminate_Instance()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=18)
+		External_Graphic(Graphic=0x4160000, Bone=0x13, X=0, Y=0, Z=1, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		FRAME(Frames=31)
+		External_Graphic(Graphic=0x316000E, Bone=0x13, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		FRAME(Frames=60)
+		External_Graphic(Graphic=0x3160015, Bone=0x0, X=0, Y=7, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=21)
+		PLAY_SE_REMAIN(unknown=0x8C00000)
+		WAIT(Frames=21)
+		PLAY_SE_REMAIN(unknown=0x8C00005)
+		PLAY_SE_REMAIN(unknown=0x8C00001)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		unk_EE37008F()
+		FRAME(Frames=21)
+		FRAME(Frames=31)
+		FRAME(Frames=43)
+		SLOPE(unknown=0x0)
+		FRAME(Frames=46)
+		FRAME(Frames=118)
+		Slope_Full(unknown=0x6, unknown=0x1)
+		Script_End()
+	}
+
+}

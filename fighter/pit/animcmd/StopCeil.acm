@@ -1,0 +1,27 @@
+MoveDef StopCeil
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0x44)
+		Stop_Sound_Effect(SFX=0x45)
+		Stop_Sound_Effect(SFX=0x46)
+		Sound_Effect(SFX=0x128)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

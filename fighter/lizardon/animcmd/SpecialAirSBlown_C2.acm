@@ -1,0 +1,23 @@
+MoveDef SpecialAirSBlown_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xD7CC4517)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xD7CC4517)
+		Script_End()
+	}
+
+}

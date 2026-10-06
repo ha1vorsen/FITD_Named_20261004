@@ -1,0 +1,28 @@
+MoveDef 0xD27B7C02
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=24)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=0, Y=0, Z=-15, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=3)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=38)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

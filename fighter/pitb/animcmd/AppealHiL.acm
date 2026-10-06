@@ -1,0 +1,28 @@
+MoveDef AppealHiL
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		VIS_SET_DEFAULT(unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=45)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x2C42123B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x2C42123B)
+		Script_End()
+	}
+
+}

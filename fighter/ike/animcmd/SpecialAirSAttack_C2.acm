@@ -1,0 +1,25 @@
+MoveDef SpecialAirSAttack_C2
+{
+	Main()
+	{
+		JUMP(Hash=0xB65C13C0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xB65C13C0)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xB65C13C0)
+		Script_End()
+	}
+
+}

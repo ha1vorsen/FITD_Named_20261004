@@ -1,0 +1,30 @@
+MoveDef SpecialAirHi_C2
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=13)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x17DB0241)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x17DB0241)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x17DB0241)
+		Script_End()
+	}
+
+}

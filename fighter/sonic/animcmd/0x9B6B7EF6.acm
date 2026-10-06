@@ -1,0 +1,46 @@
+MoveDef 0x9B6B7EF6
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x126E356F)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		IS_FLAG(Variable=RA-Flag[20])
+		True(Offset=0x6){
+		    Low_Voice_Clip(unknown=0x80110006)
+		}
+		Else(Offset=0x6){
+		    Low_Voice_Clip(unknown=0x80110006)
+		    Sound_Effect(SFX=0x2A0028)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=4)
+		Item_Visibility(State=0x0)
+		Morph_Model_Event(unknown=0x0)
+		FRAME(Frames=6)
+		Set_Loop(Iterations=5){
+		    CALL(Hash=0x838686AE)
+		    WAIT(Frames=3)
+		    CALL(Hash=0xF7FA88CD)
+		    WAIT(Frames=3)
+		    Goto(Offset=-8)
+		}
+		FRAME(Frames=36)
+		Item_Visibility(State=0x1)
+		Morph_Model_Event(unknown=0x1)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,25 @@
+MoveDef SpecialNFire
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0x1D004B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=12)
+		FRAME(Frames=28)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

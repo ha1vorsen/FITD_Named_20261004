@@ -1,0 +1,51 @@
+MoveDef AttackDash
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=7, Angle=0x3C, KBG=0x46, WBKB=0x0, BKB=0x46, Size=5.7, X=0, Y=6, Z=16, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Extended_Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=7, Angle=0x3C, KBG=0x46, WBKB=0x0, BKB=0x41, Size=3.5, X=0, Y=5, Z=14, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=9, Z2=6)
+		FRAME(Frames=9)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=6)
+		Graphic_Effect3(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=7)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x31F0022, GFXLeft=0x31F0022, Bone=0x0, X=0x40A9999A, Y=0x41200000, Z=0x40800000, XRot=0x43340000, YRot=0xC3020000, ZRot=0x42B40000, Size=0x3F800000, Terminate=0x1, unknown=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1)
+		CALL(Hash=0xFA8FFF59)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x31F0022, GFXLeft=0x31F0022, Bone=0x0, X=0xC0600000, Y=0x41200000, Z=0x40800000, XRot=0x43340000, YRot=0xC30C0000, ZRot=0x42B40000, Size=0x3F800000, Terminate=0x1, unknown=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1)
+		CALL(Hash=0xFA8FFF59)
+		FRAME(Frames=9)
+		Terminate_Graphic_Effect(Graphic=0x100008E, unknown=0x1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Low_Voice_Clip(unknown=0x80220000)
+		Sound_Effect(SFX=0x250061)
+		Sound_Effect(SFX=0x250080)
+		WAIT(Frames=16)
+		Sound_Effect(SFX=0x250037)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Slope_Full(unknown=0x1, unknown=0x5)
+		FRAME(Frames=5)
+		FRAME(Frames=9)
+		Slope_Full(unknown=0x0, unknown=0x3)
+		FRAME(Frames=12)
+		Slope_Full(unknown=0x9, unknown=0x3)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,36 @@
+MoveDef 0x3C27AF3C : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		WAIT(Frames=48)
+		Sound_Effect(SFX=0x821000E)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x821000F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Visibility(State=0x0)
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		FRAME(Frames=20)
+		Visibility(State=0x1)
+		FRAME(Frames=30)
+		Slope_Full(unknown=0x6, unknown=0x8)
+		FRAME(Frames=38)
+		SET_CURSOR(unknown=0x1)
+		Tag_Visibility(State=0x1)
+		Script_End()
+	}
+
+}

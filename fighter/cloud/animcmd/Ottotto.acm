@@ -1,0 +1,22 @@
+MoveDef Ottotto
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Low_Voice_Clip(unknown=0x804B0008)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

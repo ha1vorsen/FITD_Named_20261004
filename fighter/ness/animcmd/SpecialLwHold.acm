@@ -1,0 +1,23 @@
+MoveDef SpecialLwHold
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Loop_Rest()
+		JUMP(Hash=0x9D8EC29B)
+		Script_End()
+	}
+
+}

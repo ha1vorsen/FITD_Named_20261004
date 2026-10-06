@@ -1,0 +1,25 @@
+MoveDef FinalAirEndR
+{
+	Main()
+	{
+		JUMP(Hash=0xB31C79B3)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xB31C79B3)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xB31C79B3)
+		Script_End()
+	}
+
+}

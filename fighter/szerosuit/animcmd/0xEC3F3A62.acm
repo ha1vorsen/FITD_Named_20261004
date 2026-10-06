@@ -1,0 +1,23 @@
+MoveDef 0xEC3F3A62
+{
+	Main()
+	{
+		CALL(Hash=0xCD6A5C9C)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		CALL(Hash=0xCD6A5C9C)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

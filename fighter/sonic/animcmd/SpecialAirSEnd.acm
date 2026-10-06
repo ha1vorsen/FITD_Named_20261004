@@ -1,0 +1,21 @@
+MoveDef SpecialAirSEnd
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		STOP_SE_STATUS()
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

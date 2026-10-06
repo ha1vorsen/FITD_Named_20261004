@@ -1,0 +1,31 @@
+MoveDef SpecialAirLwLoop_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x70B80B17)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    External_Graphic(Graphic=0x3100000, Bone=0x18, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		    WAIT(Frames=24)
+		    Goto(Offset=-13)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x70B80B17)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

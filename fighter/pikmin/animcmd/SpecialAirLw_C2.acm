@@ -1,0 +1,29 @@
+MoveDef SpecialAirLw_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x529D842D)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x529D842D)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=12)
+		Sound_Effect(SFX=0x1C005A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=13)
+		Script_End()
+	}
+
+}

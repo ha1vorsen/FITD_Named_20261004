@@ -1,0 +1,34 @@
+MoveDef 0x90606734
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		IS_FLAG(Variable=RA-Flag[14])
+		False(Offset=0xF){
+		    External_Graphic(Graphic=0x332001E, Bone=0x11, X=0, Y=0, Z=0, XRot=0, YRot=-1E-05, ZRot=0, Size=1, Terminate=0x1)
+		}
+		Else(Offset=0x2){
+		}
+		FRAME(Frames=12)
+		External_Graphic(Graphic=0x332000E, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=-1E-05, ZRot=0, Size=1, Terminate=0x0)
+		FRAME(Frames=13)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x5C186792)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x5C186792)
+		Script_End()
+	}
+
+}

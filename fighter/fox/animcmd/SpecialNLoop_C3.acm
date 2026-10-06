@@ -1,0 +1,52 @@
+MoveDef SpecialNLoop_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=5.5)
+		FRAME(Frames=4)
+		GENERATE_ARTICLE(ID=0x1)
+		IS_EXIST_ARTICLE(Unknown=0x0)
+		True(Offset=0x5){
+		    Set_Anchored_Article_Action(Article=0x0, Action=0x1)
+		}
+		Add_Momentum(Horizontal=-0.8, Vertical=2.5)
+		Set_Frame_Duration(Speed=2.5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x10000A4, Bone=0x19, X=0, Y=1, Z=5, XRot=0, YRot=0, ZRot=0, Size=0.3, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=2)
+		FRAME(Frames=2)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=12, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=3)
+		FRAME(Frames=4)
+		Terminate_Graphic_Effect(Graphic=0x10000A4, unknown=0x0, unknown=0x0)
+		External_Graphic(Graphic=0x309000A, Bone=0x0, X=0, Y=8.6, Z=10, XRot=0, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		FRAME(Frames=5)
+		Graphic_Effect3(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0xB007C)
+		FRAME(Frames=4)
+		Stop_Sound_Effect(SFX=0xB007C)
+		Sound_Effect(SFX=0xB007D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		QUAKE(unknown=0x4)
+		Script_End()
+	}
+
+}

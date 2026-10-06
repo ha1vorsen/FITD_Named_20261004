@@ -1,0 +1,25 @@
+MoveDef 0x28166AB1
+{
+	Main()
+	{
+		FRAME(Frames=22)
+		Visibility(State=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=22)
+		EFFECT_COLOR(Graphic=0x32A000D, Bone=0x0, unknown=0, unknown=-3, unknown=0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0.8, unknown=0, unknown=0, unknown=0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=247, unknown=247, unknown=232)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,29 @@
+MoveDef SpecialAirHi_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x17DB0241)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic_Effect2(Graphic=0x3210011, Bone=0x3, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=13)
+		Graphic_Effect6(Graphic=0x3210016, Bone=0x0, X=0, Y=22, Z=0, XRot=5, YRot=0, ZRot=0, Size=0.8, Terminate=0x1, Unknown=0x42A00000)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x1BA6EBD5)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x17DB0241)
+		Script_End()
+	}
+
+}

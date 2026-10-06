@@ -1,0 +1,32 @@
+MoveDef SpecialAirLw2_C2
+{
+	Main()
+	{
+		MOT_CHANGE_EXIST_ARTICLE(unknown=0x18, unknown=0x15)
+		Set_Frame_Duration(Speed=0.5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x18C520C3)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Low_Voice_Clip(unknown=0x80090009)
+		FRAME(Frames=4)
+		WAIT(Frames=2)
+		Sound_Effect(SFX=0xA005C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,21 @@
+MoveDef DamageHi1
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=10)
+		Script_End()
+	}
+
+}

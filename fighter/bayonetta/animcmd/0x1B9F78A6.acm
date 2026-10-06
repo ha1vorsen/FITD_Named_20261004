@@ -1,0 +1,25 @@
+MoveDef 0x1B9F78A6 : Unlisted
+{
+	Main()
+	{
+		IS_FLAG(Variable=LA-Flag[137])
+		False(Offset=0x4){
+		    Remove_Hitbox(ID=0x6)
+		}
+		Remove_Hitbox(ID=0x7)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

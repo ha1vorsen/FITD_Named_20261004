@@ -1,0 +1,37 @@
+MoveDef SpecialLw_C3
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		Set_Frame_Duration(Speed=8)
+		FRAME(Frames=11)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=17)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=21)
+		Int_Compare(Type=0x2, Method=0x0, Value=119)
+		True(Offset=0x4){
+		    Sound_Effect(SFX=0x4A80048)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=17)
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		FRAME(Frames=21)
+		Script_End()
+	}
+
+}

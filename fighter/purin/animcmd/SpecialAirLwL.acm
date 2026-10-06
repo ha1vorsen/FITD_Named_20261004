@@ -1,0 +1,36 @@
+MoveDef SpecialAirLwL
+{
+	Main()
+	{
+		JUMP(Hash=0xB3ECD54D)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xB3ECD54D)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=34)
+		Transient_Sound_Effect(SFX=0x590000)
+		Sound_Effect(SFX=0x260077)
+		WAIT(Frames=100)
+		WAIT(Frames=53)
+		Transient_Sound_Effect(SFX=0x590001)
+		WAIT(Frames=24)
+		Sound_Effect(SFX=0x26004A)
+		WAIT(Frames=12)
+		Sound_Effect(SFX=0x26004A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xB3ECD54D)
+		Script_End()
+	}
+
+}

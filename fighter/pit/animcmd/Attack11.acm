@@ -1,0 +1,47 @@
+MoveDef Attack11
+{
+	Main()
+	{
+		VIS_SET_DEFAULT(unknown=0x0, unknown=0x0)
+		FRAME(Frames=4)
+		ATK_RESERVE(ID=0x0, Bone=0x0, X=0, Y=7.5, Z=9)
+		ATK_RESERVE(ID=0x1, Bone=0x0, X=0, Y=7.5, Z=10)
+		ATK_REFERENCE_NODE(Unknown=0x14, Unknown=0xFFFFFFFF)
+		FRAME(Frames=5)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=2, Angle=0x37, KBG=0x1E, WBKB=0x0, BKB=0x26, Size=3.3, X=0, Y=7.5, Z=9, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x11, X2=0, Y2=7.5, Z2=10)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=2, Angle=0x5A, KBG=0x1E, WBKB=0x0, BKB=0x26, Size=3.8, X=0, Y=7.5, Z=18, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x11, X2=0, Y2=7.5, Z2=10)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=11)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=16)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		FRAME(Frames=4)
+		Sword_Trace(TraceID=0x3, BlurLen=5.605194E-45, Bone1=0x3F3, X=0, Y=-0.04, Z=-0.1, Bone2=0x3F3, X=0, Y=10, Z=-1.4, Anchored=0x1, Graphic=0x3180000, Bone3=0x3F3, X=0, Y=0, Z=0, RotX=0, RotY=90, RotZ=0, Length=1)
+		FRAME(Frames=7)
+		Terminate_Sword_Glow(FadeTime=0x2)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x4003B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,32 @@
+MoveDef 0x8FDCE21B : Unlisted
+{
+	Main()
+	{
+		Int_Var_Compare(Variable=LA-Int[131], Method=0x0, Value=0x2)
+		True(Offset=0x4){
+		    CALL(Hash=0x65F421D)
+		}
+		Int_Var_Compare(Variable=LA-Int[131], Method=0x0, Value=0x0)
+		True(Offset=0x4){
+		    CALL(Hash=0xC736D889)
+		}
+		Int_Var_Compare(Variable=LA-Int[131], Method=0x0, Value=0x1)
+		True(Offset=0x4){
+		    CALL(Hash=0x233C5484)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

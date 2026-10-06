@@ -1,0 +1,37 @@
+MoveDef FinalBeam
+{
+	Main()
+	{
+		Set_Camera_Boundaries(Front=25, Back=-10, Top=10, Bottom=-15)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Terminate_Graphic_Effect(Graphic=0x32B0019, unknown=0x0, unknown=0x0)
+		FRAME(Frames=110)
+		Terminate_Graphic_Effect(Graphic=0x32B0026, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x9190002)
+		WAIT(Frames=100)
+		STOP_SE_STATUS()
+		Stop_Sound_Effect(SFX=0x9190001)
+		WAIT(Frames=2)
+		PLAY_SE_REMAIN(unknown=0x9190003)
+		Script_End()
+	}
+
+	Expression()
+	{
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		WAIT(Frames=95)
+		Script_End()
+	}
+
+}

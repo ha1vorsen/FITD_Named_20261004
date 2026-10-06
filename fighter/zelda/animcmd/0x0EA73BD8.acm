@@ -1,0 +1,23 @@
+MoveDef 0x0EA73BD8 : Unlisted
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=16)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

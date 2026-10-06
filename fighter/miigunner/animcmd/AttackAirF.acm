@@ -1,0 +1,35 @@
+MoveDef AttackAirF
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=10)
+		Add_Momentum(Horizontal=-1, Vertical=0)
+		GENERATE_ARTICLE(ID=0x1)
+		MII_ENABLE_RATE()
+		FRAME(Frames=47)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=9)
+		Graphic_Effect5(Graphic=0x3020023, Bone=0x16, X=7, Y=0, Z=0, XRot=0, YRot=90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=9)
+		Sound_Effect(SFX=0x81C0040)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=10)
+		Script_End()
+	}
+
+}

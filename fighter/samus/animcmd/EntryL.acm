@@ -1,0 +1,34 @@
+MoveDef EntryL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=27)
+		WAIT(Frames=30)
+		WAIT(Frames=8)
+		Transient_Sound_Effect(SFX=0x80083)
+		WAIT(Frames=12)
+		STOP_SE_STATUS()
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0x8006C)
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0x8006A)
+		WAIT(Frames=30)
+		Sound_Effect(SFX=0x8006B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+}

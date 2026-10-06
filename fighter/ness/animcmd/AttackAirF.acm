@@ -1,0 +1,62 @@
+MoveDef AttackAirF
+{
+	Main()
+	{
+		FRAME(Frames=8)
+		ON_FLAG(Variable=RA-Flag[13])
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1, Angle=0x16E, KBG=0x3C, WBKB=0x0, BKB=0x10, Size=5, X=0, Y=4.8, Z=10, Effect=0x1A, Trip=0, Hitlag=1, SDI=0.8, Clang=0x0, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x1, SFXType=0x10, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x10, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x5, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Extended_Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=1, Angle=0x16E, KBG=0x3C, WBKB=0x0, BKB=0x10, Size=1.5, X=0, Y=3.8, Z=6, Effect=0x1A, Trip=0, Hitlag=1, SDI=0.8, Clang=0x0, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x1, SFXType=0x10, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x10, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x5, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=3.8, Z2=3)
+		FRAME(Frames=19)
+		Remove_All_Hitboxes()
+		FRAME(Frames=20)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=4, Angle=0x169, KBG=0x96, WBKB=0x0, BKB=0x20, Size=8, X=0, Y=4.8, Z=9.6, Effect=0x1A, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x2, SFX=0x10, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x10)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		FRAME(Frames=33)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=8)
+		Set_Loop(Iterations=2){
+		    Float_Compare(Type=0x0, Method=0x4, Value=0)
+		    True(Offset=0x15){
+		        Graphic_Effect5(Graphic=0x30D0000, Bone=0x0, X=1, Y=4.3, Z=10.5, XRot=90, YRot=0, ZRot=90, Size=1.2, RandomX=1, RandomY=3, RandomZ=2.5, RandomXRot=0, RandomYRot=360, RandomZRot=0, Terminate=0x1)
+		    }
+		    Else(Offset=0x13){
+		        Graphic_Effect5(Graphic=0x30D0000, Bone=0x0, X=-1, Y=4.3, Z=10.5, XRot=90, YRot=0, ZRot=90, Size=1.2, RandomX=1, RandomY=3, RandomZ=2.5, RandomXRot=0, RandomYRot=360, RandomZRot=0, Terminate=0x1)
+		    }
+		    WAIT(Frames=6)
+		    Goto(Offset=-44)
+		}
+		FRAME(Frames=17)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x15){
+		    Graphic_Effect5(Graphic=0x30D0000, Bone=0x0, X=0, Y=4, Z=10.5, XRot=90, YRot=0, ZRot=90, Size=1.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=360, RandomZRot=0, Terminate=0x1)
+		}
+		Else(Offset=0x13){
+		    Graphic_Effect5(Graphic=0x30D0000, Bone=0x0, X=0, Y=4, Z=10.5, XRot=90, YRot=0, ZRot=90, Size=1.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=360, RandomZRot=0, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0xF0069)
+		FRAME(Frames=8)
+		Low_Voice_Clip(unknown=0x800C0005)
+		WAIT(Frames=1)
+		Sound_Effect(SFX=0xF005D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=6)
+		Script_End()
+	}
+
+}

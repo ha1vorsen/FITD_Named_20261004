@@ -1,0 +1,23 @@
+MoveDef 0x50900E13
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		SLOPE_TOE(unknown=0x2, unknown=0x42700000)
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

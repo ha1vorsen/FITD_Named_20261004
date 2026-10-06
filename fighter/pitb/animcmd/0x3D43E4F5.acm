@@ -1,0 +1,42 @@
+MoveDef 0x3D43E4F5 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=24)
+		Sound_Effect(SFX=0x7620034)
+		FRAME(Frames=30)
+		PLAY_SE_NO_3D(unknown=0x76D001A)
+		FRAME(Frames=31)
+		Sound_Effect(SFX=0x7620035)
+		FRAME(Frames=39)
+		Sound_Effect(SFX=0x7620035)
+		FRAME(Frames=47)
+		Sound_Effect(SFX=0x7620035)
+		FRAME(Frames=56)
+		Sound_Effect(SFX=0x7620035)
+		FRAME(Frames=65)
+		Sound_Effect(SFX=0x7620035)
+		FRAME(Frames=74)
+		Sound_Effect(SFX=0x7620035)
+		FRAME(Frames=83)
+		Sound_Effect(SFX=0x7620035)
+		FRAME(Frames=92)
+		Sound_Effect(SFX=0x7620035)
+		FRAME(Frames=109)
+		Sound_Effect(SFX=0x7620034)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

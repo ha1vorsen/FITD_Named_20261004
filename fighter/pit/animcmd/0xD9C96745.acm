@@ -1,0 +1,25 @@
+MoveDef 0xD9C96745
+{
+	Main()
+	{
+		VIS_SET_DEFAULT(unknown=0x0, unknown=0x2)
+		FRAME(Frames=2)
+		Pickup_Item(Unknown=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

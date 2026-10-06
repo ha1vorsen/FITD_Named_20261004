@@ -1,0 +1,26 @@
+MoveDef FinalAirDashEnd
+{
+	Main()
+	{
+		JUMP(Hash=0x975DA8B3)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=26)
+		Sound_Effect(SFX=0x761000F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x975DA8B3)
+		Script_End()
+	}
+
+}

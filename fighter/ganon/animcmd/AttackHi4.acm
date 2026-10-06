@@ -1,0 +1,55 @@
+MoveDef AttackHi4
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		ON_FLAG(Variable=RA-Flag[27])
+		FRAME(Frames=21)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x5, Damage=24, Angle=0x55, KBG=0x47, WBKB=0x0, BKB=0x28, Size=7.2, X=6, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x4, Damage=24, Angle=0x4E, KBG=0x47, WBKB=0x0, BKB=0x28, Size=4.8, X=3.2, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=21, Angle=0x4B, KBG=0x4B, WBKB=0x0, BKB=0x28, Size=6, X=0, Y=8, Z=6, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=6)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x7, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=19)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x15){
+		    Graphic_Effect2(Graphic=0x314000B, Bone=0x0, X=0, Y=15, Z=-1, XRot=0, YRot=0, ZRot=100, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Else(Offset=0x13){
+		    Graphic_Effect2(Graphic=0x314000B, Bone=0x0, X=0, Y=15, Z=-1, XRot=0, YRot=0, ZRot=100, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		FRAME(Frames=21)
+		Graphic_Effect3(Graphic=0x1000029, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=11)
+		Stop_Sound_Effect(SFX=0x69)
+		WAIT(Frames=9)
+		Sound_Effect(SFX=0x4C001B)
+		Sound_Effect(SFX=0x190025)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x4)
+		FRAME(Frames=10)
+		EXECUTE(Unknown=10)
+		SLOPE(unknown=0x4)
+		FRAME(Frames=19)
+		FRAME(Frames=48)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,41 @@
+MoveDef SpecialAirSDLanding
+{
+	Main()
+	{
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x31, KBG=0x32, WBKB=0x0, BKB=0x50, Size=4, X=0, Y=4, Z=7, Effect=0x0, Trip=0, Hitlag=1.5, SDI=2, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x6, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=4, Z2=-4)
+		FRAME(Frames=2)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		EFFECT_DETACH_KIND_WORK(unknown=0x10000098, unknown=0xFFFFFFFF)
+		EFFECT_DETACH_KIND(Graphic=0x338002C, unknown=0xFFFFFFFF)
+		Graphic_Effect2(Graphic=0x3380031, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Int_Var_Compare(Variable=LA-Int[172], Method=0x4, Value=0x2)
+		True(Offset=0x8){
+		    unk_8F27D612(unknown=0x0, unknown=0x3F0CCCCD, unknown=0x3F800000)
+		}
+		Else(Offset=0x6){
+		    unk_8F27D612(unknown=0x3F800000, unknown=0x3CF5C28F, unknown=0x3D23D70A)
+		}
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0xC91003B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		QUAKE(unknown=0x4)
+		Script_End()
+	}
+
+}

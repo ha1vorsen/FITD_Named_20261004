@@ -1,0 +1,23 @@
+MoveDef FinalCheerR
+{
+	Main()
+	{
+		JUMP(Hash=0x629672A)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x629672A)
+		Script_End()
+	}
+
+}

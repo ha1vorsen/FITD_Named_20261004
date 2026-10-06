@@ -1,0 +1,25 @@
+MoveDef SpecialAirN1_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x9622D0AC)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x9622D0AC)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x9622D0AC)
+		Script_End()
+	}
+
+}

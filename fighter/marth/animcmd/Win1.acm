@@ -1,0 +1,43 @@
+MoveDef Win1
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=27)
+		FRAME(Frames=55)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		FRAME(Frames=56)
+		FRAME(Frames=59)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x3EA, X=-1E-05, Y=-2E-05, Z=8, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=70)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x3EA, X=-1E-05, Y=-2E-05, Z=8, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=80)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=14)
+		PLAY_SE_NO_3D(unknown=0x490024)
+		WAIT(Frames=23)
+		Sound_Effect(SFX=0x16004D)
+		WAIT(Frames=17)
+		Sound_Effect(SFX=0x6B)
+		WAIT(Frames=11)
+		Sound_Effect(SFX=0x6B)
+		WAIT(Frames=13)
+		Sound_Effect(SFX=0x39)
+		WAIT(Frames=20)
+		Sound_Effect(SFX=0x39)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

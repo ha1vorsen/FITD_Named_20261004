@@ -1,0 +1,35 @@
+MoveDef 0x5DCB2AF4
+{
+	Main()
+	{
+		Item_Property(Unknown=0x2, Unknown=0.4)
+		FRAME(Frames=3)
+		Item_Property(Unknown=0x4, Unknown=2.6)
+		FRAME(Frames=6)
+		ITEM_ACTION(Unknown=0x64)
+		FRAME(Frames=8)
+		CALL(Hash=0x31898597)
+		FRAME(Frames=10)
+		Remove_All_Hitboxes()
+		Item_Property(Unknown=0x14, Unknown=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=5)
+		FRAME(Frames=32)
+		unk_C7B586AF(unknown=0, unknown=30, unknown=10)
+		Script_End()
+	}
+
+}

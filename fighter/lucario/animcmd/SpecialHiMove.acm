@@ -1,0 +1,49 @@
+MoveDef SpecialHiMove
+{
+	Main()
+	{
+		FRAME(Frames=15)
+		PASSABLE_CHECK(Unknown=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Sword_Trace(TraceID=0xB, BlurLen=1.401298E-44, Bone1=0x2, X=0, Y=0, Z=4, Bone2=0x2, X=0, Y=0, Z=-4, Anchored=0x1, Graphic=0x0, Bone3=0x2, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=2)
+		External_Graphic(Graphic=0x31E0014, Bone=0x11, X=1, Y=1, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x31E0014, Bone=0x17, X=1, Y=1, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Sword_Trace(TraceID=0xB3, BlurLen=2.101948E-44, Bone1=0x11, X=1, Y=0, Z=-1, Bone2=0x11, X=1, Y=0, Z=1.5, Anchored=0x1, Graphic=0x0, Bone3=0x11, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		Sword_Trace(TraceID=0xB3, BlurLen=2.101948E-44, Bone1=0x17, X=1, Y=0, Z=-1, Bone2=0x17, X=1, Y=0, Z=1.5, Anchored=0x1, Graphic=0x0, Bone3=0x17, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=12)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		Script_End()
+	}
+
+	Sound()
+	{
+		unk_377D36CB(unknown=0x2F, unknown=0x2, unknown=0x32)
+		True(Offset=0x6){
+		    Transient_Sound_Effect(SFX=0x230056)
+		}
+		Else(Offset=0x12){
+		    unk_377D36CB(unknown=0x2F, unknown=0x2, unknown=0x33)
+		    True(Offset=0x8){
+		        Transient_Sound_Effect(SFX=0x230057)
+		        Sound_Effect(SFX=0x23008E)
+		    }
+		    Else(Offset=0x6){
+		        Transient_Sound_Effect(SFX=0x230058)
+		        Sound_Effect(SFX=0x23008D)
+		    }
+		}
+		WAIT(Frames=6)
+		PLAY_SE_REMAIN(unknown=0x560005)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

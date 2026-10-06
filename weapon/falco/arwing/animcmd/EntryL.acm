@@ -1,0 +1,21 @@
+MoveDef EntryL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3150011, Bone=0x7D2, X=0, Y=0, Z=-10, XRot=90, YRot=0, ZRot=0, Size=2, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

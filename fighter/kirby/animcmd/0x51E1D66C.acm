@@ -1,0 +1,25 @@
+MoveDef 0x51E1D66C
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		Item_Visibility(State=0x0)
+		WAIT(Frames=1)
+		Loop_Rest()
+		JUMP(Hash=0xA29C70E)
+		Script_End()
+	}
+
+}

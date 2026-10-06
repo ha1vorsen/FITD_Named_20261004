@@ -1,0 +1,24 @@
+MoveDef SpecialAirNFailure
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x1C0060)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=15)
+		Script_End()
+	}
+
+}

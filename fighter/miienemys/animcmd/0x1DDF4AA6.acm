@@ -1,0 +1,25 @@
+MoveDef 0x1DDF4AA6
+{
+	Main()
+	{
+		FRAME(Frames=30)
+		Set_Kinetic_Handler(ID=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x8210017)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

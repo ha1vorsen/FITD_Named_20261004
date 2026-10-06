@@ -1,0 +1,41 @@
+MoveDef SpecialHi2
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect3(Graphic=0x1000006, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=5)
+		Graphic_Effect6(Graphic=0x32B0005, Bone=0x0, X=4, Y=16, Z=1, XRot=0, YRot=-70, ZRot=0, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		External_Graphic(Graphic=0x32B0019, Bone=0xA, X=0, Y=0, Z=0, XRot=114, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=10)
+		Graphic_Effect6(Graphic=0x32B0026, Bone=0x0, X=4, Y=16, Z=1, XRot=0, YRot=-70, ZRot=0, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x24E0075)
+		Low_Voice_Clip(unknown=0x8041000B)
+		WAIT(Frames=28)
+		Transient_Sound_Effect(SFX=0x24E0081)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=8)
+		Set_Loop(Iterations=-1){
+		    WAIT(Frames=40)
+		    Goto(Offset=-2)
+		}
+		Script_End()
+	}
+
+}

@@ -1,0 +1,25 @@
+MoveDef SpecialAirNSmash
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xDC6A5ADD)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xDC6A5ADD)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xB9A5960B)
+		Script_End()
+	}
+
+}

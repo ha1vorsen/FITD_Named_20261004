@@ -1,0 +1,35 @@
+MoveDef 0xFAD8B7D4
+{
+	Main()
+	{
+		CALL(Hash=0xFB50DF0C)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    External_Graphic(Graphic=0x4090004, Bone=0x7D2, X=-7, Y=-10, Z=16, XRot=0, YRot=0, ZRot=0, Size=1.5, Terminate=0x1)
+		    WAIT(Frames=1)
+		    External_Graphic(Graphic=0x4090004, Bone=0x7D2, X=7, Y=-10, Z=16, XRot=0, YRot=0, ZRot=0, Size=1.5, Terminate=0x1)
+		    WAIT(Frames=1)
+		    External_Graphic(Graphic=0x4090004, Bone=0x7D2, X=-7, Y=-13, Z=-7.5, XRot=0, YRot=0, ZRot=0, Size=1.5, Terminate=0x1)
+		    WAIT(Frames=1)
+		    External_Graphic(Graphic=0x4090004, Bone=0x7D2, X=7, Y=-13, Z=-7.5, XRot=0, YRot=0, ZRot=0, Size=1.5, Terminate=0x1)
+		    WAIT(Frames=57)
+		    Goto(Offset=-52)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		Transient_Sound_Effect(SFX=0xB006C)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,27 @@
+MoveDef 0x126E356F
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		IS_FLAG(Variable=RA-Flag[20])
+		True(Offset=0x4){
+		}
+		Else(Offset=0x4){
+		    Sound_Effect(SFX=0x8220006)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

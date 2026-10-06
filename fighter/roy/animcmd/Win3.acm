@@ -1,0 +1,35 @@
+MoveDef Win3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=28)
+		Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=0, Y=0, Z=-12, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=81)
+		Sword_Trace(TraceID=0xEE, BlurLen=1.121039E-44, Bone1=0x3EA, X=0, Y=0, Z=0.5, Bone2=0x3EA, X=-1E-05, Y=-2E-05, Z=13, Anchored=0x1, Graphic=0x3360008, Bone3=0x3EA, X=0, Y=0, Z=0, RotX=0.00013, RotY=-7E-05, RotZ=0.00011, Length=1)
+		FRAME(Frames=88)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=0)
+		PLAY_SE_NO_3D(unknown=0xC26001C)
+		FRAME(Frames=35)
+		Sound_Effect(SFX=0xC230086)
+		FRAME(Frames=113)
+		Sound_Effect(SFX=0xC230035)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x6)
+		Script_End()
+	}
+
+}

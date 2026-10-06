@@ -1,0 +1,25 @@
+MoveDef EscapeAir
+{
+	Main()
+	{
+		FRAME(Frames=19)
+		Set_Kinetic_Handler(ID=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x82B0011)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

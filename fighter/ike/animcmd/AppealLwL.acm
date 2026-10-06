@@ -1,0 +1,37 @@
+MoveDef AppealLwL
+{
+	Main()
+	{
+		unk_B89F681C(unknown=0x0, unknown=0x1)
+		GENERATE_ARTICLE(ID=0x0)
+		Set_Anchored_Article_Action(Article=0x0, Action=0xA)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xFF0A8538)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=19)
+		Sound_Effect(SFX=0x240050)
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0x240063)
+		WAIT(Frames=27)
+		Sound_Effect(SFX=0x240074)
+		Sound_Effect(SFX=0x570018)
+		WAIT(Frames=61)
+		Sound_Effect(SFX=0x240064)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xFF0A8538)
+		Script_End()
+	}
+
+}

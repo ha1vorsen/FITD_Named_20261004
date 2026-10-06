@@ -1,0 +1,57 @@
+MoveDef SpecialLw_C3
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		Body_Collision(State=0x1)
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=6)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x7D7, Damage=5, Angle=0x4B, KBG=0x50, WBKB=0x0, BKB=0x4B, Size=3, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Set_Model_Scale(Scale=1.2)
+		FRAME(Frames=8)
+		Set_Frame_Duration(Speed=1)
+		Set_Model_Scale(Scale=1.5)
+		FRAME(Frames=10)
+		Set_Model_Scale(Scale=1.8)
+		FRAME(Frames=12)
+		Set_Model_Scale(Scale=2)
+		FRAME(Frames=14)
+		Set_Model_Scale(Scale=2.2)
+		FRAME(Frames=16)
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=31)
+		Set_Frame_Duration(Speed=1)
+		Set_Model_Scale(Scale=2)
+		FRAME(Frames=33)
+		Set_Model_Scale(Scale=1.7)
+		Remove_All_Hitboxes()
+		FRAME(Frames=35)
+		Set_Frame_Duration(Speed=0.7)
+		Set_Model_Scale(Scale=1.4)
+		FRAME(Frames=37)
+		Set_Model_Scale(Scale=1)
+		Body_Collision(State=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		ON_FLAG(Variable=LA-Flag[17])
+		FRAME(Frames=10)
+		FRAME(Frames=36)
+		ON_FLAG(Variable=LA-Flag[17])
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x4A4006A)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

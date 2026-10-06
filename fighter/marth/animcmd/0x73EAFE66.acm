@@ -1,0 +1,29 @@
+MoveDef 0x73EAFE66
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x490023)
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0xB1)
+		WAIT(Frames=2)
+		Sound_Effect(SFX=0xB3)
+		WAIT(Frames=2)
+		Sound_Effect(SFX=0xB4)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		Script_End()
+	}
+
+}

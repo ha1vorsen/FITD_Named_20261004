@@ -1,0 +1,26 @@
+MoveDef SpecialHiClownFall_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x4){
+		}
+		Else(Offset=0x2){
+		}
+		FRAME(Frames=15)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

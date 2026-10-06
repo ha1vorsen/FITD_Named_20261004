@@ -1,0 +1,21 @@
+MoveDef DamageFlyTop
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

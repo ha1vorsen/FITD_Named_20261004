@@ -1,0 +1,25 @@
+MoveDef SpecialAirNEat_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x4770B75B)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x4770B75B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x4770B75B)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,24 @@
+MoveDef 0xACAABDD8 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=44)
+		PLAY_SE_NO_3D(unknown=0xC09001E)
+		FRAME(Frames=85)
+		Sound_Effect(SFX=0xC050052)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

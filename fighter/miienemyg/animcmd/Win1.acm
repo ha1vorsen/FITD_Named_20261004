@@ -1,0 +1,31 @@
+MoveDef Win1
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=17)
+		Sound_Effect(SFX=0x8220007)
+		FRAME(Frames=27)
+		Sound_Effect(SFX=0x8220009)
+		FRAME(Frames=45)
+		FRAME(Frames=67)
+		FRAME(Frames=79)
+		Sound_Effect(SFX=0x8220006)
+		FRAME(Frames=92)
+		Sound_Effect(SFX=0x822000A)
+		FRAME(Frames=104)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

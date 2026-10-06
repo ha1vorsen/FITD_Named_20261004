@@ -1,0 +1,33 @@
+MoveDef PassiveWallJump
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x2A0029)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=9)
+		Set_Loop(Iterations=4){
+		    CALL(Hash=0x838686AE)
+		    WAIT(Frames=3)
+		    CALL(Hash=0xF7FA88CD)
+		    WAIT(Frames=3)
+		    Goto(Offset=-8)
+		}
+		FRAME(Frames=40)
+		Item_Visibility(State=0x1)
+		Script_End()
+	}
+
+}

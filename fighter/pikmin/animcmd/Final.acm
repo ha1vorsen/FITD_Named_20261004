@@ -1,0 +1,27 @@
+MoveDef Final
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x1C003F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		ON_FLAG(Variable=LA-Flag[101])
+		Morph_Model_Event(unknown=0x0)
+		Script_End()
+	}
+
+}

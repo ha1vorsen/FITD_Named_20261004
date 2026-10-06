@@ -1,0 +1,19 @@
+MoveDef SpecialSTurnLoop
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

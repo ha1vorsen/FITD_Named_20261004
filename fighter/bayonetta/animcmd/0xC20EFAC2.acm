@@ -1,0 +1,34 @@
+MoveDef 0xC20EFAC2 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0xC910073)
+		FRAME(Frames=5)
+		PLAY_DAMAGESTOP(unknown=0xCA1002B)
+		FRAME(Frames=23)
+		Sound_Effect(SFX=0xC910002)
+		FRAME(Frames=35)
+		Sound_Effect(SFX=0xC910095)
+		FRAME(Frames=80)
+		PLAY_DAMAGESTOP(unknown=0xCA10040)
+		FRAME(Frames=81)
+		Sound_Effect(SFX=0xC910096)
+		FRAME(Frames=85)
+		Sound_Effect(SFX=0xC910002)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

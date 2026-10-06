@@ -1,0 +1,37 @@
+MoveDef SpecialSSquat_C2
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.67)
+		CLR_SPEED_ALL()
+		FRAME(Frames=2)
+		Add_Momentum(Horizontal=0.7, Vertical=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x1000033, Bone=0x19, X=0, Y=1, Z=2, XRot=0, YRot=0, ZRot=0, Size=0.8, Terminate=0x0)
+		FRAME(Frames=8)
+		External_Graphic(Graphic=0x100000F, Bone=0x0, X=0, Y=20, Z=27, XRot=0, YRot=0, ZRot=0, Size=2, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x100065)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x430000)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=20)
+		SLOPE(unknown=0x0)
+		Script_End()
+	}
+
+}

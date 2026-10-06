@@ -1,0 +1,45 @@
+MoveDef AttackS3
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x8, Damage=7, Angle=0x58, KBG=0x66, WBKB=0x0, BKB=0x32, Size=4, X=0, Y=1, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x9, Damage=7, Angle=0x50, KBG=0x66, WBKB=0x0, BKB=0x32, Size=4.5, X=0, Y=1, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		WAIT(Frames=1)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x9, Damage=8, Angle=0x4B, KBG=0x66, WBKB=0x0, BKB=0x37, Size=5, X=6, Y=1, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		WAIT(Frames=2)
+		Remove_Hitbox(ID=0x0)
+		Remove_Hitbox(ID=0x1)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x9, Damage=6, Angle=0x5C, KBG=0x78, WBKB=0x0, BKB=0x28, Size=4, X=6, Y=1, Z=0, Effect=0x0, Trip=0, Hitlag=1.2, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		FRAME(Frames=16)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=7)
+		Graphic_Effect2(Graphic=0x1000090, Bone=0x0, X=0, Y=10, Z=0, XRot=0, YRot=35, ZRot=90, Size=0.85, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=8)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Low_Voice_Clip(unknown=0x800D0005)
+		Sound_Effect(SFX=0x110065)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x2)
+		FRAME(Frames=5)
+		FRAME(Frames=36)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		Script_End()
+	}
+
+}

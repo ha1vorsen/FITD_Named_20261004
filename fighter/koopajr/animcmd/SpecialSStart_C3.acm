@@ -1,0 +1,41 @@
+MoveDef SpecialSStart_C3
+{
+	Main()
+	{
+		CLR_SPEED_ALL()
+		Set_Armor(State=0x1, Threshold=0)
+		FRAME(Frames=17)
+		Set_Frame_Duration(Speed=15)
+		Add_Momentum(Horizontal=-1.5, Vertical=0)
+		FRAME(Frames=18)
+		Set_Armor(State=0x0, Threshold=0)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect3(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=10)
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect3(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=1)
+		    Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.6, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=10)
+		    Goto(Offset=-38)
+		}
+		Terminate_Graphic_Effect(Graphic=0x32E000B, unknown=0x1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=2)
+		Script_End()
+	}
+
+}

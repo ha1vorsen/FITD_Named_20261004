@@ -1,0 +1,26 @@
+MoveDef AppealLwL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=14)
+		Sound_Effect(SFX=0xA0042)
+		WAIT(Frames=1)
+		Sound_Effect(SFX=0x3F000F)
+		WAIT(Frames=34)
+		Sound_Effect(SFX=0xA0069)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

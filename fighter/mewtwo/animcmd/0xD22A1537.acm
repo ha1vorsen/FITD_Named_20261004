@@ -1,0 +1,25 @@
+MoveDef 0xD22A1537 : Unlisted
+{
+	Main()
+	{
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1, Angle=0x46, KBG=0x1E, WBKB=0x0, BKB=0xE, Size=5.2, X=0, Y=10, Z=12, Effect=0x13, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, X2=0, Y2=10, Z2=11)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=1, Angle=0x59, KBG=0x1E, WBKB=0x0, BKB=0xE, Size=5.2, X=0, Y=10, Z=18, Effect=0x13, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, X2=0, Y2=10, Z2=11)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		ON_FLAG(Variable=RA-Flag[22])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

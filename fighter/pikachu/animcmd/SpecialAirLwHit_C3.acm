@@ -1,0 +1,27 @@
+MoveDef SpecialAirLwHit_C3
+{
+	Main()
+	{
+		JUMP(Hash=0x65D5A6EF)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x65D5A6EF)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0xC0043)
+		Script_End()
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

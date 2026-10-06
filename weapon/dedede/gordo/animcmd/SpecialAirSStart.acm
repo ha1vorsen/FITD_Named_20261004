@@ -1,0 +1,21 @@
+MoveDef SpecialAirSStart
+{
+	Main()
+	{
+		JUMP(Hash=0x43293E83)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

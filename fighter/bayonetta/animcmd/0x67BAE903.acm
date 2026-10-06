@@ -1,0 +1,41 @@
+MoveDef 0x67BAE903 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Int_Var_Compare(Variable=LA-Int[172], Method=0x4, Value=0x2)
+		True(Offset=0x20){
+		    FRAME(Frames=2)
+		    Sound_Effect(SFX=0xC910025)
+		    FRAME(Frames=10)
+		    Float_Var_Compare(Variable=RA-Float[0], Method=0x4, Value=1)
+		    True(Offset=0x6){
+		        Low_Voice_Clip(unknown=0x8000000F)
+		    }
+		    Else(Offset=0x4){
+		        Low_Voice_Clip(unknown=0x80000011)
+		    }
+		    FRAME(Frames=18)
+		    FRAME(Frames=34)
+		    Sound_Effect(SFX=0xC910026)
+		    FRAME(Frames=90)
+		    Sound_Effect2(SFX=0xC910003)
+		}
+		Else(Offset=0x4){
+		    JUMP(Hash=0xF627251E)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

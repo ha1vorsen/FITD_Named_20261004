@@ -1,0 +1,23 @@
+MoveDef AppealHiL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x2C42123B)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x2C42123B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

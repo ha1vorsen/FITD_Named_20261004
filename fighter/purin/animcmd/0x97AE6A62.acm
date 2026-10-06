@@ -1,0 +1,25 @@
+MoveDef 0x97AE6A62
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=6)
+		OFF_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=36)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

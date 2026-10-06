@@ -1,0 +1,32 @@
+MoveDef SquatF
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=50)
+		unk_01A5A27C(unknown=0x6E00075, unknown=0x6E00074)
+		WAIT(Frames=60)
+		unk_01A5A27C(unknown=0x6E00074, unknown=0x6E00075)
+		Loop_Rest()
+		JUMP(Hash=0x2B09E95)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_040FD56E(unknown=0x1, unknown=0x6, unknown=0x1)
+		FRAME(Frames=50)
+		FRAME(Frames=110)
+		Loop_Rest()
+		JUMP(Hash=0x2B09E95)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,25 @@
+MoveDef FinalAirShoot
+{
+	Main()
+	{
+		JUMP(Hash=0xEE431AE4)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xEE431AE4)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xEE431AE4)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

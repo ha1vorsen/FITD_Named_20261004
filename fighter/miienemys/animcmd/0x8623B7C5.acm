@@ -1,0 +1,27 @@
+MoveDef 0x8623B7C5 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		CALL(Hash=0x4C8372D3)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=25)
+		SLOPE(unknown=0x4)
+		FRAME(Frames=73)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

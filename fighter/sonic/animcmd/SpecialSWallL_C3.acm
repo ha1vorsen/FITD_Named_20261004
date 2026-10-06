@@ -1,0 +1,29 @@
+MoveDef SpecialSWallL_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0x5D0002)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=2)
+		FRAME(Frames=85)
+		Item_Visibility(State=0x1)
+		FRAME(Frames=87)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

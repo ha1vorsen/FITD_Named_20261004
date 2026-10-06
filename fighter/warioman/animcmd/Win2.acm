@@ -1,0 +1,22 @@
+MoveDef Win2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		GENERATE_ARTICLE(ID=0x0)
+		Set_Anchored_Article_Action(Article=0x0, Action=0x56)
+		Script_End()
+	}
+
+}

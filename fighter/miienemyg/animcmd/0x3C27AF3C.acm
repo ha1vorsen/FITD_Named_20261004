@@ -1,0 +1,35 @@
+MoveDef 0x3C27AF3C : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x822000D)
+		WAIT(Frames=46)
+		Sound_Effect(SFX=0x8220000)
+		WAIT(Frames=10)
+		Sound_Effect(SFX=0x822000F)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x8220002)
+		WAIT(Frames=3)
+		FRAME(Frames=108)
+		STOP_SE_STATUS()
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=80)
+		Slope_Full(unknown=0x6, unknown=0x5)
+		Script_End()
+	}
+
+}

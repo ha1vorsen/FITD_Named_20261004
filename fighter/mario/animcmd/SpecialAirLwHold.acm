@@ -1,0 +1,30 @@
+MoveDef SpecialAirLwHold
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x9D8EC29B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=3)
+		FRAME(Frames=12)
+		FRAME(Frames=23)
+		FRAME(Frames=35)
+		Loop_Rest()
+		JUMP(Hash=0x9D8EC29B)
+		Script_End()
+	}
+
+}

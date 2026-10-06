@@ -1,0 +1,29 @@
+MoveDef FinalEnd
+{
+	Main()
+	{
+		Body_Collision(State=0x1)
+		Set_Frame_Duration(Speed=0.75)
+		FRAME(Frames=50)
+		ON_FLAG(Variable=RA-Flag[13])
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=92)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=25)
+		Sound_Effect(SFX=0x530031)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,25 @@
+MoveDef 0x140F41C6 : Unlisted
+{
+	Main()
+	{
+		WAIT(Frames=2)
+		Remove_Grab_Collision(ID=0x2)
+		Remove_Grab_Collision(ID=0x3)
+		WAIT(Frames=6)
+		Remove_All_Grab_Collisions()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

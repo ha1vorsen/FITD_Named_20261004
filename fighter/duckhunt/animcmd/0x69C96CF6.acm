@@ -1,0 +1,23 @@
+MoveDef 0x69C96CF6
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		CALL(Hash=0xB9177967)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

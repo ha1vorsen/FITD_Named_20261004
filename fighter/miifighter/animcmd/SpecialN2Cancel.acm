@@ -1,0 +1,22 @@
+MoveDef SpecialN2Cancel
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Stop_Sound_Effect(SFX=0x81A0049)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

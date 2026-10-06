@@ -1,0 +1,40 @@
+MoveDef AttackLw3
+{
+	Main()
+	{
+		FRAME(Frames=8)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=14, Angle=0x50, KBG=0x3C, WBKB=0x0, BKB=0x50, Size=5.5, X=0, Y=1.6, Z=14, Effect=0x5, Trip=0.2, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xC)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x16, Damage=14, Angle=0x50, KBG=0x3C, WBKB=0x0, BKB=0x50, Size=3, X=5, Y=0, Z=0, Effect=0x5, Trip=0.2, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xC, X2=2, Y2=0, Z2=0)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		MII_ENABLE_RATE()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=8)
+		Graphic_Effect2(Graphic=0x302001A, Bone=0x19, X=0, Y=0, Z=6, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		FRAME(Frames=8)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0x81C005A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=5)
+		FRAME(Frames=7)
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

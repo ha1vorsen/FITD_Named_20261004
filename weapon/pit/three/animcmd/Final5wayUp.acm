@@ -1,0 +1,50 @@
+MoveDef Final5wayUp
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		GENERATE_ARTICLE(ID=0x0)
+		WAIT(Frames=3)
+		Set_Frame_Duration(Speed=1.2)
+		WAIT(Frames=0.5)
+		SHOOT_ARTICLE(Value=0x0)
+		WAIT(Frames=3.5)
+		GENERATE_ARTICLE(ID=0x0)
+		WAIT(Frames=1.5)
+		SHOOT_ARTICLE(Value=0x0)
+		WAIT(Frames=3.5)
+		GENERATE_ARTICLE(ID=0x0)
+		WAIT(Frames=1.5)
+		SHOOT_ARTICLE(Value=0x0)
+		WAIT(Frames=3.5)
+		GENERATE_ARTICLE(ID=0x0)
+		WAIT(Frames=1.5)
+		SHOOT_ARTICLE(Value=0x0)
+		WAIT(Frames=3.5)
+		GENERATE_ARTICLE(ID=0x0)
+		WAIT(Frames=1.5)
+		SHOOT_ARTICLE(Value=0x0)
+		WAIT(Frames=3)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=5){
+		    Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=-5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=7)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

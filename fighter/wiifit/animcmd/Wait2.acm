@@ -1,0 +1,29 @@
+MoveDef Wait2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=20)
+		Slope_Full(unknown=0x2, unknown=0x6)
+		FRAME(Frames=58)
+		Slope_Full(unknown=0x4, unknown=0x6)
+		FRAME(Frames=100)
+		Slope_Full(unknown=0x6, unknown=0x6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,25 @@
+MoveDef SpecialHiStart_C2
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=0.7)
+		FRAME(Frames=6)
+		Set_Frame_Duration(Speed=1)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,53 @@
+MoveDef SpecialHiAdd
+{
+	Main()
+	{
+		FRAME(Frames=15)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5.5, Angle=0x30, KBG=0xAA, WBKB=0x0, BKB=0x23, Size=9, X=0, Y=10, Z=25, Effect=0x2, Trip=0, Hitlag=1.3, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=10, Z2=8)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=28)
+		ON_FLAG(Variable=RA-Flag[21])
+		FRAME(Frames=35)
+		ON_FLAG(Variable=RA-Flag[19])
+		FRAME(Frames=50)
+		ON_FLAG(Variable=RA-Flag[21])
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x32F001F, Bone=0x3EC, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x32F0028, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=13)
+		Sword_Trace(TraceID=0xCD, BlurLen=1.401298E-44, Bone1=0x19, X=0, Y=1, Z=0.9, Bone2=0x19, X=0, Y=30, Z=0.9, Anchored=0x1, Graphic=0x0, Bone3=0x19, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=20)
+		Terminate_Sword_Glow(FadeTime=0x7)
+		FRAME(Frames=31)
+		External_Graphic(Graphic=0x32F001E, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=32)
+		Terminate_Graphic_Effect(Graphic=0x32F0028, unknown=0x0, unknown=0x0)
+		Terminate_Graphic_Effect(Graphic=0x32F001F, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x767005B)
+		WAIT(Frames=8)
+		Sound_Effect(SFX=0x7670025)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=13)
+		FRAME(Frames=55)
+		Item_Visibility(State=0x1)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,41 @@
+MoveDef SpecialNMax
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic_Effect2(Graphic=0x3330003, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.4, Terminate=0x1)
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=-10, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=10, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    Flash_Light_Effect(Red=160, Blue=240, Green=255, Alpha=255, SourceX=-135, SourceY=-10)
+		    WAIT(Frames=2)
+		    Change_Flash_Light_Color(TransitionFrames=8, Red=160, Blue=240, Green=255, Alpha=100)
+		    WAIT(Frames=36)
+		    Terminate_Overlays()
+		    WAIT(Frames=2)
+		    Goto(Offset=-37)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0xBFC0048)
+		Stop_Sound_Effect(SFX=0xBFC0044)
+		Transient_Sound_Effect(SFX=0xBFC004D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Set_Loop(Iterations=-1){
+		    WAIT(Frames=45)
+		    Goto(Offset=-2)
+		}
+		Script_End()
+	}
+
+}

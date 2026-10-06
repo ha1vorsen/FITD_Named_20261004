@@ -1,0 +1,25 @@
+MoveDef SpecialAirSHold
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x99ACCE29)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x99ACCE29)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x99ACCE29)
+		Script_End()
+	}
+
+}

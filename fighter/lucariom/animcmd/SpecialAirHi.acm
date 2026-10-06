@@ -1,0 +1,28 @@
+MoveDef SpecialAirHi
+{
+	Main()
+	{
+		FRAME(Frames=13)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x1BA6EBD5)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x1BA6EBD5)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x1BA6EBD5)
+		Script_End()
+	}
+
+}

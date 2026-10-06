@@ -1,0 +1,26 @@
+MoveDef LandingAirLw
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		LANDING_EFFECT_FLIP(GFXRight=0x100000D, GFXLeft=0x100000E, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect3(SFX=0x820000A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

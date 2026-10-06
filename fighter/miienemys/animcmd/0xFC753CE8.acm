@@ -1,0 +1,44 @@
+MoveDef 0xFC753CE8
+{
+	Main()
+	{
+		FRAME(Frames=27)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x19, Damage=8, Angle=0x169, KBG=0x64, WBKB=0x6E, BKB=0x0, Size=4.5, X=0, Y=8, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x19, Damage=8, Angle=0x169, KBG=0x64, WBKB=0x6E, BKB=0x0, Size=4.5, X=0, Y=4, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x19, Damage=8, Angle=0x169, KBG=0x64, WBKB=0x6E, BKB=0x0, Size=3.5, X=0, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x3, Part=0x0, Bone=0x3, Damage=8, Angle=0x169, KBG=0x64, WBKB=0x6E, BKB=0x0, Size=2.5, X=0, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=16)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x17, X=2, Y=-0.7, Z=8, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=19)
+		Sword_Trace(TraceID=0xE5, BlurLen=5.605194E-45, Bone1=0x19, X=0, Y=0.5, Z=0, Bone2=0x19, X=-1E-05, Y=13.5, Z=0, Anchored=0x1, Graphic=0x33F0000, Bone3=0x19, X=0, Y=0, Z=0, RotX=0.00013, RotY=-7E-05, RotZ=0.00011, Length=1)
+		FRAME(Frames=21)
+		Graphic_Effect2(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=28)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x8210004)
+		WAIT(Frames=15)
+		Sound_Effect(SFX=0x8210010)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=23)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

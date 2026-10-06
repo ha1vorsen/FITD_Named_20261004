@@ -1,0 +1,60 @@
+MoveDef Final
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=1)
+		Camera_Closeup(ZoomTime=0x5, Unknown=0x0, Distance=1.5, XRot=0, YRot=0)
+		Time_Manipulation(Amount=0x5, Duration=0x50)
+		FRAME(Frames=70)
+		Normal_Camera()
+		Set_Camera_Boundaries(Front=25, Back=-10, Top=10, Bottom=-15)
+		FRAME(Frames=140)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic_Effect2(Graphic=0x42B0003, Bone=0x6, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Graphic_Effect6(Graphic=0x32B0026, Bone=0xD, X=3, Y=-5, Z=0, XRot=0, YRot=-90, ZRot=-90, Size=1, Terminate=0x0, Unknown=0x428C0000)
+		FRAME(Frames=1)
+		Graphic_Effect2(Graphic=0x32B0021, Bone=0x0, X=4, Y=16, Z=-12, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=10)
+		External_Graphic(Graphic=0x42B0002, Bone=0x3E8, X=0, Y=8.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=40)
+		Sword_Trace(TraceID=0xDA, BlurLen=1.541428E-44, Bone1=0x3E8, X=-3, Y=6, Z=0, Bone2=0x3E8, X=3, Y=12, Z=0, Anchored=0x1, Graphic=0x0, Bone3=0x3E8, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		Sword_Trace(TraceID=0xDA, BlurLen=1.541428E-44, Bone1=0x3E8, X=3, Y=6, Z=0, Bone2=0x3E8, X=-3, Y=12, Z=0, Anchored=0x1, Graphic=0x0, Bone3=0x3E8, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=135)
+		External_Graphic(Graphic=0x32B0019, Bone=0xC, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.5, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		Sound_Effect(SFX=0x76F002B)
+		Transient_Sound_Effect(SFX=0x9190000)
+		WAIT(Frames=85)
+		Sound_Effect(SFX=0x76F002C)
+		FRAME(Frames=142)
+		Sound_Effect(SFX=0x9190001)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		FRAME(Frames=5)
+		Set_Loop(Iterations=3){
+		    WAIT(Frames=25)
+		    WAIT(Frames=10)
+		    Goto(Offset=-4)
+		}
+		FRAME(Frames=140)
+		Script_End()
+	}
+
+}

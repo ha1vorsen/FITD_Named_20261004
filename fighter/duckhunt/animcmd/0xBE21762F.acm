@@ -1,0 +1,27 @@
+MoveDef 0xBE21762F
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		Pickup_Item2(Unknown=0x0, Unknown=0x2)
+		FRAME(Frames=6)
+		Consume_Item(Unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

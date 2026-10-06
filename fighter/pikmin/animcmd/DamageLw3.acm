@@ -1,0 +1,22 @@
+MoveDef DamageLw3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=30)
+		FRAME(Frames=40)
+		Script_End()
+	}
+
+}

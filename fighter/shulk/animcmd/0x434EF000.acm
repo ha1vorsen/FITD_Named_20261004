@@ -1,0 +1,29 @@
+MoveDef 0x434EF000 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=50)
+		Sound_Effect(SFX=0x7670016)
+		FRAME(Frames=55)
+		PLAY_SE_NO_3D(unknown=0x773002F)
+		FRAME(Frames=110)
+		Sound_Effect(SFX=0x7670033)
+		Sound_Effect(SFX=0x7670046)
+		FRAME(Frames=130)
+		Sound_Effect(SFX=0x7670039)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,21 @@
+MoveDef 0x71FE1886 : Unlisted
+{
+	Main()
+	{
+		Special_Hitbox(ID=0x1, Part=0x1, Bone=0x0, Damage=1, Angle=0x169, KBG=0x3C, WBKB=0x0, BKB=0x14, Size=2.3, X=0, Y=0, Z=0, Effect=0x3, Trip=0, Hitlag=0, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x7, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x10, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x1, Rehit=0x30, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

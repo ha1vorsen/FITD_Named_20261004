@@ -1,0 +1,24 @@
+MoveDef FinalRush
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		QUAKE(unknown=0x3)
+		FRAME(Frames=20)
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

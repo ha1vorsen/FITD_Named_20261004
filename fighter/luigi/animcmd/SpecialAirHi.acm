@@ -1,0 +1,32 @@
+MoveDef SpecialAirHi
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=20, Angle=0x5A, KBG=0x42, WBKB=0x0, BKB=0x28, Size=2.7, X=0, Y=6, Z=5.5, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		JUMP(Hash=0x1A201091)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		EFFECT_FOLLOW_COLOR(unknown=0x30B0006, unknown=0x11, unknown=0x3F800000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x1, unknown=0x437F0000, unknown=0x42F00000, unknown=0x42F00000)
+		FRAME(Frames=6)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x18, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.53, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x1BA6EBD5)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

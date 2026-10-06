@@ -1,0 +1,35 @@
+MoveDef LandingAirLw
+{
+	Main()
+	{
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x1000008, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Graphic_Effect3(Graphic=0x1000006, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect3(SFX=0x3007D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x3)
+		SLOPE(unknown=0x6)
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=51)
+		Model_Changer(ChangerID=0x1, ChangerState=0x0)
+		Item_Visibility(State=0x1)
+		Script_End()
+	}
+
+}

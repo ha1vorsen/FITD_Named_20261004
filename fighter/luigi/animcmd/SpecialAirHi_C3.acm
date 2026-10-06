@@ -1,0 +1,31 @@
+MoveDef SpecialAirHi_C3
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		JUMP(Hash=0xE4DC09A9)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		EFFECT_FOLLOW_COLOR(unknown=0x30B0006, unknown=0x11, unknown=0x3F800000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x1, unknown=0x42980000, unknown=0x437F0000, unknown=0x42980000)
+		FRAME(Frames=6)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x18, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.53, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x60DC32D7)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

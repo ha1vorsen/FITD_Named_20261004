@@ -1,0 +1,29 @@
+MoveDef SpecialLwFall_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Loop(Iterations=-1){
+		    Add_Momentum(Horizontal=-0.002, Vertical=0)
+		    WAIT(Frames=1)
+		    Goto(Offset=-5)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x2, ChangerState=0x1)
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

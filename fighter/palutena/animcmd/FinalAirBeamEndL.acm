@@ -1,0 +1,25 @@
+MoveDef FinalAirBeamEndL
+{
+	Main()
+	{
+		JUMP(Hash=0x70277C14)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x70277C14)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x70277C14)
+		Script_End()
+	}
+
+}

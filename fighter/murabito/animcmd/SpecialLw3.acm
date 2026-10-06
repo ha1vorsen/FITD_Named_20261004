@@ -1,0 +1,39 @@
+MoveDef SpecialLw3
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x19, Damage=14, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=5, X=0, Y=6.5, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x6, SFXLevel=0x2, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x19, Damage=14, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=3, X=0, Y=1, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x6, SFXLevel=0x2, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		Graphic_Effect4(Graphic=0x32A000C, Bone=0x0, X=0, Y=6.7, Z=3, XRot=9, YRot=0, ZRot=6, Size=0.7, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x39)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=2)
+		Model_Changer(ChangerID=0x0, ChangerState=0x3)
+		FRAME(Frames=5)
+		FRAME(Frames=42)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

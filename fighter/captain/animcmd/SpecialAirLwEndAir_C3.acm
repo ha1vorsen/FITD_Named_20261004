@@ -1,0 +1,21 @@
+MoveDef SpecialAirLwEndAir_C3
+{
+	Main()
+	{
+		CLR_SPEED_ALL()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

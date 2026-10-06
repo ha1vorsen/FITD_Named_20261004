@@ -1,0 +1,34 @@
+MoveDef SpecialS2
+{
+	Main()
+	{
+		FRAME(Frames=15)
+		Remove_Article(Article=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Graphic_Effect2(Graphic=0x1000009, Bone=0x11, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x4A80053)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=3)
+		FRAME(Frames=15)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

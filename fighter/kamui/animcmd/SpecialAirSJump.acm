@@ -1,0 +1,21 @@
+MoveDef SpecialAirSJump : Unlisted
+{
+	Main()
+	{
+		JUMP(Hash=0x21D5C538)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

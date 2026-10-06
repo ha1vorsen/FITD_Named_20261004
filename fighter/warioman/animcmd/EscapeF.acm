@@ -1,0 +1,37 @@
+MoveDef EscapeF
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		Body_Collision(State=0x2)
+		FRAME(Frames=22)
+		Body_Collision(State=0x0)
+		Reverse_Direction()
+		FRAME(Frames=26)
+		ENABLE_CANCEL()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x0, X=0, Y=2, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=5)
+		Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x76A004F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=22)
+		Slope_Full(unknown=0x6, unknown=0x5)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,27 @@
+MoveDef SpecialHiLandingL_C2
+{
+	Main()
+	{
+		JUMP(Hash=0xEF1AEE71)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xEF1AEE71)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x610020)
+		Sound_Effect3(SFX=0x60029)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

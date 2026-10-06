@@ -1,0 +1,24 @@
+MoveDef 0x751B9558
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		THROW_ITEM_OFFSET(Unknown=0, Unknown=0.1, Unknown=0x1, Unknown=0x0, Unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		VIS_SET_DEFAULT(unknown=0x1, unknown=0x0)
+		Script_End()
+	}
+
+}

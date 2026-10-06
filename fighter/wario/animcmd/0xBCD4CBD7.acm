@@ -1,0 +1,25 @@
+MoveDef 0xBCD4CBD7 : Unlisted
+{
+	Main()
+	{
+		JUMP(Hash=0xFBE34163)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xFBE34163)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xFBE34163)
+		Script_End()
+	}
+
+}

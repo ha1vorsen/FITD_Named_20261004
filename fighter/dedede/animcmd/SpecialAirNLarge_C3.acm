@@ -1,0 +1,26 @@
+MoveDef SpecialAirNLarge_C3
+{
+	Main()
+	{
+		JUMP(Hash=0x81B0A293)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=75)
+		PLAY_SE_REMAIN(unknown=0xF2)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x81B0A293)
+		Script_End()
+	}
+
+}

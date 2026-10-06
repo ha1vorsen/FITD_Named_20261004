@@ -1,0 +1,27 @@
+MoveDef SpecialAirSEnd_C2
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x93308A1B)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=46)
+		Slope_Full(unknown=0x0, unknown=0x2)
+		Script_End()
+	}
+
+}

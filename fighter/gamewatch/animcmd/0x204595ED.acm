@@ -1,0 +1,22 @@
+MoveDef 0x204595ED
+{
+	Main()
+	{
+		FRAME(Frames=17)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

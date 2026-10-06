@@ -1,0 +1,21 @@
+MoveDef FinalVisualScene03
+{
+	Main()
+	{
+		Article_Visibility(Article=0x5, State=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

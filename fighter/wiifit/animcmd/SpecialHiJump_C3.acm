@@ -1,0 +1,51 @@
+MoveDef SpecialHiJump_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.65)
+		FRAME(Frames=10)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=0, Angle=0x16F, KBG=0x50, WBKB=0x28, BKB=0x0, Size=12, X=0, Y=10, Z=11, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x0, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x4, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x1, Flinchless=0x1, X2=0, Y2=10, Z2=-11)
+		WAIT(Frames=77)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=8)
+		Set_Loop(Iterations=2){
+		    Graphic_Effect5(Graphic=0x1000023, Bone=0x0, X=0, Y=11, Z=0, XRot=0, YRot=0, ZRot=0, Size=2.3, RandomX=2, RandomY=2, RandomZ=2, RandomXRot=20, RandomYRot=180, RandomZRot=0, Terminate=0x1)
+		    LAST_EFFECT_SET_RATE(unknown=1.2)
+		    WAIT(Frames=3)
+		    LAST_EFFECT_SET_RATE(unknown=1.2)
+		    WAIT(Frames=3)
+		    Graphic_Effect5(Graphic=0x1000023, Bone=0x0, X=0, Y=18, Z=0, XRot=0, YRot=180, ZRot=0, Size=2, RandomX=2, RandomY=2, RandomZ=2, RandomXRot=20, RandomYRot=180, RandomZRot=0, Terminate=0x1)
+		    LAST_EFFECT_SET_RATE(unknown=1.2)
+		    WAIT(Frames=10)
+		    LAST_EFFECT_SET_ALPHA(unknown=0x428C0000)
+		    WAIT(Frames=3)
+		    Graphic_Effect5(Graphic=0x1000023, Bone=0x0, X=0, Y=4, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.6, RandomX=2, RandomY=2, RandomZ=2, RandomXRot=20, RandomYRot=180, RandomZRot=0, Terminate=0x1)
+		    LAST_EFFECT_SET_ALPHA(unknown=0x42700000)
+		    WAIT(Frames=3)
+		    LAST_EFFECT_SET_ALPHA(unknown=0x42700000)
+		    WAIT(Frames=12)
+		    Goto(Offset=-75)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=0)
+		Sound_Effect(SFX=0x2C90007)
+		Sound_Effect(SFX=0x24B001A)
+		WAIT(Frames=2)
+		Transient_Sound_Effect(SFX=0x16B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

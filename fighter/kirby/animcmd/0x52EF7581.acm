@@ -1,0 +1,34 @@
+MoveDef 0x52EF7581
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x5D89A650)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xC943357C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=3)
+		FRAME(Frames=56)
+		FRAME(Frames=65)
+		FRAME(Frames=70)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=71)
+		FRAME(Frames=101)
+		FRAME(Frames=102)
+		Slope_Full(unknown=0x0, unknown=0xA)
+		Script_End()
+	}
+
+}

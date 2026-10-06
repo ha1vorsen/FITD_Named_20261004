@@ -1,0 +1,38 @@
+MoveDef FinalAir
+{
+	Main()
+	{
+		JUMP(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x4){
+		}
+		Else(Offset=0x2){
+		}
+		External_Graphic(Graphic=0x31E0017, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		FRAME(Frames=15)
+		Screen_Tint(TransitionTime=0x0, Red=0x1E, Green=0xFF, Blue=0xFF, Alpha=0xFF, Duration=0x96, unknown=0x0, TransitionOutTime=0x7F)
+		WAIT(Frames=30)
+		End_Screen_Tint(ID=0x0, TransitionOutTime=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

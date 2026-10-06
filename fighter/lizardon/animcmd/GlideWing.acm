@@ -1,0 +1,22 @@
+MoveDef GlideWing
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0x20005F)
+		PLAY_SE_REMAIN(unknown=0x20005A)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

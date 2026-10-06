@@ -1,0 +1,23 @@
+MoveDef SpecialAirHi3_C2 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xE4382C53)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xE4382C53)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,33 @@
+MoveDef SpecialSStart_C2
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.55)
+		GENERATE_ARTICLE(ID=0x15)
+		ON_FLAG(Variable=RA-Flag[21])
+		Script_End()
+	}
+
+	Effect()
+	{
+		EFFECT_FOLLOW_FLIP(GFXRight=0x3080002, GFXLeft=0x3080002, Bone=0x0, X=0x0, Y=0x0, Z=0x0, XRot=0x0, YRot=0x0, ZRot=0x0, Size=0x3F800000, Terminate=0x1, unknown=0x4)
+		FRAME(Frames=4)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x19, X=7, Y=11, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0xA00CC)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		Script_End()
+	}
+
+}

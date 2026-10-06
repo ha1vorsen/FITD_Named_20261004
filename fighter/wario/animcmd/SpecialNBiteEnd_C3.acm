@@ -1,0 +1,26 @@
+MoveDef SpecialNBiteEnd_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x1A006E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=6)
+		FRAME(Frames=19)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

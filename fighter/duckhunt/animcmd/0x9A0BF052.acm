@@ -1,0 +1,27 @@
+MoveDef 0x9A0BF052
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		Fire_Weapon()
+		Script_End()
+	}
+
+	Effect()
+	{
+		CALL(Hash=0x44AA0B8A)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		JUMP(Hash=0x2CC6900C)
+		Script_End()
+	}
+
+}

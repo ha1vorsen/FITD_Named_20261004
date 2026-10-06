@@ -1,0 +1,38 @@
+MoveDef SpecialLwFlyR_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=-7, Y=5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=6)
+		Graphic_Effect7(Graphic=0x3160004, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=-90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1, Unknown=0x42A00000)
+		LAST_EFFECT_SET_RATE(unknown=2)
+		Graphic_Effect2(Graphic=0x1000008, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=7)
+		Graphic_Effect6(Graphic=0x3160005, Bone=0x3, X=0, Y=0, Z=0, XRot=90, YRot=90, ZRot=90, Size=1, Terminate=0x1, Unknown=0x42A00000)
+		LAST_EFFECT_SET_RATE(unknown=2)
+		Color_Overlay(Red=255, Green=255, Blue=255, Alpha=190)
+		FRAME(Frames=9)
+		Color_Overlay(Red=255, Green=128, Blue=0, Alpha=80)
+		FRAME(Frames=15)
+		Change_Overlay(Transition=25, Red=255, Green=0, Blue=0, Alpha=0)
+		FRAME(Frames=40)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

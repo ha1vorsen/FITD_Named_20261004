@@ -1,0 +1,25 @@
+MoveDef SpecialSDown_C2
+{
+	Main()
+	{
+		FRAME(Frames=47)
+		ON_FLAG(Variable=RA-Flag[17])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=46)
+		Sound_Effect(SFX=0x1A0066)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,39 @@
+MoveDef 0xD04D3D90
+{
+	Main()
+	{
+		CALL(Hash=0x82EB18DD)
+		Set_Loop(Iterations=4){
+		    Hitbox(ID=0x0, Part=0x0, Bone=0x18, Damage=3, Angle=0x4B, KBG=0x50, WBKB=0x0, BKB=0x28, Size=6, X=0, Y=6, Z=0, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x7, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		    Hitbox(ID=0x1, Part=0x0, Bone=0x18, Damage=3, Angle=0x4B, KBG=0x50, WBKB=0x0, BKB=0x28, Size=3, X=0, Y=1.2, Z=0, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x7, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		    WAIT(Frames=3)
+		    Remove_All_Hitboxes()
+		    Goto(Offset=-53)
+		}
+		CALL(Hash=0x1BE24967)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xD720F989)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xD720F989)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=14)
+		FRAME(Frames=16)
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

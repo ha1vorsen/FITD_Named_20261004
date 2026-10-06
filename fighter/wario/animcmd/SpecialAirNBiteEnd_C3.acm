@@ -1,0 +1,25 @@
+MoveDef SpecialAirNBiteEnd_C3
+{
+	Main()
+	{
+		JUMP(Hash=0x66D7C0EE)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x66D7C0EE)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x66D7C0EE)
+		Script_End()
+	}
+
+}

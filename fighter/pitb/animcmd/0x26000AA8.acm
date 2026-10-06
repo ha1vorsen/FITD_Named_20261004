@@ -1,0 +1,23 @@
+MoveDef 0x26000AA8 : Unlisted
+{
+	Main()
+	{
+		JUMP(Hash=0x4202934B)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x4202934B)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

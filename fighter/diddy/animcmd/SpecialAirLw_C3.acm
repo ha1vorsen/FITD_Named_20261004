@@ -1,0 +1,29 @@
+MoveDef SpecialAirLw_C3
+{
+	Main()
+	{
+		FRAME(Frames=14)
+		ON_FLAG(Variable=RA-Flag[19])
+		FRAME(Frames=20)
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=23)
+		Sound_Effect(SFX=0x1E007F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x259AB4BB)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,25 @@
+MoveDef 0x82EB18DD : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		GENERATE_ARTICLE(ID=0x3)
+		Model_Changer(ChangerID=0x3, ChangerState=0x8)
+		FRAME(Frames=16)
+		VIS_BACK_DEFAULT_ARTICLE(unknown=0x3, unknown=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

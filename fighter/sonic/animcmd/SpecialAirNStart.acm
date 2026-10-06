@@ -1,0 +1,25 @@
+MoveDef SpecialAirNStart
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Transient_Sound_Effect(SFX=0x2A0066)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

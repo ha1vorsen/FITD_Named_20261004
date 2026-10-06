@@ -1,0 +1,31 @@
+MoveDef AppealSR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x7670030)
+		WAIT(Frames=20)
+		Sound_Effect(SFX=0x7730002)
+		WAIT(Frames=20)
+		Sound_Effect(SFX=0x7670031)
+		WAIT(Frames=40)
+		Sound_Effect(SFX=0x7670032)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=54)
+		Script_End()
+	}
+
+}

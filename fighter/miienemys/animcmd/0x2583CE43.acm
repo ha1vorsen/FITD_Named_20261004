@@ -1,0 +1,22 @@
+MoveDef 0x2583CE43
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x8210004)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

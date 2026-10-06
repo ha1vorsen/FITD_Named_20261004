@@ -1,0 +1,26 @@
+MoveDef FinalAir2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x683E0CD4)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x683E0CD4)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=11)
+		Script_End()
+	}
+
+}

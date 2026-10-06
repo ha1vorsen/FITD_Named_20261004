@@ -1,0 +1,31 @@
+MoveDef Wait2
+{
+	Main()
+	{
+		ON_FLAG(Variable=LA-Flag[124])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=23)
+		Slope_Full(unknown=0x4, unknown=0x4)
+		FRAME(Frames=37)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		FRAME(Frames=40)
+		Slope_Full(unknown=0x4, unknown=0x4)
+		FRAME(Frames=56)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		Script_End()
+	}
+
+}

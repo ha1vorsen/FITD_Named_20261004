@@ -1,0 +1,33 @@
+MoveDef Win2
+{
+	Main()
+	{
+		GENERATE_ARTICLE_ENABLE(Unknown=0x3)
+		Set_Anchored_Article_Action(Article=0x3, Action=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=19)
+		PLAY_SE_NO_3D(unknown=0x76B0033)
+		WAIT(Frames=26)
+		PLAY_SE_NO_3D(unknown=0x76B0033)
+		WAIT(Frames=60)
+		Sound_Effect(SFX=0x70)
+		WAIT(Frames=5)
+		PLAY_SE_NO_3D(unknown=0x76B0035)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

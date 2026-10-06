@@ -1,0 +1,29 @@
+MoveDef SpecialAirNBlow
+{
+	Main()
+	{
+		JUMP(Hash=0xC3B4D13A)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xC3B4D13A)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Transient_Sound_Effect(SFX=0x1E0047)
+		Transient_Sound_Effect(SFX=0x1E0046)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xC3B4D13A)
+		Script_End()
+	}
+
+}

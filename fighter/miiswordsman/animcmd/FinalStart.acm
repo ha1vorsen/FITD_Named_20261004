@@ -1,0 +1,35 @@
+MoveDef FinalStart
+{
+	Main()
+	{
+		Camera_Closeup(ZoomTime=0x5, Unknown=0x0, Distance=1.5, XRot=0, YRot=0)
+		Time_Manipulation(Amount=0x8, Duration=0x3C)
+		FRAME(Frames=41)
+		Normal_Camera()
+		FRAME(Frames=56)
+		Limited_Screen_Tint(TransitionInTime=0x0, Red=0x1E, Blue=0x40, Green=0x0, Alpha=0x0, Duration=0x80, TransitionOutTime=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=43)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x19, X=0, Y=10, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x81B003A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

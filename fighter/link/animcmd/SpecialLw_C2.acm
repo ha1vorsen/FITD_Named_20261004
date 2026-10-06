@@ -1,0 +1,34 @@
+MoveDef SpecialLw_C2
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.35)
+		FRAME(Frames=17)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=22)
+		Int_Compare(Type=0x2, Method=0x0, Value=115)
+		True(Offset=0x4){
+		    Sound_Effect(SFX=0x3009D)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=8)
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		FRAME(Frames=22)
+		Script_End()
+	}
+
+}

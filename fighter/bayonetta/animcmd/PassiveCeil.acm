@@ -1,0 +1,29 @@
+MoveDef PassiveCeil
+{
+	Main()
+	{
+		FRAME(Frames=18)
+		Set_Kinetic_Handler(ID=0x26)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Stop_Sound_Effect(SFX=0x44)
+		Stop_Sound_Effect(SFX=0x45)
+		Stop_Sound_Effect(SFX=0x46)
+		Sound_Effect(SFX=0xCA10020)
+		Sound_Effect3(SFX=0xC910012)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

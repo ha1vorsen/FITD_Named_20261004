@@ -1,0 +1,28 @@
+MoveDef AttackS3Hi
+{
+	Main()
+	{
+		JUMP(Hash=0x8376AD51)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x8376AD51)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x8376AD51)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

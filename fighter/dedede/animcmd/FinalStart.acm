@@ -1,0 +1,38 @@
+MoveDef FinalStart
+{
+	Main()
+	{
+		Camera_Closeup(ZoomTime=0x5, Unknown=0x0, Distance=1.5, XRot=0, YRot=0)
+		Time_Manipulation(Amount=0x5, Duration=0x3C)
+		FRAME(Frames=1)
+		Body_Collision(State=0x2)
+		FRAME(Frames=50)
+		Normal_Camera()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=18)
+		Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=-8, Y=8, Z=2, XRot=0, YRot=0, ZRot=0, Size=2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		Sound_Effect(SFX=0x610035)
+		FRAME(Frames=17)
+		Sound_Effect(SFX=0x60005)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		Item_Visibility(State=0x0)
+		FRAME(Frames=16)
+		Script_End()
+	}
+
+}

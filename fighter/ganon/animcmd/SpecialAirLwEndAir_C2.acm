@@ -1,0 +1,22 @@
+MoveDef SpecialAirLwEndAir_C2
+{
+	Main()
+	{
+		FRAME(Frames=20)
+		Add_Momentum(Horizontal=-0.5, Vertical=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

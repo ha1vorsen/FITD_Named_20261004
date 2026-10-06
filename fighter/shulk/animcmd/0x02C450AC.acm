@@ -1,0 +1,43 @@
+MoveDef 0x02C450AC
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Screen_Tint(TransitionTime=0x1, Red=0x1, Green=0xFF, Blue=0xFF, Alpha=0xFF, Duration=0xFF, unknown=0x7, TransitionOutTime=0xFF)
+		End_Screen_Tint(ID=0x1, TransitionOutTime=0x5A)
+		EFFECT_GLOBAL(unknown=0x42F000B, unknown=0x433E0000, unknown=0xC2B40000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F5C28F6)
+		FRAME(Frames=20)
+		Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=23)
+		Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=0, Y=0, Z=-3, XRot=0, YRot=180, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=48)
+		External_Graphic(Graphic=0x32F002C, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=49)
+		External_Graphic(Graphic=0x32F001B, Bone=0x3EC, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Int_Var_Compare(Variable=RA-Int[7], Method=0x0, Value=0x1)
+		True(Offset=0x4){
+		    JUMP(Hash=0x15DEF63F)
+		}
+		Low_Voice_Clip(unknown=0x803F000A)
+		Sound_Effect(SFX=0x91A000B)
+		FRAME(Frames=40)
+		Sound_Effect(SFX=0x91A0000)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

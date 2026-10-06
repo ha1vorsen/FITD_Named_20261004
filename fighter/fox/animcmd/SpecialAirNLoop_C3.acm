@@ -1,0 +1,34 @@
+MoveDef SpecialAirNLoop_C3
+{
+	Main()
+	{
+		JUMP(Hash=0x5F0E3BE9)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x10000A4, Bone=0x19, X=0, Y=1, Z=5, XRot=0, YRot=0, ZRot=0, Size=0.3, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=2)
+		FRAME(Frames=4)
+		Terminate_Graphic_Effect(Graphic=0x10000A4, unknown=0x0, unknown=0x0)
+		Graphic_Effect2(Graphic=0x309000A, Bone=0x0, X=0, Y=10, Z=12, XRot=0, YRot=0, ZRot=0, Size=2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x5F0E3BE9)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		Script_End()
+	}
+
+}

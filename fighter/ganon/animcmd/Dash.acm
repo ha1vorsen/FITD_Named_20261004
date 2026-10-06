@@ -1,0 +1,39 @@
+MoveDef Dash
+{
+	Main()
+	{
+		FRAME(Frames=16)
+		STRANS_ON(STransID=STrans-Int[10])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=9)
+		Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=-15, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x190018)
+		WAIT(Frames=16)
+		Sound_Effect2(SFX=0x19004B)
+		WAIT(Frames=6)
+		Sound_Effect2(SFX=0x190049)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		FRAME(Frames=5)
+		SLOPE(unknown=0x0)
+		FRAME(Frames=21)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		Script_End()
+	}
+
+}

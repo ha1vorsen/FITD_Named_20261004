@@ -1,0 +1,23 @@
+MoveDef SpecialAirN_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x7EC39C7F)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x7EC39C7F)
+		Script_End()
+	}
+
+}

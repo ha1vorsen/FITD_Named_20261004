@@ -1,0 +1,44 @@
+MoveDef SpecialAirHi_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x17DB0241)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=8)
+		Set_Loop(Iterations=4){
+		    Graphic_Effect2(Graphic=0x100000F, Bone=0x0, X=0, Y=5, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Color_Overlay(Red=255, Green=255, Blue=255, Alpha=180)
+		    WAIT(Frames=3)
+		    Terminate_Overlays()
+		    WAIT(Frames=2)
+		    Color_Overlay(Red=255, Green=255, Blue=100, Alpha=180)
+		    WAIT(Frames=3)
+		    Terminate_Overlays()
+		    WAIT(Frames=2)
+		    Goto(Offset=-37)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x6DF004A)
+		WAIT(Frames=2)
+		WAIT(Frames=2)
+		Sound_Effect(SFX=0x6DF0049)
+		WAIT(Frames=2)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

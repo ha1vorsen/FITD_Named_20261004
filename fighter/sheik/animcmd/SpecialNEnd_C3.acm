@@ -1,0 +1,41 @@
+MoveDef SpecialNEnd_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=6)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=13)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=38)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect3(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Set_Loop(Iterations=2){
+		    Graphic_Effect5(Graphic=0x1000012, Bone=0x18, X=2, Y=0, Z=1.5, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=360, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		    WAIT(Frames=15)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x460000)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		Script_End()
+	}
+
+}

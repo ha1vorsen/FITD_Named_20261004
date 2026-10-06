@@ -1,0 +1,39 @@
+MoveDef SpecialHiCharge_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=0.025)
+		FRAME(Frames=41)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		External_Graphic(Graphic=0x1000014, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.75, Terminate=0x1)
+		FRAME(Frames=41)
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect3(Graphic=0x1000024, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=2, RandomY=0, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=20)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		Transient_Sound_Effect(SFX=0x1E0039)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+}

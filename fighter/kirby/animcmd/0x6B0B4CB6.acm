@@ -1,0 +1,60 @@
+MoveDef 0x6B0B4CB6
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=7)
+		ON_FLAG(Variable=RA-Flag[18])
+		FRAME(Frames=8)
+		IS_FLAG(Variable=RA-Flag[13])
+		True(Offset=0x3C){
+		    External_Graphic(Graphic=0x32B0000, Bone=0x18, X=0, Y=6.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, Terminate=0x1)
+		    External_Graphic_Effect2(Graphic=0x32B0022, Bone=0x18, X=0, Y=6.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, Terminate=0x1)
+		    FRAME(Frames=13)
+		    Float_Compare(Type=0x0, Method=0x4, Value=0)
+		    True(Offset=0x10){
+		        Graphic_Effect6(Graphic=0x32B0005, Bone=0x0, X=-5, Y=10, Z=-2, XRot=0, YRot=90, ZRot=0, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		    }
+		    Else(Offset=0xE){
+		        Graphic_Effect6(Graphic=0x32B0005, Bone=0x0, X=5, Y=10, Z=-2, XRot=0, YRot=-90, ZRot=0, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		    }
+		}
+		Else(Offset=0x2F){
+		    External_Graphic(Graphic=0x32B0000, Bone=0x18, X=0, Y=6.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, Terminate=0x1)
+		    FRAME(Frames=13)
+		    Float_Compare(Type=0x0, Method=0x4, Value=0)
+		    True(Offset=0x10){
+		        Graphic_Effect6(Graphic=0x32B0005, Bone=0x0, X=-5, Y=10, Z=-2, XRot=0, YRot=90, ZRot=0, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		    }
+		    Else(Offset=0xE){
+		        Graphic_Effect6(Graphic=0x32B0005, Bone=0x0, X=5, Y=10, Z=-2, XRot=0, YRot=-90, ZRot=0, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		    }
+		}
+		FRAME(Frames=50)
+		Terminate_Graphic_Effect(Graphic=0x32B0000, unknown=0x0, unknown=0x0)
+		Terminate_Graphic_Effect(Graphic=0x32B0022, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x8B40002)
+		WAIT(Frames=3)
+		Transient_Sound_Effect(SFX=0x24E0082)
+		WAIT(Frames=40)
+		STOP_SE_STATUS()
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=8)
+		Script_End()
+	}
+
+}

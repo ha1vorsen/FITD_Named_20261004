@@ -1,0 +1,46 @@
+MoveDef AppealLwR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=20)
+		LAST_EFFECT_SET_ALPHA(unknown=0x42480000)
+		External_Graphic(Graphic=0x3020008, Bone=0x16, X=6.5, Y=0, Z=0, XRot=0, YRot=270, ZRot=0, Size=0.7, Terminate=0x1)
+		FRAME(Frames=21)
+		External_Graphic(Graphic=0x1000014, Bone=0x0, X=-2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=30)
+		External_Graphic(Graphic=0x3020008, Bone=0x16, X=6.5, Y=0, Z=0, XRot=0, YRot=270, ZRot=0, Size=0.85, Terminate=0x1)
+		FRAME(Frames=40)
+		External_Graphic(Graphic=0x3020008, Bone=0x16, X=6.5, Y=0, Z=0, XRot=0, YRot=270, ZRot=0, Size=0.85, Terminate=0x1)
+		FRAME(Frames=50)
+		External_Graphic(Graphic=0x3020008, Bone=0x16, X=6.5, Y=0, Z=0, XRot=0, YRot=270, ZRot=0, Size=0.85, Terminate=0x1)
+		FRAME(Frames=60)
+		External_Graphic(Graphic=0x3020008, Bone=0x16, X=6.5, Y=0, Z=0, XRot=0, YRot=270, ZRot=0, Size=0.85, Terminate=0x1)
+		FRAME(Frames=70)
+		External_Graphic(Graphic=0x3020008, Bone=0x16, X=6.5, Y=0, Z=0, XRot=0, YRot=270, ZRot=0, Size=0.85, Terminate=0x1)
+		FRAME(Frames=80)
+		External_Graphic(Graphic=0x3020008, Bone=0x16, X=6.5, Y=0, Z=0, XRot=0, YRot=270, ZRot=0, Size=0.85, Terminate=0x1)
+		Terminate_Graphic_Effect(Graphic=0x1000014, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=21)
+		Sound_Effect(SFX=0x81C0068)
+		FRAME(Frames=23)
+		Sound_Effect(SFX=0x81C0066)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=20)
+		Script_End()
+	}
+
+}

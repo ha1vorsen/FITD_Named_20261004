@@ -1,0 +1,23 @@
+MoveDef FuraSleepStart
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic_Effect2(Graphic=0x100002E, Bone=0x13, X=0, Y=5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=12)
+		Script_End()
+	}
+
+}

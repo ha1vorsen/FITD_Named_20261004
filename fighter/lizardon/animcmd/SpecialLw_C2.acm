@@ -1,0 +1,54 @@
+MoveDef SpecialLw_C2
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=21)
+		Set_Frame_Duration(Speed=0.166)
+		FRAME(Frames=27)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=28)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x13, Damage=12, Angle=0x3C, KBG=0x32, WBKB=0x0, BKB=0x3C, Size=6, X=0, Y=-1, Z=0, Effect=0xB, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x1, X2=0, Y2=4, Z2=0)
+		FRAME(Frames=32)
+		Remove_All_Hitboxes()
+		Set_Frame_Duration(Speed=3)
+		FRAME(Frames=34)
+		Set_Frame_Duration(Speed=0.8)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=22)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x321000F, GFXLeft=0x321000F, Bone=0x0, X=0xBF800000, Y=0x41100000, Z=0x40C00000, XRot=0xC0A00000, YRot=0xC29A0000, ZRot=0xC2980000, Size=0x3F4CCCCD, Terminate=0x1, unknown=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1.2)
+		FRAME(Frames=25)
+		Graphic_Effect3(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=28)
+		Graphic_Effect7(Graphic=0x100008F, Bone=0x0, X=0, Y=5, Z=15, XRot=0, YRot=0, ZRot=0, Size=1.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1, Unknown=0x43160000)
+		LAST_EFFECT_SET_RATE(unknown=0.8)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x530000)
+		FRAME(Frames=22)
+		Sound_Effect(SFX=0x200072)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x4)
+		FRAME(Frames=26)
+		FRAME(Frames=28)
+		QUAKE(unknown=0x4)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

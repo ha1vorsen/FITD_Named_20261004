@@ -1,0 +1,27 @@
+MoveDef SpecialAirLwHold_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x1C2C951C)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x1C2C951C)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Loop_Rest()
+		JUMP(Hash=0xD067D503)
+		Script_End()
+	}
+
+}

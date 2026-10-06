@@ -1,0 +1,71 @@
+MoveDef FinalHit
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Time_Manipulation_Whole(unknown=0x2, unknown=0x0)
+		FRAME(Frames=4)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=10, Angle=0x50, KBG=0x5F, WBKB=0x0, BKB=0x32, Size=8, X=0, Y=12, Z=10, Effect=0x0, Trip=0, Hitlag=2.6, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x39, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x1F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x0, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Normal_Camera()
+		Camera_Closeup(ZoomTime=0x3, Unknown=0x0, Distance=1.9, XRot=0, YRot=0)
+		SET_INT(Value=0x1, Variable=RA-Int[6])
+		ON_FLAG(Variable=RA-Flag[16])
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		FRAME(Frames=7)
+		ON_FLAG(Variable=RA-Flag[22])
+		Normal_Camera()
+		Camera_Closeup(ZoomTime=0x5, Unknown=0x0, Distance=2.1, XRot=0, YRot=0)
+		FRAME(Frames=9)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=10)
+		ON_FLAG(Variable=RA-Flag[15])
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=20, Angle=0x50, KBG=0x69, WBKB=0x0, BKB=0x3C, Size=10, X=0, Y=20, Z=8, Effect=0x0, Trip=0, Hitlag=2, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x3A, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x0, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		SET_INT(Value=0x2, Variable=RA-Int[6])
+		ON_FLAG(Variable=RA-Flag[16])
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		Terminate_Time_Manipulation()
+		FRAME(Frames=18)
+		Normal_Camera()
+		SET_INT(Value=0x3, Variable=RA-Int[6])
+		ON_FLAG(Variable=RA-Flag[16])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=7)
+		Graphic_Effect3(Graphic=0x1000028, Bone=0x0, X=1, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=8)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x4340009, GFXLeft=0x434000A, Bone=0x1, X=0x0, Y=0x0, Z=0x0, XRot=0x0, YRot=0x0, ZRot=0x0, Size=0x3F800000, Terminate=0x1, unknown=0x0)
+		FRAME(Frames=21)
+		Terminate_Graphic_Effect(Graphic=0x4340008, unknown=0x1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0xC090033)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0xC050057)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=2)
+		FRAME(Frames=4)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=8)
+		FRAME(Frames=10)
+		QUAKE(unknown=0x5)
+		Script_End()
+	}
+
+}

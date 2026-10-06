@@ -1,0 +1,32 @@
+MoveDef CatchTurn
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		Extended_Grab_Collision(ID=0x0, Bone=0x0, Size=3.1, X=0, Y=5, Z=-4, Action=0x3F, Ground/Air=0x3, X2=0, Y2=5, Z2=-13.4)
+		CALL(Hash=0x49FA5BDD)
+		WAIT(Frames=2)
+		Remove_All_Grab_Collisions()
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0xC0029)
+		FRAME(Frames=6)
+		Sound_Effect(SFX=0x6B)
+		WAIT(Frames=4)
+		Stop_Sound_Effect(SFX=0x6B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

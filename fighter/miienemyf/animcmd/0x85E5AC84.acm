@@ -1,0 +1,27 @@
+MoveDef 0x85E5AC84
+{
+	Main()
+	{
+		CALL(Hash=0x92A37191)
+		Script_End()
+	}
+
+	Effect()
+	{
+		CALL(Hash=0x92A37191)
+		Script_End()
+	}
+
+	Sound()
+	{
+		CALL(Hash=0x92A37191)
+		Script_End()
+	}
+
+	Expression()
+	{
+		CALL(Hash=0x92A37191)
+		Script_End()
+	}
+
+}

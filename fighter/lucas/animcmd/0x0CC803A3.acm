@@ -1,0 +1,27 @@
+MoveDef 0x0CC803A3
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		Fire_Item_Projectile2(Unknown=0x11000010)
+		Script_End()
+	}
+
+	Effect()
+	{
+		CALL(Hash=0x9272CA3D)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=2)
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

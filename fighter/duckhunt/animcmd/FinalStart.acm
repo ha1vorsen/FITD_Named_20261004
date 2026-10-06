@@ -1,0 +1,49 @@
+MoveDef FinalStart
+{
+	Main()
+	{
+		Time_Manipulation(Amount=0x6, Duration=0x1E)
+		ON_FLAG(Variable=RA-Flag[21])
+		FRAME(Frames=28)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x50, KBG=0x64, WBKB=0xC8, BKB=0x0, Size=15, X=0, Y=12, Z=12, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x0, HitBits=0x1, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x0, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=12, Z2=36)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=39)
+		ON_FLAG(Variable=RA-Flag[22])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x7710001)
+		Sound_Effect(SFX=0x7650026)
+		FRAME(Frames=14)
+		Sound_Effect(SFX=0x7710001)
+		FRAME(Frames=28)
+		Sound_Effect(SFX=0x7710001)
+		FRAME(Frames=39)
+		Sound_Effect(SFX=0x7650011)
+		FRAME(Frames=75)
+		Sound_Effect(SFX=0x765005D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=12)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=16)
+		FRAME(Frames=45)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

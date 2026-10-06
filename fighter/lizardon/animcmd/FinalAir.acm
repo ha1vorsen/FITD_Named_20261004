@@ -1,0 +1,39 @@
+MoveDef FinalAir
+{
+	Main()
+	{
+		JUMP(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0xF){
+		    unk_524EF3F5(unknown=0x4210000, unknown=0x0, unknown=0x0, unknown=0x41200000, unknown=0x0, unknown=0x0, unknown=0x42B40000, unknown=0x0, unknown=0x3F800000, unknown=0x0)
+		}
+		Else(Offset=0xD){
+		    unk_524EF3F5(unknown=0x4210000, unknown=0x0, unknown=0x0, unknown=0x41200000, unknown=0x0, unknown=0x0, unknown=0xC2B40000, unknown=0x0, unknown=0x3F800000, unknown=0x0)
+		}
+		Color_Overlay(Red=0, Green=0, Blue=0, Alpha=255)
+		COL_PRI(unknown=0xC8)
+		WAIT(Frames=60)
+		Screen_Tint(TransitionTime=0x0, Red=0xF, Green=0x0, Blue=0x0, Alpha=0x0, Duration=0x32, unknown=0x0, TransitionOutTime=0xFF)
+		WAIT(Frames=40)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+}

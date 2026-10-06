@@ -1,0 +1,23 @@
+MoveDef SpecialAirHi2Start
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xC4AFD48D)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xC4AFD48D)
+		Script_End()
+	}
+
+}

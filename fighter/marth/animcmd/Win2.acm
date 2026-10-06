@@ -1,0 +1,33 @@
+MoveDef Win2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=25)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x3EA, X=-1E-05, Y=-2E-05, Z=9, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		PLAY_SE_NO_3D(unknown=0x490025)
+		FRAME(Frames=23)
+		Sound_Effect(SFX=0x160080)
+		FRAME(Frames=85)
+		Sound_Effect(SFX=0x16005D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=124)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		Script_End()
+	}
+
+}

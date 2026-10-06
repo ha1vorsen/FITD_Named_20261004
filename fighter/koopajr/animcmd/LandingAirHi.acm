@@ -1,0 +1,31 @@
+MoveDef LandingAirHi
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[9])
+		GENERATE_ARTICLE_ENABLE(Unknown=0x0)
+		FRAME(Frames=18)
+		Article_Event(Value=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xBB31D589)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect3(SFX=0x8630012)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

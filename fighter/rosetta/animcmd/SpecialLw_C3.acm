@@ -1,0 +1,39 @@
+MoveDef SpecialLw_C3
+{
+	Main()
+	{
+		FRAME(Frames=35)
+		Set_Frame_Duration(Speed=0.7)
+		FRAME(Frames=40)
+		SCH_CLR_ALL()
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3270000, Bone=0x18, X=0, Y=7.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=47)
+		Terminate_Graphic_Effect(Graphic=0x3270000, unknown=0x0, unknown=0x0)
+		Terminate_Graphic_Effect(Graphic=0x3270001, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x4A40069)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=2)
+		Set_Loop(Iterations=4){
+		    WAIT(Frames=10)
+		    Goto(Offset=-2)
+		}
+		Script_End()
+	}
+
+}

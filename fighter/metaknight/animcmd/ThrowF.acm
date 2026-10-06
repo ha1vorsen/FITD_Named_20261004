@@ -1,0 +1,47 @@
+MoveDef ThrowF
+{
+	Main()
+	{
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=3, Angle=0x41, KBG=0x8C, WBKB=0x0, BKB=0x32, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x8)
+		Throw_Specifier(ID=0x1, Bone=0x0, Damage=3, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x3C, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x8)
+		WAIT(Frames=8)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0xB, Damage=6, Angle=0x28, KBG=0x64, WBKB=0x0, BKB=0xA, Size=6, X=4, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x2)
+		FRAME(Frames=9)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0xB, Damage=6, Angle=0x28, KBG=0x64, WBKB=0x0, BKB=0xA, Size=6, X=4, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x2)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=6, Angle=0x28, KBG=0x64, WBKB=0x0, BKB=0xA, Size=4, X=0, Y=8, Z=10, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=10)
+		Throw_Applier(ID=0x0, Bone=0x1A, Unknown=0x11000005, Unknown=0x11000006, Unknown=0x11000007)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x1A, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=8)
+		Graphic_Effect2(Graphic=0x1000090, Bone=0x0, X=-3, Y=13, Z=1, XRot=3.7, YRot=-11, ZRot=83, Size=1.1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x120)
+		WAIT(Frames=11)
+		Sound_Effect(SFX=0x121)
+		Low_Voice_Clip(unknown=0x80270000)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FT_ATTACK_ABS_CAMERA_QUAKE(unknown=0x0, unknown=0x0)
+		VIS_SET_DEFAULT(unknown=0x1, unknown=0x0)
+		FRAME(Frames=8)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

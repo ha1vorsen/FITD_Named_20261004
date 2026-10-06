@@ -1,0 +1,50 @@
+MoveDef EntryL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Color_Overlay(Red=0, Green=0, Blue=20, Alpha=210)
+		Graphic_Effect2(Graphic=0x32B0031, Bone=0x0, X=0, Y=1, Z=0, XRot=0, YRot=180, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		WAIT(Frames=8)
+		Change_Overlay(Transition=50, Red=200, Green=200, Blue=255, Alpha=0)
+		WAIT(Frames=50)
+		Terminate_Overlays()
+		FRAME(Frames=141)
+		Terminate_Graphic_Effect(Graphic=0x32B0031, unknown=0x1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x24E008A)
+		WAIT(Frames=12)
+		Sound_Effect(SFX=0x24E004E)
+		WAIT(Frames=36)
+		Sound_Effect(SFX=0x24E0050)
+		WAIT(Frames=36)
+		Sound_Effect(SFX=0x24E004E)
+		WAIT(Frames=36)
+		Sound_Effect(SFX=0x24E0050)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		ON_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=10)
+		SET_CURSOR(unknown=0x1)
+		Tag_Visibility(State=0x1)
+		FRAME(Frames=96)
+		OFF_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=100)
+		Slope_Full(unknown=0x6, unknown=0x8)
+		Script_End()
+	}
+
+}

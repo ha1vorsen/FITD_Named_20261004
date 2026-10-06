@@ -1,0 +1,31 @@
+MoveDef FinalAirEnd
+{
+	Main()
+	{
+		Body_Collision(State=0x1)
+		FRAME(Frames=13)
+		ON_FLAG(Variable=RA-Flag[13])
+		End_Screen_Tint(ID=0x0, TransitionOutTime=0xB4)
+		Script_End()
+	}
+
+	Effect()
+	{
+		unk_524EF3F5(unknown=0x4330001, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F666666, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		PLAY_SE_REMAIN(unknown=0xBFC0063)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=16)
+		Script_End()
+	}
+
+}

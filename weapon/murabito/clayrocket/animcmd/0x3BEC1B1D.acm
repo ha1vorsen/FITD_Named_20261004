@@ -1,0 +1,22 @@
+MoveDef 0x3BEC1B1D
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x24C003D)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

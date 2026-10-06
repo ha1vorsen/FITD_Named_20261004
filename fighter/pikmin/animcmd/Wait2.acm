@@ -1,0 +1,22 @@
+MoveDef Wait2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=2)
+		FRAME(Frames=221)
+		Script_End()
+	}
+
+}

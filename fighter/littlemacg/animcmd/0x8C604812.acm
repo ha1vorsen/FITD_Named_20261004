@@ -1,0 +1,23 @@
+MoveDef 0x8C604812
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

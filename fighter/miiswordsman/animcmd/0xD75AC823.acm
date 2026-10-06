@@ -1,0 +1,38 @@
+MoveDef 0xD75AC823
+{
+	Main()
+	{
+		JUMP(Hash=0x8039AA)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=2)
+		External_Graphic_Effect2(Graphic=0x3010011, Bone=0x11, X=4, Y=0, Z=-2, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=18)
+		IS_FLAG(Variable=RA-Flag[14])
+		False(Offset=0x6){
+		    Sound_Effect(SFX=0x81B005C)
+		}
+		Else(Offset=0x4){
+		    Sound_Effect(SFX=0x81B0051)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_C7B586AF(unknown=0, unknown=0, unknown=0)
+		JUMP(Hash=0x8039AA)
+		FRAME(Frames=40)
+		unk_C7B586AF(unknown=0, unknown=30, unknown=10)
+		Script_End()
+	}
+
+}

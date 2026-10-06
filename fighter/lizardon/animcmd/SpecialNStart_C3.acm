@@ -1,0 +1,39 @@
+MoveDef SpecialNStart_C3
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=8)
+		Set_Frame_Duration(Speed=3)
+		FRAME(Frames=10)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		Color_Overlay(Red=255, Green=255, Blue=255, Alpha=140)
+		WAIT(Frames=1)
+		Color_Overlay(Red=255, Green=80, Blue=0, Alpha=200)
+		Change_Overlay(Transition=15, Red=0, Green=0, Blue=0, Alpha=0)
+		WAIT(Frames=15)
+		Terminate_Overlays()
+		FRAME(Frames=17)
+		External_Graphic(Graphic=0x1000010, Bone=0x3E8, X=1.75, Y=2.19999, Z=-0.4, XRot=-5E-05, YRot=0, ZRot=0, Size=0.5, Terminate=0x1)
+		External_Graphic(Graphic=0x1000010, Bone=0x3E8, X=-1.75, Y=2.39999, Z=-0.3, XRot=-5E-05, YRot=0, ZRot=0, Size=0.5, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,23 @@
+MoveDef SpecialAirNBite_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xDE989201)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xDE989201)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

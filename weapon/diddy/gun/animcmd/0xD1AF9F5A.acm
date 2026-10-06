@@ -1,0 +1,21 @@
+MoveDef 0xD1AF9F5A : Unlisted
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

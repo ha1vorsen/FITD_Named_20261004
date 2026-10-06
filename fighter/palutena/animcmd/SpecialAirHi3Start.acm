@@ -1,0 +1,26 @@
+MoveDef SpecialAirHi3Start
+{
+	Main()
+	{
+		JUMP(Hash=0xC4AFD48D)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect6(Graphic=0x32B0005, Bone=0x0, X=6, Y=15, Z=0, XRot=0, YRot=-80, ZRot=0, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xFF30728)
+		Script_End()
+	}
+
+}

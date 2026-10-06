@@ -1,0 +1,24 @@
+MoveDef SpecialAirNHold_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic_Effect2(Graphic=0x3310000, Bone=0x0, X=1, Y=21, Z=8.25, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		LAST_EFFECT_SET_COLOR(unknown=0x42FC0000, unknown=0x437F0000, unknown=0x431C0000)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x339AA5E2)
+		Script_End()
+	}
+
+}

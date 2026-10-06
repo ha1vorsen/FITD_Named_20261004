@@ -1,0 +1,50 @@
+MoveDef SpecialAirSEnd_C2
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=3)
+		Add/Set_Momentum(Horizontal=0, Vertical=0.5, Mode=0x1)
+		SHIELD_ON(Unused=0x3, ID=0x0, Type=0x3)
+		Set_Armor(State=0x1, Threshold=0)
+		FRAME(Frames=2)
+		Add/Set_Momentum(Horizontal=2, Vertical=0, Mode=0x1)
+		FRAME(Frames=3)
+		Add/Set_Momentum(Horizontal=0.5, Vertical=2, Mode=0x1)
+		Set_Frame_Duration(Speed=1)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=11, Angle=0x50, KBG=0x3C, WBKB=0x0, BKB=0x5A, Size=6.2, X=0, Y=4, Z=7, Effect=0x0, Trip=0, Hitlag=2, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0xA, SFXLevel=0x2, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, X2=0, Y2=10, Z2=7)
+		FRAME(Frames=6)
+		Set_Armor(State=0x0, Threshold=0)
+		Remove_All_Hitboxes()
+		Shield_Off2(Unused=0x3, ID=0x0, Type=0x3)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x100001C, Bone=0x0, X=5, Y=15, Z=8, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=1)
+		External_Graphic_Effect2(Graphic=0x3180013, Bone=0x18, X=-2, Y=0, Z=5.5, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		FRAME(Frames=4)
+		External_Graphic(Graphic=0x3180017, Bone=0x0, X=4, Y=12, Z=-3.5, XRot=-33, YRot=25, ZRot=93, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Low_Voice_Clip(unknown=0x800E0009)
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x40032)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x3)
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,35 @@
+MoveDef 0x60EBB201
+{
+	Main()
+	{
+		JUMP(Hash=0xACA0F21E)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x32B0025, Bone=0x13, X=0.5, Y=-3, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=2)
+		Graphic_Effect4(Graphic=0x32B0000, Bone=0x3E8, X=0, Y=8.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=4)
+		External_Graphic_Effect2(Graphic=0x32B0027, Bone=0x3E8, X=0, Y=8.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, Terminate=0x1)
+		FRAME(Frames=6)
+		Graphic_Effect6(Graphic=0x32B0005, Bone=0x0, X=-6, Y=15, Z=6, XRot=0, YRot=90, ZRot=0, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		FRAME(Frames=20)
+		Terminate_Graphic_Effect(Graphic=0x32B0000, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xACA0F21E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xACA0F21E)
+		Script_End()
+	}
+
+}

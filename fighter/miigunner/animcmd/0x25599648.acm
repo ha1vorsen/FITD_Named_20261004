@@ -1,0 +1,34 @@
+MoveDef 0x25599648
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.25)
+		FRAME(Frames=23)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=22)
+		Graphic_Effect3(Graphic=0x1000009, Bone=0x0, X=-5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=23)
+		Graphic_Effect2(Graphic=0x3020008, Bone=0x16, X=10, Y=0.37938, Z=-1.5, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=23)
+		Sound_Effect(SFX=0x81C004B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=23)
+		Script_End()
+	}
+
+}

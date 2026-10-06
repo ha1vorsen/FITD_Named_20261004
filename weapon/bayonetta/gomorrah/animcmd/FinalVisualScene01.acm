@@ -1,0 +1,36 @@
+MoveDef FinalVisualScene01
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=60)
+		External_Graphic(Graphic=0x4380013, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=80)
+		Int_Var_Compare(Variable=LA-Int[7], Method=0x1, Value=0x1)
+		True(Offset=0x13){
+		    External_Graphic(Graphic=0x4380010, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		    unk_8F27D612(unknown=0x3E0F5C29, unknown=0x3E23D70A, unknown=0x3E1EB852)
+		}
+		Else(Offset=0xD){
+		    External_Graphic(Graphic=0x4380010, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		}
+		FRAME(Frames=104)
+		FRAME(Frames=134)
+		FRAME(Frames=160)
+		FRAME(Frames=191)
+		FRAME(Frames=243)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

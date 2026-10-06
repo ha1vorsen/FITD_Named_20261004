@@ -1,0 +1,29 @@
+MoveDef 0x7EEEA050
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		IS_FLAG(Variable=RA-Flag[13])
+		True(Offset=0x6){
+		    Sound_Effect(SFX=0xBFC008E)
+		}
+		Else(Offset=0x4){
+		    Transient_Sound_Effect(SFX=0xBFC004C)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

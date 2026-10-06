@@ -1,0 +1,31 @@
+MoveDef SpecialLwEnd_C2
+{
+	Main()
+	{
+		FRAME(Frames=12)
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=22)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		IS_FLAG(Variable=RA-Flag[17])
+		True(Offset=0xD){
+		    Graphic_Effect4(Graphic=0x32C000F, Bone=0x0, X=0, Y=5, Z=44, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

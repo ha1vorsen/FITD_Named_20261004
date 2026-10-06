@@ -1,0 +1,47 @@
+MoveDef SpecialNSpin_C3
+{
+	Main()
+	{
+		Set_Frame_Speed(Multiplier=50)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect6(Graphic=0x3220000, Bone=0x3E8, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1, Unknown=0x42200000)
+		Set_Loop(Iterations=3){
+		    Color_Overlay(Red=255, Green=255, Blue=255, Alpha=0)
+		    Graphic_Effect2(Graphic=0x1000010, Bone=0x0, X=0, Y=5, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=14, RandomY=14, RandomZ=14, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=100)
+		    Color_Overlay(Red=255, Green=255, Blue=255, Alpha=80)
+		    WAIT(Frames=100)
+		    Terminate_Overlays()
+		    WAIT(Frames=1)
+		    Goto(Offset=-34)
+		}
+		Set_Loop(Iterations=10){
+		    Color_Overlay(Red=128, Green=255, Blue=255, Alpha=60)
+		    Graphic_Effect2(Graphic=0x1000010, Bone=0x0, X=0, Y=5, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=14, RandomY=14, RandomZ=14, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=100)
+		    Color_Overlay(Red=255, Green=255, Blue=255, Alpha=180)
+		    WAIT(Frames=100)
+		    Terminate_Overlays()
+		    WAIT(Frames=1)
+		    Goto(Offset=-34)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		CALL(Hash=0x838686AE)
+		Item_Visibility(State=0x0)
+		Morph_Model_Event(unknown=0x0)
+		Script_End()
+	}
+
+}

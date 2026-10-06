@@ -1,0 +1,48 @@
+MoveDef SpecialLw
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		ON_FLAG(Variable=RA-Flag[14])
+		Body_Collision(State=0x1)
+		FRAME(Frames=17)
+		Body_Collision(State=0x0)
+		FRAME(Frames=36)
+		OFF_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=11)
+		Graphic_Effect2(Graphic=0x31D0005, Bone=0x0, X=0, Y=10, Z=5, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Color_Overlay(Red=255, Green=255, Blue=255, Alpha=190)
+		WAIT(Frames=1)
+		Set_Loop(Iterations=4){
+		    Color_Overlay(Red=180, Green=180, Blue=180, Alpha=130)
+		    WAIT(Frames=2)
+		    Color_Overlay(Red=170, Green=0, Blue=200, Alpha=80)
+		    WAIT(Frames=2)
+		    Terminate_Overlays()
+		    WAIT(Frames=2)
+		    Goto(Offset=-17)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=9)
+		Sound_Effect(SFX=0x24003C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=5)
+		FRAME(Frames=22)
+		Script_End()
+	}
+
+}

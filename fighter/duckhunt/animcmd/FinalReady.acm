@@ -1,0 +1,29 @@
+MoveDef FinalReady
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[22])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x7650014)
+		FRAME(Frames=15)
+		Sound_Effect(SFX=0x765000F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,38 @@
+MoveDef SpecialSTurn_C3
+{
+	Main()
+	{
+		Reverse_Direction()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect6(Graphic=0x3220004, Bone=0x3E8, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		WAIT(Frames=4)
+		Set_Loop(Iterations=-1){
+		    WAIT(Frames=12)
+		    Graphic_Effect3(Graphic=0x1000009, Bone=0x0, X=0, Y=0, Z=5, XRot=0, YRot=180, ZRot=0, Size=0.6, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=12)
+		    Goto(Offset=-21)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x2A0065)
+		Script_End()
+	}
+
+	Expression()
+	{
+		CALL(Hash=0x838686AE)
+		Item_Visibility(State=0x0)
+		Morph_Model_Event(unknown=0x0)
+		FRAME(Frames=21)
+		Script_End()
+	}
+
+}

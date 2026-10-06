@@ -1,0 +1,41 @@
+MoveDef SpecialSHold_C3
+{
+	Main()
+	{
+		Set_Armor(State=0x1, Threshold=0)
+		WAIT(Frames=120)
+		Set_Armor(State=0x0, Threshold=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=-5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=15, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    Graphic_Effect2(Graphic=0x1000010, Bone=0x3E8, X=0, Y=10, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=3, RandomY=10, RandomZ=3, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=3)
+		    Graphic_Effect2(Graphic=0x1000010, Bone=0x3E8, X=0, Y=10, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.75, RandomX=3, RandomY=10, RandomZ=3, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=2)
+		    Color_Overlay(Red=200, Green=200, Blue=50, Alpha=100)
+		    Graphic_Effect2(Graphic=0x1000010, Bone=0x3E8, X=0, Y=10, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=3, RandomY=10, RandomZ=3, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=3)
+		    Graphic_Effect2(Graphic=0x1000010, Bone=0x3E8, X=0, Y=10, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.75, RandomX=3, RandomY=10, RandomZ=3, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=2)
+		    Terminate_Overlays()
+		    Goto(Offset=-99)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		WAIT(Frames=105)
+		Script_End()
+	}
+
+}

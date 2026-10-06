@@ -1,0 +1,65 @@
+MoveDef SpecialAirLw_C2
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		ON_FLAG(Variable=RA-Flag[15])
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=0, Angle=0x169, KBG=0x64, WBKB=0x28, BKB=0x0, Size=10, X=0, Y=8.5, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x0, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x4, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x1, Flinchless=0x1, StretchToggle=0x0)
+		FRAME(Frames=34)
+		Remove_All_Hitboxes()
+		FRAME(Frames=44)
+		Add_Momentum(Horizontal=0, Vertical=1.5)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=6, Angle=0x30, KBG=0x78, WBKB=0x0, BKB=0x5A, Size=14, X=0, Y=9, Z=0, Effect=0x0, Trip=0, Hitlag=2, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD)
+		FRAME(Frames=45)
+		ON_FLAG(Variable=RA-Flag[14])
+		OFF_FLAG(Variable=RA-Flag[15])
+		ON_FLAG(Variable=LA-Flag[122])
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=50)
+		Remove_All_Hitboxes()
+		FRAME(Frames=60)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=9)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x30B0004, GFXLeft=0x30B0004, Bone=0x0, X=0x0, Y=0x41100000, Z=0x0, XRot=0x0, YRot=0x43340000, ZRot=0x0, Size=0x3F800000, Terminate=0x1, unknown=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1.05)
+		FRAME(Frames=44)
+		Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=0, Y=9, Z=0, XRot=0, YRot=0, ZRot=0, Size=3.4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x0)
+		LAST_EFFECT_SET_RATE(unknown=0.7)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0xD0096)
+		WAIT(Frames=3.5)
+		WAIT(Frames=3.5)
+		WAIT(Frames=3.5)
+		WAIT(Frames=3.5)
+		WAIT(Frames=3.5)
+		WAIT(Frames=3.5)
+		WAIT(Frames=3.5)
+		WAIT(Frames=3.5)
+		WAIT(Frames=9)
+		Sound_Effect(SFX=0xD008E)
+		Sound_Effect(SFX=0x410005)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=7)
+		Slope_Full(unknown=0x1, unknown=0x3)
+		FRAME(Frames=37)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		FRAME(Frames=42)
+		Script_End()
+	}
+
+}

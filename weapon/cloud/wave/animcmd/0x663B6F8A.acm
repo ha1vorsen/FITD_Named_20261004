@@ -1,0 +1,27 @@
+MoveDef 0x663B6F8A
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		IS_FLAG(Variable=LA-Flag[4])
+		True(Offset=0x15){
+		    Graphic_Effect2(Graphic=0x3370018, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Else(Offset=0x13){
+		    Graphic_Effect2(Graphic=0x3370019, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

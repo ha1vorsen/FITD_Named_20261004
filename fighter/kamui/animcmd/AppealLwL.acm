@@ -1,0 +1,30 @@
+MoveDef AppealLwL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=24)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x19, X=0, Y=11, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=34)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x19, X=0, Y=11, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=68)
+		Graphic_Effect3(Graphic=0x339001C, Bone=0x0, X=-1, Y=0, Z=6, XRot=0, YRot=0, ZRot=0, Size=0.35, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xFF0A8538)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xFF0A8538)
+		Script_End()
+	}
+
+}

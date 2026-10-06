@@ -1,0 +1,38 @@
+MoveDef SpecialLwShoot_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=1.8)
+		FRAME(Frames=18)
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=20)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=12)
+		Graphic_Effect3(Graphic=0x100000C, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		External_Graphic(Graphic=0x3320015, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=-1E-05, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=13)
+		Sound_Effect(SFX=0x23D0033)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_BE0C4A94(unknown=0x0, unknown=0x0, unknown=0x0)
+		unk_BE0C4A94(unknown=0x1, unknown=0x0, unknown=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=13)
+		Script_End()
+	}
+
+}

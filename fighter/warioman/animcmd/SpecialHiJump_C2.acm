@@ -1,0 +1,37 @@
+MoveDef SpecialHiJump_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Color_Overlay(Red=255, Green=255, Blue=255, Alpha=190)
+		FRAME(Frames=3)
+		Color_Overlay(Red=255, Green=240, Blue=128, Alpha=80)
+		FRAME(Frames=5)
+		Change_Overlay(Transition=26, Red=255, Green=0, Blue=0, Alpha=0)
+		External_Graphic(Graphic=0x3160023, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		EFFECT_FOLLOW_COLOR(unknown=0x3160009, unknown=0x0, unknown=0x0, unknown=0x41200000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x0, unknown=0x43000000, unknown=0x437F0000, unknown=0x434C0000)
+		FRAME(Frames=20)
+		Terminate_Graphic_Effect(Graphic=0x3160023, unknown=0x0, unknown=0x0)
+		FRAME(Frames=31)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x76A005D)
+		Transient_Sound_Effect(SFX=0x7760008)
+		WAIT(Frames=20)
+		Sound_Effect(SFX=0x76A0052)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

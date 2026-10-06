@@ -1,0 +1,68 @@
+MoveDef AttackLw4
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		ON_FLAG(Variable=RA-Flag[27])
+		FRAME(Frames=8)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=6, Angle=0x46, KBG=0x50, WBKB=0x0, BKB=0x0, Size=4, X=0, Y=3, Z=10, Effect=0xB, Trip=0, Hitlag=1, SDI=0, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=1)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=3, Angle=0x46, KBG=0x32, WBKB=0x0, BKB=0x0, Size=6, X=0, Y=3, Z=9, Effect=0xB, Trip=0, Hitlag=0, SDI=0, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x2, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=29)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=6, Angle=0x46, KBG=0x50, WBKB=0x0, BKB=0x0, Size=4, X=0, Y=3, Z=-10, Effect=0xB, Trip=0, Hitlag=1, SDI=0, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=1)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=3, Angle=0x46, KBG=0x32, WBKB=0x0, BKB=0x0, Size=6, X=0, Y=3, Z=-9, Effect=0xB, Trip=0, Hitlag=0, SDI=0, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x2, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		WAIT(Frames=2)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x19, X=0, Y=0, Z=15, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=4, RandomY=4, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=8)
+		Graphic_Effect2(Graphic=0x32A000A, Bone=0x0, X=10, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=2, RandomY=2, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=10, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=2, RandomY=2, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=29)
+		Graphic_Effect2(Graphic=0x32A000A, Bone=0x0, X=-10, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=2, RandomY=2, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=-10, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=2, RandomY=2, RandomZ=2, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Stop_Sound_Effect(SFX=0x69)
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x24C0023)
+		FRAME(Frames=27)
+		Sound_Effect(SFX=0x24C0023)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x4)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=1)
+		VIS_SET_DEFAULT(unknown=0x0, unknown=0x1)
+		FRAME(Frames=3)
+		EXECUTE(Unknown=3)
+		IS_FLAG(Variable=RA-Flag[28])
+		True(Offset=0x7){
+		    Slope_Full(unknown=0x1, unknown=0x3)
+		    Item_Visibility(State=0x0)
+		}
+		FRAME(Frames=6)
+		FRAME(Frames=27)
+		FRAME(Frames=44)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		FRAME(Frames=47)
+		VIS_SET_DEFAULT(unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+}

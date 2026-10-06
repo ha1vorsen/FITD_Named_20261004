@@ -1,0 +1,29 @@
+MoveDef 0x249C3144
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x100039)
+		FRAME(Frames=13)
+		unk_01A5A27C(unknown=0x10006A, unknown=0x10006C)
+		FRAME(Frames=20)
+		unk_01A5A27C(unknown=0x10006C, unknown=0x10006A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=17)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

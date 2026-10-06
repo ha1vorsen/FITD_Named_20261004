@@ -1,0 +1,27 @@
+MoveDef 0x7896E2B8
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=0)
+		Sound_Effect(SFX=0xC1)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Morph_Model_Event(unknown=0x0)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		CALL(Hash=0x28AE459B)
+		Script_End()
+	}
+
+}

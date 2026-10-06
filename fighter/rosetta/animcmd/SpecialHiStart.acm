@@ -1,0 +1,22 @@
+MoveDef SpecialHiStart
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

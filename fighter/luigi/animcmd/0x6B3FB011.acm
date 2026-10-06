@@ -1,0 +1,38 @@
+MoveDef 0x6B3FB011
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x2CF0167A)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		WAIT(Frames=1)
+		Low_Voice_Clip(unknown=0x800B0007)
+		Sound_Effect(SFX=0xD0030)
+		WAIT(Frames=8)
+		Sound_Effect(SFX=0x6D)
+		WAIT(Frames=12)
+		Sound_Effect(SFX=0x6D)
+		WAIT(Frames=12)
+		Sound_Effect(SFX=0x6D)
+		WAIT(Frames=12)
+		Sound_Effect(SFX=0x6E)
+		WAIT(Frames=12)
+		Sound_Effect(SFX=0x6E)
+		WAIT(Frames=12)
+		Sound_Effect(SFX=0x6E)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

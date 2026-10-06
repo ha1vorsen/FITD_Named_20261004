@@ -1,0 +1,43 @@
+MoveDef AttackAirF
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=8)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=9, Angle=0x169, KBG=0x62, WBKB=0x0, BKB=0x1E, Size=4.5, X=0, Y=4, Z=9, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=9, Angle=0x169, KBG=0x62, WBKB=0x0, BKB=0x1E, Size=3.2, X=0, Y=4, Z=3, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		WAIT(Frames=2)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=6, Angle=0x169, KBG=0x46, WBKB=0x0, BKB=0x1E, Size=4.5, X=0, Y=4, Z=8, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=6, Angle=0x169, KBG=0x46, WBKB=0x0, BKB=0x1E, Size=3.2, X=0, Y=4, Z=3, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		FRAME(Frames=21)
+		Remove_All_Hitboxes()
+		FRAME(Frames=28)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=7)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x100008D, GFXLeft=0x100008D, Bone=0x0, X=0xBF800000, Y=0x40866666, Z=0xBF800000, XRot=0x0, YRot=0x0, ZRot=0x0, Size=0x3F59999A, Terminate=0x1, unknown=0x1)
+		FRAME(Frames=8)
+		Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=13, Y=4.2, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Low_Voice_Clip(unknown=0x80230000)
+		Sound_Effect(SFX=0x26005E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,24 @@
+MoveDef SpecialHiHit_C3
+{
+	Main()
+	{
+		Set_Armor(State=0x0, Threshold=0)
+		Undo_Bone_Collision(State=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x4)
+		Script_End()
+	}
+
+}

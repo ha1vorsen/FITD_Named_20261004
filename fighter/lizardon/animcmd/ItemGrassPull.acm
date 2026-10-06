@@ -1,0 +1,34 @@
+MoveDef ItemGrassPull
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		SET_INT(Value=0x2, Variable=RA-Int[3])
+		FRAME(Frames=12)
+		SET_INT(Value=0x3, Variable=RA-Int[3])
+		FRAME(Frames=15)
+		ON_FLAG(Variable=RA-Flag[14])
+		SET_INT(Value=0x4, Variable=RA-Int[7])
+		FRAME(Frames=18)
+		SET_INT(Value=0x4, Variable=RA-Int[3])
+		FRAME(Frames=30)
+		SET_INT(Value=0x5, Variable=RA-Int[3])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=14)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

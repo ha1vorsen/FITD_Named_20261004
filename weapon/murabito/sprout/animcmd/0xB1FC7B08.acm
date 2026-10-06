@@ -1,0 +1,21 @@
+MoveDef 0xB1FC7B08
+{
+	Main()
+	{
+		Set_Model_Scale(Scale=1.2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

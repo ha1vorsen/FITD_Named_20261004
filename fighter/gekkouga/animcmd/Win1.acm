@@ -1,0 +1,54 @@
+MoveDef Win1
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=32)
+		Graphic_Effect2(Graphic=0x3300001, Bone=0x0, X=-4, Y=9.5, Z=3, XRot=0, YRot=0, ZRot=0, Size=0.45, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=40)
+		Graphic_Effect2(Graphic=0x3300001, Bone=0x0, X=-4, Y=8.5, Z=3, XRot=0, YRot=0, ZRot=0, Size=0.45, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=49)
+		Graphic_Effect2(Graphic=0x3300001, Bone=0x0, X=-4, Y=9, Z=3, XRot=0, YRot=0, ZRot=0, Size=0.45, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=59)
+		Graphic_Effect2(Graphic=0x3300001, Bone=0x0, X=-4, Y=8, Z=3, XRot=0, YRot=0, ZRot=0, Size=0.45, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=68)
+		Graphic_Effect2(Graphic=0x3300001, Bone=0x0, X=-5, Y=8, Z=5, XRot=0, YRot=0, ZRot=0, Size=0.45, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=95)
+		Graphic_Effect(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=110)
+		Graphic_Effect2(Graphic=0x3300001, Bone=0x0, X=-5, Y=11, Z=3.5, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=30)
+		PLAY_SE_NO_3D(unknown=0x7740023)
+		FRAME(Frames=39)
+		Sound_Effect(SFX=0x7680018)
+		Sound_Effect(SFX=0x768005A)
+		FRAME(Frames=48)
+		Sound_Effect(SFX=0x7680018)
+		Sound_Effect(SFX=0x768005A)
+		FRAME(Frames=57)
+		Sound_Effect(SFX=0x7680018)
+		Sound_Effect(SFX=0x768005A)
+		FRAME(Frames=66)
+		Sound_Effect(SFX=0x7680018)
+		Sound_Effect(SFX=0x768005A)
+		FRAME(Frames=81)
+		Sound_Effect(SFX=0x7680019)
+		Sound_Effect(SFX=0x768005A)
+		FRAME(Frames=96)
+		Sound_Effect(SFX=0x7680012)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,59 @@
+MoveDef Final
+{
+	Main()
+	{
+		Time_Manipulation(Amount=0x5, Duration=0x1E)
+		FRAME(Frames=20)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=3, Angle=0x50, KBG=0x64, WBKB=0xC8, BKB=0x0, Size=18, X=0, Y=12, Z=25, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0, HitBits=0x1, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x0, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x1, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x42F0002, Bone=0x0, X=0.5, Y=13, Z=24, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=23)
+		IS_FLAG(Variable=RA-Flag[13])
+		True(Offset=0x24){
+		    Terminate_Graphic_Effect(Graphic=0x42F0002, unknown=0x0, unknown=0x0)
+		    Graphic_Effect2(Graphic=0x42F0000, Bone=0x0, X=0.5, Y=13, Z=24, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    FRAME(Frames=30)
+		    Screen_Tint(TransitionTime=0x1, Red=0x32, Green=0xFF, Blue=0xFF, Alpha=0xFF, Duration=0xFF, unknown=0x7, TransitionOutTime=0xFF)
+		}
+		Else(Offset=0x13){
+		    Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Int_Var_Compare(Variable=RA-Int[7], Method=0x0, Value=0x0)
+		True(Offset=0x8){
+		    Sound_Effect(SFX=0x7730015)
+		    Sound_Effect(SFX=0x91A0009)
+		}
+		Else(Offset=0x6){
+		    Sound_Effect(SFX=0x7730016)
+		    Sound_Effect(SFX=0x91A0009)
+		}
+		FRAME(Frames=55)
+		Stop_Sound_Effect(SFX=0x91A0009)
+		Sound_Effect(SFX=0x91A000A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Slope_Full(unknown=0x6, unknown=0x8)
+		unk_EE37008F()
+		FRAME(Frames=6)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		FRAME(Frames=71)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		Script_End()
+	}
+
+}

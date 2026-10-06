@@ -1,0 +1,26 @@
+MoveDef SpecialAirNEnd
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x179E4623)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		REG_LANDING_SE(unknown=0x6E0001D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

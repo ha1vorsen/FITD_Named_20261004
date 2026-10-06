@@ -1,0 +1,22 @@
+MoveDef SpecialSDown
+{
+	Main()
+	{
+		FRAME(Frames=47)
+		ON_FLAG(Variable=RA-Flag[17])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

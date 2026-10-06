@@ -1,0 +1,47 @@
+MoveDef SpecialAirS_C2
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		Add_Momentum(Horizontal=0, Vertical=1)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=4, Angle=0x4B, KBG=0x6E, WBKB=0x32, BKB=0x0, Size=5.4, X=0, Y=4.3, Z=11.5, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xB)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=4, Angle=0x4B, KBG=0x6E, WBKB=0x32, BKB=0x0, Size=3.2, X=0, Y=4.3, Z=5.5, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xB)
+		Set_Weight_All_Hitboxes(Flag=0x1)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=25)
+		Add_Momentum(Horizontal=0, Vertical=1.5)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=15, Angle=0x4B, KBG=0x4E, WBKB=0x0, BKB=0x37, Size=3.2, X=0, Y=4.3, Z=5.5, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xB)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=17, Angle=0x4B, KBG=0x4E, WBKB=0x0, BKB=0x37, Size=5.4, X=0, Y=4.3, Z=11.5, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xB)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=53)
+		Remove_Article(Article=0x15)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x3F0001)
+		Sound_Effect(SFX=0xA00CB)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=1)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=9)
+		FRAME(Frames=23)
+		FRAME(Frames=46)
+		Slope_Full(unknown=0x6, unknown=0xF)
+		Script_End()
+	}
+
+}

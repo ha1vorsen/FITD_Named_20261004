@@ -1,0 +1,40 @@
+MoveDef 0xF39B17EB
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=23)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x15){
+		    Graphic_Effect2(Graphic=0x1000018, Bone=0x12, X=0, Y=7, Z=2, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Else(Offset=0x13){
+		    Graphic_Effect2(Graphic=0x1000018, Bone=0x12, X=0, Y=7, Z=-2, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=23)
+		PLAY_SE_REMAIN(unknown=0x4F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=11)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=23)
+		FRAME(Frames=30)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

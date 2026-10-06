@@ -1,0 +1,26 @@
+MoveDef SpecialLwLanding
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xB4B974FD)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x2, ChangerState=0x1)
+		SLOPE(unknown=0x6)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=2)
+		Script_End()
+	}
+
+}

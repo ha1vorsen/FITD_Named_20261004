@@ -1,0 +1,30 @@
+MoveDef VisualScene02
+{
+	Main()
+	{
+		SA_SET(Unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=36)
+		PLAY_SE_NO_3D(unknown=0xE0084)
+		WAIT(Frames=45)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Morph_Model_Event(unknown=0x0)
+		unk_A82038A0()
+		FRAME(Frames=45)
+		Script_End()
+	}
+
+}

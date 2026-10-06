@@ -1,0 +1,27 @@
+MoveDef AppealSL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Transient_Sound_Effect(SFX=0x4D001C)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x1A0082)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=58)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

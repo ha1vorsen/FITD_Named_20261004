@@ -1,0 +1,65 @@
+MoveDef SpecialLw_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=10)
+		Set_Frame_Duration(Speed=1)
+		ON_FLAG(Variable=RA-Flag[15])
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=10, Angle=0x1E, KBG=0x41, WBKB=0x0, BKB=0x3C, Size=4.5, X=0, Y=8, Z=10, Effect=0x0, Trip=0, Hitlag=2, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0xF, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=10, Angle=0x1E, KBG=0x41, WBKB=0x0, BKB=0x3C, Size=4.5, X=0, Y=8, Z=-10, Effect=0x0, Trip=0, Hitlag=2, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0xF, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=0, Angle=0x28, KBG=0x3C, WBKB=0x0, BKB=0x14, Size=8, X=0, Y=8, Z=0, Effect=0x0, Trip=0, Hitlag=0, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x0, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0xF, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x1, Flinchless=0x1, StretchToggle=0x0)
+		FRAME(Frames=34)
+		Set_Frame_Duration(Speed=2)
+		Remove_All_Hitboxes()
+		ON_FLAG(Variable=RA-Flag[14])
+		OFF_FLAG(Variable=RA-Flag[15])
+		FRAME(Frames=40)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=12, Angle=0x55, KBG=0x64, WBKB=0x0, BKB=0x46, Size=9.5, X=0, Y=11.5, Z=0, Effect=0x0, Trip=0, Hitlag=0.5, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		FRAME(Frames=55)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=9)
+		FRAME(Frames=14)
+		FRAME(Frames=15)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x3240008, GFXLeft=0x3240008, Bone=0x0, X=0x0, Y=0x40E00000, Z=0x0, XRot=0x0, YRot=0x43340000, ZRot=0x0, Size=0x3F800000, Terminate=0x1, unknown=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1.2)
+		FRAME(Frames=16)
+		LANDING_EFFECT_FLIP(GFXRight=0x100000D, GFXLeft=0x100000E, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0, unknown=0x0)
+		FRAME(Frames=21)
+		EFFECT_FOLLOW_FLIP_COLOR(unknown=0x1000023, unknown=0x1000023, unknown=0x0, unknown=0x0, unknown=0x41000000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3FC00000, unknown=0x1, unknown=0x1, unknown=0x42C80000, unknown=0x43340000, unknown=0x437F0000)
+		FRAME(Frames=40)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x3240009, GFXLeft=0x3240009, Bone=0x0, X=0x0, Y=0x41400000, Z=0x0, XRot=0x0, YRot=0x0, ZRot=0x0, Size=0x3F800000, Terminate=0x1, unknown=0x1)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		Sound_Effect(SFX=0x7600056)
+		WAIT(Frames=28)
+		Sound_Effect(SFX=0x7600058)
+		Sound_Effect(SFX=0x7600059)
+		Sound_Effect(SFX=0x76B0022)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=7)
+		Slope_Full(unknown=0x1, unknown=0x3)
+		FRAME(Frames=37)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		FRAME(Frames=39)
+		Script_End()
+	}
+
+}

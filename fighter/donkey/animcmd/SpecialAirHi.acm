@@ -1,0 +1,84 @@
+MoveDef SpecialAirHi
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[17])
+		WAIT(Frames=4)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=10, Angle=0x169, KBG=0x50, WBKB=0x0, BKB=0x28, Size=7.7, X=0, Y=12, Z=-7, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x2, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=10, Angle=0x169, KBG=0x50, WBKB=0x0, BKB=0x28, Size=7.7, X=0, Y=12, Z=4, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x2, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD)
+		FRAME(Frames=7)
+		Remove_All_Hitboxes()
+		FRAME(Frames=12)
+		Set_Bone_Intangibility(Bone=0x16, Mode=0x2)
+		Set_Bone_Intangibility(Bone=0x10, Mode=0x2)
+		Set_Loop(Iterations=4){
+		    Hitbox(ID=0x0, Part=0x0, Bone=0x10, Damage=5, Angle=0x169, KBG=0x46, WBKB=0x0, BKB=0x14, Size=5, X=6, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x2, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD)
+		    Hitbox(ID=0x1, Part=0x0, Bone=0x16, Damage=5, Angle=0x169, KBG=0x46, WBKB=0x0, BKB=0x14, Size=5, X=6, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x2, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD)
+		    Hitbox(ID=0x2, Part=0x0, Bone=0x10, Damage=4, Angle=0x169, KBG=0x46, WBKB=0x0, BKB=0x14, Size=3.7, X=-4, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x2, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD)
+		    Hitbox(ID=0x3, Part=0x0, Bone=0x16, Damage=4, Angle=0x169, KBG=0x46, WBKB=0x0, BKB=0x14, Size=3.7, X=-4, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x2, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD)
+		    WAIT(Frames=8)
+		    ON_FLAG(Variable=RA-Flag[15])
+		    Remove_All_Hitboxes()
+		    Goto(Offset=-105)
+		}
+		Undo_Bone_Collision(State=0x0)
+		FRAME(Frames=44)
+		Set_Loop(Iterations=3){
+		    Hitbox(ID=0x0, Part=0x0, Bone=0x10, Damage=2, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x0, Size=5, X=6, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x0, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD)
+		    Hitbox(ID=0x1, Part=0x0, Bone=0x16, Damage=2, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x0, Size=5, X=6, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x0, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD)
+		    Hitbox(ID=0x2, Part=0x0, Bone=0x10, Damage=2, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x0, Size=3.7, X=-4, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x0, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD)
+		    Hitbox(ID=0x3, Part=0x0, Bone=0x16, Damage=2, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x0, Size=3.7, X=-4, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x0, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD)
+		    WAIT(Frames=8)
+		    Remove_All_Hitboxes()
+		    Goto(Offset=-103)
+		}
+		ON_FLAG(Variable=RA-Flag[14])
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x1000008, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=9)
+		Set_Loop(Iterations=4){
+		    Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    External_Graphic(Graphic=0x1000023, Bone=0x2, X=5, Y=-5, Z=0, XRot=0, YRot=0, ZRot=0, Size=2.6, Terminate=0x1)
+		    WAIT(Frames=20)
+		    Goto(Offset=-30)
+		}
+		Terminate_Graphic_Effect(Graphic=0x1000023, unknown=0x1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Transient_Sound_Effect(SFX=0x70044)
+		WAIT(Frames=10)
+		Sound_Effect(SFX=0x70046)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x70047)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x70082)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x70083)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x70083)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x70083)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x70083)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x70083)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=81)
+		Slope_Full(unknown=0x6, unknown=0x5)
+		Script_End()
+	}
+
+}

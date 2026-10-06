@@ -1,0 +1,32 @@
+MoveDef 0x9CFCB309
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=6)
+		Graphic_Effect3(Graphic=0x1000026, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x3F0013)
+		Sound_Effect(SFX=0x6007A)
+		Sound_Effect(SFX=0x60036)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=6)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

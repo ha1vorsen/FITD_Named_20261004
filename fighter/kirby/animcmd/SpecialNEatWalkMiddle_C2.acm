@@ -1,0 +1,31 @@
+MoveDef SpecialNEatWalkMiddle_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=13)
+		unk_01A5A27C(unknown=0xA006A, unknown=0xA006C)
+		WAIT(Frames=25)
+		unk_01A5A27C(unknown=0xA006C, unknown=0xA006A)
+		Loop_Rest()
+		JUMP(Hash=0x9AC70895)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=14)
+		FRAME(Frames=39)
+		Loop_Rest()
+		JUMP(Hash=0x9AC70895)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,28 @@
+MoveDef FuraSleepEnd
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Graphic_Effect2(Graphic=0x100002D, Bone=0x0, X=0, Y=12, Z=10, XRot=0, YRot=0, ZRot=0, Size=1.6, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		unk_040FD56E(unknown=0x1, unknown=0x6, unknown=0x1)
+		FRAME(Frames=2)
+		Slope_Full(unknown=0x0, unknown=0x2)
+		FRAME(Frames=4)
+		Slope_Full(unknown=0x9, unknown=0x2)
+		Script_End()
+	}
+
+}

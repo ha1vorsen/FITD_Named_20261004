@@ -1,0 +1,34 @@
+MoveDef FinalAirEnd
+{
+	Main()
+	{
+		JUMP(Hash=0x7569EDAC)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Terminate_Graphic_Effect(Graphic=0x4250004, unknown=0x0, unknown=0x0)
+		Graphic_Effect4(Graphic=0x4250008, Bone=0x0, X=0, Y=0, Z=12, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=2)
+		Sword_Trace(TraceID=0xBF, BlurLen=1.961818E-44, Bone1=0x3EA, X=0, Y=0, Z=0.5, Bone2=0x3EA, X=-1E-05, Y=-2E-05, Z=12.2, Anchored=0x1, Graphic=0x3250000, Bone3=0x3EA, X=0, Y=0, Z=0, RotX=0.00013, RotY=-7E-05, RotZ=0.00011, Length=1)
+		FRAME(Frames=3)
+		Graphic_Effect2(Graphic=0x4250005, Bone=0x0, X=0, Y=10, Z=0, XRot=5, YRot=0, ZRot=5, Size=3, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=6)
+		Script_End()
+	}
+
+	Sound()
+	{
+		WAIT(Frames=3)
+		PLAY_SE_REMAIN(unknown=0x761000E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x7569EDAC)
+		Script_End()
+	}
+
+}

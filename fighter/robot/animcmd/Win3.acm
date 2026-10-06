@@ -1,0 +1,38 @@
+MoveDef Win3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=10){
+		    External_Graphic(Graphic=0x100007C, Bone=0x42B, X=1.5, Y=4.8, Z=1.250002, XRot=-97.49999, YRot=-90, ZRot=0, Size=0.5, Terminate=0x1)
+		    External_Graphic(Graphic=0x100007C, Bone=0x42B, X=1.5, Y=4.8, Z=-1.249998, XRot=-97.49999, YRot=-90, ZRot=0, Size=0.5, Terminate=0x1)
+		    WAIT(Frames=10)
+		    Goto(Offset=-24)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Transient_Sound_Effect(SFX=0x25007B)
+		WAIT(Frames=23)
+		STOP_SE_STATUS()
+		Transient_Sound_Effect(SFX=0x250082)
+		WAIT(Frames=72)
+		STOP_SE_STATUS()
+		WAIT(Frames=11)
+		Transient_Sound_Effect(SFX=0x25007D)
+		WAIT(Frames=12)
+		STOP_SE_STATUS()
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

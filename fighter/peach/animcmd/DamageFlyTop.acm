@@ -1,0 +1,22 @@
+MoveDef DamageFlyTop
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		PLAY_FLY_VOICE(unknown=0x800D0009, unknown=0x800D000A)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

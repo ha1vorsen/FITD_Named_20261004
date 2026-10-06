@@ -1,0 +1,25 @@
+MoveDef JumpAerialF4
+{
+	Main()
+	{
+		FRAME(Frames=29)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x26006C)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

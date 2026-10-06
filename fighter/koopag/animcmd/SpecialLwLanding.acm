@@ -1,0 +1,37 @@
+MoveDef SpecialLwLanding
+{
+	Main()
+	{
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=18, Angle=0x4C, KBG=0x48, WBKB=0x0, BKB=0x3C, Size=22, X=0, Y=6, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x5, SFXLevel=0x1, SFXType=0x2, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x2, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x1000038, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2.4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Graphic_Effect2(Graphic=0x1000029, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=3, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Graphic_Effect2(Graphic=0x1000008, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=0)
+		Stop_Sound_Effect(SFX=0x6E00032)
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x6E00033)
+		Script_End()
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x5)
+		FRAME(Frames=2)
+		FRAME(Frames=35)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

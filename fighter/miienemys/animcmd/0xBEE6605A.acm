@@ -1,0 +1,25 @@
+MoveDef 0xBEE6605A : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=31)
+		SLOPE(unknown=0x4)
+		FRAME(Frames=45)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,30 @@
+MoveDef SpecialAirS2Lw
+{
+	Main()
+	{
+		JUMP(Hash=0x6A96D208)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x6A96D208)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x761003F)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x76C0011)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x6A96D208)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,29 @@
+MoveDef SpecialAirNShoot
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x135C86F7)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x1E0043)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x135C86F7)
+		Script_End()
+	}
+
+}

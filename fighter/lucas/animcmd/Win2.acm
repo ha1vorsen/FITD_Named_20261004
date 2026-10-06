@@ -1,0 +1,38 @@
+MoveDef Win2
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=10)
+		Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=-2, Y=0, Z=-10, XRot=0, YRot=-110, ZRot=0, Size=0.6, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=36)
+		Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=-2.5, Y=0, Z=-10.5, XRot=0, YRot=-110, ZRot=0, Size=0.6, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=66)
+		Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=-1.5, Y=0, Z=-11, XRot=0, YRot=-110, ZRot=0, Size=0.6, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=0.8)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x1D00AC)
+		FRAME(Frames=32)
+		Sound_Effect(SFX=0x1D00AC)
+		FRAME(Frames=64)
+		Sound_Effect(SFX=0x1D00AC)
+		FRAME(Frames=115)
+		Sound_Effect(SFX=0x50002C)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

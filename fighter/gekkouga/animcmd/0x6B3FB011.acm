@@ -1,0 +1,28 @@
+MoveDef 0x6B3FB011
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		OFF_FLAG(Variable=LA-Flag[130])
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x2CF0167A)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Low_Voice_Clip(unknown=0x80380004)
+		Sound_Effect(SFX=0x768000F)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

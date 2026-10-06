@@ -1,0 +1,33 @@
+MoveDef SpecialSStickJump2_C3
+{
+	Main()
+	{
+		Throw_Specifier(ID=0x1, Bone=0x0, Damage=2, Angle=0x169, KBG=0x32, WBKB=0x0, BKB=0x0, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=7.5, Angle=0x10E, KBG=0x64, WBKB=0x0, BKB=0x5, Effect=0xB, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		Throw_Applier(ID=0x0, Bone=0x1A, Unknown=0x11000003, Unknown=0x11000004, Unknown=0x11000005)
+		Set_Kinetic_Handler(ID=0x0)
+		Set_Edge_Slide(State=0x5)
+		SA_SET(Unknown=0x2)
+		STRANS_ON(STransID=STrans-Int[154])
+		Add/Subtract_Momentum(Horizontal=0.5, Vertical=3.6)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x100001A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0xA9)
+		Sound_Effect(SFX=0x1E0027)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

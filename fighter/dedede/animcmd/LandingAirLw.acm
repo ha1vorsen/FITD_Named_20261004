@@ -1,0 +1,28 @@
+MoveDef LandingAirLw
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xBB31D589)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect3(SFX=0x60018)
+		Script_End()
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x4)
+		FRAME(Frames=23)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

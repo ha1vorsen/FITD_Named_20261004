@@ -1,0 +1,40 @@
+MoveDef SpecialAirS_C2
+{
+	Main()
+	{
+		OFF_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=4)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=6)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=16)
+		Add/Set_Momentum(Horizontal=0, Vertical=0.3, Mode=0x1)
+		FRAME(Frames=21)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=2, Angle=0x32, KBG=0x64, WBKB=0x32, BKB=0x0, Size=6, X=0, Y=8, Z=14, Effect=0x0, Trip=0, Hitlag=0.8, SDI=0, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x7, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x2, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=8, Z2=9.5)
+		FRAME(Frames=22)
+		JUMP(Hash=0xD8F8BB0D)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xABB723AB)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xABB723AB)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=18)
+		FRAME(Frames=44)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,23 @@
+MoveDef SpecialAirNOpenWait_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xB28199EF)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xB28199EF)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

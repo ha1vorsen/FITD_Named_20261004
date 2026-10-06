@@ -1,0 +1,23 @@
+MoveDef 0xFF03B789 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		ATTACK_SE()
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x751B9558)
+		Script_End()
+	}
+
+}

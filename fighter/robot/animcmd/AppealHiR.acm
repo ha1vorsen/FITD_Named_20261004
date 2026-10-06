@@ -1,0 +1,52 @@
+MoveDef AppealHiR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Transient_Sound_Effect(SFX=0x25007D)
+		WAIT(Frames=9)
+		STOP_SE_STATUS()
+		WAIT(Frames=1)
+		Transient_Sound_Effect(SFX=0x25007C)
+		WAIT(Frames=9)
+		STOP_SE_STATUS()
+		WAIT(Frames=21)
+		Transient_Sound_Effect(SFX=0x25007D)
+		Transient_Sound_Effect(SFX=0x250079)
+		WAIT(Frames=40)
+		STOP_SE_STATUS()
+		WAIT(Frames=10)
+		Transient_Sound_Effect(SFX=0x25007D)
+		Transient_Sound_Effect(SFX=0x250079)
+		WAIT(Frames=10)
+		STOP_SE_STATUS()
+		WAIT(Frames=10)
+		Transient_Sound_Effect(SFX=0x25007C)
+		WAIT(Frames=8)
+		STOP_SE_STATUS()
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x9)
+		FRAME(Frames=2)
+		Slope_Full(unknown=0x0, unknown=0x5)
+		FRAME(Frames=11)
+		FRAME(Frames=41)
+		FRAME(Frames=91)
+		FRAME(Frames=111)
+		Slope_Full(unknown=0x9, unknown=0x5)
+		Script_End()
+	}
+
+}

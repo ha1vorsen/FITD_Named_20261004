@@ -1,0 +1,38 @@
+MoveDef SpecialHi_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=4)
+		FRAME(Frames=3)
+		Set_Frame_Duration(Speed=1)
+		Add_Momentum(Horizontal=0, Vertical=-1)
+		FRAME(Frames=10)
+		Add_Momentum(Horizontal=0, Vertical=-0.2)
+		FRAME(Frames=11)
+		Set_Frame_Duration(Speed=8)
+		FRAME(Frames=13)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		FRAME(Frames=21)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x23D00B8)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+}

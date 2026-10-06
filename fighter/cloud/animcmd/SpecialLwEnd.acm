@@ -1,0 +1,31 @@
+MoveDef SpecialLwEnd
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		IS_FLAG(Variable=LA-Flag[120])
+		True(Offset=0x4){
+		    Low_Voice_Clip(unknown=0x804B0020)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		IS_FLAG(Variable=LA-Flag[120])
+		True(Offset=0x6){
+		    QUAKE(unknown=0x4)
+		    FRAME(Frames=8)
+		}
+		Script_End()
+	}
+
+}

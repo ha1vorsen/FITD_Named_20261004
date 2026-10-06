@@ -1,0 +1,40 @@
+MoveDef SpecialAirHi_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.9)
+		FRAME(Frames=38)
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=67)
+		Set_Frame_Duration(Speed=2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=4){
+		    FRAME(Frames=2)
+		    Graphic_Effect2(Graphic=0x1000023, Bone=0x0, X=0, Y=15, Z=0, XRot=0, YRot=0, ZRot=180, Size=1.5, RandomX=0, RandomY=5, RandomZ=0, RandomXRot=20, RandomYRot=360, RandomZRot=20, Terminate=0x0)
+		    WAIT(Frames=5)
+		    Graphic_Effect2(Graphic=0x1000045, Bone=0x0, X=0, Y=15, Z=0, XRot=0, YRot=0, ZRot=180, Size=1.5, RandomX=0, RandomY=5, RandomZ=0, RandomXRot=20, RandomYRot=360, RandomZRot=20, Terminate=0x0)
+		    WAIT(Frames=5)
+		    Goto(Offset=-40)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0x160)
+		Sound_Effect(SFX=0x30092)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+}

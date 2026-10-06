@@ -1,0 +1,23 @@
+MoveDef SpecialAirN1Start
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		GENERATE_ARTICLE_ENABLE(Unknown=0x3)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

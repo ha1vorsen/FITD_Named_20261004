@@ -1,0 +1,37 @@
+MoveDef Final
+{
+	Main()
+	{
+		Body_Collision(State=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		unk_524EF3F5(unknown=0x4330009, unknown=0x7D2, unknown=0x0, unknown=0x40000000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F333333, unknown=0x0)
+		FRAME(Frames=2)
+		External_Graphic(Graphic=0x4330002, Bone=0x0, X=0, Y=28, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		FRAME(Frames=36)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0xF){
+		    unk_524EF3F5(unknown=0x4330003, unknown=0x0, unknown=0xC0400000, unknown=0x41500000, unknown=0x41300000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F4CCCCD, unknown=0x0)
+		}
+		Else(Offset=0xD){
+		    unk_524EF3F5(unknown=0x4330003, unknown=0x0, unknown=0x40400000, unknown=0x41500000, unknown=0x41300000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F4CCCCD, unknown=0x0)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=37)
+		Sound_Effect(SFX=0xBFC005F)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

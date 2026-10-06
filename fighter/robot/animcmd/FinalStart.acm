@@ -1,0 +1,49 @@
+MoveDef FinalStart
+{
+	Main()
+	{
+		Set_Camera_Boundaries(Front=0, Back=0, Top=10, Bottom=0)
+		Camera_Closeup(ZoomTime=0x5, Unknown=0x0, Distance=1.5, XRot=0, YRot=0)
+		Time_Manipulation(Amount=0x8, Duration=0x50)
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=42)
+		Normal_Camera()
+		CAM_RESET()
+		FRAME(Frames=165)
+		Set_Frame_Duration(Speed=1)
+		ON_FLAG(Variable=LA-Flag[127])
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x41F0000, Bone=0x42B, X=1, Y=6, Z=0, XRot=270, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=84)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x250030)
+		FRAME(Frames=158)
+		Sound_Effect(SFX=0x250031)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x9)
+		FRAME(Frames=25)
+		FRAME(Frames=45)
+		FRAME(Frames=65)
+		FRAME(Frames=85)
+		FRAME(Frames=105)
+		FRAME(Frames=167)
+		Script_End()
+	}
+
+}

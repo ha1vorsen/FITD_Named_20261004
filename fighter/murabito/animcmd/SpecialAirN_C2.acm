@@ -1,0 +1,30 @@
+MoveDef SpecialAirN_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x9C4ACE9)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x24C00A5)
+		FRAME(Frames=9)
+		Sound_Effect(SFX=0x24C0036)
+		FRAME(Frames=24)
+		Sound_Effect(SFX=0x24C0037)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x9C4ACE9)
+		Script_End()
+	}
+
+}

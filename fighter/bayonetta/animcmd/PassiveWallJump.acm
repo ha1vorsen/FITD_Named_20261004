@@ -1,0 +1,27 @@
+MoveDef PassiveWallJump
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Transient_Sound_Effect(SFX=0xC910010)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=8)
+		Model_Changer(ChangerID=0x2, ChangerState=0x0)
+		FRAME(Frames=34)
+		Model_Changer(ChangerID=0x2, ChangerState=0x1)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,51 @@
+MoveDef SlipAttack
+{
+	Main()
+	{
+		FRAME(Frames=16)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x169, KBG=0x32, WBKB=0x0, BKB=0x3C, Size=4.5, X=0, Y=5, Z=14, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x8, SFXLevel=0x1, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6, X2=0, Y2=5, Z2=4)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=24)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x169, KBG=0x32, WBKB=0x0, BKB=0x3C, Size=4.5, X=0, Y=5, Z=-14, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x8, SFXLevel=0x1, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6, X2=0, Y2=5, Z2=-4)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=13)
+		EFFECT_FOLLOW_WORK(Graphic=0x10000092, Bone=0x0, X=0, Y=4, Z=2, XRot=0, YRot=20, ZRot=177, Size=1.1, unknown=0x1)
+		LAST_EFFECT_SET_RATE(unknown=0.9)
+		FRAME(Frames=15)
+		Graphic_Effect3(Graphic=0x100000E, Bone=0x0, X=0, Y=0, Z=2, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=19)
+		FRAME(Frames=23)
+		EFFECT_FOLLOW_WORK(Graphic=0x10000092, Bone=0x0, X=0, Y=4.5, Z=-2, XRot=0, YRot=200, ZRot=183, Size=1.1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=12)
+		Sound_Effect(SFX=0xC910032)
+		FRAME(Frames=22)
+		Sound_Effect(SFX=0xC910032)
+		FRAME(Frames=37)
+		Sound_Effect2(SFX=0xC910000)
+		FRAME(Frames=43)
+		Sound_Effect2(SFX=0xC910002)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_040FD56E(unknown=0x1, unknown=0x6, unknown=0x1)
+		FRAME(Frames=14)
+		FRAME(Frames=33)
+		Slope_Full(unknown=0x6, unknown=0x6)
+		Script_End()
+	}
+
+}

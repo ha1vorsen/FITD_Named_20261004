@@ -1,0 +1,32 @@
+MoveDef SpecialAirNStartF
+{
+	Main()
+	{
+		JUMP(Hash=0x4282D4A)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=11)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0xF){
+		    External_Graphic(Graphic=0x3380021, Bone=0x0, X=0, Y=12, Z=12, XRot=0, YRot=-25, ZRot=0, Size=0.9, Terminate=0x0)
+		}
+		Else(Offset=0xD){
+		    External_Graphic(Graphic=0x3380021, Bone=0x0, X=0, Y=12, Z=12, XRot=0, YRot=25, ZRot=0, Size=0.9, Terminate=0x0)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x4282D4A)
+		Script_End()
+	}
+
+}

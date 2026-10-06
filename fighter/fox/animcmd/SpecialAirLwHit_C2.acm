@@ -1,0 +1,25 @@
+MoveDef SpecialAirLwHit_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x309000B, Bone=0x0, X=0, Y=6, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.8, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x12D29679)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,31 @@
+MoveDef SpecialHiJump_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=0)
+		Sound_Effect(SFX=0x2C90007)
+		Sound_Effect(SFX=0x24B001A)
+		WAIT(Frames=2)
+		Transient_Sound_Effect(SFX=0x24B008A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=9)
+		FRAME(Frames=18)
+		FRAME(Frames=27)
+		Loop_Rest()
+		JUMP(Hash=0xFF383EA5)
+		Script_End()
+	}
+
+}

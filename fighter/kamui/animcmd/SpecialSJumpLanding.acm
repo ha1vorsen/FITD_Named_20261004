@@ -1,0 +1,42 @@
+MoveDef SpecialSJumpLanding
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		GENERATE_ARTICLE(ID=0x2)
+		Set_Anchored_Article_Action(Article=0x2, Action=0x10)
+		FRAME(Frames=5)
+		Article_Visibility(Article=0x2, State=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3390012, Bone=0x12, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect3(SFX=0xC9B000C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		Model_Changer(ChangerID=0x3, ChangerState=0x1)
+		Model_Changer(ChangerID=0x2, ChangerState=0x1)
+		FRAME(Frames=2)
+		Model_Changer(ChangerID=0x2, ChangerState=0x0)
+		FRAME(Frames=3)
+		Model_Changer(ChangerID=0x3, ChangerState=0x0)
+		FRAME(Frames=6)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

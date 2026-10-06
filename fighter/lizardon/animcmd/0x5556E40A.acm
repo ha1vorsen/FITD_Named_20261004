@@ -1,0 +1,26 @@
+MoveDef 0x5556E40A
+{
+	Main()
+	{
+		FRAME(Frames=32)
+		ON_FLAG(Variable=RA-Flag[16])
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x20005A)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

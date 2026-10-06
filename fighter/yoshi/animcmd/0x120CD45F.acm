@@ -1,0 +1,33 @@
+MoveDef 0x120CD45F : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		CALL(Hash=0x28AE459B)
+		FRAME(Frames=19)
+		Set_Loop(Iterations=6){
+		    Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		    CALL(Hash=0xF7FA88CD)
+		    WAIT(Frames=3)
+		    Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		    CALL(Hash=0x28AE459B)
+		    WAIT(Frames=2)
+		    Goto(Offset=-14)
+		}
+		Script_End()
+	}
+
+}

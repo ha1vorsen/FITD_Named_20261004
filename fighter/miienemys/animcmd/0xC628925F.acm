@@ -1,0 +1,29 @@
+MoveDef 0xC628925F : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		WAIT(Frames=48)
+		Sound_Effect(SFX=0x821000E)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x821000F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+}

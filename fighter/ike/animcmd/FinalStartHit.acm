@@ -1,0 +1,33 @@
+MoveDef FinalStartHit
+{
+	Main()
+	{
+		Body_Collision(State=0x2)
+		Normal_Camera()
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=7)
+		ON_FLAG(Variable=RA-Flag[15])
+		SHOOT_ARTICLE(Value=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Sword_Trace(TraceID=0x8F, BlurLen=1.401298E-44, Bone1=0x3E8, X=0, Y=1.7, Z=0, Bone2=0x3E8, X=0, Y=16, Z=0, Anchored=0x1, Graphic=0x0, Bone3=0x3E8, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=5)
+		Terminate_Sword_Glow(FadeTime=0x3)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		QUAKE(unknown=0x5)
+		Script_End()
+	}
+
+}

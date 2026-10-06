@@ -1,0 +1,30 @@
+MoveDef SpecialAirHi_C2
+{
+	Main()
+	{
+		Add/Set_Momentum(Horizontal=0, Vertical=4, Mode=0x1)
+		JUMP(Hash=0x17DB0241)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		External_Graphic_Effect2(Graphic=0x10000D6, Bone=0x3E9, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2.5, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x250092)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x17DB0241)
+		Script_End()
+	}
+
+}

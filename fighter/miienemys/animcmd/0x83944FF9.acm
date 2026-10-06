@@ -1,0 +1,28 @@
+MoveDef 0x83944FF9 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		FRAME(Frames=5)
+		FRAME(Frames=7)
+		Sword_Trace(TraceID=0xE5, BlurLen=7.006492E-45, Bone1=0x19, X=0, Y=0.2, Z=0, Bone2=0x19, X=-1E-05, Y=13.8, Z=0, Anchored=0x1, Graphic=0x33F0000, Bone3=0x19, X=0, Y=0, Z=0, RotX=0.00013, RotY=-7E-05, RotZ=0.00011, Length=1)
+		FRAME(Frames=13)
+		FRAME(Frames=18)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

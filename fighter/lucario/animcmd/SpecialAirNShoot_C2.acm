@@ -1,0 +1,29 @@
+MoveDef SpecialAirNShoot_C2
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=6)
+		Set_ExAnchored_Article_Action(Article=0x0, Action=0x2)
+		FRAME(Frames=20)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xA1299E2F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xA1299E2F)
+		Script_End()
+	}
+
+}

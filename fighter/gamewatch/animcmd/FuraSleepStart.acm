@@ -1,0 +1,27 @@
+MoveDef FuraSleepStart
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x7, ChangerState=0x3)
+		WAIT(Frames=9)
+		Model_Changer(ChangerID=0x7, ChangerState=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic_Effect2(Graphic=0x100002E, Bone=0x13, X=2, Y=4, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x1)
+		Script_End()
+	}
+
+}

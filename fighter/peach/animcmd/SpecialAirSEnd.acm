@@ -1,0 +1,22 @@
+MoveDef SpecialAirSEnd
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		REG_LANDING_SE(unknown=0x11003B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

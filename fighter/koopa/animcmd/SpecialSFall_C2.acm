@@ -1,0 +1,23 @@
+MoveDef SpecialSFall_C2
+{
+	Main()
+	{
+		Extended_Collateral_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=10, Angle=0x32, KBG=0x50, WBKB=0x0, BKB=0x50, Size=8, X=0, Y=2, Z=6.5, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD, X2=0, Y2=2, Z2=-4.5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		EFFECT_FOLLOW_COLOR(unknown=0x30F0003, unknown=0x0, unknown=0x0, unknown=0x41200000, unknown=0x40000000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x1, unknown=0x437F0000, unknown=0x43660000, unknown=0x42FA0000)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

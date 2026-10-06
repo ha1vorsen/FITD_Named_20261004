@@ -1,0 +1,41 @@
+MoveDef 0x0ECD8A1C
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x31D0001, Bone=0x19, X=0, Y=0, Z=0, XRot=0.65498, YRot=-0.0011, ZRot=0.05716, Size=1, Terminate=0x1)
+		FRAME(Frames=11)
+		Graphic_Effect2(Graphic=0x31D0002, Bone=0x0, X=0, Y=0, Z=10, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Graphic_Effect2(Graphic=0x31D0003, Bone=0x0, X=0, Y=0, Z=10, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Flash_Light_Effect(Red=255, Blue=230, Green=180, Alpha=255, SourceX=75, SourceY=-10)
+		FRAME(Frames=26)
+		Change_Flash_Light_Color(TransitionFrames=20, Red=255, Blue=255, Green=255, Alpha=0)
+		FRAME(Frames=46)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		WAIT(Frames=2)
+		Sound_Effect(SFX=0x24005F)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0x24006B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=7)
+		FRAME(Frames=11)
+		QUAKE(unknown=0x5)
+		FRAME(Frames=23)
+		Script_End()
+	}
+
+}

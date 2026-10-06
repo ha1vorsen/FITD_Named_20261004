@@ -1,0 +1,25 @@
+MoveDef SpecialAirNFire
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x46C899D2)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=12)
+		FRAME(Frames=28)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

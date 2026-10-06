@@ -1,0 +1,24 @@
+MoveDef 0xD27B78A7
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0xF0043)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=14)
+		Script_End()
+	}
+
+}

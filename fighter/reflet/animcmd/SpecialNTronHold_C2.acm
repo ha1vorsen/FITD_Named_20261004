@@ -1,0 +1,27 @@
+MoveDef SpecialNTronHold_C2
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x770001D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		QUAKE(unknown=0x5)
+		Script_End()
+	}
+
+}

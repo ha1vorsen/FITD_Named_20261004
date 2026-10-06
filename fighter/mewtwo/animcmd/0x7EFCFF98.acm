@@ -1,0 +1,22 @@
+MoveDef 0x7EFCFF98
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		Fire_Item_Projectile2(Unknown=0x11000010)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

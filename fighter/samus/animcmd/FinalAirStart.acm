@@ -1,0 +1,31 @@
+MoveDef FinalAirStart
+{
+	Main()
+	{
+		JUMP(Hash=0x17EB3D5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x4060000, Bone=0x0, X=0, Y=0, Z=-4, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=28)
+		Sound_Effect(SFX=0x8003D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		SLOPE(unknown=0x6)
+		Item_Visibility(State=0x0)
+		CALL(Hash=0x17EB3D5)
+		Script_End()
+	}
+
+}

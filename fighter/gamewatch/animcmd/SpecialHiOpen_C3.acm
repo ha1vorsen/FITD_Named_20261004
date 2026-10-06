@@ -1,0 +1,21 @@
+MoveDef SpecialHiOpen_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=50)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

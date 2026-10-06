@@ -1,0 +1,34 @@
+MoveDef 0xCCDBE6E8
+{
+	Main()
+	{
+		Set_Armor(State=0x1, Threshold=0)
+		Set_Frame_Speed(Multiplier=0.5)
+		FRAME(Frames=6)
+		FRAME(Frames=8)
+		CALL(Hash=0xEF9E4D61)
+		Move_Hitbox(ID=0x2, NewBone=0x16, X=0, Y=0, Z=0)
+		Move_Hitbox(ID=0x3, NewBone=0x14, X=0, Y=0, Z=0)
+		FRAME(Frames=11)
+		Set_Armor(State=0x0, Threshold=0)
+		Set_Frame_Speed(Multiplier=0.8)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,56 @@
+MoveDef Attack100
+{
+	Main()
+	{
+		CALL(Hash=0xDCD907DA)
+		FRAME(Frames=3)
+		CALL(Hash=0xDCD907DA)
+		ON_FLAG(Variable=RA-Flag[22])
+		FRAME(Frames=6)
+		CALL(Hash=0xDCD907DA)
+		FRAME(Frames=9)
+		CALL(Hash=0xDCD907DA)
+		ON_FLAG(Variable=RA-Flag[22])
+		FRAME(Frames=12)
+		CALL(Hash=0xDCD907DA)
+		FRAME(Frames=15)
+		CALL(Hash=0xDCD907DA)
+		ON_FLAG(Variable=RA-Flag[22])
+		WAIT_LOOP_CLR()
+		JUMP(Hash=0xB007C283)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    FRAME(Frames=2)
+		    Graphic_Effect2(Graphic=0x33E0000, Bone=0x0, X=0, Y=6, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=1, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=4)
+		    Goto(Offset=-21)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x8200015)
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0x8200015)
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0x8200015)
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0x8200015)
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0x8200015)
+		Loop_Rest()
+		JUMP(Hash=0xB007C283)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

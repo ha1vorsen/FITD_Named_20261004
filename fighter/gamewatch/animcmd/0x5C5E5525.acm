@@ -1,0 +1,25 @@
+MoveDef 0x5C5E5525
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x7, ChangerState=0x3)
+		FRAME(Frames=10)
+		Fire_Weapon()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

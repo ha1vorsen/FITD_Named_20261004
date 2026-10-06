@@ -1,0 +1,21 @@
+MoveDef 0xB2C2FB4A
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+}

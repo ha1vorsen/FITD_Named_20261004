@@ -1,0 +1,25 @@
+MoveDef 0x2C2DD102
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x4841ED3)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=2)
+		QUAKE(unknown=0x3)
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,28 @@
+MoveDef SpecialAirSStart
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=26)
+		Graphic_Effect2(Graphic=0x100000C, Bone=0x0, X=-3, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Transient_Sound_Effect(SFX=0x440001)
+		Sound_Effect(SFX=0x11004A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=18)
+		Script_End()
+	}
+
+}

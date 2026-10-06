@@ -1,0 +1,23 @@
+MoveDef FinalHappyL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=54)
+		FRAME(Frames=84)
+		Script_End()
+	}
+
+}

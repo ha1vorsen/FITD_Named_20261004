@@ -1,0 +1,26 @@
+MoveDef SpecialAirLwFailureR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Stop_Sound_Effect(SFX=0x2C9001A)
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x24B0034)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x80824CB7)
+		Script_End()
+	}
+
+}

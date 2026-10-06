@@ -1,0 +1,29 @@
+MoveDef FinalStartR
+{
+	Main()
+	{
+		JUMP(Hash=0x60BE9A16)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x60BE9A16)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x26002D)
+		WAIT(Frames=67)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x60BE9A16)
+		Script_End()
+	}
+
+}

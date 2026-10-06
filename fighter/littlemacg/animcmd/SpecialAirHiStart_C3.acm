@@ -1,0 +1,23 @@
+MoveDef SpecialAirHiStart_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=2)
+		FRAME(Frames=4)
+		External_Graphic(Graphic=0x3290011, Bone=0x0, X=0, Y=13.5, Z=0, XRot=-90, YRot=0, ZRot=0, Size=2.1, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

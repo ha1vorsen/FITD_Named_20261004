@@ -1,0 +1,50 @@
+MoveDef EntryR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=60)
+		Graphic_Effect3(Graphic=0x1000007, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=61)
+		Graphic_Effect2(Graphic=0x3310002, Bone=0x2, X=0, Y=4, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=96)
+		Graphic_Effect3(Graphic=0x1000007, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=11)
+		Sound_Effect(SFX=0x769003B)
+		FRAME(Frames=34)
+		Sound_Effect(SFX=0x7690037)
+		FRAME(Frames=63)
+		Sound_Effect(SFX=0x7690010)
+		FRAME(Frames=95)
+		Sound_Effect(SFX=0x7690012)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		ON_FLAG(Variable=LA-Flag[101])
+		Visibility(State=0x0)
+		FRAME(Frames=17)
+		SET_CURSOR(unknown=0x1)
+		Tag_Visibility(State=0x1)
+		FRAME(Frames=63)
+		Visibility(State=0x1)
+		CALL(Hash=0xF7FA88CD)
+		Article_Visibility(Article=0x3, State=0x0)
+		FRAME(Frames=94)
+		OFF_FLAG(Variable=LA-Flag[101])
+		Script_End()
+	}
+
+}

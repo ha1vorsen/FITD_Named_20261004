@@ -1,0 +1,21 @@
+MoveDef 0x0F2348B4
+{
+	Main()
+	{
+		Throw_Specifier(ID=0x1, Bone=0x0, Damage=6, Angle=0x169, KBG=0x64, WBKB=0x1E, BKB=0x0, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x8)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

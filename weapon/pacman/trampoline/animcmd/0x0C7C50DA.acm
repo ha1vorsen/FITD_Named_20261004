@@ -1,0 +1,24 @@
+MoveDef 0x0C7C50DA
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		ON_FLAG(Variable=LA-Flag[6])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x7690029)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

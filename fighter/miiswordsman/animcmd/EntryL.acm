@@ -1,0 +1,30 @@
+MoveDef EntryL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x81B0069)
+		WAIT(Frames=48)
+		Sound_Effect(SFX=0x81B0010)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0x81B0011)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+}

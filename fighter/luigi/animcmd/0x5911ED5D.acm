@@ -1,0 +1,34 @@
+MoveDef 0x5911ED5D
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=15)
+		CALL(Hash=0xF5477682)
+		FRAME(Frames=16)
+		Remove_All_Hitboxes()
+		FRAME(Frames=25)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=11)
+		Sound_Effect(SFX=0x41001C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=13)
+		FRAME(Frames=15)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

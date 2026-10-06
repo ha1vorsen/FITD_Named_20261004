@@ -1,0 +1,26 @@
+MoveDef SpecialAirLwLanding
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect3(SFX=0xC63000E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=15)
+		FRAME(Frames=23)
+		Script_End()
+	}
+
+}

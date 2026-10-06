@@ -1,0 +1,35 @@
+MoveDef 0xF627251E : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0xC910025)
+		FRAME(Frames=10)
+		Float_Var_Compare(Variable=RA-Float[0], Method=0x4, Value=1)
+		True(Offset=0x6){
+		    Low_Voice_Clip(unknown=0x80000010)
+		}
+		Else(Offset=0x4){
+		    Low_Voice_Clip(unknown=0x80000012)
+		}
+		FRAME(Frames=18)
+		FRAME(Frames=34)
+		Sound_Effect(SFX=0xC910026)
+		FRAME(Frames=90)
+		Sound_Effect2(SFX=0xC910003)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,26 @@
+MoveDef 0x8DD9A335
+{
+	Main()
+	{
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=0, Angle=0x5A, KBG=0x82, WBKB=0x2D, BKB=0x0, Size=4, X=0, Y=0, Z=0, Effect=0x12, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x2C, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x0, Reflectable=0x1, Absorbable=0x0, Rehit=0x5, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x1, DisableHitlag=0x1, NoGFX=0x1, Flinchless=0x1, StretchToggle=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x7044FCBE)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x769002B)
+		unk_5FC8FA49(unknown=0x769002B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

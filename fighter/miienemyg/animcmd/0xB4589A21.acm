@@ -1,0 +1,22 @@
+MoveDef 0xB4589A21
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		Fire_Weapon()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

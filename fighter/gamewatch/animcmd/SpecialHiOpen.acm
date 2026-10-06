@@ -1,0 +1,28 @@
+MoveDef SpecialHiOpen
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x6DF0025)
+		WAIT(Frames=4)
+		Stop_Sound_Effect(SFX=0x6DF0025)
+		WAIT(Frames=4)
+		Sound_Effect(SFX=0x6DF0011)
+		WAIT(Frames=6)
+		Stop_Sound_Effect(SFX=0x6DF0011)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

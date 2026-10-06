@@ -1,0 +1,24 @@
+MoveDef 0xBC64B03D
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		Fire_Weapon()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		Script_End()
+	}
+
+}

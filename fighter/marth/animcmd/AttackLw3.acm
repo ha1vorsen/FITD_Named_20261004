@@ -1,0 +1,39 @@
+MoveDef AttackLw3
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		ATK_REFERENCE_NODE(Unknown=0x3EA, Unknown=0x2)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=7, Angle=0x1E, KBG=0x28, WBKB=0x0, BKB=0x28, Size=2.7, X=0, Y=2.7, Z=16.7, Effect=0x19, Trip=0.35, Hitlag=0.7, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=4.4, Z2=9.2)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x3EA, Damage=10, Angle=0x1E, KBG=0x28, WBKB=0x0, BKB=0x32, Size=2.7, X=0, Y=0, Z=8.2, Effect=0x19, Trip=0.35, Hitlag=1.25, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=6)
+		Sword_Trace(TraceID=0x9, BlurLen=8.407791E-45, Bone1=0x3EA, X=0, Y=0, Z=0.5, Bone2=0x3EA, X=-1E-05, Y=-2E-05, Z=12.2, Anchored=0x1, Graphic=0x3120000, Bone3=0x3EA, X=0, Y=0, Z=0, RotX=0.00013, RotY=-7E-05, RotZ=0.00011, Length=1)
+		Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=8, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=10)
+		Terminate_Sword_Glow(FadeTime=0x2)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Low_Voice_Clip(unknown=0x80280000)
+		Sound_Effect(SFX=0x160086)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+}

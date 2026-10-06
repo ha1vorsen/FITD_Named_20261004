@@ -1,0 +1,41 @@
+MoveDef 0x60DC32D7
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		Set_Frame_Duration(Speed=1.4)
+		FRAME(Frames=8)
+		Set_Frame_Duration(Speed=1)
+		GENERATE_ARTICLE(ID=0x3)
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=9)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=12)
+		Set_Frame_Duration(Speed=1)
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=8)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=1, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Low_Voice_Clip(unknown=0x803B0004)
+		WAIT(Frames=2)
+		Sound_Effect(SFX=0x7640060)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=8)
+		Script_End()
+	}
+
+}

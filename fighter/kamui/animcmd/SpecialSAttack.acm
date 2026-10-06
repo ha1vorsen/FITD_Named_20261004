@@ -1,0 +1,50 @@
+MoveDef SpecialSAttack
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x2)
+		Set_Anchored_Article_Action(Article=0x2, Action=0x8)
+		FRAME(Frames=24)
+		ON_FLAG(Variable=RA-Flag[18])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		ON_FLAG(Variable=LA-Flag[127])
+		External_Graphic(Graphic=0x3390020, Bone=0x18, X=0, Y=0, Z=0, XRot=-85, YRot=0, ZRot=-3, Size=0.9, Terminate=0x1)
+		External_Graphic(Graphic=0x3390006, Bone=0x18, X=0, Y=-2, Z=0, XRot=-85, YRot=0, ZRot=-3, Size=0.95, Terminate=0x1)
+		Graphic_Effect2(Graphic=0x339001A, Bone=0x18, X=1, Y=24, Z=1.5, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=19)
+		ON_FLAG(Variable=LA-Flag[128])
+		FRAME(Frames=42)
+		External_Graphic(Graphic=0x3390012, Bone=0x12, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0xC9B004C)
+		FRAME(Frames=30)
+		Sound_Effect(SFX=0xC9B0016)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Model_Changer(ChangerID=0x3, ChangerState=0x1)
+		Model_Changer(ChangerID=0x2, ChangerState=0x1)
+		FRAME(Frames=4)
+		FRAME(Frames=41)
+		Model_Changer(ChangerID=0x2, ChangerState=0x0)
+		FRAME(Frames=42)
+		Model_Changer(ChangerID=0x3, ChangerState=0x0)
+		FRAME(Frames=45)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

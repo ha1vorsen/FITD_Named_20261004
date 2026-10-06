@@ -1,0 +1,45 @@
+MoveDef ThrowB
+{
+	Main()
+	{
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=2, Angle=0x2D, KBG=0x38, WBKB=0x0, BKB=0x50, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x8)
+		Throw_Specifier(ID=0x1, Bone=0x0, Damage=3, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x3C, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x8)
+		FRAME(Frames=10)
+		Reverse_Direction()
+		Throw_Applier(ID=0x0, Bone=0x1A, Unknown=0x11000005, Unknown=0x11000006, Unknown=0x11000007)
+		FRAME(Frames=20)
+		GENERATE_ARTICLE(ID=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=15)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x0, X=0, Y=13, Z=-13, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=20)
+		Graphic_Effect2(Graphic=0x302000D, Bone=0x19, X=0, Y=1.19999, Z=4.5, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=19)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x120)
+		WAIT(Frames=8)
+		Sound_Effect(SFX=0x121)
+		WAIT(Frames=10)
+		Sound_Effect(SFX=0x81C0041)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=10)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=20)
+		Script_End()
+	}
+
+}

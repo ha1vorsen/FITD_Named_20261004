@@ -1,0 +1,25 @@
+MoveDef 0x6CD574A9
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.2)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=18)
+		Transient_Sound_Effect(SFX=0x260034)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

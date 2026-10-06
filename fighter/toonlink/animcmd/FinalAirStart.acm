@@ -1,0 +1,39 @@
+MoveDef FinalAirStart
+{
+	Main()
+	{
+		JUMP(Hash=0x17EB3D5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x17EB3D5)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=12)
+		Sound_Effect(SFX=0x4A8002E)
+		FRAME(Frames=28)
+		Sound_Effect(SFX=0x63E0005)
+		FRAME(Frames=29)
+		Sound_Effect(SFX=0x4A8002F)
+		FRAME(Frames=34)
+		Sound_Effect(SFX=0x4A8002B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=6)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=31)
+		Script_End()
+	}
+
+}

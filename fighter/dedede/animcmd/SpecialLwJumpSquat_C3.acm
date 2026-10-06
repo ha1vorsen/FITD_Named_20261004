@@ -1,0 +1,24 @@
+MoveDef SpecialLwJumpSquat_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.5)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x2, ChangerState=0x1)
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

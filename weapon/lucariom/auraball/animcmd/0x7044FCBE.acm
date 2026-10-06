@@ -1,0 +1,78 @@
+MoveDef 0x7044FCBE
+{
+	Main()
+	{
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=10, Angle=0x169, KBG=0x2A, WBKB=0x0, BKB=0xE, Size=2.2, X=0, Y=0, Z=0, Effect=0x15, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x8, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x1, Absorbable=0x1, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=25, Angle=0x2F, KBG=0x45, WBKB=0x0, BKB=0x23, Size=2.2, X=0, Y=0, Z=0, Effect=0x15, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x3, SFXLevel=0x2, SFXType=0x8, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x1, Absorbable=0x1, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		ATK_LERP(unknown=0x0, unknown=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x31E000F, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Stop_Sound_Effect(SFX=0x8670034)
+		Stop_Sound_Effect(SFX=0x8670037)
+		Float_Var_Compare(Variable=LA-Float[11], Method=0x2, Value=0.45)
+		True(Offset=0x1A){
+		    unk_377D36CB(unknown=0x9, unknown=0x2, unknown=0xC)
+		    True(Offset=0x6){
+		        Sound_Effect(SFX=0x867005A)
+		    }
+		    Else(Offset=0xE){
+		        unk_377D36CB(unknown=0x9, unknown=0x2, unknown=0xD)
+		        True(Offset=0x6){
+		            Sound_Effect(SFX=0x8670061)
+		        }
+		        Else(Offset=0x4){
+		            Sound_Effect(SFX=0x867005F)
+		        }
+		        Else(Offset=0x36){
+		            Float_Var_Compare(Variable=LA-Float[11], Method=0x2, Value=0.9)
+		            True(Offset=0x1A){
+		                unk_377D36CB(unknown=0x9, unknown=0x2, unknown=0xC)
+		                True(Offset=0x6){
+		                    Sound_Effect(SFX=0x867005D)
+		                }
+		                Else(Offset=0xE){
+		                    unk_377D36CB(unknown=0x9, unknown=0x2, unknown=0xD)
+		                    True(Offset=0x6){
+		                        Sound_Effect(SFX=0x8670062)
+		                    }
+		                    Else(Offset=0x4){
+		                        Sound_Effect(SFX=0x867005B)
+		                    }
+		                    Else(Offset=0x18){
+		                        unk_377D36CB(unknown=0x9, unknown=0x2, unknown=0xC)
+		                        True(Offset=0x6){
+		                            Sound_Effect(SFX=0x8670060)
+		                        }
+		                        Else(Offset=0xE){
+		                            unk_377D36CB(unknown=0x9, unknown=0x2, unknown=0xD)
+		                            True(Offset=0x6){
+		                                Sound_Effect(SFX=0x867005E)
+		                            }
+		                            Else(Offset=0x4){
+		                                Sound_Effect(SFX=0x867005C)
+		                            }
+		                        }
+		                    }
+		                }
+		            }
+		        }
+		    }
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

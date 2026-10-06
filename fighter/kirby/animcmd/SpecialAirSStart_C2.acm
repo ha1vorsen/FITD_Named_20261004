@@ -1,0 +1,29 @@
+MoveDef SpecialAirSStart_C2
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.55)
+		GENERATE_ARTICLE(ID=0x15)
+		ON_FLAG(Variable=RA-Flag[21])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0xA00CC)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

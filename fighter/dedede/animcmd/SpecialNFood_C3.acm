@@ -1,0 +1,30 @@
+MoveDef SpecialNFood_C3
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=11)
+		ON_FLAG(Variable=RA-Flag[17])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=11)
+		FRAME(Frames=30)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,24 @@
+MoveDef SpecialAirHiTurnL_C3
+{
+	Main()
+	{
+		JUMP(Hash=0xDEBD1AC1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=11)
+		Sound_Effect(SFX=0x60042)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

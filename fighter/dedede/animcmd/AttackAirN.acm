@@ -1,0 +1,39 @@
+MoveDef AttackAirN
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=7)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=12, Angle=0x3C, KBG=0x5F, WBKB=0x0, BKB=0x28, Size=10, X=0, Y=12, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2)
+		FRAME(Frames=9)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=7, Angle=0x50, KBG=0x5F, WBKB=0x0, BKB=0x28, Size=6, X=0, Y=8, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2)
+		FRAME(Frames=30)
+		Remove_All_Hitboxes()
+		FRAME(Frames=35)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=7)
+		External_Graphic(Graphic=0x31C000F, Bone=0x0, X=0, Y=13, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.3, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Low_Voice_Clip(unknown=0x80200004)
+		Sound_Effect(SFX=0x6007D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,50 @@
+MoveDef 0x57AD05F5
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=29)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0xD, Damage=4, Angle=0x169, KBG=0x6E, WBKB=0x0, BKB=0x3C, Size=15, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=4)
+		Remove_All_Hitboxes()
+		FRAME(Frames=73)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0xD, Damage=4, Angle=0x169, KBG=0x6E, WBKB=0x0, BKB=0x3C, Size=15, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=4)
+		Remove_All_Hitboxes()
+		FRAME(Frames=122)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0xD, Damage=5, Angle=0x169, KBG=0x6E, WBKB=0x0, BKB=0x4B, Size=22, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=5)
+		Remove_All_Hitboxes()
+		FRAME(Frames=131)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x775633A7)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=27)
+		Transient_Sound_Effect(SFX=0x590002)
+		FRAME(Frames=30)
+		Sound_Effect(SFX=0x260084)
+		FRAME(Frames=74)
+		Sound_Effect(SFX=0x260084)
+		FRAME(Frames=77)
+		Transient_Sound_Effect(SFX=0x590003)
+		FRAME(Frames=123)
+		Sound_Effect(SFX=0x260084)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x775633A7)
+		Script_End()
+	}
+
+}

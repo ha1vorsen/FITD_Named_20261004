@@ -1,0 +1,26 @@
+MoveDef 0xE42E1C1E
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect4(SFX=0x5F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=17)
+		Slope_Full(unknown=0x1, unknown=0x4)
+		Script_End()
+	}
+
+}

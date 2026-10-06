@@ -1,0 +1,27 @@
+MoveDef 0x7269CDAB
+{
+	Main()
+	{
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x59EF8E1A)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x59EF8E1A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x59EF8E1A)
+		Script_End()
+	}
+
+}

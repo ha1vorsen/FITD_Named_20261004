@@ -1,0 +1,33 @@
+MoveDef 0x530BF50C : Unlisted
+{
+	Main()
+	{
+		Set_Frame_Speed(Multiplier=0.25)
+		SET_RATE_ARTICLE(unknown=0x0, unknown=0.25)
+		IS_FLAG(Variable=RA-Flag[14])
+		True(Offset=0xC){
+		    CAM_OFFSET(unknown=0x41000000, unknown=-3)
+		    Set_Camera_Boundaries(Front=7, Back=-7, Top=5, Bottom=-5)
+		}
+		Else(Offset=0x7){
+		    Set_Camera_Boundaries(Front=0, Back=0, Top=5, Bottom=-5)
+		}
+		CAM_ZOOM_IN(unknown=0x64)
+		End_Screen_Tint(ID=0x2, TransitionOutTime=0x0)
+		Screen_Tint(TransitionTime=0x2, Red=0x64, Green=0x0, Blue=0x0, Alpha=0x0, Duration=0xFF, unknown=0x6, TransitionOutTime=0xFF)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

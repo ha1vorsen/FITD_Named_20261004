@@ -1,0 +1,31 @@
+MoveDef CliffClimbQuick
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=16)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.95, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x8670012)
+		WAIT(Frames=11)
+		Sound_Effect(SFX=0x867003F)
+		WAIT(Frames=11)
+		Sound_Effect(SFX=0x867003D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

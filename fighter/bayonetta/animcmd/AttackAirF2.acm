@@ -1,0 +1,52 @@
+MoveDef AttackAirF2
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		unk_1B41048C(unknown=0x0, unknown=0x1, unknown=0x0, unknown=0x1, unknown=0xA, unknown=0x3, unknown=0xA, unknown=0x0, unknown=0x1)
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=3)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=13)
+		Set_Frame_Duration(Speed=1)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=2.2, Angle=0x32, KBG=0xA, WBKB=0x0, BKB=0x44, Size=3.5, X=0, Y=8.5, Z=7, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=8.5, Z2=2)
+		Extended_Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=2.2, Angle=0x1C, KBG=0xA, WBKB=0x0, BKB=0x40, Size=3.5, X=0, Y=15.5, Z=7, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=15.5, Z2=2)
+		Extended_Special_Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=2.2, Angle=0x46, KBG=0xA, WBKB=0x0, BKB=0x3F, Size=7, X=0, Y=12, Z=11, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=12, Z2=4)
+		Set_Weight_All_Hitboxes(Flag=0x1)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		unk_B2E91D0C(unknown=1)
+		FRAME(Frames=17)
+		ON_FLAG(Variable=LA-Flag[133])
+		ON_FLAG(Variable=LA-Flag[134])
+		ON_FLAG(Variable=LA-Flag[135])
+		WAIT(Frames=1)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=43)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=9)
+		EFFECT_FOLLOW_WORK(Graphic=0x10000092, Bone=0x0, X=0, Y=14, Z=0, XRot=-5, YRot=-20, ZRot=190, Size=1.1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0xC910036)
+		FRAME(Frames=9)
+		Low_Voice_Clip(unknown=0x80000000)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

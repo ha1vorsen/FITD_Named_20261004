@@ -1,0 +1,36 @@
+MoveDef Win1
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Transient_Sound_Effect(SFX=0x250079)
+		WAIT(Frames=7)
+		STOP_SE_STATUS()
+		WAIT(Frames=10)
+		Transient_Sound_Effect(SFX=0x250079)
+		WAIT(Frames=19)
+		STOP_SE_STATUS()
+		WAIT(Frames=1)
+		Transient_Sound_Effect(SFX=0x25007D)
+		WAIT(Frames=11)
+		STOP_SE_STATUS()
+		WAIT(Frames=18)
+		Transient_Sound_Effect(SFX=0x250079)
+		WAIT(Frames=33)
+		STOP_SE_STATUS()
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

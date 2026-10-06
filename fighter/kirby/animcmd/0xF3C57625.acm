@@ -1,0 +1,30 @@
+MoveDef 0xF3C57625
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x3020002, Bone=0x16, X=-5.98503, Y=0.37938, Z=0.18819, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Color_Overlay(Red=255, Green=192, Blue=255, Alpha=180)
+		FRAME(Frames=4)
+		Graphic_Effect3(Graphic=0x1000027, Bone=0x0, X=0, Y=-2, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=5)
+		Change_Overlay(Transition=10, Red=80, Green=80, Blue=80, Alpha=0)
+		FRAME(Frames=15)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+}

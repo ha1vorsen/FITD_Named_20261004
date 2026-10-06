@@ -1,0 +1,21 @@
+MoveDef Win3bWait
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x554CBE53)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

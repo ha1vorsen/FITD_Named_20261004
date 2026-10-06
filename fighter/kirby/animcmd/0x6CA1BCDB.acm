@@ -1,0 +1,22 @@
+MoveDef 0x6CA1BCDB
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		REG_LANDING_SE(unknown=0x24D0011)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

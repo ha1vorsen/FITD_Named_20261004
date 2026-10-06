@@ -1,0 +1,28 @@
+MoveDef SpecialNFailure_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.5)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x1C0060)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=9)
+		FRAME(Frames=28)
+		Script_End()
+	}
+
+}

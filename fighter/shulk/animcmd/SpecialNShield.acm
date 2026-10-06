@@ -1,0 +1,28 @@
+MoveDef SpecialNShield
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		EFFECT_FOLLOW_COLOR(unknown=0x10000DD, unknown=0xC, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x1, unknown=0x437F0000, unknown=0x437B0000, unknown=0x433B0000)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		WAIT(Frames=10)
+		Sound_Effect(SFX=0x773001C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xB9A5960B)
+		Script_End()
+	}
+
+}

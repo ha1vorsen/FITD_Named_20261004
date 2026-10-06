@@ -1,0 +1,22 @@
+MoveDef DamageElec
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		WAIT(Frames=35)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

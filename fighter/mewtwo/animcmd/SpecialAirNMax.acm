@@ -1,0 +1,34 @@
+MoveDef SpecialAirNMax
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic_Effect2(Graphic=0x3330003, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.4, Terminate=0x1)
+		Set_Loop(Iterations=-1){
+		    Flash_Light_Effect(Red=160, Blue=240, Green=255, Alpha=255, SourceX=-135, SourceY=-10)
+		    WAIT(Frames=2)
+		    Change_Flash_Light_Color(TransitionFrames=8, Red=160, Blue=240, Green=255, Alpha=100)
+		    WAIT(Frames=36)
+		    Terminate_Overlays()
+		    WAIT(Frames=2)
+		    Goto(Offset=-20)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x8A14571B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x8A14571B)
+		Script_End()
+	}
+
+}

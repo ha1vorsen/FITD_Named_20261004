@@ -1,0 +1,21 @@
+MoveDef Lose
+{
+	Main()
+	{
+		VIS_SET_DEFAULT(unknown=0x0, unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

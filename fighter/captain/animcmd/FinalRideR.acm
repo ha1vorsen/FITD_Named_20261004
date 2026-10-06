@@ -1,0 +1,31 @@
+MoveDef FinalRideR
+{
+	Main()
+	{
+		JUMP(Hash=0x8E49CB0C)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		PLAY_SE_REMAIN(unknown=0x420003)
+		FRAME(Frames=16)
+		PLAY_SE_NO_3D(unknown=0xE0098)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Morph_Model_Event(unknown=0x0)
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

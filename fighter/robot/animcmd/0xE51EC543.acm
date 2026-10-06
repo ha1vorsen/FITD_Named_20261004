@@ -1,0 +1,23 @@
+MoveDef 0xE51EC543
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x9)
+		Loop_Rest()
+		JUMP(Hash=0xE51EC543)
+		Script_End()
+	}
+
+}

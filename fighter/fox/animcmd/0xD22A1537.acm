@@ -1,0 +1,24 @@
+MoveDef 0xD22A1537 : Unlisted
+{
+	Main()
+	{
+		CALL(Hash=0x5DF31973)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		ON_FLAG(Variable=RA-Flag[22])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

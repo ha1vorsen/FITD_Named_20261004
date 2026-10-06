@@ -1,0 +1,44 @@
+MoveDef AppealHiR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		EFFECT_FOLLOW_COLOR(unknown=0x3150004, unknown=0x3EA, unknown=0x3FC00000, unknown=0x0, unknown=0xBF000000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F19999A, unknown=0x1, unknown=0x42000000, unknown=0x0, unknown=0x0)
+		FRAME(Frames=89)
+		Graphic_Effect3(Graphic=0x100000E, Bone=0xB, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=26)
+		Sound_Effect(SFX=0x18008F)
+		WAIT(Frames=1)
+		Sound_Effect(SFX=0x4B0032)
+		WAIT(Frames=27)
+		Sound_Effect(SFX=0x180044)
+		WAIT(Frames=32)
+		Sound_Effect(SFX=0x180090)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x4)
+		FRAME(Frames=26)
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		FRAME(Frames=54)
+		FRAME(Frames=84)
+		FRAME(Frames=90)
+		SET_CURSOR(unknown=0x1)
+		Tag_Visibility(State=0x1)
+		FRAME(Frames=113)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

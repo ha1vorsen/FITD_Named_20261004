@@ -1,0 +1,50 @@
+MoveDef Win3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=22)
+		PLAY_SE_NO_3D(unknown=0x7008E)
+		WAIT(Frames=5)
+		PLAY_SE_NO_3D(unknown=0x7008F)
+		WAIT(Frames=7)
+		PLAY_SE_NO_3D(unknown=0x7008E)
+		WAIT(Frames=7)
+		PLAY_SE_NO_3D(unknown=0x7008F)
+		WAIT(Frames=7)
+		PLAY_SE_NO_3D(unknown=0x7008E)
+		WAIT(Frames=7)
+		PLAY_SE_NO_3D(unknown=0x7008F)
+		WAIT(Frames=7)
+		PLAY_SE_NO_3D(unknown=0x7008E)
+		WAIT(Frames=7)
+		PLAY_SE_NO_3D(unknown=0x7008F)
+		WAIT(Frames=9)
+		PLAY_SE_NO_3D(unknown=0x7008E)
+		WAIT(Frames=6)
+		PLAY_SE_NO_3D(unknown=0x7008F)
+		WAIT(Frames=7)
+		PLAY_SE_NO_3D(unknown=0x7008E)
+		WAIT(Frames=7)
+		PLAY_SE_NO_3D(unknown=0x7008F)
+		WAIT(Frames=7)
+		PLAY_SE_NO_3D(unknown=0x7008E)
+		WAIT(Frames=7)
+		PLAY_SE_NO_3D(unknown=0x7008F)
+		WAIT(Frames=5)
+		PLAY_SE_NO_3D(unknown=0x70090)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

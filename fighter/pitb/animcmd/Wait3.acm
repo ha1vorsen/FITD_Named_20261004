@@ -1,0 +1,26 @@
+MoveDef Wait3
+{
+	Main()
+	{
+		FRAME(Frames=41)
+		VIS_SET_DEFAULT(unknown=0x0, unknown=0x2)
+		FRAME(Frames=108)
+		VIS_SET_DEFAULT(unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

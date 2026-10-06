@@ -1,0 +1,29 @@
+MoveDef 0xE747D52E
+{
+	Main()
+	{
+		Set_Model_Scale(Scale=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x3270009, Bone=0x7D2, X=1, Y=0, Z=0, XRot=0, YRot=0, ZRot=-90, Size=1.1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		QUAKE(unknown=0x3)
+		FRAME(Frames=60)
+		ON_FLAG(Variable=LA-Flag[24])
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x4A40052)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,21 @@
+MoveDef 0x10FFD7B6
+{
+	Main()
+	{
+		ON_FLAG(Variable=LA-Flag[124])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

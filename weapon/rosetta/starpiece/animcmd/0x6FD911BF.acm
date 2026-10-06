@@ -1,0 +1,30 @@
+MoveDef 0x6FD911BF
+{
+	Main()
+	{
+		Set_Model_Scale(Scale=1.3)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x37, KBG=0x1E, WBKB=0x0, BKB=0x19, Size=2, X=0, Y=0, Z=0, Effect=0x1A, Trip=1, Hitlag=0.2, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x10, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x1, Absorbable=0x1, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=12)
+		Change_Hitbox_Damage(ID=0x0, Damage=4)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x3270028, Bone=0x0, X=0, Y=0, Z=2, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=1, RandomY=1, RandomZ=1, RandomXRot=30, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Sword_Trace(TraceID=0xA0, BlurLen=1.681558E-44, Bone1=0x0, X=0, Y=-4, Z=0, Bone2=0x0, X=0, Y=4, Z=0, Anchored=0x1, Graphic=0x0, Bone3=0x0, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x4A40067)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

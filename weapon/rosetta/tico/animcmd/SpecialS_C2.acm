@@ -1,0 +1,22 @@
+MoveDef SpecialS_C2
+{
+	Main()
+	{
+		FRAME(Frames=20)
+		ON_FLAG(Variable=RA-Flag[2])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

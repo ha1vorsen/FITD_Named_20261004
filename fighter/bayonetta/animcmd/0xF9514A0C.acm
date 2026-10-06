@@ -1,0 +1,46 @@
+MoveDef 0xF9514A0C : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Int_Var_Compare(Variable=LA-Int[172], Method=0x4, Value=0x2)
+		True(Offset=0x2C){
+		    FRAME(Frames=1)
+		    PLAY_DAMAGESTOP(unknown=0xCA10029)
+		    FRAME(Frames=4)
+		    Sound_Effect(SFX=0xC910071)
+		    FRAME(Frames=18)
+		    Sound_Effect(SFX=0xC910002)
+		    FRAME(Frames=24)
+		    Sound_Effect(SFX=0xC91008B)
+		    FRAME(Frames=52)
+		    Sound_Effect(SFX=0xC910003)
+		    FRAME(Frames=73)
+		    Sound_Effect(SFX=0xC910002)
+		    FRAME(Frames=74)
+		    Sound_Effect(SFX=0xC91008C)
+		    FRAME(Frames=100)
+		    PLAY_DAMAGESTOP(unknown=0xCA1003F)
+		    FRAME(Frames=112)
+		    Sound_Effect(SFX=0xC91008D)
+		    FRAME(Frames=122)
+		    Sound_Effect(SFX=0xC910002)
+		}
+		Else(Offset=0x4){
+		    JUMP(Hash=0xA515DDC2)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

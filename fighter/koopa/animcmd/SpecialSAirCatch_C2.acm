@@ -1,0 +1,51 @@
+MoveDef SpecialSAirCatch_C2
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=6)
+		Add/Set_Momentum(Horizontal=2.3, Vertical=0.8, Mode=0x1)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=0, Angle=0xA, KBG=0x64, WBKB=0x28, BKB=0x0, Size=5, X=0, Y=6, Z=2, Effect=0x0, Trip=0, Hitlag=0, SDI=0, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x0, Ground/Air=0x80000001, Direct/Indirect=0x0, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x2, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x1, Flinchless=0x1, StretchToggle=0x0)
+		FRAME(Frames=11)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=17)
+		Remove_All_Hitboxes()
+		Grab_Collision2(ID=0x0, Bone=0x0, Size=7, X=0, Y=8, Z=17, Action=0xBE, Ground/Air=0x3, Unknown=0x1)
+		Grab_Collision2(ID=0x1, Bone=0x0, Size=5, X=0, Y=7, Z=10, Action=0xBE, Ground/Air=0x3, Unknown=0x1)
+		FRAME(Frames=18)
+		SET_LIMIT_SPEED_EX(Horizontal=1.2, Vertical=0)
+		Remove_All_Grab_Collisions()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=6)
+		EFFECT_FOLLOW_COLOR(unknown=0x30F0012, unknown=0x0, unknown=0x0, unknown=0x41500000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x1, unknown=0x437F0000, unknown=0x42C80000, unknown=0x43480000)
+		FRAME(Frames=15)
+		EFFECT_FOLLOW_FLIP_ALPHA(unknown=0x100008E, unknown=0x100008E, unknown=0x0, unknown=0x0, unknown=0x41300000, unknown=0x40400000, unknown=0x41E5999A, unknown=0xC2D3999A, unknown=0x40000000, unknown=0x3FE66666, unknown=0x1, unknown=0x1, unknown=0x42480000)
+		FRAME(Frames=17)
+		Color_Overlay(Red=255, Green=255, Blue=192, Alpha=160)
+		Change_Overlay(Transition=5, Red=128, Green=0, Blue=0, Alpha=0)
+		FRAME(Frames=22)
+		Terminate_Overlays()
+		FRAME(Frames=26)
+		Terminate_Graphic_Effect(Graphic=0x30F0012, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=15)
+		Sound_Effect(SFX=0x1000A8)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=16)
+		Script_End()
+	}
+
+}

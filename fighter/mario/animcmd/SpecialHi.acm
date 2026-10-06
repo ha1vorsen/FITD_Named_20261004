@@ -1,0 +1,63 @@
+MoveDef SpecialHi
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		SA_SET(Unknown=0x2)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x46, KBG=0x64, WBKB=0x82, BKB=0x0, Size=7, X=0, Y=6, Z=5, Effect=0x6, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x4, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=5, Angle=0x5A, KBG=0x64, WBKB=0x8C, BKB=0x0, Size=6, X=0, Y=6, Z=9, Effect=0x6, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x4, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		WAIT(Frames=1)
+		ON_FLAG(Variable=RA-Flag[15])
+		WAIT(Frames=2)
+		ON_FLAG(Variable=RA-Flag[13])
+		WAIT(Frames=1)
+		Set_Loop(Iterations=3){
+		    Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1, Angle=0x4A, KBG=0x64, WBKB=0x96, BKB=0x0, Size=6, X=0, Y=7, Z=4.5, Effect=0x6, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x4, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		    Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=1, Angle=0x5A, KBG=0x64, WBKB=0x96, BKB=0x0, Size=5, X=0, Y=7, Z=8.5, Effect=0x6, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x4, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		    WAIT(Frames=1)
+		    Remove_All_Hitboxes()
+		    Goto(Offset=-53)
+		}
+		Allow/Disallow_Ledgegrab(State=0x1)
+		Set_Loop(Iterations=2){
+		    Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1, Angle=0x16D, KBG=0x64, WBKB=0x5A, BKB=0x0, Size=5.5, X=0, Y=7, Z=4.5, Effect=0x6, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x4, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		    Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=1, Angle=0x16D, KBG=0x64, WBKB=0x78, BKB=0x0, Size=4.2, X=0, Y=7, Z=8.5, Effect=0x6, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x4, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		    WAIT(Frames=2)
+		    Remove_All_Hitboxes()
+		    Goto(Offset=-53)
+		}
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=3, Angle=0x3C, KBG=0x91, WBKB=0x0, BKB=0x34, Size=10, X=0, Y=7, Z=4.5, Effect=0x6, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x1E, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=3, Angle=0x3C, KBG=0x91, WBKB=0x0, BKB=0x34, Size=10, X=0, Y=7, Z=8.5, Effect=0x6, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x1E, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		Allow/Disallow_Ledgegrab(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		External_Graphic(Graphic=0x303000C, Bone=0x11, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		WAIT(Frames=2)
+		Graphic_Effect3(Graphic=0x100000C, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		WAIT(Frames=1)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x11, X=0, Y=-0.4, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=18)
+		Terminate_Graphic_Effect(Graphic=0x303000C, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x2002E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

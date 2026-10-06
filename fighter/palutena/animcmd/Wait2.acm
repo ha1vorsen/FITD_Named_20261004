@@ -1,0 +1,24 @@
+MoveDef Wait2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=78)
+		Graphic_Effect6(Graphic=0x32B0005, Bone=0x0, X=4, Y=15, Z=-0.5, XRot=0, YRot=-65, ZRot=0, Size=1, Terminate=0x1, Unknown=0x428C0000)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

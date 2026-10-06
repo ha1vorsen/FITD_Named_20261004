@@ -1,0 +1,31 @@
+MoveDef SpecialNStart
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		IS_FLAG(Variable=RA-Flag[13])
+		True(Offset=0x6){
+		    Sound_Effect(SFX=0xBFC008E)
+		}
+		Else(Offset=0x4){
+		    Transient_Sound_Effect(SFX=0xBFC004C)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

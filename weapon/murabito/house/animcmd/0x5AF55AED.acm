@@ -1,0 +1,45 @@
+MoveDef 0x5AF55AED
+{
+	Main()
+	{
+		FRAME(Frames=300)
+		WAIT(Frames=20)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=70)
+		Graphic_Effect5(Graphic=0x42A0000, Bone=0x0, X=0, Y=5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.1, RandomX=0, RandomY=1, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=90)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=150)
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		FRAME(Frames=200)
+		Model_Changer(ChangerID=0x2, ChangerState=0x1)
+		FRAME(Frames=215)
+		Terminate_Graphic_Effect(Graphic=0x42A0000, unknown=0x0, unknown=0x0)
+		FRAME(Frames=220)
+		Graphic_Effect2(Graphic=0x42A0002, Bone=0x0, X=0, Y=-2, Z=-2, XRot=0, YRot=0, ZRot=0, Size=1.05, RandomX=0, RandomY=1, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=300)
+		Visibility(State=0x0)
+		Graphic_Effect2(Graphic=0x42A0001, Bone=0x0, X=0, Y=0, Z=-5, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=1, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=70)
+		Sound_Effect(SFX=0x24C0016)
+		FRAME(Frames=220)
+		Sound_Effect(SFX=0x24C0017)
+		WAIT(Frames=78)
+		PLAY_SE_REMAIN(unknown=0x24C0018)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

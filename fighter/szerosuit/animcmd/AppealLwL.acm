@@ -1,0 +1,31 @@
+MoveDef AppealLwL
+{
+	Main()
+	{
+		JUMP(Hash=0xFF0A8538)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=21)
+		Sound_Effect(SFX=0x1B0083)
+		Transient_Sound_Effect(SFX=0x4E0011)
+		WAIT(Frames=60)
+		STOP_SE_STATUS()
+		WAIT(Frames=10)
+		Sound_Effect(SFX=0x1B0084)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xFF0A8538)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,60 @@
+MoveDef 0x04961C1F
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Flash_Light_Effect(Red=255, Blue=100, Green=0, Alpha=0, SourceX=-70, SourceY=-10)
+		Change_Flash_Light_Color(TransitionFrames=30, Red=255, Blue=100, Green=0, Alpha=200)
+		FRAME(Frames=6)
+		External_Graphic(Graphic=0x30C0007, Bone=0x1A, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=26)
+		External_Graphic(Graphic=0x30C0001, Bone=0x19, X=0, Y=0, Z=0, XRot=3.11947, YRot=-0.78984, ZRot=-0.5426, Size=1, Terminate=0x1)
+		FRAME(Frames=33)
+		Set_Loop(Iterations=4){
+		    Color_Overlay(Red=255, Green=255, Blue=100, Alpha=100)
+		    WAIT(Frames=1)
+		    Color_Overlay(Red=255, Green=100, Blue=0, Alpha=90)
+		    WAIT(Frames=1)
+		    Terminate_Overlays()
+		    WAIT(Frames=1)
+		    Goto(Offset=-17)
+		}
+		FRAME(Frames=51)
+		Graphic_Effect3(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=53)
+		External_Graphic(Graphic=0x30C0000, Bone=0x1A, X=0, Y=-10, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x630000)
+		WAIT(Frames=3)
+		Sound_Effect(SFX=0xE0062)
+		WAIT(Frames=33)
+		Sound_Effect(SFX=0xE007A)
+		WAIT(Frames=16)
+		Stop_Sound_Effect(SFX=0xE0062)
+		Sound_Effect(SFX=0xE0061)
+		Sound_Effect(SFX=0x630001)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=2)
+		FRAME(Frames=48)
+		FRAME(Frames=53)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=93)
+		Slope_Full(unknown=0x0, unknown=0xA)
+		Script_End()
+	}
+
+}

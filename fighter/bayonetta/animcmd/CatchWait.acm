@@ -1,0 +1,40 @@
+MoveDef CatchWait
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x1D){
+		    Set_Loop(Iterations=-1){
+		        Graphic_Effect2(Graphic=0x1000010, Bone=0x0, X=6.5, Y=13.5, Z=4.5, XRot=0, YRot=0, ZRot=0, Size=0.35, RandomX=1.5, RandomY=1, RandomZ=0.5, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		        LAST_EFFECT_SET_RATE(unknown=0.7)
+		        WAIT(Frames=18)
+		        Goto(Offset=-21)
+		    }
+		}
+		Else(Offset=0x1B){
+		    Set_Loop(Iterations=-1){
+		        Graphic_Effect2(Graphic=0x1000010, Bone=0x0, X=6.5, Y=13.5, Z=-1.5, XRot=0, YRot=0, ZRot=0, Size=0.35, RandomX=1.5, RandomY=1, RandomZ=0.5, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		        LAST_EFFECT_SET_RATE(unknown=0.7)
+		        WAIT(Frames=18)
+		        Goto(Offset=-21)
+		    }
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Model_Changer(ChangerID=0x3, ChangerState=0x2)
+		Script_End()
+	}
+
+}

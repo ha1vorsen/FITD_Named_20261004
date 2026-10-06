@@ -1,0 +1,29 @@
+MoveDef SpecialAirNEnd
+{
+	Main()
+	{
+		JUMP(Hash=0x179E4623)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x179E4623)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=16)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Article_Visibility(Article=0x0, State=0x0)
+		Script_End()
+	}
+
+}

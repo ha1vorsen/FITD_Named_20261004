@@ -1,0 +1,26 @@
+MoveDef SpecialHiLanding_C2
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=15)
+		Set_Frame_Duration(Speed=2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=15)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

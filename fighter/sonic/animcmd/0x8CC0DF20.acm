@@ -1,0 +1,30 @@
+MoveDef 0x8CC0DF20
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=13)
+		Morph_Model_Event(unknown=0x0)
+		Set_Loop(Iterations=10){
+		    CALL(Hash=0x838686AE)
+		    WAIT(Frames=2)
+		    CALL(Hash=0xF7FA88CD)
+		    WAIT(Frames=2)
+		    Goto(Offset=-8)
+		}
+		FRAME(Frames=53)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,21 @@
+MoveDef DamageAir2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=22)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,37 @@
+MoveDef FinalAttack : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		IS_FLAG(Variable=RA-Flag[14])
+		True(Offset=0xD){
+		    CAM_RESET()
+		    CAM_OFFSET(unknown=0x41000000, unknown=-3)
+		    Set_Camera_Boundaries(Front=15, Back=-4, Top=7, Bottom=-7)
+		}
+		Else(Offset=0x2){
+		}
+		ON_FLAG(Variable=RA-Flag[15])
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=40, Angle=0x4A, KBG=0x37, WBKB=0x0, BKB=0x3C, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x2, SFXType=0x1, FacingRestriction=0x1, DisableHitlag=0x0, Unknown=0x0, Type=0x0)
+		End_Screen_Tint(ID=0x0, TransitionOutTime=0x0)
+		End_Screen_Tint(ID=0x2, TransitionOutTime=0x0)
+		Screen_Tint(TransitionTime=0x0, Red=0x1, Green=0xFF, Blue=0xFF, Alpha=0xFF, Duration=0xFF, unknown=0x0, TransitionOutTime=0xFF)
+		WAIT(Frames=3)
+		End_Screen_Tint(ID=0x0, TransitionOutTime=0x0)
+		Screen_Tint(TransitionTime=0x2, Red=0x5, Green=0x0, Blue=0x0, Alpha=0x0, Duration=0xFF, unknown=0x6, TransitionOutTime=0xFF)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

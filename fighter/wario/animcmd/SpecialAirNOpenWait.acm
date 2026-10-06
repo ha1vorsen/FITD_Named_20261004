@@ -1,0 +1,25 @@
+MoveDef SpecialAirNOpenWait
+{
+	Main()
+	{
+		JUMP(Hash=0x1BE7096F)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x1BE7096F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x1BE7096F)
+		Script_End()
+	}
+
+}

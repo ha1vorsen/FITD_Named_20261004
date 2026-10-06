@@ -1,0 +1,24 @@
+MoveDef 0x5DF31973 : Unlisted
+{
+	Main()
+	{
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=1, Angle=0x169, KBG=0x28, WBKB=0x0, BKB=0x8, Size=5.2, X=0, Y=7, Z=7, Effect=0x2, Trip=0, Hitlag=1, SDI=1.1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=1, Angle=0x169, KBG=0x28, WBKB=0x0, BKB=0x8, Size=6.2, X=0, Y=7, Z=13, Effect=0x2, Trip=0, Hitlag=1, SDI=1.1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

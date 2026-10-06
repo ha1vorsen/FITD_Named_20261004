@@ -1,0 +1,27 @@
+MoveDef SpecialAirSDHit
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.6)
+		Script_End()
+	}
+
+	Effect()
+	{
+		EFFECT_DETACH_KIND_WORK(unknown=0x10000098, unknown=0xFFFFFFFF)
+		EFFECT_DETACH_KIND(Graphic=0x338002C, unknown=0xFFFFFFFF)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0xC91000F)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

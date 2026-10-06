@@ -1,0 +1,23 @@
+MoveDef SpecialAirNHitoS
+{
+	Main()
+	{
+		JUMP(Hash=0x32C79E33)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x32C79E33)
+		Script_End()
+	}
+
+}

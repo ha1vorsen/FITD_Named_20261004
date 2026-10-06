@@ -1,0 +1,23 @@
+MoveDef GlideStart
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		PLAY_SE_REMAIN(unknown=0x200060)
+		WAIT(Frames=28)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

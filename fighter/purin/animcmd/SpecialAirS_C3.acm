@@ -1,0 +1,49 @@
+MoveDef SpecialAirS_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=13)
+		Set_Frame_Duration(Speed=1)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1, Angle=0x28, KBG=0x64, WBKB=0x16, BKB=0x0, Size=4.5, X=0, Y=4, Z=13, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x2, SFXLevel=0x1, SFXType=0x6, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x5, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=4, Z2=3)
+		ON_FLAG(Variable=RA-Flag[15])
+		SET_INT(Value=0x1, Variable=RA-Int[2])
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=29)
+		Remove_Hitbox(ID=0x0)
+		Allow/Disallow_Ledgegrab(State=0x1)
+		Extended_Special_Hitbox(ID=0x1, Part=0x1, Bone=0x0, Damage=5, Angle=0x5A, KBG=0x64, WBKB=0x0, BKB=0x3C, Size=5.5, X=0, Y=4, Z=13, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x2, SFXLevel=0x2, SFXType=0x6, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x5, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=4, Z2=3)
+		FRAME(Frames=30)
+		Remove_All_Hitboxes()
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=31)
+		SET_INT(Value=0x2, Variable=RA-Int[2])
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=40)
+		Add/Set_Momentum(Horizontal=0.2, Vertical=0, Mode=0x1)
+		Set_Frame_Duration(Speed=1)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xDCB0133D)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=13)
+		Sound_Effect(SFX=0x260083)
+		Sound_Effect(SFX=0x590014)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xDCB0133D)
+		Script_End()
+	}
+
+}

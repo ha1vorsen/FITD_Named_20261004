@@ -1,0 +1,36 @@
+MoveDef TurnRun
+{
+	Main()
+	{
+		FRAME(Frames=12)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=15)
+		Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=-4.5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x40008)
+		unk_687F9320(unknown=0x40008, unknown=0xF)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x4)
+		FRAME(Frames=5)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		FRAME(Frames=16)
+		Slope_Full(unknown=0x0, unknown=0x4)
+		FRAME(Frames=18)
+		Script_End()
+	}
+
+}

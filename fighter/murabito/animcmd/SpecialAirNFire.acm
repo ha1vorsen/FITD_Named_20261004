@@ -1,0 +1,30 @@
+MoveDef SpecialAirNFire
+{
+	Main()
+	{
+		JUMP(Hash=0x46C899D2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x32A0014, Bone=0x13, X=2.5, Y=6, Z=7, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Stop_Sound_Effect(SFX=0x24C0037)
+		WAIT(Frames=3)
+		Sound_Effect(SFX=0x24C0048)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x46C899D2)
+		Script_End()
+	}
+
+}

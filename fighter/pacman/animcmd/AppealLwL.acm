@@ -1,0 +1,64 @@
+MoveDef AppealLwL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xFF0A8538)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xFF0A8538)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=8)
+		Model_Changer(ChangerID=0x1, ChangerState=0x4)
+		MATERIAL_ANIM_SET_FRAME(unknown=2)
+		MATERIAL_ANIM_SET_RATE(unknown=0)
+		FRAME(Frames=13)
+		MATERIAL_ANIM_SET_FRAME(unknown=3)
+		Slope_Full(unknown=0x1, unknown=0x5)
+		FRAME(Frames=18)
+		MATERIAL_ANIM_SET_FRAME(unknown=0)
+		FRAME(Frames=23)
+		MATERIAL_ANIM_SET_FRAME(unknown=1)
+		FRAME(Frames=28)
+		MATERIAL_ANIM_SET_FRAME(unknown=0)
+		FRAME(Frames=33)
+		MATERIAL_ANIM_SET_FRAME(unknown=1)
+		FRAME(Frames=35)
+		MATERIAL_ANIM_SET_FRAME(unknown=3)
+		FRAME(Frames=38)
+		MATERIAL_ANIM_SET_FRAME(unknown=2)
+		FRAME(Frames=43)
+		MATERIAL_ANIM_SET_FRAME(unknown=3)
+		FRAME(Frames=48)
+		MATERIAL_ANIM_SET_FRAME(unknown=2)
+		FRAME(Frames=53)
+		MATERIAL_ANIM_SET_FRAME(unknown=3)
+		FRAME(Frames=56)
+		MATERIAL_ANIM_SET_FRAME(unknown=1)
+		FRAME(Frames=58)
+		MATERIAL_ANIM_SET_FRAME(unknown=0)
+		FRAME(Frames=63)
+		MATERIAL_ANIM_SET_FRAME(unknown=1)
+		FRAME(Frames=68)
+		MATERIAL_ANIM_SET_FRAME(unknown=0)
+		FRAME(Frames=73)
+		MATERIAL_ANIM_SET_FRAME(unknown=1)
+		FRAME(Frames=97)
+		Model_Changer(ChangerID=0x1, ChangerState=0x0)
+		FRAME(Frames=97)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		Script_End()
+	}
+
+}

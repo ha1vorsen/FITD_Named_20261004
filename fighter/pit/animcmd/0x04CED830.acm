@@ -1,0 +1,32 @@
+MoveDef 0x04CED830 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=36)
+		Sound_Effect(SFX=0x40011)
+		FRAME(Frames=39)
+		Sound_Effect(SFX=0x4003C)
+		FRAME(Frames=83)
+		Sound_Effect(SFX=0x4003C)
+		FRAME(Frames=95)
+		Sound_Effect(SFX=0x4003C)
+		FRAME(Frames=119)
+		PLAY_SE_NO_3D(unknown=0x5F0019)
+		FRAME(Frames=126)
+		Sound_Effect(SFX=0x4003B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

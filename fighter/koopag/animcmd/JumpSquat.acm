@@ -1,0 +1,26 @@
+MoveDef JumpSquat
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x6E00014)
+		unk_687F9320(unknown=0x6E00014, unknown=0xA)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

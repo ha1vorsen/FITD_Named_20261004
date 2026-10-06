@@ -1,0 +1,24 @@
+MoveDef 0x0EA73BD8
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=13)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

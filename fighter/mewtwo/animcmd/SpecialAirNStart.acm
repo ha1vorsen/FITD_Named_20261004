@@ -1,0 +1,25 @@
+MoveDef SpecialAirNStart
+{
+	Main()
+	{
+		JUMP(Hash=0xFC612FC6)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xFC612FC6)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xFC612FC6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,70 @@
+MoveDef AppealLwR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=14)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=24)
+		External_Graphic(Graphic=0x3310012, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=14)
+		Transient_Sound_Effect(SFX=0x7690011)
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x7690050)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=8)
+		Model_Changer(ChangerID=0x1, ChangerState=0x4)
+		MATERIAL_ANIM_SET_FRAME(unknown=0)
+		MATERIAL_ANIM_SET_RATE(unknown=0)
+		FRAME(Frames=13)
+		MATERIAL_ANIM_SET_FRAME(unknown=1)
+		Slope_Full(unknown=0x1, unknown=0x5)
+		FRAME(Frames=18)
+		MATERIAL_ANIM_SET_FRAME(unknown=2)
+		FRAME(Frames=23)
+		MATERIAL_ANIM_SET_FRAME(unknown=3)
+		FRAME(Frames=28)
+		MATERIAL_ANIM_SET_FRAME(unknown=2)
+		FRAME(Frames=33)
+		MATERIAL_ANIM_SET_FRAME(unknown=3)
+		FRAME(Frames=35)
+		MATERIAL_ANIM_SET_FRAME(unknown=1)
+		FRAME(Frames=38)
+		MATERIAL_ANIM_SET_FRAME(unknown=0)
+		FRAME(Frames=43)
+		MATERIAL_ANIM_SET_FRAME(unknown=1)
+		FRAME(Frames=48)
+		MATERIAL_ANIM_SET_FRAME(unknown=0)
+		FRAME(Frames=53)
+		MATERIAL_ANIM_SET_FRAME(unknown=1)
+		FRAME(Frames=56)
+		MATERIAL_ANIM_SET_FRAME(unknown=3)
+		FRAME(Frames=58)
+		MATERIAL_ANIM_SET_FRAME(unknown=2)
+		FRAME(Frames=63)
+		MATERIAL_ANIM_SET_FRAME(unknown=3)
+		FRAME(Frames=68)
+		MATERIAL_ANIM_SET_FRAME(unknown=2)
+		FRAME(Frames=73)
+		MATERIAL_ANIM_SET_FRAME(unknown=3)
+		FRAME(Frames=97)
+		Model_Changer(ChangerID=0x1, ChangerState=0x0)
+		FRAME(Frames=97)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		Script_End()
+	}
+
+}

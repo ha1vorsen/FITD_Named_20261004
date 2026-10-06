@@ -1,0 +1,42 @@
+MoveDef SpecialHi_C2
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=4)
+		SA_SET(Unknown=0x2)
+		ON_FLAG(Variable=RA-Flag[15])
+		WAIT(Frames=1)
+		Set_Frame_Duration(Speed=2.4)
+		ON_FLAG(Variable=RA-Flag[13])
+		WAIT(Frames=1)
+		Allow/Disallow_Ledgegrab(State=0x1)
+		FRAME(Frames=12)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=20)
+		Set_Frame_Duration(Speed=2.4)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x20084)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

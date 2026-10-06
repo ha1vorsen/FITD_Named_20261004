@@ -1,0 +1,38 @@
+MoveDef FinalStart
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=90)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=70)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0xF){
+		    External_Graphic(Graphic=0x30F0011, Bone=0x0, X=0, Y=20, Z=15, XRot=0, YRot=180, ZRot=0, Size=1, Terminate=0x0)
+		}
+		Else(Offset=0xD){
+		    External_Graphic(Graphic=0x30F0011, Bone=0x0, X=0, Y=20, Z=15, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=63)
+		PLAY_SE_REMAIN(unknown=0x8BF0003)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=65)
+		Script_End()
+	}
+
+}

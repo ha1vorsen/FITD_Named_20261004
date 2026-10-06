@@ -1,0 +1,47 @@
+MoveDef AttackAirN
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x2)
+		Set_Anchored_Article_Action(Article=0x2, Action=0x8)
+		FRAME(Frames=4)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=10)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=8, Angle=0x37, KBG=0x60, WBKB=0x0, BKB=0x26, Size=5.7, X=0, Y=11, Z=7, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x7, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x17, X2=0, Y2=10, Z2=10)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=8, Angle=0x37, KBG=0x60, WBKB=0x0, BKB=0x26, Size=3, X=0, Y=11, Z=7, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x7, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x17, X2=0, Y2=7, Z2=19)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=15)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=8, Angle=0x37, KBG=0x60, WBKB=0x0, BKB=0x26, Size=5.6, X=0, Y=13, Z=-3, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x7, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x17, X2=0, Y2=13.8, Z2=-6.6)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=8, Angle=0x37, KBG=0x60, WBKB=0x0, BKB=0x26, Size=3, X=0, Y=13, Z=-3, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x7, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x17, X2=0, Y2=16.5, Z2=-15)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=42)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Remove_Article(Article=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3190007, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		Low_Voice_Clip(unknown=0x80120005)
+		Sound_Effect(SFX=0x1B0077)
+		WAIT(Frames=1)
+		Sound_Effect(SFX=0x1B005F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

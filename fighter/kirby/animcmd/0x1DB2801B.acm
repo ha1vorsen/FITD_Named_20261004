@@ -1,0 +1,31 @@
+MoveDef 0x1DB2801B
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0xF){
+		    External_Graphic(Graphic=0x318001C, Bone=0x19, X=0, Y=0, Z=9, XRot=0, YRot=0, ZRot=-185, Size=0.95, Terminate=0x1)
+		}
+		Else(Offset=0xD){
+		    External_Graphic(Graphic=0x318001C, Bone=0x19, X=0, Y=0, Z=9, XRot=0, YRot=0, ZRot=-185, Size=0.95, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xF2FA44CD)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xF2FA44CD)
+		Script_End()
+	}
+
+}

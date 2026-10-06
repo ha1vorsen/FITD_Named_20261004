@@ -1,0 +1,22 @@
+MoveDef 0x36783DB2
+{
+	Main()
+	{
+		FRAME(Frames=8)
+		Fire_Weapon()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

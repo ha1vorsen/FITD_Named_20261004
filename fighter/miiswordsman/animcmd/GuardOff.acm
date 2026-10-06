@@ -1,0 +1,26 @@
+MoveDef GuardOff
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x63)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Slope_Full(unknown=0x6, unknown=0x3)
+		FRAME(Frames=4)
+		unk_C7B586AF(unknown=0, unknown=30, unknown=5)
+		Script_End()
+	}
+
+}

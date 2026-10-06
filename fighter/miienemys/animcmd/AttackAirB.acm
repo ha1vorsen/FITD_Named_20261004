@@ -1,0 +1,38 @@
+MoveDef AttackAirB
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=8)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x19, Damage=12, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0xA, Size=4, X=0, Y=8.5, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x19, Damage=12, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0xA, Size=4, X=0, Y=3, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x15, Damage=12, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0xA, Size=3, X=1.5, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Extended_Hitbox(ID=0x3, Part=0x0, Bone=0x0, Damage=12, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0xA, Size=4.3, X=0, Y=9, Z=-11, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=9, Z2=-6)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=29)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Sword_Trace(TraceID=0xE5, BlurLen=4.203895E-45, Bone1=0x19, X=0, Y=0.5, Z=0, Bone2=0x19, X=-1E-05, Y=13.5, Z=0, Anchored=0x1, Graphic=0x33F0000, Bone3=0x19, X=0, Y=0, Z=0, RotX=0.00013, RotY=-7E-05, RotZ=0.00011, Length=1)
+		FRAME(Frames=10)
+		Terminate_Sword_Glow(FadeTime=0x3)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Sound_Effect(SFX=0x821000F)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

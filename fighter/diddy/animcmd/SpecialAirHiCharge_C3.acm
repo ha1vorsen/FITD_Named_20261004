@@ -1,0 +1,30 @@
+MoveDef SpecialAirHiCharge_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=0.025)
+		FRAME(Frames=41)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x97884C84)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Transient_Sound_Effect(SFX=0x1E0039)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x97884C84)
+		Script_End()
+	}
+
+}

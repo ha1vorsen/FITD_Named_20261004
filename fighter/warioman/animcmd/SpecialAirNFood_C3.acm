@@ -1,0 +1,21 @@
+MoveDef SpecialAirNFood_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x2405A46F)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

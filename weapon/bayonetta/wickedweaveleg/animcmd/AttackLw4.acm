@@ -1,0 +1,79 @@
+MoveDef AttackLw4
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=14)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		FRAME(Frames=16)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=16, Angle=0x48, KBG=0x5A, WBKB=0x0, BKB=0xA, Size=9, X=0, Y=28, Z=16, Effect=0x0, Trip=0, Hitlag=1.2, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x1, Direct/Indirect=0x0, Type=0x6)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=16, Angle=0x10E, KBG=0x50, WBKB=0x0, BKB=0xA, Size=9, X=0, Y=28, Z=16, Effect=0x0, Trip=0, Hitlag=1.2, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x2, Direct/Indirect=0x0, Type=0x6)
+		ON_FLAG(Variable=LA-Flag[8])
+		WAIT(Frames=1)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=15, Angle=0x48, KBG=0x5A, WBKB=0x0, BKB=0xA, Size=12, X=0, Y=8, Z=18, Effect=0x0, Trip=0, Hitlag=1.2, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x1, Direct/Indirect=0x0, Type=0x6)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=15, Angle=0x10E, KBG=0x5A, WBKB=0x0, BKB=0xA, Size=12, X=0, Y=8, Z=18, Effect=0x0, Trip=0, Hitlag=1.2, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x2, Direct/Indirect=0x0, Type=0x6)
+		FRAME(Frames=17)
+		ON_FLAG(Variable=LA-Flag[9])
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=41)
+		OFF_FLAG(Variable=LA-Flag[9])
+		Script_End()
+	}
+
+	Effect()
+	{
+		Int_Var_Compare(Variable=LA-Int[8], Method=0x1, Value=0x1)
+		True(Offset=0x70){
+		    External_Graphic(Graphic=0x3380015, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=-90, Size=1.2, Terminate=0x1)
+		    FRAME(Frames=15)
+		    Float_Compare(Type=0x0, Method=0x4, Value=0)
+		    True(Offset=0x1A){
+		        Graphic_Effect4(Graphic=0x3380017, Bone=0x7D1, X=0, Y=1, Z=0, XRot=0, YRot=45, ZRot=-90, Size=1, Terminate=0x1)
+		        Graphic_Effect4(Graphic=0x3380017, Bone=0x7D1, X=0, Y=6, Z=0, XRot=0, YRot=225, ZRot=-90, Size=1, Terminate=0x1)
+		    }
+		    Else(Offset=0x18){
+		        Graphic_Effect4(Graphic=0x3380017, Bone=0x7D1, X=0, Y=1, Z=0, XRot=0, YRot=-135, ZRot=-90, Size=1, Terminate=0x1)
+		        Graphic_Effect4(Graphic=0x3380017, Bone=0x7D1, X=0, Y=6, Z=0, XRot=0, YRot=45, ZRot=-90, Size=1, Terminate=0x1)
+		    }
+		    Graphic_Effect4(Graphic=0x3380016, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=-90, Size=1, Terminate=0x1)
+		    FRAME(Frames=17)
+		    Graphic_Effect2(Graphic=0x1000008, Bone=0x7D1, X=40, Y=0, Z=0, XRot=0, YRot=0, ZRot=90, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    FRAME(Frames=37)
+		    External_Graphic(Graphic=0x3380018, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=-90, Size=1, Terminate=0x1)
+		}
+		Else(Offset=0x58){
+		    External_Graphic(Graphic=0x3380046, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=-90, Size=1.2, Terminate=0x1)
+		    FRAME(Frames=15)
+		    Float_Compare(Type=0x0, Method=0x4, Value=0)
+		    True(Offset=0xF){
+		        Graphic_Effect4(Graphic=0x3380017, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=45, ZRot=-90, Size=1, Terminate=0x1)
+		    }
+		    Else(Offset=0xD){
+		        Graphic_Effect4(Graphic=0x3380017, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=-135, ZRot=-90, Size=1, Terminate=0x1)
+		    }
+		    Graphic_Effect4(Graphic=0x3380016, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=-90, Size=1, Terminate=0x1)
+		    FRAME(Frames=17)
+		    Graphic_Effect2(Graphic=0x1000008, Bone=0x7D1, X=40, Y=0, Z=0, XRot=0, YRot=0, ZRot=90, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    FRAME(Frames=37)
+		    External_Graphic(Graphic=0x3380018, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=-90, Size=1, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		WAIT(Frames=15)
+		Sound_Effect(SFX=0xC910042)
+		WAIT(Frames=2)
+		Sound_Effect(SFX=0xC910041)
+		WAIT(Frames=15)
+		Sound_Effect(SFX=0xC91003E)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

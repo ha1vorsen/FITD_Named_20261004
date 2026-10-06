@@ -1,0 +1,33 @@
+MoveDef 0x0232633D
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x18, X=0, Y=-0.02485, Z=2.5, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Graphic_Effect3(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0x4A8004D)
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x4A8004F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=2)
+		FRAME(Frames=20)
+		Item_Visibility(State=0x1)
+		Article_Visibility(Article=0x0, State=0x0)
+		Script_End()
+	}
+
+}

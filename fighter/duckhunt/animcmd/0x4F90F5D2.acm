@@ -1,0 +1,28 @@
+MoveDef 0x4F90F5D2
+{
+	Main()
+	{
+		FRAME(Frames=18)
+		THROW_ITEM_OFFSET(Unknown=13, Unknown=14, Unknown=0x1, Unknown=0x0, Unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		FRAME(Frames=18)
+		SLOPE(unknown=0x2)
+		FRAME(Frames=34)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

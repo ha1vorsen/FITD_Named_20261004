@@ -1,0 +1,24 @@
+MoveDef 0xC5A16EF1 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=22)
+		SLOPE(unknown=0x4)
+		FRAME(Frames=72)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

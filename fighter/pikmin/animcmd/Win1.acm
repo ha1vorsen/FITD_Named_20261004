@@ -1,0 +1,38 @@
+MoveDef Win1
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x2)
+		IS_EXIST_ARTICLE(Unknown=0x2)
+		True(Offset=0x5){
+		    Set_Anchored_Article_Action(Article=0x2, Action=0x0)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=30)
+		Sound_Effect(SFX=0x1C0081)
+		WAIT(Frames=30)
+		Sound_Effect(SFX=0x1C0082)
+		WAIT(Frames=30)
+		Sound_Effect(SFX=0x1C0081)
+		WAIT(Frames=30)
+		Sound_Effect(SFX=0x1C0082)
+		WAIT(Frames=30)
+		Sound_Effect(SFX=0x1C0081)
+		WAIT(Frames=30)
+		Sound_Effect(SFX=0x1C0082)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

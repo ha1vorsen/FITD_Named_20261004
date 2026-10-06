@@ -1,0 +1,28 @@
+MoveDef 0x004B3850
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		Pickup_Item2(Unknown=0x0, Unknown=0x2)
+		FRAME(Frames=6)
+		Consume_Item(Unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		unk_C7B586AF(unknown=0, unknown=30, unknown=3)
+		FRAME(Frames=19)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

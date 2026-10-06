@@ -1,0 +1,23 @@
+MoveDef 0x63D208D1
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		PLAY_SE_REMAIN(unknown=0x4D0005)
+		Transient_Sound_Effect(SFX=0x1A0065)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

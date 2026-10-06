@@ -1,0 +1,25 @@
+MoveDef SpecialAirLwCapture_C2
+{
+	Main()
+	{
+		JUMP(Hash=0xE4F1A679)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xE4F1A679)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xE4F1A679)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

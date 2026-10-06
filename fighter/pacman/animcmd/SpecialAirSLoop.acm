@@ -1,0 +1,25 @@
+MoveDef SpecialAirSLoop
+{
+	Main()
+	{
+		SHOOT_ARTICLE(Value=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x2739DEC0)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x2739DEC0)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,51 @@
+MoveDef SpecialNShoot
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		Set_ExAnchored_Article_Action(Article=0x0, Action=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=7)
+		Graphic_Effect3(Graphic=0x1000027, Bone=0x0, X=-5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Color_Overlay(Red=255, Green=255, Blue=255, Alpha=240)
+		WAIT(Frames=1)
+		Color_Overlay(Red=80, Green=120, Blue=255, Alpha=100)
+		WAIT(Frames=1)
+		Change_Overlay(Transition=5, Red=0, Green=0, Blue=80, Alpha=0)
+		WAIT(Frames=5)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Float_Var_Compare(Variable=RA-Float[6], Method=0x2, Value=0.45)
+		True(Offset=0x6){
+		    PLAY_SE_REMAIN(unknown=0x91F0000)
+		}
+		Else(Offset=0xE){
+		    Float_Var_Compare(Variable=RA-Float[6], Method=0x2, Value=0.9)
+		    True(Offset=0x6){
+		        PLAY_SE_REMAIN(unknown=0x91F0001)
+		    }
+		    Else(Offset=0x4){
+		        PLAY_SE_REMAIN(unknown=0x91F000C)
+		    }
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

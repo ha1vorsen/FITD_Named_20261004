@@ -1,0 +1,23 @@
+MoveDef 0x900CE8E8
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x682C97E3)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

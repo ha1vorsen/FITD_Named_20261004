@@ -1,0 +1,44 @@
+MoveDef EntryL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x4F)
+		WAIT(Frames=8)
+		Sound_Effect(SFX=0x4A80032)
+		WAIT(Frames=39)
+		Sound_Effect(SFX=0x4A80023)
+		WAIT(Frames=15)
+		Sound_Effect(SFX=0x4A80022)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=1)
+		SLOPE(unknown=0x0)
+		FRAME(Frames=8)
+		SLOPE(unknown=0x4)
+		FRAME(Frames=9)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=58)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		FRAME(Frames=102)
+		Model_Changer(ChangerID=0x1, ChangerState=0x0)
+		Script_End()
+	}
+
+}

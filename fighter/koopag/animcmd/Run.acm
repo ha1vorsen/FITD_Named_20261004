@@ -1,0 +1,43 @@
+MoveDef Run
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		Graphic_Effect2(Graphic=0x1000020, Bone=0x0, X=20, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Graphic_Effect2(Graphic=0x1000025, Bone=0x0, X=-20, Y=1, Z=20, XRot=0, YRot=45, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=4)
+		Graphic_Effect2(Graphic=0x1000025, Bone=0x0, X=16, Y=1, Z=14, XRot=0, YRot=-45, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=7)
+		Graphic_Effect2(Graphic=0x1000025, Bone=0x0, X=-14, Y=1, Z=-14, XRot=0, YRot=45, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=13)
+		Graphic_Effect2(Graphic=0x1000020, Bone=0x0, X=-20, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Graphic_Effect2(Graphic=0x1000025, Bone=0x0, X=-20, Y=1, Z=20, XRot=0, YRot=45, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=15)
+		Graphic_Effect2(Graphic=0x1000025, Bone=0x0, X=16, Y=1, Z=14, XRot=0, YRot=-45, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=17)
+		Graphic_Effect2(Graphic=0x1000025, Bone=0x0, X=-14, Y=1, Z=-14, XRot=0, YRot=45, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Loop_Rest()
+		JUMP(Hash=0x5076A4C0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x6E00000)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Loop_Rest()
+		JUMP(Hash=0x5076A4C0)
+		Script_End()
+	}
+
+}

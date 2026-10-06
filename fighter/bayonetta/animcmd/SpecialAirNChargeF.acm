@@ -1,0 +1,26 @@
+MoveDef SpecialAirNChargeF
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3380024, Bone=0xA, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		External_Graphic(Graphic=0x3380024, Bone=0x6, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xC659BB87)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xC659BB87)
+		Script_End()
+	}
+
+}

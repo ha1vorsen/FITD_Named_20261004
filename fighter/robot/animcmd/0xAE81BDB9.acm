@@ -1,0 +1,22 @@
+MoveDef 0xAE81BDB9
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		STOP_SE_STATUS()
+		Transient_Sound_Effect(SFX=0x25006E)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

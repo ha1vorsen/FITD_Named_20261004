@@ -1,0 +1,43 @@
+MoveDef 0xA59743B2
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		SHOOT_EXIST_ARTICLE(unknown=0x0)
+		ON_FLAG(Variable=RA-Flag[15])
+		WAIT(Frames=2)
+		Set_Frame_Duration(Speed=5)
+		WAIT(Frames=1)
+		Set_Frame_Duration(Speed=1)
+		WAIT(Frames=9)
+		Set_Frame_Duration(Speed=5)
+		WAIT(Frames=3)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Graphic_Effect2(Graphic=0x3060004, Bone=0x16, X=-5.98503, Y=0.37938, Z=0.18819, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Graphic_Effect3(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Color_Overlay(Red=255, Green=192, Blue=255, Alpha=180)
+		FRAME(Frames=5)
+		Change_Overlay(Transition=10, Red=80, Green=80, Blue=80, Alpha=0)
+		FRAME(Frames=15)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		SLOPE_TOE(unknown=0x2, unknown=0x42700000)
+		Script_End()
+	}
+
+}

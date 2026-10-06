@@ -1,0 +1,61 @@
+MoveDef SpecialS_C2
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x1)
+		Set_Frame_Duration(Speed=1.12)
+		FRAME(Frames=6)
+		SHIELD_ON(Unused=0x3, ID=0x0, Type=0x3)
+		FRAME(Frames=12)
+		ON_FLAG(Variable=RA-Flag[14])
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=11.2, Angle=0x169, KBG=0x69, WBKB=0x0, BKB=0x1E, Size=8.5, X=0, Y=6.7, Z=13, Effect=0x3, Trip=0.3, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x6, SFXLevel=0x2, SFX=0x7, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=11.2, Angle=0x169, KBG=0x69, WBKB=0x0, BKB=0x1E, Size=5, X=0, Y=6.7, Z=7, Effect=0x3, Trip=0.3, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x6, SFXLevel=0x2, SFX=0x7, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		FRAME(Frames=16)
+		Remove_All_Hitboxes()
+		OFF_FLAG(Variable=RA-Flag[14])
+		Set_Frame_Duration(Speed=1.8)
+		FRAME(Frames=17)
+		Shield_Off2(Unused=0x3, ID=0x0, Type=0x3)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=11)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x3030003, GFXLeft=0x303000F, Bone=0x0, X=0x0, Y=0x41000000, Z=0x41100000, XRot=0x0, YRot=0x0, ZRot=0x0, Size=0x3F800000, Terminate=0x1, unknown=0x0)
+		WAIT(Frames=1)
+		External_Graphic(Graphic=0x3030004, Bone=0x17, X=0, Y=8, Z=0, XRot=180, YRot=2E-05, ZRot=-180, Size=1, Terminate=0x1)
+		LAST_EFFECT_SET_ALPHA(unknown=0x42700000)
+		LANDING_EFFECT_FLIP(GFXRight=0x100000D, GFXLeft=0x100000E, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1, unknown=0x0)
+		Set_Loop(Iterations=3){
+		    FRAME(Frames=13)
+		    Graphic_Effect2(Graphic=0x1000012, Bone=0x0, X=0, Y=7, Z=10, XRot=0, YRot=0, ZRot=0, Size=1.3, RandomX=5, RandomY=5, RandomZ=5, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=2)
+		    Graphic_Effect2(Graphic=0x1000012, Bone=0x0, X=0, Y=9, Z=14, XRot=0, YRot=0, ZRot=0, Size=1.3, RandomX=5, RandomY=5, RandomZ=5, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=3)
+		    Goto(Offset=-40)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0x2007C)
+		WAIT(Frames=2)
+		Sound_Effect(SFX=0x12C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x4)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=10)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		FRAME(Frames=13)
+		FRAME(Frames=23)
+		Script_End()
+	}
+
+}

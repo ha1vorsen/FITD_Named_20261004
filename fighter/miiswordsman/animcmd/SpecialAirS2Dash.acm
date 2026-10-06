@@ -1,0 +1,43 @@
+MoveDef SpecialAirS2Dash
+{
+	Main()
+	{
+		JUMP(Hash=0x7BB975EB)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x7BB975EB)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Stop_Sound_Effect(SFX=0x81B0035)
+		WAIT(Frames=2)
+		Float_Var_Compare(Variable=RA-Float[8], Method=0x4, Value=0.5)
+		True(Offset=0x9){
+		    Sound_Effect(SFX=0x81B004B)
+		    unk_687F9320(unknown=0x81B004B, unknown=0xF)
+		}
+		Else(Offset=0x14){
+		    Float_Var_Compare(Variable=RA-Float[8], Method=0x4, Value=1)
+		    True(Offset=0x9){
+		        Sound_Effect(SFX=0x81B0062)
+		        unk_687F9320(unknown=0x81B0062, unknown=0xF)
+		    }
+		    Else(Offset=0x7){
+		        Sound_Effect(SFX=0x81B0063)
+		        unk_687F9320(unknown=0x81B0063, unknown=0xF)
+		    }
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

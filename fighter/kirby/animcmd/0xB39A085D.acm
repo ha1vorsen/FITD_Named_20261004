@@ -1,0 +1,25 @@
+MoveDef 0xB39A085D
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x91593DDA)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x91593DDA)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x91593DDA)
+		Script_End()
+	}
+
+}

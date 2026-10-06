@@ -1,0 +1,46 @@
+MoveDef SpecialAirSStart_C2
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		SET_LIMIT_SPEED_EX(Horizontal=0, Vertical=-1)
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=6)
+		ON_FLAG(Variable=RA-Flag[15])
+		FRAME(Frames=21)
+		Set_Frame_Duration(Speed=3)
+		FRAME(Frames=27)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=29)
+		Set_Frame_Duration(Speed=1.5)
+		ON_FLAG(Variable=RA-Flag[16])
+		CALL(Hash=0xB806A457)
+		FRAME(Frames=41)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xFEA2FFF0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=12)
+		Sound_Effect(SFX=0x6006C)
+		FRAME(Frames=26)
+		Sound_Effect(SFX=0x60013)
+		FRAME(Frames=29)
+		Sound_Effect(SFX=0x60037)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xFEA2FFF0)
+		Script_End()
+	}
+
+}

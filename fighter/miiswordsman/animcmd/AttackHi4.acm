@@ -1,0 +1,78 @@
+MoveDef AttackHi4
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		ON_FLAG(Variable=RA-Flag[27])
+		FRAME(Frames=11)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=4, Angle=0x82, KBG=0x64, WBKB=0x78, BKB=0x0, Size=4, X=0, Y=5, Z=9, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=14)
+		Set_Loop(Iterations=2){
+		    Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=3, Angle=0x68, KBG=0x64, WBKB=0x5A, BKB=0x0, Size=3.5, X=0, Y=17, Z=0, Effect=0x2, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		    Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=3, Angle=0x6E, KBG=0x64, WBKB=0x28, BKB=0x0, Size=4, X=0, Y=23, Z=-3, Effect=0x2, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=23, Z2=3)
+		    Extended_Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=3, Angle=0x16E, KBG=0x64, WBKB=0x14, BKB=0x0, Size=4, X=0, Y=27, Z=-4, Effect=0x2, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=27, Z2=4.2)
+		    WAIT(Frames=3)
+		    Remove_All_Hitboxes()
+		    WAIT(Frames=3)
+		    Goto(Offset=-86)
+		}
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=7, Angle=0x5F, KBG=0x8E, WBKB=0x0, BKB=0x28, Size=6, X=0, Y=30, Z=-2, Effect=0x2, Trip=0, Hitlag=2, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=30, Z2=3)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=7, Angle=0x62, KBG=0x8E, WBKB=0x0, BKB=0x28, Size=6, X=0, Y=26, Z=-1, Effect=0x2, Trip=0, Hitlag=2, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=26, Z2=3)
+		Extended_Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=7, Angle=0x62, KBG=0x8E, WBKB=0x0, BKB=0x28, Size=4, X=0, Y=19, Z=2, Effect=0x2, Trip=0, Hitlag=2, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=19, Z2=2)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		MII_ENABLE_RATE()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=2)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x0, X=-1E-05, Y=4, Z=10, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=11)
+		AFTER_IMAGE_ON_WORK(unknown=0x10000084, unknown=0x5, unknown=0x19, unknown=0x0, unknown=0x3F000000, unknown=0x0, unknown=0x19, unknown=0xB727C5AC, unknown=0x41580000, unknown=0x0, unknown=0x1, unknown=0x10000083, unknown=0x19, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3908509C, unknown=0xB892CCF7, unknown=0x38E6AFCD, unknown=0x3F800000)
+		Graphic_Effect3(Graphic=0x1000028, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=35)
+		Terminate_Sword_Glow(FadeTime=0x3)
+		FRAME(Frames=42)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Stop_Sound_Effect(SFX=0x112)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0xA8)
+		Sound_Effect(SFX=0x81B0011)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0xA8)
+		Sound_Effect(SFX=0x81B0011)
+		WAIT(Frames=7)
+		Sound_Effect(SFX=0xA8)
+		Sound_Effect(SFX=0x81B0011)
+		WAIT(Frames=22)
+		Sound_Effect3(SFX=0x81B0009)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=6)
+		EXECUTE(Unknown=6)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=10)
+		Slope_Full(unknown=0x0, unknown=0x3)
+		FRAME(Frames=12)
+		FRAME(Frames=40)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		FRAME(Frames=60)
+		unk_C7B586AF(unknown=0, unknown=30, unknown=10)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,31 @@
+MoveDef SpecialHi2_C3
+{
+	Main()
+	{
+		FRAME(Frames=17)
+		GENERATE_ARTICLE(ID=0x3)
+		ON_FLAG(Variable=RA-Flag[14])
+		Allow/Disallow_Ledgegrab(State=0x1)
+		FRAME(Frames=32)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=17)
+		Sound_Effect(SFX=0x770001F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=17)
+		Script_End()
+	}
+
+}

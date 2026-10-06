@@ -1,0 +1,46 @@
+MoveDef SpecialAirS4S_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=4)
+		Add_Momentum(Horizontal=0.5, Vertical=0)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=12)
+		ATK_RESERVE(ID=0x0, Bone=0x3EA, X=0, Y=0, Z=3)
+		ATK_RESERVE(ID=0x1, Bone=0x3EA, X=0.5, Y=2, Z=10)
+		ATK_RESERVE(ID=0x2, Bone=0x16, X=0, Y=1, Z=0)
+		ATK_REFERENCE_NODE(Unknown=0x14, Unknown=0xFFFFFFFF)
+		FRAME(Frames=13)
+		Add_Momentum(Horizontal=-0.5, Vertical=0)
+		Set_Frame_Duration(Speed=1.1)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x3EA, Damage=14, Angle=0x169, KBG=0x96, WBKB=0x0, BKB=0x32, Size=4.3, X=0, Y=0, Z=3, Effect=0x2, Trip=0, Hitlag=1.7, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x3, SFXLevel=0x2, SFXType=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x3EA, Damage=16, Angle=0x169, KBG=0x96, WBKB=0x0, BKB=0x32, Size=4.8, X=0.5, Y=2, Z=10, Effect=0x2, Trip=0, Hitlag=2.1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x3, SFXLevel=0x2, SFXType=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x2, Part=0x0, Bone=0x16, Damage=14, Angle=0x169, KBG=0x96, WBKB=0x0, BKB=0x32, Size=3, X=0, Y=1, Z=0, Effect=0x2, Trip=0, Hitlag=1.7, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x3, SFXLevel=0x2, SFXType=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=16)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xA1B9BDDA)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x16008F)
+		WAIT(Frames=10)
+		Sound_Effect(SFX=0x49000E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xA1B9BDDA)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,37 @@
+MoveDef FinalMove
+{
+	Main()
+	{
+		Body_Collision(State=0x2)
+		ON_FLAG(Variable=RA-Flag[19])
+		SET_INT(Value=0x2E, Variable=RA-Int[10])
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect3(Graphic=0x1000029, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		External_Graphic(Graphic=0x4000006, Bone=0x2, X=0, Y=-10, Z=0, XRot=90, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=3)
+		FRAME(Frames=8)
+		External_Graphic(Graphic=0x4000001, Bone=0x2, X=-3, Y=5, Z=0, XRot=90, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Terminate_Graphic_Effect(Graphic=0x4000006, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x81A003E)
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x81A0067)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

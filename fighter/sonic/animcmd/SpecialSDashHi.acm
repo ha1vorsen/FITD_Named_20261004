@@ -1,0 +1,47 @@
+MoveDef SpecialSDashHi
+{
+	Main()
+	{
+		Remove_All_Hitboxes()
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x3, Damage=7, Angle=0x46, KBG=0x3E, WBKB=0x0, BKB=0x43, Size=3.2, X=0, Y=1.5, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xD, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=2)
+		Graphic_Effect4(Graphic=0x3220003, Bone=0x0, X=0, Y=5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		IS_FLAG(Variable=RA-Flag[14])
+		True(Offset=0xF){
+		    External_Graphic(Graphic=0x3220019, Bone=0x3E8, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		}
+		Else(Offset=0x2){
+		}
+		Terminate_Graphic_Effect(Graphic=0x3220004, unknown=0x0, unknown=0x1)
+		Terminate_Graphic_Effect(Graphic=0x3220003, unknown=0x0, unknown=0x1)
+		External_Graphic(Graphic=0x3220004, Bone=0x3E8, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		WAIT(Frames=1)
+		Graphic_Effect3(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=-12, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=5, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Set_Loop(Iterations=-1){
+		    WAIT(Frames=16)
+		    Graphic_Effect3(Graphic=0x1000009, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x2A004A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		CALL(Hash=0x838686AE)
+		Item_Visibility(State=0x0)
+		Morph_Model_Event(unknown=0x0)
+		Script_End()
+	}
+
+}

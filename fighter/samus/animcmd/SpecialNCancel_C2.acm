@@ -1,0 +1,24 @@
+MoveDef SpecialNCancel_C2
+{
+	Main()
+	{
+		OFF_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		SLOPE_TOE(unknown=0x2, unknown=0x42700000)
+		Script_End()
+	}
+
+}

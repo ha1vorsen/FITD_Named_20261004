@@ -1,0 +1,35 @@
+MoveDef Run
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    WAIT(Frames=12)
+		    Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=-3, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.3, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0xBFC007A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=5)
+		FRAME(Frames=15)
+		FRAME(Frames=25)
+		FRAME(Frames=35)
+		Loop_Rest()
+		JUMP(Hash=0x5076A4C0)
+		Script_End()
+	}
+
+}

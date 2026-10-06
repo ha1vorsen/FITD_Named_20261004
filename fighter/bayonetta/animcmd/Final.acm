@@ -1,0 +1,37 @@
+MoveDef Final
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Camera_Closeup(ZoomTime=0x5, Unknown=0x0, Distance=1.5, XRot=0, YRot=0)
+		ON_FLAG(Variable=RA-Flag[27])
+		Screen_Tint(TransitionTime=0x0, Red=0x3, Green=0x3, Blue=0x0, Alpha=0x9, Duration=0xDC, unknown=0x0, TransitionOutTime=0xFF)
+		FRAME(Frames=45)
+		ON_FLAG(Variable=RA-Flag[28])
+		FRAME(Frames=49)
+		ON_FLAG(Variable=RA-Flag[33])
+		FRAME(Frames=50)
+		Normal_Camera()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0xC91006C)
+		Sound_Effect(SFX=0xCA10041)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

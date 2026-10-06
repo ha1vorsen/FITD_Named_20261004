@@ -1,0 +1,34 @@
+MoveDef 0x9B6B7EF6
+{
+	Main()
+	{
+		ON_FLAG(Variable=LA-Flag[123])
+		FRAME(Frames=4)
+		OFF_FLAG(Variable=LA-Flag[123])
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x126E356F)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		IS_FLAG(Variable=RA-Flag[20])
+		True(Offset=0x4){
+		}
+		Else(Offset=0x6){
+		    Low_Voice_Clip(unknown=0x804E0008)
+		    Transient_Sound_Effect(SFX=0xC9B0009)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

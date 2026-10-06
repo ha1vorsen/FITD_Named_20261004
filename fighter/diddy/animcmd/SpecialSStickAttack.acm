@@ -1,0 +1,33 @@
+MoveDef SpecialSStickAttack
+{
+	Main()
+	{
+		Throw_Specifier(ID=0x1, Bone=0x1, Damage=5, Angle=0x169, KBG=0x32, WBKB=0x0, BKB=0x0, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		FRAME(Frames=18)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x17, Damage=3, Angle=0x169, KBG=0x96, WBKB=0x0, BKB=0x3C, Size=6, X=2.5, Y=2, Z=0, Effect=0x0, Trip=0, Hitlag=1.5, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x1, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=3, Angle=0x169, KBG=0x96, WBKB=0x0, BKB=0x3C, Size=3, X=0, Y=1.5, Z=-7, Effect=0x0, Trip=0, Hitlag=1.5, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x1, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=18)
+		Graphic_Effect2(Graphic=0x31B0004, Bone=0x2, X=0, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		Sound_Effect(SFX=0x1E0049)
+		Sound_Effect(SFX=0x510013)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=16)
+		Script_End()
+	}
+
+}

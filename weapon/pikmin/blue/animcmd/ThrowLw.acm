@@ -1,0 +1,28 @@
+MoveDef ThrowLw : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=22)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1, Angle=0x5A, KBG=0xC8, WBKB=0x0, BKB=0x32, Size=7, X=0, Y=4, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x15, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Throw_Specifier2(ID=0x0, Bone=0x0, Damage=11.2, Angle=0x46, KBG=0x3C, WBKB=0x0, BKB=0x3C, Effect=0x0, Unknown=0x0, Hitlag=1, Unknown=1, SFXLevel=0x2, SFXType=0x8, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x8)
+		FRAME(Frames=30)
+		Remove_All_Hitboxes()
+		Special_Throw_Applier(ID=0x0, Bone=0x7D9, Unknown=0x11000001, Unknown=0x11000002, Unknown=0x11000003)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x6B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

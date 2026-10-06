@@ -1,0 +1,42 @@
+MoveDef AttackHi3
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x3E8, Damage=14, Angle=0x5F, KBG=0x5A, WBKB=0x0, BKB=0x32, Size=5, X=0, Y=13, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0xE, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=1, Z2=0)
+		WAIT(Frames=3)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x3E8, Damage=10, Angle=0x55, KBG=0x5A, WBKB=0x0, BKB=0x32, Size=5, X=0, Y=12, Z=-1, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0xE, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=1, Z2=-1)
+		FRAME(Frames=22)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=12)
+		Sword_Trace(TraceID=0x4, BlurLen=8.407791E-45, Bone1=0x3E8, X=0, Y=1.7, Z=0, Bone2=0x3E8, X=0, Y=16, Z=0, Anchored=0x1, Graphic=0x31D0000, Bone3=0x3E8, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=18)
+		Terminate_Sword_Glow(FadeTime=0x5)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=13)
+		Low_Voice_Clip(unknown=0x80080005)
+		Sound_Effect(SFX=0x240050)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=9)
+		FRAME(Frames=15)
+		Slope_Full(unknown=0x0, unknown=0x3)
+		FRAME(Frames=34)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

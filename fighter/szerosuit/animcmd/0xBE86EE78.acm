@@ -1,0 +1,35 @@
+MoveDef 0xBE86EE78 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=27)
+		External_Graphic(Graphic=0x319000E, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		Set_Loop(Iterations=6){
+		    WAIT(Frames=4)
+		    Graphic_Effect2(Graphic=0x1000085, Bone=0xFFFFFFFE, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=360, RandomYRot=360, RandomZRot=360, Terminate=0x1)
+		    Graphic_Effect2(Graphic=0x1000084, Bone=0xFFFFFFFE, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=360, RandomYRot=360, RandomZRot=360, Terminate=0x1)
+		    Goto(Offset=-36)
+		}
+		Set_Loop(Iterations=6){
+		    WAIT(Frames=6)
+		    Graphic_Effect2(Graphic=0x1000084, Bone=0xFFFFFFFE, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=360, RandomYRot=360, RandomZRot=360, Terminate=0x1)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

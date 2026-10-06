@@ -1,0 +1,33 @@
+MoveDef AppealLwR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		PLAY_DAMAGESTOP(unknown=0x2C9001F)
+		FRAME(Frames=9)
+		Sound_Effect(SFX=0x24B0040)
+		FRAME(Frames=136)
+		Sound_Effect(SFX=0x24B0041)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=15)
+		Slope_Full(unknown=0x1, unknown=0xA)
+		FRAME(Frames=125)
+		Slope_Full(unknown=0x6, unknown=0xA)
+		Script_End()
+	}
+
+}

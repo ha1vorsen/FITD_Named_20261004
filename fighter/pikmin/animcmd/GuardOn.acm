@@ -1,0 +1,24 @@
+MoveDef GuardOn
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x64)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=2)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,25 @@
+MoveDef FinalAirCallingMiss
+{
+	Main()
+	{
+		JUMP(Hash=0x85CA44F1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x85CA44F1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

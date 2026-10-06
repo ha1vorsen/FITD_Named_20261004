@@ -1,0 +1,39 @@
+MoveDef SpecialAirS_C2
+{
+	Main()
+	{
+		JUMP(Hash=0xABB723AB)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=11)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x3240000, GFXLeft=0x3240002, Bone=0x0, X=0x0, Y=0x41200000, Z=0x41300000, XRot=0x0, YRot=0x0, ZRot=0x0, Size=0x3F99999A, Terminate=0x1, unknown=0x0)
+		WAIT(Frames=1)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x17, X=0, Y=8, Z=0, XRot=180, YRot=0, ZRot=-180, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		LAST_EFFECT_SET_ALPHA(unknown=0x42700000)
+		Set_Loop(Iterations=3){
+		    FRAME(Frames=13)
+		    Graphic_Effect2(Graphic=0x1000012, Bone=0x0, X=0, Y=9, Z=10, XRot=0, YRot=0, ZRot=0, Size=1.3, RandomX=5, RandomY=5, RandomZ=5, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		    WAIT(Frames=2)
+		    Graphic_Effect2(Graphic=0x1000012, Bone=0x0, X=0, Y=14, Z=14, XRot=0, YRot=0, ZRot=0, Size=1.3, RandomX=5, RandomY=5, RandomZ=5, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		    WAIT(Frames=3)
+		    Goto(Offset=-40)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xABB723AB)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xABB723AB)
+		Script_End()
+	}
+
+}

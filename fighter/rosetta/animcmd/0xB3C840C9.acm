@@ -1,0 +1,27 @@
+MoveDef 0xB3C840C9
+{
+	Main()
+	{
+		FRAME(Frames=8)
+		CALL(Hash=0x42EDA95)
+		Fire_Item_Projectile(Unknown=0x0)
+		FRAME(Frames=10)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+}

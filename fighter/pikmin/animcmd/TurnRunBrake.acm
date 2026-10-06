@@ -1,0 +1,21 @@
+MoveDef TurnRunBrake
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=2)
+		Script_End()
+	}
+
+}

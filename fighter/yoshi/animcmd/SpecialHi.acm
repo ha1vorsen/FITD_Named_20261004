@@ -1,0 +1,45 @@
+MoveDef SpecialHi
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.75)
+		FRAME(Frames=4)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=18)
+		ON_FLAG(Variable=RA-Flag[14])
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=4, Y=10.5, Z=-11, XRot=0, YRot=0, ZRot=0, Size=2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		FRAME(Frames=16)
+		Graphic_Effect2(Graphic=0x3070009, Bone=0x0, X=0.8, Y=20, Z=6.5, XRot=0, YRot=0, ZRot=0, Size=0.3, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=17)
+		Graphic_Effect3(Graphic=0x100000C, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=19)
+		Sound_Effect(SFX=0x9003A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Slope_Full(unknown=0x2, unknown=0x3)
+		FRAME(Frames=18)
+		SLOPE(unknown=0x0)
+		FRAME(Frames=31)
+		SLOPE(unknown=0x2)
+		FRAME(Frames=49)
+		Slope_Full(unknown=0x0, unknown=0x6)
+		Script_End()
+	}
+
+}

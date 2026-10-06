@@ -1,0 +1,28 @@
+MoveDef SpecialHiHoldAir_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x28F1E709)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x28F1E709)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

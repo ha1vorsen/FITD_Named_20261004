@@ -1,0 +1,28 @@
+MoveDef 0xBD3CD40F
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0xB0)
+		WAIT(Frames=1)
+		Loop_Rest()
+		JUMP(Hash=0xBD3CD40F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=10)
+		Loop_Rest()
+		JUMP(Hash=0xBD3CD40F)
+		Script_End()
+	}
+
+}

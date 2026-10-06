@@ -1,0 +1,29 @@
+MoveDef 0x2DACD56A
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=15)
+		CALL(Hash=0xC189E41B)
+		Fire_Item_Projectile(Unknown=0x1)
+		FRAME(Frames=16)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

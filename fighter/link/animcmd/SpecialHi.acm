@@ -1,0 +1,74 @@
+MoveDef SpecialHi
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		ATK_RESERVE(ID=0x0, Bone=0x3E9, X=-1, Y=1, Z=-2)
+		ATK_RESERVE(ID=0x1, Bone=0x3E9, X=2.6, Y=0.5, Z=0.8)
+		ATK_RESERVE(ID=0x2, Bone=0x3E9, X=7, Y=0, Z=2.5)
+		ATK_REFERENCE_NODE(Unknown=0xE, Unknown=0xFFFFFFFF)
+		FRAME(Frames=4)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x3E9, Damage=14, Angle=0x2D, KBG=0x56, WBKB=0x0, BKB=0x3C, Size=4, X=-1, Y=1, Z=-2, Effect=0x2, Trip=0, Hitlag=1.4, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x3E9, Damage=14, Angle=0x2D, KBG=0x56, WBKB=0x0, BKB=0x3C, Size=3, X=2.6, Y=0.5, Z=0.8, Effect=0x2, Trip=0, Hitlag=1.4, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x3E9, Damage=11.2, Angle=0x2D, KBG=0x56, WBKB=0x0, BKB=0x3C, Size=3, X=7, Y=0, Z=2.5, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		FRAME(Frames=6)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x3E9, Damage=12, Angle=0x2B, KBG=0x56, WBKB=0x0, BKB=0x30, Size=4, X=-1, Y=1, Z=-2, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x3E9, Damage=12, Angle=0x2B, KBG=0x56, WBKB=0x0, BKB=0x30, Size=3, X=4.3, Y=1, Z=-2, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x3E9, Damage=9.6, Angle=0x2B, KBG=0x56, WBKB=0x0, BKB=0x30, Size=3, X=8, Y=1, Z=-2, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		FRAME(Frames=11)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x3E9, Damage=9, Angle=0x2B, KBG=0x54, WBKB=0x0, BKB=0x30, Size=4, X=-1, Y=1, Z=-2, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x3E9, Damage=9, Angle=0x2B, KBG=0x54, WBKB=0x0, BKB=0x30, Size=3, X=4.3, Y=1, Z=-2, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x3E9, Damage=7.2, Angle=0x2B, KBG=0x54, WBKB=0x0, BKB=0x30, Size=3, X=8, Y=1, Z=-2, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		FRAME(Frames=21)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x3E9, Damage=7, Angle=0x169, KBG=0x52, WBKB=0x0, BKB=0x14, Size=4, X=-1, Y=1, Z=-2, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x3E9, Damage=7, Angle=0x169, KBG=0x52, WBKB=0x0, BKB=0x14, Size=3, X=4.3, Y=1, Z=-2, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x3E9, Damage=5.6, Angle=0x169, KBG=0x52, WBKB=0x0, BKB=0x14, Size=3, X=8, Y=1, Z=-2, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		FRAME(Frames=37)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect3(Graphic=0x100000D, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=3)
+		External_Graphic(Graphic=0x3050006, Bone=0x3E8, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=4)
+		Sword_Trace(TraceID=0x8D, BlurLen=9.809089E-45, Bone1=0x3E8, X=1, Y=0, Z=0, Bone2=0x3E8, X=13, Y=0, Z=0, Anchored=0x1, Graphic=0x0, Bone3=0x3E8, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		Color_Overlay(Red=255, Green=170, Blue=0, Alpha=60)
+		FRAME(Frames=46)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		Terminate_Graphic_Effect(Graphic=0x3050006, unknown=0x0, unknown=0x0)
+		Graphic_Effect3(Graphic=0x100000D, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Change_Overlay(Transition=20, Red=0, Green=0, Blue=0, Alpha=0)
+		FRAME(Frames=47)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x3E8, X=10, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=66)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x620008)
+		Transient_Sound_Effect(SFX=0x3002A)
+		WAIT(Frames=42)
+		STOP_SE_STATUS()
+		Sound_Effect(SFX=0x3002B)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0x3002C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=9)
+		SLOPE(unknown=0x0)
+		FRAME(Frames=46)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,27 @@
+MoveDef 0x51C12B1A
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		Fire_Item_Projectile2(Unknown=0x11000010)
+		Script_End()
+	}
+
+	Effect()
+	{
+		CALL(Hash=0x86992081)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		JUMP(Hash=0xCC803A3)
+		Script_End()
+	}
+
+}

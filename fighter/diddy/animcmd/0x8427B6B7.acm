@@ -1,0 +1,39 @@
+MoveDef 0x8427B6B7
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=8)
+		Set_Frame_Duration(Speed=1)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=3, Angle=0x37, KBG=0xB1, WBKB=0x0, BKB=0x2D, Size=7.2, X=0, Y=6.8, Z=13.5, Effect=0x0, Trip=0, Hitlag=2, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x18, X2=0, Y2=6.8, Z2=6)
+		FRAME(Frames=10)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=8)
+		Graphic_Effect3(Graphic=0x1000009, Bone=0x0, X=22.5, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=1.2, RandomX=2, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		STOP_SE_STATUS()
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0x1E0052)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_040FD56E(unknown=0x1, unknown=0x4, unknown=0x1)
+		FRAME(Frames=4)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		FRAME(Frames=6)
+		Script_End()
+	}
+
+}

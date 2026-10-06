@@ -1,0 +1,40 @@
+MoveDef Win3
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x4)
+		Set_Anchored_Article_Action(Article=0x4, Action=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=52)
+		Graphic_Effect2(Graphic=0x1000007, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=34)
+		PLAY_SE_NO_3D(unknown=0x7690051)
+		FRAME(Frames=52)
+		Stop_Sound_Effect(SFX=0x7690051)
+		PLAY_SE_NO_3D(unknown=0x7690011)
+		PLAY_SE_NO_3D(unknown=0x3500DE)
+		FRAME(Frames=89)
+		PLAY_SE_NO_3D(unknown=0x7690002)
+		FRAME(Frames=113)
+		PLAY_SE_NO_3D(unknown=0x7690019)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Article_Visibility(Article=0x4, State=0x0)
+		FRAME(Frames=50)
+		Article_Visibility(Article=0x4, State=0x1)
+		Script_End()
+	}
+
+}

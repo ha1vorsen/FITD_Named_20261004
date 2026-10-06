@@ -1,0 +1,24 @@
+MoveDef 0x210104C5 : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=30)
+		CALL(Hash=0x5CED7B67)
+		FRAME(Frames=34)
+		CALL(Hash=0x3D3FEDA3)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

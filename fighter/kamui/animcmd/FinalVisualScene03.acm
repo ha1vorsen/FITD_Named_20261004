@@ -1,0 +1,52 @@
+MoveDef FinalVisualScene03
+{
+	Main()
+	{
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=1.5, Angle=0x169, KBG=0x50, WBKB=0x1, BKB=0x0, Effect=0x12, Unknown=0, Hitlag=0, Unknown=1, SFXLevel=0x1, SFXType=0x9, FacingRestriction=0x0, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		FRAME(Frames=3)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=8)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=14)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=19)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=23)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=29)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=36)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=41)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=45)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=52)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=57)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=62)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=67)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=74)
+		ON_FLAG(Variable=RA-Flag[16])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0xCB20002)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

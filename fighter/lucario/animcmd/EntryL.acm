@@ -1,0 +1,41 @@
+MoveDef EntryL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x2300E4)
+		FRAME(Frames=31)
+		Sound_Effect(SFX=0x230082)
+		FRAME(Frames=46)
+		Sound_Effect(SFX=0x56000A)
+		WAIT(Frames=57)
+		Sound_Effect3(SFX=0x230044)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		ON_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=11)
+		SET_CURSOR(unknown=0x1)
+		Tag_Visibility(State=0x1)
+		FRAME(Frames=89)
+		OFF_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=98)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

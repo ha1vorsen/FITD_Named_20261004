@@ -1,0 +1,25 @@
+MoveDef ItemGrassPull
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		FRAME(Frames=12)
+		FRAME(Frames=15)
+		FRAME(Frames=18)
+		FRAME(Frames=30)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

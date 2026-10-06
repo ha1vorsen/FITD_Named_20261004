@@ -1,0 +1,24 @@
+MoveDef 0x6A2D4E1F
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x40C0001, Bone=0x7D2, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x40C0003, Bone=0x7D0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=6)
+		Graphic_Effect2(Graphic=0x1000000, Bone=0x7D2, X=0, Y=10, Z=65, XRot=0, YRot=0, ZRot=0, Size=4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

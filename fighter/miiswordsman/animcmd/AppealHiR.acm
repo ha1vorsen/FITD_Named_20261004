@@ -1,0 +1,40 @@
+MoveDef AppealHiR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=22)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x19, X=0, Y=11, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=86)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x19, X=0, Y=11, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=13)
+		Sound_Effect(SFX=0x81B0068)
+		FRAME(Frames=23)
+		Sound_Effect(SFX=0x6D)
+		FRAME(Frames=45)
+		Sound_Effect(SFX=0x6D)
+		FRAME(Frames=68)
+		Sound_Effect(SFX=0x81B0065)
+		FRAME(Frames=70)
+		Sound_Effect(SFX=0x81B0012)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_C7B586AF(unknown=0, unknown=30, unknown=3)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=12)
+		FRAME(Frames=33)
+		Script_End()
+	}
+
+}

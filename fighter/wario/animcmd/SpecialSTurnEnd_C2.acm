@@ -1,0 +1,23 @@
+MoveDef SpecialSTurnEnd_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=9)
+		Transient_Sound_Effect(SFX=0x1A0086)
+		Transient_Sound_Effect(SFX=0x1A0065)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

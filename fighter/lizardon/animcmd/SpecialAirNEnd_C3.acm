@@ -1,0 +1,25 @@
+MoveDef SpecialAirNEnd_C3
+{
+	Main()
+	{
+		JUMP(Hash=0xE23E4783)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xE23E4783)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xE23E4783)
+		Script_End()
+	}
+
+}

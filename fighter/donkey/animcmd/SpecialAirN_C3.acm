@@ -1,0 +1,58 @@
+MoveDef SpecialAirN_C3
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		Set_Bone_Intangibility(Bone=0x10, Mode=0x2)
+		FRAME(Frames=19)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x10, Damage=6, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0xF, Size=5.5, X=8, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x10, Damage=6, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0xF, Size=4, X=-1, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		ATK_POWER_ADD(unknown=0x0, unknown=0x11000005)
+		ATK_POWER_ADD(unknown=0x1, unknown=0x11000005)
+		ATK_POWER_ADD(unknown=0x2, unknown=0x11000005)
+		FRAME(Frames=21)
+		Undo_Bone_Collision(State=0x0)
+		Remove_All_Hitboxes()
+		Remove_Hitbox(ID=0x0)
+		Extended_Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=0, Angle=0x28, KBG=0x50, WBKB=0x0, BKB=0x3C, Size=8, X=0, Y=9, Z=30, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x0, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x1, Flinchless=0x1, X2=0, Y2=9, Z2=16)
+		FRAME(Frames=24)
+		Extended_Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=0, Angle=0x28, KBG=0x50, WBKB=0x0, BKB=0x28, Size=11, X=0, Y=9, Z=38, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x0, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x1, NoGFX=0x1, Flinchless=0x1, X2=0, Y2=9, Z2=16)
+		FRAME(Frames=28)
+		Remove_All_Hitboxes()
+		Set_Frame_Duration(Speed=1.6)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3040002, Bone=0x0, X=0, Y=0, Z=-8, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=3)
+		Color_Overlay(Red=255, Green=255, Blue=128, Alpha=140)
+		FRAME(Frames=4)
+		Change_Overlay(Transition=5, Red=255, Green=255, Blue=128, Alpha=0)
+		FRAME(Frames=9)
+		Terminate_Overlays()
+		FRAME(Frames=21)
+		External_Graphic(Graphic=0x304000C, Bone=0x0, X=-5, Y=10, Z=20, XRot=90, YRot=0, ZRot=0, Size=1.5, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x7EC39C7F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=17)
+		FRAME(Frames=18)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		FRAME(Frames=19)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=22)
+		FRAME(Frames=30)
+		Script_End()
+	}
+
+}

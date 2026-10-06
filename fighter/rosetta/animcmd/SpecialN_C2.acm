@@ -1,0 +1,44 @@
+MoveDef SpecialN_C2
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.85)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=7)
+		Set_Frame_Duration(Speed=0.48)
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=10)
+		ON_FLAG(Variable=RA-Flag[15])
+		FRAME(Frames=30)
+		Set_Frame_Duration(Speed=0.85)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3270000, Bone=0x18, X=0, Y=7.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=2)
+		External_Graphic(Graphic=0x3270001, Bone=0x18, X=0, Y=7.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=10)
+		FRAME(Frames=11)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=40)
+		Terminate_Graphic_Effect(Graphic=0x3270000, unknown=0x0, unknown=0x0)
+		Terminate_Graphic_Effect(Graphic=0x3270001, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0x4A4003D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+}

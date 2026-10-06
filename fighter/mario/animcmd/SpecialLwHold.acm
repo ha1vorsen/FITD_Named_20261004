@@ -1,0 +1,37 @@
+MoveDef SpecialLwHold
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=0, Y=0, Z=-8, XRot=0, YRot=0, ZRot=0, Size=0.6, RandomX=8, RandomY=0, RandomZ=10, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=20)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x20033)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=3)
+		FRAME(Frames=12)
+		FRAME(Frames=23)
+		FRAME(Frames=35)
+		Loop_Rest()
+		JUMP(Hash=0x9D8EC29B)
+		Script_End()
+	}
+
+}

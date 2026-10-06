@@ -1,0 +1,32 @@
+MoveDef SpecialS3Hi_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=6)
+		Sword_Trace(TraceID=0xB8, BlurLen=9.809089E-45, Bone1=0x3EA, X=0, Y=0, Z=0.5, Bone2=0x3EA, X=-1E-05, Y=-2E-05, Z=12.2, Anchored=0x1, Graphic=0x3250000, Bone3=0x3EA, X=0, Y=0, Z=0, RotX=0.00013, RotY=-7E-05, RotZ=0.00011, Length=1)
+		FRAME(Frames=9)
+		Graphic_Effect3(Graphic=0x1000026, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=12)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x7610040)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=6)
+		Script_End()
+	}
+
+}

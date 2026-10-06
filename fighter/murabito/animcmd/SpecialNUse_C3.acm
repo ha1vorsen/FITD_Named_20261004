@@ -1,0 +1,28 @@
+MoveDef SpecialNUse_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=3)
+		FRAME(Frames=3)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=17)
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

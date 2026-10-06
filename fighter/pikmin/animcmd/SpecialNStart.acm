@@ -1,0 +1,36 @@
+MoveDef SpecialNStart
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x0)
+		FRAME(Frames=3)
+		MOT_SET_RATE_W(unknown=RA-Float[6])
+		FRAME(Frames=6)
+		Set_Frame_Speed(Multiplier=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Graphic_Effect3(Graphic=0x31A0001, Bone=0x0, X=0, Y=0, Z=4, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x1C005F)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0x1C0061)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+}

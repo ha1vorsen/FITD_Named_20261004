@@ -1,0 +1,34 @@
+MoveDef SpecialAirLwAttack
+{
+	Main()
+	{
+		JUMP(Hash=0x91EFB548)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x32F001C, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=7)
+		Sword_Trace(TraceID=0xA8, BlurLen=1.401298E-44, Bone1=0x19, X=0, Y=1, Z=0.9, Bone2=0x19, X=0, Y=33, Z=0.9, Anchored=0x1, Graphic=0x0, Bone3=0x19, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=13)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		FRAME(Frames=33)
+		External_Graphic(Graphic=0x32F001A, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=34)
+		Terminate_Graphic_Effect(Graphic=0x32F001C, unknown=0x0, unknown=0x0)
+		Terminate_Graphic_Effect(Graphic=0x32F001B, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x91EFB548)
+		Script_End()
+	}
+
+}

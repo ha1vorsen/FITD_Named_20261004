@@ -1,0 +1,34 @@
+MoveDef AppealLwR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=21)
+		Graphic_Effect3(Graphic=0x100000D, Bone=0x7, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=25)
+		Sound_Effect(SFX=0x4B0034)
+		Sound_Effect(SFX=0x6C)
+		WAIT(Frames=54)
+		Sound_Effect(SFX=0x6C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=19)
+		SLOPE(unknown=0x0)
+		FRAME(Frames=50)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,26 @@
+MoveDef SquatRv
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x8630014)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Set_Bone_Intangibility(Bone=0xD, Mode=0x3)
+		FRAME(Frames=3)
+		Set_Bone_Intangibility(Bone=0xD, Mode=0x0)
+		Script_End()
+	}
+
+}

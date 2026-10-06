@@ -1,0 +1,28 @@
+MoveDef SpecialAirS_C2
+{
+	Main()
+	{
+		JUMP(Hash=0xABB723AB)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xABB723AB)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		PLAY_SE_REMAIN(unknown=0x3A0001)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=21)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,56 @@
+MoveDef SpecialS_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		SET_LIMIT_SPEED_EX(Horizontal=0.8, Vertical=0)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=6)
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=16)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=17)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+		IS_FLAG(Variable=RA-Flag[15])
+		True(Offset=0x2F){
+		    FRAME(Frames=4)
+		    Graphic_Effect2(Graphic=0x32C000C, Bone=0x0, X=-1, Y=22, Z=1.5, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    FRAME(Frames=15)
+		    External_Graphic(Graphic=0x32C0017, Bone=0x17, X=1, Y=1, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		    FRAME(Frames=16)
+		    External_Graphic(Graphic=0x32C0017, Bone=0x11, X=1, Y=1, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x7640061)
+		IS_FLAG(Variable=RA-Flag[15])
+		True(Offset=0x6){
+		    Sound_Effect(SFX=0x764002D)
+		}
+		Else(Offset=0x6){
+		    Sound_Effect(SFX=0x764004F)
+		    Low_Voice_Clip(unknown=0x803B0007)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=13)
+		IS_FLAG(Variable=RA-Flag[15])
+		True(Offset=0x2){
+		}
+		Script_End()
+	}
+
+}

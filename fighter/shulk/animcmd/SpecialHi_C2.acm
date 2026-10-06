@@ -1,0 +1,73 @@
+MoveDef SpecialHi_C2
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		SA_SET(Unknown=0x2)
+		ON_FLAG(Variable=RA-Flag[15])
+		WAIT(Frames=1)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=10)
+		Allow/Disallow_Ledgegrab(State=0x1)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=6, Angle=0x3C, KBG=0x64, WBKB=0x78, BKB=0x0, Size=4, X=0, Y=5, Z=5, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=6, Angle=0x3C, KBG=0x64, WBKB=0x64, BKB=0x0, Size=8, X=0, Y=6, Z=15, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=4, Z2=17)
+		Extended_Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=6, Angle=0x3C, KBG=0x64, WBKB=0x5A, BKB=0x0, Size=8, X=0, Y=13, Z=9, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=4, Z2=17)
+		WAIT(Frames=2)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x37, KBG=0x64, WBKB=0x4E, BKB=0x0, Size=3.2, X=0, Y=20, Z=7, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=4, Z2=7)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=5, Angle=0x37, KBG=0x64, WBKB=0x50, BKB=0x0, Size=3.2, X=0, Y=20, Z=16, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=4, Z2=16)
+		Remove_Hitbox(ID=0x2)
+		WAIT(Frames=3)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x2D, KBG=0x64, WBKB=0x2B, BKB=0x0, Size=3.2, X=0, Y=18, Z=7, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=10, Z2=7)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=5, Angle=0x2D, KBG=0x64, WBKB=0x2B, BKB=0x0, Size=3.2, X=0, Y=18, Z=16, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=10, Z2=16)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		FRAME(Frames=25)
+		ON_FLAG(Variable=RA-Flag[21])
+		FRAME(Frames=40)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		FRAME(Frames=50)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=7)
+		External_Graphic(Graphic=0x32F001F, Bone=0x3EC, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=8)
+		External_Graphic(Graphic=0x32F0028, Bone=0x19, X=0, Y=1, Z=0.3, XRot=0, YRot=0, ZRot=0, Size=0.72, Terminate=0x1)
+		FRAME(Frames=10)
+		Sword_Trace(TraceID=0xCD, BlurLen=1.401298E-44, Bone1=0x19, X=0, Y=3, Z=0.9, Bone2=0x19, X=0, Y=22, Z=0.9, Anchored=0x1, Graphic=0x0, Bone3=0x19, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		Graphic_Effect2(Graphic=0x32F0020, Bone=0x0, X=0, Y=0, Z=3, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=11)
+		Graphic_Effect3(Graphic=0x1000028, Bone=0x0, X=0, Y=0, Z=-4, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=20)
+		Terminate_Sword_Glow(FadeTime=0x7)
+		FRAME(Frames=23)
+		External_Graphic(Graphic=0x32F001E, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.76, Terminate=0x1)
+		FRAME(Frames=24)
+		Terminate_Graphic_Effect(Graphic=0x32F0028, unknown=0x0, unknown=0x0)
+		Terminate_Graphic_Effect(Graphic=0x32F001F, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x7670046)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0x7670024)
+		Low_Voice_Clip(unknown=0x803F0006)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=8)
+		FRAME(Frames=50)
+		Item_Visibility(State=0x1)
+		Script_End()
+	}
+
+}

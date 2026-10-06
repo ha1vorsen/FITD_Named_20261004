@@ -1,0 +1,28 @@
+MoveDef 0x4E101113
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		External_Graphic_Effect2(Graphic=0x3290000, Bone=0x17, X=-3, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=13)
+		Terminate_Graphic_Effect(Graphic=0x3290000, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xD66B5980)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xD66B5980)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,48 @@
+MoveDef Run
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=1, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=24)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=1, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=42)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=1, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=61)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=1, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Loop_Rest()
+		JUMP(Hash=0x5076A4C0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		unk_01A5A27C(unknown=0xC05005F, unknown=0xC05005E)
+		FRAME(Frames=21)
+		unk_01A5A27C(unknown=0xC05005E, unknown=0xC05005F)
+		FRAME(Frames=39)
+		unk_01A5A27C(unknown=0xC05005F, unknown=0xC05005E)
+		FRAME(Frames=59)
+		unk_01A5A27C(unknown=0xC05005E, unknown=0xC05005F)
+		Loop_Rest()
+		JUMP(Hash=0x5076A4C0)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		FRAME(Frames=22)
+		FRAME(Frames=41)
+		FRAME(Frames=60)
+		Loop_Rest()
+		JUMP(Hash=0x5076A4C0)
+		Script_End()
+	}
+
+}

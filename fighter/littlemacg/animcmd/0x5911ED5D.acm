@@ -1,0 +1,33 @@
+MoveDef 0x5911ED5D
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		FRAME(Frames=13)
+		FRAME(Frames=15)
+		CALL(Hash=0xF5477682)
+		FRAME(Frames=17)
+		Remove_All_Hitboxes()
+		FRAME(Frames=20)
+		FRAME(Frames=24)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=14)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=6)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

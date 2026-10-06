@@ -1,0 +1,31 @@
+MoveDef SpecialNStart
+{
+	Main()
+	{
+		FRAME(Frames=17)
+		ON_FLAG(Variable=RA-Flag[15])
+		Grab_Collision2(ID=0x0, Bone=0x0, Size=9, X=0, Y=9, Z=4, Action=0xDF, Ground/Air=0x3, Unknown=0x1)
+		Throw_Specifier(ID=0x1, Bone=0x0, Damage=5, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x0, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		Search_Collision(ID=0x0, Part=0x0, Bone=0x0, Size=7.5, X=0, Y=9, Z=5, Unknown=0x1, Unknown=0x1, Ground/Air=0x7, Unknown=0x0, Unknown=0xF, Unknown=0xF, Unknown=0x0, RehitRate=0x0, SelfAffectionToggle=0x0, Unknown=0x0)
+		SET_SEARCH_OPPONENT(Unknown=0x0, Unknown=0x0, Unknown=0x5, Unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=15)
+		Sound_Effect(SFX=0x60032)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

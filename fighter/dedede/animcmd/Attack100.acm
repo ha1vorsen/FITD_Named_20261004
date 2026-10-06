@@ -1,0 +1,50 @@
+MoveDef Attack100
+{
+	Main()
+	{
+		Remove_All_Hitboxes()
+		WAIT(Frames=1)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1, Angle=0x14, KBG=0x64, WBKB=0x3C, BKB=0x0, Size=2, X=0, Y=7.5, Z=7, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0xF, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xB, X2=0, Y2=7.5, Z2=10)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=1, Angle=0x14, KBG=0x64, WBKB=0x14, BKB=0x0, Size=3.5, X=0, Y=7.5, Z=10, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0xF, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xB, X2=0, Y2=7.5, Z2=15)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=1, Angle=0x44, KBG=0x64, WBKB=0x2, BKB=0x0, Size=7, X=0, Y=7.5, Z=22, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0xF, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xB)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		WAIT(Frames=2)
+		ON_FLAG(Variable=RA-Flag[22])
+		JUMP(Hash=0xB007C283)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x31C0001, Bone=0x3E9, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x1000023, Bone=0x3E9, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=90, Size=1, Terminate=0x1)
+		WAIT(Frames=5)
+		WAIT(Frames=5)
+		External_Graphic(Graphic=0x1000023, Bone=0x3E9, X=-3, Y=0, Z=0, XRot=0, YRot=0, ZRot=90, Size=0.9, Terminate=0x1)
+		WAIT(Frames=10)
+		External_Graphic(Graphic=0x31C0001, Bone=0x3E9, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		WAIT(Frames=5)
+		External_Graphic(Graphic=0x1000023, Bone=0x3E9, X=3, Y=0, Z=0, XRot=0, YRot=0, ZRot=90, Size=0.9, Terminate=0x1)
+		Loop_Rest()
+		JUMP(Hash=0xB007C283)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Transient_Sound_Effect(SFX=0x6006A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		FRAME(Frames=12)
+		WAIT_LOOP_CLR()
+		JUMP(Hash=0xB007C283)
+		Script_End()
+	}
+
+}

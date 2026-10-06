@@ -1,0 +1,35 @@
+MoveDef SpecialAirHi
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=1)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x2, Damage=12, Angle=0x37, KBG=0x5A, WBKB=0x0, BKB=0x5A, Size=11, X=0, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xF)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x2, Damage=8, Angle=0x37, KBG=0x5A, WBKB=0x0, BKB=0x46, Size=16, X=0, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1.2, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xF)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		WAIT(Frames=8)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x1BA6EBD5)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x120052)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		Script_End()
+	}
+
+}

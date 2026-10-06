@@ -1,0 +1,57 @@
+MoveDef AttackAirF3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		unk_1B41048C(unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x1, unknown=0xA, unknown=0x3, unknown=0xA, unknown=0x5, unknown=0x1)
+		unk_F7B97AC1(unknown=0x1, unknown=0x0, unknown=0x0, unknown=0x1, unknown=0xA)
+		unk_F7B97AC1(unknown=0x2, unknown=0x0, unknown=0x0, unknown=0x1, unknown=0xA)
+		unk_F7B97AC1(unknown=0x3, unknown=0x0, unknown=0x0, unknown=0x1, unknown=0xA)
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=3)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=22)
+		Set_Frame_Duration(Speed=1)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x9, Damage=6, Angle=0x2C, KBG=0x44, WBKB=0x0, BKB=0x3C, Size=5, X=-5, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x9, Damage=6, Angle=0x2C, KBG=0x44, WBKB=0x0, BKB=0x3C, Size=6.2, X=1, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x9, Damage=6, Angle=0x2C, KBG=0x44, WBKB=0x0, BKB=0x3C, Size=6.2, X=5.5, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		WAIT(Frames=4)
+		Remove_All_Hitboxes()
+		FRAME(Frames=28)
+		unk_B2E91D0C(unknown=1)
+		FRAME(Frames=29)
+		ON_FLAG(Variable=LA-Flag[133])
+		ON_FLAG(Variable=LA-Flag[134])
+		ON_FLAG(Variable=LA-Flag[135])
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=43)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=21)
+		EFFECT_FOLLOW_WORK(Graphic=0x10000092, Bone=0x0, X=-1, Y=12.5, Z=1.5, XRot=-20, YRot=55, ZRot=-85, Size=1.1, unknown=0x1)
+		LAST_EFFECT_SET_RATE(unknown=0.85)
+		FRAME(Frames=28)
+		EFFECT_OFF_KIND_WORK(unknown=0x10000092, unknown=0x1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=13)
+		Sound_Effect(SFX=0xC910037)
+		FRAME(Frames=17)
+		Low_Voice_Clip(unknown=0x80000004)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=19)
+		Script_End()
+	}
+
+}

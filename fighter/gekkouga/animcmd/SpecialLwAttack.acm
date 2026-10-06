@@ -1,0 +1,80 @@
+MoveDef SpecialLwAttack
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		IS_FLAG(Variable=RA-Flag[27])
+		True(Offset=0x36){
+		    Hitbox(ID=0x0, Part=0x0, Bone=0x4, Damage=14, Angle=0x5A, KBG=0x64, WBKB=0x0, BKB=0x32, Size=8.5, X=10, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x5, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		    Hitbox(ID=0x1, Part=0x0, Bone=0x4, Damage=14, Angle=0x5A, KBG=0x64, WBKB=0x0, BKB=0x32, Size=7, X=2.5, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x5, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		}
+		Else(Offset=0x38){
+		    IS_FLAG(Variable=RA-Flag[28])
+		    True(Offset=0x36){
+		        Hitbox(ID=0x0, Part=0x0, Bone=0x4, Damage=13, Angle=0x3C, KBG=0x64, WBKB=0x0, BKB=0x3E, Size=7.5, X=10, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x5, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		        Hitbox(ID=0x1, Part=0x0, Bone=0x4, Damage=13, Angle=0x3C, KBG=0x64, WBKB=0x0, BKB=0x3E, Size=6, X=2.5, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x5, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		    }
+		    Else(Offset=0x38){
+		        IS_FLAG(Variable=RA-Flag[29])
+		        True(Offset=0x36){
+		            Hitbox(ID=0x0, Part=0x0, Bone=0x4, Damage=11, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x3E, Size=6, X=10, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x5, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		            Hitbox(ID=0x1, Part=0x0, Bone=0x4, Damage=11, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x3E, Size=5, X=2.5, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x5, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		        }
+		        Else(Offset=0x38){
+		            IS_FLAG(Variable=RA-Flag[30])
+		            True(Offset=0x36){
+		                Hitbox(ID=0x0, Part=0x0, Bone=0x4, Damage=13, Angle=0x19, KBG=0x48, WBKB=0x0, BKB=0x3E, Size=7.5, X=10, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x5, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		                Hitbox(ID=0x1, Part=0x0, Bone=0x4, Damage=13, Angle=0x19, KBG=0x48, WBKB=0x0, BKB=0x3E, Size=6, X=2.5, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x5, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6)
+		            }
+		            Else(Offset=0x38){
+		                IS_FLAG(Variable=RA-Flag[31])
+		                True(Offset=0x34){
+		                    Hitbox(ID=0x0, Part=0x0, Bone=0x4, Damage=14, Angle=0x10E, KBG=0x64, WBKB=0x0, BKB=0x32, Size=8.5, X=10, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x5, SFXLevel=0x2, SFX=0x2, Ground/Air=0x2, Direct/Indirect=0x1, Type=0x6)
+		                    Hitbox(ID=0x1, Part=0x0, Bone=0x4, Damage=14, Angle=0x2D, KBG=0x64, WBKB=0x0, BKB=0x32, Size=8.5, X=10, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x5, SFXLevel=0x2, SFX=0x2, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x6)
+		                }
+		            }
+		        }
+		    }
+		}
+		FRAME(Frames=20)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=2)
+		IS_FLAG(Variable=RA-Flag[24])
+		False(Offset=0x15){
+		    Graphic_Effect2(Graphic=0x330000F, Bone=0xC, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    ON_FLAG(Variable=RA-Flag[24])
+		}
+		FRAME(Frames=3)
+		IS_FLAG(Variable=RA-Flag[25])
+		False(Offset=0xF){
+		    Graphic_Effect4(Graphic=0x330000A, Bone=0x2, X=0, Y=0, Z=-3, XRot=0, YRot=180, ZRot=0, Size=1, Terminate=0x1)
+		    ON_FLAG(Variable=RA-Flag[25])
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		IS_FLAG(Variable=RA-Flag[26])
+		False(Offset=0xA){
+		    FRAME(Frames=2)
+		    Sound_Effect(SFX=0x7740005)
+		    Sound_Effect(SFX=0x7680033)
+		    ON_FLAG(Variable=RA-Flag[26])
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=2)
+		Visibility(State=0x1)
+		Script_End()
+	}
+
+}

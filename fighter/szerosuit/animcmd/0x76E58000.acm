@@ -1,0 +1,33 @@
+MoveDef 0x76E58000
+{
+	Main()
+	{
+		Item_Property(Unknown=0x5, Unknown=2.5)
+		FRAME(Frames=5)
+		ITEM_ACTION(Unknown=0x64)
+		FRAME(Frames=7)
+		CALL(Hash=0xF9403372)
+		FRAME(Frames=10)
+		CALL(Hash=0xA427EE2E)
+		FRAME(Frames=14)
+		Remove_All_Hitboxes()
+		Item_Property(Unknown=0x6, Unknown=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+}

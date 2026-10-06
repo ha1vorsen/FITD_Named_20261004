@@ -1,0 +1,29 @@
+MoveDef SpecialAirLwMiss_C2
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		ON_FLAG(Variable=RA-Flag[19])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=22)
+		Transient_Sound_Effect(SFX=0x1E0045)
+		WAIT(Frames=6)
+		STOP_SE_STATUS()
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xB73336D3)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,26 @@
+MoveDef SpecialAirHiEnd_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.5)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		FRAME(Frames=15)
+		Set_Frame_Duration(Speed=2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,28 @@
+MoveDef Win3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=26)
+		Sound_Effect(SFX=0xE006E)
+		WAIT(Frames=30)
+		Sound_Effect(SFX=0xE006E)
+		WAIT(Frames=30)
+		Sound_Effect(SFX=0xE006E)
+		WAIT(Frames=20)
+		Sound_Effect(SFX=0xE006A)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

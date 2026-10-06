@@ -1,0 +1,22 @@
+MoveDef SpecialHiStart
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		GENERATE_ARTICLE(ID=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

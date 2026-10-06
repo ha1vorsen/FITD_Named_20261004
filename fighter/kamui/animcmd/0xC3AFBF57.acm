@@ -1,0 +1,45 @@
+MoveDef 0xC3AFBF57
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=11)
+		Item_Property(Unknown=0x5, Unknown=3.8)
+		FRAME(Frames=14)
+		ITEM_ACTION(Unknown=0x64)
+		FRAME(Frames=15)
+		CALL(Hash=0xF42EBB19)
+		FRAME(Frames=16)
+		Remove_All_Hitboxes()
+		FRAME(Frames=23)
+		Item_Property(Unknown=0x3, Unknown=0.4)
+		FRAME(Frames=27)
+		Item_Property(Unknown=0x5, Unknown=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Stop_Sound_Effect(SFX=0x112)
+		WAIT(Frames=3)
+		Low_Voice_Clip(unknown=0x804E0000)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=7)
+		EXECUTE(Unknown=7)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=13)
+		Script_End()
+	}
+
+}

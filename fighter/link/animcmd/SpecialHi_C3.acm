@@ -1,0 +1,39 @@
+MoveDef SpecialHi_C3
+{
+	Main()
+	{
+		SET_AIR()
+		Disallow_Horizontal_Movement(unknown=0x1)
+		Add/Set_Momentum(Horizontal=0, Vertical=3.3, Mode=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect3(Graphic=0x100000E, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=3)
+		Color_Overlay(Red=255, Green=170, Blue=0, Alpha=60)
+		FRAME(Frames=46)
+		Graphic_Effect3(Graphic=0x100000E, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Change_Overlay(Transition=20, Red=0, Green=0, Blue=0, Alpha=0)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x3E8, X=10, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=66)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=9)
+		SLOPE(unknown=0x0)
+		FRAME(Frames=46)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

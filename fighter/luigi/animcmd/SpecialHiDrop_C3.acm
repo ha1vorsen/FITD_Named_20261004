@@ -1,0 +1,28 @@
+MoveDef SpecialHiDrop_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=16)
+		Set_Frame_Duration(Speed=0.6)
+		FRAME(Frames=25)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		FRAME(Frames=30)
+		Add/Set_Momentum(Horizontal=0, Vertical=-4, Mode=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

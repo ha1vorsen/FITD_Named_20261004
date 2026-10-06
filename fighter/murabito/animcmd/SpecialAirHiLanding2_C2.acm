@@ -1,0 +1,30 @@
+MoveDef SpecialAirHiLanding2_C2
+{
+	Main()
+	{
+		FRAME(Frames=8)
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=18)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x24C002E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

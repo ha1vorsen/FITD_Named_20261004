@@ -1,0 +1,109 @@
+MoveDef SpecialS
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		unk_1B41048C(unknown=0x3, unknown=0x0, unknown=0x0, unknown=0x1, unknown=0xA, unknown=0x0, unknown=0x14, unknown=0x0, unknown=0x0)
+		FRAME(Frames=15)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0xA, Damage=9, Angle=0x2F, KBG=0x12, WBKB=0x0, BKB=0x5C, Size=4, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.2, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6, HitBits=0x1F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=-8, Y2=0, Z2=0)
+		Set_Weight_All_Hitboxes(Flag=0x1)
+		FRAME(Frames=20)
+		ON_FLAG(Variable=RA-Flag[18])
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0xA, Damage=8.5, Angle=0x37, KBG=0x12, WBKB=0x0, BKB=0x55, Size=4, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.2, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6, HitBits=0x1F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=-8, Y2=0, Z2=0)
+		Set_Weight_All_Hitboxes(Flag=0x1)
+		FRAME(Frames=25)
+		ON_FLAG(Variable=LA-Flag[133])
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0xA, Damage=8, Angle=0x4C, KBG=0x12, WBKB=0x0, BKB=0x50, Size=4, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1.2, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x6, HitBits=0x1F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=-8, Y2=0, Z2=0)
+		Set_Weight_All_Hitboxes(Flag=0x1)
+		FRAME(Frames=35)
+		ON_FLAG(Variable=RA-Flag[16])
+		ON_FLAG(Variable=LA-Flag[135])
+		FRAME(Frames=40)
+		Remove_All_Hitboxes()
+		OFF_FLAG(Variable=RA-Flag[18])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=9)
+		FRAME(Frames=14)
+		Graphic_Effect(Graphic=0x1000020, Bone=0x0, X=3, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=15)
+		Int_Var_Compare(Variable=LA-Int[172], Method=0x4, Value=0x2)
+		True(Offset=0x8B){
+		    Graphic_Effect4(Graphic=0x3380029, Bone=0x9, X=9.5, Y=0, Z=0, XRot=0, YRot=90, ZRot=0, Size=1, Terminate=0x1)
+		    FRAME(Frames=16)
+		    Set_Loop(Iterations=3){
+		        IS_FLAG(Variable=RA-Flag[19])
+		        False(Offset=0x3B){
+		            Graphic_Effect2(Graphic=0x338002A, Bone=0x0, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		            WAIT(Frames=2)
+		            Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.4, RandomX=1, RandomY=0, RandomZ=3, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		            WAIT(Frames=2)
+		            Graphic_Effect2(Graphic=0x338002A, Bone=0x0, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		        }
+		        Else(Offset=0x39){
+		            Graphic_Effect2(Graphic=0x338002A, Bone=0x0, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		            WAIT(Frames=2)
+		            Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=1, RandomY=0, RandomZ=3, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		            WAIT(Frames=2)
+		            Graphic_Effect2(Graphic=0x338002A, Bone=0x0, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		        }
+		        WAIT(Frames=4)
+		        Goto(Offset=-118)
+		    }
+		}
+		Else(Offset=0x8D){
+		    LAST_EFFECT_SET_COLOR(unknown=0x437F0000, unknown=0x42920000, unknown=0x42C40000)
+		    Graphic_Effect4(Graphic=0x3380043, Bone=0x9, X=9.5, Y=0, Z=0, XRot=0, YRot=90, ZRot=0, Size=1, Terminate=0x1)
+		    FRAME(Frames=16)
+		    Set_Loop(Iterations=3){
+		        IS_FLAG(Variable=RA-Flag[19])
+		        False(Offset=0x3B){
+		            Graphic_Effect2(Graphic=0x3380044, Bone=0x0, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		            WAIT(Frames=2)
+		            Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.4, RandomX=1, RandomY=0, RandomZ=3, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		            WAIT(Frames=2)
+		            Graphic_Effect2(Graphic=0x3380044, Bone=0x0, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		        }
+		        Else(Offset=0x39){
+		            Graphic_Effect2(Graphic=0x3380044, Bone=0x0, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		            WAIT(Frames=2)
+		            Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=1, RandomY=0, RandomZ=3, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		            WAIT(Frames=2)
+		            Graphic_Effect2(Graphic=0x3380044, Bone=0x0, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		        }
+		        WAIT(Frames=4)
+		        Goto(Offset=-118)
+		    }
+		}
+		FRAME(Frames=59)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=13)
+		Low_Voice_Clip(unknown=0x80000014)
+		Sound_Effect(SFX=0xC910065)
+		FRAME(Frames=56)
+		Sound_Effect2(SFX=0xC910001)
+		FRAME(Frames=65)
+		Sound_Effect2(SFX=0xC910003)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=9)
+		Slope_Full(unknown=0x1, unknown=0x5)
+		FRAME(Frames=13)
+		FRAME(Frames=16)
+		unk_040FD56E(unknown=0x1, unknown=0x2, unknown=0x1)
+		FRAME(Frames=48)
+		Slope_Full(unknown=0x6, unknown=0x6)
+		Script_End()
+	}
+
+}

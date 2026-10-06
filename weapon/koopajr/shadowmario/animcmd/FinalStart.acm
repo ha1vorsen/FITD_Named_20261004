@@ -1,0 +1,27 @@
+MoveDef FinalStart
+{
+	Main()
+	{
+		FRAME(Frames=43)
+		ON_FLAG(Variable=LA-Flag[4])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=35)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=38)
+		PLAY_SE_REMAIN(unknown=0x863002F)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

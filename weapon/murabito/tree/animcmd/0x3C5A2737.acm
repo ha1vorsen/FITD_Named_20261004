@@ -1,0 +1,30 @@
+MoveDef 0x3C5A2737
+{
+	Main()
+	{
+		Set_Model_Scale(Scale=1.6)
+		FRAME(Frames=60)
+		ON_FLAG(Variable=RA-Flag[0])
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x32A0011, Bone=0x7D1, X=0, Y=10, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Color_Overlay(Red=86, Green=68, Blue=34, Alpha=0)
+		WAIT(Frames=1)
+		Change_Overlay(Transition=100, Red=86, Green=68, Blue=34, Alpha=150)
+		WAIT(Frames=100)
+		Color_Overlay(Red=86, Green=68, Blue=34, Alpha=150)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

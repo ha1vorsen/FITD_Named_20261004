@@ -1,0 +1,24 @@
+MoveDef 0xDB72598E : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=42)
+		SLOPE(unknown=0x4)
+		FRAME(Frames=55)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

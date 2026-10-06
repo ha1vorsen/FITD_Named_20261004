@@ -1,0 +1,27 @@
+MoveDef SpecialAirLwHitTurn
+{
+	Main()
+	{
+		JUMP(Hash=0x825A9A62)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x16E97B17)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xCE220024)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x16E97B17)
+		Script_End()
+	}
+
+}

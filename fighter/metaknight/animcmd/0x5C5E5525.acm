@@ -1,0 +1,25 @@
+MoveDef 0x5C5E5525
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		Fire_Weapon()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		VIS_SET_DEFAULT(unknown=0x1, unknown=0x0)
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

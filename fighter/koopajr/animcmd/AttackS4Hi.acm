@@ -1,0 +1,38 @@
+MoveDef AttackS4Hi
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		ON_FLAG(Variable=RA-Flag[27])
+		FRAME(Frames=18)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1, Angle=0x5D, KBG=0xA, WBKB=0x0, BKB=0x14, Size=5, X=0, Y=10, Z=18, Effect=0x2, Trip=0, Hitlag=0.5, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x3, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=16, Z2=17)
+		Extended_Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=1, Angle=0x169, KBG=0xA, WBKB=0x0, BKB=0x14, Size=1, X=0, Y=8, Z=12.2, Effect=0x2, Trip=0, Hitlag=0.5, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x3, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=14, Z2=11.2)
+		WAIT(Frames=15)
+		Remove_All_Hitboxes()
+		Set_Frame_Duration(Speed=0.52)
+		FRAME(Frames=36)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=11, Angle=0x2E, KBG=0x88, WBKB=0x0, BKB=0x28, Size=7, X=0, Y=11, Z=18, Effect=0x2, Trip=0, Hitlag=2.2, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x3, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=15, Z2=17)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x1D1238F2)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x1D1238F2)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=16)
+		Script_End()
+	}
+
+}

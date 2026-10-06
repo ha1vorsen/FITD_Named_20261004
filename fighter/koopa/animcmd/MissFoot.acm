@@ -1,0 +1,21 @@
+MoveDef MissFoot
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

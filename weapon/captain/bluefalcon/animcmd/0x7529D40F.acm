@@ -1,0 +1,29 @@
+MoveDef 0x7529D40F
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x30C0008, Bone=0x7D2, X=10.8, Y=0.779, Z=-25.132, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x30C0008, Bone=0x7D2, X=-10.8, Y=0.779, Z=-25.132, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=24)
+		External_Graphic(Graphic=0x100000D, Bone=0x7D2, X=0, Y=-5, Z=-10, XRot=0, YRot=0, ZRot=0, Size=1.8, Terminate=0x1)
+		FRAME(Frames=40)
+		Terminate_Graphic_Effect(Graphic=0x30C0008, unknown=0x0, unknown=0x0)
+		FRAME(Frames=93)
+		External_Graphic(Graphic=0x30C0008, Bone=0x7D2, X=10.8, Y=0.779, Z=-25.132, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x30C0008, Bone=0x7D2, X=-10.8, Y=0.779, Z=-25.132, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

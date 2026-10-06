@@ -1,0 +1,24 @@
+MoveDef SpecialSDown_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x1A006E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,24 @@
+MoveDef 0x4CEB2B8B
+{
+	Main()
+	{
+		Set_Model_Scale(Scale=1.3)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x24C003D)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

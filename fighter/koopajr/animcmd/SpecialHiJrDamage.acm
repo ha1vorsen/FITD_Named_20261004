@@ -1,0 +1,21 @@
+MoveDef SpecialHiJrDamage
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Set_Bone_Intangibility(Bone=0x403, Mode=0x3)
+		Script_End()
+	}
+
+}

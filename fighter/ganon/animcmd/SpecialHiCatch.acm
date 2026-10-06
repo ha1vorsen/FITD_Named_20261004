@@ -1,0 +1,39 @@
+MoveDef SpecialHiCatch
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Throw_Specifier(ID=0x1, Bone=0x0, Damage=8, Angle=0x0, KBG=0xA, WBKB=0x0, BKB=0x64, Effect=0x0, Unknown=1, Hitlag=0, Unknown=1, SFXLevel=0x0, SFXType=0x2, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x8)
+		Set_Loop(Iterations=4){
+		    WAIT(Frames=3)
+		    Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1.2, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x32, Size=7, X=0, Y=9, Z=0, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x7, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x1, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		    WAIT(Frames=1)
+		    Remove_All_Hitboxes()
+		    Goto(Offset=-47)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect2(Graphic=0x3140016, Bone=0x19, X=3, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=6)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0x190035)
+		Sound_Effect(SFX=0x190036)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

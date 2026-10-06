@@ -1,0 +1,21 @@
+MoveDef SpecialS_C2
+{
+	Main()
+	{
+		Visibility(State=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,41 @@
+MoveDef SpecialAirN_C2
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		GENERATE_ARTICLE(ID=0x1)
+		Set_Anchored_Article_Action(Article=0x1, Action=0x0)
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=11)
+		Set_Frame_Duration(Speed=1)
+		SHIELD_ON(Unused=0x2, ID=0x0, Type=0x1)
+		Set_Kinetic_Handler(ID=0x6D)
+		FRAME(Frames=25)
+		Set_Frame_Duration(Speed=0.8)
+		Shield_Off2(Unused=0x2, ID=0x0, Type=0x1)
+		FRAME(Frames=45)
+		Set_Frame_Duration(Speed=2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x9C4ACE9)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=9)
+		Sound_Effect(SFX=0x110043)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=17)
+		Script_End()
+	}
+
+}

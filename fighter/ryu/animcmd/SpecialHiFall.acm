@@ -1,0 +1,21 @@
+MoveDef SpecialHiFall
+{
+	Main()
+	{
+		Allow/Disallow_Ledgegrab(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

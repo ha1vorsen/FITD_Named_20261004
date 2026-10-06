@@ -1,0 +1,42 @@
+MoveDef 0x5CCCB2EB : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Int_Var_Compare(Variable=LA-Int[131], Method=0x0, Value=0x2)
+		True(Offset=0x5){
+		    Model_Changer(ChangerID=0x0, ChangerState=0x3)
+		}
+		Int_Var_Compare(Variable=LA-Int[131], Method=0x0, Value=0x0)
+		True(Offset=0x5){
+		    Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		}
+		Int_Var_Compare(Variable=LA-Int[131], Method=0x0, Value=0x1)
+		True(Offset=0x5){
+		    Model_Changer(ChangerID=0x0, ChangerState=0x2)
+		}
+		FRAME(Frames=10)
+		EXECUTE(Unknown=10)
+		IS_FLAG(Variable=RA-Flag[28])
+		True(Offset=0x4){
+		    Item_Visibility(State=0x0)
+		}
+		FRAME(Frames=12)
+		FRAME(Frames=35)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		Script_End()
+	}
+
+}

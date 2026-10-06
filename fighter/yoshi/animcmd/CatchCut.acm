@@ -1,0 +1,22 @@
+MoveDef CatchCut
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x90053)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

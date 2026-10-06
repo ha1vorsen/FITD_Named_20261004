@@ -1,0 +1,28 @@
+MoveDef SpecialAirSGet
+{
+	Main()
+	{
+		JUMP(Hash=0x482AD4A0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x60079)
+		WAIT(Frames=14)
+		Sound_Effect(SFX=0x6006C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x482AD4A0)
+		Script_End()
+	}
+
+}

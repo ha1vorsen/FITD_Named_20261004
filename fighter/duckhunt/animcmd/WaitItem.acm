@@ -1,0 +1,22 @@
+MoveDef WaitItem
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Slope_Full(unknown=0x6, unknown=0x8)
+		Script_End()
+	}
+
+}

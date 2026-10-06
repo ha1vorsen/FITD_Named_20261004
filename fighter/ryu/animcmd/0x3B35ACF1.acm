@@ -1,0 +1,28 @@
+MoveDef 0x3B35ACF1 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=21)
+		Sound_Effect(SFX=0xC050069)
+		FRAME(Frames=31)
+		PLAY_SE_NO_3D(unknown=0xC090020)
+		FRAME(Frames=52)
+		Sound_Effect(SFX=0xC05006A)
+		FRAME(Frames=102)
+		Sound_Effect(SFX=0xC05006B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,27 @@
+MoveDef AttackAirLw : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=8)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x7D5, Damage=7.2, Angle=0x10E, KBG=0x63, WBKB=0x0, BKB=0xA, Size=3.7, X=0, Y=2.5, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x1, Ground/Air=0x2, Direct/Indirect=0x1, Type=0x15, X2=0, Y2=2.5, Z2=0)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x7D5, Damage=7.2, Angle=0x32, KBG=0x63, WBKB=0x0, BKB=0x1E, Size=4.6, X=0, Y=3.5, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x15, X2=0, Y2=-1, Z2=0)
+		WAIT(Frames=1)
+		Remove_Hitbox(ID=0x0)
+		WAIT(Frames=6)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

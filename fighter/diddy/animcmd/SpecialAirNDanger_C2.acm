@@ -1,0 +1,28 @@
+MoveDef SpecialAirNDanger_C2
+{
+	Main()
+	{
+		JUMP(Hash=0xAD66AEB0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xAD66AEB0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Transient_Sound_Effect(SFX=0x1E0045)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xAD66AEB0)
+		Script_End()
+	}
+
+}

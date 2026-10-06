@@ -1,0 +1,32 @@
+MoveDef SpecialNLarge_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=5)
+		SET_LIMIT_SPEED_EX(Horizontal=1.3, Vertical=0)
+		FRAME(Frames=11)
+		ON_FLAG(Variable=RA-Flag[17])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=76)
+		PLAY_SE_REMAIN(unknown=0xED)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		FRAME(Frames=68)
+		Script_End()
+	}
+
+}

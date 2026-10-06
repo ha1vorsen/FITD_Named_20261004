@@ -1,0 +1,28 @@
+MoveDef 0x0A13C8CB
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=41)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x32A000D, Bone=0x0, X=0, Y=-4, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.85, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x24C003F)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

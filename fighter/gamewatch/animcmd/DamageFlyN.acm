@@ -1,0 +1,24 @@
+MoveDef DamageFlyN
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x7, ChangerState=0x3)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		DAMAGEFLY_SE()
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,40 @@
+MoveDef SpecialLw
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		Graphic_Effect2(Graphic=0x30A0011, Bone=0x0, X=0, Y=5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.3, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=46)
+		Set_Loop(Iterations=-1){
+		    Color_Overlay(Red=255, Green=255, Blue=255, Alpha=80)
+		    WAIT(Frames=1)
+		    Color_Overlay(Red=0, Green=0, Blue=0, Alpha=80)
+		    WAIT(Frames=1)
+		    Terminate_Overlays()
+		    WAIT(Frames=1)
+		    Goto(Offset=-17)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x390000)
+		WAIT(Frames=1)
+		Sound_Effect(SFX=0xC0041)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

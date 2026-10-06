@@ -1,0 +1,62 @@
+MoveDef SpecialLwHit_C3
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		Set_Frame_Duration(Speed=4)
+		SET_LIMIT_SPEED_EX(Horizontal=4, Vertical=0)
+		Add/Set_Momentum(Horizontal=4, Vertical=0, Mode=0x1)
+		FRAME(Frames=4)
+		Set_Frame_Duration(Speed=0.5)
+		Add/Set_Momentum(Horizontal=0.5, Vertical=0, Mode=0x1)
+		FRAME(Frames=10)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=6, Angle=0x8C, KBG=0x41, WBKB=0x0, BKB=0x5A, Size=6, X=0, Y=7, Z=14, Effect=0x3, Trip=0, Hitlag=1.5, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=7, Z2=-9)
+		FRAME(Frames=12)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=13)
+		Remove_All_Hitboxes()
+		Add_Momentum(Horizontal=-0.3, Vertical=0)
+		Set_Frame_Duration(Speed=3)
+		FRAME(Frames=16)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Terminate_Graphic_Effect(Graphic=0x100001F, unknown=0x1, unknown=0x1)
+		Graphic_Effect3(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.25, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Graphic_Effect2(Graphic=0x3120006, Bone=0x0, X=0, Y=14.8, Z=-1, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=3)
+		External_Graphic(Graphic=0x3120009, Bone=0x0, X=0, Y=7, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Sword_Trace(TraceID=0x9, BlurLen=1.401298E-44, Bone1=0x3EA, X=0, Y=0, Z=0.5, Bone2=0x3EA, X=-1E-05, Y=-2E-05, Z=12.2, Anchored=0x1, Graphic=0x3120000, Bone3=0x3EA, X=0, Y=0, Z=0, RotX=0.00013, RotY=-7E-05, RotZ=0.00011, Length=1)
+		Color_Overlay(Red=255, Green=255, Blue=255, Alpha=220)
+		FRAME(Frames=4)
+		Color_Overlay(Red=180, Green=180, Blue=180, Alpha=80)
+		Change_Overlay(Transition=11, Red=0, Green=0, Blue=0, Alpha=0)
+		FRAME(Frames=6)
+		FRAME(Frames=8)
+		Terminate_Graphic_Effect(Graphic=0x3120009, unknown=0x0, unknown=0x0)
+		FRAME(Frames=13)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x16003A)
+		WAIT(Frames=3)
+		Sound_Effect(SFX=0x16003B)
+		Low_Voice_Clip(unknown=0x80280000)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

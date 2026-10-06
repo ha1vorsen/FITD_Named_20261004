@@ -1,0 +1,27 @@
+MoveDef SpecialAirS_C3
+{
+	Main()
+	{
+		JUMP(Hash=0xDCB0133D)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=23)
+		Graphic_Effect2(Graphic=0x1000009, Bone=0x16, X=4.98752, Y=-0.31615, Z=-0.15682, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Graphic_Effect2(Graphic=0x3060008, Bone=0x16, X=6.2, Y=0.37938, Z=-0.15, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		CALL(Hash=0xDCB0133D)
+		Script_End()
+	}
+
+}

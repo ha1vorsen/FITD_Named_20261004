@@ -1,0 +1,21 @@
+MoveDef SpecialAirN3Loop
+{
+	Main()
+	{
+		JUMP(Hash=0xC3A08DF0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

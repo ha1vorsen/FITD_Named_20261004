@@ -1,0 +1,22 @@
+MoveDef FinalShoot
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		ON_FLAG(Variable=LA-Flag[4])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

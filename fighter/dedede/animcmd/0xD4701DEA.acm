@@ -1,0 +1,19 @@
+MoveDef 0xD4701DEA
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

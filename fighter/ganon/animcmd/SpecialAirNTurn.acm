@@ -1,0 +1,52 @@
+MoveDef SpecialAirNTurn
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		Reverse_Direction()
+		FRAME(Frames=66)
+		ON_FLAG(Variable=RA-Flag[15])
+		SET_INT(Value=0x1, Variable=RA-Int[2])
+		FRAME(Frames=70)
+		Hitbox(ID=0x0, Part=0x0, Bone=0xF, Damage=40, Angle=0x1E, KBG=0x64, WBKB=0x0, BKB=0x28, Size=5, X=2.4, Y=0, Z=0, Effect=0x13, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x1, Part=0x0, Bone=0xD, Damage=40, Angle=0x1E, KBG=0x64, WBKB=0x0, BKB=0x28, Size=4.7, X=0, Y=0, Z=1, Effect=0x13, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x10, Damage=40, Angle=0x1E, KBG=0x64, WBKB=0x0, BKB=0x28, Size=4.3, X=5, Y=0, Z=0, Effect=0x13, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		FRAME(Frames=72)
+		Remove_All_Hitboxes()
+		SET_INT(Value=0x2, Variable=RA-Int[2])
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x41477B2F)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Stop_Sound_Effect(SFX=0x19003E)
+		Sound_Effect(SFX=0x19003E)
+		WAIT(Frames=48)
+		Sound_Effect(SFX=0x4C0001)
+		WAIT(Frames=20)
+		Stop_Sound_Effect(SFX=0x19003F)
+		Sound_Effect(SFX=0x19003F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=3)
+		FRAME(Frames=56)
+		FRAME(Frames=65)
+		FRAME(Frames=70)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=71)
+		FRAME(Frames=101)
+		Script_End()
+	}
+
+}

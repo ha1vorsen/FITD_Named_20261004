@@ -1,0 +1,23 @@
+MoveDef SpecialAirNStoHi_C3
+{
+	Main()
+	{
+		JUMP(Hash=0x66030B51)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x66030B51)
+		Script_End()
+	}
+
+}

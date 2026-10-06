@@ -1,0 +1,35 @@
+MoveDef SpSThrown
+{
+	Main()
+	{
+		IS_FLAG(Variable=LA-Flag[17])
+		True(Offset=0x2E){
+		    Special_Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=7.8, Angle=0x169, KBG=0x5C, WBKB=0x0, BKB=0x28, Size=4.5, X=0, Y=3, Z=0, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x8, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x15, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x1, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x1, Flinchless=0x0, StretchToggle=0x0)
+		}
+		Else(Offset=0x3E){
+		    Search_Collision(ID=0x0, Part=0x0, Bone=0x0, Size=6, X=0, Y=3, Z=0, Unknown=0xE, Unknown=0x7, Ground/Air=0x3, Unknown=0x0, Unknown=0xF, Unknown=0x1, Unknown=0x0, RehitRate=0x1, SelfAffectionToggle=0x0, Unknown=0x0)
+		    Special_Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=7.8, Angle=0x169, KBG=0x5C, WBKB=0x0, BKB=0x28, Size=4.5, X=0, Y=3, Z=0, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x8, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x15, HitBits=0x2, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x1, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x1, Flinchless=0x0, StretchToggle=0x0)
+		}
+		FRAME(Frames=2)
+		ON_FLAG(Variable=RA-Flag[2])
+		FRAME(Frames=120)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x1C0065)
+		unk_5FC8FA49(unknown=0x1C0065)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

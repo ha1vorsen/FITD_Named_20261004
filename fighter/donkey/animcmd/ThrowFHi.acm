@@ -1,0 +1,37 @@
+MoveDef ThrowFHi
+{
+	Main()
+	{
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=10, Angle=0x5C, KBG=0x34, WBKB=0x0, BKB=0x3A, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x8)
+		Throw_Specifier(ID=0x1, Bone=0x0, Damage=3, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x28, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x8)
+		FRAME(Frames=15)
+		Throw_Applier(ID=0x0, Bone=0x1A, Unknown=0x11000005, Unknown=0x11000006, Unknown=0x11000007)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=13)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Sound_Effect(SFX=0x120)
+		WAIT(Frames=9)
+		Sound_Effect(SFX=0x121)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=15)
+		QUAKE(unknown=0x4)
+		Script_End()
+	}
+
+}

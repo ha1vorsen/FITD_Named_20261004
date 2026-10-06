@@ -1,0 +1,24 @@
+MoveDef CapturePulledHi
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x7, ChangerState=0x3)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x53)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

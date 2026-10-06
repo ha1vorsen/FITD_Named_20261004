@@ -1,0 +1,25 @@
+MoveDef 0x10DE4704
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Terminate_Graphic_Effect(Graphic=0x1000010, unknown=0x1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		CALL(Hash=0x838686AE)
+		Item_Visibility(State=0x0)
+		Morph_Model_Event(unknown=0x0)
+		Script_End()
+	}
+
+}

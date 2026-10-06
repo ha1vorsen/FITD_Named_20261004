@@ -1,0 +1,22 @@
+MoveDef SpecialAirLw2Step
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Terminate_Graphic_Effect(Graphic=0x3190015, unknown=0x0, unknown=0x0)
+		External_Graphic(Graphic=0x300001F, Bone=0x0, X=-1, Y=-0.7, Z=0, XRot=90, YRot=0, ZRot=0, Size=0.8, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

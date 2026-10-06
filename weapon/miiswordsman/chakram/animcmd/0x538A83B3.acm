@@ -1,0 +1,37 @@
+MoveDef 0x538A83B3
+{
+	Main()
+	{
+		IS_FLAG(Variable=LA-Flag[6])
+		False(Offset=0x6){
+		    CALL(Hash=0xCC3EDD05)
+		}
+		Else(Offset=0x4){
+		    CALL(Hash=0xA4A28B89)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		IS_FLAG(Variable=LA-Flag[6])
+		False(Offset=0x8){
+		    Sound_Effect(SFX=0x81B0060)
+		    unk_5FC8FA49(unknown=0x81B0060)
+		}
+		Else(Offset=0x6){
+		    Sound_Effect(SFX=0x81B005F)
+		    unk_5FC8FA49(unknown=0x81B005F)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

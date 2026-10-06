@@ -1,0 +1,28 @@
+MoveDef FinalAirMoneyL
+{
+	Main()
+	{
+		JUMP(Hash=0xBAF68480)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xBAF68480)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x24C0015)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xBAF68480)
+		Script_End()
+	}
+
+}

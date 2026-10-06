@@ -1,0 +1,39 @@
+MoveDef Attack11
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=3, Angle=0x3C, KBG=0x32, WBKB=0x0, BKB=0xC, Size=3.5, X=0, Y=5, Z=8, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, X2=0, Y2=5, Z2=7)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=3, Angle=0x4E, KBG=0x32, WBKB=0x0, BKB=0xC, Size=3.9, X=0, Y=5, Z=12, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, X2=0, Y2=5, Z2=7)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		FRAME(Frames=8)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=12)
+		ON_FLAG(Variable=RA-Flag[19])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Graphic_Effect2(Graphic=0x100008D, Bone=0x0, X=0, Y=4.8, Z=1, XRot=0, YRot=0, ZRot=0, Size=0.65, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=6)
+		Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=11.5, Y=4.8, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.65, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x260061)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+}

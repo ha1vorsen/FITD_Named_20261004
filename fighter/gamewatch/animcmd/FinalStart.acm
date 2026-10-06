@@ -1,0 +1,63 @@
+MoveDef FinalStart
+{
+	Main()
+	{
+		Time_Manipulation(Amount=0x5, Duration=0x1E)
+		FRAME(Frames=21)
+		End_Screen_Tint(ID=0x0, TransitionOutTime=0x0)
+		Screen_Tint(TransitionTime=0x0, Red=0x3C, Green=0xF4, Blue=0xED, Alpha=0xC4, Duration=0x80, unknown=0x0, TransitionOutTime=0xFF)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=15)
+		Sound_Effect(SFX=0x6DF0031)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		Morph_Model_Event(unknown=0x0)
+		Item_Visibility(State=0x0)
+		Visibility(State=0x0)
+		FRAME(Frames=3)
+		Item_Visibility(State=0x1)
+		Visibility(State=0x1)
+		FRAME(Frames=13)
+		Item_Visibility(State=0x0)
+		Visibility(State=0x0)
+		FRAME(Frames=15)
+		FRAME(Frames=22)
+		Item_Visibility(State=0x1)
+		Visibility(State=0x1)
+		FRAME(Frames=31)
+		Item_Visibility(State=0x0)
+		Visibility(State=0x0)
+		FRAME(Frames=33)
+		Item_Visibility(State=0x1)
+		Visibility(State=0x1)
+		FRAME(Frames=35)
+		Item_Visibility(State=0x0)
+		Visibility(State=0x0)
+		FRAME(Frames=37)
+		Item_Visibility(State=0x1)
+		Visibility(State=0x1)
+		FRAME(Frames=39)
+		Item_Visibility(State=0x0)
+		Visibility(State=0x0)
+		FRAME(Frames=41)
+		Item_Visibility(State=0x1)
+		Visibility(State=0x1)
+		FRAME(Frames=43)
+		Item_Visibility(State=0x0)
+		Visibility(State=0x0)
+		Script_End()
+	}
+
+}

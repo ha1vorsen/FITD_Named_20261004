@@ -1,0 +1,21 @@
+MoveDef 0xA31D0D4E : Unlisted
+{
+	Main()
+	{
+		Remove_Hitbox(ID=0x9)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

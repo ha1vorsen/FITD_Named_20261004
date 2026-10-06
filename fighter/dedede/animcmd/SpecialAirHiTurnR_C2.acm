@@ -1,0 +1,28 @@
+MoveDef SpecialAirHiTurnR_C2
+{
+	Main()
+	{
+		Set_Armor(State=0x0, Threshold=0)
+		FRAME(Frames=7)
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=23)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=11)
+		Sound_Effect(SFX=0x60042)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

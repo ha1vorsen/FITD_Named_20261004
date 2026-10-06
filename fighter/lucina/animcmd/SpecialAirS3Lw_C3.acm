@@ -1,0 +1,44 @@
+MoveDef SpecialAirS3Lw_C3
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		Add_Momentum(Horizontal=0.5, Vertical=0)
+		FRAME(Frames=8)
+		Set_Frame_Duration(Speed=1.1)
+		ATK_REFERENCE_NODE(Unknown=0x3EA, Unknown=0x2)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x3EA, Damage=10.45, Angle=0xF, KBG=0x46, WBKB=0x0, BKB=0x28, Size=4.2, X=0, Y=0, Z=2.5, Effect=0x2, Trip=0, Hitlag=1.2, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x3EA, Damage=10.45, Angle=0xF, KBG=0x46, WBKB=0x0, BKB=0x28, Size=4.5, X=-1, Y=0, Z=9, Effect=0x2, Trip=0, Hitlag=1.2, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x2, Part=0x0, Bone=0x16, Damage=10.45, Angle=0xF, KBG=0x46, WBKB=0x0, BKB=0x28, Size=3, X=0, Y=1, Z=0, Effect=0x2, Trip=0, Hitlag=1.2, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=9)
+		Add_Momentum(Horizontal=-0.5, Vertical=0)
+		FRAME(Frames=11)
+		Remove_All_Hitboxes()
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=20)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=42)
+		OFF_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x68CFA76)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x761006C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x68CFA76)
+		Script_End()
+	}
+
+}

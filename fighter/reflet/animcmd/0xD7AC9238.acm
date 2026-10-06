@@ -1,0 +1,41 @@
+MoveDef 0xD7AC9238
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect2(Graphic=0x1000012, Bone=0x3E8, X=0, Y=4, Z=0, XRot=0, YRot=0, ZRot=-90, Size=0.35, RandomX=0, RandomY=3, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		    WAIT(Frames=10)
+		    Graphic_Effect2(Graphic=0x32C0013, Bone=0x3E8, X=0, Y=8, Z=0, XRot=0, YRot=0, ZRot=-90, Size=0.4, RandomX=0, RandomY=3, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		    WAIT(Frames=5)
+		    Terminate_Graphic_Effect(Graphic=0x32C0013, unknown=0x0, unknown=0x0)
+		    WAIT(Frames=30)
+		    Graphic_Effect2(Graphic=0x1000012, Bone=0x3E8, X=0, Y=6, Z=0, XRot=0, YRot=0, ZRot=-90, Size=0.35, RandomX=0, RandomY=3, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		    WAIT(Frames=15)
+		    Graphic_Effect2(Graphic=0x1000012, Bone=0x3E8, X=0, Y=4, Z=0, XRot=0, YRot=0, ZRot=-90, Size=0.35, RandomX=0, RandomY=3, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		    WAIT(Frames=10)
+		    Graphic_Effect2(Graphic=0x1000012, Bone=0x3E8, X=0, Y=8, Z=0, XRot=0, YRot=0, ZRot=-90, Size=0.35, RandomX=0, RandomY=3, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		    WAIT(Frames=30)
+		    Graphic_Effect2(Graphic=0x32C0013, Bone=0x3E8, X=0, Y=6, Z=0, XRot=0, YRot=0, ZRot=-90, Size=0.4, RandomX=0, RandomY=3, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x1)
+		    WAIT(Frames=5)
+		    Terminate_Graphic_Effect(Graphic=0x32C0013, unknown=0x0, unknown=0x0)
+		    WAIT(Frames=15)
+		    Goto(Offset=-126)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		Script_End()
+	}
+
+}

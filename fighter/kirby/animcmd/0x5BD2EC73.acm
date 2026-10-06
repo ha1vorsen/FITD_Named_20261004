@@ -1,0 +1,33 @@
+MoveDef 0x5BD2EC73
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		IS_FLAG(Variable=RA-Flag[17])
+		True(Offset=0x26){
+		    Graphic_Effect2(Graphic=0x32E000F, Bone=0x0, X=0, Y=5, Z=5, XRot=90, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect2(Graphic=0x1000027, Bone=0x0, X=-5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		}
+		Else(Offset=0x24){
+		    Graphic_Effect2(Graphic=0x32E000E, Bone=0x0, X=0, Y=5, Z=5, XRot=90, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect2(Graphic=0x1000027, Bone=0x0, X=-5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xEA81CD2F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xEA81CD2F)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,30 @@
+MoveDef Win3
+{
+	Main()
+	{
+		unk_0A7BF1D4(unknown=0x4, unknown=0x2)
+		IS_EXIST_ARTICLE(Unknown=0x4)
+		True(Offset=0x5){
+		    Set_Anchored_Article_Action(Article=0x4, Action=0x0)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=25)
+		PLAY_SE_NO_3D(unknown=0x1C00B0)
+		FRAME(Frames=65)
+		PLAY_SE_NO_3D(unknown=0x1C00B1)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

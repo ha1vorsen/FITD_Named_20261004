@@ -1,0 +1,24 @@
+MoveDef 0x31D63B8C
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=19)
+		Article_Visibility(Article=0x5, State=0x1)
+		FRAME(Frames=40)
+		Article_Visibility(Article=0x5, State=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

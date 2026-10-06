@@ -1,0 +1,32 @@
+MoveDef 0x813014C8
+{
+	Main()
+	{
+		CALL(Hash=0x2E34DC33)
+		CALL(Hash=0x3C8173DD)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xE52839F)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xE52839F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=14)
+		FRAME(Frames=16)
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

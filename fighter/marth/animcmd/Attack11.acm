@@ -1,0 +1,44 @@
+MoveDef Attack11
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		ATK_RESERVE(ID=0x0, Bone=0x3EA, X=1, Y=0, Z=2)
+		ATK_RESERVE(ID=0x1, Bone=0x16, X=0, Y=1, Z=0)
+		ATK_RESERVE(ID=0x3, Bone=0x3EA, X=1, Y=0, Z=6.5)
+		ATK_REFERENCE_NODE(Unknown=0x14, Unknown=0xFFFFFFFF)
+		FRAME(Frames=5)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x3EA, Damage=3, Angle=0x4E, KBG=0x1E, WBKB=0x0, BKB=0x37, Size=3.5, X=1, Y=0, Z=2, Effect=0x2, Trip=0, Hitlag=0.7, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x16, Damage=3, Angle=0x41, KBG=0x1E, WBKB=0x0, BKB=0x37, Size=3, X=0, Y=1, Z=0, Effect=0x2, Trip=0, Hitlag=0.7, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x3, Part=0x0, Bone=0x3EA, Damage=5, Angle=0x5A, KBG=0x1E, WBKB=0x0, BKB=0x37, Size=3.5, X=1, Y=0, Z=7, Effect=0x2, Trip=0, Hitlag=1.25, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		FRAME(Frames=8)
+		Remove_All_Hitboxes()
+		FRAME(Frames=17)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		Sword_Trace(TraceID=0x9, BlurLen=1.121039E-44, Bone1=0x3EA, X=0, Y=0, Z=0.5, Bone2=0x3EA, X=-1E-05, Y=-2E-05, Z=12.2, Anchored=0x1, Graphic=0x3120000, Bone3=0x3EA, X=0, Y=0, Z=0, RotX=0.00013, RotY=-7E-05, RotZ=0.00011, Length=1)
+		FRAME(Frames=16)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x160050)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		Script_End()
+	}
+
+}

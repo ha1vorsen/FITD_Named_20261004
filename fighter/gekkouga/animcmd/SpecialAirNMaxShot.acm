@@ -1,0 +1,26 @@
+MoveDef SpecialAirNMaxShot
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		ON_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x662FDD7B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x662FDD7B)
+		Script_End()
+	}
+
+}

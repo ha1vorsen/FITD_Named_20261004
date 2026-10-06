@@ -1,0 +1,27 @@
+MoveDef SpecialAirS2_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x1CE72C71)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xE52839F)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x1CE72C71)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x1CE72C71)
+		Script_End()
+	}
+
+}

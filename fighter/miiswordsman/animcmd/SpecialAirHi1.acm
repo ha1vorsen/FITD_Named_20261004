@@ -1,0 +1,36 @@
+MoveDef SpecialAirHi1
+{
+	Main()
+	{
+		JUMP(Hash=0x757E6F07)
+		Script_End()
+	}
+
+	Effect()
+	{
+		AFTER_IMAGE_ON_WORK(unknown=0x10000084, unknown=0x6, unknown=0x19, unknown=0x0, unknown=0x3F000000, unknown=0x0, unknown=0x19, unknown=0xB727C5AC, unknown=0x41580000, unknown=0x0, unknown=0x1, unknown=0x10000083, unknown=0x19, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3908509C, unknown=0xB892CCF7, unknown=0x38E6AFCD, unknown=0x3F800000)
+		FRAME(Frames=17)
+		Terminate_Sword_Glow(FadeTime=0x5)
+		FRAME(Frames=30)
+		External_Graphic(Graphic=0x301000C, Bone=0x0, X=0, Y=0, Z=0, XRot=90, YRot=2E-05, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=31)
+		EFFECT_FOLLOW_WORK(Graphic=0x10000083, Bone=0x19, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x81B002B)
+		WAIT(Frames=30)
+		Transient_Sound_Effect(SFX=0x81B002C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=28)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,28 @@
+MoveDef SpecialNStart
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		GENERATE_ARTICLE(ID=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=8)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=12)
+		Slope_Full(unknown=0x6, unknown=0x2)
+		Script_End()
+	}
+
+}

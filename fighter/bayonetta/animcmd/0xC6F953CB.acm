@@ -1,0 +1,29 @@
+MoveDef 0xC6F953CB
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		CALL(Hash=0x1CFAFAFD)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x112)
+		Script_End()
+	}
+
+	Expression()
+	{
+		START_CHARGE(unknown=0x3F4CCCCD, unknown=0x3F4CCCCD, unknown=0xBF800000, unknown=0x3F4CCCCD, unknown=0x3F4CCCCD, unknown=0xBF800000, unknown=0xFFFFFFFF)
+		SLOPE(unknown=0x6)
+		Model_Changer(ChangerID=0x3, ChangerState=0x2)
+		FRAME(Frames=4)
+		Script_End()
+	}
+
+}

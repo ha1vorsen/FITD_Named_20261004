@@ -1,0 +1,25 @@
+MoveDef Win2Wait
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x8)
+		Set_Anchored_Article_Action(Article=0x8, Action=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		Script_End()
+	}
+
+}

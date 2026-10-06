@@ -1,0 +1,23 @@
+MoveDef FinalAirSpecialStartL
+{
+	Main()
+	{
+		JUMP(Hash=0x1A3DB22D)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x1A3DB22D)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

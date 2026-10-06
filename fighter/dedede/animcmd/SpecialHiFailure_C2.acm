@@ -1,0 +1,32 @@
+MoveDef SpecialHiFailure_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x6002A)
+		WAIT(Frames=25)
+		Sound_Effect(SFX=0x6002B)
+		WAIT(Frames=23)
+		Sound_Effect3(SFX=0x60017)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=2)
+		QUAKE(unknown=0x5)
+		FRAME(Frames=4)
+		FRAME(Frames=29)
+		FRAME(Frames=51)
+		Script_End()
+	}
+
+}

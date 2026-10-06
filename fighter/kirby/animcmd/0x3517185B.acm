@@ -1,0 +1,21 @@
+MoveDef 0x3517185B
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x5)
+		Script_End()
+	}
+
+}

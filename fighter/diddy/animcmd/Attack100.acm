@@ -1,0 +1,52 @@
+MoveDef Attack100
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		CALL(Hash=0x5B146C1)
+		FRAME(Frames=7)
+		CALL(Hash=0x5B146C1)
+		FRAME(Frames=12)
+		CALL(Hash=0x5B146C1)
+		FRAME(Frames=14)
+		CALL(Hash=0x5B146C1)
+		FRAME(Frames=19)
+		CALL(Hash=0x5B146C1)
+		FRAME(Frames=22)
+		CALL(Hash=0x5B146C1)
+		WAIT_LOOP_CLR()
+		ON_FLAG(Variable=RA-Flag[22])
+		JUMP(Hash=0xB007C283)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    WAIT(Frames=10)
+		    Graphic_Effect2(Graphic=0x31B0009, Bone=0x0, X=0, Y=4, Z=10.5, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=2, RandomY=0, RandomZ=3, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=11, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=1.4, RandomX=2, RandomY=0, RandomZ=10, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    Goto(Offset=-36)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x1E001A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_040FD56E(unknown=0x1, unknown=0x4, unknown=0x1)
+		FRAME(Frames=6)
+		FRAME(Frames=13)
+		FRAME(Frames=21)
+		Loop_Rest()
+		JUMP(Hash=0xB007C283)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,24 @@
+MoveDef SpecialNEndR_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x1BD2443F)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=18)
+		Transient_Sound_Effect(SFX=0x260034)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

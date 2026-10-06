@@ -1,0 +1,33 @@
+MoveDef SpecialHi_C3
+{
+	Main()
+	{
+		FRAME(Frames=31)
+		Set_Frame_Duration(Speed=0.8)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=5){
+		    Color_Overlay(Red=255, Green=120, Blue=0, Alpha=150)
+		    WAIT(Frames=1)
+		    Terminate_Overlays()
+		    WAIT(Frames=2)
+		    Goto(Offset=-10)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		PLAY_SE_REMAIN(unknown=0x13003D)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,55 @@
+MoveDef EntryR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x334001F, Bone=0x0, X=0, Y=0, Z=-8, XRot=0, YRot=180, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Color_Overlay(Red=45, Green=45, Blue=45, Alpha=255)
+		WAIT(Frames=2)
+		Change_Overlay(Transition=20, Red=45, Green=45, Blue=45, Alpha=0)
+		WAIT(Frames=20)
+		Terminate_Overlays()
+		FRAME(Frames=110)
+		Graphic_Effect(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		LAST_EFFECT_SET_ALPHA(unknown=0x42480000)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0xC050068)
+		FRAME(Frames=18)
+		Sound_Effect(SFX=0xC050074)
+		FRAME(Frames=50)
+		Sound_Effect(SFX=0xC050073)
+		FRAME(Frames=71)
+		Sound_Effect(SFX=0xC050074)
+		FRAME(Frames=89)
+		Sound_Effect(SFX=0xC050067)
+		FRAME(Frames=95)
+		Sound_Effect(SFX=0xC050076)
+		FRAME(Frames=107)
+		Sound_Effect(SFX=0xC050075)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		ON_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=80)
+		SET_CURSOR(unknown=0x1)
+		Tag_Visibility(State=0x1)
+		FRAME(Frames=87)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		FRAME(Frames=100)
+		OFF_FLAG(Variable=LA-Flag[101])
+		Script_End()
+	}
+
+}

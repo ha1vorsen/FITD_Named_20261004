@@ -1,0 +1,45 @@
+MoveDef SpecialNShoot_C2
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		ON_FLAG(Variable=RA-Flag[15])
+		Set_Frame_Duration(Speed=1.7)
+		FRAME(Frames=24)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		IS_FLAG(Variable=RA-Flag[17])
+		True(Offset=0x37){
+		    Graphic_Effect2(Graphic=0x32E000F, Bone=0x410, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=-90, Size=0.4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect2(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=-5, XRot=0, YRot=0, ZRot=0, Size=0.4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect3(Graphic=0x0, Bone=0x0, X=0, Y=0, Z=-5, XRot=0, YRot=0, ZRot=0, Size=0.4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Else(Offset=0x35){
+		    Graphic_Effect2(Graphic=0x32E0003, Bone=0x410, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=-90, Size=0.4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect2(Graphic=0x1000027, Bone=0x0, X=0, Y=0, Z=-5, XRot=0, YRot=0, ZRot=0, Size=0.4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect3(Graphic=0x0, Bone=0x0, X=0, Y=0, Z=-5, XRot=0, YRot=0, ZRot=0, Size=0.4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Stop_Sound_Effect(SFX=0x8630003)
+		Low_Voice_Clip(unknown=0x804A0005)
+		Script_End()
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x3)
+		FRAME(Frames=3)
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+}

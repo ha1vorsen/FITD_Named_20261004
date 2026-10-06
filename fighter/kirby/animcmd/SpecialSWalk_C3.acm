@@ -1,0 +1,31 @@
+MoveDef SpecialSWalk_C3
+{
+	Main()
+	{
+		Set_Armor(State=0x1, Threshold=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		unk_01A5A27C(unknown=0xA006B, unknown=0xA006D)
+		WAIT(Frames=20)
+		unk_01A5A27C(unknown=0xA006D, unknown=0xA006B)
+		Loop_Rest()
+		JUMP(Hash=0x27DB1C19)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

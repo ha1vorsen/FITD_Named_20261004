@@ -1,0 +1,26 @@
+MoveDef SpecialAirS2Start
+{
+	Main()
+	{
+		JUMP(Hash=0xA841B9D7)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3020018, Bone=0x16, X=7, Y=0, Z=0, XRot=0, YRot=90, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=13)
+		Script_End()
+	}
+
+}

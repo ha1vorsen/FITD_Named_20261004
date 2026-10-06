@@ -1,0 +1,43 @@
+MoveDef SpecialNShoot_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		ON_FLAG(Variable=RA-Flag[13])
+		GENERATE_ARTICLE(ID=0x1)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=2)
+		Add/Set_Momentum(Horizontal=-0.6, Vertical=0.3, Mode=0x1)
+		FRAME(Frames=4)
+		Set_Frame_Duration(Speed=10)
+		FRAME(Frames=5)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=14)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Terminate_Graphic_Effect(Graphic=0x3190001, unknown=0x1, unknown=0x1)
+		Graphic_Effect2(Graphic=0x3190022, Bone=0x0, X=0, Y=9, Z=7, XRot=0, YRot=0, ZRot=0, Size=1.25, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=4)
+		Graphic_Effect3(Graphic=0x1000009, Bone=0x0, X=-5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.75, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x1B008A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=1)
+		Script_End()
+	}
+
+}

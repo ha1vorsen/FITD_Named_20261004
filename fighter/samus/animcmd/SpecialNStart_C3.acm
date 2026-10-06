@@ -1,0 +1,30 @@
+MoveDef SpecialNStart_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=6)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=14)
+		GENERATE_ARTICLE_ENABLE(Unknown=0x0)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		SLOPE_TOE(unknown=0x2, unknown=0x42700000)
+		Script_End()
+	}
+
+}

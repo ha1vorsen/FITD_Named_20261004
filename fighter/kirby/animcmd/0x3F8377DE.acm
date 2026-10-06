@@ -1,0 +1,22 @@
+MoveDef 0x3F8377DE
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=18)
+		Transient_Sound_Effect(SFX=0x260034)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

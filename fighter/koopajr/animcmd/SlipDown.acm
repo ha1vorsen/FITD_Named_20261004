@@ -1,0 +1,31 @@
+MoveDef SlipDown
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=12)
+		Graphic_Effect3(Graphic=0x1000006, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.4, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0xA3)
+		FRAME(Frames=31)
+		Sound_Effect(SFX=0x9F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=30)
+		QUAKE(unknown=0x4)
+		Slope_Full(unknown=0x1, unknown=0xF)
+		Script_End()
+	}
+
+}

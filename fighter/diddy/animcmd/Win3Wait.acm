@@ -1,0 +1,24 @@
+MoveDef Win3Wait
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=22)
+		Sound_Effect(SFX=0x1E0074)
+		WAIT(Frames=12)
+		Sound_Effect(SFX=0x1E0074)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

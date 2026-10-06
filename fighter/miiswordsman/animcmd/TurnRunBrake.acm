@@ -1,0 +1,29 @@
+MoveDef TurnRunBrake
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		Sound_Effect2(SFX=0x81B0000)
+		WAIT(Frames=9)
+		Sound_Effect2(SFX=0x81B0002)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_C7B586AF(unknown=0, unknown=0, unknown=0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		unk_C7B586AF(unknown=0, unknown=30, unknown=8)
+		Script_End()
+	}
+
+}

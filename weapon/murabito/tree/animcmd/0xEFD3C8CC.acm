@@ -1,0 +1,30 @@
+MoveDef 0xEFD3C8CC
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		Set_Loop(Iterations=-1){
+		    Color_Overlay(Red=255, Green=0, Blue=0, Alpha=0)
+		    WAIT(Frames=10)
+		    Change_Overlay(Transition=20, Red=255, Green=0, Blue=0, Alpha=80)
+		    WAIT(Frames=20)
+		    Terminate_Overlays()
+		    WAIT(Frames=2)
+		    Goto(Offset=-18)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

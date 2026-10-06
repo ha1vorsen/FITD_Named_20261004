@@ -1,0 +1,25 @@
+MoveDef Win1bWait
+{
+	Main()
+	{
+		JUMP(Hash=0x2F8CED33)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x2F8CED33)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x2F8CED33)
+		Script_End()
+	}
+
+}

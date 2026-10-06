@@ -1,0 +1,33 @@
+MoveDef WalkSlow
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=25)
+		Graphic_Effect(Graphic=0x0, Bone=0xA, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.75, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=55)
+		Graphic_Effect(Graphic=0x0, Bone=0x6, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.75, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Loop_Rest()
+		JUMP(Hash=0x6BE1270D)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=22)
+		Transient_Sound_Effect(SFX=0x4A4003A)
+		WAIT(Frames=47)
+		Transient_Sound_Effect(SFX=0x4A40038)
+		Loop_Rest()
+		JUMP(Hash=0x6BE1270D)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

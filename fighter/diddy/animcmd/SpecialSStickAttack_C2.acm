@@ -1,0 +1,26 @@
+MoveDef SpecialSStickAttack_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=18)
+		Graphic_Effect2(Graphic=0x31B0004, Bone=0x2, X=0, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=10)
+		Sound_Effect(SFX=0x1E0049)
+		Sound_Effect(SFX=0x510013)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

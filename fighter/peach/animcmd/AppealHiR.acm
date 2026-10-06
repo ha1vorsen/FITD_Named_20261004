@@ -1,0 +1,30 @@
+MoveDef AppealHiR
+{
+	Main()
+	{
+		unk_0A7BF1D4(unknown=0x0, unknown=0x1)
+		Set_Anchored_Article_Action(Article=0x0, Action=0x24)
+		FRAME(Frames=110)
+		Remove_Article(Article=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=31)
+		Sound_Effect(SFX=0x440013)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

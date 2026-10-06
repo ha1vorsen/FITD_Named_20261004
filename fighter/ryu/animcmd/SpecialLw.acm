@@ -1,0 +1,128 @@
+MoveDef SpecialLw
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		ON_FLAG(Variable=RA-Flag[19])
+		Int_Var_Compare(Variable=RA-Int[2], Method=0x0, Value=0x0)
+		True(Offset=0x33){
+		    Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=12, Angle=0x3C, KBG=0xA, WBKB=0x0, BKB=0x64, Size=3.5, X=0, Y=10.5, Z=11.5, Effect=0x1E, Trip=0, Hitlag=2, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0xF, SFXLevel=0x2, SFXType=0x36, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=10.5, Z2=-3)
+		    ATTACK_SET_ATTACK_LEVEL(unknown=0x0, unknown=0x0)
+		}
+		Else(Offset=0x37){
+		    Int_Var_Compare(Variable=RA-Int[2], Method=0x0, Value=0x1)
+		    True(Offset=0x33){
+		        Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=10, Angle=0x3C, KBG=0x64, WBKB=0x0, BKB=0x0, Size=4.3, X=0, Y=10.5, Z=11.5, Effect=0x1E, Trip=0, Hitlag=2.5, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x16, SFXLevel=0x2, SFXType=0x36, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=10.5, Z2=-3)
+		        ATTACK_SET_ATTACK_LEVEL(unknown=0x0, unknown=0x1)
+		    }
+		    Else(Offset=0x31){
+		        Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=17, Angle=0x3C, KBG=0x64, WBKB=0x0, BKB=0x0, Size=5.4, X=0, Y=10.5, Z=11.5, Effect=0x1E, Trip=0, Hitlag=2.3, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x1E, SFXLevel=0x2, SFXType=0x36, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x0, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=10.5, Z2=-3)
+		        ATTACK_SET_ATTACK_LEVEL(unknown=0x0, unknown=0x2)
+		    }
+		}
+		FRAME(Frames=13)
+		Remove_All_Hitboxes()
+		FRAME(Frames=15)
+		ON_FLAG(Variable=RA-Flag[20])
+		Script_End()
+	}
+
+	Effect()
+	{
+		Int_Var_Compare(Variable=RA-Int[2], Method=0x0, Value=0x0)
+		True(Offset=0x17){
+		    FRAME(Frames=5)
+		    Graphic_Effect(Graphic=0x100008C, Bone=0x0, X=11, Y=0, Z=5, XRot=0, YRot=0, ZRot=0, Size=0.6, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		}
+		Else(Offset=0x2E){
+		    Int_Var_Compare(Variable=RA-Int[2], Method=0x0, Value=0x1)
+		    True(Offset=0x2A){
+		        FRAME(Frames=5)
+		        Graphic_Effect(Graphic=0x100008C, Bone=0x0, X=11, Y=0, Z=5, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		        FRAME(Frames=9)
+		        Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=5.5, Y=0, Z=5, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    }
+		    Else(Offset=0x53){
+		        Color_Overlay(Red=255, Green=255, Blue=100, Alpha=200)
+		        WAIT(Frames=3)
+		        Terminate_Overlays()
+		        WAIT(Frames=2)
+		        Color_Overlay(Red=255, Green=255, Blue=255, Alpha=170)
+		        WAIT(Frames=2)
+		        Terminate_Overlays()
+		        Graphic_Effect(Graphic=0x100008C, Bone=0x0, X=11, Y=0, Z=5, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		        WAIT(Frames=2)
+		        Color_Overlay(Red=255, Green=255, Blue=100, Alpha=150)
+		        WAIT(Frames=2)
+		        Terminate_Overlays()
+		        Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=-10, Y=0, Z=5, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		        FRAME(Frames=10)
+		        Graphic_Effect2(Graphic=0x3340015, Bone=0x0, X=14, Y=10.5, Z=3, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    }
+		}
+		FRAME(Frames=10)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x15){
+		    Graphic_Effect2(Graphic=0x3340008, Bone=0x0, X=5.5, Y=11.5, Z=-3, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Else(Offset=0x13){
+		    Graphic_Effect2(Graphic=0x3340007, Bone=0x0, X=-5.5, Y=11.5, Z=-3, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		FRAME(Frames=14)
+		Terminate_Graphic_Effect(Graphic=0x100008C, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=6)
+		Int_Var_Compare(Variable=RA-Int[2], Method=0x0, Value=0x0)
+		True(Offset=0xA){
+		    WAIT(Frames=2)
+		    Sound_Effect(SFX=0xC05003B)
+		    Sound_Effect(SFX=0xC09002E)
+		}
+		Else(Offset=0x1A){
+		    Int_Var_Compare(Variable=RA-Int[2], Method=0x0, Value=0x1)
+		    True(Offset=0x8){
+		        Sound_Effect(SFX=0xC05003C)
+		        Sound_Effect(SFX=0xC09002F)
+		    }
+		    Else(Offset=0xE){
+		        Int_Var_Compare(Variable=RA-Int[2], Method=0x0, Value=0x2)
+		        True(Offset=0x8){
+		            WAIT(Frames=2)
+		            Sound_Effect(SFX=0xC05003D)
+		            Sound_Effect(SFX=0xC090030)
+		        }
+		    }
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Item_Visibility(State=0x0)
+		Int_Var_Compare(Variable=RA-Int[2], Method=0x0, Value=0x0)
+		True(Offset=0x6){
+		    FRAME(Frames=9)
+		}
+		Else(Offset=0xA){
+		    Int_Var_Compare(Variable=RA-Int[2], Method=0x0, Value=0x1)
+		    True(Offset=0x6){
+		        FRAME(Frames=9)
+		    }
+		    Else(Offset=0x8){
+		        FRAME(Frames=7)
+		        FRAME(Frames=11)
+		        QUAKE(unknown=0x4)
+		    }
+		}
+		FRAME(Frames=42)
+		FRAME(Frames=54)
+		Item_Visibility(State=0x1)
+		Script_End()
+	}
+
+}

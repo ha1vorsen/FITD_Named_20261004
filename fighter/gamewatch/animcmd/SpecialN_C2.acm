@@ -1,0 +1,41 @@
+MoveDef SpecialN_C2
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.6)
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		FRAME(Frames=2)
+		Model_Changer(ChangerID=0x3, ChangerState=0x7)
+		FRAME(Frames=18)
+		ON_FLAG(Variable=RA-Flag[14])
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=2, Angle=0x37, KBG=0x4B, WBKB=0x0, BKB=0x50, Size=4, X=0, Y=7.4, Z=8, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		FRAME(Frames=21)
+		Remove_All_Hitboxes()
+		ON_FLAG(Variable=RA-Flag[15])
+		FRAME(Frames=36)
+		OFF_FLAG(Variable=RA-Flag[15])
+		ON_FLAG(Variable=RA-Flag[16])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=19)
+		Graphic_Effect(Graphic=0x1000020, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=18)
+		QUAKE(unknown=0x3)
+		FRAME(Frames=19)
+		Script_End()
+	}
+
+}

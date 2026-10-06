@@ -1,0 +1,29 @@
+MoveDef 0x7247EDBD
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=9)
+		FRAME(Frames=40)
+		FRAME(Frames=49)
+		unk_3B31D521(unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Set_Loop(Iterations=-1){
+		    WAIT(Frames=18)
+		    Goto(Offset=-2)
+		}
+		Script_End()
+	}
+
+}

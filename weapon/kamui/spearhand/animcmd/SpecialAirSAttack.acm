@@ -1,0 +1,31 @@
+MoveDef SpecialAirSAttack
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		ON_FLAG(Variable=LA-Flag[5])
+		ATK_REFERENCE_NODE(Unknown=0x7D1, Unknown=0x0)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x7D2, Damage=8, Angle=0x32, KBG=0x64, WBKB=0x0, BKB=0x19, Size=3.5, X=4, Y=0, Z=0, Effect=0x20, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=17.5, Y2=0, Z2=0)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x7D6, Damage=15, Angle=0x28, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=3.2, X=-2, Y=0, Z=0, Effect=0x19, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x0, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		WAIT(Frames=3)
+		OFF_FLAG(Variable=LA-Flag[5])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x4EAA317B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

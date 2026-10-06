@@ -1,0 +1,90 @@
+MoveDef AttackAirHi
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		ON_FLAG(Variable=RA-Flag[13])
+		Int_Var_Compare(Variable=RA-Int[4], Method=0x0, Value=0x1)
+		True(Offset=0x1D){
+		    Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=8, Angle=0x55, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=5.2, X=0, Y=20, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		}
+		Else(Offset=0x21){
+		    Int_Var_Compare(Variable=RA-Int[4], Method=0x0, Value=0x2)
+		    True(Offset=0x1D){
+		        Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=10, Angle=0x55, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=6.5, X=0, Y=20, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		    }
+		    Else(Offset=0x1B){
+		        Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=13, Angle=0x55, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=7.5, X=0, Y=20, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		    }
+		}
+		WAIT(Frames=2)
+		Int_Var_Compare(Variable=RA-Int[4], Method=0x0, Value=0x1)
+		True(Offset=0x1D){
+		    Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=4, Angle=0x55, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=3.8, X=0, Y=18, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		}
+		Else(Offset=0x21){
+		    Int_Var_Compare(Variable=RA-Int[4], Method=0x0, Value=0x2)
+		    True(Offset=0x1D){
+		        Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x55, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=4.5, X=0, Y=18, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		    }
+		    Else(Offset=0x1B){
+		        Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=6, Angle=0x55, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=4.8, X=0, Y=18, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		    }
+		}
+		FRAME(Frames=32)
+		Remove_All_Hitboxes()
+		FRAME(Frames=39)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x19, X=-2, Y=5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		ATTACK_SE()
+		Int_Var_Compare(Variable=RA-Int[4], Method=0x0, Value=0x1)
+		True(Offset=0x6){
+		    Sound_Effect(SFX=0x24C007E)
+		}
+		Else(Offset=0xA){
+		    Int_Var_Compare(Variable=RA-Int[4], Method=0x0, Value=0x2)
+		    True(Offset=0x6){
+		        Sound_Effect(SFX=0x24C007F)
+		    }
+		    Else(Offset=0x4){
+		        Sound_Effect(SFX=0x24C0080)
+		    }
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=2)
+		Int_Var_Compare(Variable=RA-Int[4], Method=0x0, Value=0x1)
+		True(Offset=0x7){
+		    Model_Changer(ChangerID=0x0, ChangerState=0x6)
+		}
+		Else(Offset=0xB){
+		    Int_Var_Compare(Variable=RA-Int[4], Method=0x0, Value=0x2)
+		    True(Offset=0x7){
+		        Model_Changer(ChangerID=0x0, ChangerState=0x7)
+		    }
+		    Else(Offset=0x5){
+		        Model_Changer(ChangerID=0x0, ChangerState=0x8)
+		    }
+		}
+		FRAME(Frames=4)
+		FRAME(Frames=38)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

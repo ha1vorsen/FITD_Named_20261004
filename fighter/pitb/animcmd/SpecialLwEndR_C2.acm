@@ -1,0 +1,28 @@
+MoveDef SpecialLwEndR_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x43634457)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x326001A, Bone=0x0, X=-2, Y=10, Z=-11, XRot=0, YRot=120, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Graphic_Effect2(Graphic=0x326001A, Bone=0x0, X=-2, Y=10, Z=11, XRot=0, YRot=240, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=3)
+		Terminate_Graphic_Effect(Graphic=0x3260014, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x43634457)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,46 @@
+MoveDef AttackAirN
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=6)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=11, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=7, X=0, Y=10, Z=1, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2)
+		WAIT(Frames=3)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x9, Damage=5, Angle=0x169, KBG=0x5A, WBKB=0x0, BKB=0x16, Size=2.5, X=1, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x5, Damage=5, Angle=0x169, KBG=0x5A, WBKB=0x0, BKB=0x16, Size=2.5, X=1, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x16, Damage=5, Angle=0x169, KBG=0x5A, WBKB=0x0, BKB=0x16, Size=2.5, X=1, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2)
+		Hitbox(ID=0x3, Part=0x0, Bone=0x10, Damage=5, Angle=0x169, KBG=0x5A, WBKB=0x0, BKB=0x16, Size=2.5, X=1, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2)
+		FRAME(Frames=38)
+		Remove_All_Hitboxes()
+		FRAME(Frames=44)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=10)
+		Graphic_Effect6(Graphic=0x1000023, Bone=0x2, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=270, Size=0.9, Terminate=0x1, Unknown=0x42A00000)
+		WAIT(Frames=5)
+		WAIT(Frames=2)
+		Graphic_Effect6(Graphic=0x1000023, Bone=0x2, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=270, Size=0.9, Terminate=0x1, Unknown=0x41F00000)
+		WAIT(Frames=5)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x765002A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		FRAME(Frames=4)
+		Script_End()
+	}
+
+}

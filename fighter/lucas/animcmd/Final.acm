@@ -1,0 +1,44 @@
+MoveDef Final
+{
+	Main()
+	{
+		Camera_Closeup(ZoomTime=0xA, Unknown=0x0, Distance=1, XRot=0, YRot=0)
+		Time_Manipulation(Amount=0x5, Duration=0x1E)
+		FRAME(Frames=41)
+		Normal_Camera()
+		Set_Camera_Boundaries(Front=50, Back=-50, Top=50, Bottom=-10)
+		Limited_Screen_Tint(TransitionInTime=0x0, Red=0x32, Blue=0x0, Green=0x0, Alpha=0x20, Duration=0x60, TransitionOutTime=0x0)
+		FRAME(Frames=51)
+		ON_FLAG(Variable=LA-Flag[120])
+		FRAME(Frames=297)
+		End_Screen_Tint(ID=0x0, TransitionOutTime=0x50)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x1D0028)
+		Transient_Sound_Effect(SFX=0x500005)
+		FRAME(Frames=90)
+		Script_End()
+	}
+
+	Expression()
+	{
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		unk_EE37008F()
+		FRAME(Frames=266)
+		Slope_Full(unknown=0x6, unknown=0x5)
+		FRAME(Frames=276)
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x1)
+		Script_End()
+	}
+
+}

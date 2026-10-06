@@ -1,0 +1,21 @@
+MoveDef 0xAD510A01
+{
+	Main()
+	{
+		Set_Model_Scale(Scale=1.3)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

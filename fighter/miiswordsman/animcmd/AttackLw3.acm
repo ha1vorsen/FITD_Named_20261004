@@ -1,0 +1,48 @@
+MoveDef AttackLw3
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		ATK_REFERENCE_NODE(Unknown=0x19, Unknown=0x1)
+		ATK_REFERENCE_NODE(Unknown=0x15, Unknown=0x0)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x19, Damage=8, Angle=0x41, KBG=0x50, WBKB=0x0, BKB=0x32, Size=2.7, X=0, Y=8.2, Z=-1.2, Effect=0x19, Trip=0.3, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x19, Damage=8, Angle=0x41, KBG=0x50, WBKB=0x0, BKB=0x32, Size=2.7, X=0, Y=3.2, Z=-1.2, Effect=0x19, Trip=0.3, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Extended_Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=8, Angle=0x41, KBG=0x50, WBKB=0x0, BKB=0x32, Size=2.2, X=0, Y=3.5, Z=11, Effect=0x19, Trip=0.3, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=3.7, Z2=8.5)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		MII_ENABLE_RATE()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		AFTER_IMAGE_ON_WORK(unknown=0x10000084, unknown=0x5, unknown=0x19, unknown=0x0, unknown=0x3F000000, unknown=0x0, unknown=0x19, unknown=0xB727C5AC, unknown=0x41580000, unknown=0x0, unknown=0x1, unknown=0x10000083, unknown=0x19, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3908509C, unknown=0xB892CCF7, unknown=0x38E6AFCD, unknown=0x3F800000)
+		FRAME(Frames=5)
+		Graphic_Effect(Graphic=0x1000009, Bone=0x0, X=-5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=10)
+		Terminate_Sword_Glow(FadeTime=0x2)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x81B0010)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=1)
+		Slope_Full(unknown=0x1, unknown=0x2)
+		FRAME(Frames=2)
+		unk_040FD56E(unknown=0x1, unknown=0x6, unknown=0x1)
+		FRAME(Frames=3)
+		FRAME(Frames=22)
+		Slope_Full(unknown=0x6, unknown=0x6)
+		Script_End()
+	}
+
+}

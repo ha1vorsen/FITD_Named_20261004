@@ -1,0 +1,41 @@
+MoveDef SpecialNFly_C2
+{
+	Main()
+	{
+		Set_Bone_Intangibility(Bone=0x7D2, Mode=0x2)
+		Visibility(State=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Float_Var_Compare(Variable=RA-Float[1], Method=0x2, Value=0.45)
+		True(Offset=0x6){
+		    Sound_Effect(SFX=0x4A40063)
+		}
+		Else(Offset=0x16){
+		    Float_Var_Compare(Variable=RA-Float[1], Method=0x2, Value=0.9)
+		    True(Offset=0xA){
+		        Sound_Effect(SFX=0x4A40063)
+		        WAIT(Frames=1)
+		        Sound_Effect(SFX=0x4A50060)
+		    }
+		    Else(Offset=0x8){
+		        Sound_Effect(SFX=0x4A40063)
+		        WAIT(Frames=1)
+		        Sound_Effect(SFX=0x4A50060)
+		    }
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

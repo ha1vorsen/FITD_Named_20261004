@@ -1,0 +1,21 @@
+MoveDef 0x0D04F610 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		CALL(Hash=0x725271EF)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,40 @@
+MoveDef Attack13
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=3.3, Angle=0x32, KBG=0xA0, WBKB=0x0, BKB=0x32, Size=5.7, X=0, Y=9, Z=13, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=9, Z2=11.5)
+		Extended_Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=5, Angle=0x32, KBG=0x8C, WBKB=0x0, BKB=0x32, Size=4.2, X=0, Y=9, Z=22, Effect=0x2, Trip=0, Hitlag=1.4, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=9, Z2=10)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=6)
+		Sword_Glow(Color=0xF0, unknown=0xF1, BlurLength=0x6, Bone1=0x19, X=0, Y=0.1, Z=0, Bone2=0x19, X=0, Y=14, Z=0, Anchored=0x1, Graphic=0x3390001, Bone3=0x19, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Size=1, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0xB, unknown=0x1)
+		FRAME(Frames=6)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=9)
+		Terminate_Sword_Glow(FadeTime=0x3)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0xC9B001B)
+		WAIT(Frames=1)
+		Low_Voice_Clip(unknown=0x804E0000)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		Script_End()
+	}
+
+}

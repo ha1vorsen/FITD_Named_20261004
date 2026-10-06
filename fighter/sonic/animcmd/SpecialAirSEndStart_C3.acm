@@ -1,0 +1,26 @@
+MoveDef SpecialAirSEndStart_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		CALL(Hash=0xF7FA88CD)
+		Item_Visibility(State=0x0)
+		FRAME(Frames=4)
+		Item_Visibility(State=0x1)
+		Script_End()
+	}
+
+}

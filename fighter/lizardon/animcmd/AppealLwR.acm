@@ -1,0 +1,42 @@
+MoveDef AppealLwR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=15)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0xA, X=0, Y=-2.5, Z=0, XRot=0, YRot=0, ZRot=90, Size=0.75, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=53)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x6, X=0, Y=-2.5, Z=0, XRot=0, YRot=0, ZRot=90, Size=0.75, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=15)
+		Transient_Sound_Effect(SFX=0x530015)
+		Sound_Effect(SFX=0x200026)
+		WAIT(Frames=17)
+		Sound_Effect(SFX=0x20005A)
+		WAIT(Frames=23)
+		Sound_Effect(SFX=0x200026)
+		WAIT(Frames=14)
+		Sound_Effect(SFX=0x20005A)
+		WAIT(Frames=39)
+		Sound_Effect(SFX=0x200026)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=16)
+		QUAKE(unknown=0x3)
+		FRAME(Frames=53)
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

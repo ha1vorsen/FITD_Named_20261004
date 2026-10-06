@@ -1,0 +1,25 @@
+MoveDef SquatF
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		STOP_SE_STATUS()
+		Transient_Sound_Effect(SFX=0x4A40061)
+		Loop_Rest()
+		JUMP(Hash=0x2B09E95)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,28 @@
+MoveDef SpecialS
+{
+	Main()
+	{
+		FRAME(Frames=17)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=30)
+		ON_FLAG(Variable=RA-Flag[19])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=13)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

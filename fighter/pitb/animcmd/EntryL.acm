@@ -1,0 +1,36 @@
+MoveDef EntryL
+{
+	Main()
+	{
+		VIS_SET_DEFAULT(unknown=0x0, unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x3C27AF3C)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		PLAY_SE_REMAIN(unknown=0x762003F)
+		WAIT(Frames=107)
+		Sound_Effect(SFX=0x7620031)
+		WAIT(Frames=8)
+		Sound_Effect(SFX=0x762002F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		ON_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=107)
+		OFF_FLAG(Variable=LA-Flag[101])
+		FRAME(Frames=110)
+		Slope_Full(unknown=0x6, unknown=0x4)
+		Script_End()
+	}
+
+}

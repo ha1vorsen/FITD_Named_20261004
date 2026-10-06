@@ -1,0 +1,26 @@
+MoveDef FinalEndR
+{
+	Main()
+	{
+		JUMP(Hash=0x491344D0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x491344D0)
+		Script_End()
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x5)
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+}

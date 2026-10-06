@@ -1,0 +1,21 @@
+MoveDef 0x5927AEEB : Unlisted
+{
+	Main()
+	{
+		WAIT(Frames=2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

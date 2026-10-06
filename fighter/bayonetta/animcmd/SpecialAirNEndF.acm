@@ -1,0 +1,25 @@
+MoveDef SpecialAirNEndF
+{
+	Main()
+	{
+		JUMP(Hash=0xD4A3C4D4)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xD4A3C4D4)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xD4A3C4D4)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,31 @@
+MoveDef AppealSL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=49)
+		Set_Loop(Iterations=3){
+		    Graphic_Effect2(Graphic=0x3100009, Bone=0x0, X=3.5, Y=13, Z=0.5, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=13)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=49)
+		Sound_Effect(SFX=0x1200A9)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,28 @@
+MoveDef 0x213D2254 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Int_Var_Compare(Variable=LA-Int[172], Method=0x4, Value=0x2)
+		True(Offset=0x8){
+		    FRAME(Frames=45)
+		    Low_Voice_Clip(unknown=0x80000011)
+		}
+		Else(Offset=0x4){
+		    JUMP(Hash=0x8D68A61C)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

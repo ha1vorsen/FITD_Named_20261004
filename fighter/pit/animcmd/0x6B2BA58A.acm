@@ -1,0 +1,44 @@
+MoveDef 0x6B2BA58A
+{
+	Main()
+	{
+		SHIELD_ON(Unused=0x2, ID=0x0, Type=0x1)
+		SHIELD_ON(Unused=0x2, ID=0x1, Type=0x1)
+		SHIELD_ON(Unused=0x3, ID=0x0, Type=0x4)
+		SHIELD_ON(Unused=0x3, ID=0x1, Type=0x4)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect2(Graphic=0x100000F, Bone=0x0, X=2, Y=10, Z=-13, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=5, RandomY=5, RandomZ=5, RandomXRot=0, RandomYRot=0, RandomZRot=100, Terminate=0x1)
+		    WAIT(Frames=4)
+		    Graphic_Effect2(Graphic=0x100000F, Bone=0x0, X=2, Y=10, Z=13, XRot=0, YRot=0, ZRot=0, Size=0.7, RandomX=5, RandomY=5, RandomZ=5, RandomXRot=0, RandomYRot=0, RandomZRot=100, Terminate=0x1)
+		    WAIT(Frames=12)
+		    Goto(Offset=-38)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x168)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=10)
+		FRAME(Frames=20)
+		FRAME(Frames=30)
+		FRAME(Frames=40)
+		Loop_Rest()
+		JUMP(Hash=0x6B2BA58A)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,62 @@
+MoveDef AttackAirN
+{
+	Main()
+	{
+		SET_INT(Value=0x3, Variable=LA-Int[135])
+		GENERATE_ARTICLE(ID=0x6)
+		Set_Anchored_Article_Action(Article=0x6, Action=0x8)
+		FRAME(Frames=3)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=7)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0xA0, KBG=0x64, WBKB=0x1E, BKB=0x0, Size=3, X=0, Y=18.6, Z=-2.2, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=5, Angle=0xA0, KBG=0x64, WBKB=0x1E, BKB=0x0, Size=3, X=0, Y=19.4, Z=2.5, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=5, Angle=0x5A, KBG=0x46, WBKB=0x0, BKB=0x14, Size=5, X=0, Y=10, Z=1.8, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		FRAME(Frames=12)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=4, Angle=0xA0, KBG=0x64, WBKB=0x1E, BKB=0x0, Size=3, X=0, Y=17.9, Z=-9.5, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=4, Angle=0xA0, KBG=0x64, WBKB=0x1E, BKB=0x0, Size=3, X=0, Y=21, Z=9.8, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=4, Angle=0x5A, KBG=0x46, WBKB=0x0, BKB=0x14, Size=5, X=0, Y=10, Z=1.8, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		FRAME(Frames=17)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=4, Angle=0xA0, KBG=0x64, WBKB=0x1E, BKB=0x14, Size=3, X=0, Y=11, Z=-11, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=4, Angle=0xA0, KBG=0x64, WBKB=0x1E, BKB=0x14, Size=3, X=0, Y=12.5, Z=13.3, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=4, Angle=0x5A, KBG=0x46, WBKB=0x0, BKB=0x14, Size=5, X=0, Y=10, Z=1.8, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		FRAME(Frames=22)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=4, Angle=0x46, KBG=0x96, WBKB=0x0, BKB=0x28, Size=3, X=0, Y=1, Z=-11, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=4, Angle=0x46, KBG=0x96, WBKB=0x0, BKB=0x28, Size=3, X=0, Y=1.5, Z=12.7, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=4, Angle=0x46, KBG=0x96, WBKB=0x0, BKB=0x28, Size=7, X=0, Y=10, Z=1.8, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x9)
+		WAIT(Frames=1)
+		Remove_All_Hitboxes()
+		FRAME(Frames=27)
+		Set_Frame_Duration(Speed=2)
+		SET_RATE_ARTICLE_V(unknown=0x6, unknown=0x2)
+		FRAME(Frames=42)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x6DF000C)
+		WAIT(Frames=2)
+		Sound_Effect(SFX=0x6DF000A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,32 @@
+MoveDef 0x5D0A5AEA
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3390012, Bone=0x12, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		IS_FLAG(Variable=LA-Flag[18])
+		True(Offset=0x4){
+		}
+		Else(Offset=0x6){
+		    IS_FLAG(Variable=LA-Flag[19])
+		    True(Offset=0x4){
+		    }
+		    Else(Offset=0xD){
+		        External_Graphic(Graphic=0x339000E, Bone=0x10, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		    }
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

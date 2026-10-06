@@ -1,0 +1,25 @@
+MoveDef 0x02CFD33D : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=25)
+		SLOPE(unknown=0x4)
+		FRAME(Frames=73)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

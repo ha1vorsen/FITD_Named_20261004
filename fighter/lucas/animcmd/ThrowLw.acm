@@ -1,0 +1,81 @@
+MoveDef ThrowLw
+{
+	Main()
+	{
+		Throw_Specifier(ID=0x0, Bone=0x0, Damage=6.5, Angle=0x50, KBG=0x33, WBKB=0x0, BKB=0x4E, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x0, Unknown=0x1, Type=0x8)
+		Throw_Specifier(ID=0x1, Bone=0x0, Damage=3, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x3C, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x8)
+		FRAME(Frames=41)
+		Throw_Applier(ID=0x0, Bone=0x1A, Unknown=0x11000005, Unknown=0x11000006, Unknown=0x11000007)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		External_Graphic(Graphic=0x3350001, Bone=0xC, X=10, Y=0, Z=0, XRot=0, YRot=90, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=10)
+		ON_FLAG(Variable=LA-Flag[123])
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x28){
+		    Graphic_Effect2(Graphic=0x1000029, Bone=0x0, X=0, Y=0, Z=-6, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    FRAME(Frames=11)
+		    Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=-6, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		}
+		Else(Offset=0x26){
+		    Graphic_Effect2(Graphic=0x1000029, Bone=0x0, X=0, Y=0, Z=6, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    FRAME(Frames=11)
+		    Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=6, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		}
+		Set_Loop(Iterations=2){
+		    External_Graphic(Graphic=0x3350001, Bone=0x0, X=-3, Y=2, Z=0, XRot=0, YRot=90, ZRot=0, Size=1, Terminate=0x1)
+		    WAIT(Frames=8)
+		    Goto(Offset=-13)
+		}
+		FRAME(Frames=41)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x15){
+		    Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=-6, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		}
+		Else(Offset=0x13){
+		    Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=6, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		}
+		FRAME(Frames=42)
+		Graphic_Effect3(Graphic=0x1000024, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=46)
+		ON_FLAG(Variable=LA-Flag[124])
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x1D00A7)
+		Sound_Effect(SFX=0x120)
+		WAIT(Frames=5)
+		Low_Voice_Clip(unknown=0x80460000)
+		WAIT(Frames=3)
+		Sound_Effect(SFX=0x40)
+		WAIT(Frames=2)
+		Sound_Effect(SFX=0x1D00A9)
+		WAIT(Frames=30)
+		Sound_Effect(SFX=0x121)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=2)
+		SLOPE(unknown=0x0)
+		FRAME(Frames=5)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=8)
+		FRAME(Frames=9)
+		SLOPE(unknown=0x0)
+		QUAKE(unknown=0x5)
+		FRAME(Frames=35)
+		Slope_Full(unknown=0x6, unknown=0x6)
+		Script_End()
+	}
+
+}

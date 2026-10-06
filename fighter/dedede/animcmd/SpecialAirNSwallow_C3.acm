@@ -1,0 +1,25 @@
+MoveDef SpecialAirNSwallow_C3
+{
+	Main()
+	{
+		JUMP(Hash=0x33B9494E)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x60035)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x33B9494E)
+		Script_End()
+	}
+
+}

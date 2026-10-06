@@ -1,0 +1,61 @@
+MoveDef Win3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=28)
+		Graphic_Effect2(Graphic=0x100001B, Bone=0x0, X=0, Y=0, Z=3, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=32)
+		Graphic_Effect2(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=13, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=40)
+		Graphic_Effect2(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=23, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=49)
+		Graphic_Effect2(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=32, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=56)
+		Graphic_Effect2(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=40, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=65)
+		Graphic_Effect2(Graphic=0x100001B, Bone=0x0, X=-3, Y=0, Z=45, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=87)
+		Graphic_Effect2(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=58, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=113)
+		Graphic_Effect2(Graphic=0x100008F, Bone=0xB, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=24)
+		Sound_Effect(SFX=0x81A0002)
+		FRAME(Frames=30)
+		Sound_Effect(SFX=0x81A0008)
+		FRAME(Frames=32)
+		Sound_Effect(SFX=0x81A0010)
+		FRAME(Frames=46)
+		Sound_Effect(SFX=0x81A000A)
+		FRAME(Frames=50)
+		Sound_Effect(SFX=0x81A0006)
+		FRAME(Frames=52)
+		Sound_Effect(SFX=0x81A0010)
+		FRAME(Frames=59)
+		Sound_Effect(SFX=0x81A000C)
+		FRAME(Frames=67)
+		Sound_Effect(SFX=0x81A0009)
+		FRAME(Frames=76)
+		Sound_Effect(SFX=0x81A0006)
+		FRAME(Frames=84)
+		PLAY_SE_NO_3D(unknown=0x81A0013)
+		FRAME(Frames=101)
+		PLAY_SE_NO_3D(unknown=0x81A000A)
+		FRAME(Frames=111)
+		PLAY_SE_NO_3D(unknown=0x81A0021)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

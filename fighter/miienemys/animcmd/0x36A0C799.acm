@@ -1,0 +1,32 @@
+MoveDef 0x36A0C799 : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=51)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x19, Damage=10, Angle=0x169, KBG=0x64, WBKB=0x6E, BKB=0x0, Size=4.5, X=8, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x19, Damage=10, Angle=0x169, KBG=0x64, WBKB=0x6E, BKB=0x0, Size=4.5, X=2, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x2, Part=0x0, Bone=0x19, Damage=10, Angle=0x169, KBG=0x64, WBKB=0x6E, BKB=0x0, Size=4.5, X=-4, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		Hitbox(ID=0x3, Part=0x0, Bone=0x0, Damage=10, Angle=0x169, KBG=0x64, WBKB=0x6E, BKB=0x0, Size=3, X=0, Y=8, Z=-1, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA)
+		WAIT(Frames=4)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=48)
+		Slope_Full(unknown=0x1, unknown=0x2)
+		FRAME(Frames=66)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

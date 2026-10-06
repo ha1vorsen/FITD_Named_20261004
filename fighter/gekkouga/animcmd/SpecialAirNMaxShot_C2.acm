@@ -1,0 +1,25 @@
+MoveDef SpecialAirNMaxShot_C2
+{
+	Main()
+	{
+		JUMP(Hash=0xD945D8A7)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xD945D8A7)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xD945D8A7)
+		Script_End()
+	}
+
+}

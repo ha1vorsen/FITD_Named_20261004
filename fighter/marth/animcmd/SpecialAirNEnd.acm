@@ -1,0 +1,29 @@
+MoveDef SpecialAirNEnd
+{
+	Main()
+	{
+		Add_Momentum(Horizontal=0.5, Vertical=0)
+		JUMP(Hash=0x179E4623)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x179E4623)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=8)
+		Sound_Effect(SFX=0x160040)
+		Script_End()
+	}
+
+	Expression()
+	{
+		CALL(Hash=0x179E4623)
+		Script_End()
+	}
+
+}

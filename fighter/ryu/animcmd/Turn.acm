@@ -1,0 +1,28 @@
+MoveDef Turn
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		unk_01A5A27C(unknown=0xC050002, unknown=0xC050005)
+		WAIT(Frames=3)
+		unk_01A5A27C(unknown=0xC050005, unknown=0xC050002)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=6)
+		FLIP_HAVE_ITEM()
+		Script_End()
+	}
+
+}

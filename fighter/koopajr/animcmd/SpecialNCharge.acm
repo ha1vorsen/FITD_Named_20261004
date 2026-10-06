@@ -1,0 +1,35 @@
+MoveDef SpecialNCharge
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x100001B, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Color_Overlay(Red=255, Green=255, Blue=150, Alpha=150)
+		    WAIT(Frames=2)
+		    Terminate_Overlays()
+		    WAIT(Frames=6)
+		    Color_Overlay(Red=255, Green=255, Blue=150, Alpha=150)
+		    WAIT(Frames=2)
+		    Terminate_Overlays()
+		    WAIT(Frames=6)
+		    Goto(Offset=-37)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x863002E)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

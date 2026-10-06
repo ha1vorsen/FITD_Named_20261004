@@ -1,0 +1,22 @@
+MoveDef SpecialSRide
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=17)
+		Script_End()
+	}
+
+}

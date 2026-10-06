@@ -1,0 +1,22 @@
+MoveDef 0xEDC4D7BD : Unlisted
+{
+	Main()
+	{
+		Model_Changer(ChangerID=0x7, ChangerState=0x3)
+		Model_Changer(ChangerID=0x1, ChangerState=0x3)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

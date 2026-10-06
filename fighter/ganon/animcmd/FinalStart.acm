@@ -1,0 +1,31 @@
+MoveDef FinalStart
+{
+	Main()
+	{
+		Camera_Closeup(ZoomTime=0x5, Unknown=0x0, Distance=1.5, XRot=0, YRot=0)
+		Time_Manipulation(Amount=0x4, Duration=0x1E)
+		GENERATE_ARTICLE(ID=0x0)
+		FRAME(Frames=41)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x19001C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		unk_EE37008F()
+		FRAME(Frames=19)
+		OFF_FLAG(Variable=RA-Flag[13])
+		Script_End()
+	}
+
+}

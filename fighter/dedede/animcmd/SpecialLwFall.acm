@@ -1,0 +1,22 @@
+MoveDef SpecialLwFall
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x2, ChangerState=0x1)
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

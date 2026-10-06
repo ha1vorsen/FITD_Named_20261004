@@ -1,0 +1,41 @@
+MoveDef 0x5911ED5D
+{
+	Main()
+	{
+		FRAME(Frames=7)
+		ON_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=15)
+		CALL(Hash=0xF5477682)
+		FRAME(Frames=16)
+		Remove_All_Hitboxes()
+		FRAME(Frames=25)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=14)
+		Sound_Effect(SFX=0x390018)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=4)
+		Slope_Full(unknown=0x2, unknown=0x3)
+		FRAME(Frames=7)
+		EXECUTE(Unknown=7)
+		SLOPE(unknown=0x2)
+		FRAME(Frames=12)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		FRAME(Frames=13)
+		FRAME(Frames=38)
+		Slope_Full(unknown=0x0, unknown=0x5)
+		Script_End()
+	}
+
+}

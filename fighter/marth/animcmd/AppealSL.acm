@@ -1,0 +1,32 @@
+MoveDef AppealSL
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xB7B5C29C)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=17)
+		Sound_Effect(SFX=0x16004F)
+		WAIT(Frames=16)
+		Sound_Effect(SFX=0x16004F)
+		WAIT(Frames=22)
+		Sound_Effect(SFX=0x16005D)
+		WAIT(Frames=56)
+		Transient_Sound_Effect(SFX=0x16005C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xB7B5C29C)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,34 @@
+MoveDef SpecialNEnd_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1)
+		IS_EXIST_ARTICLE(Unknown=0x0)
+		True(Offset=0x5){
+		    Set_Anchored_Article_Action(Article=0x0, Action=0x2)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=14)
+		Sound_Effect(SFX=0xB004B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=18)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Article_Visibility(Article=0x0, State=0x0)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,26 @@
+MoveDef SpecialHiStartL_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x8DD59873)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=15)
+		Sound_Effect(SFX=0x6003F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x8DD59873)
+		Script_End()
+	}
+
+}

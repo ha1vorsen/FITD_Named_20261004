@@ -1,0 +1,35 @@
+MoveDef FinalAirStart
+{
+	Main()
+	{
+		JUMP(Hash=0x17EB3D5)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x41F0000, Bone=0x42B, X=1, Y=6, Z=0, XRot=270, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x17EB3D5)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		ON_FLAG(Variable=LA-Flag[101])
+		Item_Visibility(State=0x0)
+		FRAME(Frames=25)
+		FRAME(Frames=45)
+		FRAME(Frames=65)
+		FRAME(Frames=85)
+		FRAME(Frames=105)
+		FRAME(Frames=167)
+		Script_End()
+	}
+
+}

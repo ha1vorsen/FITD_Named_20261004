@@ -1,0 +1,21 @@
+MoveDef Ottotto
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		ATTACK_SE_2()
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,31 @@
+MoveDef SpecialLw
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.8)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x4A40029)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=2)
+		Set_Loop(Iterations=4){
+		    WAIT(Frames=12)
+		    Goto(Offset=-2)
+		}
+		Script_End()
+	}
+
+}

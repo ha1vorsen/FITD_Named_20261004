@@ -1,0 +1,61 @@
+MoveDef SpecialN_C3
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=6)
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=18)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=25)
+		OFF_FLAG(Variable=RA-Flag[14])
+		ON_FLAG(Variable=RA-Flag[16])
+		Hitbox(ID=0x0, Part=0x0, Bone=0x42B, Damage=4, Angle=0x169, KBG=0x5F, WBKB=0x0, BKB=0x1E, Size=7, X=0, Y=7, Z=1.2, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x8, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x19)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		FRAME(Frames=30)
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		External_Graphic(Graphic=0x31F000A, Bone=0x42B, X=1.5, Y=5, Z=1.633974E-06, XRot=-97.49999, YRot=-90, ZRot=0, Size=0.6, Terminate=0x1)
+		LAST_EFFECT_SET_RATE(unknown=1.25)
+		FRAME(Frames=21)
+		Graphic_Effect3(Graphic=0x1000026, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.25, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Color_Overlay(Red=255, Green=96, Blue=128, Alpha=80)
+		FRAME(Frames=25)
+		unk_377D36CB(unknown=0x2F, unknown=0x5, unknown=0x5000005)
+		True(Offset=0xF){
+		    External_Graphic(Graphic=0x31F001F, Bone=0x42B, X=1.5, Y=4, Z=1.633974E-06, XRot=-97.49999, YRot=-90, ZRot=0, Size=1, Terminate=0x1)
+		}
+		Else(Offset=0xD){
+		    External_Graphic(Graphic=0x31F001D, Bone=0x42B, X=1.5, Y=4, Z=1.633974E-06, XRot=-97.49999, YRot=-90, ZRot=0, Size=1, Terminate=0x1)
+		}
+		FRAME(Frames=26)
+		Terminate_Overlays()
+		Flash_Light_Effect(Red=255, Blue=192, Green=224, Alpha=160, SourceX=75, SourceY=-10)
+		FRAME(Frames=31)
+		Change_Flash_Light_Color(TransitionFrames=10, Red=255, Blue=224, Green=255, Alpha=0)
+		FRAME(Frames=41)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x9)
+		FRAME(Frames=23)
+		FRAME(Frames=25)
+		QUAKE(unknown=0x3)
+		Script_End()
+	}
+
+}

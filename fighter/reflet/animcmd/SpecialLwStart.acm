@@ -1,0 +1,55 @@
+MoveDef SpecialLwStart
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.7)
+		WAIT(Frames=20)
+		Set_Frame_Duration(Speed=2)
+		IS_FLAG(Variable=LA-Flag[123])
+		False(Offset=0x16){
+		    Grab_Collision2(ID=0x0, Bone=0x0, Size=7, X=0, Y=10, Z=14, Action=0xF6, Ground/Air=0x1, Unknown=0x1)
+		    Grab_Collision2(ID=0x1, Bone=0x0, Size=4.2, X=0, Y=10, Z=14, Action=0xF6, Ground/Air=0x2, Unknown=0x1)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+		IS_FLAG(Variable=LA-Flag[123])
+		False(Offset=0xF){
+		    FRAME(Frames=15)
+		    Graphic_Effect4(Graphic=0x32C000F, Bone=0x0, X=0, Y=5, Z=14, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=22)
+		IS_FLAG(Variable=LA-Flag[123])
+		False(Offset=0xE){
+		    Sound_Effect(SFX=0x7640004)
+		    IS_RANDOM(Chance=0x2)
+		    True(Offset=0x6){
+		        ON_FLAG(Variable=LA-Flag[128])
+		        Sound_Effect(SFX=0x7700022)
+		    }
+		}
+		Else(Offset=0x6){
+		    Sound_Effect(SFX=0x764004F)
+		    Low_Voice_Clip(unknown=0x803B0007)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=21)
+		IS_FLAG(Variable=LA-Flag[123])
+		False(Offset=0x2){
+		}
+		Script_End()
+	}
+
+}

@@ -1,0 +1,29 @@
+MoveDef SpecialAirNLoop_C3
+{
+	Main()
+	{
+		JUMP(Hash=0x5F0E3BE9)
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x308001D, Bone=0x0, X=0, Y=5.5, Z=-5, XRot=0, YRot=0, ZRot=0, Size=0.5, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0xA00CA)
+		Transient_Sound_Effect(SFX=0xA007E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Loop_Rest()
+		JUMP(Hash=0xBF498DF3)
+		Script_End()
+	}
+
+}

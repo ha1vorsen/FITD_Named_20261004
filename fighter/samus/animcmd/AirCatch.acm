@@ -1,0 +1,40 @@
+MoveDef AirCatch
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x9)
+		Article_Visibility(Article=0x9, State=0x0)
+		ON_FLAG(Variable=RA-Flag[13])
+		WAIT(Frames=5)
+		OFF_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=8)
+		Article_Visibility(Article=0x9, State=0x1)
+		Set_Remote_Article_Action(Article=0x9, Action=0x1)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x1A, Damage=1.5, Angle=0x2D, KBG=0x1E, WBKB=0x0, BKB=0x1E, Size=3, X=0, Y=0, Z=0, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x1, SFX=0x7, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x19)
+		FRAME(Frames=16)
+		Hitbox(ID=0x0, Part=0x1, Bone=0x1A, Damage=3, Angle=0x2D, KBG=0x64, WBKB=0x0, BKB=0x1E, Size=5, X=0, Y=0, Z=0, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x1, SFXLevel=0x2, SFX=0x7, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x19)
+		FRAME(Frames=18)
+		Remove_All_Hitboxes()
+		FRAME(Frames=24)
+		Set_Remote_Article_Action2(Article=0x9, Action=0x3)
+		FRAME(Frames=50)
+		Remove_Article(Article=0x9)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=7)
+		Sound_Effect(SFX=0x80082)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

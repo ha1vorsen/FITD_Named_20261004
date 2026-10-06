@@ -1,0 +1,30 @@
+MoveDef LandingAirB
+{
+	Main()
+	{
+		ON_FLAG(Variable=RA-Flag[9])
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xBB31D589)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect3(SFX=0x8630012)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		QUAKE(unknown=0x3)
+		FRAME(Frames=25)
+		Script_End()
+	}
+
+}

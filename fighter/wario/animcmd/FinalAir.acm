@@ -1,0 +1,34 @@
+MoveDef FinalAir
+{
+	Main()
+	{
+		JUMP(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+	Effect()
+	{
+		WAIT(Frames=18)
+		External_Graphic(Graphic=0x4160000, Bone=0x13, X=0, Y=0, Z=1, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		WAIT(Frames=13)
+		External_Graphic(Graphic=0x316000E, Bone=0x13, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		unk_EE37008F()
+		FRAME(Frames=21)
+		FRAME(Frames=31)
+		FRAME(Frames=47)
+		Script_End()
+	}
+
+}

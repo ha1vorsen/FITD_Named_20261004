@@ -1,0 +1,47 @@
+MoveDef FinalAirEnd
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=15)
+		Sound_Effect(SFX=0x6DF0032)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Morph_Model_Event(unknown=0x0)
+		Item_Visibility(State=0x0)
+		Visibility(State=0x0)
+		FRAME(Frames=21)
+		Item_Visibility(State=0x1)
+		Visibility(State=0x1)
+		FRAME(Frames=23)
+		Item_Visibility(State=0x0)
+		Visibility(State=0x0)
+		FRAME(Frames=25)
+		Item_Visibility(State=0x1)
+		Visibility(State=0x1)
+		FRAME(Frames=27)
+		Item_Visibility(State=0x0)
+		Visibility(State=0x0)
+		FRAME(Frames=29)
+		Item_Visibility(State=0x1)
+		Visibility(State=0x1)
+		FRAME(Frames=31)
+		Item_Visibility(State=0x0)
+		Visibility(State=0x0)
+		FRAME(Frames=33)
+		Item_Visibility(State=0x1)
+		Visibility(State=0x1)
+		Script_End()
+	}
+
+}

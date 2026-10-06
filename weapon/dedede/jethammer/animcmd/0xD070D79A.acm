@@ -1,0 +1,27 @@
+MoveDef 0xD070D79A : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=0)
+		External_Graphic(Graphic=0x31C000E, Bone=0x7D1, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x31C0005, Bone=0x7DA, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=28)
+		Terminate_Graphic_Effect(Graphic=0x31C0005, unknown=0x0, unknown=0x0)
+		FRAME(Frames=30)
+		Terminate_Graphic_Effect(Graphic=0x31C000E, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

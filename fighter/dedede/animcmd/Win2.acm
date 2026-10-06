@@ -1,0 +1,29 @@
+MoveDef Win2
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x7)
+		Set_Anchored_Article_Action(Article=0x7, Action=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=25)
+		Sound_Effect(SFX=0x60078)
+		WAIT(Frames=20)
+		Sound_Effect(SFX=0x60078)
+		WAIT(Frames=40)
+		Sound_Effect(SFX=0x60078)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

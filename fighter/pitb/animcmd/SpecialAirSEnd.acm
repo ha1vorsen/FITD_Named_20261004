@@ -1,0 +1,42 @@
+MoveDef SpecialAirSEnd
+{
+	Main()
+	{
+		SHIELD_ON(Unused=0x3, ID=0x0, Type=0x3)
+		FRAME(Frames=2)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=9.5, Angle=0x2B, KBG=0x3A, WBKB=0x0, BKB=0x5A, Size=6.2, X=5, Y=4, Z=9, Effect=0x3, Trip=0, Hitlag=1.5, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0xA, SFXLevel=0x2, SFXType=0x7, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, X2=5, Y2=10, Z2=9)
+		FRAME(Frames=4)
+		Add_Momentum(Horizontal=-0.5, Vertical=2.5)
+		FRAME(Frames=6)
+		Remove_All_Hitboxes()
+		Shield_Off2(Unused=0x3, ID=0x0, Type=0x3)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=1)
+		External_Graphic_Effect2(Graphic=0x3260013, Bone=0x18, X=-2, Y=0, Z=5.5, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		FRAME(Frames=4)
+		External_Graphic(Graphic=0x3260017, Bone=0x0, X=4, Y=12, Z=-3.5, XRot=-33, YRot=25, ZRot=93, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Low_Voice_Clip(unknown=0x80400006)
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x762002B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x3)
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

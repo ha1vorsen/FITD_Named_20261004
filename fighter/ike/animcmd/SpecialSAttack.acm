@@ -1,0 +1,39 @@
+MoveDef SpecialSAttack
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=6, Angle=0x3C, KBG=0x58, WBKB=0x0, BKB=0x46, Size=3.5, X=0, Y=7.7, Z=18, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0xE, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=7.7, Z2=8)
+		ON_FLAG(Variable=RA-Flag[18])
+		FRAME(Frames=4)
+		Remove_All_Hitboxes()
+		FRAME(Frames=12)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Sword_Trace(TraceID=0x4, BlurLen=8.407791E-45, Bone1=0x3E8, X=0, Y=1.7, Z=0, Bone2=0x3E8, X=0, Y=16, Z=0, Anchored=0x1, Graphic=0x31D0000, Bone3=0x3E8, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=4)
+		Graphic_Effect3(Graphic=0x1000009, Bone=0x0, X=5, Y=0, Z=0, XRot=0, YRot=180, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=6)
+		Terminate_Sword_Glow(FadeTime=0x5)
+		Script_End()
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0x240047)
+		Sound_Effect(SFX=0x240048)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=21)
+		Script_End()
+	}
+
+}

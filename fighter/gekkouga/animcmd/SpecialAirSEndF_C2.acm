@@ -1,0 +1,25 @@
+MoveDef SpecialAirSEndF_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x93D180A1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x93D180A1)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x93D180A1)
+		Script_End()
+	}
+
+}

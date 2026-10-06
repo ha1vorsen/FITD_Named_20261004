@@ -1,0 +1,27 @@
+MoveDef SpecialAirLwHold_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x1C2C951C)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x25004D)
+		Transient_Sound_Effect(SFX=0x12B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x1C2C951C)
+		Script_End()
+	}
+
+}

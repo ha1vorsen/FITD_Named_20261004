@@ -1,0 +1,43 @@
+MoveDef SpecialSAttackB
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.1)
+		FRAME(Frames=6)
+		Set_Frame_Duration(Speed=0.9)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=12, Angle=0x30, KBG=0x67, WBKB=0x0, BKB=0x3C, Size=8, X=0, Y=8, Z=-15, Effect=0x0, Trip=0, Hitlag=1.3, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x80000003, Direct/Indirect=0x1, Type=0x6, X2=0, Y2=8.5, Z2=-12)
+		FRAME(Frames=8)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x3300005, Bone=0xC, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=6)
+		EFFECT_FOLLOW_FLIP(GFXRight=0x100008D, GFXLeft=0x100008D, Bone=0x0, X=0x0, Y=0x41300000, Z=0xBF800000, XRot=0x0, YRot=0xC32A0000, ZRot=0x428C0000, Size=0x3F99999A, Terminate=0x1, unknown=0x1)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0xA, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.8, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=8)
+		Graphic_Effect2(Graphic=0x100008F, Bone=0x0, X=-20, Y=8.5, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=360, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x4EAA317B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		IGNORE_BOX2D_GROUND(unknown=0x1)
+		IGNORE_BOX2D_SHAPE(unknown=0x1)
+		FRAME(Frames=2)
+		IGNORE_BOX2D_GROUND(unknown=0x0)
+		IGNORE_BOX2D_SHAPE(unknown=0x0)
+		FRAME(Frames=4)
+		Script_End()
+	}
+
+}

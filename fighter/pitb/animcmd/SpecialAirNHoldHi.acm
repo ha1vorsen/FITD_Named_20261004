@@ -1,0 +1,31 @@
+MoveDef SpecialAirNHoldHi
+{
+	Main()
+	{
+		JUMP(Hash=0xE6003E52)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xE66DEAEC)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=0)
+		unk_A0FA2515(unknown=0x7620024, unknown=0x0, unknown=0x0)
+		True(Offset=0x4){
+		    Transient_Sound_Effect(SFX=0x7620024)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xE6003E52)
+		Script_End()
+	}
+
+}

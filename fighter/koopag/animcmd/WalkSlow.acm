@@ -1,0 +1,41 @@
+MoveDef WalkSlow
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=30)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=20, Y=0, Z=-15, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=92)
+		Graphic_Effect3(Graphic=0x100000A, Bone=0x0, X=20, Y=0, Z=15, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Loop_Rest()
+		JUMP(Hash=0x6BE1270D)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=33)
+		Sound_Effect2(SFX=0x6E00043)
+		WAIT(Frames=60)
+		Sound_Effect2(SFX=0x6E00041)
+		Loop_Rest()
+		JUMP(Hash=0x6BE1270D)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Slope_Full(unknown=0x0, unknown=0xC)
+		FRAME(Frames=30)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=92)
+		QUAKE(unknown=0x4)
+		Loop_Rest()
+		JUMP(Hash=0x6BE1270D)
+		Script_End()
+	}
+
+}

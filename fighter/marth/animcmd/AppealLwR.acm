@@ -1,0 +1,37 @@
+MoveDef AppealLwR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		FRAME(Frames=49)
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x3EA, X=-1E-05, Y=-2E-05, Z=10, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x49000A)
+		WAIT(Frames=26)
+		Sound_Effect(SFX=0x16004D)
+		WAIT(Frames=16)
+		Sound_Effect(SFX=0x160050)
+		WAIT(Frames=29)
+		Sound_Effect(SFX=0x160050)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=28)
+		FRAME(Frames=69)
+		Script_End()
+	}
+
+}

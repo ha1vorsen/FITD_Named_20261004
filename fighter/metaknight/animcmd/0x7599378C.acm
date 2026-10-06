@@ -1,0 +1,24 @@
+MoveDef 0x7599378C : Unlisted
+{
+	Main()
+	{
+		IS_FLAG(Variable=RA-Flag[14])
+		True(Offset=0x3){
+		    Normal_Camera()
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

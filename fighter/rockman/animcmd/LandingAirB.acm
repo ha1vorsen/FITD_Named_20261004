@@ -1,0 +1,28 @@
+MoveDef LandingAirB
+{
+	Main()
+	{
+		FRAME(Frames=25)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xBB31D589)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect3(SFX=0x23D001C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

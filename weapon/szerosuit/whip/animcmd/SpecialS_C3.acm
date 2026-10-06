@@ -1,0 +1,36 @@
+MoveDef SpecialS_C3
+{
+	Main()
+	{
+		Visibility(State=0x1)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=2)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=17)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=21)
+		Set_Frame_Duration(Speed=0.8)
+		Model_Changer(ChangerID=0x0, ChangerState=0x2)
+		MATERIAL_ANIM_SET_FRAME(unknown=21)
+		FRAME(Frames=33)
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=40)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=42)
+		Visibility(State=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

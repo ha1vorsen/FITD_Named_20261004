@@ -1,0 +1,24 @@
+MoveDef 0x67A3293A
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=17)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

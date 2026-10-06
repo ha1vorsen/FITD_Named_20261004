@@ -1,0 +1,25 @@
+MoveDef SpecialAirLwEndL
+{
+	Main()
+	{
+		JUMP(Hash=0xA824724B)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xA824724B)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xA824724B)
+		Script_End()
+	}
+
+}

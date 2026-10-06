@@ -1,0 +1,22 @@
+MoveDef 0x8D68A61C : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=45)
+		Low_Voice_Clip(unknown=0x80000012)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

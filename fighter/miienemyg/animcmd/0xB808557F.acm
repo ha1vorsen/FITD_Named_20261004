@@ -1,0 +1,25 @@
+MoveDef 0xB808557F : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		CALL(Hash=0x5CED7B67)
+		FRAME(Frames=2)
+		CALL(Hash=0x4943E3C0)
+		FRAME(Frames=18)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

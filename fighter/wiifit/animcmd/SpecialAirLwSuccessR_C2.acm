@@ -1,0 +1,32 @@
+MoveDef SpecialAirLwSuccessR_C2
+{
+	Main()
+	{
+		JUMP(Hash=0x7F052F0B)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xCFC30FA7)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Stop_Sound_Effect(SFX=0x2C9001A)
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x2C9001B)
+		Sound_Effect(SFX=0x24B0032)
+		Sound_Effect(SFX=0x51)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x7F052F0B)
+		Script_End()
+	}
+
+}

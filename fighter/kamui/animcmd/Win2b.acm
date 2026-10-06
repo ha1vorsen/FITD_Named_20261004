@@ -1,0 +1,23 @@
+MoveDef Win2b
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xA303A03F)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xA303A03F)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

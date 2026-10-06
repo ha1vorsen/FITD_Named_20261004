@@ -1,0 +1,34 @@
+MoveDef FinalStart
+{
+	Main()
+	{
+		Camera_Closeup(ZoomTime=0xA, Unknown=0x0, Distance=1.5, XRot=0, YRot=0)
+		FRAME(Frames=41)
+		Normal_Camera()
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x4070000, Bone=0x12, X=0, Y=0, Z=0, XRot=-113.3157, YRot=-90, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		PLAY_SE_REMAIN(unknown=0x3E0002)
+		PLAY_SE_REMAIN(unknown=0x90026)
+		WAIT(Frames=5)
+		PLAY_SE_REMAIN(unknown=0x90067)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_EE37008F()
+		WAIT(Frames=1)
+		Script_End()
+	}
+
+}

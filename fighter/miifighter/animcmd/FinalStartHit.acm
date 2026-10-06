@@ -1,0 +1,27 @@
+MoveDef FinalStartHit
+{
+	Main()
+	{
+		Body_Collision(State=0x2)
+		Normal_Camera()
+		FRAME(Frames=7)
+		ON_FLAG(Variable=RA-Flag[15])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		QUAKE(unknown=0x5)
+		Script_End()
+	}
+
+}

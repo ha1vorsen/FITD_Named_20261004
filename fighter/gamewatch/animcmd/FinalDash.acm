@@ -1,0 +1,22 @@
+MoveDef FinalDash
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		STRANS_ON(STransID=STrans-Int[10])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

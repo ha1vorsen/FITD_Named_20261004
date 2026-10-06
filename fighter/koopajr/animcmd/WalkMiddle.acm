@@ -1,0 +1,30 @@
+MoveDef WalkMiddle
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=7)
+		Graphic_Effect(Graphic=0x0, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=27)
+		Graphic_Effect(Graphic=0x0, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Loop_Rest()
+		JUMP(Hash=0x9DB075F7)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		STOP_SE_STATUS()
+		Transient_Sound_Effect(SFX=0x8630001)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

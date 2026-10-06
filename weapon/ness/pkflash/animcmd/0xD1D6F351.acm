@@ -1,0 +1,48 @@
+MoveDef 0xD1D6F351
+{
+	Main()
+	{
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1, Angle=0x46, KBG=0x46, WBKB=0x0, BKB=0xA, Size=10, X=0, Y=0, Z=0, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x8, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x10, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x1, Absorbable=0x1, Rehit=0x30, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=2)
+		Remove_All_Hitboxes()
+		unk_3341CBFE()
+		Script_End()
+	}
+
+	Effect()
+	{
+		IS_FLAG(Variable=LA-Flag[4])
+		True(Offset=0x2){
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		Float_Var_Compare(Variable=LA-Float[1], Method=0x2, Value=30)
+		True(Offset=0x6){
+		    PLAY_SE_REMAIN(unknown=0xF0073)
+		}
+		Else(Offset=0x18){
+		    Float_Var_Compare(Variable=LA-Float[1], Method=0x2, Value=60)
+		    True(Offset=0x6){
+		        PLAY_SE_REMAIN(unknown=0xF0074)
+		    }
+		    Else(Offset=0xE){
+		        Float_Var_Compare(Variable=LA-Float[1], Method=0x2, Value=90)
+		        True(Offset=0x6){
+		            PLAY_SE_REMAIN(unknown=0xF0075)
+		        }
+		        Else(Offset=0x4){
+		            PLAY_SE_REMAIN(unknown=0xF0079)
+		        }
+		    }
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,28 @@
+MoveDef 0x08C2917D
+{
+	Main()
+	{
+		JUMP(Hash=0x8D875A93)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=4)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=26)
+		FRAME(Frames=39)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+}

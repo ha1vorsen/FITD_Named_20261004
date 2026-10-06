@@ -1,0 +1,33 @@
+MoveDef 0x126E356F
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x100001A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		IS_FLAG(Variable=RA-Flag[20])
+		True(Offset=0x8){
+		    WAIT(Frames=2)
+		    Sound_Effect(SFX=0x20005A)
+		}
+		Else(Offset=0x8){
+		    Sound_Effect(SFX=0x200023)
+		    WAIT(Frames=2)
+		    Sound_Effect(SFX=0x20005A)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

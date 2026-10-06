@@ -1,0 +1,24 @@
+MoveDef DamageN2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=22)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

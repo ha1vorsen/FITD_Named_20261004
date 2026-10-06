@@ -1,0 +1,33 @@
+MoveDef SpecialAirLwEnd
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=11)
+		Sound_Effect(SFX=0x2A0060)
+		WAIT(Frames=14)
+		Sound_Effect(SFX=0x2A002A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		CALL(Hash=0x838686AE)
+		Item_Visibility(State=0x0)
+		Morph_Model_Event(unknown=0x0)
+		FRAME(Frames=21)
+		CALL(Hash=0xF7FA88CD)
+		Morph_Model_Event(unknown=0x1)
+		FRAME(Frames=26)
+		Item_Visibility(State=0x1)
+		Script_End()
+	}
+
+}

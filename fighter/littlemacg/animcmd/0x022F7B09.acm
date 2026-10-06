@@ -1,0 +1,34 @@
+MoveDef 0x022F7B09
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.6, RandomX=12, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=10)
+		    Graphic_Effect2(Graphic=0x1000010, Bone=0x19, X=0, Y=0, Z=5, XRot=0, YRot=0, ZRot=0, Size=1.6, RandomX=7, RandomY=7, RandomZ=7, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    Goto(Offset=-36)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0x69)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		SLOPE(unknown=0x4)
+		START_CHARGE(unknown=0xBF800000, unknown=0xBF800000, unknown=0xBF800000, unknown=0xBF800000, unknown=0x3F4CCCCD, unknown=0xBF800000, unknown=0xFFFFFFFF)
+		Script_End()
+	}
+
+}

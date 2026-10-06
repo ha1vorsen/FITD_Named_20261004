@@ -1,0 +1,25 @@
+MoveDef SpecialAirNTronEnd
+{
+	Main()
+	{
+		JUMP(Hash=0x6DEC02F5)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x6DEC02F5)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x6DEC02F5)
+		Script_End()
+	}
+
+}

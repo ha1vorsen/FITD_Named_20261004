@@ -1,0 +1,25 @@
+MoveDef 0x8D2B2246
+{
+	Main()
+	{
+		FRAME(Frames=118)
+		Throw_Specifier2(ID=0x0, Bone=0x0, Damage=5, Angle=0x2D, KBG=0x64, WBKB=0x0, BKB=0x2D, Effect=0x0, Unknown=0x0, Hitlag=0, Unknown=0, SFXLevel=0x2, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=22)
+		OFF_FLAG(Variable=LA-Flag[5])
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

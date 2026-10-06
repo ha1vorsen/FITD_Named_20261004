@@ -1,0 +1,23 @@
+MoveDef FinalStartR
+{
+	Main()
+	{
+		JUMP(Hash=0x60BE9A16)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x60BE9A16)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

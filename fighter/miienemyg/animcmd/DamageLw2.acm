@@ -1,0 +1,24 @@
+MoveDef DamageLw2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=16)
+		unk_C7B586AF(unknown=-30, unknown=30, unknown=5)
+		FRAME(Frames=22)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

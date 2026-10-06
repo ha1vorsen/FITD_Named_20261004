@@ -1,0 +1,29 @@
+MoveDef SpecialSStart_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=8)
+		FRAME(Frames=2)
+		Set_Frame_Duration(Speed=0.2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=12)
+		Sound_Effect(SFX=0x250095)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

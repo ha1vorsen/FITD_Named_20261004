@@ -1,0 +1,25 @@
+MoveDef SpecialAirNShield
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x11F033A6)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x11F033A6)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xB9A5960B)
+		Script_End()
+	}
+
+}

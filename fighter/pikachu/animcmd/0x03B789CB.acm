@@ -1,0 +1,22 @@
+MoveDef 0x03B789CB
+{
+	Main()
+	{
+		FRAME(Frames=8)
+		THROW_ITEM_OFFSET(Unknown=0, Unknown=-3, Unknown=0x1, Unknown=0x0, Unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

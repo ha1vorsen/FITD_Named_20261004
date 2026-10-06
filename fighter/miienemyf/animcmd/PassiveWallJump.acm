@@ -1,0 +1,21 @@
+MoveDef PassiveWallJump
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Sound_Effect(SFX=0x8200007)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

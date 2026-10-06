@@ -1,0 +1,24 @@
+MoveDef 0xB7E43C63
+{
+	Main()
+	{
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=7, Angle=0x50, KBG=0x3C, WBKB=0x0, BKB=0x44, Size=4, X=0, Y=6, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x3, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x2)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=6, Angle=0x10E, KBG=0x32, WBKB=0x0, BKB=0x28, Size=3, X=0, Y=6, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFX=0x3, Ground/Air=0x2, Direct/Indirect=0x1, Type=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xE1C5705D)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

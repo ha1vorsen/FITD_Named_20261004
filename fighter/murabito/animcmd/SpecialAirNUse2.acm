@@ -1,0 +1,23 @@
+MoveDef SpecialAirNUse2
+{
+	Main()
+	{
+		JUMP(Hash=0xE55907C4)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xE55907C4)
+		Script_End()
+	}
+
+}

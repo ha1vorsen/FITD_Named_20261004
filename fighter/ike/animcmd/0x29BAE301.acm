@@ -1,0 +1,27 @@
+MoveDef 0x29BAE301
+{
+	Main()
+	{
+		FRAME(Frames=6)
+		THROW_ITEM_OFFSET(Unknown=13, Unknown=11, Unknown=0x1, Unknown=0x0, Unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=20)
+		SLOPE(unknown=0x4)
+		FRAME(Frames=38)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

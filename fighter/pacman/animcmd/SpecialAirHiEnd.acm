@@ -1,0 +1,21 @@
+MoveDef SpecialAirHiEnd
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		CALL(Hash=0x669E43CF)
+		Script_End()
+	}
+
+}

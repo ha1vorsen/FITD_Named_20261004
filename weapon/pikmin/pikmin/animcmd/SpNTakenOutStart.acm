@@ -1,0 +1,24 @@
+MoveDef SpNTakenOutStart
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		MOT_SET_RATE_W(unknown=RA-Float[0])
+		FRAME(Frames=5)
+		Set_Frame_Speed(Multiplier=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

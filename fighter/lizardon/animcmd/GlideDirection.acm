@@ -1,0 +1,22 @@
+MoveDef GlideDirection
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=90)
+		Sound_Effect(SFX=0x20005F)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

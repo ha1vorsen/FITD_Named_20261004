@@ -1,0 +1,25 @@
+MoveDef SpecialAirNBuster
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x465CC10F)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x465CC10F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xB9A5960B)
+		Script_End()
+	}
+
+}

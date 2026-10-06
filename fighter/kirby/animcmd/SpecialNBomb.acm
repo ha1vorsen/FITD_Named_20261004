@@ -1,0 +1,42 @@
+MoveDef SpecialNBomb
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		ON_FLAG(Variable=RA-Flag[16])
+		FRAME(Frames=11)
+		ON_FLAG(Variable=RA-Flag[17])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=15)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x15){
+		    Graphic_Effect2(Graphic=0x1000018, Bone=0x12, X=0, Y=7, Z=2, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Else(Offset=0x13){
+		    Graphic_Effect2(Graphic=0x1000018, Bone=0x12, X=0, Y=7, Z=-2, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0xA00BA)
+		WAIT(Frames=10)
+		Sound_Effect(SFX=0x4F)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		FRAME(Frames=16)
+		QUAKE(unknown=0x4)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,23 @@
+MoveDef SpecialSWall_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0xD0053)
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0xD0051)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

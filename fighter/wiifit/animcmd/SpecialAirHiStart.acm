@@ -1,0 +1,27 @@
+MoveDef SpecialAirHiStart
+{
+	Main()
+	{
+		CALL(Hash=0xABD189D7)
+		Script_End()
+	}
+
+	Effect()
+	{
+		CALL(Hash=0xABD189D7)
+		Script_End()
+	}
+
+	Sound()
+	{
+		CALL(Hash=0xABD189D7)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xABD189D7)
+		Script_End()
+	}
+
+}

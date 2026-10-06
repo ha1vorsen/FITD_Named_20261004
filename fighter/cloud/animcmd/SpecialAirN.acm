@@ -1,0 +1,32 @@
+MoveDef SpecialAirN
+{
+	Main()
+	{
+		JUMP(Hash=0x41477B2F)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=8)
+		Graphic_Effect2(Graphic=0x3370003, Bone=0x19, X=1, Y=6, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0xC630034)
+		WAIT(Frames=11)
+		Low_Voice_Clip(unknown=0x804B0009)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=18)
+		Script_End()
+	}
+
+}

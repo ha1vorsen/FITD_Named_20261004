@@ -1,0 +1,22 @@
+MoveDef DamageFlyHi
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		DAMAGEFLY_SE()
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

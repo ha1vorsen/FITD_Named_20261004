@@ -1,0 +1,33 @@
+MoveDef 0x5F52B259
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Loop(Iterations=10){
+		    CALL(Hash=0xD37D02B4)
+		    Move_Hitbox(ID=0x0, NewBone=0x0, X=0, Y=-1, Z=5.8)
+		    Move_Hitbox(ID=0x1, NewBone=0x0, X=0, Y=-1, Z=-5.8)
+		    Move_Hitbox(ID=0x2, NewBone=0x0, X=0, Y=9, Z=5.8)
+		    Move_Hitbox(ID=0x3, NewBone=0x0, X=0, Y=9, Z=-5.8)
+		    WAIT(Frames=2)
+		    Remove_All_Hitboxes()
+		    Goto(Offset=-29)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xD05DF2AC)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

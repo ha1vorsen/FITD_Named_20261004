@@ -1,0 +1,21 @@
+MoveDef 0xEC773EBD : Unlisted
+{
+	Main()
+	{
+		Hitbox(ID=0x0, Part=0x0, Bone=0x12, Damage=3, Angle=0x46, KBG=0x96, WBKB=0x0, BKB=0x14, Size=1.6, X=0, Y=0, Z=0, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x5, SFXLevel=0x1, SFX=0x7, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

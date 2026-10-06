@@ -1,0 +1,22 @@
+MoveDef SpecialNFood_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		FRAME(Frames=11)
+		Script_End()
+	}
+
+}

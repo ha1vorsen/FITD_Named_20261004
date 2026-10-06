@@ -1,0 +1,47 @@
+MoveDef 0x6B3FB011
+{
+	Main()
+	{
+		JUMP(Hash=0x2CF0167A)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x2CF0167A)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		IS_RANDOM(Chance=0x2)
+		True(Offset=0x4){
+		    Transient_Sound_Effect(SFX=0x3E0024)
+		}
+		WAIT(Frames=1)
+		Sound_Effect(SFX=0x90028)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x90064)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x90063)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x90064)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x90063)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x90064)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x90063)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x90064)
+		WAIT(Frames=5)
+		Sound_Effect(SFX=0x90063)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

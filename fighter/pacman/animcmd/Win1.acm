@@ -1,0 +1,48 @@
+MoveDef Win1
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=57)
+		External_Graphic(Graphic=0x3310002, Bone=0x2, X=-1, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.3, Terminate=0x0)
+		FRAME(Frames=83)
+		Graphic_Effect2(Graphic=0x1000006, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=100)
+		Graphic_Effect2(Graphic=0x100000A, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=23)
+		PLAY_SE_NO_3D(unknown=0x7690037)
+		FRAME(Frames=31)
+		PLAY_SE_NO_3D(unknown=0x7690038)
+		FRAME(Frames=39)
+		PLAY_SE_NO_3D(unknown=0x7690037)
+		FRAME(Frames=47)
+		PLAY_SE_NO_3D(unknown=0x7690038)
+		FRAME(Frames=55)
+		PLAY_SE_NO_3D(unknown=0x769000E)
+		FRAME(Frames=84)
+		PLAY_SE_NO_3D(unknown=0x7690011)
+		FRAME(Frames=86)
+		PLAY_SE_NO_3D(unknown=0x769000F)
+		FRAME(Frames=101)
+		PLAY_SE_NO_3D(unknown=0xA1)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=1)
+		CALL(Hash=0x669E43CF)
+		FRAME(Frames=58)
+		CALL(Hash=0xF7FA88CD)
+		Script_End()
+	}
+
+}

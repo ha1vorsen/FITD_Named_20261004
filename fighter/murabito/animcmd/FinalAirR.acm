@@ -1,0 +1,25 @@
+MoveDef FinalAirR
+{
+	Main()
+	{
+		JUMP(Hash=0x1EE24D44)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x1EE24D44)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x1EE24D44)
+		Script_End()
+	}
+
+}

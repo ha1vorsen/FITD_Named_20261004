@@ -1,0 +1,61 @@
+MoveDef EntryR
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=50)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x30D000C, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=-55, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=9)
+		Color_Overlay(Red=0, Green=0, Blue=0, Alpha=255)
+		WAIT(Frames=20)
+		Change_Overlay(Transition=40, Red=30, Green=0, Blue=0, Alpha=255)
+		WAIT(Frames=20)
+		Change_Overlay(Transition=35, Red=128, Green=0, Blue=0, Alpha=0)
+		WAIT(Frames=35)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0xF0064)
+		WAIT(Frames=51)
+		Sound_Effect(SFX=0xF0071)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0xF0071)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0xF0071)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0xF0071)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0xF0071)
+		WAIT(Frames=6)
+		Sound_Effect(SFX=0xF0071)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Morph_Model_Event(unknown=0x0)
+		SET_CURSOR(unknown=0x0)
+		Tag_Visibility(State=0x0)
+		FRAME(Frames=5)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=7)
+		SET_CURSOR(unknown=0x1)
+		Tag_Visibility(State=0x1)
+		QUAKE(unknown=0x3)
+		FRAME(Frames=50)
+		Morph_Model_Event(unknown=0x1)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,42 @@
+MoveDef AttackS3
+{
+	Main()
+	{
+		FRAME(Frames=12)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=4, Angle=0x50, KBG=0x64, WBKB=0x14, BKB=0x0, Size=4, X=0, Y=6, Z=8.5, Effect=0x15, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x2B, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=6, Z2=3)
+		FRAME(Frames=15)
+		Extended_Special_Hitbox(ID=0x0, Part=0x1, Bone=0x0, Damage=6, Angle=0x169, KBG=0x5F, WBKB=0x0, BKB=0x32, Size=3, X=0, Y=6, Z=14, Effect=0x15, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x2B, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=6, Z2=5)
+		FRAME(Frames=17)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=11)
+		Graphic_Effect2(Graphic=0x100008D, Bone=0x0, X=0, Y=6, Z=-3, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Graphic_Effect2(Graphic=0x31E0003, Bone=0x0, X=0, Y=6, Z=10, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=12)
+		External_Graphic(Graphic=0x31E0001, Bone=0x11, X=0.5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x31E0002, Bone=0x17, X=0.5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=13)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=-5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=12)
+		Low_Voice_Clip(unknown=0x80430000)
+		Sound_Effect(SFX=0x8670068)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=10)
+		Script_End()
+	}
+
+}

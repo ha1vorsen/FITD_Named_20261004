@@ -1,0 +1,25 @@
+MoveDef 0x0EC93429
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		unk_040FD56E(unknown=0x1, unknown=0x4, unknown=0x1)
+		FRAME(Frames=3)
+		Slope_Full(unknown=0x0, unknown=0x2)
+		FRAME(Frames=7)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

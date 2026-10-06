@@ -1,0 +1,25 @@
+MoveDef AttackS3End
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x4777A2BA)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x4777A2BA)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0x4777A2BA)
+		Script_End()
+	}
+
+}

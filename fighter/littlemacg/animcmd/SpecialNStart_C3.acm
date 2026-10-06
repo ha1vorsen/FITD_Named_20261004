@@ -1,0 +1,37 @@
+MoveDef SpecialNStart_C3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x3290002, Bone=0x17, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.6, Terminate=0x1)
+		FRAME(Frames=2)
+		Set_Loop(Iterations=2){
+		    Graphic_Effect3(Graphic=0x1000009, Bone=0x0, X=-12, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=2, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=24)
+		    Goto(Offset=-19)
+		}
+		Set_Loop(Iterations=2){
+		    Graphic_Effect3(Graphic=0x1000009, Bone=0x0, X=-15, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=2, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=24)
+		    Goto(Offset=-19)
+		}
+		Set_Loop(Iterations=-1){
+		    Graphic_Effect3(Graphic=0x1000009, Bone=0x0, X=-18, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.5, RandomX=2, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    WAIT(Frames=24)
+		    Goto(Offset=-19)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

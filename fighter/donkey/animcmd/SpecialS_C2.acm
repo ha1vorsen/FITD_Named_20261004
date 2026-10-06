@@ -1,0 +1,51 @@
+MoveDef SpecialS_C2
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		SET_AIR()
+		Add/Set_Momentum(Horizontal=0, Vertical=4.5, Mode=0x1)
+		FRAME(Frames=21)
+		ON_FLAG(Variable=RA-Flag[14])
+		Add/Set_Momentum(Horizontal=0, Vertical=-6, Mode=0x1)
+		WAIT(Frames=2)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=8, Angle=0x46, KBG=0x19, WBKB=0x0, BKB=0x0, Size=8, X=0, Y=3, Z=11, Effect=0xB, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x19, SFXLevel=0x1, SFXType=0x2, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x1, X2=0, Y2=3, Z2=8)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=8, Angle=0x2D, KBG=0x96, WBKB=0x0, BKB=0x0, Size=8, X=0, Y=3, Z=11, Effect=0xB, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x19, SFXLevel=0x1, SFXType=0x2, Ground/Air=0x2, Direct/Indirect=0x1, Type=0x1, X2=0, Y2=3, Z2=8)
+		WAIT(Frames=4)
+		Remove_All_Hitboxes()
+		Set_Frame_Duration(Speed=1.4)
+		FRAME(Frames=30)
+		Remove_All_Hitboxes()
+		FRAME(Frames=34)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect3(Graphic=0x1000006, Bone=0x0, X=5, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x70030)
+		FRAME(Frames=19)
+		Sound_Effect(SFX=0x70052)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=19)
+		Slope_Full(unknown=0x1, unknown=0x2)
+		FRAME(Frames=25)
+		QUAKE(unknown=0x3)
+		FRAME(Frames=47)
+		Slope_Full(unknown=0x6, unknown=0x8)
+		Script_End()
+	}
+
+}

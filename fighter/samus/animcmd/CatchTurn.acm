@@ -1,0 +1,41 @@
+MoveDef CatchTurn
+{
+	Main()
+	{
+		GENERATE_ARTICLE(ID=0x7)
+		Set_Anchored_Article_Action(Article=0x7, Action=0x10)
+		Article_Visibility(Article=0x7, State=0x0)
+		FRAME(Frames=8)
+		Article_Visibility(Article=0x7, State=0x1)
+		FRAME(Frames=17)
+		Grab_Collision(ID=0x0, Bone=0x1A, Size=3, X=0, Y=0, Z=0, Action=0x3F, Ground/Air=0x3)
+		Extended_Grab_Collision(ID=0x1, Bone=0x0, Size=3, X=0, Y=7.5, Z=-18, Action=0x3F, Ground/Air=0x3, X2=0, Y2=7.5, Z2=-5)
+		CALL(Hash=0x49FA5BDD)
+		FRAME(Frames=20)
+		Remove_Grab_Collision(ID=0x1)
+		FRAME(Frames=29)
+		Remove_All_Grab_Collisions()
+		FRAME(Frames=90)
+		Remove_Article(Article=0x7)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=15)
+		Transient_Sound_Effect(SFX=0x80082)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=16)
+		Script_End()
+	}
+
+}

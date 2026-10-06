@@ -1,0 +1,26 @@
+MoveDef 0x4F90F5D2
+{
+	Main()
+	{
+		FRAME(Frames=18)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=18)
+		SLOPE(unknown=0x2)
+		FRAME(Frames=34)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

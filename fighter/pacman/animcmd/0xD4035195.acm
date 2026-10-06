@@ -1,0 +1,35 @@
+MoveDef 0xD4035195
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=8)
+		Graphic_Effect(Graphic=0x0, Bone=0x6, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=18)
+		Graphic_Effect(Graphic=0x0, Bone=0xA, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Loop_Rest()
+		JUMP(Hash=0xD4035195)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=20)
+		unk_01A5A27C(unknown=0x7690002, unknown=0x7690005)
+		FRAME(Frames=39)
+		unk_01A5A27C(unknown=0x7690005, unknown=0x7690002)
+		Loop_Rest()
+		JUMP(Hash=0xD4035195)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Slope_Full(unknown=0x0, unknown=0x6)
+		Script_End()
+	}
+
+}

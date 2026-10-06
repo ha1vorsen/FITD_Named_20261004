@@ -1,0 +1,46 @@
+MoveDef AttackS4Hi
+{
+	Main()
+	{
+		FRAME(Frames=10)
+		ON_FLAG(Variable=RA-Flag[27])
+		FRAME(Frames=16)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=15, Angle=0x29, KBG=0x64, WBKB=0x0, BKB=0x20, Size=5.3, X=0, Y=11.7, Z=11.3, Effect=0x3, Trip=0, Hitlag=0.5, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x7, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x19, X2=0, Y2=10.8, Z2=8)
+		Extended_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=11.5, Angle=0x29, KBG=0x64, WBKB=0x0, BKB=0x20, Size=4, X=0, Y=14.9, Z=21.2, Effect=0x3, Trip=0, Hitlag=0.5, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x7, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x19, X2=0, Y2=10.55, Z2=7)
+		Extended_Hitbox(ID=0x2, Part=0x0, Bone=0x0, Damage=6, Angle=0x29, KBG=0x64, WBKB=0x0, BKB=0x20, Size=2.8, X=0, Y=18.8, Z=33, Effect=0x3, Trip=0, Hitlag=0.5, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x7, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x19, X2=0, Y2=10.3, Z2=6)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=2)
+		Graphic_Effect2(Graphic=0x100000F, Bone=0x42B, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=15)
+		External_Graphic(Graphic=0x31F0007, Bone=0x42B, X=1.7, Y=4.5, Z=1.633974E-06, XRot=-90, YRot=-90, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=16)
+		External_Graphic_Effect2(Graphic=0x31F0008, Bone=0x42B, X=1.7, Y=2, Z=1.633974E-06, XRot=-17, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=17)
+		Graphic_Effect3(Graphic=0x1000009, Bone=0x0, X=-10, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=0.9, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x1D1238F2)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x9)
+		FRAME(Frames=10)
+		EXECUTE(Unknown=10)
+		SLOPE(unknown=0x9)
+		FRAME(Frames=14)
+		FRAME(Frames=17)
+		Script_End()
+	}
+
+}

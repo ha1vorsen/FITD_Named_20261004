@@ -1,0 +1,39 @@
+MoveDef Attack12
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x10, Damage=1.2, Angle=0x64, KBG=0x64, WBKB=0x10, BKB=0x0, Size=3.5, X=3.5, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x10, Damage=1.2, Angle=0x4E, KBG=0x64, WBKB=0x12, BKB=0x0, Size=3, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x2, Part=0x0, Bone=0xF, Damage=1.2, Angle=0x2D, KBG=0x64, WBKB=0x18, BKB=0x0, Size=3, X=-1.5, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFX=0x1, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		FRAME(Frames=7)
+		Remove_All_Hitboxes()
+		FRAME(Frames=8)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=16)
+		ON_FLAG(Variable=RA-Flag[19])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=5)
+		Graphic_Effect6(Graphic=0x100008E, Bone=0x0, X=0, Y=4, Z=7, XRot=0, YRot=-55, ZRot=-165, Size=0.95, Terminate=0x1, Unknown=0x425C0000)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x1E0055)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=3)
+		Script_End()
+	}
+
+}

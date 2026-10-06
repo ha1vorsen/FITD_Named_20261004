@@ -1,0 +1,22 @@
+MoveDef SpecialHiDrop_C2
+{
+	Main()
+	{
+		FRAME(Frames=25)
+		Allow/Disallow_Ledgegrab(State=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

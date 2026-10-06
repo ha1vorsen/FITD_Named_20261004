@@ -1,0 +1,32 @@
+MoveDef 0xAFFF8B9B : Unlisted
+{
+	Main()
+	{
+		FRAME(Frames=22)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=32)
+		Set_Frame_Duration(Speed=1)
+		Special_Hitbox(ID=0x0, Part=0x4, Bone=0x0, Damage=6, Angle=0x78, KBG=0x14, WBKB=0x0, BKB=0x5A, Size=7.5, X=0, Y=8.5, Z=38, Effect=0x3, Trip=0, Hitlag=1.2, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x7, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x17, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=34)
+		Remove_All_Hitboxes()
+		Set_Frame_Duration(Speed=0.5)
+		FRAME(Frames=41)
+		Set_Frame_Duration(Speed=3)
+		FRAME(Frames=44)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

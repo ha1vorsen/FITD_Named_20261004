@@ -1,0 +1,36 @@
+MoveDef EscapeAir
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		Body_Collision(State=0x2)
+		Model_Changer(ChangerID=0x0, ChangerState=0x1)
+		FRAME(Frames=30)
+		Body_Collision(State=0x0)
+		CALL(Hash=0x1D0E7886)
+		Set_Kinetic_Handler(ID=0x0)
+		FRAME(Frames=51)
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		Undo_Bone_Collision(State=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x6E00087)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=3)
+		Morph_Model_Event(unknown=0x0)
+		Script_End()
+	}
+
+}

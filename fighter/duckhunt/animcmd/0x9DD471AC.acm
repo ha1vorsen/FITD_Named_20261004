@@ -1,0 +1,25 @@
+MoveDef 0x9DD471AC
+{
+	Main()
+	{
+		FRAME(Frames=12)
+		THROW_ITEM_OFFSET(Unknown=0, Unknown=19, Unknown=0x1, Unknown=0x0, Unknown=0x2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		JUMP(Hash=0xEB786D3F)
+		Script_End()
+	}
+
+}

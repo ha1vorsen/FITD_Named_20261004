@@ -1,0 +1,26 @@
+MoveDef CaptureJump
+{
+	Main()
+	{
+		Add_Momentum(Horizontal=-0.8, Vertical=0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0x23D001B)
+		WAIT(Frames=7)
+		Stop_Sound_Effect(SFX=0x23D001B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,23 @@
+MoveDef 0x663012FD
+{
+	Main()
+	{
+		Set_Anchored_Article_Action(Article=0x5, Action=0x9)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x1CF0419D)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

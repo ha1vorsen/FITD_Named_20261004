@@ -1,0 +1,45 @@
+MoveDef Final
+{
+	Main()
+	{
+		Body_Collision(State=0x2)
+		GENERATE_ARTICLE(ID=0x4)
+		Camera_Closeup(ZoomTime=0x5, Unknown=0x0, Distance=1.5, XRot=0, YRot=0)
+		Time_Manipulation(Amount=0xA, Duration=0x3C)
+		FRAME(Frames=41)
+		Normal_Camera()
+		FRAME(Frames=56)
+		Limited_Screen_Tint(TransitionInTime=0x0, Red=0x1E, Blue=0x40, Green=0x0, Alpha=0x0, Duration=0x80, TransitionOutTime=0x0)
+		FRAME(Frames=161)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		Sound_Effect(SFX=0x76B001E)
+		Sound_Effect(SFX=0x760003D)
+		WAIT(Frames=54)
+		Sound_Effect(SFX=0x76B001F)
+		Sound_Effect(SFX=0x760003E)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		unk_EE37008F()
+		FRAME(Frames=3)
+		FRAME(Frames=56)
+		QUAKE(unknown=0x5)
+		FRAME(Frames=75)
+		FRAME(Frames=156)
+		Slope_Full(unknown=0x6, unknown=0x3)
+		Script_End()
+	}
+
+}

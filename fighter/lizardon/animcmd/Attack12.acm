@@ -1,0 +1,44 @@
+MoveDef Attack12
+{
+	Main()
+	{
+		FRAME(Frames=4)
+		ATK_RESERVE(ID=0x0, Bone=0x10, X=5, Y=0, Z=0.5)
+		ATK_RESERVE(ID=0x1, Bone=0x10, X=0, Y=0, Z=0)
+		ATK_RESERVE(ID=0x2, Bone=0xF, X=0, Y=0, Z=0)
+		ATK_REFERENCE_NODE(Unknown=0xD, Unknown=0xFFFFFFFF)
+		FRAME(Frames=5)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x10, Damage=4, Angle=0x50, KBG=0x32, WBKB=0x0, BKB=0x19, Size=4.5, X=5, Y=0, Z=0.5, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x1, Part=0x0, Bone=0x10, Damage=4, Angle=0x37, KBG=0x32, WBKB=0x0, BKB=0x19, Size=4, X=0, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		Hitbox(ID=0x2, Part=0x0, Bone=0xF, Damage=4, Angle=0x1E, KBG=0x32, WBKB=0x0, BKB=0x28, Size=3, X=0, Y=0, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFX=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4)
+		FRAME(Frames=7)
+		Remove_All_Hitboxes()
+		FRAME(Frames=9)
+		ON_FLAG(Variable=RA-Flag[13])
+		FRAME(Frames=19)
+		ON_FLAG(Variable=RA-Flag[14])
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		EFFECT_FLIP(unknown=0x321000E, unknown=0x321000E, unknown=0x0, unknown=0, unknown=9, unknown=9, unknown=-12, unknown=-23, unknown=-150, unknown=1.2, unknown=0, unknown=0, unknown=0, unknown=0, unknown=0, unknown=0x0, unknown=0x1, unknown=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x200051)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+}

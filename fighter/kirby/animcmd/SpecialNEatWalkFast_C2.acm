@@ -1,0 +1,31 @@
+MoveDef SpecialNEatWalkFast_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		unk_01A5A27C(unknown=0xA006A, unknown=0xA006C)
+		WAIT(Frames=23)
+		unk_01A5A27C(unknown=0xA006C, unknown=0xA006A)
+		Loop_Rest()
+		JUMP(Hash=0xF6F05874)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=5)
+		FRAME(Frames=30)
+		Loop_Rest()
+		JUMP(Hash=0xF6F05874)
+		Script_End()
+	}
+
+}

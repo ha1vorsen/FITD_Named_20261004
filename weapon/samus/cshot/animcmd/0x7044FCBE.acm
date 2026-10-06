@@ -1,0 +1,45 @@
+MoveDef 0x7044FCBE
+{
+	Main()
+	{
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=3, Angle=0x169, KBG=0x2A, WBKB=0x0, BKB=0xE, Size=1.9, X=0, Y=0, Z=0, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x0, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x19, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x1, Absorbable=0x1, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x1, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x0, Damage=25, Angle=0x28, KBG=0x3E, WBKB=0x0, BKB=0x1E, Size=8, X=0, Y=0, Z=0, Effect=0x3, Trip=0, Hitlag=0.7, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x3, SFXLevel=0x2, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x19, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x1, Absorbable=0x1, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x1, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		ATK_LERP(unknown=0x0, unknown=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Stop_Sound_Effect(SFX=0x8005F)
+		Float_Var_Compare(Variable=LA-Float[1], Method=0x2, Value=0.25)
+		True(Offset=0x6){
+		    PLAY_SE_REMAIN(unknown=0x80060)
+		}
+		Else(Offset=0x18){
+		    Float_Var_Compare(Variable=LA-Float[1], Method=0x2, Value=0.625)
+		    True(Offset=0x6){
+		        PLAY_SE_REMAIN(unknown=0x80061)
+		    }
+		    Else(Offset=0xE){
+		        Float_Var_Compare(Variable=LA-Float[1], Method=0x2, Value=0.875)
+		        True(Offset=0x6){
+		            PLAY_SE_REMAIN(unknown=0x80062)
+		        }
+		        Else(Offset=0x4){
+		            PLAY_SE_REMAIN(unknown=0x80063)
+		        }
+		    }
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,22 @@
+MoveDef 0xFF16E4C0
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		REG_LANDING_SE(unknown=0xD0054)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

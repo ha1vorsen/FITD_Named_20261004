@@ -1,0 +1,25 @@
+MoveDef 0xD9C96745
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		Pickup_Item(Unknown=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x0, ChangerState=0x0)
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

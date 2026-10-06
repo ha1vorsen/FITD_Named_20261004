@@ -1,0 +1,22 @@
+MoveDef SpecialSBlown_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x5)
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}

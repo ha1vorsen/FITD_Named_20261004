@@ -1,0 +1,23 @@
+MoveDef 0x814E73DC : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		CALL(Hash=0xB8CC56C0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

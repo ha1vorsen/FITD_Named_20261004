@@ -1,0 +1,27 @@
+MoveDef SpecialAirN3End
+{
+	Main()
+	{
+		JUMP(Hash=0x2271F2ED)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x2271F2ED)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x2271F2ED)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

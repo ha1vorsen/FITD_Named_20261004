@@ -1,0 +1,23 @@
+MoveDef FinalAirChargeshot
+{
+	Main()
+	{
+		JUMP(Hash=0xFC0D7D79)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0xFC0D7D79)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

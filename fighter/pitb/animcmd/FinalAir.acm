@@ -1,0 +1,38 @@
+MoveDef FinalAir
+{
+	Main()
+	{
+		CALL(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=31)
+		External_Graphic(Graphic=0x4260004, Bone=0x1, X=0, Y=11.4, Z=7, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=33)
+		External_Graphic(Graphic=0x4260003, Bone=0x1, X=0, Y=13.5, Z=20, XRot=0, YRot=0, ZRot=0, Size=1.5, Terminate=0x1)
+		FRAME(Frames=48)
+		External_Graphic(Graphic=0x4260000, Bone=0x1, X=0, Y=13.5, Z=10, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		FRAME(Frames=49)
+		External_Graphic(Graphic=0x4260001, Bone=0x1, X=0, Y=13.5, Z=20, XRot=0, YRot=0, ZRot=0, Size=1.5, Terminate=0x1)
+		EFFECT_DETACH_KIND(Graphic=0x4260000, unknown=0xFFFFFFFF)
+		EFFECT_DETACH_KIND(Graphic=0x4260001, unknown=0xFFFFFFFF)
+		EFFECT_DETACH_KIND(Graphic=0x4260003, unknown=0xFFFFFFFF)
+		EFFECT_DETACH_KIND(Graphic=0x4260004, unknown=0xFFFFFFFF)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xECD55CC6)
+		Script_End()
+	}
+
+}

@@ -1,0 +1,21 @@
+MoveDef 0x18168541 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		CALL(Hash=0x3201630D)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

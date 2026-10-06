@@ -1,0 +1,36 @@
+MoveDef SpecialAirHi_C2
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=1.5)
+		FRAME(Frames=5)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=6)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=15, Angle=0x4B, KBG=0x46, WBKB=0x0, BKB=0x37, Size=4, X=0, Y=5.5, Z=7, Effect=0x5, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x2, SFXType=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		JUMP(Hash=0x93DB393F)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		EFFECT_FOLLOW_COLOR(unknown=0x30B0006, unknown=0x11, unknown=0x3F800000, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x3F800000, unknown=0x1, unknown=0x42980000, unknown=0x437F0000, unknown=0x42980000)
+		FRAME(Frames=6)
+		EFFECT_COLOR(Graphic=0x100000F, Bone=0x18, unknown=0, unknown=0, unknown=0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0.7, unknown=0, unknown=0, unknown=0, unknown=0x0, unknown=0x0, unknown=0x0, unknown=0x1, unknown=255, unknown=100, unknown=100)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x17DB0241)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=9)
+		Script_End()
+	}
+
+}

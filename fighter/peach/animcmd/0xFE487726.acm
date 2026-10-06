@@ -1,0 +1,36 @@
+MoveDef 0xFE487726 : Unlisted
+{
+	Main()
+	{
+		Int_Var_Compare(Variable=RA-Int[5], Method=0x0, Value=0xFFFFFFFF)
+		True(Offset=0x4){
+		    GENERATE_ARTICLE(ID=0x2)
+		}
+		Int_Var_Compare(Variable=RA-Int[5], Method=0x0, Value=0x3E)
+		True(Offset=0x4){
+		    Generate_Item(ID=0x3E)
+		}
+		Int_Var_Compare(Variable=RA-Int[5], Method=0x0, Value=0x44)
+		True(Offset=0x4){
+		    Generate_Item(ID=0x44)
+		}
+		Int_Var_Compare(Variable=RA-Int[5], Method=0x0, Value=0x2F)
+		True(Offset=0x4){
+		    Generate_Item(ID=0x2F)
+		}
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

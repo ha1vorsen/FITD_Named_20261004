@@ -1,0 +1,24 @@
+MoveDef SpecialHiStart_C2
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=2.5)
+		FRAME(Frames=5)
+		Set_Frame_Duration(Speed=1)
+		GENERATE_ARTICLE(ID=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

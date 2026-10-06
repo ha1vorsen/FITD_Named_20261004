@@ -1,0 +1,61 @@
+MoveDef SpecialAirNTurn_C3
+{
+	Main()
+	{
+		FRAME(Frames=11)
+		Reverse_Direction()
+		Set_Frame_Duration(Speed=0.4)
+		FRAME(Frames=61)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=66)
+		ON_FLAG(Variable=RA-Flag[15])
+		SET_INT(Value=0x1, Variable=RA-Int[2])
+		FRAME(Frames=70)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x10, Damage=19, Angle=0x169, KBG=0x14, WBKB=0x0, BKB=0x73, Size=5.5, X=1.5, Y=0, Z=0, Effect=0x13, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x2, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x4, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x10, Damage=12, Angle=0x3C, KBG=0x1E, WBKB=0x0, BKB=0x4B, Size=17, X=1.5, Y=0, Z=0, Effect=0x13, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0xB, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x0, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=72)
+		Remove_All_Hitboxes()
+		SET_INT(Value=0x2, Variable=RA-Int[2])
+		FRAME(Frames=76)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=90)
+		Set_Frame_Duration(Speed=1.2)
+		FRAME(Frames=115)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x7EC39C7F)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Stop_Sound_Effect(SFX=0x19003E)
+		Sound_Effect(SFX=0x19003E)
+		WAIT(Frames=48)
+		Stop_Sound_Effect(SFX=0x4C0000)
+		Sound_Effect(SFX=0x4C0001)
+		WAIT(Frames=20)
+		Stop_Sound_Effect(SFX=0x19003E)
+		Sound_Effect(SFX=0x190061)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=3)
+		FRAME(Frames=56)
+		FRAME(Frames=68)
+		FRAME(Frames=70)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=71)
+		FRAME(Frames=101)
+		Script_End()
+	}
+
+}

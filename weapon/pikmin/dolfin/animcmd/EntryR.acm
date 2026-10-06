@@ -1,0 +1,24 @@
+MoveDef EntryR
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		LAST_EFFECT_SET_RATE(unknown=1.5)
+		Graphic_Effect2(Graphic=0x10000A2, Bone=0x7D3, X=0, Y=-5, Z=13, XRot=0, YRot=0, ZRot=0, Size=2.5, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=115)
+		Graphic_Effect2(Graphic=0x10000A2, Bone=0x7D3, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

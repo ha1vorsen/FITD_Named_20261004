@@ -1,0 +1,44 @@
+MoveDef Attack13
+{
+	Main()
+	{
+		OFF_FLAG(Variable=RA-Flag[17])
+		FRAME(Frames=10)
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=5, Angle=0x169, KBG=0x7C, WBKB=0x0, BKB=0x46, Size=7, X=0, Y=12, Z=16, Effect=0x5, Trip=0, Hitlag=1.6, SDI=1, Clang=0x1, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x8, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xC, X2=0, Y2=12, Z2=14)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=10)
+		Float_Compare(Type=0x0, Method=0x4, Value=0)
+		True(Offset=0x15){
+		    Graphic_Effect2(Graphic=0x32C0015, Bone=0x0, X=-1E-05, Y=12.5, Z=15, XRot=0, YRot=0, ZRot=180, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Else(Offset=0x13){
+		    Graphic_Effect2(Graphic=0x32C0015, Bone=0x0, X=-1E-05, Y=12.5, Z=15, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=4)
+		Sound_Effect(SFX=0x764004C)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=8)
+		FRAME(Frames=10)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=27)
+		Script_End()
+	}
+
+}

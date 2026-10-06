@@ -1,0 +1,29 @@
+MoveDef FinalEnd
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=0.75)
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=3)
+		External_Graphic_Effect2(Graphic=0x3290015, Bone=0xC, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=30)
+		PLAY_SE_REMAIN(unknown=0x76E003A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		Script_End()
+	}
+
+}

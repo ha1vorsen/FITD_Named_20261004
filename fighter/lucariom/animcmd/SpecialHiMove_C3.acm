@@ -1,0 +1,55 @@
+MoveDef SpecialHiMove_C3
+{
+	Main()
+	{
+		FRAME(Frames=1)
+		Set_Frame_Duration(Speed=0.8)
+		Extended_Special_Hitbox(ID=0x0, Part=0x0, Bone=0x2, Damage=4, Angle=0x16B, KBG=0x64, WBKB=0x64, BKB=0x0, Size=6.8, X=0, Y=4, Z=0, Effect=0x15, Trip=0, Hitlag=1, SDI=1, Clang=0x1, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x2B, Ground/Air=0x3, Direct/Indirect=0x0, Type=0x2, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, X2=0, Y2=-4, Z2=0)
+		FRAME(Frames=14)
+		Remove_All_Hitboxes()
+		Set_Frame_Duration(Speed=0.9)
+		FRAME(Frames=15)
+		PASSABLE_CHECK(Unknown=0x1)
+		Script_End()
+	}
+
+	Effect()
+	{
+		Sword_Trace(TraceID=0xB, BlurLen=1.401298E-44, Bone1=0x2, X=0, Y=0, Z=4, Bone2=0x2, X=0, Y=0, Z=-4, Anchored=0x1, Graphic=0x0, Bone3=0x2, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=2)
+		External_Graphic(Graphic=0x31E0014, Bone=0x11, X=1, Y=1, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		External_Graphic(Graphic=0x31E0014, Bone=0x17, X=1, Y=1, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, Terminate=0x1)
+		Sword_Trace(TraceID=0xB3, BlurLen=2.101948E-44, Bone1=0x11, X=1, Y=0, Z=-1, Bone2=0x11, X=1, Y=0, Z=1.5, Anchored=0x1, Graphic=0x0, Bone3=0x11, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		Sword_Trace(TraceID=0xB3, BlurLen=2.101948E-44, Bone1=0x17, X=1, Y=0, Z=-1, Bone2=0x17, X=1, Y=0, Z=1.5, Anchored=0x1, Graphic=0x0, Bone3=0x17, X=0, Y=0, Z=0, RotX=0, RotY=0, RotZ=0, Length=1)
+		FRAME(Frames=12)
+		Terminate_Sword_Glow(FadeTime=0x4)
+		Script_End()
+	}
+
+	Sound()
+	{
+		unk_377D36CB(unknown=0x2F, unknown=0x2, unknown=0x32)
+		True(Offset=0x6){
+		    Transient_Sound_Effect(SFX=0x8670096)
+		}
+		Else(Offset=0x12){
+		    unk_377D36CB(unknown=0x2F, unknown=0x2, unknown=0x33)
+		    True(Offset=0x8){
+		        Transient_Sound_Effect(SFX=0x8670097)
+		        Sound_Effect(SFX=0x8670050)
+		    }
+		    Else(Offset=0x6){
+		        Transient_Sound_Effect(SFX=0x8670098)
+		        Sound_Effect(SFX=0x867004F)
+		    }
+		}
+		WAIT(Frames=6)
+		PLAY_SE_REMAIN(unknown=0x91F0005)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

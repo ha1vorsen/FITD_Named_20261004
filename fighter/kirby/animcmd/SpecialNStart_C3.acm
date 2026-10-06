@@ -1,0 +1,40 @@
+MoveDef SpecialNStart_C3
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=10)
+		Set_Frame_Duration(Speed=4)
+		FRAME(Frames=12)
+		Set_Frame_Duration(Speed=0.8)
+		FRAME(Frames=17)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=18)
+		SA_SET(Unknown=0x2)
+		Disallow_Horizontal_Movement(unknown=0x1)
+		SET_LIMIT_SPEED_EX(Horizontal=2.8, Vertical=0)
+		Add/Set_Momentum(Horizontal=2.8, Vertical=1.6, Mode=0x1)
+		ON_FLAG(Variable=RA-Flag[15])
+		Grab_Collision2(ID=0x0, Bone=0x0, Size=5.8, X=0, Y=6.5, Z=4.2, Action=0xDF, Ground/Air=0x3, Unknown=0x1)
+		Throw_Specifier(ID=0x1, Bone=0x0, Damage=5, Angle=0x169, KBG=0x64, WBKB=0x0, BKB=0x0, Effect=0x0, Unknown=0, Hitlag=1, Unknown=1, SFXLevel=0x0, SFXType=0x0, FacingRestriction=0x3, DisableHitlag=0x1, Unknown=0x1, Type=0x0)
+		Search_Collision(ID=0x0, Part=0x0, Bone=0x0, Size=4, X=0, Y=6, Z=4, Unknown=0x2, Unknown=0x1, Ground/Air=0x7, Unknown=0x0, Unknown=0xF, Unknown=0xF, Unknown=0x0, RehitRate=0x0, SelfAffectionToggle=0x1, Unknown=0x0)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=2)
+		Sound_Effect(SFX=0xA005F)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

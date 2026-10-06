@@ -1,0 +1,33 @@
+MoveDef SpecialLw_C3
+{
+	Main()
+	{
+		FRAME(Frames=3)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=7)
+		Set_Frame_Duration(Speed=1)
+		FRAME(Frames=9)
+		GENERATE_ARTICLE(ID=0x2)
+		FRAME(Frames=15)
+		Set_Frame_Duration(Speed=2)
+		FRAME(Frames=20)
+		Set_Frame_Duration(Speed=1)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=8)
+		Script_End()
+	}
+
+}

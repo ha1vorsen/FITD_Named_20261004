@@ -1,0 +1,26 @@
+MoveDef SpecialAirHiJDamage_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.2)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		Stop_Sound_Effect(SFX=0x1E003A)
+		Script_End()
+	}
+
+	Expression()
+	{
+		QUAKE(unknown=0x4)
+		FRAME(Frames=2)
+		Script_End()
+	}
+
+}

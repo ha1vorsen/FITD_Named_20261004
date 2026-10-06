@@ -1,0 +1,36 @@
+MoveDef SpecialHiHold_C2
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=4)
+		Sword_Trace(TraceID=0x7C, BlurLen=5.605194E-45, Bone1=0x3E8, X=1.49999, Y=0, Z=0, Bone2=0x3E8, X=9.19999, Y=0, Z=2E-05, Anchored=0x1, Graphic=0x3200000, Bone3=0x3E8, X=0, Y=0, Z=0, RotX=-4E-05, RotY=-0.00012, RotZ=3E-05, Length=1)
+		Set_Loop(Iterations=-1){
+		    WAIT(Frames=4)
+		    Graphic_Effect2(Graphic=0x1000010, Bone=0x3E8, X=4.99999, Y=0, Z=1E-05, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=8, RandomY=1, RandomZ=1, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=4)
+		    Graphic_Effect2(Graphic=0x1000010, Bone=0x3E8, X=4.99999, Y=0, Z=1E-05, XRot=0, YRot=0, ZRot=0, Size=0.5, RandomX=8, RandomY=1, RandomZ=1, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		    Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=-2, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=10, RandomY=0, RandomZ=4, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		    Goto(Offset=-55)
+		}
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Transient_Sound_Effect(SFX=0x4A80043)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=2)
+		Script_End()
+	}
+
+}

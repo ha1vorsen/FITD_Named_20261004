@@ -1,0 +1,32 @@
+MoveDef 0xC9A04956
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x5E7290DE)
+		Script_End()
+	}
+
+	Sound()
+	{
+		unk_5121D3C3(unknown=0x0, unknown=0x0, unknown=0x1)
+		True(Offset=0x6){
+		    CALL(Hash=0x9CFEFC0D)
+		}
+		Else(Offset=0xA){
+		    unk_5121D3C3(unknown=0x1, unknown=0x0, unknown=0x1)
+		    True(Offset=0x4){
+		        CALL(Hash=0x1051EB11)
+		    }
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

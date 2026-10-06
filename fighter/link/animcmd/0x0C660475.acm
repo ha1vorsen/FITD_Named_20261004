@@ -1,0 +1,25 @@
+MoveDef 0x0C660475
+{
+	Main()
+	{
+		FRAME(Frames=9)
+		Fire_Weapon()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		Model_Changer(ChangerID=0x1, ChangerState=0x1)
+		FRAME(Frames=7)
+		Script_End()
+	}
+
+}

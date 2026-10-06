@@ -1,0 +1,36 @@
+MoveDef 0x9B6B7EF6
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x126E356F)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=3)
+		IS_FLAG(Variable=RA-Flag[20])
+		True(Offset=0xA){
+		    Low_Voice_Clip(unknown=0x80040006)
+		    WAIT(Frames=25)
+		    Sound_Effect(SFX=0x6F)
+		}
+		Else(Offset=0xC){
+		    Low_Voice_Clip(unknown=0x80040006)
+		    WAIT(Frames=2)
+		    Sound_Effect(SFX=0xE0042)
+		    WAIT(Frames=23)
+		    Sound_Effect(SFX=0x6F)
+		}
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

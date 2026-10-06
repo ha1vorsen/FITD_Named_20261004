@@ -1,0 +1,36 @@
+MoveDef 0x1D10E11F
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x4961C1F)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=29)
+		Sound_Effect(SFX=0xE007A)
+		WAIT(Frames=16)
+		Stop_Sound_Effect(SFX=0xE0062)
+		Sound_Effect(SFX=0xE0061)
+		Sound_Effect(SFX=0x630001)
+		Script_End()
+	}
+
+	Expression()
+	{
+		SLOPE(unknown=0x6)
+		FRAME(Frames=2)
+		FRAME(Frames=48)
+		FRAME(Frames=53)
+		QUAKE(unknown=0x4)
+		FRAME(Frames=93)
+		Slope_Full(unknown=0x0, unknown=0xA)
+		Script_End()
+	}
+
+}

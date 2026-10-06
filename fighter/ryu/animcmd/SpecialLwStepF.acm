@@ -1,0 +1,37 @@
+MoveDef SpecialLwStepF
+{
+	Main()
+	{
+		Search_Collision(ID=0x0, Part=0x0, Bone=0x0, Size=10, X=0, Y=10, Z=0, Unknown=0x2, Unknown=0x3, Ground/Air=0x3, Unknown=0x0, Unknown=0x9, Unknown=0x1, Unknown=0x0, RehitRate=0x1, SelfAffectionToggle=0x0, Unknown=0x0)
+		FRAME(Frames=15)
+		SEARCH_CLR_ALL()
+		Script_End()
+	}
+
+	Effect()
+	{
+		Graphic_Effect2(Graphic=0x1000010, Bone=0x0, X=0, Y=11.5, Z=10, XRot=0, YRot=0, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		FRAME(Frames=3)
+		Graphic_Effect(Graphic=0x1000019, Bone=0x0, X=4, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0xC05003E)
+		FRAME(Frames=15)
+		Sound_Effect2(SFX=0xC050004)
+		WAIT(Frames=2)
+		Sound_Effect2(SFX=0xC050001)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		FRAME(Frames=5)
+		Script_End()
+	}
+
+}

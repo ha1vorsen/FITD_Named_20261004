@@ -1,0 +1,28 @@
+MoveDef 0xD64D2F58
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		JUMP(Hash=0x2C42123B)
+		Script_End()
+	}
+
+	Sound()
+	{
+		JUMP(Hash=0x2C42123B)
+		Script_End()
+	}
+
+	Expression()
+	{
+		unk_C7B586AF(unknown=0, unknown=30, unknown=3)
+		SLOPE(unknown=0x6)
+		FRAME(Frames=12)
+		FRAME(Frames=33)
+		Script_End()
+	}
+
+}

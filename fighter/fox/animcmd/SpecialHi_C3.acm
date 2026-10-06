@@ -1,0 +1,48 @@
+MoveDef SpecialHi_C3
+{
+	Main()
+	{
+		Set_Frame_Duration(Speed=1.8)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x13, Damage=1.2, Angle=0x16E, KBG=0x50, WBKB=0x0, BKB=0x3C, Size=4, X=2, Y=8, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x2, Direct/Indirect=0x1, Type=0x2, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x5, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x1, Part=0x0, Bone=0x13, Damage=1.2, Angle=0x5A, KBG=0x64, WBKB=0xA, BKB=0x0, Size=4, X=2, Y=8, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x1, Direct/Indirect=0x1, Type=0x2, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x5, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x2, Part=0x0, Bone=0x13, Damage=1.2, Angle=0x16E, KBG=0x50, WBKB=0x0, BKB=0x3C, Size=6.5, X=-1, Y=1, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x5, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		Special_Hitbox(ID=0x3, Part=0x0, Bone=0x13, Damage=1.2, Angle=0x5A, KBG=0x64, WBKB=0xA, BKB=0x0, Size=6.5, X=-1, Y=1, Z=0, Effect=0x2, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x0, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x5, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		FRAME(Frames=19)
+		Remove_All_Hitboxes()
+		WAIT(Frames=1)
+		Special_Hitbox(ID=0x0, Part=0x0, Bone=0x13, Damage=2, Angle=0x37, KBG=0x10E, WBKB=0x0, BKB=0x3C, Size=10, X=0, Y=4, Z=0, Effect=0x2, Trip=0, Hitlag=3, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x1, SFXLevel=0x2, SFXType=0x3, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x2, HitBits=0x3F, Unknown=0x0, Unknown=0xF, Unknown=0x0, Blockability=0x1, Reflectable=0x0, Absorbable=0x0, Rehit=0x0, IgnoreInvuln=0x0, Unknown=0x0, FacingRestrict=0x3, Unknown=0x0, TeamDamage=0x0, DisableHitlag=0x0, NoGFX=0x0, Flinchless=0x0, StretchToggle=0x0)
+		WAIT(Frames=2)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		External_Graphic(Graphic=0x10000B8, Bone=0xC, X=0, Y=0, Z=0, XRot=0, YRot=90, ZRot=0, Size=1.3, Terminate=0x1)
+		Set_Loop(Iterations=3){
+		    FRAME(Frames=2)
+		    LAST_EFFECT_SET_RATE(unknown=1.3)
+		    Graphic_Effect2(Graphic=0x1000023, Bone=0xC, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=90, Size=1.3, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=360, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=5)
+		    LAST_EFFECT_SET_RATE(unknown=1.3)
+		    Graphic_Effect2(Graphic=0x1000045, Bone=0xC, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=90, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=360, RandomZRot=0, Terminate=0x1)
+		    WAIT(Frames=5)
+		    Goto(Offset=-44)
+		}
+		FRAME(Frames=15)
+		Terminate_Graphic_Effect(Graphic=0x10000B8, unknown=0x0, unknown=0x0)
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Sound_Effect(SFX=0xB007F)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

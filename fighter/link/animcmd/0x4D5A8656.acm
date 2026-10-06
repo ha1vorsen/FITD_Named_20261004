@@ -1,0 +1,23 @@
+MoveDef 0x4D5A8656 : Unlisted
+{
+	Main()
+	{
+		Extended_Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=1, Angle=0x16E, KBG=0x64, WBKB=0x5A, BKB=0x0, Size=10, X=4, Y=14, Z=13, Effect=0x3, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x1, ShieldDamage=0x0, SFXLevel=0x1, SFXType=0x7, Ground/Air=0x3, Direct/Indirect=0x1, Type=0xA, X2=0, Y2=7, Z2=13)
+		WAIT(Frames=3)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

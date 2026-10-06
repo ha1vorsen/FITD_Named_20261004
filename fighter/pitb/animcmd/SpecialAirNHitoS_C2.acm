@@ -1,0 +1,23 @@
+MoveDef SpecialAirNHitoS_C2
+{
+	Main()
+	{
+		JUMP(Hash=0xD2497207)
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		JUMP(Hash=0xD2497207)
+		Script_End()
+	}
+
+}

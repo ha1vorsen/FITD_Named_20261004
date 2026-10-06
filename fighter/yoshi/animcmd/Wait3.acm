@@ -1,0 +1,24 @@
+MoveDef Wait3
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+		FRAME(Frames=37)
+		SLOPE(unknown=0x0)
+		FRAME(Frames=41)
+		FRAME(Frames=62)
+		Script_End()
+	}
+
+}

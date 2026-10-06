@@ -1,0 +1,21 @@
+MoveDef FinalRushStart
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+		FRAME(Frames=10)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

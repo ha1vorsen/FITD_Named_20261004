@@ -1,0 +1,29 @@
+MoveDef 0x14E6A7C8 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=18)
+		Sound_Effect(SFX=0x8630038)
+		FRAME(Frames=30)
+		PLAY_SE_NO_3D(unknown=0x8F0001C)
+		FRAME(Frames=68)
+		Stop_Sound_Effect(SFX=0x8630038)
+		Sound_Effect(SFX=0x863003A)
+		FRAME(Frames=125)
+		Sound_Effect(SFX=0x8630026)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

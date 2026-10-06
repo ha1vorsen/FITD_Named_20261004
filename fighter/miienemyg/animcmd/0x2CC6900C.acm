@@ -1,0 +1,24 @@
+MoveDef 0x2CC6900C
+{
+	Main()
+	{
+		FRAME(Frames=2)
+		Fire_Weapon()
+		Script_End()
+	}
+
+	Effect()
+	{
+		CALL(Hash=0x64E8D52)
+		Script_End()
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

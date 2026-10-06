@@ -1,0 +1,36 @@
+MoveDef 0x3083EDE0 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=24)
+		Sound_Effect(SFX=0xB004B)
+		FRAME(Frames=35)
+		Stop_Sound_Effect(SFX=0xB004B)
+		FRAME(Frames=60)
+		PLAY_SE_NO_3D(unknown=0x400004)
+		FRAME(Frames=68)
+		Sound_Effect(SFX=0x6B)
+		FRAME(Frames=74)
+		Sound_Effect(SFX=0x6B)
+		FRAME(Frames=80)
+		Sound_Effect(SFX=0x6B)
+		FRAME(Frames=86)
+		Sound_Effect(SFX=0x6B)
+		FRAME(Frames=109)
+		Sound_Effect(SFX=0xB004B)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

@@ -1,0 +1,30 @@
+MoveDef 0x29868E78 : Unlisted
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=30)
+		PLAY_SE_NO_3D(unknown=0x8F0001D)
+		FRAME(Frames=33)
+		Sound_Effect(SFX=0x863003D)
+		FRAME(Frames=43)
+		Sound_Effect(SFX=0x8630042)
+		FRAME(Frames=84)
+		Sound_Effect(SFX=0x8630008)
+		FRAME(Frames=95)
+		Sound_Effect(SFX=0x8630043)
+		Script_End()
+	}
+
+	Expression()
+	{
+	}
+
+}

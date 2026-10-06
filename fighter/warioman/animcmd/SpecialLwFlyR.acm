@@ -1,0 +1,52 @@
+MoveDef SpecialLwFlyR
+{
+	Main()
+	{
+		FRAME(Frames=5)
+		Set_Armor(State=0x1, Threshold=0)
+		FRAME(Frames=9)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=50, Angle=0x1E, KBG=0x64, WBKB=0x0, BKB=0x0, Size=13, X=0, Y=0, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x3, SFX=0xB, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		ON_FLAG(Variable=RA-Flag[14])
+		FRAME(Frames=11)
+		Set_Armor(State=0x0, Threshold=0)
+		Hitbox(ID=0x0, Part=0x0, Bone=0x0, Damage=20, Angle=0x50, KBG=0x64, WBKB=0x0, BKB=0x0, Size=7, X=0, Y=9, Z=0, Effect=0x0, Trip=0, Hitlag=1, SDI=1, Clang=0x0, Rebound=0x0, ShieldDamage=0x0, SFXLevel=0x3, SFX=0xB, Ground/Air=0x3, Direct/Indirect=0x1, Type=0x0)
+		WAIT(Frames=16)
+		Remove_All_Hitboxes()
+		Script_End()
+	}
+
+	Effect()
+	{
+		FRAME(Frames=6)
+		Graphic_Effect2(Graphic=0x3160004, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=-90, ZRot=0, Size=1, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x1)
+		Graphic_Effect3(Graphic=0x1000008, Bone=0x0, X=0, Y=0, Z=0, XRot=0, YRot=0, ZRot=0, Size=1.2, RandomX=0, RandomY=0, RandomZ=0, RandomXRot=0, RandomYRot=0, RandomZRot=0, Terminate=0x0)
+		FRAME(Frames=7)
+		External_Graphic(Graphic=0x3160005, Bone=0x3, X=0, Y=0, Z=0, XRot=90, YRot=90, ZRot=90, Size=1, Terminate=0x1)
+		Color_Overlay(Red=255, Green=255, Blue=255, Alpha=190)
+		FRAME(Frames=9)
+		Color_Overlay(Red=255, Green=128, Blue=0, Alpha=80)
+		FRAME(Frames=15)
+		Change_Overlay(Transition=25, Red=255, Green=0, Blue=0, Alpha=0)
+		FRAME(Frames=40)
+		Terminate_Overlays()
+		Script_End()
+	}
+
+	Sound()
+	{
+		FRAME(Frames=5)
+		Sound_Effect(SFX=0x76A0037)
+		unk_687F9320(unknown=0x76A0037, unknown=0x14)
+		Script_End()
+	}
+
+	Expression()
+	{
+		FRAME(Frames=8)
+		QUAKE(unknown=0x5)
+		FRAME(Frames=11)
+		FRAME(Frames=16)
+		Script_End()
+	}
+
+}

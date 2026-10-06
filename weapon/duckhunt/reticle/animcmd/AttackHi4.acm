@@ -1,0 +1,21 @@
+MoveDef AttackHi4
+{
+	Main()
+	{
+		SET_FLOAT(Value=1, Variable=LA-Float[1])
+		Script_End()
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+	}
+
+	Expression()
+	{
+	}
+
+}

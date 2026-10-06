@@ -1,0 +1,27 @@
+MoveDef 0x4C6A2F0D
+{
+	Main()
+	{
+	}
+
+	Effect()
+	{
+	}
+
+	Sound()
+	{
+		FRAME(Frames=1)
+		Stop_Sound_Effect(SFX=0x24B0031)
+		FRAME(Frames=2)
+		Transient_Sound_Effect(SFX=0x2C9001A)
+		Transient_Sound_Effect(SFX=0x24B0031)
+		Script_End()
+	}
+
+	Expression()
+	{
+		Item_Visibility(State=0x0)
+		Script_End()
+	}
+
+}
